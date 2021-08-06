@@ -15,26 +15,17 @@ jobs:
           cmd
           .\RMaker\mio.bat
           .\AdGuardRules\mio.bat
-      - name: Git push assets to github
+      - name: Git push assets to github & coding
         run: |
-          git pull origin master --allow-unrelated-histories
-          git config --global user.name "Iori-yimaga"
-          git config --global user.email "964302865@qq.com"
-          git add .
-          git commit -m "Updated at $(date)" -a
-      - name: files changes
-        uses: ad-m/github-push-action@master
-        with:
-          github_token: ${{ secrets.ADRULES_TOKEN }}
-      - name: Git push assets to coding
-        run: |
-          rd/s/q .git/
           git init
           git config --local user.name "actions"
           git config --local user.email "action@github.com"
-          git branch -m master
-          git add -all
-          git comment "${{ env.RELEASE_NAME }}"
-          git remote set-url --add origin "https://iori-yimaga:Lx178976@e.coding.net/adrules/adruls.git"
+          git branch -m main
+          git add --all
+          git commit -m "${{ env.RELEASE_NAME }}"
+          git remote add origin "https://github.com/Cats-Team/AdRules.git"
+          git remote set-url --add origin "https://e.coding.net/iori-yimaga/adrules/adruls.git"
           git fetch --unshallow origin
-          git push -u -f origin master
+          git push -u origin --all
+          
+
