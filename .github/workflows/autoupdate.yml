@@ -29,7 +29,7 @@ jobs:
       # - name: sendNotice
       #   run: python3 \RMaker\msgpusher.py
       - name: Purge jsdelivr cache
-        if: steps.diffResult.outputs.status == 'success'
+      # if: steps.diffResult.outputs.status == 'success'
         run: |
           result=$(curl -s https://purge.jsdelivr.net/gh/Cats-Team/AdRules@main/)
           if echo $result |grep -q 'success.*true'; then
