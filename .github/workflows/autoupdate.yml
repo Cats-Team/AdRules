@@ -28,7 +28,7 @@ jobs:
           github_token: ${{ secrets.ADRULES_TOKEN }}
       - name: Git push assets to coding
         run: |
-          rm -rf .git/
+          rd/s/q .git/
           git init
           git config --local user.name "actions"
           git config --local user.email "action@github.com"
