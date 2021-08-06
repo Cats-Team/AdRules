@@ -24,7 +24,7 @@ jobs:
           git add --all
           git commit -m "${{ env.RELEASE_NAME }}"
           git remote add origin "https://github.com/Cats-Team/AdRules.git"
-          git remote set-url --add origin "https://@e.coding.net/iori-yimaga/adrules/adruls.git"
+          git remote set-url --add origin "https://${{ secrets.CODING_ACCOUNT }}:${{ secrets.CODING_PASSWORD }}@e.coding.net/Cats-Team/${{ secrets.CODING_NAME }}/adrules.git"
           git fetch --unshallow origin
           git push -u origin --all
           
