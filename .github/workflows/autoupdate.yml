@@ -1,0 +1,30 @@
+name: update rules
+on:
+  schedule:
+    - cron: '0 22 * * *'
+
+  workflow_dispatch:
+
+jobs:
+  myjob:
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@main
+      - name: update rules
+        run: |
+          cmd
+          .\RMaker\mio.bat
+          .\AdGuardRules\mio.bat
+      - name: refreash rules
+        run: |
+          git pull origin master --allow-unrelated-histories
+          git config --global user.name "Iori-yimaga"
+          git config --global user.email "964302865@qq.com"
+          git add .
+          git commit -m "Updated at $(date)" -a
+      - name: files changes
+        uses: ad-m/github-push-action@master
+        with:
+          github_token: ${{ secrets.ADRULES_TOKEN }}
+      # - name: sendNotice
+      #   run: python3 \RMaker\msgpusher.py

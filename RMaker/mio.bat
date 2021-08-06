@@ -18,13 +18,6 @@ wget -O i11.txt https://paulgb.github.io/BarbBlock/blacklists/hosts-file.txt
 wget -O i12.txt https://anti-ad.net/adguard.txt
 wget -O i13.txt https://gitee.com/xinggsf/Adblock-Rule/raw/master/rule.txt
 
-wget -O i14.txt https://filters.adtidy.org/android/filters/2_optimized.txt
-wget -O i15.txt https://filters.adtidy.org/android/filters/11_optimized.txt
-wget -O i16.txt https://filters.adtidy.org/android/filters/3_optimized.txt
-wget -O i17.txt https://filters.adtidy.org/android/filters/224_optimized.txt
-wget -O i18.txt https://filters.adtidy.org/android/filters/14_optimized.txt
-wget -O i19.txt https://filters.adtidy.org/android/filters/5_optimized.txt
-wget -O i20.txt https://filters.adtidy.org/android/filters/4_optimized.txt
 
 ::add new rules
 ::wget -O i+number url
@@ -56,5 +49,5 @@ echo ! Last modified: %date%T%time%Z>>tpdate.txt
 copy title.dd+tpdate.txt+nord.txt+brules.dd final.txt
 
 ::end
-copy /y final.txt ..\..\AdRules.txt
+copy /y final.txt ..\..\AdKillRules.txt
 del /f /q *.txt&exit
