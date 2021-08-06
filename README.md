@@ -1,8 +1,9 @@
 # AdKillRules
 去广告规则<br/>
-适用AdGuard,AG HOME,ADAWAY等等<br/>
+适用AdGuard,AdGuardHome,ADAWAY等等<br/>
 全部由其他规则合并产生<br/>
-规则：170000+<br/>
+AdKillRules规则：180000+<br/>
+AdGuardRules规则：80000+<br/>
 
 ## 规则地址：<br/>
 |   规则名称   | 🚀 加速地址 1（实时） | 🚀 加速地址 2 （实时） | 🚀 加速地址 3 （缓存） | 🚀 加速地址 4 （缓存） |
