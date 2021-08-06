@@ -30,6 +30,8 @@ jobs:
       #   run: python3 \RMaker\msgpusher.py
       - name: Purge jsdelivr cache
         run: |
-          $result = (curl -s https://purge.jsdelivr.net/gh/Cats-Team/AdRules@main/)
-          echo $result
+          $adguard = curl -s https://purge.jsdelivr.net/gh/Cats-Team/AdRules@main/adguard.txt
+          $adkillrules = curl -s https://purge.jsdelivr.net/gh/Cats-Team/AdRules@main/AdKillRules.txt
+          echo $adguard
+          echo $adkillrules
           # echo "jsdelivr缓存更新成功"
