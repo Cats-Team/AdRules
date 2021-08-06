@@ -15,7 +15,7 @@ jobs:
           cmd
           .\RMaker\mio.bat
           .\AdGuardRules\mio.bat
-      - name: refreash rules
+      - name: Git push assets to github
         run: |
           git pull origin master --allow-unrelated-histories
           git config --global user.name "Iori-yimaga"
@@ -26,11 +26,15 @@ jobs:
         uses: ad-m/github-push-action@master
         with:
           github_token: ${{ secrets.ADRULES_TOKEN }}
-      # - name: sendNotice
-      #   run: python3 \RMaker\msgpusher.py
-      - name: Purge jsdelivr cache
+      - name: Git push assets to coding
         run: |
-          cmd
-          start https://purge.jsdelivr.net/gh/Cats-Team/AdRules@main/adguard.txt
-          start https://purge.jsdelivr.net/gh/Cats-Team/AdRules@main/AdKillRules.txt
-          echo "jsdelivr缓存更新成功"
+          rm -rf .git/
+          git init
+          git config --local user.name "actions"
+          git config --local user.email "action@github.com"
+          git branch -m master
+          git add -all
+          git comment "${{ env.RELEASE_NAME }}"
+          git remote set-url --add origin "https://iori-yimaga:Lx178976@e.coding.net/adrules/adruls.git"
+          git fetch --unshallow origin
+          git push -u -f origin master
