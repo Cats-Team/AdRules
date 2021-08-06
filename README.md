@@ -11,3 +11,7 @@
 |  :----:  | :----:  | :----:  |  :----:  |
 | AdkillRules | [加速](https://raw.fastgit.org/Cats-Team/AdRules@main/AdKillRues.txt) |[加速](https://cdn.jsdelivr.net/gh/Cats-Team/AdRules@main/AdKillRules.txt) |[加速](https://cdn.staticaly.com/gh/Cats-Team/AdRules@main/AdKillRules.txt)|
 | AdGuardRules | [加速](https://raw.fastgit.org/Cats-Team/AdRules@main/adguard.txt) | [加速](https://cdn.jsdelivr.net/gh/Cats-Team/AdRules@main/adguard.txt)|[加速](https://cdn.staticaly.com/gh/Cats-Team/AdRules@main/adguard.txt) |
+
+# 特别鸣谢
+[@Cats-team](https://github.com/Cats-Team)
+[@DoingDog](https://github.com/DoingDog)
