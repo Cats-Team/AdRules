@@ -5,14 +5,14 @@ cd aa
 ::start download
 
 wget -O i1.txt https://adguardteam.github.io/AdGuardSDNSFilter/Filters/filter.txt
-wget -O i2.txt https://halflife.coding.net/p/list/d/list/git/raw/master/ad-pc.txt
-wget -O i3.txt https://gitee.com/xinggsf/Adblock-Rule/raw/master/mv.txt
-wget -O i4.txt https://banbendalao.coding.net/p/adgk/d/ADgk/git/raw/master/ADgk.txt
+wget -O i2.txt https://raw.githubusercontent.com/o0HalfLife0o/list/master/ad-pc.txt
+wget -O i3.txt https://raw.githubusercontent.com/o0HalfLife0o/list/master/ad-edentw.txt
+wget -O i4.txt https://raw.githubusercontent.com/banbendalao/ADgk/master/ADgk.txt
 wget -O i5.txt https://neodev.team/lite_adblocker
 wget -O i6.txt http://file.trli.club/dns/hosts.txt
 wget -O i7.txt https://adaway.org/hosts.txt
 wget -O i8.txt https://anti-ad.net/adguard.txt
-wget -O i9.txt https://gitee.com/xinggsf/Adblock-Rule/raw/master/rule.txt
+wget -O i9.txt https://raw.githubusercontent.com/banbendalao/ADgk/master/kill-baidu-ad.txt
 
 
 ::add new rules
