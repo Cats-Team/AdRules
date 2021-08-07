@@ -56,3 +56,6 @@ AdGuardRules规则：80000+<br/>
 # 特别鸣谢
 * [@Cats-team](https://github.com/Cats-Team)
 * [@DoingDog](https://github.com/DoingDog)
+
+## 访问量
+![](http://profile-counter.glitch.me/cats-team/count.svg)
