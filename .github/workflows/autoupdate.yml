@@ -22,7 +22,7 @@ jobs:
           git config --local user.email "action@github.com"
           git branch -m main
           git add --all
-          git commit -m "${{ env.RELEASE_NAME }}"
+          git commit -m "规则更新"
           git remote add origin "https://github.com/Cats-Team/AdRules.git"
           git remote set-url --add origin "https://${{ secrets.CODING_ACCOUNT }}:${{ secrets.CODING_PASSWORD }}@e.coding.net/cats-team/adguard/AdRules.git"
           git fetch --unshallow origin
