@@ -1,8 +1,8 @@
 import requests
 import json
 
-adguard = r"./adguard.txt"
-AdKillRules = r"./AdKillRules.txt"
+adguard = r".\adguard.txt"
+AdKillRules = r".\AdKillRules.txt"
 count_a = -1
 for count_a, line in enumerate(open(adguard, 'r').readlines()):
 	count_a += 1
