@@ -3,7 +3,7 @@ import json
 
 token = 'c2e9e551adbc46029d98b06ec0e1c77c'
 title = 'AdRules'
-content = 'AdRules规则更新完毕，来自github~'
+content = 'AdRules规则更新完毕，来自Github~，更新日期Updated at $(date)'
 url = 'http://pushplus.hxtrip.com/send'
 data = {
 		"token":token,
