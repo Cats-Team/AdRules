@@ -14,7 +14,7 @@ wget -O i7.txt https://adaway.org/hosts.txt
 wget -O i8.txt https://anti-ad.net/adguard.txt
 wget -O i9.txt https://raw.githubusercontent.com/banbendalao/ADgk/master/kill-baidu-ad.txt
 wget -O i10.txt https://raw.githubusercontent.com/xinggsf/Adblock-Plus-Rule/master/rule.txt
-wget -O i11.txt https://raw.githubusercontent.com/curbengh/urlhaus-filter/master/urlhaus-filter-agh.txt
+
 
 ::add new rules
 ::wget -O i+number url
