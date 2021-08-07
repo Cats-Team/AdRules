@@ -1,14 +1,12 @@
 # AdKillRules
-# 项目说明
-
+# 🎤项目说明
 合并类过滤广告规则订阅
-
-## 描述
+## 😎描述
 去广告规则<br/>
 适用AdGuard,AdGuardHome,ADAWAY等等<br/>
 由众多规则合并产生<br/>
 
-## 规则总数
+## 🐮🍺规则总数
 AdKillRules规则：180000+<br/>
 AdGuardRules规则：80000+<br/>
 
