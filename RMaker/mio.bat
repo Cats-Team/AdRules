@@ -13,6 +13,7 @@ wget -O i6.txt http://file.trli.club/dns/hosts.txt
 wget -O i7.txt https://adaway.org/hosts.txt
 wget -O i8.txt https://anti-ad.net/adguard.txt
 wget -O i9.txt https://raw.githubusercontent.com/banbendalao/ADgk/master/kill-baidu-ad.txt
+wget -O i10.txt https://raw.githubusercontent.com/xinggsf/Adblock-Plus-Rule/master/rule.txt
 
 
 ::add new rules
