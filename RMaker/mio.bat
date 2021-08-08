@@ -14,6 +14,8 @@ wget -O i7.txt https://adaway.org/hosts.txt
 wget -O i8.txt https://anti-ad.net/adguard.txt
 wget -O i9.txt https://raw.githubusercontent.com/banbendalao/ADgk/master/kill-baidu-ad.txt
 wget -O i10.txt https://raw.githubusercontent.com/xinggsf/Adblock-Plus-Rule/master/rule.txt
+wget -O i11.txt https://hblock.molinero.dev/hosts
+wget -O i12.txt https://easylist-downloads.adblockplus.org/antiadblockfilters.txt
 
 
 ::add new rules
