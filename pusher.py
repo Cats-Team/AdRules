@@ -2,9 +2,6 @@
 import requests
 import json
 
-adguard = r".\adguard.txt"
-AdKillRules = r".\AdKillRules.txt"
-
 def iter_count(file_name):
     from itertools import (takewhile, repeat)
     buffer = 1024 * 1024
