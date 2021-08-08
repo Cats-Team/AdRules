@@ -30,5 +30,6 @@ jobs:
       - name: Push message to PushPush
         run: |
           pip3 install requests
+          pip3 install itertools
           python3 .\pusher.py
 
