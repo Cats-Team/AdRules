@@ -8,18 +8,16 @@ wget -O i1.txt https://adguardteam.github.io/AdGuardSDNSFilter/Filters/filter.tx
 wget -O i2.txt https://raw.githubusercontent.com/o0HalfLife0o/list/master/ad-pc.txt
 wget -O i3.txt https://raw.githubusercontent.com/o0HalfLife0o/list/master/ad-edentw.txt
 wget -O i4.txt https://raw.githubusercontent.com/banbendalao/ADgk/master/ADgk.txt
-wget -O i5.txt https://neodev.team/lite_adblocker
-wget -O i6.txt http://file.trli.club/dns/hosts.txt
-wget -O i7.txt https://adaway.org/hosts.txt
-wget -O i8.txt https://anti-ad.net/adguard.txt
-wget -O i9.txt https://raw.githubusercontent.com/banbendalao/ADgk/master/kill-baidu-ad.txt
-wget -O i10.txt https://raw.githubusercontent.com/xinggsf/Adblock-Plus-Rule/master/rule.txt
-wget -O i11.txt https://hblock.molinero.dev/hosts
-wget -O i12.txt https://easylist-downloads.adblockplus.org/antiadblockfilters.txt
-wget -O i13.txt https://raw.githubusercontent.com/uniartisan/adblock_list/master/adblock.txt
-wget -O i14.txt https://raw.githubusercontent.com/uniartisan/adblock_list/master/adblock_lite.txt
-wget -O i15.txt https://raw.githubusercontent.com/uniartisan/adblock_list/master/adblock_plus.txt
-wget -O i16.txt https://raw.githubusercontent.com/uniartisan/adblock_list/master/adblock_privacy.txt
+wget -O i5.txt http://file.trli.club/dns/hosts.txt
+wget -O i6.txt https://adaway.org/hosts.txt
+wget -O i7.txt https://anti-ad.net/adguard.txt
+wget -O i8.txt https://raw.githubusercontent.com/banbendalao/ADgk/master/kill-baidu-ad.txt
+wget -O i9.txt https://raw.githubusercontent.com/xinggsf/Adblock-Plus-Rule/master/rule.txt
+wget -O i10.txt https://easylist-downloads.adblockplus.org/antiadblockfilters.txt
+wget -O i11.txt https://raw.githubusercontent.com/uniartisan/adblock_list/master/adblock.txt
+wget -O i12.txt https://raw.githubusercontent.com/uniartisan/adblock_list/master/adblock_lite.txt
+wget -O i13.txt https://raw.githubusercontent.com/uniartisan/adblock_list/master/adblock_plus.txt
+wget -O i14.txt https://raw.githubusercontent.com/uniartisan/adblock_list/master/adblock_privacy.txt
 
 ::add new rules
 ::wget -O i+number url
