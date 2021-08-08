@@ -36,9 +36,15 @@ gawk "!a[$0]++" mergd.txt>nore.txt
 (FOR /F "eol=[ delims=" %%i in (ktmp.txt) do (echo %%i))>stmp.txt
 (FOR /F "eol=! delims=" %%i in (stmp.txt) do (echo %%i))>nord.txt
 
+::count rules
+for /f "tokens=2 delims=:" %%a in ('find /c /v "" nord.txt')do set/a rnum=%%a
+::error
+set/a rnum+=1
+
 ::add title and date
 echo ! Version: %date%>>tpdate.txt
 echo ! Last modified: %date%T%time%Z>>tpdate.txt
+echo ! Count: %rnum%>>tpdate.txt
 copy title.dd+tpdate.txt+nord.txt+brules.dd final.txt
 
 ::end
