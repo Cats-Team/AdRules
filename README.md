@@ -60,6 +60,6 @@ AdGuardRules规则：80000+<br/>
 - [x] 合并规则  
 - [x] 去重规则  
 - [x] 更新Readme.md
-- [ ] 显示规则数量  
+- [x] 显示规则数量  
 ## 访问量
 ![](http://profile-counter.glitch.me/cats-team/count.svg)
