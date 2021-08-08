@@ -44,7 +44,7 @@ set/a rnum+=1
 ::add title and date
 echo ! Version: %date%>>tpdate.txt
 echo ! Last modified: %date%T%time%Z>>tpdate.txt
-echo ! Count: %rnum%>>tpdate.txt
+echo ! Total count: %rnum%>>tpdate.txt
 copy title.dd+tpdate.txt+nord.txt+brules.dd final.txt
 
 ::end
