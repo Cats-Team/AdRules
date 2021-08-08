@@ -4,11 +4,11 @@ import json
 adguard = r".\adguard.txt"
 AdKillRules = r".\AdKillRules.txt"
 count_a = -1
-for count_a, line in enumerate(open(adguard, 'r').readlines()):
+for count_a, line in enumerate(open(adguard, 'rU').readlines()):
 	count_a += 1
 	
 count_A = -1
-for count_A, line in enumerate(open(AdKillRules, 'r').readlines()):
+for count_A, line in enumerate(open(AdKillRules, 'rU').readlines()):
 	count_A += 1
 
 token = 'c2e9e551adbc46029d98b06ec0e1c77c'
