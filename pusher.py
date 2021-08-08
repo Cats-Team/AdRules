@@ -3,13 +3,20 @@ import json
 
 adguard = r".\adguard.txt"
 AdKillRules = r".\AdKillRules.txt"
-count_a = -1
-for count_a, line in enumerate(open(adguard, 'rU').readlines()):
-	count_a += 1
-	
-count_A = -1
-for count_A, line in enumerate(open(AdKillRules, 'rU').readlines()):
-	count_A += 1
+
+def iter_count(adguard):
+    from itertools import (takewhile, repeat)
+    buffer = 1024 * 1024
+    with open(file_name) as f:
+        buf_gen = takewhile(lambda x: x, (f.read(buffer) for _ in repeat(None)))
+        return sum(buf.count('\n') for buf in buf_gen)
+
+def iter_count(AdKillRules):
+    from itertools import (takewhile, repeat)
+    buffer = 1024 * 1024
+    with open(file_name) as f:
+        buf_gen = takewhile(lambda x: x, (f.read(buffer) for _ in repeat(None)))
+        return sum(buf.count('\n') for buf in buf_gen)
 
 token = 'c2e9e551adbc46029d98b06ec0e1c77c'
 title = 'AdRules'
