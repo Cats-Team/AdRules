@@ -20,7 +20,7 @@ count_a = iter_count("adguard.txt")
 count_A = iter_count("AdKillRules.txt")
 token = 'c2e9e551adbc46029d98b06ec0e1c77c'
 title = 'AdRules'
-content = 'AdRules规则更新完毕，来自Github~ <br>adguard.txt共计' + str(count_a) + '条规则，<br>AdKillRules' + str(count_A) + '条规则。'
+content = 'AdRules规则更新完毕，来自Github~<br>main分支 <br>adguard.txt共计' + str(count_a) + '条规则，<br>AdKillRules' + str(count_A) + '条规则。'
 
 url = 'http://pushplus.hxtrip.com/send'
 data = {
