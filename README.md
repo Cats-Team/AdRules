@@ -3,7 +3,7 @@
 合并类过滤广告规则订阅
 ## 😎描述
 去广告规则<br/>
-适用AdGuard,AdGuardHome,ADAWAY等等<br/>
+适用AdGuard,AdGuardHome等等<br/>
 由众多规则合并产生<br/>
 
 ## 🐮🍺规则总数
