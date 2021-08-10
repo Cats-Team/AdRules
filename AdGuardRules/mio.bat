@@ -21,6 +21,9 @@ wget -O i7.txt https://filters.adtidy.org/android/filters/4_optimized.txt
 del /f /q *.html
 del /f /q *hsts
 
+::blankline
+for %%i in (i*.txt) do type blank.dd>>%%i
+
 ::TheRuleMaker
 ::No need to change
 
