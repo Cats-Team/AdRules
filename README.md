@@ -7,8 +7,8 @@
 由众多规则合并产生<br/>
 
 ## 🐮🍺规则总数
-AdKillRules规则：180000+<br/>
-AdGuardRules规则：80000+<br/>
+AdKillRules规则：210000+<br/>
+AdGuardRules规则：90000+<br/>
 
 ## 🔖 过滤工具推荐
 
