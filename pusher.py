@@ -9,18 +9,12 @@ def iter_count(file_name):
         buf_gen = takewhile(lambda x: x, (f.read(buffer) for _ in repeat(None)))
         return sum(buf.count('\n') for buf in buf_gen)
 
-def iter_count(file_name):
-    from itertools import (takewhile, repeat)
-    buffer = 1024 * 1024
-    with open(file_name, 'r', encoding='utf-8') as f:
-        buf_gen = takewhile(lambda x: x, (f.read(buffer) for _ in repeat(None)))
-        return sum(buf.count('\n') for buf in buf_gen)
-
 count_a = iter_count("adguard.txt")
 count_A = iter_count("AdKillRules.txt")
+count_d = iter_count("dns.txt")
 token = 'c2e9e551adbc46029d98b06ec0e1c77c'
 title = 'AdRules'
-content = 'AdRules规则更新完毕，来自Github~<br>main分支 <br>adguard.txt共计' + str(count_a) + '条规则，<br>AdKillRules' + str(count_A) + '条规则。'
+content = 'AdRules规则更新完毕，来自Github~<br>adguard.txt共计' + str(count_a) + '条规则，<br>AdKillRules共计' + str(count_A) + '条规则，<br>dns.txt共计' + str(count_d) + '条规则。'
 
 url = 'http://pushplus.hxtrip.com/send'
 data = {
