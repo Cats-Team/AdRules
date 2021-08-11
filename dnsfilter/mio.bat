@@ -5,8 +5,9 @@ cd aa
 ::start download
 
 wget -O i1.txt https://adguardteam.github.io/AdGuardSDNSFilter/Filters/filter.txt
-wget -O i5.txt https://file.trli.club/dns/hosts.txt
-wget -O i6.txt https://adaway.org/hosts.txt
+wget -O i2.txt https://file.trli.club/dns/hosts.txt
+wget -O i3.txt https://adaway.org/hosts.txt
+wget -O i4.txt https://hblock.molinero.dev/hosts
 
 ::add new rules
 ::wget -O i+number url
@@ -50,5 +51,5 @@ echo ! Total count: %rnum%>>tpdate.txt
 copy title.dd+tpdate.txt+nord.txt+brules.dd final.txt
 
 ::end
-copy /y final.txt ..\..\dnsfilter.txt
+copy /y final.txt ..\..\AdKillRules.txt
 del /f /q *.txt&exit
