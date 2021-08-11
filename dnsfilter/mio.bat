@@ -8,6 +8,7 @@ wget -O i1.txt https://adguardteam.github.io/AdGuardSDNSFilter/Filters/filter.tx
 wget -O i2.txt https://file.trli.club/dns/hosts.txt
 wget -O i3.txt https://adaway.org/hosts.txt
 wget -O i4.txt https://hblock.molinero.dev/hosts
+wget -O i5.txt https://anti-ad.net/easylist.txt
 
 ::add new rules
 ::wget -O i+number url
