@@ -49,7 +49,8 @@ AdGuardRules规则：90000+<br/>
 |  :----:  | :----:  | :----:  |  :----:  |  :----:  |
 | AdkillRules | [加速链接①](https://raw.fastgit.org/Cats-Team/AdRules/main/AdKillRules.txt) |[加速链接②](https://cats-team.coding.net/p/adguard/d/AdRules/git/raw/main/AdKillRules.txt) |[加速链接③](https://cdn.jsdelivr.net/gh/Cats-Team/AdRules@latest/AdKillRules.txt) |[加速链接④](https://cdn.staticaly.com/gh/Cats-Team/AdRules@latest/AdKillRules.txt)|
 | AdGuardRules | [加速链接①](https://raw.fastgit.org/Cats-Team/AdRules/main/adguard.txt) | [加速链接②](https://cats-team.coding.net/p/adguard/d/AdRules/git/raw/main/adguard.txt)|[加速链接③](https://cdn.jsdelivr.net/gh/Cats-Team/AdRules@latest/adguard.txt) |[加速链接④](https://cdn.staticaly.com/gh/Cats-Team/AdRules@latest/adguard.txt) |
-
+| DNSFiller | [加速链接①](https://raw.fastgit.org/Cats-Team/AdRules/main/dns.txt) | [加速链接②](https://cats-team.coding.net/p/adguard/d/AdRules/git/raw/main/dns.txt) | [加速链接③](https://cdn.jsdelivr.net/gh/Cats-Team/AdRules@main/dns.txt) |[加速链接④](https://cdn.staticaly.com/gh/Cats-Team/AdRules/main/dns.txt)|
+| Allowlist|[加速链接①](https://raw.fastgit.org/Cats-Team/AdRules/main/allow.txt)|[加速链接②](https://cats-team.coding.net/p/adguard/d/AdRules/git/raw/main/allow.txt)|[加速链接③](https://cdn.jsdelivr.net/gh/Cats-Team/AdRules@main/allow.txt)|[加速链接④](https://cdn.staticaly.com/gh/Cats-Team/AdRules/main/allow.txt)|
 # Coding地址：[链接](https://cats-team.coding.net/public/adguard/AdRules/git/files)
 # 特别鸣谢
 * [@Cats-team](https://github.com/Cats-Team)
