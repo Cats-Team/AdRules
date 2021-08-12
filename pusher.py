@@ -1,6 +1,7 @@
 # -*- coding: UTF-8 -*-
 import requests
 import json
+import os
 
 def iter_count(file_name):
     from itertools import (takewhile, repeat)
@@ -14,7 +15,7 @@ count_al = iter_count("allow.txt") -8
 count_A = iter_count("AdKillRules.txt") -8
 count_d = iter_count("dns.txt") -8
 
-PUSH_TOKEN = process.env.PUSH_TOKEN
+PUSH_TOKEN = os.environ[PUSH_TOKEN]
 TITLE = 'AdRules'
 CONTENT = 'AdRules规则更新完毕，来自Github~<br>allow.txt共计' + str(count_al) + '条规则，<br>adguard.txt共计' + str(count_a) + '条规则，<br>AdKillRules共计' + str(count_A) + '条规则，<br>dns.txt共计' + str(count_d) + '条规则。'
 
