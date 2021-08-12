@@ -3,12 +3,9 @@ import requests
 import json
 import os
 
-
 PUSH_TOKEN = os.environ["SCKEY"]
 TG_TOKEN = os.environ["TG_TOKEN"]
 CHAT_ID = os.environ["CHAT_ID"]
-
-CONTENT = 'AdRules规则更新完毕，来自Github~<br>allow.txt共计' + str(count_al) + '条规则，<br>adguard.txt共计' + str(count_a) + '条规则，<br>AdKillRules共计' + str(count_A) + '条规则，<br>dns.txt共计' + str(count_d) + '条规则。'
 
 def iter_count(file_name):
     from itertools import (takewhile, repeat)
@@ -51,6 +48,8 @@ def post_pp():
     body = json.dumps(data).encode(encoding = 'utf-8')
     headers = {'Content-Type':'application/json'}
     requests.post(url, data=body, headers=headers)
+
+CONTENT = 'AdRules规则更新完毕，来自Github~<br>allow.txt共计' + str(count_al) + '条规则，<br>adguard.txt共计' + str(count_a) + '条规则，<br>AdKillRules共计' + str(count_A) + '条规则，<br>dns.txt共计' + str(count_d) + '条规则。'
 
 post_tg(CONTENT)
 post_pp()
