@@ -14,6 +14,13 @@ def iter_count(file_name):
         buf_gen = takewhile(lambda x: x, (f.read(buffer) for _ in repeat(None)))
         return sum(buf.count('\n') for buf in buf_gen)
 
+count_a = iter_count("adguard.txt") -8
+count_al = iter_count("allow.txt") -8
+count_A = iter_count("AdKillRules.txt") -8
+count_d = iter_count("dns.txt") -8
+
+CONTENT = 'AdRules规则更新完毕，来自Github~<br>allow.txt共计' + str(count_al) + '条规则，<br>adguard.txt共计' + str(count_a) + '条规则，<br>AdKillRules共计' + str(count_A) + '条规则，<br>dns.txt共计' + str(count_d) + '条规则。'
+
 def post_tg(message):
     telegram_message = f"{message}"
     params = (
@@ -31,14 +38,7 @@ def post_tg(message):
         print("Telegram Error")
 
 def post_pp():
-    count_a = iter_count("adguard.txt") -8
-    count_al = iter_count("allow.txt") -8
-    count_A = iter_count("AdKillRules.txt") -8
-    count_d = iter_count("dns.txt") -8
-
     TITLE = 'AdRules'
-    CONTENT = 'AdRules规则更新完毕，来自Github~<br>allow.txt共计' + str(count_al) + '条规则，<br>adguard.txt共计' + str(count_a) + '条规则，<br>AdKillRules共计' + str(count_A) + '条规则，<br>dns.txt共计' + str(count_d) + '条规则。'
-
     url = 'http://pushplus.hxtrip.com/send'
     data = {
 		  "token":PUSH_TOKEN,
@@ -48,8 +48,6 @@ def post_pp():
     body = json.dumps(data).encode(encoding = 'utf-8')
     headers = {'Content-Type':'application/json'}
     requests.post(url, data=body, headers=headers)
-
-CONTENT = 'AdRules规则更新完毕，来自Github~<br>allow.txt共计' + str(count_al) + '条规则，<br>adguard.txt共计' + str(count_a) + '条规则，<br>AdKillRules共计' + str(count_A) + '条规则，<br>dns.txt共计' + str(count_d) + '条规则。'
 
 post_tg(CONTENT)
 post_pp()
