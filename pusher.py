@@ -35,7 +35,7 @@ def post_tg(message):
     if telegram_status == 200:
         print(f"INFO: Telegram Message sent")
     else:
-        print("Telegram Error")
+        print()
 
 def post_pp():
     TITLE = 'AdRules'
