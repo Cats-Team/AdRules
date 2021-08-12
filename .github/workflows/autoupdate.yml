@@ -4,7 +4,10 @@ on:
     - cron: '0 22,10 * * *'
 
   workflow_dispatch:
-
+    
+env:
+  PUSH_TOKEN: ${{ secret.PUSH_TOKEN }}
+  
 jobs:
   myjob:
     runs-on: windows-latest
