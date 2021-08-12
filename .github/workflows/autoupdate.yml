@@ -6,7 +6,7 @@ on:
   workflow_dispatch:
     
 env:
-  PUSH_TOKEN: ${{ secrets.PUSH_TOKEN }}
+  SCKEY: ${{ secrets.SCKEY }}
   
 jobs:
   myjob:
