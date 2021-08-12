@@ -35,5 +35,6 @@ jobs:
           git push -u origin --all
       - name: Push message to PushPush
         run: |
+          pip3 install requests
           python3 .\pusher.py
 
