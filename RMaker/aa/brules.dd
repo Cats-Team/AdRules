@@ -1,5 +1,6 @@
 ! ------加强屏蔽Start------ !
 
+! 某广告
 malimali2.com##div.leo-container:nth-child(4) > div:nth-child(7)
 malimali2.com##div.leo-container:nth-child(4) > div:nth-child(6)
 malimali2.com##div.leo-container:nth-child(4) > div:nth-child(5)
@@ -7,8 +8,15 @@ malimali2.com##div.leo-container:nth-child(4) > div:nth-child(5)
 ! -------加强屏蔽End------- !
 
 ! -------白名单Start------- !
-
+! CF的管理
 @@||dash.cloudflare.com^$domain=dash.cloudflare.com,important
+
+! 图片
 @@||inews.gtimg.com^
+
+! 锁屏画报正常化
+@@||wallpaper.cdn.pandora.xiaomi.com^$important
+@@||package.wallpaper.cdn.pandora.xiaomi.com.lan^$important
+@@||w.pandora.xiaomi.com^$important
 
 ! --------白名单End-------- !
