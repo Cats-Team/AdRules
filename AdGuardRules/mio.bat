@@ -36,8 +36,7 @@ gawk "!a[$0]++" mergd.txt>nore.txt
 
 ::del comments
 (findstr /r /b "^/." nore.txt)>ntpa.txt
-(findstr /r /v /b "^/." nore.txt)>ntpq.txt
-(findstr /v /b /e "#[^#]*" ntpq.txt)>ntpf.txt
+(findstr /r /v /b "^/." nore.txt)>ntpf.txt
 (for /f "eol=! delims=" %%i in (ntpf.txt) do (echo %%i))>ntps.txt
 (for /f "eol=[ delims=" %%i in (ntps.txt) do (echo %%i))>nord.txt
 type ntpa.txt>>nord.txt
