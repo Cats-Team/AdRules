@@ -55,10 +55,11 @@ Allow规则：3000+
 | Allowlist|[加速链接①](https://raw.fastgit.org/Cats-Team/AdRules/main/allow.txt)|[加速链接②](https://cats-team.coding.net/p/adguard/d/AdRules/git/raw/main/allow.txt)|[加速链接③](https://cdn.jsdelivr.net/gh/Cats-Team/AdRules@main/allow.txt)|[加速链接④](https://cdn.staticaly.com/gh/Cats-Team/AdRules/main/allow.txt)|
 
 ### 一键订阅（Coding链接）
-AdkillRules | [一键订阅](https://subscribe.adblockplus.org/?location=https://cats-team.coding.net/p/adguard/d/AdRules/git/raw/main/AdKillRules.txt)
-AdGuardRules | [一键订阅](https://subscribe.adblockplus.org/?location=https://cats-team.coding.net/p/adguard/d/AdRules/git/raw/main/adguard.txt)
-DNSFilter | [一键订阅](https://subscribe.adblockplus.org/?location=https://cats-team.coding.net/p/adguard/d/AdRules/git/raw/main/dns.txt)
-Allowlist | [一键订阅](https://subscribe.adblockplus.org/?location=https://cats-team.coding.net/p/adguard/d/AdRules/git/raw/main/allow.txt)
+| 📃 规则名称   | 🚀 一键订阅 |
+|AdkillRules | [一键订阅](https://subscribe.adblockplus.org/?location=https://cats-team.coding.net/p/adguard/d/AdRules/git/raw/main/AdKillRules.txt) |
+|AdGuardRules | [一键订阅](https://subscribe.adblockplus.org/?location=https://cats-team.coding.net/p/adguard/d/AdRules/git/raw/main/adguard.txt) |
+|DNSFilter | [一键订阅](https://subscribe.adblockplus.org/?location=https://cats-team.coding.net/p/adguard/d/AdRules/git/raw/main/dns.txt) |
+|Allowlist | [一键订阅](https://subscribe.adblockplus.org/?location=https://cats-team.coding.net/p/adguard/d/AdRules/git/raw/main/allow.txt) |
 
 ## 🚛 完善项目
 
