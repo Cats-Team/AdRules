@@ -56,6 +56,7 @@ Allow规则：3000+
 
 ### 一键订阅（Coding链接）
 | 📃 规则名称   | 🚀 一键订阅 |
+|  :----:  | :----:  |
 |AdkillRules | [一键订阅](https://subscribe.adblockplus.org/?location=https://cats-team.coding.net/p/adguard/d/AdRules/git/raw/main/AdKillRules.txt) |
 |AdGuardRules | [一键订阅](https://subscribe.adblockplus.org/?location=https://cats-team.coding.net/p/adguard/d/AdRules/git/raw/main/adguard.txt) |
 |DNSFilter | [一键订阅](https://subscribe.adblockplus.org/?location=https://cats-team.coding.net/p/adguard/d/AdRules/git/raw/main/dns.txt) |
