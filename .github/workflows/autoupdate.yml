@@ -1,7 +1,10 @@
 name: Update Rules
-on:
+on: 
   schedule:
     - cron: '0 22,10 * * *'
+  push:
+   branches:
+    - main
 
   workflow_dispatch:
     
