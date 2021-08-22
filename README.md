@@ -9,7 +9,7 @@
 ## 🐮🍺规则总数
 AdKillRules规则：210000+<br/>
 AdGuardRules规则：90000+<br/>
-DNSFilter规则：27000+  
+DNSFilter规则：60000+  
 Allow规则：3000+  
 
 ## 🔖 过滤工具推荐
