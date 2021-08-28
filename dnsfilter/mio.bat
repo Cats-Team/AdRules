@@ -43,7 +43,7 @@ gawk "!a[$0]++" mergd.txt>nore.txt
 type ntpa.txt>>nora.txt
 
 ::count rules
-for /f "tokens=2 delims=:" %%a in ('find /c /v "" nord.txt')do set/a rnum=%%a
+for /f "tokens=2 delims=:" %%a in ('find /c /v "" nora.txt')do set/a rnum=%%a
 ::error
 set/a rnum+=1
 
@@ -51,7 +51,7 @@ set/a rnum+=1
 echo ! Version: %date%>>tpdate.txt
 echo ! Last modified: %date%T%time%Z>>tpdate.txt
 echo ! Total count: %rnum%>>tpdate.txt
-copy title.dd+tpdate.txt+nord.txt+brules.dd final.txt
+copy title.dd+tpdate.txt+nora.txt+brules.dd final.txt
 
 ::end
 copy /y final.txt ..\..\dns.txt
