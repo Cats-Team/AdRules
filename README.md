@@ -7,7 +7,7 @@
 由众多规则合并产生<br/>
 
 ## 🐮🍺规则总数
-AdKillRules规则：210000+<br/>
+AdKillRules规则：170000+<br/>
 AdGuardRules规则：90000+<br/>
 DNSFilter规则：60000+  
 Allow规则：3000+  
