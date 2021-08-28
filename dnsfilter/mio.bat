@@ -39,7 +39,9 @@ gawk "!a[$0]++" mergd.txt>nore.txt
 (for /f "eol=! delims=" %%i in (ntpf.txt) do (echo %%i))>ntps.txt
 (for /f "eol=[ delims=" %%i in (ntps.txt) do (echo %%i))>nord.txt
 (for /f "eol=/ delims=" %%i in (nord.txt) do (echo %%i))>norc.txt
-type ntpa.txt>>norc.txt
+(for /f "eol=$ delims=" %%i in (norc.txt) do (echo %%i))>norb.txt
+(for /f "eol=# delims=" %%i in (norb.txt) do (echo %%i))>nora.txt
+type ntpa.txt>>nora.txt
 
 ::count rules
 for /f "tokens=2 delims=:" %%a in ('find /c /v "" nord.txt')do set/a rnum=%%a
