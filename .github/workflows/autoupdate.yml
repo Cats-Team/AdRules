@@ -24,6 +24,7 @@ jobs:
           .\RMaker\mio.bat
           .\AdGuardRules\mio.bat
           .\dnsfilter\mio.bat
+          .\Allowlist\mio.bat
       - name: Git push assets to github & coding
         run: |
           git init
