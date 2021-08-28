@@ -8,7 +8,7 @@ wget -O i1.txt https://adguardteam.github.io/AdGuardSDNSFilter/Filters/filter.tx
 wget -O i2.txt https://file.trli.club/dns/hosts.txt
 wget -O i3.txt https://adaway.org/hosts.txt
 wget -O i4.txt https://raw.githubusercontent.com/banbendalao/ADgk/master/ADgk.txt
-#wget -O i5.txt https://raw.githubusercontent.com/o0HalfLife0o/list/master/ad-pc.txt
+wget -O i5.txt https://raw.githubusercontent.com/o0HalfLife0o/list/master/ad-pc.txt
 
 ::add new rules
 ::wget -O i+number url
@@ -41,7 +41,7 @@ gawk "!a[$0]++" mergd.txt>nore.txt
 (for /f "eol=/ delims=" %%i in (nord.txt) do (echo %%i))>norc.txt
 (for /f "eol=$$ delims=" %%i in (norc.txt) do (echo %%i))>norb.txt
 (for /f "eol=### delims=" %%i in (norb.txt) do (echo %%i))>nora.txt
-type ntpa.txt>>nora.txt
+type ntpf.txt>>nora.txt
 
 ::count rules
 for /f "tokens=2 delims=:" %%a in ('find /c /v "" nord.txt')do set/a rnum=%%a
