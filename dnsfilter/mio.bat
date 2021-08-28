@@ -33,8 +33,8 @@ type i*.txt>>mergd.txt
 gawk "!a[$0]++" mergd.txt>nore.txt
 
 ::del comments
-(findstr /r /b “^\|\|.” nore.txt)>nor1.txt
-(findstr /r /b “^\@\@.” nore.txt)>nor2.txt
+(findstr /r /b “^\|\|.” nore.txt)>nord.txt
+(findstr /r /b “^\@\@.” nore.txt)>>nord.txt
 
 ::count rules
 for /f "tokens=2 delims=:" %%a in ('find /c /v "" nord.txt')do set/a rnum=%%a
