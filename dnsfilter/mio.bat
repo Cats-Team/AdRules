@@ -33,17 +33,18 @@ type i*.txt>>mergd.txt
 gawk "!a[$0]++" mergd.txt>nore.txt
 
 ::del comments
-(find /c "||" nore.txt)>ntpa.txt
-(find /c "@@" nore.txt)>ntpa.txt
-(for /f "eol=! delims=" %%i in (ntpa.txt) do (echo %%i))>ntps.txt
+(findstr /r /b "^/." nore.txt)>ntpa.txt
+(findstr /r /v /b "^/." nore.txt)>ntpq.txt
+(findstr /v /b /e "#[^#]*" ntpq.txt)>ntpf.txt
+(for /f "eol=! delims=" %%i in (ntpf.txt) do (echo %%i))>ntps.txt
 (for /f "eol=[ delims=" %%i in (ntps.txt) do (echo %%i))>nord.txt
 (for /f "eol=/ delims=" %%i in (nord.txt) do (echo %%i))>norc.txt
 (for /f "eol=$$ delims=" %%i in (norc.txt) do (echo %%i))>norb.txt
 (for /f "eol=### delims=" %%i in (norb.txt) do (echo %%i))>nora.txt
-type ntpa.txt>>nora.txt
+type ntpf.txt>>nora.txt
 
 ::count rules
-for /f "tokens=2 delims=:" %%a in ('find /c /v "" nora.txt')do set/a rnum=%%a
+for /f "tokens=2 delims=:" %%a in ('find /c /v "" nord.txt')do set/a rnum=%%a
 ::error
 set/a rnum+=1
 
@@ -51,7 +52,7 @@ set/a rnum+=1
 echo ! Version: %date%>>tpdate.txt
 echo ! Last modified: %date%T%time%Z>>tpdate.txt
 echo ! Total count: %rnum%>>tpdate.txt
-copy title.dd+tpdate.txt+nora.txt+brules.dd final.txt
+copy title.dd+tpdate.txt+nord.txt+brules.dd final.txt
 
 ::end
 copy /y final.txt ..\..\dns.txt
