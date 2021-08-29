@@ -39,15 +39,13 @@ for %%i in (i*.txt) do type blank.dd>>%%i
 type frules.dd>mergd.txt
 type i*.txt>>mergd.txt
 
-::nore
-gawk "!a[$0]++" mergd.txt>nore.txt
+::delete repeated rules
+gawk "!a[$0]++" mergd.txt>norm.txt
+(sort /rec 65535 norm.txt)>nore.txt
 
-::del comments
-(findstr /r /b "^/." nore.txt)>ntpa.txt
-(findstr /r /v /b "^/." nore.txt)>ntpf.txt
-(for /f "eol=! delims=" %%i in (ntpf.txt) do (echo %%i))>ntps.txt
-(for /f "eol=[ delims=" %%i in (ntps.txt) do (echo %%i))>nord.txt
-type ntpa.txt>>nord.txt
+::delete comments&rubbish
+(findstr /b /c:"@" nore.txt)>nord.txt
+(findstr /v /b /c:"@" /c:"# " /c:"！" /c:"[" /c:"!" nore.txt)>>nord.txt
 
 ::count rules
 for /f "tokens=2 delims=:" %%a in ('find /c /v "" nord.txt')do set/a rnum=%%a
