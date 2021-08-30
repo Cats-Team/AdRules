@@ -1,3 +1,10 @@
+<div align="right">
+语言（Language）:
+  CN
+  <a title="English" href="/README_EN.md">EN</a>
+</div>
+
+
 # AdKillRules
 # 🎤项目说明
 合并类过滤广告规则订阅
