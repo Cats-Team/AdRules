@@ -1,3 +1,9 @@
+<div align="right">
+Language（语言）:
+  EN
+  <a title="Chinese" href="/README.md">CN</a>
+</div>
+
 # AdKillRules
 # 🎤Project description
  Combined filtering ad rule subscription
