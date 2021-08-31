@@ -6,8 +6,8 @@
 ! 该规则合并自各大过滤器的白名单
 
 ! Version: Tue 08/31/2021
-! Last modified: Tue 08/31/2021T10:12:14.71Z
-! Total count: 3032
+! Last modified: Tue 08/31/2021T22:09:45.89Z
+! Total count: 3044
 @@||weixin.qq.com^
 @@||cn.bing.com^$important
 @@||img.zuoyebang.cc^$important
@@ -1606,6 +1606,34 @@
 @@||hcaptcha.com/captcha/$script,subdocument
 @@||hcaptcha.com^*/api.js?
 @@||recaptcha.net/recaptcha/$script
+@@||apple.com^$generichide
+@@||bitbucket.org^$generichide
+@@||curiositystream.com^$generichide
+@@||discord.com^$generichide
+@@||disneyplus.com^$generichide
+@@||fastmail.com^$generichide
+@@||github.com^$generichide
+@@||gitlab.com^$generichide
+@@||hbomax.com^$generichide
+@@||mail.protonmail.com^$generichide
+@@||netflix.com^$generichide
+@@||open.spotify.com^$generichide
+@@||pandora.com^$generichide
+@@||paramountplus.com^$generichide
+@@||peacocktv.com^$generichide
+@@||slack.com^$generichide
+@@||teams.microsoft.com^$generichide
+@@||tidal.com^$generichide
+@@||tv.youtube.com^$generichide
+@@||web.archive.org^$generichide
+@@||web.telegram.org^$generichide
+@@||wikibooks.org^$generichide
+@@||wikidata.org^$generichide
+@@||wikinews.org^$generichide
+@@||wikipedia.org^$generichide
+@@||wikiquote.org^$generichide
+@@||wikiversity.org^$generichide
+@@||wiktionary.org^$generichide
 @@||ps.w.org^$image,domain=wordpress.org
 @@||s.w.org/wp-content/$stylesheet,domain=wordpress.org
 @@||wordpress.org/plugins/$domain=wordpress.org
@@ -1625,34 +1653,19 @@
 @@||googletagservices.com/tag/js/gpt.js$domain=allestoringen.be|allestoringen.nl|downdetector.ae|downdetector.ca|downdetector.cl|downdetector.co.nz|downdetector.co.uk|downdetector.co.za|downdetector.com|downdetector.com.ar|downdetector.com.au|downdetector.com.br|downdetector.com.co|downdetector.cz|downdetector.dk|downdetector.ec|downdetector.es|downdetector.fi|downdetector.fr|downdetector.gr|downdetector.hk|downdetector.hr|downdetector.hu|downdetector.id|downdetector.ie|downdetector.in|downdetector.it|downdetector.jp|downdetector.mx|downdetector.my|downdetector.no|downdetector.pe|downdetector.ph|downdetector.pk|downdetector.pl|downdetector.pt|downdetector.ro|downdetector.ru|downdetector.se|downdetector.sg|downdetector.sk|downdetector.web.tr|xn--allestrungen-9ib.at|xn--allestrungen-9ib.ch|xn--allestrungen-9ib.de
 @@||adblockplus.org^$generichide
 @@||aetv.com^$generichide
-@@||apple.com^$generichide
 @@||arstechnica.com^$generichide
 @@||bing.com/shop$generichide
 @@||brighteon.com^$generichide
 @@||cwtv.com^$generichide
 @@||dailymail.co.uk^$generichide
 @@||destinationamerica.com^$generichide
-@@||discord.com^$generichide
-@@||fastmail.com^$generichide
 @@||history.com^$generichide
-@@||mail.protonmail.com^$generichide
 @@||sciencechannel.com^$generichide
-@@||slack.com^$generichide
 @@||smallseotools.com^$generichide
 @@||sonichits.com^$generichide
 @@||soranews24.com^$generichide
-@@||teams.microsoft.com^$generichide
 @@||thefreedictionary.com^$generichide
 @@||tlc.com^$generichide
-@@||web.archive.org^$generichide
-@@||web.telegram.org^$generichide
-@@||wikibooks.org^$generichide
-@@||wikidata.org^$generichide
-@@||wikinews.org^$generichide
-@@||wikipedia.org^$generichide
-@@||wikiquote.org^$generichide
-@@||wikiversity.org^$generichide
-@@||wiktionary.org^$generichide
 @@||yibada.com^$generichide
 @@||bing.com/search?$generichide
 @@||duckduckgo.com/?q=$generichide
@@ -1905,14 +1918,12 @@
 @@||arnhemland-safaris.com/images/made/$image,~third-party
 @@||cloud.mail.ru^$image,~third-party
 @@||crystalmark.info/wp-content/uploads/*-300x250.$image,~third-party
-@@||glbimg.com^*/300x250/$image,domain=globo.com
 @@||government-and-constitution.org/images/presidential-seal-300-250.gif$image,~third-party
 @@||leffatykki.com/media/banners/tykkibanneri-728x90.png$image,~third-party
 @@||nc-myus.com/images/pub/www/uploads/merchant-logos/$image,~third-party
 @@||przegladpiaseczynski.pl/wp-content/uploads/*-300x250-$image,~third-party
 @@||radiosun.fi/wp-content/uploads/*300x250$image,~third-party
 @@||reastatic.net/150x200-$domain=realestate.com.au
-@@||resize.blogsys.jp^*/300x250/$image,domain=blog.livedoor.jp
 @@||wavepc.pl/wp-content/*-500x100.png$image,~third-party
 @@^utm_source=aff^$popup,domain=gamble.co.uk|gokkeninonlinecasino.nl|top5casinosites.co.uk
 @@||ad.doubleclick.net/ddm/$popup,domain=billiger.de|guide-epargne.be|mail.yahoo.com|nytimes.com|spaargids.be
@@ -1966,6 +1977,7 @@
 @@||stumbleupon.com^$popup,domain=pornhub.com|pornhubthbh7ap3u.onion
 @@||tumblr.com^$popup,domain=pornhub.com|pornhubthbh7ap3u.onion
 @@||twitter.com^$popup,domain=pornhub.com|pornhubthbh7ap3u.onion
+@@||s.tgfcer.com^$generichide
 @@||tq121.com.cn/j/ad/caoyu-min.js$domain=products.weather.com.cn
 @@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$domain=switch520.com
 @@.gif#$domain=b168.net|cnprint.org|huhupan.com|tgfcer.com|wgun.net
@@ -2247,7 +2259,7 @@
 @@||accounts.nintendo.com/account/js/pages/$script,~third-party
 @@||adobedtm.com/*-source.min.js$script,domain=atresplayer.com|backcountry.com|bt.com|dollargeneral.com|kroger.com|personal.natwest.com
 @@||adobedtm.com/*_source.min.js$script,domain=backcountry.com|kroger.com
-@@||adobedtm.com/launch-$script
+@@||adobedtm.com/launch-$script,xmlhttprequest
 @@||adobedtm.com^*/AppMeasurement.min.js$script,domain=apple.com|foodnetwork.com
 @@||adobedtm.com^*/AppMeasurement_Module_$script,domain=foodnetwork.com
 @@||adobedtm.com^*/launch-$script,xmlhttprequest
@@ -2267,7 +2279,7 @@
 @@||analytics.logsss.com/logsss*.min.js$script,domain=rosegal.com
 @@||analytics.twitter.com^$domain=analytics.twitter.com
 @@||ancestrycdn.com/ui-static/lib/tracking/$domain=ancestry.com
-@@||api.cxense.com/public/widget/data?$domain=marketwatch.com
+@@||api.cxense.com/public/widget/data?$domain=marketwatch.com|wsj.com
 @@||api.getmakerlog.com/discussions/$~third-party,websocket,xmlhttprequest
 @@||api.ipify.org^$script,domain=right-on.co.jp
 @@||api.ipify.org^$xmlhttprequest,domain=account.pennytel.com.au|speedcheck.ky
@@ -2406,7 +2418,7 @@
 @@||google-analytics.com/analytics.js$domain=beinsports.com|brooklinen.com|jackbox.tv|k2radio.com|koel.com|kowb1290.com|tracking.narvar.com|westernunion.com
 @@||google-analytics.com/plugins/ga/inpage_linkid.js$domain=westernunion.com
 @@||googletagmanager.com/gtag/js$script,domain=honeystinger.com|kawasaki.com|m.putlocker.how|schwab.com
-@@||googletagmanager.com/gtm.js$domain=atptour.com|bsa-whitelabel.com|chipotle.com|complex.com|crello.com|cyclingnews.com|easternbank.com|fortune.com|nflgamepass.com|pioneer.eu|royalbank.com|scotsman.com|trademe.co.nz
+@@||googletagmanager.com/gtm.js$domain=atptour.com|bsa-whitelabel.com|chipotle.com|complex.com|crello.com|cyclingnews.com|easternbank.com|fortune.com|nflgamepass.com|nordvpn.com|pioneer.eu|royalbank.com|scotsman.com|trademe.co.nz
 @@||gov.au/Scripts/ga.js$script,~third-party
 @@||guce.advertising.com/collectIdentifiers$domain=guce.advertising.com
 @@||hearstapps.com/static/comscore.$script,domain=womenshealthmag.com
