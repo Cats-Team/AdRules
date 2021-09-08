@@ -5,8 +5,8 @@
 ! Expires: 12 Hours
 ! 该规则合并自各大过滤器的白名单
 
-! Version: Tue 09/07/2021
-! Last modified: Tue 09/07/2021T22:10:56.03Z
+! Version: Wed 09/08/2021
+! Last modified: Wed 09/08/2021T10:12:30.14Z
 ! Total count: 3061
 @@||weixin.qq.com^
 @@||cn.bing.com^$important
@@ -1989,9 +1989,6 @@
 @@||stumbleupon.com^$popup,domain=pornhub.com|pornhubthbh7ap3u.onion
 @@||tumblr.com^$popup,domain=pornhub.com|pornhubthbh7ap3u.onion
 @@||twitter.com^$popup,domain=pornhub.com|pornhubthbh7ap3u.onion
-@@||ygodl.com/images/ads.jpg
-@@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$xmlhttprequest,domain=ygodl.com
-@@||ygodl.com^$generichide
 @@.gif#$domain=b168.net|cnprint.org|huhupan.com|tgfcer.com|wgun.net
 @@.png#$domain=3dpchip.com|9zvip.net|club.tgfcer.com|coolinet.com|d1-dm.com|digit77.com|e9china.net|upxin.net
 @@/ad/images/*$domain=37-express.com
@@ -2135,7 +2132,7 @@
 @@||pagead2.googlesyndication.com/pagead/js/*/show_ads_impl$domain=ff14angler.com|logi.im
 @@||pagead2.googlesyndication.com/pagead/js/*/show_ads_impl.js$domain=doitwell.tw
 @@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$domain=chtoen.com|dizhishengcheng.com|doitwell.tw|ff14angler.com|haoweichi.com|it365.abctool.info|logi.im|monnsutogatya.com|numberempire.com|patch.ali213.net|pc3mag.com|shenfendaquan.com|switch520.com|wenxuecity.com|xiebruce.top|yabook.org
-@@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$xmlhttprequest,domain=youneed.win
+@@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$xmlhttprequest,domain=ygodl.com|youneed.win
 @@||pagead2.googlesyndication.com/pagead/js/google_top_exp.js$domain=ebb.io
 @@||pagead2.googlesyndication.com/pagead/show_ads.js$domain=knowlet3389.blogspot.com|knowlet3389.blogspot.hk|knowlet3389.blogspot.jp|knowlet3389.blogspot.tw|mnighthk.net|weithenn.org
 @@||panjiachen.github.io^$generichide
@@ -2176,6 +2173,8 @@
 @@||wenxuecity.com^$generichide
 @@||xinhuanet.com/gsstatics/*/images/ad/
 @@||xinjscn.oss-cn-hangzhou.aliyuncs.com/bbs/logo.png
+@@||ygodl.com/images/ads.jpg
+@@||ygodl.com^$generichide
 @@||youaima.com/zz/play_
 @@||zpmobi.cn^*/ad.css?$stylesheet
 @@||avgle.com/video/$genericblock,generichide
@@ -2333,6 +2332,7 @@
 @@||googleoptimize.com/optimize.js$script,domain=tentree.ca
 @@||googletagmanager.com/gtm.js$domain=ads.spotify.com
 @@||gstatic.com^*/firebase-performance-standalone.js$script,domain=flightradar24.com
+@@||healthgateway.gov.bc.ca/snowplow.js$~third-party
 @@||humaninterest.com/api/analytics/$script,~third-party
 @@||kbctouch.kbc.be^*/dynatrace-$script,~third-party
 @@||lenovo.com/fea/js/adobeAnalytics/adobeAnalytics-searchComponent.js$xmlhttprequest,domain=lenovo.com
