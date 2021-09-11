@@ -40,12 +40,11 @@ Allow规则：3000+
   * [AdGuard for macOS](https://adguard.com/zh_cn/adguard-mac/overview.html)
 
 ## 🕹 项目原理
-项目使用了 GitHub Actions 在每天 UTC 时间每隔12小时更新合并一次最新规则，然后推送到 GitHub Repo。  
-配合使用四个网站提供的全球加速 CDN 来分发规则  
-①[FastGit](https://fastgit.org) （实时更新）  
+项目使用了 GitHub Actions 在每天北京时间早晚6点 更新合并一次最新规则，然后推送到 GitHub Repo。  
+配合使用四个网站提供的全球加速 CDN 来分发规则    
 ②[Coding](https://coding.net) （实时更新）   
 ③[Jsdelivr](https://www.jsdelivr.net) （具有缓存）   
-④[Staticaly](https://staticaly.io) （具有缓存）  
+
 从而实现秒秒钟更新所有去广告规则。
 
 ## 🍔 使用方法
@@ -54,12 +53,12 @@ Allow规则：3000+
 
 ## 📃 规则列表
 
-|   规则名称   | 🚀 加速地址 ① | 🚀 加速地址  ② | 🚀 加速地址 ③ | 🚀 加速地址 ④ |
-|  :----:  | :----:  | :----:  |  :----:  |  :----:  |
-| AdkillRules | [加速链接①](https://raw.fastgit.org/Cats-Team/AdRules/main/AdKillRules.txt) |[加速链接②](https://cats-team.coding.net/p/adguard/d/AdRules/git/raw/main/AdKillRules.txt) |[加速链接③](https://cdn.jsdelivr.net/gh/Cats-Team/AdRules@latest/AdKillRules.txt) |[加速链接④](https://cdn.staticaly.com/gh/Cats-Team/AdRules@latest/AdKillRules.txt)|
-| AdGuardRules | [加速链接①](https://raw.fastgit.org/Cats-Team/AdRules/main/adguard.txt) | [加速链接②](https://cats-team.coding.net/p/adguard/d/AdRules/git/raw/main/adguard.txt)|[加速链接③](https://cdn.jsdelivr.net/gh/Cats-Team/AdRules@latest/adguard.txt) |[加速链接④](https://cdn.staticaly.com/gh/Cats-Team/AdRules@latest/adguard.txt) |
-| DNSFilter | [加速链接①](https://raw.fastgit.org/Cats-Team/AdRules/main/dns.txt) | [加速链接②](https://cats-team.coding.net/p/adguard/d/AdRules/git/raw/main/dns.txt) | [加速链接③](https://cdn.jsdelivr.net/gh/Cats-Team/AdRules@main/dns.txt) |[加速链接④](https://cdn.staticaly.com/gh/Cats-Team/AdRules/main/dns.txt)|
-| Allowlist|[加速链接①](https://raw.fastgit.org/Cats-Team/AdRules/main/allow.txt)|[加速链接②](https://cats-team.coding.net/p/adguard/d/AdRules/git/raw/main/allow.txt)|[加速链接③](https://cdn.jsdelivr.net/gh/Cats-Team/AdRules@main/allow.txt)|[加速链接④](https://cdn.staticaly.com/gh/Cats-Team/AdRules/main/allow.txt)|
+|   规则名称   | 🚀 加速地址 ① | 🚀 加速地址  ② | 🚀 加速地址 ③ |
+|  :----:  | :----:  | :----:  |  :----:  |
+| AdkillRules | [加速链接①](https://cats-team.coding.net/p/adguard/d/AdRules/git/raw/main/AdKillRules.txt) |[加速链接②](https://cdn.jsdelivr.net/gh/Cats-Team/AdRules@latest/AdKillRules.txt) |
+| AdGuardRules | [加速链接①](https://cats-team.coding.net/p/adguard/d/AdRules/git/raw/main/adguard.txt)|[加速链接②](https://cdn.jsdelivr.net/gh/Cats-Team/AdRules@latest/adguard.txt) |
+| DNSFilter | [加速链接①](https://cats-team.coding.net/p/adguard/d/AdRules/git/raw/main/dns.txt) | [加速链接②](https://cdn.jsdelivr.net/gh/Cats-Team/AdRules@main/dns.txt) |
+| Allowlist| [加速链接①](https://cats-team.coding.net/p/adguard/d/AdRules/git/raw/main/allow.txt)|[加速链接②](https://cdn.jsdelivr.net/gh/Cats-Team/AdRules@main/allow.txt)|
 
 ### 一键订阅（Coding链接）
 | 📃 规则名称   | 🚀 一键订阅 |
@@ -86,5 +85,6 @@ Allow规则：3000+
 - [x] 去重规则  
 - [x] 更新Readme.md
 - [x] 显示规则数量  
+- [x] 完善Readme.md
 ## 访问量
 ![](http://profile-counter.glitch.me/cats-team/count.svg)
