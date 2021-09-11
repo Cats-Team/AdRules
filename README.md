@@ -41,15 +41,18 @@ Allow规则：3000+
 
 ## 🕹 项目原理
 项目使用了 GitHub Actions 在每天北京时间早晚6点 更新合并一次最新规则，然后推送到 GitHub Repo。  
-配合使用四个网站提供的全球加速 CDN 来分发规则    
-②[Coding](https://coding.net) （实时更新）   
-③[Jsdelivr](https://www.jsdelivr.net) （具有缓存）   
+配合使用两个网站提供的全球加速 CDN 来分发规则    
+①[Coding](https://coding.net) （实时更新）   
+②[Jsdelivr](https://www.jsdelivr.net) （具有缓存）   
 
 从而实现秒秒钟更新所有去广告规则。
 
 ## 🍔 使用方法
 **⚠️ 注意：** 该规则不是针对网络代理工具的，不要给 Surge、ShadowRocket、Quantumult(X)、Clash(X/A) 等类似工具使用！
-直接拷贝下方表格中，对应规则的加速地址，作为去广告工具的订阅规则链接即可。
+
+直接拷贝下方表格中，对应规则的地址，作为去广告工具的订阅规则链接即可。
+
+### 此列表规则均适用于DNS过滤与内容过滤器
 
 ## 📃 规则列表
 
@@ -77,7 +80,7 @@ Allow规则：3000+
 # Coding地址：[链接](https://cats-team.coding.net/public/adguard/AdRules/git/files)
 # 特别鸣谢
 * [@Cats-team](https://github.com/Cats-Team)
-* [@DoingDog](https://github.com/DoingDog)
+* [@DoingDog](https://github.com/DoingDog) 
 
 # TODO
 - [x] 更新规则  
