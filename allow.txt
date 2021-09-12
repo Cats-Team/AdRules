@@ -5,9 +5,9 @@
 ! Expires: 12 Hours
 ! 该规则合并自各大过滤器的白名单
 
-! Version: Sat 09/11/2021
-! Last modified: Sat 09/11/2021T22:10:11.53Z
-! Total count: 3067
+! Version: Sun 09/12/2021
+! Last modified: Sun 09/12/2021T10:11:32.35Z
+! Total count: 3069
 @@||p3-search.byteimg.com^
 @@||image.coolapk.com^
 @@||m5.amap.com^
@@ -1502,6 +1502,7 @@
 @@||island.lk/userfiles/image/danweem/island.gif
 @@||itv.com/itv/hserver/*/site=itv/$xmlhttprequest
 @@||itv.com/itv/tserver/$~third-party
+@@||jmap.io/*/libs/Overture.js$~third-party
 @@||jokerly.com/Okidak/adSelectorDirect.htm?id=$document,subdocument
 @@||jokerly.com/Okidak/vastChecker.htm$document,subdocument
 @@||jwpcdn.com/player/plugins/googima/$script,domain=iheart.com|video.vice.com
@@ -1611,7 +1612,7 @@
 @@||z.moatads.com^$script,domain=reuters.com
 @@||zergnet.com^$image,script,stylesheet,domain=ci.craveonline.com|ci.gamerevolution.com|ci.momtastic.com|ci.thefashionspot.com|ci.totallyher.com
 @@||zohopublic.com^*/ADManager_$subdocument,xmlhttprequest,domain=manageengine.com|zohopublic.com
-@@||google.com/recaptcha/
+@@||google.com/recaptcha/$csp,subdocument
 @@||gstatic.com/recaptcha/
 @@||hcaptcha.com/captcha/$script,subdocument
 @@||hcaptcha.com^*/api.js?
@@ -2341,7 +2342,7 @@
 @@||humaninterest.com/api/analytics/$script,~third-party
 @@||js.taplytics.com/jssdk/$domain=foxnews.com
 @@||kbctouch.kbc.be^*/dynatrace-$script,~third-party
-@@||lenovo.com/fea/js/adobeAnalytics/adobeAnalytics-searchComponent.js$xmlhttprequest,domain=lenovo.com
+@@||lenovo.com/fea/js/adobeAnalytics/$script,~third-party,xmlhttprequest
 @@||live.house.gov/js/analytics.$script,~third-party
 @@||online.tivo.com/assets/tve/common/js/vendor/jsnlog/$script,~third-party
 @@||realtor.com/rentals/api/optimizely.js$script,~third-party
@@ -2785,10 +2786,11 @@
 @@||googletagmanager.com/gtm.js$script,domain=cdon.fi|como.fi|episodi.fi|fum.fi|inferno.fi|rumba.fi|soundi.fi|tilt.fi|veho.fi
 @@||high.auriro.net/http/600x400/$image,domain=afterdawn.com|hardware.fi
 @@||images.sprinklecontent.com^$image,domain=como.fi|episodi.fi|fum.fi|inferno.fi|kaaoszine.fi|rumba.fi|soundi.fi|tilt.fi
-@@||inpref.s3.amazonaws.com/frosmo.easy.js$domain=kauppahalli24.fi
+@@||inpref.s3.amazonaws.com/frosmo.easy.js$domain=elisa.fi|kauppahalli24.fi
 @@||inpref.s3.amazonaws.com/sites/$script,domain=kauppahalli24.fi
 @@||leiki.com/focus/$script,domain=anna.fi|como.fi|episodi.fi|fum.fi|inferno.fi|kaksplus.fi|rumba.fi|seura.fi|soundi.fi|tilt.fi
 @@||lekane.net/lekane/dialogue-tracking.js?$script
+@@||mpsnare.iesnare.com/snare.js$script,domain=power.fi
 @@||nettix.fi^*_analytics.js$domain=nettiauto.com|nettikaravaani.com|nettikone.com|nettimokki.com|nettimoto.com|nettivaraosa.com
 @@||scdn.cxense.com/cx.js$script,domain=ksml.fi|savonsanomat.fi
 @@||widgets.spklw.com/v1/$xmlhttprequest,domain=como.fi|episodi.fi|fum.fi|inferno.fi|kaaoszine.fi|rumba.fi|soundi.fi|tilt.fi
@@ -2850,7 +2852,7 @@
 @@||ad.pr.ameba.jp/tpc/list/$xmlhttprequest
 @@||adobedtm.com^*-libraryCode_source.min.js$script,domain=disneyplus.disney.co.jp
 @@||adobedtm.com^*/mbox-contents-$script,domain=fcbarcelona.jp|sony.jp
-@@||adobedtm.com^*/satelliteLib-$script,domain=fcbarcelona.jp|radiko.jp|sony.jp
+@@||adobedtm.com^*/satelliteLib-$script,domain=fcbarcelona.jp|radiko.jp|sony.jp|support.nec-lavie.jp
 @@||allabout.co.jp/mtx_cnt.js$script,~third-party
 @@||analytics.edgekey.net/config/$xmlhttprequest,domain=nhk.or.jp
 @@||analytics.edgekey.net/html5/akamaihtml5-min.js$domain=nhk.or.jp
