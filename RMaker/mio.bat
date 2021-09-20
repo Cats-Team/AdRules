@@ -45,7 +45,7 @@ gawk "!a[$0]++" mergd.txt>norm.txt
 
 ::delete comments&rubbish
 (findstr /b /c:"@" nore.txt)>nord.txt
-(findstr /v /b /c:"# " /c:"@ " /c:"！" /c:"[" /c:"!" nore.txt)>>nord.txt
+(findstr /v /b /c:"@" /c:"# " /c:"！" /c:"[" /c:"!" nore.txt)>>nord.txt
 
 ::count rules
 for /f "tokens=2 delims=:" %%a in ('find /c /v "" nord.txt')do set/a rnum=%%a
