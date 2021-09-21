@@ -32,12 +32,11 @@ type frules.dd>mergd.txt
 type i*.txt>>mergd.txt
 
 ::delete repeated rules
-gawk "!a[$0]++" mergd.txt>norm.txt
-(sort /rec 65535 norm.txt)>nore.txt
+set LC_ALL='C'
+s -u -R --output=nore.txt mergd.txt
 
 ::delete comments&rubbish
-(findstr /b /c:"@" nore.txt)>nord.txt
-(findstr /v /b /c:"@" /c:"# " /c:"！" /c:"[" /c:"!" nore.txt)>>nord.txt
+(findstr /v /b /c:"# " /c:"！" /c:"[" /c:"!" nore.txt)>>nord.txt
 
 ::count rules
 for /f "tokens=2 delims=:" %%a in ('find /c /v "" nord.txt')do set/a rnum=%%a
