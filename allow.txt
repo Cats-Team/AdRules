@@ -5,9 +5,9 @@
 ! Expires: 12 Hours
 ! 该规则合并自各大过滤器的白名单
 
-! Version: Sun 09/26/2021
-! Last modified: Sun 09/26/2021T22:10:49.78Z
-! Total count: 3110
+! Version: Mon 09/27/2021
+! Last modified: Mon 09/27/2021T10:12:31.53Z
+! Total count: 3098
 @@||bkimg.cdn.bcebos.com^
 @@||imgstat.baidu.com^
 @@||v6lvs.com^
@@ -1347,7 +1347,6 @@
 @@||ajax.googleapis.com/ajax/libs/$script,domain=heapfiles.com|vidoza.co|vidoza.net
 @@||cdn.vidoza.co/js/$script,domain=heapfiles.com|vidoza.co|vidoza.net
 @@||cdnjs.cloudflare.com/ajax/libs/$script,domain=heapfiles.com|vidoza.co|vidoza.net
-@@||google.com/recaptcha/$csp,domain=vidoza.co|vidoza.net
 @@||vidoza.net^$image,script,domain=heapfiles.com|vidoza.co|vidoza.net
 @@||ajax.googleapis.com/ajax/libs/$script,domain=govid.co
 @@||akamaiedge.net^$domain=canyoublockit.com
@@ -1365,8 +1364,6 @@
 @@||gelbooru.com^$generichide
 @@||vidtodo.com^$image,script,stylesheet,xmlhttprequest,domain=vidtodo.com|vidtodoo.com
 @@||vidtodoo.com^$image,script,stylesheet,xmlhttprequest,domain=vidtodo.com|vidtodoo.com
-@@||assets.hcaptcha.com/captcha/$script,subdocument,domain=abcvideo.cc
-@@||hcaptcha.com^*/api.js$script,domain=abcvideo.cc
 @@||ajax.googleapis.com/ajax/libs/$script,domain=flashx.to|flashx.tv
 @@||fastcontentdelivery.com^$script,domain=flashx.to|flashx.tv
 @@||flashx.tv/js/jquery.cookie.js
@@ -2014,15 +2011,6 @@
 @@||pornbraze.com^$generichide
 @@||rule34hentai.net^$generichide
 @@||urlgalleries.net^$generichide
-@@||as.sexad.net^*?p=*&v=$popup,domain=keezmovies.com|pornhub.com|pornhubthbh7ap3u.onion|redtube.com|tube8.com|tube8.es|tube8.fr
-@@||download.pornhub.phncdn.com/videos/$popup,domain=pornhub.com|pornhubthbh7ap3u.onion
-@@||pornhublive.com/?AFNO=$popup,domain=pornhub.com|pornhubthbh7ap3u.onion
-@@||rdtcdn.com/media/videos$media,popup,domain=redtube.com
-@@||reddit.com^$popup,domain=pornhub.com|pornhubthbh7ap3u.onion
-@@||rncdn3.com/videos/$popup,domain=pornhub.com|pornhubthbh7ap3u.onion
-@@||stumbleupon.com^$popup,domain=pornhub.com|pornhubthbh7ap3u.onion
-@@||tumblr.com^$popup,domain=pornhub.com|pornhubthbh7ap3u.onion
-@@||twitter.com^$popup,domain=pornhub.com|pornhubthbh7ap3u.onion
 @@.gif#$domain=b168.net|cnprint.org|huhupan.com|tgfcer.com|wgun.net
 @@.png#$domain=3dpchip.com|9zvip.net|club.tgfcer.com|coolinet.com|d1-dm.com|digit77.com|e9china.net|upxin.net
 @@/ad/images/*$domain=37-express.com
