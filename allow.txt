@@ -6,8 +6,8 @@
 ! 该规则合并自各大过滤器的白名单
 
 ! Version: Wed 09/29/2021
-! Last modified: Wed 09/29/2021T10:12:38.88Z
-! Total count: 3098
+! Last modified: Wed 09/29/2021T22:11:10.98Z
+! Total count: 3101
 @@||bkimg.cdn.bcebos.com^
 @@||imgstat.baidu.com^
 @@||v6lvs.com^
@@ -1469,6 +1469,7 @@
 @@||dailymotion.com/embed/*?ads_params=$subdocument
 @@||dashboard.adskeeper.co.uk^$domain=dashboard.adskeeper.co.uk
 @@||davidsilverspares.co.uk/graphics/*_ad.gif$~third-party
+@@||developers.google.com/ad-manager/$~third-party
 @@||digiads.com.au/images/shared/misc/ad-disclaimer.gif
 @@||dnsleak.privateinternetaccess.com^$xmlhttprequest,domain=dnsleak.com
 @@||docs.woopt.com/wgact/$image,~third-party,xmlhttprequest
@@ -1967,6 +1968,7 @@
 @@||przegladpiaseczynski.pl/wp-content/uploads/*-300x250-$image,~third-party
 @@||radiosun.fi/wp-content/uploads/*300x250$image,~third-party
 @@||reastatic.net/150x200-$domain=realestate.com.au
+@@||taipit-mebel.ru/upload/resize_cache/$image,~third-party
 @@||wavepc.pl/wp-content/*-500x100.png$image,~third-party
 @@^utm_source=aff^$popup,domain=gamble.co.uk|gokkeninonlinecasino.nl|top5casinosites.co.uk
 @@||accounts.google.com^$popup
@@ -2290,6 +2292,7 @@
 @@||viu.com^*/tracking/tracking.js
 @@||wl.jd.com/joya.js
 @@||10086.cn/framework/modules/sdc.js
+@@||jianshu.com/asimov/ab_test/info
 @@/build/js/analytics.$script,domain=lx.com|nbcbayarea.com|nbcboston.com|nbcchicago.com|nbcconnecticut.com|nbcdfw.com|nbclosangeles.com|nbcmiami.com|nbcnewyork.com|nbcphiladelphia.com|nbcsandiego.com|nbcwashington.com|necn.com|telemundo40.com|telemundo48elpaso.com|telemundoarizona.com|telemundolasvegas.com|telemundopr.com
 @@/cgi-bin/counter_module?action=list_models$subdocument,~third-party
 @@/friendbuy.min.js$script,domain=butcherbox.com
