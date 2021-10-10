@@ -18,7 +18,7 @@ wget -O i11.txt https://raw.githubusercontent.com/uBlockOrigin/uAssets/master/fi
 wget -O i12.txt https://raw.githubusercontent.com/uBlockOrigin/uAssets/master/filters/badware.txt
 wget -O i13.txt https://raw.githubusercontent.com/uBlockOrigin/uAssets/master/filters/filters.txt
 wget -O i14.txt https://raw.githubusercontent.com/uBlockOrigin/uAssets/master/filters/privacy.txt
-
+wget -O i15.txt https://raw.githubusercontent.com/Noyllopa/NoAppDownload/master/NoAppDownload.txt
 
 ::add new rules
 ::wget -O i+number url
