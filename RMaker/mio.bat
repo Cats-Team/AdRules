@@ -41,7 +41,7 @@ type i*.txt>>mergd.txt
 
 ::delete repeated rules
 set LC_ALL='C'
-s -u -R --output=nore.txt mergd.txt
+s -u --output=nore.txt mergd.txt
 
 ::delete comments&rubbish
 (findstr /v /b /c:"# " /c:"！" /c:"[" /c:"!" nore.txt)>>nord.txt
