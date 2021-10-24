@@ -6,8 +6,8 @@
 ! 该规则合并自各大过滤器的白名单
 
 ! Version: Sun 10/24/2021
-! Last modified: Sun 10/24/2021T 2:12:33.39Z
-! Total count: 3113
+! Last modified: Sun 10/24/2021T10:11:53.23Z
+! Total count: 3115
 @@||bkimg.cdn.bcebos.com^
 @@||imgstat.baidu.com^
 @@||v6lvs.com^
@@ -1424,6 +1424,8 @@
 @@||api.paymentwall.com^$domain=adguard.com
 @@||apis.kostprice.com/fapi/$script,domain=gadgets.ndtv.com
 @@||apmebf.com/ad/$domain=betfair.com
+@@||archive.org/BookReader/$image,~third-party,xmlhttprequest
+@@||archive.org/services/$image,~third-party,xmlhttprequest
 @@||assets.ctfassets.net^$media,domain=ads.spotify.com
 @@||assets.strossle.com^*/strossle-widget-sdk.js$script,domain=kaaoszine.fi
 @@||at.adtech.redventures.io/lib/dist/$script,domain=gamespot.com|metacritic.com
