@@ -75,7 +75,8 @@ Allow规则：3000+
 ## 🚛 完善项目
 
 希望大家可以提交 Issue 或者 Request 来帮助我完善规则 🔍 我审核之后会加入到规则
-  提交范围
+
+*  提交范围 
 - 漏拦截的广告
 - 误杀的网站
 # Coding地址：[链接](https://cats-team.coding.net/public/adguard/AdRules/git/files)
