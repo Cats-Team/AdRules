@@ -30,7 +30,7 @@ type frules.dd>mergd.txt
 type i*.txt>>mergd.txt
 
 ::nore
-gawk "!a[$0]++" mergd.txt>nore.txt
+gawk "!a[$0]++" mergd.txt>nord.txt
 
 ::del comments
 ::(findstr /b /c:"|" /c:"@" nore.txt)>nord.txt
