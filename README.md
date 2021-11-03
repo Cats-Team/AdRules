@@ -62,6 +62,7 @@ Allow规则：3000+
 | AdkillRules | [加速链接①](https://cats-team.coding.net/p/adguard/d/AdRules/git/raw/main/AdKillRules.txt) |[加速链接②](https://cdn.jsdelivr.net/gh/Cats-Team/AdRules@latest/AdKillRules.txt) |
 | AdGuardRules | [加速链接①](https://cats-team.coding.net/p/adguard/d/AdRules/git/raw/main/adguard.txt)|[加速链接②](https://cdn.jsdelivr.net/gh/Cats-Team/AdRules@latest/adguard.txt) |
 | DNSFilter | [加速链接①](https://cats-team.coding.net/p/adguard/d/AdRules/git/raw/main/dns.txt) | [加速链接②](https://cdn.jsdelivr.net/gh/Cats-Team/AdRules@main/dns.txt) |
+| HostsFilter | [加速链接①](https://cats-team.coding.net/p/adguard/d/AdRules/git/raw/main/hosts.txt) | [加速链接②](https://cdn.jsdelivr.net/gh/Cats-Team/AdRules@main/hosts.txt) |
 | Allowlist| [加速链接①](https://cats-team.coding.net/p/adguard/d/AdRules/git/raw/main/allow.txt)|[加速链接②](https://cdn.jsdelivr.net/gh/Cats-Team/AdRules@main/allow.txt)|
 
 ### 一键订阅（Coding链接）
