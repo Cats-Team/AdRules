@@ -41,9 +41,9 @@ for /f "tokens=2 delims=:" %%a in ('find /c /v "" nord.txt')do set/a rnum=%%a
 set/a rnum+=1
 
 ::add title and date
-echo ! Version: %date%>>tpdate.txt
-echo ! Last modified: %date%T%time%Z>>tpdate.txt
-echo ! Total count: %rnum%>>tpdate.txt
+echo # Version: %date%>>tpdate.txt
+echo # Last modified: %date%T%time%Z>>tpdate.txt
+echo # Total count: %rnum%>>tpdate.txt
 copy title.dd+tpdate.txt+nord.txt+brules.dd final.txt
 
 ::end
