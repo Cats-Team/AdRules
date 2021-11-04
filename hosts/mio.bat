@@ -30,10 +30,10 @@ type frules.dd>mergd.txt
 type i*.txt>>mergd.txt
 
 ::nore
-gawk "!a[$0]++" mergd.txt>nord.txt
+gawk "!a[$0]++" mergd.txt>nore.txt
 
 ::del comments
-::(findstr /b /c:"|" /c:"@" nore.txt)>nord.txt
+(findstr /b /c:"0" /c:"1" nore.txt)>nord.txt
 
 ::count rules
 for /f "tokens=2 delims=:" %%a in ('find /c /v "" nord.txt')do set/a rnum=%%a
