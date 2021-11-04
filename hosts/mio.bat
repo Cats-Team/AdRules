@@ -9,6 +9,7 @@ wget -O i2.txt https://raw.githubusercontent.com/r-a-y/mobile-hosts/master/Adgua
 wget -O i3.txt https://adaway.org/hosts.txt
 wget -O i4.txt https://raw.githubusercontent.com/r-a-y/mobile-hosts/master/AdguardApps.txt
 wget -O i5.txt https://raw.githubusercontent.com/r-a-y/mobile-hosts/master/AdguardMobileAds.txt
+wget -O i6.txt https://raw.githubusercontent.com/badmojr/1Hosts/master/mini/hosts.txt
 
 ::add new rules
 ::wget -O i+number url
