@@ -35,7 +35,7 @@ gawk "!a[$0]++" mergd.txt>nore.txt
 
 ::del comments
 (find /v :"/ " nore.txt)>nork.txt
-(findstr /b /c:"|" /c:"@" nore.txt)>nord.txt
+(findstr /b /c:"|" /c:"@" /c:"1" /c:"0" nore.txt)>nord.txt
 
 ::count rules
 for /f "tokens=2 delims=:" %%a in ('find /c /v "" nord.txt')do set/a rnum=%%a
