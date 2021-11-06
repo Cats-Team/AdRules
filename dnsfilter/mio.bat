@@ -7,10 +7,7 @@ cd aa
 wget -O i1.txt https://adguardteam.github.io/AdGuardSDNSFilter/Filters/filter.txt
 wget -O i2.txt https://file.trli.club/dns/hosts.txt
 wget -O i3.txt https://adaway.org/hosts.txt
-::wget -O i4.txt https://raw.githubusercontent.com/banbendalao/ADgk/master/ADgk.txt
-::wget -O i5.txt https://raw.githubusercontent.com/o0HalfLife0o/list/master/ad-pc.txt
-::wget -O i6.txt https://raw.githubusercontent.com/Cats-Team/AdRules/main/AdKillRules.txt
-
+wget -O i4.txt https://raw.githubusercontent.com/jdlingyu/ad-wars/master/hosts
 ::add new rules
 ::wget -O i+number url
 
