@@ -9,6 +9,7 @@ wget -O i2.txt https://file.trli.club/dns/hosts.txt
 wget -O i3.txt https://adaway.org/hosts.txt
 wget -O i4.txt https://raw.githubusercontent.com/jdlingyu/ad-wars/master/hosts
 wget -O i5.txt https://raw.githubusercontent.com/badmojr/1Hosts/master/Lite/adblock.txt
+wget -O i6.txt https://raw.githubusercontent.com/Cats-Team/AdRules/main/adblock.txt
 
 ::add new rules
 ::wget -O i+number url
