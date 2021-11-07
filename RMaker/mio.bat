@@ -14,10 +14,10 @@ wget -O i7.txt https://raw.githubusercontent.com/uniartisan/adblock_list/master/
 wget -O i8.txt https://raw.githubusercontent.com/uniartisan/adblock_list/master/adblock_lite.txt
 wget -O i9.txt https://raw.githubusercontent.com/uniartisan/adblock_list/master/adblock_plus.txt
 wget -O i10.txt https://raw.githubusercontent.com/uniartisan/adblock_list/master/adblock_privacy.txt
-wget -O i11.txt https://raw.githubusercontent.com/uBlockOrigin/uAssets/master/filters/annoyances.txt
-wget -O i12.txt https://raw.githubusercontent.com/uBlockOrigin/uAssets/master/filters/badware.txt
-wget -O i13.txt https://raw.githubusercontent.com/uBlockOrigin/uAssets/master/filters/filters.txt
-wget -O i14.txt https://raw.githubusercontent.com/uBlockOrigin/uAssets/master/filters/privacy.txt
+::wget -O i11.txt https://raw.githubusercontent.com/uBlockOrigin/uAssets/master/filters/annoyances.txt
+::wget -O i12.txt https://raw.githubusercontent.com/uBlockOrigin/uAssets/master/filters/badware.txt
+::wget -O i13.txt https://raw.githubusercontent.com/uBlockOrigin/uAssets/master/filters/filters.txt
+::wget -O i14.txt https://raw.githubusercontent.com/uBlockOrigin/uAssets/master/filters/privacy.txt
 wget -O i15.txt https://raw.githubusercontent.com/Noyllopa/NoAppDownload/master/NoAppDownload.txt
 
 ::add new rules
