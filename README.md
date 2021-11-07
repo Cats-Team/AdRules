@@ -59,7 +59,7 @@ Allow规则：3000+
 
 |   规则名称   | 🚀 加速地址 ① | 🚀 加速地址  ② |
 |  :----:  | :----:  | :----:  |
-| AdkillRules | [加速链接①](https://cats-team.coding.net/p/adguard/d/AdRules/git/raw/main/AdKillRules.txt) |[加速链接②](https://cdn.jsdelivr.net/gh/Cats-Team/AdRules@latest/AdKillRules.txt) |
+| AdkillRules | [加速链接①](https://cats-team.coding.net/p/adguard/d/AdRules/git/raw/main/adblock.txt) |[加速链接②](https://cdn.jsdelivr.net/gh/Cats-Team/AdRules@latest/adblock.txt) |
 | AdGuardRules | [加速链接①](https://cats-team.coding.net/p/adguard/d/AdRules/git/raw/main/adguard.txt)|[加速链接②](https://cdn.jsdelivr.net/gh/Cats-Team/AdRules@latest/adguard.txt) |
 | DNSFilter | [加速链接①](https://cats-team.coding.net/p/adguard/d/AdRules/git/raw/main/dns.txt) | [加速链接②](https://cdn.jsdelivr.net/gh/Cats-Team/AdRules@main/dns.txt) |
 | HostsFilter | [加速链接①](https://cats-team.coding.net/p/adguard/d/AdRules/git/raw/main/hosts.txt) | [加速链接②](https://cdn.jsdelivr.net/gh/Cats-Team/AdRules@main/hosts.txt) |
@@ -68,7 +68,7 @@ Allow规则：3000+
 ### 一键订阅（Coding链接）
 | 📃 规则名称   | 🚀 一键订阅 |
 |  :----:  | :----:  |
-|AdkillRules | [一键订阅](https://subscribe.adblockplus.org/?location=https://cats-team.coding.net/p/adguard/d/AdRules/git/raw/main/AdKillRules.txt) |
+|AdkillRules | [一键订阅](https://subscribe.adblockplus.org/?location=https://cats-team.coding.net/p/adguard/d/AdRules/git/raw/main/adblock.txt) |
 |AdGuardRules | [一键订阅](https://subscribe.adblockplus.org/?location=https://cats-team.coding.net/p/adguard/d/AdRules/git/raw/main/adguard.txt) |
 |DNSFilter | [一键订阅](https://subscribe.adblockplus.org/?location=https://cats-team.coding.net/p/adguard/d/AdRules/git/raw/main/dns.txt) |
 |Allowlist | [一键订阅](https://subscribe.adblockplus.org/?location=https://cats-team.coding.net/p/adguard/d/AdRules/git/raw/main/allow.txt) |
