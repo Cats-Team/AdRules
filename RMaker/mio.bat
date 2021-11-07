@@ -58,5 +58,5 @@ echo ! Total count: %rnum%>>tpdate.txt
 copy title.dd+tpdate.txt+nord.txt+brules.dd final.txt
 
 ::end
-copy /y final.txt ..\..\AdKillRules.txt
+copy /y final.txt ..\..\adblock.txt
 del /f /q *.txt&exit
