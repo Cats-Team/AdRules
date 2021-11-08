@@ -12,7 +12,7 @@ wget -O i5.txt https://raw.githubusercontent.com/banbendalao/ADgk/master/kill-ba
 wget -O i6.txt https://raw.githubusercontent.com/xinggsf/Adblock-Plus-Rule/master/rule.txt
 wget -O i7.txt https://raw.githubusercontent.com/uniartisan/adblock_list/master/adblock.txt
 wget -O i8.txt https://raw.githubusercontent.com/uniartisan/adblock_list/master/adblock_lite.txt
-wget -O i9.txt https://raw.githubusercontent.com/uniartisan/adblock_list/master/adblock_plus.txt
+::wget -O i9.txt https://raw.githubusercontent.com/uniartisan/adblock_list/master/adblock_plus.txt
 wget -O i10.txt https://raw.githubusercontent.com/uniartisan/adblock_list/master/adblock_privacy.txt
 ::wget -O i11.txt https://raw.githubusercontent.com/uBlockOrigin/uAssets/master/filters/annoyances.txt
 ::wget -O i12.txt https://raw.githubusercontent.com/uBlockOrigin/uAssets/master/filters/badware.txt
