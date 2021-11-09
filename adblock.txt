@@ -5,8 +5,8 @@
 ! Expires: 12 Hours
 ! Description: 该规则合并自My AdFilters（for PC），EdentwCustom，adgk，Quitehosts，Adaway，Uniartisan，uBlockOrigin规则以及乘风规则等
 ! Version: Tue 11/09/2021
-! Last modified: Tue 11/09/2021T12:13:37.06Z
-! Total count: 132630
+! Last modified: Tue 11/09/2021T22:11:16.62Z
+! Total count: 132651
 
 
 ###A9AdsMiddleBoxTop
@@ -10740,6 +10740,7 @@
 ##.ad-primary-sidebar
 ##.ad-priority
 ##.ad-pro70
+##.ad-program-list
 ##.ad-promo
 ##.ad-promoted-game
 ##.ad-promotion-native
@@ -15015,6 +15016,7 @@
 ##.appguide-wrap[onclick*="bcebos.com"]
 ##.appnexus.ad
 ##.apxContentAd
+##.ar-header-m-ad
 ##.arcAdsBox
 ##.arcAdsContainer
 ##.archive-ad
@@ -16718,6 +16720,7 @@
 ##.dfp-plugin-advert
 ##.dfp-slot
 ##.dfp-slot-wallpaper
+##.dfp-space
 ##.dfp-super-leaderboard
 ##.dfp-tag-wrapper
 ##.dfp-top1
@@ -52994,7 +52997,9 @@ fuliba.net,uliba.net##.widget_custom_html:nth-child(2)
 fuliba2020.net,fuliba2021.net,fulibus.net,wuzuowei.net###focusslide
 fuliba2020.net,landiannews.com,uliba.net##.widget_custom_html
 fuliba2021.net##.orbui
+fuliba2021.net##.orbui-post-footer
 fuliba2021.net##.widget_custom_html
+fuliba2021.net##.widget_ui_slider
 fulibac.com##.ad_two,.ad_free
 fulibar.net##.banner.banner-contenttop,.d_banner,.d_slidebanner,.adsbygoogle
 fulibba.com##div.tool_news,div.widget,A[href^="http://mp.weixin.qq.com/"],A[href="http://fulibba.com/go/BTBiBi/"],aside#text-5,UL[style] IMG,aside#text-3
@@ -54340,7 +54345,9 @@ huabian.com##.banner,.title_con,.blanktop,.ad
 huacolor.com##[class^="list_l"]
 hualongxiang.com##.bbs_box_gg
 hualongxiang.com##.bbs_box_gg,.quick_reply_ad,#ads_d_tpc
+hualongxiang.com##.khd_b
 hualongxiang.com##.quick_reply_ad
+hualongxiang.com##.wheelplayer
 huan.moe###headhead
 huangye88.com##[id^="o"]
 huanqiu.com###adP-Bot-right-float,DIV.ad250x250.fLeft.marRig10,DIV#adUn_1,div.adDingT,div.ad-min-box,div.ad-side,[id^="adFm_"],.ad2,.ad_bar,[class^="ad_"]
@@ -55040,6 +55047,7 @@ iprima.cz#?#div:-abp-has(>.mone_header)
 iprima.cz#@#.adsbox
 iprima.cz#@#.bannerAd
 iptv444.com$$a[target="_blank"]
+iputitas.net#$#abort-on-property-read afScript
 ipv6.baidu.com,m.baidu.com,www.baidu.com,www1.baidu.com,xueshu.baidu.com###results > div[class]:not(.result):not(.result-op):not(.sp-rslt-bar):not(.s-group-result)
 ipv6.baidu.com,m.baidu.com,www.baidu.com,www1.baidu.com,xueshu.baidu.com###results > div[class]:not(.result):not(.result-op):not(.sp-rslt-bar):not(.s-group-result):not(.hint-unsafe)
 ipv6.baidu.com,m.baidu.com,www.baidu.com,www1.baidu.com,xueshu.baidu.com#@##results > div[class]:not(.result):not(.result-op):not(.sp-rslt-bar):not(.s-group-result)
@@ -63181,14 +63189,13 @@ www.epinv.com###container>#sidebar~*,div.huadong,div.epinv_f
 www.excelpx.com##table#sitehead
 www.facebook.com###pagelet_side_ads
 www.facebook.com##.egoOrganicColumn+*
+www.facebook.com#$#json-override data.node.comet_sections.context_layout.story.comet_sections.metadata.0.story.ghl_label.children emptyArray '' /SPONSORED/; json-override data.node.comet_sections.context_layout.story.comet_sections.metadata.0.story.ghl_label.text 123456789 '' /SPONSORED/; hide-if-matches-xpath '//*[contains(text(),"123456789")]/ancestor::div[starts-with(@data-pagelet,"FeedUnit_")]'
 www.facebook.com,web.facebook.com##div[data-pagelet="RightRail"] a[aria-labelledby][role="link"][target="_blank"][tabindex="0"]
 www.facebook.com,web.facebook.com#$#hide-if-contains-visible-text /^Sponsorlu|Sponsored|Gesponsert|Patrocinado|Sponsorisé|Publicidad|Commandité|Gesponsord|Sponsorowane|Реклама|Sponsa|Sponset|Sponsorizat|Bersponsor|Ditaja|Sponsorizzato|'May Sponsor'|'Được tài trợ'|贊助|赞助内容|ได้รับการสนับสนุน|प्रायोजित|'دارای پشتیبانی مالی'|'تمويل شوي'|সৌজন্যে|مُموَّل|سپانسرڈ|ממומן$/ div[data-pagelet^="FeedUnit_"] span
 www.facebook.com,web.facebook.com#$#hide-if-matches-xpath './/div[@aria-posinset or @aria-describedby or @aria-labelledby]//div[@role="button"][contains(text(),"Sponsored ·") or contains(text(),"Publicidad ·") or contains(text(),"Patrocinado ·") or contains(text(),"Sponsorisé ·") or contains(text(),"Commandité ·") or contains(text(),"Sponsorizzato ·") or contains(text(),"Gesponsert ·") or contains(text(),"Реклама ·")]/ancestor::div[@aria-posinset or @aria-describedby or @aria-labelledby]'
 www.facebook.com,web.facebook.com#$#hide-if-matches-xpath './/div[@id="watch_feed"]//div[@data-pagelet="MainFeed"]//a[@aria-label="label"]//ancestor::div[8][not(@id)][starts-with(@class,"_")]'
 www.facebook.com,web.facebook.com#$#hide-if-matches-xpath './/object[@type="nested/pressable"]/a[@role="link"]/span[contains("|Patrocinado|Sponsa|Bersponsor|Commandité|Ditaja|Gesponsert|Gesponsord|Patrocinado|Publicidad|Sponsa|Sponset|Sponsored|Sponsorisé|Sponsorizat|Sponsorizzato|Sponsorlu|Sponsorowane|Реклама|ממומן|تمويل شوي|دارای پشتیبانی مالی|سپانسرڈ|مُموَّل|प्रायोजित|সৌজন্যে|ได้รับการสนับสนุน|内容|贊助|Sponsoroitu|May Sponsor|Được tài trợ|", concat("|", text(), "|"))]/ancestor::span[2]'
 www.facebook.com,web.facebook.com#$#hide-if-matches-xpath './/span[@class]/a[@aria-label[.="Patrocinado" or .="Sponsa" or .="Bersponsor" or .="Commandité" or .="Ditaja" or .="Gesponsert" or .="Gesponsord" or .="Patrocinado" or .="Publicidad" or .="Sponsa" or .="Sponset" or .="Sponsored" or .="Sponsorisé" or .="Sponsorizat" or .="Sponsorizzato" or .="Sponsorlu" or .="Sponsorowane" or .="Реклама" or .="ממומן" or .="تمويل شوي" or .="دارای پشتیبانی مالی" or .="سپانسرڈ" or .="مُموَّل" or .="प्रायोजित" or .="সৌজন্যে" or .="ได้รับการสนับสนุน" or .="内容" or .="贊助" or .="Sponsoroitu" or .="May Sponsor" or .="Được tài trợ"]]/ancestor::div[@aria-posinset or @aria-describedby or @aria-labelledby]'
-www.facebook.com,web.facebook.com#$#hide-if-matches-xpath '//a[@aria-label="label"][@role="link"]/span[not (@*)]//b[contains(@class, "bw7X6Mr") or contains(@class, "sdKQ") or contains(@class, "srhKlDwW") or contains(@class,"tdKR") or contains(@class,"trhKlDwx") or contains(@class,"aw7X6Mq") or contains(@class,"udKS") or contains (@class,"zw7X6Mp") or contains(@class,"qrhKlDwU") or contains(@class,"rdKP") or contains(@class,"cw7X6Ms")]'
-www.facebook.com,web.facebook.com#$#hide-if-matches-xpath '//a[@aria-label="label"][@role="link"]/span[not (@*)]//span[contains(@class, "bw7X6Mr") or contains(@class, "sdKQ") or contains(@class, "srhKlDwW") or contains(@class,"tdKR") or contains(@class,"trhKlDwx") or contains(@class,"aw7X6Mq") or contains(@class,"udKS") or contains (@class,"zw7X6Mp") or contains(@class,"qrhKlDwU") or contains(@class,"rdKP") or contains(@class,"cw7X6Ms")]'
 www.facebook.com,web.facebook.com#$#hide-if-matches-xpath '//a[@aria-label="label"][@role="link"]/span[not (@*)]//span[string-length(@class)>85]'
 www.facebook.com,web.facebook.com#$#hide-if-matches-xpath '//a[@aria-label][@href][@role="link"][@tabindex="0"]//div[@class]/span[@class][contains(normalize-space(),"Sponsored")]/ancestor::a[@aria-label][1]'
 www.famens.com##.adpic,.capital,[href^="/AdLinks_"],.pic-row3
@@ -68197,6 +68204,7 @@ zznews.cn##.ad:not([style])
 ||a.qncye.net^
 ||a.qsjiajiao.com^
 ||a.quangushi.com^
+||a.qunzou.com^
 ||a.quora.com^
 ||a.raasnet.com^$third-party
 ||a.rensheng5.com^
@@ -72042,6 +72050,7 @@ zznews.cn##.ad:not([style])
 ||alxx520.com/ad/
 ||alxzes.com^
 ||aly766.com^
+||alypremistand.xyz^
 ||alysson.de^
 ||alzexa.com^$third-party
 ||am-display.com^
@@ -75659,6 +75668,7 @@ zznews.cn##.ad:not([style])
 ||beonixom.com^$popup
 ||beoofo.pairs.lv^
 ||beparaspr.com^
+||beparaspr.com^$popup
 ||bephamema.com^
 ||bepiletussar.casa^
 ||bepolite.eu
@@ -77115,6 +77125,7 @@ zznews.cn##.ad:not([style])
 ||bunchance.com^$third-party
 ||bunchbox.co^$third-party
 ||buncoswosh.com^
+||buncoswosh.com^$popup
 ||bundesliga.com/assets/partners/
 ||bunny-net.com^$third-party
 ||bunnylust.com/sponsors/
@@ -87860,6 +87871,7 @@ zznews.cn##.ad:not([style])
 ||filetarget.net^
 ||filexan.com^$third-party
 ||filitrac.com^$third-party
+||fillsitsy.cam^
 ||filmaster.tv^*/flm.tracker.min.js
 ||filmoljupci.com^
 ||filterforge.com/images/banners/
@@ -88183,6 +88195,8 @@ zznews.cn##.ad:not([style])
 ||flyingpt.com^$third-party
 ||flyly.cc^
 ||flymyads.com^$third-party
+||flysoothingate.com^
+||flysoothingate.com^$popup
 ||flyspy.co^$third-party
 ||flyv.tv/a/$xmlhttprequest
 ||flyzy2005.com/wp-content/*/bandwagonhost-top.
@@ -91114,6 +91128,7 @@ zznews.cn##.ad:not([style])
 ||gufan.fun^
 ||guffawdecipher.com^
 ||guffawsister.com^
+||guffsview.com^
 ||gugeys.com^$third-party
 ||gugulm.net^
 ||guhai.com.cn/AD/
@@ -94652,6 +94667,8 @@ zznews.cn##.ad:not([style])
 ||ingest.make.rvapps.io^$domain=zdnet.com
 ||ingivergrimier.com^
 ||ingoinghitchstick.com^
+||ingoomychan.com^
+||ingoomychan.com^$popup
 ||ingpercent.biz^
 ||ingratitudedaintyblockade.com^
 ||ingress.net.zooplus.de^
@@ -118517,6 +118534,7 @@ zznews.cn##.ad:not([style])
 ||squid.gazeta.pl/bdtrck/
 ||squidanalytics.com^$third-party
 ||squineeyuck.com^
+||squirkarises.cam^
 ||squirrel.cividi.ch^
 ||squirrel.ethanelientz.com^
 ||squirrel.honeysqueeze.app^
@@ -121925,6 +121943,8 @@ zznews.cn##.ad:not([style])
 ||tework.cn^
 ||texiluwa.xyz^
 ||texnet.com.cn/images/cnbanner/
+||texpensst.xyz^
+||texpensst.xyz^$popup
 ||text-link-ads.com^$third-party
 ||text.benefitsatwork.be^
 ||text.benefitsatwork.ch^
@@ -130152,6 +130172,7 @@ zznews.cn##.ad:not([style])
 ||xoliter.com^
 ||xopcdnhjf.com^
 ||xoredi.com^
+||xotqgydpge.xyz^
 ||xouzmvlt.com^
 ||xovq5nemr.com^$third-party
 ||xoxbxd.opus-fashion.com^
