@@ -1,7 +1,7 @@
 name: Push to Coding
 on:
  schedule:
-    - cron: '30 22,10 * * *'
+    - cron: '0 22,10 * * *'
  push:
    branches:
     - main
@@ -13,7 +13,7 @@ jobs:
       - uses: actions/checkout@main  
       - name: Wate Update Rules
         run: |
-          sleep 20
+          sleep 10
       - name: Git push assets to Coding
         run: |
           rm -rf .git/
