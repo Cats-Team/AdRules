@@ -52,10 +52,10 @@ jobs:
 #          git config --global credential.git.example.com.provider generic
  #         git fetch --unshallow origin
  #         git push -u -f origin main
-      - name: Push message to PushPush
-        run: |
-          pip3 install requests
-          pip3 install itertools
-          pip3 install post
-          python3 .\pusher.py
+ #     - name: Push message to PushPush
+ #       run: |
+ #         pip3 install requests
+ #         pip3 install itertools
+ #         pip3 install post
+ #         python3 .\pusher.py
 
