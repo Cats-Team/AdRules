@@ -13,7 +13,7 @@ jobs:
       - uses: actions/checkout@main  
       - name: Wate Update Rules
         run: |
-          sleep 10
+          sleep 15
       - name: Git push assets to Coding
         run: |
           rm -rf .git/
