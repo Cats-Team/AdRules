@@ -38,6 +38,19 @@ jobs:
           #git remote set-url --add origin "https://${{ secrets.CODING_ACCOUNT }}:${{ secrets.CODING_PASSWORD }}@e.coding.net/cats-team/adguard/AdRules.git"
           #git fetch --unshallow origin
           git push -u -f origin --all
+      
+      - uses: actions/checkout@main  
+      - name: Git push assets to Coding
+        run: |
+          git init
+          git config --local user.name "hacamer"
+          git config --local user.email "hcamer145@gmail.com"
+          git branch -m main
+          git add --all
+          git commit -m "Updated at $(date)"
+          git remote add origin "https://${{ secrets.CODING_ACCOUNT }}:${{ secrets.CODING_PASSWORD }}@e.coding.net/cats-team/adguard/AdRules.git"
+          #git fetch --unshallow origin
+          git push -u -f origin main
       - name: Push message to PushPush
         run: |
           pip3 install requests
