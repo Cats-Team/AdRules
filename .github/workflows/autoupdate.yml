@@ -44,6 +44,7 @@ jobs:
           git init
           git config --local user.name "hacamer"
           git config --local user.email "hcamer145@gmail.com"
+          git config --global credential.git.example.com.provider generic
           git branch -m main
           git add --all
           git commit -m "Updated at $(date)"
