@@ -26,7 +26,7 @@ jobs:
           .\dnsfilter\mio.bat
           .\Allowlist\mio.bat
           .\hosts\mio.bat
-      - name: Git push assets to github & coding
+      - name: Git push assets to Github
         run: |
           git init
           git config --local user.name "actions"
