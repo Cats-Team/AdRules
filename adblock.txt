@@ -6,7 +6,7 @@
 ! Expires: 12 Hours
 ! Description: 该规则合并自My AdFilters（for PC），EdentwCustom，adgk，Adaway，Uniartisan，规则以及乘风规则等
 ! Version: Sun 11/14/2021
-! Last modified: Sun 11/14/2021T13:36:52.09Z
+! Last modified: Sun 11/14/2021T13:40:11.06Z
 ! Total count: 132936
 
 
@@ -132944,6 +132944,10 @@ zznews.cn##.ad:not([style])
 ！本规则为开源规则，严禁用于任何商业用途
 ！规则反馈群：875865300
 ! ------加强屏蔽Start------ !
+
+! 某安不知名广告
+||coolapk.com/v6/page/dataList?$replace=/extra_entities//
+||coolapk.com/v6/feed/detail?$replace=/extra_entities//
 
 ! 某广告
 malimali2.com##div.leo-container:nth-child(4) > div:nth-child(7)
