@@ -1,12 +1,17 @@
 name: Push to Coding
-on: push
+on:
+ schedule:
+    - cron: '30 22,10 * * *'
+ push:
+   branches:
+    - main
 
 jobs:
   Pushed:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@main  
-      - name: Git push assets to github & coding
+      - name: Git push assets to Coding
         run: |
           rm -rf .git/
           git init
