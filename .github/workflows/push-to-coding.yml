@@ -11,6 +11,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@main  
+      - name: Wate Update Rules
+        run: |
+          sleep 20
       - name: Git push assets to Coding
         run: |
           rm -rf .git/
