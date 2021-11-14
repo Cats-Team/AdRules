@@ -36,7 +36,7 @@ jobs:
           git commit -m "Updated at $(date)"
           git remote add origin "https://github.com/Cats-Team/AdRules.git"
           git remote set-url --add origin "https://${{ secrets.CODING_ACCOUNT }}:${{ secrets.CODING_PASSWORD }}@e.coding.net/cats-team/adguard/AdRules.git"
-          git fetch --unshallow origin
+          #git fetch --unshallow origin
           git push -u -f origin --all
       - name: Push message to PushPush
         run: |
