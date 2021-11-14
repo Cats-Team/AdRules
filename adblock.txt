@@ -5,9 +5,9 @@
 ! Powerd by CatsTeam
 ! Expires: 12 Hours
 ! Description: 该规则合并自My AdFilters（for PC），EdentwCustom，adgk，Adaway，Uniartisan，规则以及乘风规则等
-! Version: Sat 11/13/2021
-! Last modified: Sat 11/13/2021T13:56:21.17Z
-! Total count: 132887
+! Version: Sun 11/14/2021
+! Last modified: Sun 11/14/2021T 0:12:46.01Z
+! Total count: 132902
 
 
 ###A9AdsMiddleBoxTop
@@ -21751,6 +21751,7 @@
 ##.streamAd
 ##.strip-ad
 ##.stripad
+##.stui-pannel > .recommend-two
 ##.sub-ad
 ##.sub-feature-ad
 ##.sub-header-ad
@@ -34887,6 +34888,7 @@ $xmlhttprequest,domain=auroravid.to|flashx.cc|nowvideo.sx|onlinevideoconverter.c
 /jump/clk1.
 /jumpstartunpaidad.
 /jun0120211102193659.
+/jun0120211112090740.
 /just-detect-adblock/*
 /k.com?g=$third-party
 /k120g270.
@@ -39910,6 +39912,7 @@ $xmlhttprequest,domain=auroravid.to|flashx.cc|nowvideo.sx|onlinevideoconverter.c
 1090ys2.com##a[target="_blank"] > img[src*="alicdn.com"]
 1090ys2.com,bbt.tv,btbt.tv,mmiyue.com,nixingle.com#@#.google-ad
 1090ys2.com,rouman5.com##a[href*="tyrantdb.com"]
+10besty.com##.banner
 10co.biz,10co.xyz,10co.co,10co.me###popad
 10co.biz,10co.xyz,10co.co,10co.me#$##myTestAd { height: 1px!important; }
 10fang.com##.botad
@@ -40787,6 +40790,7 @@ $xmlhttprequest,domain=auroravid.to|flashx.cc|nowvideo.sx|onlinevideoconverter.c
 3dmgame.com##DIV.QZmainR > DIV.R1,.ad_top,.adad,[class^="youdao"],[id^="clickbg"],.dowl-rgg,#box.box
 3dmgame.com##a[href^="https://down.hyds360.com/"] > div[style]
 3dmgame.com##a[onclick^="goxiazai"]
+3dmgame.com##div[class$=" downl_list"]
 3dmgame.com#?#.Gmaeinfobtn_tab > div[class]:-abp-has(>div[class]> div[class]:-abp-contains(高速下载))
 3dmgame.com#?#div[class]:-abp-has(> .bt:-abp-contains(高速))
 3dmgame.com#?#span[class]:-abp-has(> div[class]:-abp-contains(高速下载))
@@ -54148,6 +54152,8 @@ hentaianimedownloads.com##.bp_detail
 hentaiblue.com##.widget_text
 hentaicomic.org,wnacg.com,wnacg.org,wnacg4.com#@##google-ads
 hentaicomic.org,wnacg.com,wnacg.org,wnacg4.com#@#.google-ads
+hentaicomic.org,wnacg.com,wnacg.org,wnacg4.com,wnacgs.com#@##adsbox
+hentaicomic.org,wnacg.com,wnacg.org,wnacg4.com,wnacgs.com#@#.google-ads
 hentaicomic.org,wnacg1.cc,wnacg.*#%#//scriptlet("abort-current-inline-script", "document.write", "tips[index]")
 hentaicore.org##.mob-lock
 hentaiff.com###overplay
@@ -58143,6 +58149,7 @@ nfmovies.com##.hidden-xs.dropdown-hover
 nfmovies.com##.myui-player__operate > li:nth-of-type(1)
 nfmovies.com##.myui-player__operate > li:nth-of-type(4)
 nfmovies.com##.myui-player__operate > li:nth-of-type(5)
+nfmovies.com##[onclick^="openurl()"]
 nfmovies.com##[src*="/pic/tu/"]
 nfmovies.com##[src*="/static/"]
 nfmovies.com##a[href][onclick^="openurl()"] img[src^="/static/"]
@@ -64549,6 +64556,7 @@ zhenbuka.com##.jq-toast-wrap
 zhenbuka.com#%#//scriptlet("prevent-setTimeout", "ad_ids")
 zhenbuka.com$$a[href="ybvip1879.vip"]
 zhenbuka.com$$script[tag-content="mdapp01.com"]
+zhenbuka3.com###player_pause
 zhenbuka3.com,zhenbuka2.com,bukaivip.com#%#//scriptlet("adjust-setTimeout", "CloseAd", "", "0.02")
 zhenbuka3.com,zhenbuka2.com,bukaivip.com#%#//scriptlet("prevent-setTimeout", "ad_load_fail")
 zhenhaoba.com##center,div.a_pt,div.a_pb
@@ -64850,6 +64858,7 @@ zx.sina.cn##.j_relevent_video.s_card
 zx.sina.cn##.j_wbrecommend_wrap.j_article_relevent.s_card
 zx.sina.cn##.z_c2.j_article_relevent_news.s_card
 zxdy777.com##.imgBox
+zxzj.fun##.container > .none
 zxzj.me##.container > .none
 zybang.com###askTeacher-after-adx-wrap
 zybang.com###bottomBannerLink
@@ -75999,6 +76008,7 @@ zznews.cn##.ad:not([style])
 ||bhu9.bankia.es^
 ||bhuak.com^
 ||bhwcfwjz.com^
+||bhyblanket.cn^
 ||bhyddc.com^
 ||bi-eventtracker-*.amazonaws.com^
 ||bi-pipeline-collector.stylight.net^
@@ -92114,6 +92124,7 @@ zznews.cn##.ad:not([style])
 ||henkel.com.tr/resources/*/webtrekk.js
 ||hentaibiz.com^
 ||hentaiblue.com/*=eyJ.js
+||hentaicomic.org/data/game/
 ||hentaicounter.com^$third-party
 ||hentaifap.land^$popup
 ||hentaifap.land^$third-party
@@ -128739,6 +128750,7 @@ zznews.cn##.ad:not([style])
 ||wnacg.org/img/500_60
 ||wnacg.org/img/wap
 ||wnacg4.com/data/game/
+||wnacgs.com/data/game/
 ||wnbeiskivkkmpy.xyz^
 ||wnbfw.com^
 ||wndhsykmbe.com^
@@ -131189,6 +131201,7 @@ zznews.cn##.ad:not([style])
 ||yingav.net/images/content/spot01.jpg
 ||yingfulook.cn^
 ||yingge.fun^
+||yinghuacd.com/bar/
 ||yingjiawm.com^
 ||yingshidaquan.cc/Templet/js/
 ||yingshidaquan.cc^$third-party
@@ -132761,6 +132774,8 @@ zznews.cn##.ad:not([style])
 ||zxxds.net^
 ||zxxtkrkzfyy3.com^
 ||zxxvns.f64.ro^
+||zxzj.fun/slade
+||zxzj.fun/t.js
 ||zxzj.me/slade
 ||zxzj.me/t.js
 ||zy16eoat1w.com^
