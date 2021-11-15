@@ -14,6 +14,19 @@ jobs:
       - name: Wate Update Rules
         run: |
           sleep 15
+
+      - name: Git pull to Github
+        run: |
+          rm .git/
+          git init
+          git config --local user.name "actions"
+          git config --local user.email "action@github.com"
+          git branch -m main
+          git remote add origin "https://github.com/Cats-Team/AdRules.git"
+          #git remote set-url --add origin "https://${{ secrets.CODING_ACCOUNT }}:${{ secrets.CODING_PASSWORD }}@e.coding.net/cats-team/adguard/AdRules.git"
+          git fetch --unshallow origin
+          git pull -f
+          
       - name: Git push assets to Coding
         run: |
           rm -rf .git/
