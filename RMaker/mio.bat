@@ -7,7 +7,6 @@ cd aa
 wget -O i1.txt https://raw.githubusercontent.com/o0HalfLife0o/list/master/ad-pc.txt
 wget -O i2.txt https://raw.githubusercontent.com/o0HalfLife0o/list/master/ad-edentw.txt
 wget -O i3.txt https://raw.githubusercontent.com/banbendalao/ADgk/master/ADgk.txt
-::wget -O i4.txt https://file.trli.club/dns/hosts.txt
 wget -O i5.txt https://raw.githubusercontent.com/banbendalao/ADgk/master/kill-baidu-ad.txt
 wget -O i6.txt https://raw.githubusercontent.com/xinggsf/Adblock-Plus-Rule/master/rule.txt
 wget -O i7.txt https://raw.githubusercontent.com/uniartisan/adblock_list/master/adblock.txt
