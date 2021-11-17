@@ -3,6 +3,10 @@
 ! 某安不知名广告
 ||coolapk.com/v6/page/dataList?$replace=/extra_entities//
 ||coolapk.com/v6/feed/detail?$replace=/extra_entities//
+||coolapk.com/v6/feed/detail?$replace=/extra_title//
+||coolapk.com/v6/feed/detail?$replace=/include_goods//
+||coolapk.com/^$replace=/{"title":\u4eca\u65e5\u9177\u5b89.*?}\,//
+||coolapk.com/^$replace=/{"entityTemplate":imageCarouselCard_1.*?}\,//
 
 ! 某广告
 malimali2.com##div.leo-container:nth-child(4) > div:nth-child(7)
