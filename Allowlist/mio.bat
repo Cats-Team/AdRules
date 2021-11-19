@@ -5,10 +5,15 @@ cd aa
 ::start download
 
 wget -O i1.txt https://adguardteam.github.io/AdGuardSDNSFilter/Filters/filter.txt
-wget -O i2.txt https://file.trli.club/dns/adblock-whitelist.txt
+wget -O i2.txt https://raw.githubusercontent.com/Potterli20/hosts/main/ad-allow.txt
 wget -O i3.txt https://adaway.org/hosts.txt
 wget -O i4.txt https://raw.githubusercontent.com/banbendalao/ADgk/master/ADgk.txt
 wget -O i5.txt https://raw.githubusercontent.com/o0HalfLife0o/list/master/ad-pc.txt
+wget -O 16.txt https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/ChineseFilter/sections/whitelist.txt
+wget -O i7.txt https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/GermanFilter/sections/whitelist.txt 
+wget -O i8.txt https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/TurkishFilter/sections/whitelist.txt 
+wget -O i9.txt https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/SpywareFilter/sections/whitelist.txt|
+
 
 ::add new rules
 ::wget -O i+number url
