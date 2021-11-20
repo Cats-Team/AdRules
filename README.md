@@ -22,6 +22,13 @@
 | AdRules (For Adaway) | [Link](https://cats-team.coding.net/p/adguard/d/AdRules/git/raw/main/hosts.txt) | [一键订阅](https://subscribe.adblockplus.org/?location=https://cats-team.coding.net/p/adguard/d/AdRules/git/raw/main/hosts.txt) |
 | Allowlist| [Link](https://cats-team.coding.net/p/adguard/d/AdRules/git/raw/main/allow.txt)|[一键订阅](https://subscribe.adblockplus.org/?location=https://cats-team.coding.net/p/adguard/d/AdRules/git/raw/main/allow.txt) |
 
+- **AdRules (For AdBlock)** - 快速、极致的去广告体验
+
+- **AdRules (For AdGuard)** - 针对AdGuard的专用规则
+
+- **AdRules (For DNS)** - 拦截广告，当然要在DNS处先下手为强
+
+- **Allowlist** - 解除误杀的网站
 #### 规则说明：
 - **AdRules (For AdBlock):** -
 源自上游列表规则合并而成，并添加了一些补充规则  
