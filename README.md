@@ -14,7 +14,7 @@
 
 ### 📃 规则列表
 
-|   规则名称   | 🚀 Coding ① | 🚀 一键订阅  |
+|   规则名称   | 🚀 Coding  | 🚀 一键订阅  |
 |  :----:  | :----:  | :----:  |
 | AdRules (For AdBlock) | [Link](https://cats-team.coding.net/p/adguard/d/AdRules/git/raw/main/adblock.txt) |[一键订阅](https://subscribe.adblockplus.org/?location=https://cats-team.coding.net/p/adguard/d/AdRules/git/raw/main/adblock.txt) |
 | AdRules (For AdGuard) | [Link](https://cats-team.coding.net/p/adguard/d/AdRules/git/raw/main/adguard.txt)|[一键订阅](https://subscribe.adblockplus.org/?location=https://cats-team.coding.net/p/adguard/d/AdRules/git/raw/main/adguard.txt) |
@@ -29,6 +29,8 @@
 合并自AdGuard过滤器，无任何修改，仅适用于AdGuard  
 - **AdRules (For DNS)与AdRules (For Adaway):** -
 合并自上游列表，更加匹配DNS层面过滤
+- **Allowlist:** -
+有误杀时使用
 
 ## 🚛 完善项目
 
