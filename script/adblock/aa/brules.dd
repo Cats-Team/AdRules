@@ -1,0 +1,86 @@
+! ------加强屏蔽Start------ !
+
+!酷安"提到的好物"
+||coolapk.com/v6/page/dataList?$replace=/extra_entities//
+||coolapk.com/v6/feed/detail?$replace=/extra_entities//
+||coolapk.com/v6/main/indexV?$replace=/extra_entities//
+||coolapk.com/v6/feed/detail?$replace=/extra_title//
+||coolapk.com/v6/feed/detail?$replace=/include_goods//
+
+!去除"什么值得买"
+||coolapk.com/v6/main/indexV8?$replace=/\{"entityType":"card"\,"entityTemplate":"listCard".*?\}\,\{"id/{"id/
+!去除热搜
+||coolapk.com/v6/main/init?$replace=/\{"data":\[\{"entityType":"card"\,"entityTemplate":"textCard"\,"title":"\\u70ed\\u95e8\\u641c\\u7d22".*?\}\,\{"entityType":"card"\,"entityTemplate":"configCard"/\{"data":[\{"entityType":"card"\,"entityTemplate":"configCard"/
+||coolapk.com/v6/search?type=hotSearch$replace=/\{"data":\[.*\]/{"data":[]/
+!去除随机应用推荐
+||coolapk.com/v6/main/indexV8?$replace=/\,\{.*?"entityType": "card"\,"entityTemplate":"apkImageCard".*?\}\,\{"id"/,{"id"/
+
+! 某广告
+malimali2.com##div.leo-container:nth-child(4) > div:nth-child(7)
+malimali2.com##div.leo-container:nth-child(4) > div:nth-child(6)
+malimali2.com##div.leo-container:nth-child(4) > div:nth-child(5)
+
+! 腾讯的广点通(优量汇)和字节跳动的穿山甲广告
+127.0.0.1 sdk.e.qq.com
+127.0.0.1 api-access.pangolin-sdk-toutiao-b.com
+127.0.0.1 mssdk-bu.snssdk.com
+127.0.0.1 aaid.umeng.com
+127.0.0.1 img14.360buyimg.com
+127.0.0.1 i.snssdk.com
+127.0.0.1 is.snssdk.com
+127.0.0.1 pangolin.snssdk.com
+127.0.0.1 extlog.snssdk.com
+127.0.0.1 sf3-ttcdn-tos.pstatp.com
+127.0.0.1 bds.snssdk.com
+127.0.0.1 dig.bdurl.net
+127.0.0.1 api-access.pangolin-sdk-toutiao.com
+127.0.0.1 sfl-fe-tos.pglstatp-toutiao.com
+127.0.0.1 sf1-be-pack.pglstatp-toutiao.com
+127.0.0.1 sf3-fe-tos.pglstatp-toutiao.com
+127.0.0.1 log-api.pangolin-sdk-toutiao.com
+127.0.0.1 s3-fe-scm.pglstatp-toutiao.com
+127.0.0.1 s3a.pstatp.com
+127.0.0.1 log-api.pangolin-sdk-toutiao-b.com
+127.0.0.1 sf6-be-pack.pglstatp-toutiao.com
+
+! -------加强屏蔽End------- !
+
+! -------白名单Start------- !
+! CF的管理
+@@||dash.cloudflare.com^$domain=dash.cloudflare.com,important
+
+! 图片
+@@||inews.gtimg.com^
+
+! 锁屏画报正常化
+@@||wallpaper.cdn.pandora.xiaomi.com^$important
+@@||package.wallpaper.cdn.pandora.xiaomi.com.lan^$important
+@@||w.pandora.xiaomi.com^$important
+
+! 新浪新闻热榜
+@@||gw.m.163.com^
+
+! 夸克搜索
+@@||quark.sm.cn^
+
+! 百度百科
+@@||bkimg.cdn.bcebos.com^
+@@||imgstat.baidu.com^
+
+! 小米浏览器
+@@||mb.yidianzixun.com^$important
+@@||sug.browser.miui.com^$important
+
+! QQ
+@@||qun.qq.com^$important
+
+!
+@@||list-manage.com
+
+! Huawei 翻译
+@@||metrics1.data.hicloud.com^
+
+! Gmail邮箱
+@@||mail.google.com^$important,document
+
+! --------白名单End-------- !
