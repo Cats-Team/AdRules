@@ -21,11 +21,11 @@ jobs:
       - name: Update rules
         run: |
           cmd
-          .\adblock\mio.bat
-          .\adguard\mio.bat
-          .\dns\mio.bat
-          .\allow\mio.bat
-          .\hosts\mio.bat
+          .\script\adblock\mio.bat
+          .\script\adguard\mio.bat
+          .\script\dns\mio.bat
+          .\script\allow\mio.bat
+          .\script\hosts\mio.bat
       - name: Git push assets to Github
         run: |
           git init
