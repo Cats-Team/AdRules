@@ -38,7 +38,7 @@ jobs:
           git commit -m "commit message"
           git branch -D main
           #git checkout -b main
-          git branch -m main
+          #git branch -m main
           #git add --all
           #git commit -m "Updated at $(date)"
           git remote add origin "https://${{ secrets.CODING_ACCOUNT }}:${{ secrets.CODING_PASSWORD }}@e.coding.net/cats-team/adguard/AdRules.git"
