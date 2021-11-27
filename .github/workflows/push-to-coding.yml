@@ -33,14 +33,9 @@ jobs:
           git init
           git config --local user.name "hacamer"
           git config --local user.email "hcamer145@gmail.com"
-          git checkout --orphan latest_branch
-          git add -A
-          git commit -m "commit message"
-          git branch -D main
-          #git checkout -b main
-          #git branch -m main
-          #git add --all
-          #git commit -m "Updated at $(date)"
+          git branch -m main
+          git add --all
+          git commit -m "Updated at $(date)"
           git remote add origin "https://${{ secrets.CODING_ACCOUNT }}:${{ secrets.CODING_PASSWORD }}@e.coding.net/cats-team/adguard/AdRules.git"
           #git fetch --unshallow origin
           git push -u -f origin main
