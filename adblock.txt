@@ -4,9 +4,9 @@
 ! Powerd by CatsTeam
 ! Expires: 12 Hours
 ! Description: 该规则合并自My AdFilters（for PC），EdentwCustom，adgk，Adaway，Uniartisan，规则以及乘风规则等
-! Version: Sat 11/27/2021
-! Last modified: Sat 11/27/2021T23:18:35.63Z
-! Total count: 135763
+! Version: Sun 11/28/2021
+! Last modified: Sun 11/28/2021T10:12:24.31Z
+! Total count: 135774
 
 
 ###A9AdsMiddleBoxTop
@@ -12214,6 +12214,7 @@
 ##.ad_leaderboard
 ##.ad_leaderboard_atf
 ##.ad_leaderboard_top
+##.ad_left
 ##.ad_left_cell
 ##.ad_left_column
 ##.ad_lft
@@ -32875,7 +32876,7 @@ $xmlhttprequest,domain=auroravid.to|flashx.cc|nowvideo.sx|onlinevideoconverter.c
 /disp_cnt.
 /dispatch.fcgi?
 /display-ad/*
-/display-ads-
+/display-ads-$domain=~google.co.uk|~google.com|~google.com.au
 /display-ads/*
 /display.ad.
 /display/ads/*
@@ -43611,6 +43612,7 @@ $xmlhttprequest,domain=auroravid.to|flashx.cc|nowvideo.sx|onlinevideoconverter.c
 @@||cwtv.com^$generichide
 @@||cxense.com/cx.cce.js$domain=tarzanweb.jp
 @@||cxense.com/cx.cce.js$domain=tn.com.ar
+@@||cxense.com/cx.js$domain=nlab.itmedia.co.jp
 @@||cxense.com/cx.js$domain=tarzanweb.jp
 @@||cxense.com/cx.js$script,domain=tv-tokyo.co.jp
 @@||cxense.com^$domain=ikea.com
@@ -53111,6 +53113,7 @@ forums.openpli.org###content > [style="text-align:center;"] > DIV[style="margin 
 forums.overclockers.ru#@#div[id^="yandex_ad"]
 forums.somethingawful.com###notregistered
 forums.somethingawful.com##.oma_pal
+forums.tomsguide.com###video_ad
 forums.tomshardware.com###rightcol_bottom
 forusex.com##a[href^="http://redheartnext.com"] > img
 fossbytes.com#@##adsense
@@ -75831,6 +75834,7 @@ zznews.cn##.ad:not([style])
 ||bancopostapremia.bancoposta.it^
 ||bandborder.com^$third-party
 ||bandcamp.com/api/tracker/
+||bandcamp.com/stat_record
 ||bandelcot.com^
 ||bandernad.com^
 ||bandernas.com^
@@ -80799,6 +80803,7 @@ zznews.cn##.ad:not([style])
 ||cm.bilibili.com/cm/api/conversion/mobile/v1
 ||cm.bilibili.com/cm/api/fees/wise
 ||cm.bilibili.com/mgk/page^
+||cm.bilibili.com^
 ||cm.g.doubleclick.net^
 ||cm.informaengage.com^
 ||cm.passport.iqiyi.com^
@@ -83112,6 +83117,7 @@ zznews.cn##.ad:not([style])
 ||cxb4.cn^
 ||cxcxt.com^
 ||cxdcn9c.fjshxjs.cn^$third-party
+||cxense.com/cx.js$script,redirect=noopjs,domain=nlab.itmedia.co.jp,important
 ||cxense.com^$domain=focus.de
 ||cxense.com^$third-party
 ||cxfzw.cn^
@@ -93685,6 +93691,7 @@ zznews.cn##.ad:not([style])
 ||hdsky.me/adv/
 ||hdslb.com/*-tracker.js
 ||hdslb.com/bfs/ad/
+||hdslb.com/bfs/cm/cm-sdk/static/js/bili-collect.js
 ||hdslb.com/bfs/sycp/creative_img/$image
 ||hdslb.com/images/isptrack.js
 ||hdslb.com/js/bfd.js
@@ -98225,7 +98232,6 @@ zznews.cn##.ad:not([style])
 ||jl1130.com^
 ||jl368.cn^
 ||jlc001.com/static/js/_pc.js
-||jlc001.com^
 ||jldtlh.fashionnova.com^
 ||jlhygy.com^
 ||jljspx.com^
@@ -99300,6 +99306,7 @@ zznews.cn##.ad:not([style])
 ||kiezohky.xyz^
 ||kighmh.nelson.nl^
 ||kihoadoa.com^
+||kiiqnnx.cn^
 ||kiki.rireetchansons.fr^
 ||kikinote.net/iframe
 ||kikoucuy.net^
@@ -99980,6 +99987,7 @@ zznews.cn##.ad:not([style])
 ||laichaim.net^
 ||laidauni.com^
 ||laifu365.com^
+||lailer.cn^
 ||lailitou.com^
 ||lailivob.net^
 ||laim.tv^$third-party
@@ -109761,7 +109769,6 @@ zznews.cn##.ad:not([style])
 ||p0y.cn^$third-party
 ||p0y.cn^*.swf
 ||p1.chinakaoyan.com^
-||p1.pl520.com^
 ||p1.qxzsw.com^
 ||p1.zhongyoo.com^
 ||p1.zhumengwl.com^
@@ -115458,6 +115465,7 @@ zznews.cn##.ad:not([style])
 ||rsdown.cn/statics/images/rs-banner.jpg
 ||rselffreedsc.top^
 ||rseyebrown.fun^
+||rsftjj.cn^
 ||rshrt.com^$cookie=app_visitor
 ||rskillsplu.club^
 ||rsngelaqprud.xyz^
@@ -133129,6 +133137,7 @@ zznews.cn##.ad:not([style])
 ||xmlrtb.com^
 ||xmltym2.cn^
 ||xmlwizard.com^
+||xmouxe.cn^
 ||xmrc.com.cn/net/info/html/
 ||xmrepair.com^
 ||xmrpool.net^$third-party
@@ -135202,6 +135211,7 @@ zznews.cn##.ad:not([style])
 ||zhuwang.cc/api.php?op=ad_
 ||zhuzaogangqiu.com^
 ||zhwyjd.cn^
+||zhxkzss.cn^
 ||zhy333.com^
 ||zhy333.com^$third-party
 ||zhyeqw.mercury.ru^
@@ -135328,6 +135338,7 @@ zznews.cn##.ad:not([style])
 ||zlinkv.com^$popup
 ||zllnb.top^
 ||zln44.cn^
+||zlnmzc.top^
 ||zlolhl.3dnews.ru^
 ||zlolhl.anekdot.ru^
 ||zlolhl.briefly.ru^
