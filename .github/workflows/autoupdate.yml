@@ -31,6 +31,7 @@ jobs:
           git init
           git config --local user.name "actions"
           git config --local user.email "action@github.com"
+          git gc --prune=now --aggressive
           git branch -m main
           git add --all
           git commit -m "Updated at $(date)"
