@@ -10,13 +10,6 @@ wget -O i3.txt https://adaway.org/hosts.txt
 wget -O i4.txt https://raw.githubusercontent.com/r-a-y/mobile-hosts/master/AdguardApps.txt
 wget -O i5.txt https://raw.githubusercontent.com/r-a-y/mobile-hosts/master/AdguardMobileAds.txt
 wget -O i6.txt https://raw.githubusercontent.com/badmojr/1Hosts/master/mini/hosts.txt
-wget -O i7.txt https://raw.githubusercontent.com/kboghdady/youTube_ads_4_pi-hole/master/youtubelist.txt
-wget -O i8.txt https://raw.githubusercontent.com/Ewpratten/youtube_ad_blocklist/master/blocklist.txt
-wget -O i9.txt https://raw.githubusercontent.com/RootFiber/youtube-ads/main/youtubeblacklist.txt
-wget -O i10.txt https://raw.githubusercontent.com/RootFiber/youtube-ads/main/blockeverything.txt
-wget -O i11.txt https://raw.githubusercontent.com/jerryn70/GoodbyeAds/master/Extension/GoodbyeAds-YouTube-AdBlock.txt
-wget -O i12.txt https://raw.githubusercontent.com/RootFiber/youtube-ads/main/ad-block-YouTube-Project.txt
-wget -O i13.txt https://raw.githubusercontent.com/sonofhelga/yicklist/master/yick.list
 
 ::add new rules
 ::wget -O i+number url
