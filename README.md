@@ -52,6 +52,7 @@
 ## 特别鸣谢
 * [@Cats-team](https://github.com/Cats-Team)
 * [@DoingDog](https://github.com/DoingDog) 
+* 以及提交Issue的各位朋友
 ## 感谢
 - [AdGuard](https://adguard.com/) - 世界上最高级的广告拦截程序！
 - [Adaday](https://adaway.org/) - AdAway 是使用hosts文件的 Android 开源广告拦截器。
