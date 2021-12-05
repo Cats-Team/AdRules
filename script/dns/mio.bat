@@ -5,13 +5,13 @@ cd aa
 ::start download
 
 wget -O i1.txt https://adguardteam.github.io/AdGuardSDNSFilter/Filters/filter.txt
-wget -O i3.txt https://adaway.org/hosts.txt
 wget -O i4.txt https://raw.githubusercontent.com/jdlingyu/ad-wars/master/hosts
 wget -O i5.txt https://raw.githubusercontent.com/badmojr/1Hosts/master/mini/adblock.txt
 wget -O i6.txt https://raw.githubusercontent.com/xinggsf/Adblock-Plus-Rule/master/rule.txt
 wget -O i7.txt https://raw.githubusercontent.com/o0HalfLife0o/list/master/ad-pc.txt
 wget -O i8.txt https://raw.githubusercontent.com/o0HalfLife0o/list/master/ad-edentw.txt
 wget -O i9.txt https://raw.githubusercontent.com/banbendalao/ADgk/master/ADgk.txt
+
 
 ::add new rules
 ::wget -O i+number url
