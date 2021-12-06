@@ -15,18 +15,14 @@ env:
   
 jobs:
   myjob:
-    runs-on: windows-2022
+    runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@main
       - name: Update rules
         run: |
-          cmd
-          .\script\adblock\mio.bat
-          .\script\adguard\mio.bat
-          .\script\dns\mio.bat
-          .\script\allow\mio.bat
-          .\script\hosts\mio.bat
-          .\script\hosts-youtube\mio.bat
+          bash ./script/adblcok/main.sh
+          bash ./script/adguard/main.sh
+          bash ./script/dns/main.sh
       - name: Git push assets to Github
         run: |
           git init
@@ -37,7 +33,7 @@ jobs:
           git add --all
           git commit -m "Updated at $(date)"
           git remote add origin "https://github.com/Cats-Team/AdRules.git"
-          #git remote set-url --add origin "https://${{ secrets.CODING_ACCOUNT }}:${{ secrets.CODING_PASSWORD }}@e.coding.net/cats-team/adguard/AdRules.git"
+          git remote set-url --add origin "https://${{ secrets.CODING_ACCOUNT }}:${{ secrets.CODING_PASSWORD }}@e.coding.net/cats-team/adguard/AdRules.git"
           #git fetch --unshallow origin
           git push -u -f origin --all
       
