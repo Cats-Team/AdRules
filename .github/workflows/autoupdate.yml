@@ -30,6 +30,9 @@ jobs:
       - name: Update hosts
         run: |
           bash ./script/hosts/main.sh
+      - name: Move files
+        run: |
+          mv adblock.txt adguard.txt dns.txt hosts.txt ../
       - name: Git push assets to Github and Coding
         run: |
           git init
