@@ -1,5 +1,5 @@
 #!/bin/bash
-cd ./src
+cd script/adblock/src
 
 # Start Download
 curl -o i1.txt https://raw.githubusercontent.com/o0HalfLife0o/list/master/ad-pc.txt
@@ -29,15 +29,9 @@ sort -n tmpp.txt | uniq > tmp.txt
 num=`cat tmp.txt | wc -l`
 
 # Start Add title and date
-echo "[Adblock Plus 2.0]
-! Title: AdRules (For AdBlock)
-! Homepage: https://github.com/Cats-Team/AdRules
-! Powerd by CatsTeam
-! Expires: 12 Hours
-! Description: 该规则合并自My AdFilters（for PC），EdentwCustom，adgk，Adaway，Uniartisan，规则以及乘风规则等" >> title.txt
 echo "! Version: `date +"%Y-%m-%d %H:%M:%S"`" >> tpdate.txt
 echo "! Total count: $num" >> tpdate.txt
-cat title.txt tpdate.txt tmp.txt > final.txt
+cat title.dd tpdate.txt tmp.txt > final.txt
 
 mv final.txt ../../../adblock.txt
 rm *.txt
