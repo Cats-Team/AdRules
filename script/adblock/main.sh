@@ -33,7 +33,7 @@ echo "! Version: `date +"%Y-%m-%d %H:%M:%S"`" >> tpdate.txt
 echo "! Total count: $num" >> tpdate.txt
 cat title.dd tpdate.txt tmp.txt > final.txt
 
-mv final.txt ../../../adblock.txt
+mv final.txt ../../adblock.txt
 rm *.txt
 cd ../../
 exit
