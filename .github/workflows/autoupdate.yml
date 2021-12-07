@@ -25,14 +25,12 @@ jobs:
       - name: Git push assets to Github and Coding
         run: |
           git init
-          rm .git/
-          git init
           git config --local user.name "actions"
           git config --local user.email "action@github.com"
           git branch -m main
           git add --all
           git commit -m "Updated at $(date)"
-          git remote add origin "https://github.com/Cats-Team/AdRules.git"
+          #git remote add origin "https://github.com/Cats-Team/AdRules.git"
           git remote set-url --add origin "https://${{ secrets.CODING_ACCOUNT }}:${{ secrets.CODING_PASSWORD }}@e.coding.net/cats-team/adguard/AdRules.git"
           #git fetch --unshallow origin
           git push -u -f origin --all
