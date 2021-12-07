@@ -15,12 +15,20 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@main
-      - name: Update rules
+      - name: Update adblock
         run: |
           sh ./script/adblock/main.sh
+      - name: Update adguard
+        run: |
           sh ./script/adguard/main.sh
+      - name: Update dns
+        run: |
           sh ./script/dns/main.sh
+      - name: Update allowlist
+        run: |
           sh ./script/allow/main.sh
+      - name: Update hosts
+        run: |
           sh ./script/hosts/main.sh
       - name: Git push assets to Github and Coding
         run: |
