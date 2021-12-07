@@ -33,7 +33,7 @@ jobs:
       - name: Move files
         run: |
           cd script
-          mv adblock.txt adguard.txt dns.txt hosts.txt ../
+          mv adblock.txt adguard.txt dns.txt hosts.txt allow.txt ../
       - name: Git push assets to Github and Coding
         run: |
           git init
