@@ -1,5 +1,5 @@
 #!/bin/bash
-cd DNSFilter/src
+cd ./src
 
 # Start Download
 wget -O i1.txt https://adguardteam.github.io/AdGuardSDNSFilter/Filters/filter.txt
