@@ -26,7 +26,7 @@ echo "! Version: `date +"%Y-%m-%d %H:%M:%S"`" >> tpdate.txt
 echo "! Total count: $num" >> tpdate.txt
 cat title.dd tpdate.txt tmp.txt > final.txt
 
-mv final.txt ../../../dns.txt
+mv final.txt ../../dns.txt
 rm *.txt
 cd ../../
 exit
