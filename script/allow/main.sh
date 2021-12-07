@@ -27,7 +27,7 @@ echo "! Version: `date +"%Y-%m-%d %H:%M:%S"`" >> tpdate.txt
 echo "! Total count: $num" >> tpdate.txt
 cat frules.dd tpdate.txt tmp.txt > final.txt
 
-mv final.txt ../../../allow.txt
+mv final.txt ../../allow.txt
 rm *.txt
 cd ../../
 exit
