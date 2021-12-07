@@ -20,11 +20,11 @@ jobs:
       - uses: actions/checkout@main
       - name: Update rules
         run: |
-          bash ./script/adblock/main.sh
-          bash ./script/adguard/main.sh
-          bash ./script/dns/main.sh
-          bash ./script/allow/main.sh
-          bash ./script/hosts/main.sh
+          sh ./script/adblock/main.sh
+          sh ./script/adguard/main.sh
+          sh ./script/dns/main.sh
+          sh ./script/allow/main.sh
+          sh ./script/hosts/main.sh
       - name: Git push assets to Github
         run: |
           git init
