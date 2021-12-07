@@ -32,6 +32,7 @@ jobs:
           bash ./script/hosts/main.sh
       - name: Move files
         run: |
+          cd script
           mv adblock.txt adguard.txt dns.txt hosts.txt ../
       - name: Git push assets to Github and Coding
         run: |
