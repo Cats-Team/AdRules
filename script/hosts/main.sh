@@ -1,5 +1,5 @@
 #!/bin/bash
-cd ./src
+cd script/hosts/src
 
 # Start Download
 curl -o i1.txt https://raw.githubusercontent.com/r-a-y/mobile-hosts/master/AdguardDNS.txt 

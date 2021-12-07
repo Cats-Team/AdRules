@@ -1,5 +1,5 @@
 #!/bin/bash
-cd ./src
+cd script/adguard/src
 
 # Start Download
 curl -o i1.txt https://filters.adtidy.org/android/filters/2_optimized.txt
@@ -21,6 +21,13 @@ sort -n tmp.txt > tmmp.txt
 num=`cat tmmp.txt | wc -l`
 
 # Start Add title and date
+echo "[Adblock Plus 2.0]
+! Title: AdRules (For AdGuard)
+! Homepage: https://github.com/Cats-Team/AdRules
+! Powerd by CatsTeam
+! Expires: 12 Hours
+! Description: 该规则合并自AdGuard广告过滤器，AdGuard移动设备过滤器，AdGuard隐私保护过滤器，AdGuardURL跟踪保护器，AdGuard社交过滤器，AdGuard烦人过滤器，AdGuard中文过滤器，AdGuard实验过滤器
+" >> title.txt
 echo "! Version: `date +"%Y-%m-%d %H:%M:%S"`" >> tpdate.txt
 echo "! Total count: $num" >> tpdate.txt
 cat title.dd tpdate.txt tmmp.txt > final.txt
