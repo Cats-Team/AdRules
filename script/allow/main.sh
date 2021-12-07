@@ -1,5 +1,5 @@
 #!/bin/bash
-cd ./src
+cd script/allow/src
 
 # Start Download
 curl -o i1.txt https://adguardteam.github.io/AdGuardSDNSFilter/Filters/filter.txt
