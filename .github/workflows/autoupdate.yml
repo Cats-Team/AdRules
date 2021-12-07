@@ -8,10 +8,7 @@ on:
 
   workflow_dispatch:
     
-env:
-  SCKEY: ${{ secrets.SCKEY }}
-  TG_TOKEN: ${{ secrets.TG_TOKEN }}
-  CHAT_ID: ${{ secrets.CHAT_ID }}
+
   
 jobs:
   myjob:
@@ -25,12 +22,11 @@ jobs:
           sh ./script/dns/main.sh
           sh ./script/allow/main.sh
           sh ./script/hosts/main.sh
-      - name: Git push assets to Github
+      - name: Git push assets to Github and Coding
         run: |
           git init
           git config --local user.name "actions"
           git config --local user.email "action@github.com"
-          git gc --prune=now --aggressive
           git branch -m main
           git add --all
           git commit -m "Updated at $(date)"
