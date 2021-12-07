@@ -17,19 +17,19 @@ jobs:
       - uses: actions/checkout@main
       - name: Update adblock
         run: |
-          sh ./script/adblock/main.sh
+          bash ./script/adblock/main.sh
       - name: Update adguard
         run: |
-          sh ./script/adguard/main.sh
+          bash ./script/adguard/main.sh
       - name: Update dns
         run: |
-          sh ./script/dns/main.sh
+          bash ./script/dns/main.sh
       - name: Update allowlist
         run: |
-          sh ./script/allow/main.sh
+          bash ./script/allow/main.sh
       - name: Update hosts
         run: |
-          sh ./script/hosts/main.sh
+          bash ./script/hosts/main.sh
       - name: Git push assets to Github and Coding
         run: |
           git init
