@@ -24,9 +24,10 @@ sort -n tmpp.txt | uniq > tmp.txt
 num=`cat tmp.txt | wc -l`
 
 # Start Add title and date
+echo "! Title: Allowlist" >> tpdate.txt
 echo "! Version: `date +"%Y-%m-%d %H:%M:%S"`" >> tpdate.txt
 echo "! Total count: $num" >> tpdate.txt
-cat frules.dd tpdate.txt tmp.txt > final.txt
+cat tpdate.txt frules.dd tmp.txt > final.txt
 
 mv final.txt ../../allow.txt
 rm *.txt
