@@ -7,10 +7,11 @@ curl -o i2.txt https://raw.githubusercontent.com/Potterli20/hosts/main/ad-allow.
 curl -o i3.txt https://adaway.org/hosts.txt
 curl -o i4.txt https://raw.githubusercontent.com/banbendalao/ADgk/master/ADgk.txt
 curl -o i5.txt https://raw.githubusercontent.com/o0HalfLife0o/list/master/ad-pc.txt
-curl -o 16.txt https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/ChineseFilter/sections/whitelist.txt
+curl -o i6.txt https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/ChineseFilter/sections/whitelist.txt
 curl -o i7.txt https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/GermanFilter/sections/whitelist.txt 
 curl -o i8.txt https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/TurkishFilter/sections/whitelist.txt 
 curl -o i9.txt https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/SpywareFilter/sections/whitelist.txt
+curl -o i10.txt https://raw.githubusercontent.com/Potterli20/hosts/Allow/allow-all.txt
 
 # Start Merge and Duplicate Removal
 cat i*.txt > mergd.txt
