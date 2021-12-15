@@ -4,8 +4,8 @@
 ! Powerd by CatsTeam
 ! Expires: 12 Hours
 ! Description: 该规则合并自My AdFilters（for PC），EdentwCustom，adgk，Adaway，Uniartisan，规则以及乘风规则等
-! Version: 2021-12-15 10:17:45
-! Total count: 140237
+! Version: 2021-12-15 22:15:44
+! Total count: 140286
 ! ------加强屏蔽Start------ !
 
 !酷安"提到的好物"
@@ -4257,7 +4257,10 @@ malimali2.com##div.leo-container:nth-child(4) > div:nth-child(5)
 ###after-header-ads
 ###after-top-menu-ads
 ###after_ad
+###after_bottom_ad
+###after_bottom_ad_2
 ###after_button_ad_desktop
+###after_heading_ad
 ###after_title_ad
 ###afterpostad
 ###agencies_ad
@@ -10019,6 +10022,7 @@ malimali2.com##div.leo-container:nth-child(4) > div:nth-child(5)
 ##.a-d-rotate_widgets
 ##.a-dserver
 ##.a-dserver_text
+##.a-paternoster-ad
 ##.a-sponsor
 ##.a160x600
 ##.a300x250
@@ -18724,6 +18728,7 @@ malimali2.com##div.leo-container:nth-child(4) > div:nth-child(5)
 ##.ipsAdvertisement
 ##.iqadlinebottom
 ##.iqadmarker
+##.iqadtile_wrapper
 ##.is-mpu
 ##.is-preload-ad
 ##.is-script-ad
@@ -24717,6 +24722,7 @@ malimali2.com##div.leo-container:nth-child(4) > div:nth-child(5)
 ##div[style^="width: 100%;"][style$="visibility: visible;"] iframe[scrolling="no"][src*="//"][src*="?"][src*="="][src*="&"][width][height][frameborder="0"]
 ##div[style^="width: 100%;"][style$="z-index: inherit;"] iframe[scrolling="no"][src*="//"][src*="?"][src*="="][src*="&"][width][height][frameborder="0"]
 ##foxfield-xmas
+##hl-adsense
 ##iframe[id^="google_ads_frame"]
 ##iframe[src*="mellowads.com"]
 ##iframe[src^="http://ad.yieldmanager.com/"]
@@ -25017,7 +25023,7 @@ $image,third-party,domain=avtb6677.com|lady1.top
 $image,third-party,domain=lady1.top
 $media,domain=damimage.com|imagedecode.com|imageteam.org
 $popup,third-party,domain=76fengyun.com|88files.net|avsdown.com|downdv.com|downdvs.com|downhhh.com|imedown.info|jandown.com|jxedt.com|mimima.com|rmdown.com|soyunpan.com|youtubeto.com
-$popup,third-party,domain=cloudvideo.tv|geoip.redirect-ads.com|highstream.tv|loader.to|myflixer.to|mystream.to|play.hydracdn.network|playtube.ws|streamtape.com|strtape.cloud|supervideo.tv|upstream.to|vidcloud9.com|vidlox.me|vivo.sx|voe.sx|vupload.com|wiztube.xyz
+$popup,third-party,domain=cloudvideo.tv|geoip.redirect-ads.com|highstream.tv|loader.to|mixdrop.co|myflixer.to|mystream.to|play.hydracdn.network|playtube.ws|streamtape.com|strtape.cloud|supervideo.tv|upstream.to|vidcloud9.com|videovard.sx|vidlox.me|vivo.sx|voe.sx|vupload.com|wiztube.xyz
 $popup,third-party,domain=downdv.com|rmdown.com|soyunpan.com|youtubeto.com
 $popup,third-party,domain=webkaka.com
 $script,stylesheet,subdocument,third-party,xmlhttprequest,domain=cocomanga.com|cocomanhua.com
@@ -32957,7 +32963,7 @@ $xmlhttprequest,domain=auroravid.to|flashx.cc|nowvideo.sx|onlinevideoconverter.c
 /datacapture/track
 /datacollectcode?
 /datadome/*
-/dataunlocker.js$script,1p
+/dataunlocker$script,1p
 /dateads.
 /datomata.widget.js
 /davad_ad_
@@ -45991,6 +45997,7 @@ $xmlhttprequest,domain=auroravid.to|flashx.cc|nowvideo.sx|onlinevideoconverter.c
 @@||youtube.com/ads/preferences/$popup
 @@||youtube.com/api/analytics/$~third-party
 @@||youtube.com/get_video_info?$xmlhttprequest,domain=music.youtube.com|tv.youtube.com
+@@||youtube.com/shorts^$document
 @@||yqszkzx.cn/images/ad
 @@||yu.xyz.mn/images/event.gif?$image,~third-party
 @@||yunlin.com.tw/php01/ad/showad.
@@ -47001,6 +47008,9 @@ acgdoge.net,chinalawedu.com,douyu.com,gmgard.com,hggard.com,iqiyi.com,jinti.com,
 acggd.com##a[href*=".apk"]
 acgking.com##.asst
 acgking.com,dbtmn.com,typin.cn##.asst
+acglala.me##a[href*=".h-ero.games"]
+acglala.me##a[href*=".taobao.com"]
+acglala.me##a[href*=".tmall.com"]
 acglala.net##.gg_img
 acglala.net,boke112.com,ruanyifeng.com,techug.com,vaikan.com,webhek.com##a[href^="http://t.cn/"]
 acglover.me##.myas
@@ -47096,7 +47106,7 @@ afl.com.au##.c-accordion__item-officialpartners
 afr.com###stickyLeaderboard
 africanadvice.com,pspad.com,sudantribune.com,thehackernews.com##.google
 africanews.com##.right-legend
-afrivibes.net,airplaydirect.com,bigeye.ug,cryptomining-blog.com,cryptoreporter.info,dotsauce.com,espnrichmond.com,forexmt4indicators.com,freedomhacker.net,gameplayinside.com,goodcarbadcar.net,mkvcage.com,movin100.com,mycolumbuspower.com,naijaloaded.com.ng,onislandtimes.com,punchng.com,radiobiz.co.za,reviewparking.com,robhasawebsite.com,sacobserver.com,seguintoday.com,themediaonline.co.za,theolivepress.es,therep.co.za,thewillnigeria.com,wantedinafrica.com,wantedinrome.com##img[width="300"]
+afrivibes.net,airplaydirect.com,bigeye.ug,cryptomining-blog.com,cryptoreporter.info,dotsauce.com,espnrichmond.com,forexmt4indicators.com,freedomhacker.net,gameplayinside.com,goodcarbadcar.net,kiwiblog.co.nz,mkvcage.com,movin100.com,mycolumbuspower.com,naijaloaded.com.ng,onislandtimes.com,punchng.com,radiobiz.co.za,reviewparking.com,robhasawebsite.com,sacobserver.com,seguintoday.com,themediaonline.co.za,theolivepress.es,therep.co.za,thewillnigeria.com,wantedinafrica.com,wantedinrome.com##img[width="300"]
 afro.com##.a-215.g-single
 afrol.com##table[height="70"]
 afrsmartinvestor.com.au,afternoondc.in,allmovie.com,allmusic.com,brw.com.au,cio.co.ke,gq.co.za,ocregister.com,orangecounty.com,premier.org.uk,premierchristianity.com,premierchristianradio.com,premiergospel.org.uk,radio.com,sidereel.com,themonthly.com.au,yourdictionary.com##.advertising
@@ -47417,6 +47427,7 @@ androidpolice.com,constructionreviewonline.com##.ai-track
 androidrepublic.org##.samSupportUs
 androidrepublic.org,anonymousemail.me,apkmirror.com,demos.krajee.com,kadinlarkulubu.com,pixiz.com,spoilertv.com#@#.adsbygoogle
 androidsage.com##.code-block-9
+androidsage.com,cryptoreporter.info,ets2.lt,geekdashboard.com,geekspin.co,getdroidtips.com,kanonitv.net,whats-on-netflix.com##.code-block-1
 androidsage.com,patriotfetch.com##.code-block-5
 androidtvbox.eu##*:style(-webkit-touch-callout: default !important; -webkit-user-select: text !important; -moz-user-select: text !important; -ms-user-select: text !important; user-select: text !important;)
 androidtvbox.eu##+js(acis, document.ondragstart)
@@ -47749,7 +47760,7 @@ audizine.com##.articleIMG
 auepaisagismo.com,auepaisajismo.com##body:style(overflow: auto !important;)
 aulete.com.br##.definicao_verbete_homologado_interna:style(height:100% !important;)
 aupetitparieur.com#$#freeze-element .widget-area abort
-aurn.com,borneobulletin.com.bn,chicagodefender.com,dallasvoice.com,gematsu.com,moviemaker.com,nondoc.com,one.com.mt,sammobile.com,thegolfnewsnet.com##.g
+aurn.com,borneobulletin.com.bn,chicagodefender.com,dallasvoice.com,gayexpress.co.nz,gematsu.com,moviemaker.com,nondoc.com,one.com.mt,sammobile.com,thegolfnewsnet.com##.g
 ausbt.com.au##.halfpage-homepage
 austcham-china.com##+js(acis, jQuery, oncontextmenu)
 australianfrequentflyer.com.au##.focus-guest-alert
@@ -49205,7 +49216,7 @@ briian.com##.entry-data-wrapper > div[style="display:table; margin: 0 0 15px 0;"
 briian.com##.hentry-gad
 briian.com##.sidebar-widget-area > #custom_html-6
 briian.com##div[class^="hentry-gad-mobile"]
-brila.net,cgmagonline.com,theyeshivaworld.com,thisisanfield.com##.td-banner-wrap-full
+brila.net,cgmagonline.com,gayexpress.co.nz,theyeshivaworld.com,thisisanfield.com##.td-banner-wrap-full
 brillen.de##+js(acis, document.createElement, 'script')
 brisbanetimes.com.au,smh.com.au,theage.com.au,watoday.com.au###articlePartnerStories
 britannica.com##+js(acis, document.createElement, admiral)
@@ -50482,7 +50493,6 @@ cryptofeeds.news,newswireni.com,power987.co.za##img[height="600"]
 cryptorank.io##div[class^="banner__Container-"]
 cryptorank.io##div[class^="desktop__BannerWrap-"]
 cryptoreporter.info##.code-block-3
-cryptoreporter.info,ets2.lt,geekdashboard.com,geekspin.co,getdroidtips.com,kanonitv.net,whats-on-netflix.com##.code-block-1
 cryptoreporter.info,palestinechronicle.com##.mh-header-widget-2
 cryptospout.com#@#.adsbygoogle
 crystalradio.cn##.a_mu,.a_pt,.a_f
@@ -50908,6 +50918,7 @@ destinazionemontagna.it##+js(acis, document.oncontextmenu)
 destinazionemontagna.it##+js(aopr, disableSelection)
 detail.mall.meizu.com##.app detail
 detail.mall.meizu.com##.bnr-link
+detectiveconanworld.com##a[href^="https://brave.com/"]
 dev.mysql.com##.login-callout
 developers.google.com#@##google-ads
 developpez.com##+js(acis, document.getElementById, cookie)
@@ -53083,6 +53094,7 @@ gayexpress.co.nz##.g-col > .gofollow
 gayexpress.co.nz##.g-dyn
 gaymovievids.com,ts-tube.net,verygayboys.com##.random-td
 gaymovievids.com,verygayboys.com##.mobile-random
+gaynewzealand.com###wn-insurance-quote-editor
 gaypornmasters.com##*:style(-webkit-touch-callout: default !important; -webkit-user-select: text !important; -moz-user-select: text !important; -ms-user-select: text !important; user-select: text !important;)
 gaypornmasters.com##+js(aopr, document.oncontextmenu)
 gayporno.fm##.b-content__aside-head
@@ -53404,6 +53416,7 @@ goodgearguide.com.au,pcworld.co.nz,pcworld.idg.com.au##.lo-toppromos
 goodgearguide.com.au,pcworld.idg.com.au###float_leaderboard_bottom
 goodrx.com##div[class^="adContainer"]
 goodrx.com##div[class^="adWrapper-"]
+google.ac,google.ae,google.at,google.be,google.bg,google.by,google.ca,google.ch,google.cl,google.co.id,google.co.il,google.co.in,google.co.jp,google.co.ke,google.co.kr,google.co.nz,google.co.th,google.co.uk,google.co.ve,google.co.za,google.com,google.com.ar,google.com.au,google.com.br,google.com.co,google.com.ec,google.com.eg,google.com.hk,google.com.mx,google.com.my,google.com.pe,google.com.ph,google.com.pk,google.com.py,google.com.sa,google.com.sg,google.com.tr,google.com.tw,google.com.ua,google.com.uy,google.com.vn,google.cz,google.de,google.dk,google.dz,google.ee,google.es,google.fi,google.fr,google.gr,google.hr,google.hu,google.ie,google.it,google.lt,google.lv,google.nl,google.no,google.pl,google.pt,google.ro,google.rs,google.ru,google.se,google.sk####div[jsdata*="SinglePLA-"][data-id^="SinglePLA-"]
 google.ac,google.ae,google.at,google.be,google.bg,google.by,google.ca,google.ch,google.cl,google.co.id,google.co.il,google.co.in,google.co.jp,google.co.ke,google.co.kr,google.co.nz,google.co.th,google.co.uk,google.co.ve,google.co.za,google.com,google.com.ar,google.com.au,google.com.br,google.com.co,google.com.ec,google.com.eg,google.com.hk,google.com.mx,google.com.my,google.com.pe,google.com.ph,google.com.pk,google.com.py,google.com.sa,google.com.sg,google.com.tr,google.com.tw,google.com.ua,google.com.uy,google.com.vn,google.cz,google.de,google.dk,google.dz,google.ee,google.es,google.fi,google.fr,google.gr,google.hr,google.hu,google.ie,google.it,google.lt,google.lv,google.nl,google.no,google.pl,google.pt,google.ro,google.rs,google.ru,google.se,google.sk###atvcap + #tvcap > .mnr-c > .commercial-unit-mobile-top
 google.ac,google.ae,google.at,google.be,google.bg,google.by,google.ca,google.ch,google.cl,google.co.id,google.co.il,google.co.in,google.co.jp,google.co.ke,google.co.kr,google.co.nz,google.co.th,google.co.uk,google.co.ve,google.co.za,google.com,google.com.ar,google.com.au,google.com.br,google.com.co,google.com.ec,google.com.eg,google.com.hk,google.com.mx,google.com.my,google.com.pe,google.com.ph,google.com.pk,google.com.py,google.com.sa,google.com.sg,google.com.tr,google.com.tw,google.com.ua,google.com.uy,google.com.vn,google.cz,google.de,google.dk,google.dz,google.ee,google.es,google.fi,google.fr,google.gr,google.hr,google.hu,google.ie,google.it,google.lt,google.lv,google.nl,google.no,google.pl,google.pt,google.ro,google.rs,google.ru,google.se,google.sk###atvcap > .cu-container > div > div[data-pla="1"]
 google.ac,google.ae,google.at,google.be,google.bg,google.by,google.ca,google.ch,google.cl,google.co.id,google.co.il,google.co.in,google.co.jp,google.co.ke,google.co.kr,google.co.nz,google.co.th,google.co.uk,google.co.ve,google.co.za,google.com,google.com.ar,google.com.au,google.com.br,google.com.co,google.com.ec,google.com.eg,google.com.hk,google.com.mx,google.com.my,google.com.pe,google.com.ph,google.com.pk,google.com.py,google.com.sa,google.com.sg,google.com.tr,google.com.tw,google.com.ua,google.com.uy,google.com.vn,google.cz,google.de,google.dk,google.dz,google.ee,google.es,google.fi,google.fr,google.gr,google.hr,google.hu,google.ie,google.it,google.lt,google.lv,google.nl,google.no,google.pl,google.pt,google.ro,google.rs,google.ru,google.se,google.sk###center_col > #taw > #tvcap > .cu-container > .commercial-unit-desktop-top
@@ -53528,10 +53541,10 @@ greatandhra.com##div[class^="add"]
 greatbritishlife.co.uk##.lp_track_vertical2
 greatis.com##.sing
 greatist.com###modal-host
-greatist.com##[data-empty]
 greatist.com##aside
 greatist.com##body:style(overflow: auto !important;)
 greatist.com##hl-adsense
+greatist.com,psychcentral.com##[data-empty]
 greatwuyi.com##.ad_img,.main_9788,[class^="main_ad"],[height="80"]
 greatwuyi.com##.main_ad2
 greenocktelegraph.co.uk##+js(aopr, _sp_._networkListenerData)
@@ -58512,10 +58525,13 @@ ndtv.com###___ndtvpushdiv
 ndtv.com###checked
 ndtv.com##.adBg
 ndtv.com##.add-section
+ndtv.com##.addBox
 ndtv.com##.add__txt
 ndtv.com##.add__wrp
 ndtv.com##.add_top-wrp-fl
+ndtv.com##.product_mapping_sticky
 ndtv.com##.sp_ad-t
+ndtv.com##.taboolFeed
 ndwww.cn##div.indexAdsbot,div.rigad,div.topAd,div.ad,div.r-ad1
 ne10.uol.com.br##*:style(-webkit-touch-callout: default !important; -webkit-user-select: text !important; -moz-user-select: text !important; -ms-user-select: text !important; user-select: text !important;)
 neatstudio.com##a[href*="&cps_key="]
@@ -60119,6 +60135,7 @@ psikologicinta.com##.unselectable:style(-webkit-touch-callout: default !importan
 psnine.com##center[style="overflow:hidden;"] > a > img
 pssite.com#@#.adver
 pstmrk.it/open$image
+psychcentral.com##aside:-abp-has([data-empty])
 psychologiazycia.com##*:style(-webkit-touch-callout: default !important; -webkit-user-select: text !important; -moz-user-select: text !important; -ms-user-select: text !important; user-select: text !important;)
 psychologiazycia.com##+js(acis, disableselect, reEnable)
 psychologiazycia.com##+js(acis, document.oncontextmenu)
@@ -61072,6 +61089,8 @@ scmp.com##.advertisers
 scmp.com##.page-container__left-native-ad-container
 scol.cn##DIV#head-ad
 scol.com.cn##div#head-ad,img.weixin,#afp_ad
+scoop.co.nz###in-cont
+scoop.co.nz###rect
 scoop.co.nz##.article-left-box
 scooter-chinois-4t.com#@#.adsbygoogle
 scorecardresearch.com
@@ -61518,6 +61537,8 @@ sina.com.cn##A[href*="/comfinanceweb."]
 sina.com.cn##A[href="https://touzi.sina.com.cn/"]
 sina.com.cn##[data-info^="ad_"]
 sina.com.cn##div.ad-banner,div#ad_top,div.top-ads,div.adNone,div.adSpace,div#divMilBottom,div.zhaoshang-block,span#CoupletMediaWrap,div.bannerF1,div#flashcontent_96FFB521078A,DIV#baidu.article_baidu,DIV#topbar.topAd950,DIV.sa_w.top_ads,div#HP_IDX_BANNER_UN_01,div#AD_Background_Wall_Banner,div.ad_article_top,div.taier_pfp,iframe[src*=".sina.com.cn/iframe/76/"],DIV#blk_xlzttltop_01.blk_xlzt,UL#blk_sxad_2,DIV[class^="ATopTxt"],div.tit01.clearfix,div.palm01-ad,div#SI_EDU_AD,div.part-l.clearfix,span.adNone,div.bsjie_ad,div.wrap.topAD,div.mod_ad,div.clearAd,div#ad_blk_fixed,div#sinaLoginReward2014_w,iframe[src^="http://www.baidu.com/ur/scun?di="],div.article-video,div.article-ad.ad_07,div.sinaad-toolkit-box,div#bgAdWrap,div.gg,div#left_focus_ad,div[class="right-module ad"],div[data-sudaclick="blk_right_gg"],[id^="PublicRelation"],.a-ad,.sinaads,#SI_Comment_DA,[data-ad-pdps],#nav-hover_ad,.ny-link-r
+sina.com.cn##div[class*="farmpop"]
+sina.com.cn##div[class*="game"]
 sina.com.cn##p + .article-video
 sina.com.hk##.sbAds,.adsbygoogle,[id^="div-gpt-ad-"]
 sina.com.tw###cboxOverlay
@@ -62787,6 +62808,7 @@ thesilphroad.com###keepinTheLightsOn
 thesimsresource.com##.crtv-top-wrapper
 thespinoff.co.nz##.supporters-block
 thesporttv.eu,sporttvhdmi.com##[id^="ad_tlvmedia-"]
+thestar.co.uk##.gOoqzH
 thestar.com.my##.med-rec
 thestranger.com##.fish-butter
 thestreamable.com###promo-signup-bottom-sheet
@@ -74101,6 +74123,7 @@ zznews.cn##.ad:not([style])
 ||aliyun.com/actionlog/
 ||aliyuncs.com/ad/jd-smoofit-ad.jpg
 ||aliyuncs.com/ghdb.gif
+||aliyuncs.com/huijiad/huijiad.js?
 ||aliyuncs.com/pool/20180829220557.png
 ||aliyuncs.com/pool/20180829221932.png
 ||aliyuncs.com/public/v1/js/ad-config.
@@ -76937,6 +76960,7 @@ zznews.cn##.ad:not([style])
 ||aymwknbsqzhyh.com^
 ||aypbpr.tokopedia.com^
 ||ayqxx.com^$third-party
+||aysccnn.cn^
 ||ayues.com^
 ||ayun.ltd^
 ||aywgucxmh.com^
@@ -80752,6 +80776,7 @@ zznews.cn##.ad:not([style])
 ||casalemedia.com/cygnus?
 ||casalemedia.com^
 ||casalemedia.com^$third-party
+||casavasstamnoi.com^
 ||cascadion.thermofisher.com^
 ||casee.cn^
 ||cash-ads.com^
@@ -86658,6 +86683,7 @@ zznews.cn##.ad:not([style])
 ||detectdinner.com^$third-party
 ||detectdiscovery.com^$third-party
 ||detecteddesigningspirited.com^
+||detectiveconanworld.com/images/support-us-brave.png
 ||detectivesrecoilatmospheric.com^
 ||detectorvenomouscutlery.com^
 ||deteql.net^$third-party
@@ -91421,6 +91447,7 @@ zznews.cn##.ad:not([style])
 ||fengzhilu.cn^
 ||fenhao14.com^
 ||fenixm.com^
+||fenkang.tech^
 ||fenrunwayradiant.com^
 ||fensi.plus/*/tracking/
 ||fensi.plus^*/tracking/
@@ -93357,6 +93384,7 @@ zznews.cn##.ad:not([style])
 ||genieessp.com^$third-party
 ||genieessp.jp^$third-party
 ||genieesspv.jp^$third-party
+||genigh.com^
 ||genishury.pro^
 ||genistawabbler.com^
 ||geniusbanners.com^$third-party
@@ -95967,6 +95995,8 @@ zznews.cn##.ad:not([style])
 ||hetaint.com^$popup
 ||hetapus.com^
 ||hetapus.com^$popup
+||hetartwg.com^
+||hetartwg.com^$popup
 ||hetaruvg.com^
 ||hetaruvg.com^$popup
 ||hetaruwg.com^
@@ -98332,6 +98362,7 @@ zznews.cn##.ad:not([style])
 ||inabsolor.com^$popup
 ||inactionvocationpaternity.com^
 ||inaftracker.com^$third-party
+||inanemuseum.com^
 ||inapps.appsflyer.com^
 ||inarchang.site^
 ||inaudiblecanteen.com^
@@ -104170,6 +104201,7 @@ zznews.cn##.ad:not([style])
 ||luolidashu.xyz^*.gif
 ||luolikong.net^$third-party
 ||luolitang.com^$third-party
+||luopqsao.top^
 ||luoyuanedu.cn^
 ||lupoot.com^
 ||lupoporno.com/js/analytics
@@ -107637,6 +107669,7 @@ zznews.cn##.ad:not([style])
 ||mjlsiopjesbn.com^
 ||mjnpya.marktplaats.nl^
 ||mjpiqb.cn^
+||mjrdficwuyy.top^
 ||mjsnvi.extraspace.com^
 ||mjsyqwpqnjbgua.com^
 ||mjvmypr.cn^
@@ -108312,6 +108345,7 @@ zznews.cn##.ad:not([style])
 ||mr.media-bucket.com^
 ||mr2cnjuh34jb.com^
 ||mr5aqoqlegsp.com^
+||mradx.net^
 ||mrb.upapi.net^$third-party
 ||mrclown.cn^
 ||mrelko.com^
@@ -110614,6 +110648,7 @@ zznews.cn##.ad:not([style])
 ||oei1.gq^
 ||oeitlgqjw.com^
 ||oek7.april-moto.com^
+||oelco.cn^
 ||oende.cn^
 ||oeqirr.com^$third-party
 ||oesfriences.fun^
@@ -110622,6 +110657,7 @@ zznews.cn##.ad:not([style])
 ||oevery.com^$third-party
 ||oewabox.at^$third-party
 ||oewdfyhdfq.xyz^
+||oey53uw-1ye.cn^
 ||oeya.com/$domain=realtw.com
 ||oeya.com^$domain=myptt.cc
 ||ofd.meng-an.cn^$third-party
@@ -112994,6 +113030,9 @@ zznews.cn##.ad:not([style])
 ||piccy.org.ua/c?
 ||picgd.com/images/*.gif
 ||picgd.com/images/2018/12/01/h1pi5.png
+||picklesadamantempire.com^
+||picklesadamantempire.com^$popup
+||pickupmorbid.com^
 ||pickytime.com^
 ||piclect.com^*.gif$third-party
 ||piclick.cn^$third-party
@@ -115633,6 +115672,7 @@ zznews.cn##.ad:not([style])
 ||qlpwqpvuw.com^
 ||qlqtnqlruou.com^
 ||qlssbq.cn^
+||qlsvowqnbzu.com^
 ||qlubfrance.carte-gr.total.fr^
 ||qluutrppsh.com^
 ||qlwgkw.com^$script
@@ -117371,6 +117411,7 @@ zznews.cn##.ad:not([style])
 ||rjigj.cn^
 ||rjk1.com^
 ||rjltpektsuqsu.com^
+||rjnjjin.cn^
 ||rjno1.com^$csp=script-src 'self' *;style-src
 ||rjsos.com/channel/laomo_dibu.png
 ||rjtpos.cn^
@@ -117623,6 +117664,8 @@ zznews.cn##.ad:not([style])
 ||roxyaffiliates.com^
 ||royal-cash.com^$third-party
 ||royalads.net^$popup,third-party
+||royalcactus.com^
+||royalcactus.com^$popup
 ||royalcount.de^$third-party
 ||royaljapan02.*^$all
 ||rozamimo9za10.com^
@@ -119653,6 +119696,7 @@ zznews.cn##.ad:not([style])
 ||sensitivenessbuttons.com^
 ||sensitivenesscrummytea.com^
 ||sensor.org.ua^$third-party
+||sensorcyclegloves.com^
 ||sensors.cloud.tencent.com^
 ||sensors.snappea.com^
 ||sentexoticoncoming.com^
@@ -123564,6 +123608,7 @@ zznews.cn##.ad:not([style])
 ||sqext.com^
 ||sqhneencmysrk.com^
 ||sqmydhk.cn^
+||sqnrxhisgsmye.top^
 ||sqnwmwnwok.com^
 ||sqpgncbm.com^
 ||sqr3.xyz^
@@ -127244,6 +127289,7 @@ zznews.cn##.ad:not([style])
 ||thanosofcos5.com^
 ||thansendmaterial-14.live^
 ||thansendmaterial-14.live^$popup
+||thapsooz.net^
 ||thaqyl.mediamarkt.nl^
 ||tharbadir.com^
 ||thatitgivesm.biz^
@@ -131022,6 +131068,7 @@ zznews.cn##.ad:not([style])
 ||uncovershotexcept.com^
 ||uncurstcrumbs.com^
 ||undedfracted.club^
+||undens.com^
 ||under2given.com^
 ||underclick.ru^
 ||undercoverbatch.com^
@@ -131288,6 +131335,7 @@ zznews.cn##.ad:not([style])
 ||upush.co^
 ||upwork.com/Ss13U803/init.js
 ||upz1.destinia.lt^
+||uqakkye.cn^
 ||uqbmzwv.cn^
 ||uqidian.com^
 ||uqjflmw.cn^
@@ -137693,6 +137741,7 @@ zznews.cn##.ad:not([style])
 ||zgtcar.com^
 ||zgumwv.stepstone.de^
 ||zgunion.cn^
+||zgvcfridw.com^
 ||zgyemy.com^
 ||zgyiyi.com^$third-party
 ||zgystsd.com^
@@ -138920,7 +138969,7 @@ zznews.cn##.ad:not([style])
 10pan.cn###down_box{display:block!important;}
 10pan.cn##[style="height:60px;"],#r1,.adsbygoogle,#b1
 10.10.5.12#@#.banner_ad
-11alive.com,12news.com,12newsnow.com,13newsnow.com,13wmaz.com,5newsonline.com,9news.com,abc10.com,abovethelaw.com,adelaidenow.com.au,adtmag.com,aero-news.net,airportia.com,americanprofile.com,appleinsider.com,arstechnica.com,articlealley.com,asianwiki.com,associationsnow.com,autoevolution.com,autoguide.com,autotrader.com.au,bab.la,bdnews24.com,beinsports.com,boats.com,bobvila.com,bostonglobe.com,bradleybraves.com,breitbart.com,businessdailyafrica.com,businessinsider.com,businesstech.co.za,c21media.net,cbs19.tv,cd1025.com,celebdigs.com,celebified.com,ch-aviation.com,cheboygannews.com,chinahush.com,citysearch.com,cnn.com,cnnphilippines.com,colourlovers.com,comicbookmovie.com,computerworld.com,couriermail.com.au,cpuboss.com,createtv.com,crossmap.com,crosswalk.com,csoonline.com,cxpress.co.za,dailycaller.com,dailylobo.com,dailyparent.com,dailytarheel.com,dawn.com,dealnews.com,defenseone.com,downdetector.co.nz,downdetector.co.uk,downdetector.co.za,downdetector.com,downdetector.in,downdetector.sg,dpreview.com,drinksmixer.com,earlygame.com,edmontonjournal.com,emoji.gg,excellence-mag.com,familydoctor.org,fanpop.com,federalnewsnetwork.com,femalefirst.co.uk,firstcoastnews.com,foodandwine.com,fool.com,footyheadlines.com,forvo.com,fox6now.com,foxafrica.com,foxbusiness.com,foxnews.com,fxnowcanada.ca,gayvegas.com,gcn.com,geelongadvertiser.com.au,go.com,golfweather.com,gpuboss.com,greenbot.com,gtplanet.net,heraldsun.com.au,hodinkee.com,indiewire.com,infoworld.com,inhabitat.com,insider.com,instyle.com,interfax.com.ua,investsmart.com.au,jscompress.com,kagstv.com,kare11.com,kcentv.com,kedglobal.com,kens5.com,kgw.com,khou.com,kiiitv.com,king5.com,koreabang.com,krem.com,ksdk.com,ktvb.com,kusports.com,kvue.com,lagom.nl,lawrence.com,leaderpost.com,lifezette.com,looktothestars.org,mangarockteam.com,marketwatch.com,maxpreps.com,mcpmag.com,mirror.co.uk,monitor.co.ug,motherjones.com,motorcycle.com,movieweb.com,mprnews.org,msn.com,mybroadband.co.za,myfitnesspal.com,myfox8.com,myfoxzone.com,mygaming.co.za,myrecipes.com,namibtimes.net,nejm.org,networkworld.com,newbeauty.com,news.com.au,news.sky.com,newscentermaine.com,newsday.com,newstimes.com,ny1.com,nymag.com,nytco.com,nytimes.com,nytimes3xbfgragh.onion,odometer.com,offbeat.com,onmsft.com,ovationtv.com,patch.com,patheos.com,planelogger.com,playtictactoe.org,politico.com,politico.eu,popsugar.com,popsugar.com.au,prepperwebsite.com,quackit.com,quibblo.com,ranker.com,ratemds.com,ratemyprofessors.com,redmondmag.com,refinery29.com,roadsideamerica.com,salisburypost.com,sbs.com.au,seattletimes.com,segmentnext.com,shtfplan.com,simpledesktops.com,slickdeals.net,smartcompany.com.au,smsfi.com,softpedia.com,soranews24.com,spot.im,spryliving.com,statenews.com,statscrop.com,stocktwits.com,streetinsider.com,stv.tv,stylenest.co.uk,talkandroid.com,techdirt.com,thecitizen.co.tz,thecut.com,thedp.com,theeastafrican.co.ke,thefader.com,thefirearmblog.com,thegrocer.co.uk,thejournal.co.uk,themercury.com.au,thenation.com,thestarphoenix.com,thv11.com,time.com,today.com,topgear.com,townhall.com,travelocity.com,tribalfootball.com,tribecafilm.com,triblive.com,tripadvisor.ca,tripadvisor.co.uk,tripadvisor.co.za,tripadvisor.com,tripadvisor.ie,tripadvisor.in,trucktrend.com,truecar.com,tvmaze.com,tweaktown.com,ultimatespecs.com,uptodown.com,userstyles.org,usmagazine.com,usnews.com,vancouversun.com,vid.gg,vogue.in,vulture.com,wamu.org,washingtontimes.com,watzatsong.com,wbir.com,wcnc.com,weathernationtv.com,weatheronline.co.uk,webestools.com,webmd.com,weeklytimesnow.com.au,wegotthiscovered.com,wfaa.com,wfmynews2.com,wgnt.com,wgntv.com,wgrz.com,whas11.com,wildcat.arizona.edu,windsorstar.com,wkyc.com,wltx.com,wnep.com,worthplaying.com,wqad.com,wral.com,wrif.com,wtsp.com,wusa9.com,wwltv.com,wzzm13.com,x17online.com,yorkpress.co.uk##.ad
+11alive.com,12news.com,12newsnow.com,13newsnow.com,13wmaz.com,5newsonline.com,9news.com,abc10.com,abovethelaw.com,adelaidenow.com.au,adtmag.com,aero-news.net,airportia.com,americanprofile.com,appleinsider.com,arstechnica.com,articlealley.com,asianwiki.com,associationsnow.com,autoevolution.com,autoguide.com,autotrader.com.au,bab.la,bdnews24.com,beinsports.com,boats.com,bobvila.com,bostonglobe.com,bradleybraves.com,breitbart.com,businessdailyafrica.com,businessinsider.com,businesstech.co.za,c21media.net,cbs19.tv,cd1025.com,celebdigs.com,celebified.com,ch-aviation.com,cheboygannews.com,chinahush.com,citysearch.com,cnn.com,cnnphilippines.com,colourlovers.com,comicbookmovie.com,computerworld.com,couriermail.com.au,cpuboss.com,createtv.com,crossmap.com,crosswalk.com,csoonline.com,cxpress.co.za,dailycaller.com,dailylobo.com,dailyparent.com,dailytarheel.com,dawn.com,dealnews.com,defenseone.com,downdetector.co.nz,downdetector.co.uk,downdetector.co.za,downdetector.com,downdetector.in,downdetector.sg,dpreview.com,drinksmixer.com,earlygame.com,edmontonjournal.com,emoji.gg,excellence-mag.com,familydoctor.org,fanpop.com,federalnewsnetwork.com,femalefirst.co.uk,firstcoastnews.com,foodandwine.com,fool.com,footyheadlines.com,forvo.com,fox6now.com,foxafrica.com,foxbusiness.com,foxnews.com,fxnowcanada.ca,gayvegas.com,gcn.com,geelongadvertiser.com.au,go.com,golfweather.com,gpuboss.com,greenbot.com,gtplanet.net,heraldsun.com.au,hodinkee.com,indiewire.com,infoworld.com,inhabitat.com,insider.com,instyle.com,interfax.com.ua,investsmart.com.au,jscompress.com,kagstv.com,kare11.com,kcentv.com,kedglobal.com,kens5.com,kgw.com,khou.com,kiiitv.com,king5.com,koreabang.com,krem.com,ksdk.com,ktvb.com,kusports.com,kvue.com,lagom.nl,lawrence.com,leaderpost.com,lifezette.com,looktothestars.org,mangarockteam.com,marketwatch.com,maxpreps.com,mcpmag.com,mirror.co.uk,monitor.co.ug,motherjones.com,motorcycle.com,movieweb.com,mprnews.org,msn.com,mybroadband.co.za,myfitnesspal.com,myfox8.com,myfoxzone.com,mygaming.co.za,myrecipes.com,namibtimes.net,nejm.org,networkworld.com,newbeauty.com,news.com.au,news.sky.com,newscentermaine.com,newsday.com,newstimes.com,ny1.com,nymag.com,nytco.com,nytimes.com,nytimes3xbfgragh.onion,odometer.com,offbeat.com,onmsft.com,ovationtv.com,patch.com,patheos.com,picmix.com,planelogger.com,playtictactoe.org,politico.com,politico.eu,popsugar.com,popsugar.com.au,prepperwebsite.com,quackit.com,quibblo.com,ranker.com,ratemds.com,ratemyprofessors.com,redmondmag.com,refinery29.com,roadsideamerica.com,salisburypost.com,sbs.com.au,seattletimes.com,segmentnext.com,shtfplan.com,simpledesktops.com,slickdeals.net,smartcompany.com.au,smsfi.com,softpedia.com,soranews24.com,spot.im,spryliving.com,statenews.com,statscrop.com,stocktwits.com,streetinsider.com,stv.tv,stylenest.co.uk,talkandroid.com,techdirt.com,thecitizen.co.tz,thecut.com,thedp.com,theeastafrican.co.ke,thefader.com,thefirearmblog.com,thegrocer.co.uk,thejournal.co.uk,themercury.com.au,thenation.com,thestarphoenix.com,thv11.com,time.com,today.com,topgear.com,townhall.com,travelocity.com,tribalfootball.com,tribecafilm.com,triblive.com,tripadvisor.ca,tripadvisor.co.uk,tripadvisor.co.za,tripadvisor.com,tripadvisor.ie,tripadvisor.in,trucktrend.com,truecar.com,tvmaze.com,tweaktown.com,ultimatespecs.com,uptodown.com,userstyles.org,usmagazine.com,usnews.com,vancouversun.com,vid.gg,vogue.in,vulture.com,wamu.org,washingtontimes.com,watzatsong.com,wbir.com,wcnc.com,weathernationtv.com,weatheronline.co.uk,webestools.com,webmd.com,weeklytimesnow.com.au,wegotthiscovered.com,wfaa.com,wfmynews2.com,wgnt.com,wgntv.com,wgrz.com,whas11.com,wildcat.arizona.edu,windsorstar.com,wkyc.com,wltx.com,wnep.com,worthplaying.com,wqad.com,wral.com,wrif.com,wtsp.com,wusa9.com,wwltv.com,wzzm13.com,x17online.com,yorkpress.co.uk##.ad
 11luba.com,niluba.cc##.center > div:last-child
 11px.cn##.zz
 11px.cn##.zz_nr
