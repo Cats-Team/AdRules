@@ -1,6 +1,6 @@
 #!/bin/bash
-cd script/dns/src
-
+#cd script/dns/src
+cd ./src
 # Start Download
 curl -o i1.txt https://adguardteam.github.io/AdGuardSDNSFilter/Filters/filter.txt
 curl -o i4.txt https://raw.githubusercontent.com/jdlingyu/ad-wars/master/hosts
