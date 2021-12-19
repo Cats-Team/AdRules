@@ -10,6 +10,7 @@ curl -o i6.txt https://raw.githubusercontent.com/xinggsf/Adblock-Plus-Rule/maste
 curl -o i7.txt https://raw.githubusercontent.com/o0HalfLife0o/list/master/ad-pc.txt
 curl -o i8.txt https://raw.githubusercontent.com/o0HalfLife0o/list/master/ad-edentw.txt
 curl -o i9.txt https://raw.githubusercontent.com/banbendalao/ADgk/master/ADgk.txt
+curl -o i10.txt https://raw.githubusercontent.com/Cats-Team/AdRules/main/adblock.txt
 
 # Start Merge and Duplicate Removal
 cat i*.txt > mergd.txt
