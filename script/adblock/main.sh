@@ -16,7 +16,7 @@ curl -o i12.txt https://raw.githubusercontent.com/uBlockOrigin/uAssets/master/fi
 #curl -o i13.txt https://raw.githubusercontent.com/uBlockOrigin/uAssets/master/filters/filters.txt
 curl -o i14.txt https://raw.githubusercontent.com/uBlockOrigin/uAssets/master/filters/privacy.txt
 curl -o i15.txt https://raw.githubusercontent.com/Noyllopa/NoAppDownload/master/NoAppDownload.txt
-
+curl -o i16.txt https://raw.githubusercontent.com/damengzhu/banad/main/jiekouAD.txt
 
 # Start Merge and Duplicate Removal
 cat i*.txt > mergd.txt
