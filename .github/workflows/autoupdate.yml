@@ -30,10 +30,13 @@ jobs:
       - name: Update hosts
         run: |
           bash ./script/hosts/main.sh
+      - name: Update hosts
+        run: |
+          bash ./script/adblock+adguard/main.sh
       - name: Move files
         run: |
           cd script
-          mv adblock.txt adguard.txt dns.txt hosts.txt allow.txt ../
+          mv adblock.txt adguard.txt dns.txt hosts.txt allow.txt adblock+adguard.txt ../
       - name: Git push assets to Github and Coding
         run: |
           git init
