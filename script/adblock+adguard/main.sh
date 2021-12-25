@@ -31,9 +31,9 @@ curl -o i26.txt https://raw.githubusercontent.com/Cats-Team/AdRules/main/script/
 # Start Merge and Duplicate Removal
 cat i*.txt > mergd.txt
 cat mergd.txt | grep -v '^!' | grep -v '^！' | grep -v '^# ' | grep -v '^# ' | grep -v '^\[' | grep -v '^\【' > tmpp.txt
-iconv -f GBK -t UTF-8 tmpp.txt > tmp.txt
-sort -n tmp.txt | uniq > tmmp.txt
-iconv -f UTF-8 -t GBK tmmp.txt > tmp.txt
+iconv -f GBK -t UTF-8 tmpp.txt > cmp.txt
+sort -n cmp.txt | uniq > tmpt.txt
+iconv -f UTF-8 -t GBK tmpt.txt > tmp.txt
 
 
 # Start Count Rules
