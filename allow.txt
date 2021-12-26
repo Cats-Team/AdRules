@@ -1,6 +1,6 @@
 ! Title: Allowlist
-! Version: 2021-12-26 10:17:44
-! Total count: 33372
+! Version: 2021-12-26 22:15:20
+! Total count: 33377
 @@||bkimg.cdn.bcebos.com^
 @@||imgstat.baidu.com^
 @@||v6lvs.com^
@@ -3530,7 +3530,7 @@
 @@.adserver.$domain=litv.tv
 @@.com/ad.aspx|$domain=xdingdiann.com
 @@.com/adv/$domain=my.ctrip.com
-@@.com/js/ad_/ad1.js$domain=cocomanga.com|cocomanhua.com
+@@.com/js/ad_/ad*.js$domain=cocomanga.com|cocomanhua.com
 @@.com/js/ad_/pic.png$domain=cocomanga.com|cocomanhua.com
 @@.gif#$domain=b168.net|cnprint.org|huhupan.com|tgfcer.com|wgun.net
 @@.gif#$domain=cnprint.org|huhupan.com|tgfcer.com|wgun.net
@@ -9714,10 +9714,12 @@
 @@||cdn.scrot.moe^
 @@||cdn.searchmagic.com^
 @@||cdn.segment.com/*/analytics.min.js$domain=canva.com
+@@||cdn.segment.com/analytics-next/$domain=app.cryptotrader.tax|givingassistant.org
 @@||cdn.segment.com/analytics-next/$domain=givingassistant.org
 @@||cdn.segment.com/analytics.js$domain=anime-planet.com
 @@||cdn.segment.com/analytics.js$domain=buffer.com
 @@||cdn.segment.com/analytics.js$domain=cryptokitties.co
+@@||cdn.segment.com/analytics.js/$script,domain=app.cryptotrader.tax|fender.com|givingassistant.org
 @@||cdn.segment.com/analytics.js/$script,domain=fender.com|givingassistant.org
 @@||cdn.segment.com/analytics.js/*/analytics.min.js$domain=stacksocial.com
 @@||cdn.segment.com/analytics.js/*/analytics.min.js$domain=surfline.com
@@ -9727,6 +9729,9 @@
 @@||cdn.segment.com/analytics.js^$domain=creativemarket.com
 @@||cdn.segment.com/analytics.js^$domain=crunchyroll.com
 @@||cdn.segment.com/analytics.js^$domain=freshly.com
+@@||cdn.segment.com/next-integrations/integrations/intercom/*/intercom.dynamic.js.gz$script,domain=app.cryptotrader.tax
+@@||cdn.segment.com/next-integrations/integrations/vendor/commons.$script,domain=app.cryptotrader.tax
+@@||cdn.segment.com/v1/projects/$domain=app.cryptotrader.tax|benchling.com|givingassistant.org
 @@||cdn.segment.com/v1/projects/$domain=benchling.com|givingassistant.org
 @@||cdn.segmentify.com/*/segmentify.css$domain=koctas.com.tr
 @@||cdn.segmentify.com/*/segmentify.css$domain=migros.com.tr
