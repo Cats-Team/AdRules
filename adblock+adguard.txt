@@ -4,8 +4,8 @@
 ! Powerd by CatsTeam
 ! Expires: 12 Hours
 ! Description: 该规则合并自AdRules (For AdBlock)+AdRules (For AdGuard)
-! Version: 2021-12-31 22:15:55
-! Total count: 56087
+! Version: 2022-01-01 10:17:04
+! Total count: 56097
 -988x60.
 -980x60-
 -780x90-
@@ -881,6 +881,7 @@
 ###ad-banner_atf-label
 ###ad-bar
 ###ad-base
+###ad-bb-content
 ###ad-beauty
 ###ad-before-comment
 ###ad-below-content
@@ -920,6 +921,7 @@
 ###ad-boxATF
 ###ad-boxes
 ###ad-br-container
+###ad-break
 ###ad-bs
 ###ad-btf-bot
 ###ad-btm
@@ -1071,6 +1073,7 @@
 ###ad-links-content
 ###ad-list-row
 ###ad-lrec
+###ad-m-rec-content
 ###ad-main
 ###ad-main-bottom
 ###ad-main-top
@@ -9911,6 +9914,7 @@
 ##.ad-banners
 ##.ad-banr
 ##.ad-bar
+##.ad-bb
 ##.ad-before-header
 ##.ad-below
 ##.ad-below-images
@@ -9988,6 +9992,7 @@
 ##.ad-boxtop
 ##.ad-brdr-btm
 ##.ad-break
+##.ad-break-item
 ##.ad-breaker
 ##.ad-breakout
 ##.ad-browse-rectangle
@@ -10323,6 +10328,7 @@
 ##.ad-lrec
 ##.ad-m-banner
 ##.ad-m-mrec
+##.ad-m-rec
 ##.ad-mad
 ##.ad-main
 ##.ad-manager-ad
@@ -29517,6 +29523,7 @@ $websocket,domain=pornhub.com|pornhubthbh7ap3u.onion|redtube.com|redtube.com.br|
 /redirect/?spot_id=
 /redirect?tid=
 /redirect_awe.
+/redpop_ads/*
 /refads/*
 /refreshads-
 /reklam-ads2.
@@ -31642,7 +31649,7 @@ beermoneyforum.com,geekdoing.com,studentdoctor.net##.samBannerUnit
 beforeitsnews.com,in5d.com##a[href*=".hop.clickbank.net"]
 belgie.fm,danmark.fm,deutschland.fm,espana.fm,india.fm,italia.fm,nederland.fm###bannerbg
 belgie.fm,danmark.fm,deutschland.fm,espana.fm,india.fm,italia.fm,nederland.fm###leaderboardbg
-bendsource.com,federalnewsnetwork.com,lonelyplanet.com,sevendaysvt.com,styleweekly.com,tucsonweekly.com##.Ad
+bendsource.com,federalnewsnetwork.com,lonelyplanet.com,sevendaysvt.com,styleweekly.com,tasty.co,tucsonweekly.com##.Ad
 bentoneveningnews.com,dailyregister.com,dailyrepublicannews.com,duquoin.com,randolphcountyheraldtribune.com###billBoardATF
 bernama.com##a[class^="banner_photo_"]
 best-faucets.com,transfermarkt.co.uk,transfermarkt.com##.werbung
@@ -32324,6 +32331,8 @@ flyordie.com###asf
 fodors.com##div[class^="ad-placeholder"]
 font-generator.com##.container-home-int > .text-center
 foobar2000.org##.db_link
+food.com##.smart-aside-inner
+food.com##.smart-rail-inner
 foodfacts.com##.slimBanner
 foodrenegade.com##.top-cta
 fool.com###pitch
@@ -34074,6 +34083,7 @@ tgstat.com##.r1-aors
 the-scientist.com###preHeader
 the-star.co.ke###teasers
 the18.com##.push-downv
+theartnewspaper.com##.justify-center.flex.w-full
 thebadandugly.com##.sidebar30
 thebarentsobserver.com##.pane-title
 theblaze.com##[data-category="SPONSORED"]
