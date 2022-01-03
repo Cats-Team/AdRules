@@ -13,7 +13,7 @@ jobs:
       - uses: actions/checkout@main  
       - name: Wate Update Rules
         run: |
-          sleep 180
+          sleep 100
       - name: Git pull to Github
         run: |
           git init
