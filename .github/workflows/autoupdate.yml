@@ -47,6 +47,7 @@ jobs:
           git init
           git config --local user.name "actions"
           git config --local user.email "action@github.com"
+          git config http.postBuffer 524288000
           git branch -m main
           git add --all
           git commit -m "Updated at $(date)"
