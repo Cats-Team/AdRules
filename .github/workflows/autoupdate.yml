@@ -36,8 +36,8 @@ jobs:
       - name: Update other rules
         run: |
           cd rules
-          wget -o https://raw.githubusercontent.com/banbendalao/ADgk/master/ADgk.txt
-          wget -o https://raw.githubusercontent.com/banbendalao/ADgk/master/kill-baidu-ad.txt
+          wget -O ADgk.txt https://raw.githubusercontent.com/banbendalao/ADgk/master/ADgk.txt
+          wget -O kill-baidu-ad.txt https://raw.githubusercontent.com/banbendalao/ADgk/master/kill-baidu-ad.txt
       - name: Move files
         run: |
           cd script
