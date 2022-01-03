@@ -1,7 +1,8 @@
 # AdRules
 
 **一个强力去广告的规则**  
-*除此之外本项目还提供一些规则的cdn链接具体看[Mirror.md](/mirror.md)*
+*除此之外本项目还提供一些规则的cdn链接*
+*具体看[Mirror.md](/mirror.md)*
 
 * 此列表规则均适用于内容过滤器
 * DNS过滤器请使用AdRules (For DNS)
