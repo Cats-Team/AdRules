@@ -30,9 +30,14 @@ jobs:
       - name: Update hosts
         run: |
           bash ./script/hosts/main.sh
-      - name: Update hosts
+      - name: Update super rules
         run: |
           bash ./script/adblock+adguard/main.sh
+      - name: Update super rules
+        run: |
+          cd rules
+          curl -o https://raw.githubusercontent.com/banbendalao/ADgk/master/ADgk.txt
+          curl -o https://raw.githubusercontent.com/banbendalao/ADgk/master/kill-baidu-ad.txt
       - name: Move files
         run: |
           cd script
