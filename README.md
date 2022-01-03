@@ -1,6 +1,7 @@
 # AdRules
 
 **一个强力去广告的规则**
+*除此之外本项目还提供一些规则的cdn链接具体看Mirror.md(/mirror.md*
 
 * 此列表规则均适用于内容过滤器
 * DNS过滤器请使用AdRules (For DNS)
@@ -52,6 +53,7 @@
 ## 特别鸣谢
 * [@Cats-team](https://github.com/Cats-Team)
 * [@DoingDog](https://github.com/DoingDog) 
+* [@杏梢](https://github.com/hacamer)
 * 以及提交Issue的各位朋友
 ## 感谢
 - [AdGuard](https://adguard.com/) - 世界上最高级的广告拦截程序！
