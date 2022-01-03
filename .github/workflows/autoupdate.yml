@@ -33,11 +33,11 @@ jobs:
       - name: Update super rules
         run: |
           bash ./script/adblock+adguard/main.sh
-      - name: Update super rules
+      - name: Update other rules
         run: |
           cd rules
-          curl -o https://raw.githubusercontent.com/banbendalao/ADgk/master/ADgk.txt
-          curl -o https://raw.githubusercontent.com/banbendalao/ADgk/master/kill-baidu-ad.txt
+          wget -o https://raw.githubusercontent.com/banbendalao/ADgk/master/ADgk.txt
+          wget -o https://raw.githubusercontent.com/banbendalao/ADgk/master/kill-baidu-ad.txt
       - name: Move files
         run: |
           cd script
