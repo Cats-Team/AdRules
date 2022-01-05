@@ -10,22 +10,24 @@ jobs:
   Pushed:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@main  
-      - name: Wate Update Rules
+      - uses: actions/checkout@main
+      - name: Update Rules
         run: |
-          sleep 100
-      - name: Git pull to Github
+          bash ./script/adblock/main.sh
+          bash ./script/adguard/main.sh
+          bash ./script/dns/main.sh
+          bash ./script/allow/main.sh
+          bash ./script/hosts/main.sh
+          bash ./script/adblock+adguard/main.sh
+      - name: Update other rules
         run: |
-          git init
-          git config --local user.name "actions"
-          git config --local user.email "action@github.com"
-          git branch -m main
-          git remote rm origin
-          git remote add origin "https://github.com/Cats-Team/AdRules.git"
-          #git remote set-url --add origin "https://${{ secrets.CODING_ACCOUNT }}:${{ secrets.CODING_PASSWORD }}@e.coding.net/cats-team/adguard/AdRules.git"
-          #git fetch --unshallow origin
-          git pull origin main -f
-          
+          cd rules
+          wget -O ADgk.txt https://raw.githubusercontent.com/banbendalao/ADgk/master/ADgk.txt
+          wget -O kill-baidu-ad.txt https://raw.githubusercontent.com/banbendalao/ADgk/master/kill-baidu-ad.txt
+      - name: Move files
+        run: |
+          cd script
+          mv adblock.txt adguard.txt dns.txt hosts.txt allow.txt adblock+adguard.txt ../
       - name: Git push assets to Coding
         run: |
           rm -rf .git/
