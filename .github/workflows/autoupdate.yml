@@ -38,6 +38,7 @@ jobs:
           cd rules
           wget -O ADgk.txt https://raw.githubusercontent.com/banbendalao/ADgk/master/ADgk.txt
           wget -O kill-baidu-ad.txt https://raw.githubusercontent.com/banbendalao/ADgk/master/kill-baidu-ad.txt
+          wget -O i10.txt https://trli.coding.net/p/file/d/allow/git/lfs/master/allow.txt
       - name: Move files
         run: |
           cd script
