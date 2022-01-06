@@ -11,7 +11,7 @@ curl -o i6.txt https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/mast
 curl -o i7.txt https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/GermanFilter/sections/whitelist.txt 
 curl -o i8.txt https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/TurkishFilter/sections/whitelist.txt 
 curl -o i9.txt https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/SpywareFilter/sections/whitelist.txt
-curl -o i10.txt https://trli.coding.net/p/file/d/allow/git/lfs/master/allow.txt
+wget -o i10.txt https://trli.coding.net/p/file/d/allow/git/lfs/master/allow.txt
 
 # Start Merge and Duplicate Removal
 cat i*.txt > mergd.txt
