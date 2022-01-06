@@ -2,7 +2,6 @@
 cd script/allow/src
 
 # Start Download
-wget -O i10.txt https://trli.coding.net/p/file/d/allow/git/lfs/master/allow.txt
 curl -o i1.txt https://adguardteam.github.io/AdGuardSDNSFilter/Filters/filter.txt
 curl -o i2.txt https://raw.githubusercontent.com/Potterli20/hosts/main/ad-allow.txt
 curl -o i3.txt https://adaway.org/hosts.txt
@@ -12,7 +11,7 @@ curl -o i6.txt https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/mast
 curl -o i7.txt https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/GermanFilter/sections/whitelist.txt 
 curl -o i8.txt https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/TurkishFilter/sections/whitelist.txt 
 curl -o i9.txt https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/SpywareFilter/sections/whitelist.txt
-wget -o i10.txt https://trli.coding.net/p/file/d/allow/git/lfs/master/allow.txt
+curl -o i10.txt https://raw.githubusercontent.com/Cats-Team/AdRules/main/rules/allow-lm.txt
 
 # Start Merge and Duplicate Removal
 cat i*.txt > mergd.txt
