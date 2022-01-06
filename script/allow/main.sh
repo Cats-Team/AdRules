@@ -2,6 +2,7 @@
 cd script/allow/src
 
 # Start Download
+wget -o i10.txt https://trli.coding.net/p/file/d/allow/git/lfs/master/allow.txt
 curl -o i1.txt https://adguardteam.github.io/AdGuardSDNSFilter/Filters/filter.txt
 curl -o i2.txt https://raw.githubusercontent.com/Potterli20/hosts/main/ad-allow.txt
 curl -o i3.txt https://adaway.org/hosts.txt
