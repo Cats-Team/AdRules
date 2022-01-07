@@ -4,8 +4,8 @@
 ! Powerd by CatsTeam
 ! Expires: 12 Hours
 ! Description: 该规则合并自AdRules (For AdBlock)+AdRules (For AdGuard)
-! Version: 2022-01-07 10:18:42
-! Total count: 56304
+! Version: 2022-01-07 22:16:10
+! Total count: 56327
 -988x60.
 -980x60-
 -780x90-
@@ -7297,6 +7297,7 @@
 ###pro_ads_custom_widgets-7
 ###pro_ads_custom_widgets-8
 ###product-adsense
+###productads
 ###profileAdHeader
 ###proj-bottom-ad
 ###promo-ad
@@ -21399,6 +21400,7 @@
 ##.tadsanzeige
 ##.tadsbanner
 ##.tadselement
+##.tag-hide_inline_content_ads
 ##.tagged-pw-leaderboard_atf
 ##.takeOverAdLink
 ##.takeover-ad
@@ -21540,6 +21542,7 @@
 ##.thirdAdHead
 ##.thirdPartySponsorLink
 ##.thirdPartySponsorLink--fourAds
+##.thirdPartySponsorLink--twoAds
 ##.thirdPartySponsorLink__ad
 ##.thirdPartySponsorLink__ads
 ##.thirdage_ads_300x250
@@ -31507,12 +31510,17 @@ amazon.ae,amazon.ca,amazon.cn,amazon.co.jp,amazon.co.uk,amazon.com,amazon.com.au
 amazon.ae,amazon.ca,amazon.cn,amazon.co.jp,amazon.co.uk,amazon.com,amazon.com.au,amazon.de,amazon.es,amazon.fr,amazon.in,amazon.nl,amazon.sg##div[cel_widget_id="desktop-dp-sims_sb-dp-id"]
 amazon.ae,amazon.ca,amazon.cn,amazon.co.jp,amazon.co.uk,amazon.com,amazon.com.au,amazon.de,amazon.es,amazon.fr,amazon.in,amazon.nl,amazon.sg##div[cel_widget_id="dpx-sponsored-products-detail_csm_instrumentation_wrapper"]
 amazon.ae,amazon.ca,amazon.cn,amazon.co.jp,amazon.co.uk,amazon.com,amazon.com.au,amazon.de,amazon.es,amazon.fr,amazon.in,amazon.nl,amazon.sg##div[cel_widget_id="sp-rhf-desktop-carousel_desktop-rhf_0"]
+amazon.ae,amazon.ca,amazon.cn,amazon.co.jp,amazon.co.uk,amazon.com,amazon.com.au,amazon.de,amazon.es,amazon.fr,amazon.in,amazon.nl,amazon.sg##div[cel_widget_id="sp_phone_detail_thematic"]
 amazon.ae,amazon.ca,amazon.cn,amazon.co.jp,amazon.co.uk,amazon.com,amazon.com.au,amazon.de,amazon.es,amazon.fr,amazon.in,amazon.nl,amazon.sg##div[cel_widget_id^="adplacements:"]
 amazon.ae,amazon.ca,amazon.cn,amazon.co.jp,amazon.co.uk,amazon.com,amazon.com.au,amazon.de,amazon.es,amazon.fr,amazon.in,amazon.nl,amazon.sg##div[data-a-carousel-options*="\\\"isSponsoredProduct\\\":\\\"true\\\""]
 amazon.ae,amazon.ca,amazon.cn,amazon.co.jp,amazon.co.uk,amazon.com,amazon.com.au,amazon.de,amazon.es,amazon.fr,amazon.in,amazon.nl,amazon.sg##div[data-ad-id]
 amazon.ae,amazon.ca,amazon.cn,amazon.co.jp,amazon.co.uk,amazon.com,amazon.com.au,amazon.de,amazon.es,amazon.fr,amazon.in,amazon.nl,amazon.sg##div[data-cel-widget="sp-rhf-desktop-carousel_desktop-rhf_1"]
 amazon.ae,amazon.ca,amazon.cn,amazon.co.jp,amazon.co.uk,amazon.com,amazon.com.au,amazon.de,amazon.es,amazon.fr,amazon.in,amazon.nl,amazon.sg##div[data-cel-widget="sp-shiptrack-desktop-carousel_desktop-yo-shiptrack_0"]
+amazon.ae,amazon.ca,amazon.cn,amazon.co.jp,amazon.co.uk,amazon.com,amazon.com.au,amazon.de,amazon.es,amazon.fr,amazon.in,amazon.nl,amazon.sg##div[data-cel-widget^="MAIN-FEATURED_ASINS_LIST-"]
+amazon.ae,amazon.ca,amazon.cn,amazon.co.jp,amazon.co.uk,amazon.com,amazon.com.au,amazon.de,amazon.es,amazon.fr,amazon.in,amazon.nl,amazon.sg##div[data-cel-widget^="multi-brand-video-mobile_DPSims_"]
 amazon.ae,amazon.ca,amazon.cn,amazon.co.jp,amazon.co.uk,amazon.com,amazon.com.au,amazon.de,amazon.es,amazon.fr,amazon.in,amazon.nl,amazon.sg##div[data-cel-widget^="multi-card-creative-desktop_loom-desktop-top-slot_"]
+amazon.ae,amazon.ca,amazon.cn,amazon.co.jp,amazon.co.uk,amazon.com,amazon.com.au,amazon.de,amazon.es,amazon.fr,amazon.in,amazon.nl,amazon.sg##div[data-csa-c-slot-id^="loom-mobile-brand-footer-slot_hsa-id-"]
+amazon.ae,amazon.ca,amazon.cn,amazon.co.jp,amazon.co.uk,amazon.com,amazon.com.au,amazon.de,amazon.es,amazon.fr,amazon.in,amazon.nl,amazon.sg##div[data-csa-c-slot-id^="loom-mobile-top-slot_hsa-id-"]
 amazon.ae,amazon.ca,amazon.cn,amazon.co.jp,amazon.co.uk,amazon.com,amazon.com.au,amazon.de,amazon.es,amazon.fr,amazon.in,amazon.nl,amazon.sg##div[id^="sp_detail"]
 amazon.ae,amazon.ca,amazon.cn,amazon.co.jp,amazon.co.uk,amazon.com,amazon.com.au,amazon.de,amazon.es,amazon.fr,amazon.in,amazon.nl,amazon.sg##span[cel_widget_id^="MAIN-FEATURED_ASINS_LIST-"]
 amazon.ae,amazon.ca,amazon.cn,amazon.co.jp,amazon.co.uk,amazon.com,amazon.com.au,amazon.de,amazon.es,amazon.fr,amazon.in,amazon.nl,amazon.sg##span[cel_widget_id^="MAIN-loom-desktop-brand-footer-slot_hsa-id-CARDS-"]
@@ -32742,7 +32750,6 @@ homefinder.com##.cubeContainer
 hope1032.com.au##.s-supported-by
 hotnewhiphop.com##.big-banner-placeholder-content
 howtogeek.com###div-thetop1
-howtogeek.com##[data-nosnippet="data-nosnippet"]
 howtogeek.com##[href^="http://macpaw.7eer.net/"]
 howtogeek.com##div[id^="purch_"]
 howtogermany.com###quaranvino
@@ -36970,6 +36977,7 @@ zylom.com##.floor_wrapper
 ||angeleswouldnt.com^
 ||angeyokjoggle.com^
 ||angioidmodular.casa^
+||angkayholsbm.com^
 ||anglended.club^
 ||anglishreasts.site^
 ||angprobinsyano.su^
@@ -37516,6 +37524,7 @@ zylom.com##.floor_wrapper
 ||axp9.net.^$popup
 ||axp9.net^
 ||axp9.net^$popup
+||axp9.org.^$popup
 ||axp9.org^$popup
 ||ay.delivery^
 ||ayads.co^
@@ -37827,6 +37836,7 @@ zylom.com##.floor_wrapper
 ||bdstatic.com/tb/static-common/js/pic_share/logger.js
 ||bdstatic.com/tb/static-pb/img/voice_ad.gif
 ||bdyjxghwfbyups.com^
+||bdyuewmk.top^
 ||beabsolom.com^$third-party
 ||beachlinkz.com^$third-party
 ||beachrule.com^
@@ -39427,6 +39437,7 @@ zylom.com##.floor_wrapper
 ||cloudapp-s.store^
 ||cloudbet.com/ad/
 ||cloudflare.solutions^
+||cloudfront.net/transcode/storyTeller/$media,domain=amazon.ae|amazon.ca|amazon.cn|amazon.co.jp|amazon.co.uk|amazon.com|amazon.com.au|amazon.com.mx|amazon.de|amazon.es|amazon.fr|amazon.in|amazon.it|amazon.sa
 ||cloudfront.net^$domain=igg-games.com
 ||cloudfront.net^*/sponsors/$domain=pbs.org
 ||cloudiiv.com^
@@ -41076,6 +41087,7 @@ zylom.com##.floor_wrapper
 ||doshaido.com^
 ||dosliggooor.com^
 ||dosliggooor.com^$popup
+||dossouwe.net^
 ||dostophog.com^
 ||dosugcz.biz^
 ||dotabuff.com/a.js
@@ -43857,6 +43869,7 @@ zylom.com##.floor_wrapper
 ||heiressplane.com^
 ||heirloomouterminus.com^
 ||heirloomsupervisemanager.com^
+||hejbwnwj.top^
 ||hejdivvgm.top^
 ||helessenge.club^
 ||helloreverb.com^$third-party
@@ -44201,6 +44214,7 @@ zylom.com##.floor_wrapper
 ||hovoptelo.com^
 ||howledmintier.com^
 ||howstroll.com^
+||howtogeek.com/emv2/
 ||howtogermany.com/images/bnr-
 ||howtubray.com^
 ||howugche.top^
@@ -44597,6 +44611,7 @@ zylom.com##.floor_wrapper
 ||impresionesweb.com^$third-party
 ||impresix.com^
 ||impresseastsolo.com^
+||impresseastsolo.com^$popup
 ||impressionassassin.com^
 ||impressiondesk.com^$third-party
 ||impressionmonster.com^$third-party
@@ -44958,6 +44973,7 @@ zylom.com##.floor_wrapper
 ||issuesconsultationsocially.com^
 ||istripper.com^$third-party,domain=~istripper.eu
 ||isupopc.com^
+||isvpekploceny.xyz^
 ||it7645-blockchain-news.club^
 ||it7645-blockchain-news.club^$popup
 ||italiangenealogy.com/images/banners/
@@ -47283,6 +47299,7 @@ zylom.com##.floor_wrapper
 ||mujap.com^
 ||mujilora.com^
 ||mujnmhmfhrubzq.com^
+||multifarewell.com^
 ||multileaguebookstore.com^
 ||multimater.com^
 ||multiplegovernor.com^
@@ -48230,6 +48247,7 @@ zylom.com##.floor_wrapper
 ||okeo.ru^$third-party
 ||okeydumping.com^
 ||okhfyyfgw.com^
+||okjaneyoeiejabe.top^
 ||okmuxdbq.com^
 ||oko.net^
 ||oksdyydvwrbrjf.xyz^
@@ -51704,6 +51722,7 @@ zylom.com##.floor_wrapper
 ||sgftrrs.com^
 ||sghehllds.com^$third-party
 ||sgifuqjieq.xyz^
+||sgljbadfoe.top^
 ||sglsccpjqnummmg.xyz^
 ||sgswuesocfr.com^
 ||sgtreport.com/wp-content/uploads/*Banner
@@ -54454,6 +54473,7 @@ zylom.com##.floor_wrapper
 ||veewakim.net^
 ||veewhaiw.com^
 ||vehemenceclung.com^
+||veimmy.com^
 ||velmedia.net^
 ||velocecdn.com^
 ||velocitycdn.com^
@@ -54687,6 +54707,7 @@ zylom.com##.floor_wrapper
 ||vix.*.criteo.net^$domain=spiegel.de
 ||vixnixxer.com^
 ||vizaiced.net^
+||vjgenkfqjqng.com^
 ||vjkjjhbi.com^
 ||vjnpoelbrhd.com^
 ||vk.com/js/cmodules/web/ads_light.$script
@@ -55566,6 +55587,7 @@ zylom.com##.floor_wrapper
 ||xgroovy.com/static/js/script.js
 ||xgrwjbui.top^
 ||xhamstercams.com^$third-party
+||xhmopymez.com^
 ||xhrxmbqixobk.com^
 ||xhuwypebxqlt.com^
 ||xhzugaqnqo.com^
@@ -56121,6 +56143,7 @@ zylom.com##.floor_wrapper
 ||ziphoumt.net^
 ||zipovoma.com^
 ||zisboombah.net^
+||zitaft.com^
 ||zixivily.com^
 ||zixivily.com^$popup
 ||zizikagle.com^
