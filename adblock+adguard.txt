@@ -4,8 +4,8 @@
 ! Powerd by CatsTeam
 ! Expires: 12 Hours
 ! Description: 该规则合并自AdRules (For AdBlock)+AdRules (For AdGuard)
-! Version: 2022-01-08 22:18:19
-! Total count: 56340
+! Version: 2022-01-09 10:17:30
+! Total count: 56350
 -988x60.
 -980x60-
 -780x90-
@@ -9976,6 +9976,7 @@
 ##.ad-bottom
 ##.ad-bottom-container
 ##.ad-bottom-margin
+##.ad-bottom-right-container
 ##.ad-bottom728x90
 ##.ad-bottomLeft
 ##.ad-bottomleader
@@ -10720,12 +10721,14 @@
 ##.ad-top-billboard
 ##.ad-top-billboard-init
 ##.ad-top-box-right
+##.ad-top-container
 ##.ad-top-in
 ##.ad-top-lboard
 ##.ad-top-leaderboard
 ##.ad-top-left
 ##.ad-top-mpu
 ##.ad-top-rectangle
+##.ad-top-right-container
 ##.ad-top-side
 ##.ad-top-wrapper
 ##.ad-top1
@@ -16288,6 +16291,7 @@
 ##.cz-sponsorposts
 ##.d1-top-ad
 ##.d3-c-adblock
+##.d3-o-adv-block
 ##.d499d-ads-160x90-left
 ##.d499d-ads-160x90-right
 ##.d499d-ads-311x300-up
@@ -17394,6 +17398,7 @@
 ##.gridad
 ##.gridlove-ad-below-header
 ##.gridstream_ad
+##.groei-ad
 ##.ground-ads-shared
 ##.group-ad-leaderboard
 ##.group-google-ads
@@ -22579,6 +22584,7 @@
 ##[class^="div-gpt-ad"]
 ##[data-ad-manager-id]
 ##[data-ad-module]
+##[data-ad-unit]
 ##[data-ad-width]
 ##[data-dynamic-ads]
 ##[data-ez-name]
@@ -23415,6 +23421,7 @@
 ##amp-ad-custom
 ##amp-embed[type="taboola"]
 ##app-advertisement
+##app-large-ad
 ##aside[id^="adrotate_widgets-"]
 ##aside[id^="advads_ad_widget-"]
 ##aside[id^="tn_ads_widget-"]
@@ -25881,7 +25888,7 @@ $websocket,domain=pornhub.com|pornhubthbh7ap3u.onion|redtube.com|redtube.com.br|
 /adperfdemo.
 /adphoto.$domain=~adphoto.eu|~adphoto.fr|~adphoto.pl
 /adpic.
-/adpic/*
+/adpic/*$~image
 /adpicture.
 /adpictures/*
 /adping.
@@ -31688,7 +31695,7 @@ beermoneyforum.com##.js-notices
 beermoneyforum.com##.p-body-sidebar
 beermoneyforum.com##.samTextUnit
 beermoneyforum.com,geekdoing.com,studentdoctor.net##.samBannerUnit
-beforeitsnews.com,in5d.com##a[href*=".hop.clickbank.net"]
+beforeitsnews.com,bigleaguepolitics.com,in5d.com##a[href*=".hop.clickbank.net"]
 belgie.fm,danmark.fm,deutschland.fm,espana.fm,india.fm,italia.fm,nederland.fm###bannerbg
 belgie.fm,danmark.fm,deutschland.fm,espana.fm,india.fm,italia.fm,nederland.fm###leaderboardbg
 bendsource.com,federalnewsnetwork.com,lonelyplanet.com,sevendaysvt.com,styleweekly.com,tasty.co,tucsonweekly.com##.Ad
@@ -31713,6 +31720,7 @@ biblegateway.com##.recommendations-view-row
 bigblueball.com###text-416290631
 bigcommerce.com#@#.advert-container
 bigfooty.com##.chaching
+bigleaguepolitics.com##.sidebar-widget
 bikechatforums.com##.row2[style="padding: 5px;"]
 bikeexif.com##.small
 bikeroar.com##.lower-panel
@@ -33474,6 +33482,7 @@ nextcity.org##.desktop-display
 nextofwindows.com##.rtsidebar-cm
 nexusmods.com##.agroup
 nexusradio.com##div[align=center]
+nfl.com##.nfl-c-strip
 nfmovies.com###aaaCountdown
 nfmovies.com###aaaDiv
 nfmovies.com###aaaDiv2
@@ -33871,6 +33880,7 @@ sciencetimes.com##.player
 sciencing.com,sportsnet.ca##.sticky-leaderboard-container
 scmp.com##.advertisers
 scmp.com##.page-container__left-native-ad-container
+scmp.com##[id^="div-ad-"]
 scoop.co.nz###in-cont
 scoop.co.nz###rect
 scoop.co.nz##.article-left-box
