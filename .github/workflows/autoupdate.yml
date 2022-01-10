@@ -35,7 +35,7 @@ jobs:
           mv adblock.txt adguard.txt dns.txt hosts.txt allow.txt adblock+adguard.txt ../
 
       - name: Git push assets to Github
-        uses: ad-m/github-push-action@v0.5.0
+        uses: ad-m/github-push-action@main
         with:
           github_token: ${{ secrets.GITHUBTOKEN }}      
           branch: main
