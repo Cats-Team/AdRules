@@ -52,8 +52,8 @@ jobs:
           #git fetch --unshallow origin
           git push -u -f origin main
 
-      - name: Git push assets to Github and Coding
-        run: |
+       - name: Git push assets to Github and Coding
+         run: |
           rm -rf .git/
           git init
           git config --local user.name "actions"
