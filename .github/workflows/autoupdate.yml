@@ -51,8 +51,7 @@ jobs:
           git remote add origin "https://${{ secrets.CODING_ACCOUNT }}:${{ secrets.CODING_PASSWORD }}@e.coding.net/cats-team/adguard/AdRules.git"
           #git fetch --unshallow origin
           git push -u -f origin main
-
-      - name: Git push assets to Github and Coding
+      - name: Git Repush assets to Github 
         run: |
           rm -rf .git/
           git init
