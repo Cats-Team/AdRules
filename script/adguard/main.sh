@@ -21,7 +21,7 @@ sort -n tmp.txt > tmmp.txt
 num=`cat tmmp.txt | wc -l`
 
 # Start Add title and date
-echo "! Version: `date +"%Y-%m-%d %H:%M:%S"`" >> tpdate.txt
+echo "! Version: $(TZ=UTC-8 date +'%Y-%m-%d %H:%M:%S') " >> tpdate.txt
 echo "! Total count: $num" >> tpdate.txt
 cat title.dd tpdate.txt tmmp.txt > final.txt
 
