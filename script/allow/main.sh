@@ -19,13 +19,12 @@ cat mergd.txt | grep '^@' > allow.txt
 cat allow.txt > tmpp.txt
 sort -n tmpp.txt | uniq > tmp.txt
 
-
 # Start Count Rules
 num=`cat tmp.txt | wc -l`
 
 # Start Add title and date
 echo "! Title: Allowlist" >> tpdate.txt
-echo "! Version: `date +"%Y-%m-%d %H:%M:%S"`" >> tpdate.txt
+echo "! Version: $(TZ=UTC-8 date +'%Y-%m-%d %H:%M:%S')（北京时间） " >> tpdate.txt
 echo "! Total count: $num" >> tpdate.txt
 cat tpdate.txt frules.dd tmp.txt > final.txt
 
