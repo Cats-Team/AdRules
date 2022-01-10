@@ -33,11 +33,20 @@ jobs:
         run: |
           cd script
           mv adblock.txt adguard.txt dns.txt hosts.txt allow.txt adblock+adguard.txt ../
-      - name: Git push assets to Github
-        uses: ad-m/github-push-action@master
-        with:
-          github_token: ${{ secrets.GITHUBTOKEN }}      
-          branch: main
+      - name: Git push assets to Github and Coding
+        run: |
+          #rm -rf .git/
+          git init
+          git config --local user.name "actions"
+          git config --local user.email "action@github.com"
+          #git config --global http.postBuffer 1048576000
+          git branch -m main
+          git add --all
+          git commit -m "Updated at Beijing Time $(TZ=UTC-8 date)"
+          #git remote add origin "https://github.com/Cats-Team/AdRules.git"
+          #git remote set-url --add origin "https://${{ secrets.CODING_ACCOUNT }}:${{ secrets.CODING_PASSWORD }}@e.coding.net/cats-team/adguard/AdRules.git"
+          #git fetch --unshallow origin
+          git push -u origin
       - name: Git push assets to Coding
         run: |
           rm -rf .git/
@@ -49,18 +58,4 @@ jobs:
           git commit -m "Updated at $(TZ=UTC-8 date)"
           git remote add origin "https://${{ secrets.CODING_ACCOUNT }}:${{ secrets.CODING_PASSWORD }}@e.coding.net/cats-team/adguard/AdRules.git"
           #git fetch --unshallow origin
-          git push -u -f origin main
-      - name: Git push assets to Github and Coding
-        run: |
-          rm -rf .git/
-          git init
-          git config --local user.name "actions"
-          git config --local user.email "action@github.com"
-          #git config --global http.postBuffer 1048576000
-          git branch -m main
-          git add.
-          git commit -m "Updated at Beijing Time $(TZ=UTC-8 date)"
-          git remote add origin "https://github.com/Cats-Team/AdRules.git"
-          #git remote set-url --add origin "https://${{ secrets.CODING_ACCOUNT }}:${{ secrets.CODING_PASSWORD }}@e.coding.net/cats-team/adguard/AdRules.git"
-          #git fetch --unshallow origin
-          git push -u origin
+          git push -u -f origin --all
