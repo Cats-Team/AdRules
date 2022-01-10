@@ -15,23 +15,13 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@main
-      - name: Update adblock
+      - name: Update Rules
         run: |
           bash ./script/adblock/main.sh
-      - name: Update adguard
-        run: |
           bash ./script/adguard/main.sh
-      - name: Update dns
-        run: |
           bash ./script/dns/main.sh
-      - name: Update allowlist
-        run: |
           bash ./script/allow/main.sh
-      - name: Update hosts
-        run: |
           bash ./script/hosts/main.sh
-      - name: Update super rules
-        run: |
           bash ./script/adblock+adguard/main.sh
       - name: Update other rules
         run: |
@@ -44,11 +34,23 @@ jobs:
           cd script
           mv adblock.txt adguard.txt dns.txt hosts.txt allow.txt adblock+adguard.txt ../
 
-      - name: GitHub Push
+      - name: Git push assets to Github
         uses: ad-m/github-push-action@v0.5.0
         with:
           github_token: ${{ secrets.GITHUBTOKEN }}      
           branch: main
+      - name: Git push assets to Coding
+        run: |
+          rm -rf .git/
+          git init
+          git config --local user.name "hacamer"
+          git config --local user.email "hcamer145@gmail.com"
+          git branch -m main
+          git add --all
+          git commit -m "Updated at $(date)"
+          git remote add origin "https://${{ secrets.CODING_ACCOUNT }}:${{ secrets.CODING_PASSWORD }}@e.coding.net/cats-team/adguard/AdRules.git"
+          #git fetch --unshallow origin
+          git push -u -f origin main
 
 #      - name: Git push assets to Github and Coding
 #        run: |
