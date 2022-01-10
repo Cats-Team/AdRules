@@ -11,7 +11,7 @@ on:
 
   
 jobs:
-  myjob:
+  update-rules:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@main
@@ -33,7 +33,7 @@ jobs:
         run: |
           cd script
           mv adblock.txt adguard.txt dns.txt hosts.txt allow.txt adblock+adguard.txt ../
-      - name: Git push assets to Github and Coding
+      - name: Git push assets to Github
         run: |
           git init
           git config --local user.name "actions"
