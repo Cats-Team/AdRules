@@ -33,7 +33,6 @@ jobs:
         run: |
           cd script
           mv adblock.txt adguard.txt dns.txt hosts.txt allow.txt adblock+adguard.txt ../
-
       - name: Git push assets to Github
         uses: ad-m/github-push-action@master
         with:
