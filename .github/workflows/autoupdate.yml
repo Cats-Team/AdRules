@@ -44,6 +44,12 @@ jobs:
           cd script
           mv adblock.txt adguard.txt dns.txt hosts.txt allow.txt adblock+adguard.txt ../
 
+      - name: GitHub Push
+        uses: ad-m/github-push-action@v0.5.0
+        with:
+          github_token: ${{ secrets.GITHUBTOKEN }}      
+          branch: main
+
 #      - name: Git push assets to Github and Coding
 #        run: |
 #          #rm -rf .git/
@@ -59,11 +65,6 @@ jobs:
 #          git fetch --unshallow origin
 #          git push -u -f origin --all
 
-       - name: GitHub Push
-         uses: ad-m/github-push-action@v0.5.0
-         with:
-           github_token: ${{ secrets.GITHUBTOKEN }}      
-           branch: main
 
 #      - name: Git push assets to Coding
 #        run: |
