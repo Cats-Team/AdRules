@@ -47,25 +47,25 @@ jobs:
           git config --local user.email "hcamer145@gmail.com"
           git branch -m main
           git add --all
-          git commit -m "Updated at $(date)"
+          git commit -m "Updated at $(TZ=UTC-8 date)"
           git remote add origin "https://${{ secrets.CODING_ACCOUNT }}:${{ secrets.CODING_PASSWORD }}@e.coding.net/cats-team/adguard/AdRules.git"
           #git fetch --unshallow origin
           git push -u -f origin main
 
-#      - name: Git push assets to Github and Coding
-#        run: |
-#          #rm -rf .git/
-#          git init
-#          git config --local user.name "actions"
-#          git config --local user.email "action@github.com"
+      - name: Git push assets to Github and Coding
+        run: |
+          rm -rf .git/
+          git init
+          git config --local user.name "actions"
+          git config --local user.email "action@github.com"
 #          git config --global http.postBuffer 1048576000
-#          git branch -m main
-#          git add --all
-#          git commit -m "Updated at $(date)"
-#          #git remote add origin "https://github.com/Cats-Team/AdRules.git"
-#          git remote set-url --add origin "https://${{ secrets.CODING_ACCOUNT }}:${{ secrets.CODING_PASSWORD }}@e.coding.net/cats-team/adguard/AdRules.git"
+          git branch -m main
+          git add.
+          git commit -m "Updated at $(TZ=UTC-8 date)"
+          git remote add origin "https://github.com/Cats-Team/AdRules.git"
+          git remote set-url --add origin "https://${{ secrets.CODING_ACCOUNT }}:${{ secrets.CODING_PASSWORD }}@e.coding.net/cats-team/adguard/AdRules.git"
 #          git fetch --unshallow origin
-#          git push -u -f origin --all
+          git push -u -f origin --all
 
 
 #      - name: Git push assets to Coding
