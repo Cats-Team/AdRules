@@ -21,7 +21,7 @@ curl -o i16.txt https://raw.githubusercontent.com/damengzhu/banad/main/jiekouAD.
 # Start Merge and Duplicate Removal
 cat i*.txt > mergd.txt
 cat mergd.txt | grep -v '^!' | grep -v '^！' | grep -v '^# ' | grep -v '^# ' | grep -v '^\[' | grep -v '^\【' > tmpp.txt
-grep '$' user-rules.dd > u.dd #安卓设备请去除-v
+cat user-rules.dd | grep '$' > u.dd #安卓设备请去除-v
 sort -n tmpp.txt | uniq > tmp.txt
 
 
