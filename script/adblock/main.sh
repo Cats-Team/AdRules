@@ -19,9 +19,8 @@ curl -o i15.txt https://raw.githubusercontent.com/Noyllopa/NoAppDownload/master/
 curl -o i16.txt https://raw.githubusercontent.com/damengzhu/banad/main/jiekouAD.txt
 
 # Start Merge and Duplicate Removal
-cat i*.txt > mergd.txt
+cat i*.txt user-rules.dd > mergd.txt
 cat mergd.txt | grep -v '^!' | grep -v '^！' | grep -v '^# ' | grep -v '^# ' | grep -v '^\[' | grep -v '^\【' > tmpp.txt
-cat user-rules.dd | grep -v'$' > u.dd #安卓设备请去除-v
 sort -n tmpp.txt | uniq > tmp.txt
 
 
@@ -31,7 +30,7 @@ num=`cat tmp.txt | wc -l`
 # Start Add title and date
 echo "! Version: $(TZ=UTC-8 date +'%Y-%m-%d %H:%M:%S')（北京时间） " >> tpdate.txt
 echo "! Total count: $num" >> tpdate.txt
-cat title.dd tpdate.txt u.dd tmp.txt > final.txt
+cat title.dd tpdate.txt tmp.txt > final.txt
 
 mv final.txt ../../adblock.txt
 rm *.txt
