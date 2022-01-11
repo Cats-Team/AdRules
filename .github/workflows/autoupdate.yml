@@ -40,7 +40,7 @@ jobs:
           git config --local user.email "action@github.com"
           git branch -m main
           git add --all
-          git commit -m "Updated at Beijing Time $(TZ=UTC-8 date)"
+          git commit -m "Updated at $(TZ=UTC-8 date +'%Y-%m-%d %H:%M:%S')（北京时间）"
           git push -u origin
       - name: Git push assets to Coding
         run: |
@@ -50,6 +50,6 @@ jobs:
           git config --local user.email "hcamer145@gmail.com"
           git branch -m main
           git add --all
-          git commit -m "Updated at $(TZ=UTC-8 date)"
+          git commit -m "Updated at $(TZ=UTC-8 date +'%Y-%m-%d %H:%M:%S')（北京时间）"
           git remote add origin "https://${{ secrets.CODING_ACCOUNT }}:${{ secrets.CODING_PASSWORD }}@e.coding.net/cats-team/adguard/AdRules.git"
           git push -u -f origin --all
