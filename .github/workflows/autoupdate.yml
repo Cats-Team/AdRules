@@ -42,7 +42,7 @@ jobs:
           git branch -m main
           git add --all
           git commit -m "Updated at $(TZ=UTC-8 date +'%Y-%m-%d %H:%M:%S')（北京时间）"
-          git push -u origin -F
+          git push -u origin -f
       - name: Git push assets to Coding
         run: |
           rm -rf .git/
