@@ -1,6 +1,6 @@
 ! Title: Allowlist
-! Version: 2022-01-12 18:21:25（北京时间） 
-! Total count: 53358
+! Version: 2022-01-13 06:18:30（北京时间） 
+! Total count: 53369
 @@||bkimg.cdn.bcebos.com^
 @@||imgstat.baidu.com^
 @@||v6lvs.com^
@@ -4015,6 +4015,7 @@
 @@/live/*/*.m3u8$stealth,domain=123tvnow.com
 @@/live/*/*.ts$stealth,domain=123tvnow.com
 @@/mangakakalot/*$stealth,image,domain=manganelo.com|mangakakalot.com
+@@/mediaserver/*$removeparam,domain=ramtrucks.com|chrysler.com|fiatusa.com|alfaromeousa.com|jeep.com|dodge.com
 @@/min/index.php?f=misc/js/jquery.pack.js
 @@/mobileads.$domain=naviking.localking.com.tw
 @@/mobileads.$domain=naviking.localking.com.tw
@@ -4032,7 +4033,7 @@
 @@/pic/ad/*$domain=ybjk.com
 @@/pl*.js$domain=polnometrazhnoe-porno.video|porn-1080.com|porno-kino.online|porno-kino.site
 @@/player/player_ads.html?advertising_id=$domain=bessporno.me|privat-zapisi.video|pornobomba.org|24tube.tv|720video.me|720video.tv|bessporno.tv|ebalovo.*|lenkino.*|m.720video.porn|m.porno-tour.lol|my.porno-tour.sex|porno-tour.*|pornomoll.*|ru-xvideos.info|ru-xvideos.me|rusex-club.me|tolkorus.info|ebalovsk.com
-@@/player_ads.html$domain=ebalovo.*|camwhores.tv|camlovers.tv|pornsexer.porn|tubsexer.info|camhub.tv|pornissimo.org|porntn.com|pornobit.me|femdomtb.com|pornoham.me|tubsexer.com|homegrownfreaks.net|pornfd.com|bobs-tube.com|pornsexer.com|sexcams-24.com
+@@/player_ads.html$domain=ebalovo.porn|ebalovo.adult|camwhores.tv|camlovers.tv|pornsexer.porn|tubsexer.info|camhub.tv|pornissimo.org|porntn.com|pornobit.me|femdomtb.com|pornoham.me|tubsexer.com|homegrownfreaks.net|pornfd.com|bobs-tube.com|pornsexer.com|sexcams-24.com
 @@/pop.js|$domain=fistfast.net
 @@/pop.js|$domain=pornve.com
 @@/pop.php?id=$domain=videomega.tv
@@ -4287,6 +4288,7 @@
 @@|cdn.cookielaw.org^
 @@|cdn.opencmp.net^
 @@|cdn.privacy-mgmt.com^
+@@|cdn.tagcommander.com^
 @@|cdn.zomap.de^
 @@|cdn2.cam-content.com^
 @@|cdn30137721.ahacdn.me^
@@ -5654,8 +5656,8 @@
 @@||account.leagueoflegends.com/pm.html$jsinject,elemhide
 @@||account.live.com^
 @@||account.mail.ru^$stealth
-@@||account.microsoft.com/?refd=
-@@||account.microsoft.com/auth/
+@@||account.microsoft.com/?refd=$stealth
+@@||account.microsoft.com/auth/$stealth
 @@||account.microsoft.com^
 @@||account.msi.com^
 @@||account.msrs.state.mn.us^
@@ -8557,7 +8559,7 @@
 @@||api.storiesig.com^
 @@||api.streema.com^
 @@||api.stripe.com^
-@@||api.surfeasy.com/*/geo_lookup
+@@||api.surfeasy.com/*/geo_lookup$stealth
 @@||api.taboola.com^$domain=samsung.com|thestartmagazine.com
 @@||api.taboola.com^$domain=samsung.com|thestartmagazine.com
 @@||api.target.com^
@@ -9707,6 +9709,7 @@
 @@||austin.sw.roku.com^
 @@||austinchronicle.com^
 @@||austinlaptop.com^
+@@||austintestingandtherapy.com^$extension
 @@||austintexas.gov^
 @@||australianfrequentflyer.com.au/community/js/siropu/am/ads.min.js
 @@||australianfrequentflyer.com.au^$generichide
@@ -9727,7 +9730,7 @@
 @@||auth.mail.ru^$stealth
 @@||auth.mediacomtoday.com^
 @@||auth.mitchell1.com^
-@@||auth.opera.com^
+@@||auth.opera.com^$stealth
 @@||auth.pizzahut.com^
 @@||auth.riotgames.com^
 @@||auth.sandstorm.game^
@@ -13060,7 +13063,7 @@
 @@||cdn.cookielaw.org/scripttemplates/*.*.*/
 @@||cdn.cookielaw.org/scripttemplates/*/assets/otFlat.json$domain=cbsnews.com
 @@||cdn.cookielaw.org/scripttemplates/*/assets/otPcPanel.json$domain=cbsnews.com
-@@||cdn.cookielaw.org/scripttemplates/otSDKStub.js$domain=cc.com|3sat.de|zdf.de|costco.com|giantbomb.com|glovoapp.com|rte.ie|digitaltrends.com|spiele.bild.de|spiele.stern.de|vanityfair.com|saarbruecker-zeitung.de|olympics.com|dziendobry.tvn.pl|bergfreunde.de|oe24.at|epicgames.com|toteraz.pl|natgeotv.com|midomi.com|volksfreund.de|kawasaki.com|foxchannels.com.tr|ga.de|shop.mango.com|kralmuzik.com.tr|westernunion.com|roastmarket.de|new.cappex.com|vimeo.com|heute.at|ntv.com.tr|wargaming.net|metacritic.com|gq-magazine.co.uk|viafree.dk|viafree.fi|viafree.no|viafree.se|glamour.de|cbsnews.com|worldoftanks.ru|vg247.com|newyorker.com|games.miamiherald.com|eurogamer.es|eurogamer.de
+@@||cdn.cookielaw.org/scripttemplates/otSDKStub.js$domain=cc.com|3sat.de|zdf.de|costco.com|giantbomb.com|glovoapp.com|rte.ie|digitaltrends.com|spiele.bild.de|spiele.stern.de|vanityfair.com|saarbruecker-zeitung.de|olympics.com|dziendobry.tvn.pl|bergfreunde.de|oe24.at|epicgames.com|toteraz.pl|natgeotv.com|midomi.com|volksfreund.de|kawasaki.com|foxchannels.com.tr|ga.de|shop.mango.com|kralmuzik.com.tr|westernunion.com|roastmarket.de|new.cappex.com|vimeo.com|heute.at|ntv.com.tr|wargaming.net|metacritic.com|gq-magazine.co.uk|viafree.dk|viafree.fi|viafree.no|viafree.se|glamour.de|cbsnews.com|worldoftanks.ru|vg247.com|newyorker.com|games.miamiherald.com|eurogamer.es|eurogamer.de|bet.com
 @@||cdn.cookielaw.org/scripttemplates^$domain=abus.com
 @@||cdn.cookielaw.org/scripttemplates^$domain=trustpilot.com
 @@||cdn.cookielaw.org/skins^
@@ -14756,7 +14759,7 @@
 @@||christmasfm.cdnstream1.com^
 @@||chrome.cloudflare-dns.com^
 @@||chrome.com^
-@@||chrome.google.com/webstore/detail/
+@@||chrome.google.com/webstore/detail/$stealth
 @@||chrome.google.com^
 @@||chromebattery.com^
 @@||chromeenterprise.google^
@@ -18210,6 +18213,7 @@
 @@||diariodeleon.es^$generichide
 @@||diariodemallorca.es/servicios/ads/dfp.js
 @@||diariodenavarra.es/MODULOS/global/publico/interfaces/web/dn/img/dn_plus.png?v=*&trackingserver=trackserver&adserver=adserver
+@@||diariodenavarra.es/images/logo_dn_mini.png?v=*&ad$image
 @@||diariosigloxxi.com/banners/logo_
 @@||diariotecnico.net^$generichide
 @@||diariovasco.com/comun/js/*/adfrm.js
@@ -18814,7 +18818,6 @@
 @@||docwiki-rcdn-prd.cisco.com^
 @@||docwiki.cisco.com^
 @@||docxw3rlmpwv7.cloudfront.net^
-@@||dodge.com/mediaserver/$removeparam
 @@||dodge.com^
 @@||dodgeofburnsville.com^
 @@||doe.sd.gov^
@@ -19770,6 +19773,8 @@
 @@||eatsmarter.de^*/webtrekk.js
 @@||eatstreet.com/api/v2/tracking/$~third-party
 @@||eauth.va.gov^
+@@||ebalovo.adult^$generichide
+@@||ebalovo.porn^$generichide
 @@||ebates.com^$generichide
 @@||ebay-kleinanzeigen.de/*.html?keywords=*&categoryId=*&adType=
 @@||ebay-kleinanzeigen.de/*/js/belen/tracking/adblock-detection/ads*.js
@@ -21862,6 +21867,7 @@
 @@||flipboard.com^
 @@||flipcause.com^
 @@||flipdesk.jp/wp/wp-content/themes/flipdesk/images/analytics3.png$image
+@@||fliphtml5.com^
 @@||flippingbook.com^*/static/analytics.js$script,~third-party
 @@||flir.com^
 @@||flix-anime.com^$generichide
@@ -22942,6 +22948,7 @@
 @@||g.api.mega.co.nz^
 @@||g.christianbook.com^
 @@||g.co^
+@@||g.csdnimg.cn.trpcdn.net^
 @@||g.csdnimg.cn/lib/fuckadblock/3.2.1/fuckadblock.min.js
 @@||g.csdnimg.cn^*/trackad.js$script,domain=csdn.net
 @@||g.delfi.ee^
@@ -23570,7 +23577,6 @@
 @@||geographicguide.com^
 @@||geoguessr.com/_ads/
 @@||geoip-db.com/jsonp/$script,third-party
-@@||geoip-db.com^
 @@||geoip-js.com/js/apis/geoip2/$script,domain=freshdesk.com|myvanillacard.com
 @@||geoip-js.com^*/me?referrer=$xmlhttprequest,domain=freshdesk.com|ibanez.com
 @@||geoip.dedipass.com/|$xmlhttprequest,domain=uptobox.com|uptostream.com
@@ -25087,9 +25093,9 @@
 @@||googleads.g.doubleclick.net/pagead/html/r*/zrt_lookup.html$domain=camera.aeonax.com
 @@||googleads.g.doubleclick.net/pagead/html/r*/zrt_lookup.html$domain=extremereportbot.com
 @@||googleads.g.doubleclick.net/pagead/id$domain=allywebsite.com
+@@||googleads.g.doubleclick.net/pagead/id$domain=eoydo.com|seositespeed.com|7movierulz.do|3cinfo.net|appsmodz.com|fusedgt.com|only4k.xyz|crunchyscan.fr|boainformacao.com.br|manyakan.com|pinayvids.com|moviessquad.com|bneo.info|wpking.in|dengeki-plusv2.xyz|politicalmeme.pl|bullfrag.com|epainfo.pl|rontechtips.com|ypojie.com|cinemakottaga.ml|tinhocdongthap.com|pogolinks.space|baominh.tech|sachiepvien.net|rucore.net|downloadcursos.org|jkmeng.cn|trgamestudio.com|audiobooks4soul.com|vfxdownload.net|electomania.es|captionsgram.com|clebinhoretrogames.com.br|reset-scans.com|compressware.in|toppnews4.net|novinhastop.com|scat.gold|joyhints.com|techymedies.com|tutcourse.com|privatemoviez.cc|alilove.pl|sqlserveregitimleri.com|tokuvn.com|texture-packs.com|bestwego.xyz|taregna.com|pcwarehub.com|phpscripttr.com|moddedguru.com|oyuncusoruyor.com|pbarecap.ph|sourds.net|teknobalta.com|tinyppt.com|tvinternetowa.info|nullpress.net|freeallcourse.com|nulljungle.com|udemydownload.com|doffeecafe.me|5.182.211.129|latesthdmovies.digital|short.ctvb1.info|hataphim.com|omerbozdi.com.tr|gigacourse.com|codingtuting.com|cyfostreams.com|linkbuk.in|movieslegacy.com|htstreaming.com|routech.ro|freewebcart.com|shineads.in|dubzstreams.com|watchmdh.to|ssf-co.com|solidfile.net|downloadtutorials.net|win10.vn|nullcode.cc|movieshub.top|legaartis.pl|cybermania.ws|freetraderdownload.com.br|masihbelajar.com|legendary-rt-textures.xyz|globfone.com|blogging-techies.com|privatemoviez.com|jpshowbiz.us|courseclub.me|shineads.in|conhecimentolivre.net|downloadcursos.top|persianhive.com|eductin.com|rtilinks.com|cronachedellacampania.it|fuzzmusic.ru|applexgen.com|desktophut.com|pinsystem.co.uk|mastiflix.com|grafixfather.com|globalrph.com|phoenixfansub.com|cyberdefensemagazine.com|vectogravic.com|teknotaci.com|uplod.net|onlinecoursebay.com|lectulandia.me|scrapywar.com|worldpremiumware.online|godmods.com|modagamers.com|tipslearn.com|nulljungle.com|filecr.com|darmowa-tv.ws|merkulov.design|cardiagn.com|nulleb.com|filecr.com|vpnbrothers.com|temi.pl|huljjang.com|bollyholic.site|sudya-dredd.ru|joyhints.com|mhdtvworld.xyz|tech-story.net|udemycoursesfree.me|edunil.com|livenewsnow.com|souqdesign.ru|ask4movie.cc|tokuvn.com|knightnoscanlation.com|animeidhentai.com|dvdgayporn.com|dotadostube.com|taradinhos.com|dvdgayonline.com|hotxfans.com|iimanga.com|phanmemmaytinh.net|bingotingo.com
 @@||googleads.g.doubleclick.net/pagead/id$domain=guides.magicgameworld.com
 @@||googleads.g.doubleclick.net/pagead/id$domain=linsoo.co.kr
-@@||googleads.g.doubleclick.net/pagead/id$domain=seositespeed.com|7movierulz.do|3cinfo.net|appsmodz.com|fusedgt.com|only4k.xyz|crunchyscan.fr|boainformacao.com.br|manyakan.com|pinayvids.com|moviessquad.com|bneo.info|wpking.in|dengeki-plusv2.xyz|politicalmeme.pl|bullfrag.com|epainfo.pl|rontechtips.com|ypojie.com|cinemakottaga.ml|tinhocdongthap.com|pogolinks.space|baominh.tech|sachiepvien.net|rucore.net|downloadcursos.org|jkmeng.cn|trgamestudio.com|audiobooks4soul.com|vfxdownload.net|electomania.es|captionsgram.com|clebinhoretrogames.com.br|reset-scans.com|compressware.in|toppnews4.net|novinhastop.com|scat.gold|joyhints.com|techymedies.com|tutcourse.com|privatemoviez.cc|alilove.pl|sqlserveregitimleri.com|tokuvn.com|texture-packs.com|bestwego.xyz|taregna.com|pcwarehub.com|phpscripttr.com|moddedguru.com|oyuncusoruyor.com|pbarecap.ph|sourds.net|teknobalta.com|tinyppt.com|tvinternetowa.info|nullpress.net|freeallcourse.com|nulljungle.com|udemydownload.com|doffeecafe.me|5.182.211.129|latesthdmovies.digital|short.ctvb1.info|hataphim.com|omerbozdi.com.tr|gigacourse.com|codingtuting.com|cyfostreams.com|linkbuk.in|movieslegacy.com|htstreaming.com|routech.ro|freewebcart.com|shineads.in|dubzstreams.com|watchmdh.to|ssf-co.com|solidfile.net|downloadtutorials.net|win10.vn|nullcode.cc|movieshub.top|legaartis.pl|cybermania.ws|freetraderdownload.com.br|masihbelajar.com|legendary-rt-textures.xyz|globfone.com|blogging-techies.com|privatemoviez.com|jpshowbiz.us|courseclub.me|shineads.in|conhecimentolivre.net|downloadcursos.top|persianhive.com|eductin.com|rtilinks.com|cronachedellacampania.it|fuzzmusic.ru|applexgen.com|desktophut.com|pinsystem.co.uk|mastiflix.com|grafixfather.com|globalrph.com|phoenixfansub.com|cyberdefensemagazine.com|vectogravic.com|teknotaci.com|uplod.net|onlinecoursebay.com|lectulandia.me|scrapywar.com|worldpremiumware.online|godmods.com|modagamers.com|tipslearn.com|nulljungle.com|filecr.com|darmowa-tv.ws|merkulov.design|cardiagn.com|nulleb.com|filecr.com|vpnbrothers.com|temi.pl|huljjang.com|bollyholic.site|sudya-dredd.ru|joyhints.com|mhdtvworld.xyz|tech-story.net|udemycoursesfree.me|edunil.com|livenewsnow.com|souqdesign.ru|ask4movie.cc|tokuvn.com|knightnoscanlation.com|animeidhentai.com|dvdgayporn.com|dotadostube.com|taradinhos.com|dvdgayonline.com|hotxfans.com|iimanga.com|phanmemmaytinh.net|bingotingo.com
 @@||googleads.g.doubleclick.net/pagead/id$domain=streameast.live
 @@||googleads.g.doubleclick.net/pagead/id$xmlhttprequest,domain=bitminer.biz
 @@||googleads.g.doubleclick.net/pagead/id$xmlhttprequest,domain=gamemag.ru
@@ -25309,7 +25315,6 @@
 @@||googletagmanager.com/gtm.js$domain=braun.com
 @@||googletagmanager.com/gtm.js$domain=braun.com
 @@||googletagmanager.com/gtm.js$domain=bunte.de|computerbild.de|finanzen.at|finanzen.net|freenet-funk.de|idealo.at|idealo.de|radiorur.de|saturn.at|sport1.de|vox.de
-@@||googletagmanager.com/gtm.js$domain=bunte.de|computerbild.de|finanzen.at|finanzen.net|freenet-funk.de|radiorur.de|saturn.at|sport1.de|vox.de
 @@||googletagmanager.com/gtm.js$domain=bunte.de|stiefelparadies.de
 @@||googletagmanager.com/gtm.js$domain=bunte.de|stiefelparadies.de
 @@||googletagmanager.com/gtm.js$domain=cabinet.planetakino.ua
@@ -27672,7 +27677,7 @@
 @@||hydrax.net/players^
 @@||hyland.com^
 @@||hypem.com/inc/header_menu$document
-@@||hypercomments.com/api/comments?_=
+@@||hypercomments.com/api/comments?_=$stealth
 @@||hypercomments.com/api/comments?widget_id=$stealth
 @@||hypercomments.com/api/login?
 @@||hypercomments.com/auth/
@@ -30949,7 +30954,6 @@
 @@||jeacustom.com^
 @@||jeanne-laffitte.com^$extension
 @@||jeded.com^
-@@||jeep.com/mediaserver/$removeparam
 @@||jeep.com^
 @@||jeepcarus.com^
 @@||jeevansathi.com/minify.php?files=$script,stylesheet
@@ -31069,6 +31073,7 @@
 @@||joblogic.com^
 @@||jobnetwork.latimes.com^
 @@||jobportal.uni-koeln.de^$stealth
+@@||jobregister.aas.org/ad/
 @@||jobs.dell.com^
 @@||jobs.disneycareers.com^
 @@||jobs.hp.com^
@@ -32387,6 +32392,7 @@
 @@||leeparts.com^
 @@||leer.com^
 @@||leessummitchryslerjeepdodge.com^
+@@||leet365.cc^$generichide
 @@||leffatykki.com/media/banners/tykkibanneri-728x90.png$image,~third-party
 @@||leffatykki.com/media/banners/tykkibanneri-728x90.png$image,~third-party
 @@||lefile.cn/??*,
@@ -35144,9 +35150,9 @@
 @@||microscopeworld.com^
 @@||microsoft.com/*/default.aspx$extension
 @@||microsoft.com/*/p/$stealth
-@@||microsoft.com/*/signin.aspx
-@@||microsoft.com/*/signout.aspx
-@@||microsoft.com/*=wsign
+@@||microsoft.com/*/signin.aspx$stealth
+@@||microsoft.com/*/signout.aspx$stealth
+@@||microsoft.com/*=wsign$stealth
 @@||microsoft.com/click/services/RioTracking2.js
 @@||microsoft.com/click/services/RioTracking2.js
 @@||microsoft.com/translate/auth
@@ -35249,6 +35255,7 @@
 @@||mimaletadepeliculas.blogspot.com^$generichide
 @@||mimaletadepeliculas.blogspot.de^$generichide
 @@||mimaletamusical.blogspot.com^$generichide
+@@||mimg.127.net^
 @@||mimo.skypixel.com^
 @@||minami.xneet.id^$generichide
 @@||mind.org.uk^
@@ -38290,6 +38297,7 @@
 @@||online-metrix.net/fp/tags.js$domain=donorschoose.org
 @@||online-tech-tips.com^
 @@||online-translator.com^
+@@||online.a1.by/l/v/track.php?event=$domain=a1.by
 @@||online.americanexpress.com/myca/statementimage/$document
 @@||online.bankofthewest.com^
 @@||online.banno-production.com^
@@ -39152,6 +39160,7 @@
 @@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$domain=elsfile.org
 @@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$domain=emucr.com
 @@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$domain=emurom.net
+@@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$domain=eoydo.com|seositespeed.com|7movierulz.do|3cinfo.net|appsmodz.com|fusedgt.com|only4k.xyz|crunchyscan.fr|boainformacao.com.br|manyakan.com|pinayvids.com|moviessquad.com|bneo.info|wpking.in|dengeki-plusv2.xyz|politicalmeme.pl|bullfrag.com|epainfo.pl|rontechtips.com|ypojie.com|cinemakottaga.ml|tinhocdongthap.com|pogolinks.space|baominh.tech|sachiepvien.net|rucore.net|downloadcursos.org|jkmeng.cn|trgamestudio.com|audiobooks4soul.com|vfxdownload.net|electomania.es|captionsgram.com|clebinhoretrogames.com.br|reset-scans.com|compressware.in|toppnews4.net|novinhastop.com|scat.gold|joyhints.com|techymedies.com|tutcourse.com|privatemoviez.cc|alilove.pl|sqlserveregitimleri.com|tokuvn.com|texture-packs.com|bestwego.xyz|taregna.com|pcwarehub.com|phpscripttr.com|moddedguru.com|oyuncusoruyor.com|pbarecap.ph|sourds.net|teknobalta.com|tinyppt.com|tvinternetowa.info|nullpress.net|freeallcourse.com|nulljungle.com|udemydownload.com|doffeecafe.me|5.182.211.129|latesthdmovies.digital|short.ctvb1.info|hataphim.com|omerbozdi.com.tr|gigacourse.com|codingtuting.com|cyfostreams.com|linkbuk.in|movieslegacy.com|htstreaming.com|routech.ro|freewebcart.com|shineads.in|dubzstreams.com|watchmdh.to|ssf-co.com|solidfile.net|downloadtutorials.net|win10.vn|nullcode.cc|movieshub.top|legaartis.pl|cybermania.ws|freetraderdownload.com.br|masihbelajar.com|legendary-rt-textures.xyz|globfone.com|freecourses.site|blogging-techies.com|privatemoviez.com|jpshowbiz.us|courseclub.me|behindzscene.net|magicgameworld.com|shineads.in|conhecimentolivre.net|downloadcursos.top|freecoursesite.com|latestmovie4u.com|persianhive.com|eductin.com|rtilinks.com|juegoscocinarpasteleria.org|blisseyhusband.in|cronachedellacampania.it|fuzzmusic.ru|applexgen.com|desktophut.com|infofuge.com|moviedhun.xyz|pinsystem.co.uk|mastiflix.com|grafixfather.com|streamcr7.com|globalrph.com|phoenixfansub.com|cyberdefensemagazine.com|vectogravic.com|teknotaci.com|uplod.net|onlinecoursebay.com|lectulandia.me|scrapywar.com|worldpremiumware.online|godmods.com|modagamers.com|tipslearn.com|nulljungle.com|filecr.com|darmowa-tv.ws|fikiri.net|merkulov.design|cardiagn.com|nulleb.com|javgayplus.com|dr-farfar.com|netfuck.net|allywebsite.com|temi.pl|otakupdf.com|sonradangamer.com|onlinefreecourse.net|themeslide.com|phpscripttr.com|freewebcart.com|choq.fm|mhdtvworld.xyz|pentruea.com|software-on.com|restplay.xyz|zone-annuaire.xyz|tunovelaligera.com|open3dmodel.com|nullpk.com|magesy.blog|magesy.pro|dr-farfar.com|fcportables.com|nsfw247.to|boycracked.co|elrellano.com|masihbelajar.com|tehnografi.com|myqqjd.com|filecr.com|idolprojects.com|usb-antivirus.com|kursors.lv|novelmultiverse.com|bollyholic.site|adibenha.com|worldfree4u-lol.online|tutorialsplanet.net|libri.link|joyhints.com|mhdtvworld.xyz|themehits.com|pelismart.com|javsex.to|gaypornhdfree.to|gaypornhdfree.com|tech-story.net|udemycoursesfree.me|edunil.com|livenewsnow.com|souqdesign.ru|ask4movie.cc|tokuvn.com|knightnoscanlation.com|animeidhentai.com|dvdgayporn.com|dotadostube.com|taradinhos.com|dvdgayonline.com|hotxfans.com|iimanga.com|phanmemmaytinh.net|freewp.io|thecustomrom.com|bingotingo.com
 @@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$domain=epicbundle.com
 @@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$domain=ethereumfaucet.info
 @@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$domain=eviltranslator.xyz
@@ -39384,7 +39393,6 @@
 @@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$domain=savesubs.com
 @@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$domain=seminarstopics.com
 @@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$domain=seo-visit.com
-@@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$domain=seositespeed.com|7movierulz.do|3cinfo.net|appsmodz.com|fusedgt.com|only4k.xyz|crunchyscan.fr|boainformacao.com.br|manyakan.com|pinayvids.com|moviessquad.com|bneo.info|wpking.in|dengeki-plusv2.xyz|politicalmeme.pl|bullfrag.com|epainfo.pl|rontechtips.com|ypojie.com|cinemakottaga.ml|tinhocdongthap.com|pogolinks.space|baominh.tech|sachiepvien.net|rucore.net|downloadcursos.org|jkmeng.cn|trgamestudio.com|audiobooks4soul.com|vfxdownload.net|electomania.es|captionsgram.com|clebinhoretrogames.com.br|reset-scans.com|compressware.in|toppnews4.net|novinhastop.com|scat.gold|joyhints.com|techymedies.com|tutcourse.com|privatemoviez.cc|alilove.pl|sqlserveregitimleri.com|tokuvn.com|texture-packs.com|bestwego.xyz|taregna.com|pcwarehub.com|phpscripttr.com|moddedguru.com|oyuncusoruyor.com|pbarecap.ph|sourds.net|teknobalta.com|tinyppt.com|tvinternetowa.info|nullpress.net|freeallcourse.com|nulljungle.com|udemydownload.com|doffeecafe.me|5.182.211.129|latesthdmovies.digital|short.ctvb1.info|hataphim.com|omerbozdi.com.tr|gigacourse.com|codingtuting.com|cyfostreams.com|linkbuk.in|movieslegacy.com|htstreaming.com|routech.ro|freewebcart.com|shineads.in|dubzstreams.com|watchmdh.to|ssf-co.com|solidfile.net|downloadtutorials.net|win10.vn|nullcode.cc|movieshub.top|legaartis.pl|cybermania.ws|freetraderdownload.com.br|masihbelajar.com|legendary-rt-textures.xyz|globfone.com|freecourses.site|blogging-techies.com|privatemoviez.com|jpshowbiz.us|courseclub.me|behindzscene.net|magicgameworld.com|shineads.in|conhecimentolivre.net|downloadcursos.top|freecoursesite.com|latestmovie4u.com|persianhive.com|eductin.com|rtilinks.com|juegoscocinarpasteleria.org|blisseyhusband.in|cronachedellacampania.it|fuzzmusic.ru|applexgen.com|desktophut.com|infofuge.com|moviedhun.xyz|pinsystem.co.uk|mastiflix.com|grafixfather.com|streamcr7.com|globalrph.com|phoenixfansub.com|cyberdefensemagazine.com|vectogravic.com|teknotaci.com|uplod.net|onlinecoursebay.com|lectulandia.me|scrapywar.com|worldpremiumware.online|godmods.com|modagamers.com|tipslearn.com|nulljungle.com|filecr.com|darmowa-tv.ws|fikiri.net|merkulov.design|cardiagn.com|nulleb.com|javgayplus.com|dr-farfar.com|netfuck.net|allywebsite.com|temi.pl|otakupdf.com|sonradangamer.com|onlinefreecourse.net|themeslide.com|phpscripttr.com|freewebcart.com|choq.fm|mhdtvworld.xyz|pentruea.com|software-on.com|restplay.xyz|zone-annuaire.xyz|tunovelaligera.com|open3dmodel.com|nullpk.com|magesy.blog|magesy.pro|dr-farfar.com|fcportables.com|nsfw247.to|boycracked.co|elrellano.com|masihbelajar.com|tehnografi.com|myqqjd.com|filecr.com|idolprojects.com|usb-antivirus.com|kursors.lv|novelmultiverse.com|bollyholic.site|adibenha.com|worldfree4u-lol.online|tutorialsplanet.net|libri.link|joyhints.com|mhdtvworld.xyz|themehits.com|pelismart.com|javsex.to|gaypornhdfree.to|gaypornhdfree.com|tech-story.net|udemycoursesfree.me|edunil.com|livenewsnow.com|souqdesign.ru|ask4movie.cc|tokuvn.com|knightnoscanlation.com|animeidhentai.com|dvdgayporn.com|dotadostube.com|taradinhos.com|dvdgayonline.com|hotxfans.com|iimanga.com|phanmemmaytinh.net|freewp.io|thecustomrom.com|bingotingo.com
 @@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$domain=shrink.world
 @@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$domain=shutterdowner.com
 @@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$domain=simply-debrid.com
@@ -41719,7 +41727,7 @@
 @@||profile.csdnimg.cn^
 @@||profile.gc.apple.com^
 @@||profile.live.com^
-@@||profile.microsoft.com/RegSysProfileCenter/
+@@||profile.microsoft.com/RegSysProfileCenter/$stealth
 @@||profile.skype.com^
 @@||profile.target.com^
 @@||profile.xboxlive.com^
@@ -43602,7 +43610,6 @@
 @@||rp5.ua^$generichide
 @@||rparts-sites.s3.amazonaws.com^
 @@||rpcs3.net^
-@@||rpgrussia.com/php/js/fuckadblock.min.js
 @@||rpgsite.net^
 @@||rps-svcs.sun.com^
 @@||rptrcks.walmart.com^
@@ -48026,6 +48033,7 @@
 @@||static.weekli.systems/www/min/f/www/js/privacy/*.css$domain=weekli.de
 @@||static.wellsfargo.com^
 @@||static.wi-fi.ru/banners/maximatelecom/advert/adblock.js
+@@||static.wi-fi.ru/mtt/banners/$domain=karaoke.ru
 @@||static.wi-fi.ru^
 @@||static.wikia.nocookie.net^
 @@||static.wikia.nocookie.net^*/tracking-opt-in.min.js$script,domain=fandom.com
@@ -48864,6 +48872,7 @@
 @@||stripe.network^
 @@||stripecdn.com^
 @@||stripecdn.map.fastly.net^
+@@||strmrdrfrmq.xyz^$stealth
 @@||stroeerdigitalgroup.de/metatag/live/AMS/metaTag.min.js$domain=auto-motor-und-sport.de
 @@||stroeerdigitalgroup.de/metatag/live/bauer-autozeitung/metaTag.min.js$domain=autozeitung.de
 @@||stroeerdigitalgroup.de/metatag/live/bauer-tvmovie/metaTag.min.js$domain=tvmovie.de
@@ -49352,7 +49361,7 @@
 @@||sync.everhelper.me^$stealth
 @@||sync.itunes.apple.com^
 @@||sync.maxthon.com$document
-@@||sync.opera.com/api/sync/
+@@||sync.opera.com/api/sync/$stealth
 @@||sync.pool.datamind.ru/image?source=retargeting$domain=tinkoff.ru
 @@||sync.search.spotxchange.com/partner?source=easi$image,domain=radioluisteren.fm
 @@||sync.smartadserver.com/getuid?url=*vmf.edge-apps.net*res*smartads_cookie.html$domain=vmf.edge-apps.net
@@ -49730,7 +49739,7 @@
 @@||taylorsfirearms.com^
 @@||taylorswift.com^
 @@||tb.53kf.com^
-@@||tb.mgtv.com/sdk/*/ad-sdk.js$script
+@@||tb.mgtv.com/sdk/*/ad-sdk.
 @@||tbcdn.cn^*/click_track.js
 @@||tbcdn.cn^*/click_track.js
 @@||tboost.xyz^$generichide
@@ -52467,6 +52476,7 @@
 @@||uplay.ubisoft.com^
 @@||uplaypc-s-ubisoft.cdn.ubi.com^
 @@||uplaywebcenter.ubi.com^
+@@||upload-images.jianshu.io^
 @@||upload.ac/hg/js/advertisement.js
 @@||upload.af^$generichide
 @@||upload.brickinc.net^
@@ -54456,6 +54466,7 @@
 @@||webbyawards.com/wp-content/uploads/sites/*/json^
 @@||webcache.googleusercontent.com^
 @@||webcache.googleusercontent.com^$generichide
+@@||webcam-hd.com/bower_components/angular-cookie-law/dist/angular-cookie-law.min.js
 @@||webcam.atomsk.ru^*/index?vid=$stealth
 @@||webcam.yahoo.com^
 @@||webcamsdolls.com/player/ads.js
