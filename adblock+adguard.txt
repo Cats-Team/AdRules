@@ -4,8 +4,8 @@
 ! Powerd by CatsTeam
 ! Expires: 12 Hours
 ! Description: 该规则合并自AdRules (For AdBlock)+AdRules (For AdGuard)
-! Version: 2022-01-13 22:18:38
-! Total count: 56466
+! Version: 2022-01-14 10:22:04
+! Total count: 56480
 -988x60.
 -980x60-
 -780x90-
@@ -4648,6 +4648,7 @@
 ###boxAd300
 ###boxAdContainer
 ###boxAdvert
+###boxLREC
 ###boxLightImageGalleryAd
 ###box_ad
 ###box_ad_container
@@ -8535,6 +8536,7 @@
 ###top_wide_ad
 ###topad
 ###topad-728x90
+###topad-block
 ###topad-wrap
 ###topad1
 ###topad2
@@ -16408,10 +16410,13 @@
 ##.dfp-banner
 ##.dfp-banner-slot
 ##.dfp-block
+##.dfp-bottom
 ##.dfp-button
 ##.dfp-double-mpu
 ##.dfp-dynamic-tag
 ##.dfp-fixedbar
+##.dfp-here-bottom
+##.dfp-here-top
 ##.dfp-leaderboard
 ##.dfp-leaderboard-container
 ##.dfp-panel
@@ -16421,6 +16426,7 @@
 ##.dfp-space
 ##.dfp-super-leaderboard
 ##.dfp-tag-wrapper
+##.dfp-top
 ##.dfp-top1
 ##.dfp-top1-container
 ##.dfp-wrapper
@@ -16969,6 +16975,7 @@
 ##.frontpage-mpu-section-ad
 ##.frontpage-right-ad
 ##.frontpage-right-ad-hide
+##.frontpage__article--ad
 ##.frontpage_ads
 ##.fs-ad-block
 ##.fs1-advertising
@@ -17771,6 +17778,7 @@
 ##.horisont_ads
 ##.horiz_adspace
 ##.horizontal-ad
+##.horizontal-ad-container
 ##.horizontal-ad-holder
 ##.horizontal-ad-wrapper
 ##.horizontal-ad2
@@ -18545,6 +18553,7 @@
 ##.lr-ad
 ##.lr-pack-ad
 ##.lr_skyad
+##.lrec-container
 ##.lsn-yahooAdBlock
 ##.lt_ad
 ##.lt_ad_call
@@ -27358,7 +27367,6 @@ $websocket,domain=pornhub.com|pornhubthbh7ap3u.onion|redtube.com|redtube.com.br|
 /assets/doubleclick/*
 /assets/sponsored/*
 /ast/ads/*
-/async-ads.js
 /async/ads-
 /asyncadload.
 /asyncjs.$domain=~asyncjs.com
@@ -31553,6 +31561,8 @@ amazon.ae,amazon.ca,amazon.cn,amazon.co.jp,amazon.co.uk,amazon.com,amazon.com.au
 amazon.com,faceyourmanga.com,isc2.org,liverc.com,liverpoolfc.com,mit.edu,muscatdaily.com,olx.pl,payback.pl,pccomponentes.com,ripley.com.pe,saitama-np.co.jp,timesofoman.com,virginaustralia.com#@#[id^="div-gpt-ad"]
 amctheatres.com##.flt-ad-strut
 amgreatness.com###ag-lead
+amgreatness.com##.bg-gray-200.mx-auto
+amgreatness.com##.mb-10.mx-auto
 amgreatness.com##div[id^="ag-front-"]
 ana-white.com###block-views-block-sponsors-block-1
 analyticsindiamag.com##[href^="https://business.louisville.edu/"]
@@ -31817,7 +31827,7 @@ britsabroad.com##.bannerBox
 brmangas.com##.closebf
 brmangas.com##[src="https://manjiroinflu.com/streams.php"]
 broadbandforum.co##ins[data-ad-client]
-browserhow.com,iotwreport.com##.code-block
+browserhow.com,iotwreport.com,rezence.com##.code-block
 browserleaks.com###vpn_img
 browserleaks.com###vpn_text
 browsershots.org#@#.advert_area
@@ -32685,6 +32695,7 @@ googleping.com###itro_popup
 googleping.com##.dtext
 googlesightseeing.com##.comm-square
 gosearchresults.com##.listing-right
+gostream.site##.content-kuss
 govevents.com###header-display
 govevents.com,protipster.com##.display
 gpfans.com##.advertise-panel
@@ -33358,6 +33369,8 @@ monocle.com##.super-leaderboard
 monsoonjournal.com##.mom-e3lanat-wrap
 monstertruckgames.org##.gamecatbox
 moodiedavittreport.com##.notice
+moomoo.io###adCard
+moomoo.io###menuContainer > .menuCard
 morningstar.in##.add-container
 mostlyblogging.com###custom_html-15
 mostlyblogging.com###media_image-5
@@ -34616,6 +34629,7 @@ worldtimebuddy.com##.block2
 worldtimezone.com##.spon-menu
 worldtimezone.com##table[width="472"]
 wowhead.com###main > .blocks
+wowhead.com##.blocks
 wowway.net###sc_home_header_banner
 wowway.net###sc_home_news_banner
 wowway.net###sc_home_recommended_banner
