@@ -65,6 +65,10 @@ malimali2.com##div.leo-container:nth-child(4) > div:nth-child(5)
 ! -------加强屏蔽End------- !
 
 ! -------白名单Start------- !
+! [淘宝]
+! // 关闭隐身模式，以便正常使用发票功能
+@@||invoice-ua.taobao.com/e-invoice/invoice-apply-online.html?source$stealth
+
 ! CF的管理
 @@||dash.cloudflare.com^$domain=dash.cloudflare.com,important
 
