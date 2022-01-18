@@ -4,8 +4,8 @@
 ! Powerd by CatsTeam
 ! Expires: 12 Hours
 ! Description: 该规则合并自AdRules (For AdBlock)+AdRules (For AdGuard)
-! Version: 2022-01-18 10:20:57
-! Total count: 56626
+! Version: 2022-01-18 22:21:53
+! Total count: 56644
 -988x60.
 -980x60-
 -780x90-
@@ -3338,9 +3338,12 @@
 ###adslot6
 ###adslot7
 ###adslot_c2
+###adslot_left
 ###adslot_m1
 ###adslot_m2
 ###adslot_m3
+###adslot_rect
+###adslot_top
 ###adsmegabanner
 ###adsmiddle
 ###adsnews
@@ -20463,6 +20466,7 @@
 ##.section_ad
 ##.section_ad_left
 ##.section_adarea
+##.section_ads
 ##.section_google-adsense
 ##.section_mpu_wrapper
 ##.section_mpu_wrapper_wrapper
@@ -21952,6 +21956,7 @@
 ##.txtAd5
 ##.txtAds
 ##.txt_ad
+##.txt_adbyeclick
 ##.txt_ads
 ##.txtad_area
 ##.txtadbox
@@ -23104,6 +23109,7 @@
 ##a[href^="http://www.myfreepaysite.com/sfw_int.php?aid"]
 ##a[href^="http://www.mysuperpharm.com/"]
 ##a[href^="http://www.on2url.com/app/adtrack.asp"]
+##a[href^="http://www.onclickmega.com/jump/next.php?"]
 ##a[href^="http://www.onwebcam.com/random?t_link="]
 ##a[href^="http://www.paddypower.com/?AFF_ID="]
 ##a[href^="http://www.pinkvisualgames.com/?revid="]
@@ -31909,6 +31915,7 @@ cd1025.com###hp-leader
 cd1025.com,domainincite.com,europages.co.uk,gamingcloud.com,kpbs.org,phillyvoice.com,speedcafe.com,thegatewaypundit.com,westernjournal.com,wnd.com##.sponsor
 cd1025.com,myfigurecollection.net,prolificnotion.co.uk##.partner
 cdf.cl#@#.textads
+cdn.ampproject.org,linguee.com,thesuburban.com###banner_top
 cdromance.com##.game-container[style="grid-column: span 2;"]
 cdromance.com##.support-us
 celebritynetworth.com###skyline
@@ -32909,6 +32916,7 @@ informer.com##.adsbygoogle
 informer.com##.spnsd
 informer.com##div[class="a2"]
 infosecurity-magazine.com#@#.header-ad-row
+infowars.com##.css-1nbwp0k
 infowars.com##.css-1upmbem
 infowars.com##.css-1vj1npn
 inhabitat.com##.mn-wrapper
@@ -33174,7 +33182,6 @@ lifeinvader.com,spanishdict.com#@#.ad-wrapper
 lightnovelpub.com##.adsbox
 lightreading.com##a[href^="/lg_redirect.asp?piddl_lgid_docid="]
 lineageos18.com###contentLocker
-linguee.com,thesuburban.com###banner_top
 link-base.org##.col-lg-12
 linkedin.com##li[data-is-sponsored="true"]
 linkedin.com#?#.feed-shared-update-v2:-abp-has(.feed-shared-actor__sub-description:-abp-contains(/Sponsored|Promoted|Dipromosikan|Propagováno|Promoveret|Gesponsert|Promocionado|促銷內�
@@ -37053,6 +37060,7 @@ zylom.com##.floor_wrapper
 ||andohs.net^
 ||andomedia.com^
 ||andomediagroup.com^
+||andorapx.com^
 ||andorranisas.xyz^
 ||andriesshied.com^
 ||andworldwi.co^
@@ -37085,6 +37093,7 @@ zylom.com##.floor_wrapper
 ||anldnews.pro^
 ||anncmq.com^
 ||annelinterv.fun^
+||annesuspense.com^
 ||anniversarytoothbrush.com^
 ||annualinternetsurvey.com^$popup
 ||anomaloustradingmerciful.com^
@@ -42579,6 +42588,7 @@ zylom.com##.floor_wrapper
 ||fisari.com^$third-party
 ||fishermanmartial.com^
 ||fishki.net/code?
+||fishpassportvocational.com^
 ||fishyscalpelweight.com^
 ||fisoes.com^
 ||fistcartyped.casa^
@@ -45698,6 +45708,7 @@ zylom.com##.floor_wrapper
 ||kgxnaenrozyuh.com^
 ||khaate.com^
 ||khandragthresh.com^
+||khayatarai.com^
 ||khcbilxtj.com^
 ||khewwakrywmgxr.com^
 ||khg97644rvbg.com^
@@ -47494,6 +47505,7 @@ zylom.com##.floor_wrapper
 ||mummypepdye.com^
 ||mumosy.com^
 ||mumtsioc.top^
+||munori.com^
 ||mupsytyzu.com^
 ||mupteekr.net^
 ||muqson0kgr.com^
@@ -47699,6 +47711,7 @@ zylom.com##.floor_wrapper
 ||nckwgmbfdwrj.xyz^
 ||nctylivpwhpby.com^
 ||ncurqchw.com^
+||ndbspfpgynbt.com^
 ||ndejhe73jslaw093.com^
 ||ndha4sding6gf.com^
 ||ndiampartic.biz^
@@ -49915,6 +49928,7 @@ zylom.com##.floor_wrapper
 ||princided.club^
 ||pringed.space^
 ||printmeantime.com^
+||prinue.com^
 ||priorityinvaderinflation.com^
 ||prisedeluge.com^
 ||pritesol.com^
@@ -50410,6 +50424,7 @@ zylom.com##.floor_wrapper
 ||px1alsry.com^$popup
 ||px3792.com^
 ||pxl2015x1.com^
+||pxlk9.net^$popup
 ||pxlqyrteuuh.com^
 ||pxmyjxebxgv.com^
 ||pyeditingpro.biz^
@@ -53465,6 +53480,7 @@ zylom.com##.floor_wrapper
 ||themdesertdumbest.com^
 ||themereplacebiopsy.com^
 ||themoneytizer.com^$third-party
+||thenceafeard.com
 ||theonecdn.com^
 ||theoreviver.cam^
 ||thepayporn.com^$third-party
@@ -53843,6 +53859,7 @@ zylom.com##.floor_wrapper
 ||tpdads.com^
 ||tplpages.com^
 ||tpn134.com^
+||tqhitmrbkq.top^
 ||tqlkg.com^
 ||tqmibkqlwqdysi.com^
 ||tqmvbnptsq.top^
@@ -54283,6 +54300,7 @@ zylom.com##.floor_wrapper
 ||ubercpm.com^$third-party
 ||ubilox.com^
 ||ubjectsandie.biz^
+||ublockpop.com/rect.php?$popup
 ||ubuntugeek.com/images/ubuntu1.png
 ||ucalte.com^
 ||ucconn.live^
@@ -56609,7 +56627,7 @@ zylom.com##.floor_wrapper
 9gag.tv##.size-728x90
 9jaflaver.com,alaskapublic.org,allkeyshop.com,ancient-origins.net,animeidhentai.com,arabtimesonline.com,carmag.co.za,cnx-software.com,coingolive.com,cryptoslate.com,digitallydownloaded.net,dotesports.com,downturk.net,forum.ragezone.com,fresherslive.com,gizmochina.com,glodls.to,guidedhacking.com,hackernoon.com,hlstester.com,indishare.org,linkhub.icu,litecoin-faucet.com,mbauniverse.com,mediaite.com,myreadingmanga.info,nexter.org,owaahh.com,parkablogs.com,premiumtimesng.com,resultuniraj.co.in,retail.org.nz,rtvonline.com,totemtattoo.com,trancentral.tv,ultshare.com,vumafm.co.za,wccftech.com,yeyeboyz.net,yugatech.com,zmescience.com##[href*="bit.ly/"]
 9l.pl#@#.boxAds
-9to5google.com,9to5mac.com,beeradvocate.com,bizjournals.com,biznews.com,businessinsider.com,computerworld.com,driven.co.nz,ecr.co.za,electrek.co,engineeringnews.co.za,etcanada.com,fox10phoenix.com,fox13news.com,fox26houston.com,fox29.com,fox2detroit.com,fox32chicago.com,fox35orlando.com,fox4news.com,fox5atlanta.com,fox5dc.com,fox5ny.com,fox7austin.com,fox9.com,foxbusiness.com,foxla.com,foxnews.com,funkidslive.com,gfinityesports.com,gmanetwork.com,grammarbook.com,hbr.org,insidehook.com,intouchweekly.com,khou.com,ktvu.com,macstories.net,metro.us,miningweekly.com,mobilesyrup.com,modernhealthcare.com,my9nj.com,myfitnesspal.com,nbcnews.com,nzherald.co.nz,opb.org,pixiv.net,realsport101.com,scroll.in,seattletimes.com,sportskeeda.com,thelocal.at,thelocal.ch,thelocal.de,thelocal.dk,thelocal.es,thelocal.fr,thelocal.it,thelocal.no,thelocal.se,toofab.com,wogx.com##.ad-container
+9to5google.com,9to5mac.com,beeradvocate.com,bizjournals.com,biznews.com,businessinsider.com,computerworld.com,driven.co.nz,ecr.co.za,electrek.co,engineeringnews.co.za,etcanada.com,fox10phoenix.com,fox13news.com,fox26houston.com,fox29.com,fox2detroit.com,fox32chicago.com,fox35orlando.com,fox4news.com,fox5atlanta.com,fox5dc.com,fox5ny.com,fox7austin.com,fox9.com,foxbusiness.com,foxla.com,foxnews.com,funkidslive.com,gfinityesports.com,gmanetwork.com,grammarbook.com,hbr.org,insidehook.com,intouchweekly.com,khou.com,ktvu.com,macstories.net,metro.us,miningweekly.com,mobilesyrup.com,modernhealthcare.com,my9nj.com,myfitnesspal.com,nbcnews.com,nzherald.co.nz,opb.org,pixiv.net,realsport101.com,reason.com,scroll.in,seattletimes.com,sportskeeda.com,thelocal.at,thelocal.ch,thelocal.de,thelocal.dk,thelocal.es,thelocal.fr,thelocal.it,thelocal.no,thelocal.se,toofab.com,wogx.com##.ad-container
 10minutemail.com##[href="https://www.remove-metadata.com"]
 10minutemail.net##.leftXL
 10minutemail.net,eel.surf7.net.my,javatpoint.com###right
