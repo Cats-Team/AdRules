@@ -1,6 +1,6 @@
 ! Title: Allowlist
-! Version: 2022-01-18 09:21:33（北京时间） 
-! Total count: 53446
+! Version: 2022-01-18 09:26:12（北京时间） 
+! Total count: 53455
 @@||bkimg.cdn.bcebos.com^
 @@||imgstat.baidu.com^
 @@||v6lvs.com^
@@ -3523,6 +3523,7 @@
 
 
 
+@@$csp=worker-src 'none',domain=uptostream.com
 @@$generichide,domain=heapfiles.com|vidoza.co|vidoza.net
 @@$generichide,domain=heapfiles.com|vidoza.co|vidoza.net
 @@$webrtc,domain=britannica.com
@@ -4326,6 +4327,7 @@
 @@|e12906.dscx.akamaiedge.net^
 @@|easy.box^
 @@|engine.phn.doublepimp.com^
+@@|et.tidal.com^
 @@|etxr^
 @@|exacttarget.com.edgekey.net^
 @@|faz.sevenval-fit.com^
@@ -5086,6 +5088,8 @@
 @@||51jobcdn.com/im/images/ads/$domain=51job.com
 @@||51sec.org^$generichide
 @@||51zxw.net/getvutf.asp?$domain=51zxw.net
+@@||51zxw.net/getvutf.asp?$domain=51zxw.net
+@@||51zxw.net/shipmingko.asp?$domain=51zxw.net
 @@||51zxw.net/shipmingko.asp?$domain=51zxw.net
 @@||520call.me/jspopunder.
 @@||520call.me/jspopunder.
@@ -8171,6 +8175,7 @@
 @@||apc.com^
 @@||apc.ru/resource*.swf?link
 @@||apemania.com^
+@@||apex-connect.avalanchestudios.com^
 @@||apextactical.com^
 @@||aphim.co^$generichide
 @@||aphis.usda.gov^
@@ -8487,6 +8492,7 @@
 @@||api.okendo.io^
 @@||api.olx.$app=com.app.tokobagus.betterb
 @@||api.onedrive.com^
+@@||api.onedrive.com^$stealth
 @@||api.ookla.com^
 @@||api.ooyala.com^
 @@||api.opencritic.com^
@@ -16491,7 +16497,6 @@
 @@||cpro.baidustatic.com/cpro/ui/cm.js$domain=ali213.net|tangdoucdn.com
 @@||cpro.baidustatic.com/cpro/ui/cm.js$domain=ali213.net|tangdoucdn.com
 @@||cpro.baidustatic.com/cpro/ui/f.js$script,domain=www.400gb.com|www.pipipan.com|colayun.com|coladrive.com
-@@||cpro.baidustatic.com/js/prot.js$domain=rjno1.com
 @@||cprodmasx.att.com^
 @@||cprodx.att.com^
 @@||cprt.external.xerox.com^
@@ -18286,7 +18291,6 @@
 @@||dieseltrucksmn.com^
 @@||dietnavi.com/ad_images/$image,domain=dietnavi.com
 @@||dietnavi.com^*/img/ad/$image,domain=dietnavi.com
-@@||dig.bdurl.net^
 @@||digbysblog.net^
 @@||digg.com^
 @@||digi-star.com^
@@ -19630,13 +19634,13 @@
 @@||dynadot.com^
 @@||dynaimage.cdn.cnn.com^
 @@||dynaimage.cdn.turner.com^
+@@||dynamic-images-picturehappy.*.amazonaws.com^$stealth,domain=picturehappy.lv
 @@||dynamiccatholic.com^
 @@||dynamicmedia.zuza.com^
 @@||dynamicpapers.com^$generichide
 @@||dynamics.com^
 @@||dynamicua.cdn.mozilla.net^
 @@||dynamicyield.com/st?$script,domain=computeruniverse.net|croma.com|fendi.com|thewarehouse.co.nz|zalora.com.my|zalora.com.ph|zalora.sg
-@@||dynamicyield.com/st?$script,domain=computeruniverse.net|croma.com|fendi.com|zalora.com.my|zalora.com.ph|zalora.sg
 @@||dyncdn.me/mimages/$stealth
 @@||dyncdn.me^
 @@||dyncdn2.com^
@@ -27260,6 +27264,7 @@
 @@||hm.baidu.com/h.js?$domain=weaku.com
 @@||hm.baidu.com/h.js?$domain=weaku.com
 @@||hm.baidu.com/hm.gif$image,domain=clgod.com
+@@||hm.baidu.com/hm.js?$script,domain=rjno1.com
 @@||hm.com^
 @@||hm732.com/adverts/ad-400.js
 @@||hmnimages.hemmings.com^
@@ -27306,6 +27311,7 @@
 @@||home-cdn.reolink.us^
 @@||home-designing.com^
 @@||home-security.s3.amazonaws.com^
+@@||home.163.com/special/$script,redirect=noopjs,domain=rjno1.com
 @@||home.cricut.com^
 @@||home.dell.com^
 @@||home.edweb.net^
@@ -32388,6 +32394,7 @@
 @@||lda.lowes.com^
 @@||lddy.no^
 @@||ldoceonline.com^
+@@||ldoceonline.com^$generichide
 @@||ldplayer.net^
 @@||ldproducts.com^
 @@||ldsliving.com^
@@ -32631,7 +32638,7 @@
 @@||libro.eb20.net^
 @@||libros4.com^$generichide
 @@||librospdfgratis.net^$generichide
-@@||libs.baidu.com^$domain=0794.org|0biquge.com|12zw.la|138txt.net|18xs.org|1biqu.com|1kanshu.org|230book.net|23hh.com|23sk.com|23wxx.com|258zw.com|27xsw.com|30sy.cc|33yq.org|3yt.com|477zw.co|52biquge.com|5ccc.tw|63xs.org|73zw.cc|777zw.net|80xs.la|81book.com|81zw.me|877zw.com|99mk.com|aidusk.com|aixswx.com|aoyuge.com|baoshuu.com|biduoxs.com|bifeige.com|bimixsw.com|biqiugege8.com|biquav.com|biqudu.tv|biquge775.com|biquge98.net|biqugecd.com|biqugee.com|biqugesc.com|biquka.com|biqulu.net|biqusan.com|biquwx.la|biquym.com|bixia.org|bodekang.net|boluoxs.com|botaodz.com|bqktxt.com|bshuku.com|bswtan.com|bxwx.org|bxwx.tw|bxwx8.la|bxwxorg.com|damengzhu1.com|datangjianshen.com|day66.com|ddxsku.com|dushuge.org|faquge.com|gdbzkz.com|guaili.org|guanshu.cc|hatxt.com|hbfie.org|heikexs.com|heiyanwang.com|hongyeshuzhai.com|hongyeshuzhal.com|huixsw.com|hybiquge.com|ibiquta.com|imiaobige.com|ishisetianxia.com|ishubao.org|ixs.la|jianlaixiaoshuo.com|jx.la|kankezw.com|kkbiqu2.com|liewen.la|lindiankanshu.cc|liuxs.la|loubiqu.com|lwsktxt.com|lwtxt.net|mhtwx.la|mubige.com|paoshu8.com|paoshuzw.com|piaotianxs.com|pksge.com|qbiqu.com|qbxs8.net|qianqianxsw.net|qianrenge.cc|qiuyewx.com|qr1234.com|quge6.com|quledu.net|qushuba.com|rmxsba.com|shenshuxs.com|shu008.com|shuhaiwu.com|shumil.co|shuquge.com|silukew.com|siluwx.org|sizhicn.com|sobiquge.com|soxscc.org|tangsanshu.com|ttzw.tv|tutengzw.com|txshuku.la|txtshuku.org|tycqge.com|u33.me|vipsk.org|wbxsw.com|wenxuem.com|wurexs.com|x23us.me|x81zw.co|xbiquge.la|xbiqugecc.com|xbiquke.com|xbqge.net|xdingdiann.com|xiaoshuwu5.com|xiaxs.la|xieyixs.com|xinshuhaige.net|xinxs.la|xs5200.com|xs98.com|xsbiqugew.com|xsqishu.com|xszww.com|xuanshu.com|xuehongxs.org|xyusk.com|yanqing888.org|yikanxiaoshuoa.com|yruan.com|yssm.info|yunxs.com|zaodk.com|zbzw.la|zhnxcw.com|zhuaji.org|zmccx.com|zzs5.com
+@@||libs.baidu.com^$domain=0794.org|0biquge.com|12zw.la|138txt.net|18xs.org|1biqu.com|1kanshu.org|230book.net|23hh.com|23sk.com|23wxx.com|258zw.com|27xsw.com|30sy.cc|33yq.org|3yt.com|477zw.co|52biquge.com|5ccc.tw|63xs.org|73zw.cc|777zw.net|80xs.la|81book.com|81zw.me|877zw.com|99mk.com|aidusk.com|aixswx.com|aoyuge.com|baoshuu.com|biduoxs.com|bifeige.com|bimixsw.com|biqiugege8.com|biquav.com|biqudu.tv|biquge775.com|biquge98.net|biqugecd.com|biqugee.com|biqugesc.com|biquka.com|biqulu.net|biqusan.com|biquwx.la|biquym.com|bixia.org|bodekang.net|boluoxs.com|botaodz.com|bqktxt.com|bshuku.com|bswtan.com|bxwx.org|bxwx.tw|bxwx8.la|bxwxorg.com|damengzhu1.com|datangjianshen.com|day66.com|ddxsku.com|dushuge.org|faquge.com|gdbzkz.com|guaili.org|guanshu.cc|hatxt.com|hbfie.org|heikexs.com|heiyanwang.com|hongyeshuzhai.com|hongyeshuzhal.com|huixsw.com|hybquge.com|ibiquta.com|imiaobige.com|ishisetianxia.com|ishubao.org|ixs.la|jianlaixiaoshuo.com|jx.la|kankezw.com|kkbiqu2.com|liewen.la|lindiankanshu.cc|liuxs.la|loubiqu.com|lwsktxt.com|lwtxt.net|mhtwx.la|mubige.com|paoshu8.com|paoshuzw.com|piaotianxs.com|pksge.com|qbiqu.com|qbxs8.net|qianqianxsw.net|qianrenge.cc|qiuyewx.com|qr1234.com|quge6.com|quledu.net|qushuba.com|rmxsba.com|shenshuxs.com|shu008.com|shuhaiwu.com|shumil.co|shuquge.com|silukew.com|siluwx.org|sizhicn.com|sobiquge.com|soxscc.org|tangsanshu.com|ttzw.tv|tutengzw.com|txshuku.la|txtshuku.org|tycqge.com|u33.me|vipsk.org|wbxsw.com|wenxuem.com|wurexs.com|x23us.me|x81zw.co|xbiquge.la|xbiqugecc.com|xbiquke.com|xbqge.net|xdingdiann.com|xiaoshuwu5.com|xiaxs.la|xieyixs.com|xinshuhaige.net|xinxs.la|xs5200.com|xs98.com|xsbiqugew.com|xsqishu.com|xszww.com|xuanshu.com|xuehongxs.org|xyusk.com|yanqing888.org|yikanxiaoshuoa.com|yruan.com|yssm.info|yunxs.com|zaodk.com|zbzw.la|zhnxcw.com|zhuaji.org|zmccx.com|zzs5.com
 @@||libs.baidu.com^$domain=0794.org|0biquge.com|12zw.la|138txt.net|18xs.org|1biqu.com|1kanshu.org|230book.net|23hh.com|23sk.com|23wxx.com|258zw.com|27xsw.com|30sy.cc|33yq.org|3yt.com|477zw.co|52biquge.com|5ccc.tw|63xs.org|73zw.cc|777zw.net|80xs.la|81book.com|81zw.me|877zw.com|99mk.com|aidusk.com|aixswx.com|aoyuge.com|baoshuu.com|biduoxs.com|bifeige.com|bimixsw.com|biqiugege8.com|biquav.com|biqudu.tv|biquge775.com|biquge98.net|biqugecd.com|biqugee.com|biqugesc.com|biquka.com|biqulu.net|biqusan.com|biquwx.la|biquym.com|bixia.org|bodekang.net|boluoxs.com|botaodz.com|bqktxt.com|bshuku.com|bswtan.com|bxwx.org|bxwx.tw|bxwx8.la|bxwxorg.com|damengzhu1.com|datangjianshen.com|day66.com|ddxsku.com|dushuge.org|faquge.com|gdbzkz.com|guaili.org|guanshu.cc|hatxt.com|hbfie.org|heikexs.com|heiyanwang.com|hongyeshuzhai.com|hongyeshuzhal.com|huixsw.com|hybquge.com|ibiquta.com|imiaobige.com|ishisetianxia.com|ishubao.org|ixs.la|jianlaixiaoshuo.com|jx.la|kankezw.com|kkbiqu2.com|liewen.la|lindiankanshu.cc|liuxs.la|loubiqu.com|lwsktxt.com|lwtxt.net|mhtwx.la|mubige.com|paoshu8.com|paoshuzw.com|piaotianxs.com|pksge.com|qbiqu.com|qbxs8.net|qianqianxsw.net|qianrenge.cc|qiuyewx.com|qr1234.com|quge6.com|quledu.net|qushuba.com|rmxsba.com|shenshuxs.com|shu008.com|shuhaiwu.com|shumil.co|shuquge.com|silukew.com|siluwx.org|sizhicn.com|sobiquge.com|soxscc.org|tangsanshu.com|ttzw.tv|tutengzw.com|txshuku.la|txtshuku.org|tycqge.com|u33.me|vipsk.org|wbxsw.com|wenxuem.com|wurexs.com|x23us.me|x81zw.co|xbiquge.la|xbiqugecc.com|xbiquke.com|xbqge.net|xdingdiann.com|xiaoshuwu5.com|xiaxs.la|xieyixs.com|xinshuhaige.net|xinxs.la|xs5200.com|xs98.com|xsbiqugew.com|xsqishu.com|xszww.com|xuanshu.com|xuehongxs.org|xyusk.com|yanqing888.org|yikanxiaoshuoa.com|yruan.com|yssm.info|yunxs.com|zaodk.com|zbzw.la|zhnxcw.com|zhuaji.org|zmccx.com|zzs5.com
 @@||libs.baidu.com^$domain=m.supfree.net
 @@||libs.baidu.com^$domain=m.supfree.net
@@ -33125,13 +33132,11 @@
 @@||lockharttactical.com^
 @@||lodz.tvp.pl^
 @@||log-upload-os.mihoyo.com^
-@@||log.gds.mmstat.com^
 @@||log.mmstat.com^
 @@||log.mmstat.com^$script,domain=youku.com
 @@||log.mmstat.com^|
 @@||log.mmstat.com^|
 @@||log.tbs.qq.com^
-@@||log.tpns.tencent.com^
 @@||log000.goo.ne.jp/js/VLTraceDMD.js$domain=news.goo.ne.jp
 @@||log000.goo.ne.jp/js/VLTraceDMD.js$domain=news.goo.ne.jp
 @@||log4j-tester.trendmicro.com^
@@ -33251,7 +33256,6 @@
 @@||logos.statbroadcast.com^
 @@||logrosxbox.com/ad/banner/*.ad.json$~third-party
 @@||logrosxbox.com^$generichide
-@@||logs.game.qq.com^
 @@||logs1242.xiti.com/go.url
 @@||logs1242.xiti.com/go.url
 @@||lokalo24.de^$generichide
@@ -33308,6 +33312,7 @@
 @@||loopia.se^
 @@||loosbrockelectric.com^
 @@||lootlinks.*/js/prebid-ads.js
+@@||lootup.me/assets/js/ads-prebid.js
 @@||lordchannel.com^$generichide
 @@||lordsmobile.igg.com^
 @@||lordsofgaming.net^
@@ -40929,6 +40934,7 @@
 @@||player.cnevids.com^
 @@||player.daznfeeds.com/epbootstrap^$stealth
 @@||player.daznfeeds.com/epvod^$stealth
+@@||player.daznfeeds.com^$stealth,domain=transfermarkt.*
 @@||player.enetres.net/js/videojs-plugins/videojs-ads-contrib/videojs.ads.js
 @@||player.fc-zenit.ru/msi/geoip?$xmlhttprequest
 @@||player.field59.com.cdn.cloudflare.net^
@@ -42211,7 +42217,6 @@
 @@||q.qlogo.cn^
 @@||q.stripe.com^
 @@||q13fox.com^
-@@||q2.be^$generichide
 @@||q2009patch.quicken.com^
 @@||q2012patch.quicken.com^
 @@||q2013patch.quicken.com^
@@ -44269,6 +44274,7 @@
 @@||samhsa.gov^
 @@||samm.com^
 @@||sammobile.com/wp-content/themes/sammobile-6/assets/js/newrelic.js$~third-party
+@@||sammyboy.com/threads/advertisement$xmlhttprequest
 @@||samnaprawiam.com^$generichide
 @@||sample-videos.com^
 @@||samplefan.com/img/ad/$image
@@ -44762,6 +44768,7 @@
 @@||sdk.privacy-center.org^$domain=marianne.net
 @@||sdk.privacy-center.org^$domain=programme-television.org
 @@||sdk.privacy-center.org^$domain=purepeople.com
+@@||sdk.privacy-center.org^$domain=rtl.be
 @@||sdk.privacy-center.org^$domain=seguro.elespanol.com
 @@||sdk.privacy-center.org^$domain=zive.cz
 @@||sdk.privacy-center.org^$script,domain=francetvinfo.fr
@@ -46095,6 +46102,7 @@
 @@||simba.taobao.com/?name=mcad$script
 @@||simba.taobao.com/?name=tcmad&$domain=www.taobao.com
 @@||simba.taobao.com/?name=tcmad&$domain=www.taobao.com
+@@||simg.doubanio.com^$stealth,domain=douban.com
 @@||simg.ionos.com^
 @@||simg.nicepng.com^
 @@||simg.sinajs.cn^
@@ -52638,6 +52646,7 @@
 @@||upstream.to/js/dnsads.js
 @@||uptobox.com/jquery-*.min.js$script
 @@||uptobox.com^
+@@||uptostream.com/assets/$script,stylesheet
 @@||uptostream.com^$csp=worker-src 'none'
 @@||uptravel.com^
 @@||upvast.com/pop.js
@@ -53027,7 +53036,6 @@
 @@||v.fwmrm.net/ad/g/1$domain=player.medialaancdn.be|vtm.be
 @@||v.fwmrm.net/ad/g/1$domain=player.theplatform.com
 @@||v.fwmrm.net/ad/g/1$domain=prod-player.tf1.fr
-@@||v.fwmrm.net/ad/g/1$domain=q2.be
 @@||v.fwmrm.net/ad/g/1$domain=stream.nbcsports.com
 @@||v.fwmrm.net/ad/g/1$domain=tv3play.tv3.ee
 @@||v.fwmrm.net/ad/g/1$domain=tv3sport.dk,important
@@ -54528,6 +54536,7 @@
 @@||web4.secureinternetbank.com^
 @@||webadvert.ru^$~third-party
 @@||webaksiyon.com/cdn/plugins/advert/advert.js
+@@||webapi.ctfile.com/getfile.php$stealth,domain=ct.999wan.wang
 @@||webapigateway.tracfone.com^
 @@||webapp.gameloop.com^
 @@||webapp.simplisafe.com^*/angulartics-ga.min.js$script,~third-party
