@@ -32,10 +32,6 @@ echo "! Total count: $num" >> tpdate.txt
 cat title.dd tpdate.txt tmp.txt > final.txt
 
 mv final.txt ../../dns.txt
-rm *.cc
-mv block.txt dns-block.cc
-mv allow.txt dns-allow.cc
-mv pu.txt dns-x.dd
 rm *.txt
 cd ../../
 exit
