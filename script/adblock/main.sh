@@ -1,5 +1,5 @@
 #!/bin/bash
-cd src
+cd script/adblock/src
 
 # Start Download
 curl -o i1.txt https://raw.githubusercontent.com/o0HalfLife0o/list/master/ad-pc.txt
