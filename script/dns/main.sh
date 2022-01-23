@@ -16,7 +16,7 @@ curl -o i10.txt https://raw.githubusercontent.com/Cats-Team/AdRules/main/adblock
 cat i*.txt > mergd.txt
 cat mergd.txt | grep '^|' | grep -v './' | grep -v '.\$' > block.txt
 cat mergd.txt | grep '^@' | grep -v './' | grep -v '.\$' > allow.txt
-cat mergd.txt | grep '^/' | grep -v './' | grep -v '.+'| grep -v '.-' | grep -v '.&' | grep -v '._' | grep -v '.?' | grep -v '.x'| grep -v '.\=' | grep -v '.[A-Z]'|grep -v '.\$' | grep -v '.js'| grep -v '.png' | grep -v '.^' | grep -v '.\*'| grep -v '.\|' | grep -v '.~' > pu.txt
+cat mergd.txt | grep '^/' | grep -v './' | grep -v '.+'| grep -v '.-' | grep -v '.&' | grep -v '._' | grep -v '.?' | grep -v '.x'| grep -v '.\=' | grep -v '.[A-Z]'|grep -v '.\$' | grep -v '.js'| grep -v '.png' | grep -v '.^' | grep -v '.\*'| grep -v '.\|' > pu.txt
 #cat mergd.txt | grep '^[0-9]' > hosts.txt
 cat block.txt allow.txt pu.txt > new.txt
 cat new.txt | grep -v '.#' | grep -v '.?' | grep -v '.=' | grep -v '.]'> tmpp.txt
