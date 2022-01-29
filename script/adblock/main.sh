@@ -22,8 +22,11 @@ curl -o i17.txt https://raw.githubusercontent.com/DandelionSprout/adfilt/master/
 # Start Merge and Duplicate Removal
 cat i*.txt user-rules.dd > mergd.txt
 cat mergd.txt | grep -v '^!' | grep -v '^！' | grep -v '^# ' | grep -v '^# ' | grep -v '^\[' | grep -v '^\【' | grep -v 'm:0' > tmpp.txt
-sort -n tmpp.txt | uniq > tmp.txt
+sort -n tmpp.txt | uniq > tmmp.txt
 
+# Remove Error Rules
+cat tmmp.txt err-rules.dd > ttmp.txt 
+sort -n ttmp.txt | uniq -n > tmp.txt
 
 # Start Count Rules
 num=`cat tmp.txt | wc -l`
