@@ -26,7 +26,7 @@ sort -n tmpp.txt | uniq > tmmp.txt
 
 # Remove Error Rules
 cat tmmp.txt err-rules.dd > ttmp.txt 
-sort -n ttmp.txt | uniq -n > tmp.txt
+sort -n ttmp.txt | uniq -u > tmp.txt
 
 # Start Count Rules
 num=`cat tmp.txt | wc -l`
