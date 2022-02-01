@@ -4,8 +4,8 @@
 ! Powerd by CatsTeam
 ! Expires: 8 Hours
 ! Description: 该规则合并自My AdFilters（for PC）、EdentwCustom、adgk、ClearUrl等，并补充了一些规则
-! Version: 2022-02-01 08:43:23（北京时间） 
-! Total count: 126321
+! Version: 2022-02-01 16:14:02（北京时间） 
+! Total count: 126336
 -1688-wp-media/ads/
 -988x60.
 -980x60-
@@ -15238,6 +15238,7 @@
 ##.aolSponsoredLinks
 ##.aopsadvert
 ##.ap_str_ad
+##.apexAd
 ##.apiAdMarkerAbove
 ##.apiAds
 ##.apiButtonAd
@@ -31434,7 +31435,7 @@ $~xmlhttprequest,~media,removeparam=source,denyallow=googlevideo.com,domain=goog
 /adtaily_
 /adtaobao.
 /adtctr.
-/adtech.$~script,domain=~adtech.co.uk|~adtech.md
+/adtech.$~script,domain=~adtech.co.uk|~adtech.io|~adtech.md
 /adtech/*
 /adtech;
 /adtechHeader.
@@ -32008,8 +32009,10 @@ $~xmlhttprequest,~media,removeparam=source,denyallow=googlevideo.com,domain=goog
 /amdhfp/a.do?param$image
 /amdhfp/t.do?id$image
 /ame-dfp/*
+/amp-access/cta/*
 /amp-access/cta?
 /amp-access/ping?
+/amp-access/set/*
 /amp-access/set?
 /amp-ad-
 /amp-analytics-
@@ -41268,7 +41271,7 @@ $~xmlhttprequest,~media,removeparam=source,denyallow=googlevideo.com,domain=goog
 @@.com/ad.aspx|$domain=xdingdiann.com
 @@.com/adv/$domain=my.ctrip.com
 @@.com/js/ad_/ad*.js$domain=cocomanga.com|cocomanhua.com
-@@.com/js/ad_/pic.png$domain=cocomanga.com|cocomanhua.com
+@@.com/js/ad_/pic*.png$domain=cocomanga.com|cocomanhua.com
 @@.gif#$domain=b168.net|cnprint.org|huhupan.com|tgfcer.com|wgun.net
 @@.gif#$domain=cnprint.org|huhupan.com|tgfcer.com|wgun.net
 @@.google-analytics.com%2Fanalytics.js$domain=free.com.tw
@@ -44294,6 +44297,7 @@ $~xmlhttprequest,~media,removeparam=source,denyallow=googlevideo.com,domain=goog
 @@||shopeemobile.com/shopee/*/modules/ads/
 @@||shopeesz.com/shopee/*/modules/ads/
 @@||shopify.com/*assets/pixel.gif$image,domain=metrovac.com
+@@||shopify.com/shopifycloud/boomerang/shopify-boomerang-$domain=rydewear.com
 @@||shopping.naver.net/ad/$image,script,stylesheet,domain=naver.com
 @@||show.g.mediav.com/s?type=$domain=v.360kan.com
 @@||show.g.mediav.com/s?type=$script,domain=miercn.com
@@ -47836,6 +47840,10 @@ boxnews.com.ua##[style="padding-bottom: 20px;"]
 boxthislap.org##img[width="300px"]
 boxthislap.org##img[width="728px"][height="90px"]
 boxthislap.org,ticgn.com,wtf1.co.uk##.td-footer-wrapper
+boyboy.cc###adDisabledBtn
+boyboy.cc###bl_mobile_float
+boyboy.cc###cat_intro_first_ad
+boyboy.cc###cat_intro_second_ad
 boycall.com##.source_info
 boyfriendtv.com##.video-extra-wrapper
 boyoushe.com##a[href^="http"]:not([href*=".boyoushe"]) > .j-lazy
@@ -48780,6 +48788,7 @@ cocoimage.com##.inner_right
 cocomanga.com#$#abort-on-property-read __cad.cpm_popunder; abort-on-property-read __ad
 cocomanga.com,cocomanhua.com##iframe[style*="important"]
 cocomanga.com,cocomanhua.com#@#.gg430
+cocomanga.com,cocomanhua.com#@#.gg_300
 code1155
 codeceo.com##div[style="width:970px;margin:0 auto"]
 codeceo.com,fuli8.net##.widget_text:first-child
@@ -65734,6 +65743,7 @@ zzpzero.com
 ||66rd.cn/pic/*.swf
 ||66s.cc/11.js
 ||66wen.com^
+||66wwvv.com/js/
 ||66wz.com/adv2/
 ||66wz.com/data/attachment/portal/
 ||66wz.com/eap/
@@ -66072,6 +66082,7 @@ zzpzero.com
 ||8041691.comms.hipages.com.au^
 ||8041691.engage.hipages.com.au^
 ||806360b129d126.com^
+||8070kk.com/statics/js/guo
 ||8080i.com^$third-party
 ||8090app.com/js/right.js
 ||80juqing.com^
@@ -66152,6 +66163,7 @@ zzpzero.com
 ||8794.cn/js/mx
 ||87gw0fl0rc11.com^
 ||87mao.com/52
+||87uq.com^
 ||88-baidu.com^
 ||88-sms.com^
 ||880fg.com/css/*.js
@@ -88633,6 +88645,7 @@ zzpzero.com
 ||hotlog.ru^$third-party
 ||hotmovies.com/custom_videos.php?
 ||hotmovs.com/suhum/
+||hotnaturey.xyz^
 ||hotpads.com/node/api/comscore
 ||hotpads.com/xOR1K5b6/init.js
 ||hotrank.com.tw^$third-party
@@ -100706,6 +100719,7 @@ zzpzero.com
 ||obertsiamw.fun^
 ||obeus.com^
 ||obeysatman.com^
+||obihmnb.cn^
 ||obj9.cn^
 ||objects.tremormedia.com^$~object,third-party
 ||obkcnezxxuw.com^
@@ -107077,6 +107091,7 @@ zzpzero.com
 ||rule34hentai.net^$subdocument,~third-party
 ||rulejanuary.com^
 ||rulinecrea.xyz^
+||rulkerton.site^
 ||rum.azion.com^
 ||rum.azioncdn.net^
 ||rum.ingress.layer0.co^
