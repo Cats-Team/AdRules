@@ -4,7 +4,7 @@
 ! Powerd by CatsTeam
 ! Expires: 8 Hours
 ! 该规则合并自AdGuardDNS过滤器，adgk等
-! Version: 2022-02-02 11:28:24（北京时间） 
+! Version: 2022-02-02 14:01:01（北京时间） 
 ! Total count: 57369
 @@||dash.cloudflare.com^$domain=dash.cloudflare.com,important
 @@||inews.gtimg.com^
@@ -67,7 +67,8 @@
 ||liveweb*.msstatic.com^
 @@||api2.e.kuaishou.com^$important
 @@||yoda.kwd.inkuai.com^
-@@||yximgs.com^
+!@@||yximgs.com^
+@@||static.yximgs.com^
 @@||push.kwd.inkuai.com^$important
 @@-ds.metric.gstatic.com^
 @@|ads.adsterra.com^|
