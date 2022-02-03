@@ -4,8 +4,8 @@
 ! Powerd by CatsTeam
 ! Expires: 8 Hours
 ! Description: 该规则合并自My AdFilters（for PC）、EdentwCustom、adgk、ClearUrl等，并补充了一些规则
-! Version: 2022-02-04 01:59:51（北京时间） 
-! Total count: 126603
+! Version: 2022-02-04 02:14:12（北京时间） 
+! Total count: 126618
 -1688-wp-media/ads/
 -988x60.
 -980x60-
@@ -24238,7 +24238,7 @@
 ##a[href^="http://czotra-32.com/"]
 ##a[href^="http://d2.zedo.com/"]
 ##a[href^="http://databass.info/"]
-##a[href^="http://deloplen.com/afu.php?zoneid="]
+##a[href^="http://deloplen.com/"]
 ##a[href^="http://dftrck.com/"]
 ##a[href^="http://down1oads.com/"]
 ##a[href^="http://download-performance.com/"]
@@ -24667,6 +24667,7 @@
 ##a[href^="https://syndication.dynsrvtbg.com/splash.php?"]
 ##a[href^="https://syndication.exoclick.com/splash.php?"]
 ##a[href^="https://t.adating.link/"]
+##a[href^="https://t.aslnk.link/"]
 ##a[href^="https://t.grtyi.com/"]
 ##a[href^="https://t.hrtye.com/"]
 ##a[href^="https://t.hrtyj.com/"]
@@ -52581,12 +52582,8 @@ ideya-biznesa.ru##.admania_adblock_detector
 idiva.com###rhs_atf
 idiva.com#?#div:-abp-has(> h2:-abp-contains(More From Web))
 idnes.cz###foto-reklama
-idnes.cz#$#hide-if-matches-xpath '//div/a[string-length(@href) > 500]//img[string-length(@src) > 80]/ancestor::div[@class][2]'
-idnes.cz#$#hide-if-matches-xpath '//div[@id="main"]/*[string-length(@id) > 30][string-length(@class) > 90]'
 idnes.cz,expres.cz##a[href*="/supertag=InstreamVideo/"]
 idnes.cz,expres.cz##a[href*=";cdata="]
-idnes.cz,expres.cz#$#hide-if-matches-xpath './/*[string-length(@class) < 50]/following-sibling::div[@class]/div[string-length(@id) > 30]/ancestor::div[string-length(@class) > 43]|.//*[string-length(@class) < 50][@style="margin: auto;"]/div[2]/ancestor::*[1]'
-idnes.cz,expres.cz#$#hide-if-matches-xpath './/div[string-length(@class) >30]/span[not(@id)][not(*) and not(normalize-space())][not(preceding-sibling::*)]/ancestor::*[string-length(@id) > 10][string-length(@class) >30]'
 ieche.com##div[style^="width: 298px;height:250px;"]
 iedrc.org#@#.home-ad
 ieeod0.com
@@ -56821,8 +56818,8 @@ pcbeta.com#?#div[class]:-abp-properties(/height: (169|171)px;/)
 pcccp.cn##DIV[id^="xydl"]
 pccomponentes.com#@#.dfp-banner
 pcdiy.com.tw##[width="160"][height="600"],.box-ads
-pcdown.net##.bzxz
 pcdown.net##.sort_list > .clearfix:first-child
+pcdown.net,xz7.com##.bzxz
 pcgamebenchmark.com##.nova_wrapper
 pcgamebenchmark.com##.side
 pcgamer.com,tomsguide.com,tomshardware.com##div[class*="ad-unit"]
@@ -62458,7 +62455,6 @@ xz.ccoo.cn##.index_banner
 xz6d.com
 xz7.com###bz-ad-position1
 xz7.com###bz-ad-position2 + div
-xz7.com##.bzxz
 xz7.com##div[class^="AD_"]
 y.qq.com###js_mod_dialog
 y.qq.com##.bottom_bar
@@ -71610,6 +71606,8 @@ zzpzero.com
 ||aslaprason.com^
 ||aslaprason.com^$popup
 ||asleyty.com^
+||aslnk.link^
+||aslnk.link^$popup
 ||aslro.top^
 ||asmodeusfields.com^
 ||asmsagvjbxejm.xyz^
@@ -79879,6 +79877,7 @@ zzpzero.com
 ||dcmn.io^$third-party
 ||dcms.1688.com^
 ||dcop4khjxsmg.com^
+||dcpxroykfpnnpm.xyz^
 ||dcqsvxuetj.com^
 ||dcrzz.com^
 ||dcs.audi.com^
@@ -82033,6 +82032,7 @@ zzpzero.com
 ||eap.enorth.com.cn^
 ||earandmarketing.com^$popup
 ||eardepth-prisists.com^
+||earewi.com^
 ||earlapspur.com^
 ||earliestinspectprone.com^
 ||earlinggea.info^
@@ -83412,6 +83412,8 @@ zzpzero.com
 ||euxgfqkgpmyvo.com^
 ||euz.net^
 ||ev.tpocdm.com^
+||evadav.top^
+||evadav.top^$popup
 ||evaluateend.com^
 ||evanescentedge.com^
 ||evanetwork.com^$popup
@@ -87401,6 +87403,7 @@ zzpzero.com
 ||gygdmy.com^
 ||gyluheshy.com^
 ||gynax.com^
+||gyqevddwaha.com^
 ||gyrenmai.icu^
 ||gyro-n.com^$third-party
 ||gyrtg.com^
@@ -90147,6 +90150,7 @@ zzpzero.com
 ||impressionmonster.com^$third-party
 ||impressivepointcircular.com^
 ||improveapesbates.com^
+||improvedevictpanther.com^
 ||improvedigital.com^$third-party
 ||improving.wuzhuiso.com^
 ||imprvdosrv.com^$image,third-party
@@ -90179,6 +90183,7 @@ zzpzero.com
 ||inactionvocationpaternity.com^
 ||inanemuseum.com^
 ||inarchang.site^
+||inattentivehandymanpresentiment.com^
 ||inaudiblecanteen.com^
 ||inaudium.com^$third-party
 ||inboldoreer.com^
@@ -91117,6 +91122,7 @@ zzpzero.com
 ||iscreen.top^
 ||iscrv.com^
 ||isdbjvok.xyz^
+||isdlvtgikrpw.com^
 ||isdspeed.qq.com^
 ||iseajapicuym.com^
 ||isebis.takamiclinic.or.jp^
@@ -92286,6 +92292,7 @@ zzpzero.com
 ||jsfuz.com^
 ||jshkyh.29cm.co.kr^
 ||jsinfo.net^$third-party
+||jsiwjgnq.com^
 ||jsjs.jbzj.com^
 ||jsjxhd.com^$third-party
 ||jskang.cn^
@@ -93341,6 +93348,7 @@ zzpzero.com
 ||kppt.cc/zhifu.jpg
 ||kpshx.douguo.com^
 ||kpuqwdqsol.xyz^
+||kqeehoptcroxf.com^
 ||kqimuhkxnh.xyz^
 ||kqpcfthouivgvs.com^
 ||kqpkigli.com^
@@ -95081,6 +95089,7 @@ zzpzero.com
 ||logxp.ru^$third-party
 ||logystowtencon.info^
 ||logz.ru^$third-party
+||lojapanelmo.com^
 ||lokggprixs.xyz^
 ||lokinatoer5.com^
 ||loktrk.com^
@@ -98491,6 +98500,7 @@ zzpzero.com
 ||mobads.baidu.com^$third-party
 ||mobalert.net^
 ||mobalives.com^$third-party
+||mobalm.com^
 ||mobalyzer.net^$third-party
 ||mobatory.com^$domain=rapid8.com
 ||mobbahjug.com^
@@ -113916,6 +113926,7 @@ zzpzero.com
 ||sxjkc.cn^
 ||sxjxhg.com^
 ||sxljldh.top^
+||sxmcwlw.com^
 ||sxmdxy.com^
 ||sxmutan.com^
 ||sxmxpm.nectarsleep.com^
@@ -115057,6 +115068,7 @@ zzpzero.com
 ||thespecialsearch.com^$third-party
 ||thestat.net^$third-party
 ||thesun.ie/track?
+||thesvicefgg.com^
 ||theta.sogoucdn.com^
 ||thetarhaw.com^
 ||thetaweblink.com^
@@ -115509,6 +115521,7 @@ zzpzero.com
 ||tkkdoc.com^
 ||tkmdng.cn^
 ||tkonyrkc.com^
+||tkpahnsxlda.top^
 ||tkqjii.tokyu-resort.co.jp^
 ||tkqlhce.com/image-
 ||tkqlhce.com/placeholder-
@@ -123942,6 +123955,7 @@ zzpzero.com
 ||zealousfield.com^
 ||zeasis.com^
 ||zebestof.com^$third-party
+||zebruisiacu.com^
 ||zebuaridromps.com^
 ||zedo.com$third-party
 ||zedo.com/img/bh.gif?
@@ -124528,6 +124542,7 @@ zzpzero.com
 ||zqqifh.cn^
 ||zqsbnfh.top^
 ||zqscript.com^
+||zqslg.cn^
 ||zqsx.net/bbs/kehu/
 ||zqtizs.bonprix.ru^
 ||zqtk.net^
