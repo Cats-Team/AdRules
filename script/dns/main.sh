@@ -18,7 +18,7 @@ cat mergd.txt | grep '^|' | grep -v './' | grep -v '.\$' > block.txt
 cat mergd.txt | grep '^@' | grep -v './' | grep -v '.\$' > allow.txt
 cat mergd.txt | grep '^/' | grep -v './' | grep -v '.+'| grep -v '.-' | grep -v '.&' | grep -v '._' | grep -v '.?' | grep -v '.x'| grep -v '.\=' | grep -v '.[A-Z]'|grep -v '.\$' | grep -v '.js'| grep -v '.png' | grep -v '.^' | grep -v '.\*'| grep -v '.\|' >> pu.txt
 #cat mergd.txt | grep '^[0-9]' > hosts.txt
-cat block.txt allow.txt pu.txt > new.txt
+cat block.txt allow.txt pu.txt  brules.dd > new.txt
 cat new.txt | grep -v '.#' | grep -v '.?' | grep -v '.=' | grep -v '.]'> tmpp.txt
 sort -n tmpp.txt | uniq > tmp.txt
 
@@ -29,7 +29,7 @@ num=`cat tmp.txt | wc -l`
 # Start Add title and date
 echo "! Version: $(TZ=UTC-8 date +'%Y-%m-%d %H:%M:%S')（北京时间） " >> tpdate.txt
 echo "! Total count: $num" >> tpdate.txt
-cat title.dd tpdate.txt brules.dd tmp.txt > final.txt
+cat title.dd tpdate.txt tmp.txt > final.txt
 
 mv final.txt ../../dns.txt
 mv pu.txt fu.dd
