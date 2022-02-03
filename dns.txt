@@ -4,133 +4,10 @@
 ! Powerd by CatsTeam
 ! Expires: 8 Hours
 ! 该规则合并自AdGuardDNS过滤器，adgk等
-! Version: 2022-02-03 18:35:26（北京时间） 
-! Total count: 57490
-@@||dash.cloudflare.com^$domain=dash.cloudflare.com,important
-@@||inews.gtimg.com^
-@@||wallpaper.cdn.pandora.xiaomi.com^$important
-@@||package.wallpaper.cdn.pandora.xiaomi.com.lan^$important
-@@||w.pandora.xiaomi.com^$important
-@@||gw.m.163.com^
-@@||quark.sm.cn^
-@@||bkimg.cdn.bcebos.com^
-@@||imgstat.baidu.com^
-@@||mb.yidianzixun.com^$important
-@@||sug.browser.miui.com^$important
-@@||qun.qq.com^$important
-||access1.tpns.tencent.com^
-||astrategy.beacon.qq.com^
-||aeventlog.beacon.qq.com^
-||oth.eve.mdt.qq.com^
-||oth.eve.qq.com^
-||ug.snssdk.com^
-||v3-be-pack.pglstatp-toutiao.com^
-||sf3-be-pack.pglstatp-toutiao.com^
-||tobapplog.ctobsnssdk.com^
-||access.pangolin-sdk-toutiao-b.com^
-||ulogs.umengcloud.com^
-||midas.gtimg.cn^
-||game.weixin.qq.com^
-||wxsnsdythumb.wxs.qq.com^
-||oth.eve.mdt.qq.com^
-||wxsnsdythumb.wxs.qq.com^
-||wxsnsdy.wxs.qq.com^
-||api-access.pangolin-sdk-toutiao-b.com^
-||mssdk-bu.snssdk.com^
-||aaid.umeng.com^
-||img14.360buyimg.com^
-||i.snssdk.com^
-||is.snssdk.com^
-||pangolin.snssdk.com^
-||extlog.snssdk.com^
-||sf3-ttcdn-tos.pstatp.com^
-||bds.snssdk.com^
-||dig.bdurl.net
-||api-access.pangolin-sdk-toutiao.com^
-||sfl-fe-tos.pglstatp-toutiao.com^
-||sf1-be-pack.pglstatp-toutiao.com^
-||sf3-fe-tos.pglstatp-toutiao.com^
-||log-api.pangolin-sdk-toutiao.com^
-||s3-fe-scm.pglstatp-toutiao.com^
-||s3a.pstatp.com^
-||log-api.pangolin-sdk-toutiao-b.com^
-||sf6-be-pack.pglstatp-toutiao.com^
-||in-addr.arpa^
-@@||woozooo.com^$important
-||skdisplay.jd.com^
-||sv.mnyh.fun^
-||data.flurry.com^
-||ali-stats.jpush.cn^
-||stats.jpush.cn^
-||tsis.jpush.cn^
-||dataflow.biliapi.com^
-||liveweb*.msstatic.com^
-@@||e.kuaishou.com^
-@@||yoda.kwd.inkuai.com^
-@@||static.yximgs.com^
-! 跟踪拦截
-||data.alexa.com^
-||device-metrics-us.amazon.com^
-||device-metrics-us-2.amazon.com^
-||metrics.apple.com^
-||securemetrics.apple.com^
-||supportmetrics.apple.com^
-||metrics.icloud.com^
-||metrics.mzstatic.com^
-||dzc-metrics.mzstatic.com^
-||books-analytics-events.news.apple-dns.net^
-||books-analytics-events.apple.com^
-||stocks-analytics-events.apple.com^
-||stocks-analytics-events.news.apple-dns.net^
-||metrics.data.hicloud.com^
-||metrics1.data.hicloud.com^
-||metrics2.data.hicloud.com^
-||metrics3.data.hicloud.com^
-||metrics4.data.hicloud.com^
-||metrics5.data.hicloud.com^
-||logservice.hicloud.com^
-||logservice1.hicloud.com^
-||logs.roku.com^
-||nmetrics.samsung.com^
-||insights.samsung.com^
-||analytics.samsungknox.com^
-||bigdata.ssp.samsung.com^
-||msmetrics.ws.sonos.com^
-||msmetrics-test.ws.sonos.com^
-||vortex-win.data.microsoft.com^
-||vortex.data.microsoft.com^
-||vortex.data.microsoft.com.akadns.net^
-||vortex-sandbox.data.microsoft.com^
-||telemetry.microsoft.com^
-||telemetry.urs.microsoft.com^
-||choice.microsoft.com^
-||redir.metaservices.microsoft.com^
-||settings-sandbox.data.microsoft.com^
-||settings-win.data.microsoft.com^
-||telemetry.appex.bing.net^
-||watson.live.com^
-||watson.microsoft.com^
-||feedback.search.microsoft.com^
-||feedback.windows.com^
-||corp.sts.microsoft.com^
-||diagnostics.support.microsoft.com^
-||i1.services.social.microsoft.com^
-||cache.datamart.windows.com^
-||diagnostics.support.microsoft.com^
-||spynet2.microsoft.com^
-||spynetalt.microsoft.com^
-||onecollector.cloudapp.aria.akadns.net^
-||prod.nexusrules.live.com.akadns.net^
-||sa.api.intl.miui.com^
-||data.mistat.xiaomi.com^
-||data.mistat.intl.xiaomi.com^
-||data.mistat.india.xiaomi.com^
-||data.mistat.rus.xiaomi.com^
-||tracking.miui.com^
-||tracking.intl.miui.com^
-||tracking.india.miui.com^
-||tracking.rus.miui.com^
+! Version: 2022-02-03 18:36:20（北京时间） 
+! Total count: 57542
 
+! 跟踪拦截
 @@-ds.metric.gstatic.com^
 @@|ads.adsterra.com^|
 @@|adsterra.com^|
@@ -205,6 +82,7 @@
 @@||cutcaptcha.com^|
 @@||daikoku.ebis.ne.jp^|
 @@||download.jumpw.com^
+@@||e.kuaishou.com^
 @@||ecitic.com^
 @@||email*.123formbuilder.com^|
 @@||email.*.skyeng.ru^|
@@ -250,6 +128,7 @@
 @@||login.sendpulse.com^|
 @@||ltzn.9377.com^
 @@||ma135-r.analytics.edgekey.net^|
+@@||mb.yidianzixun.com^$important
 @@||mc.*.exacttarget.com^|
 @@||metrics1.data.hicloud.com^
 @@||mi.cn^
@@ -264,6 +143,7 @@
 @@||omniture.walmart.com^|
 @@||omsc.kpn.com^|
 @@||oneline.nextday.media^|
+@@||package.wallpaper.cdn.pandora.xiaomi.com.lan^$important
 @@||pagead.l.doubleclick.net^|
 @@||pan.quark.cn^
 @@||phs.tanx.com^
@@ -271,6 +151,7 @@
 @@||proto2ad.durasite.net^|
 @@||pt.afl.rakuten.co.jp^|
 @@||quark.sm.cn^
+@@||qun.qq.com^$important
 @@||r.sascdn.com^|
 @@||radiofrance.targetspot.com^|
 @@||redir.tradedoubler.com^|
@@ -279,7 +160,9 @@
 @@||sina.com.hk^*_ads.cgi
 @@||speedtest.net^
 @@||static.atm.youku.com^*.swf
+@@||static.yximgs.com^
 @@||str.hit.gemius.pl^|
+@@||sug.browser.miui.com^$important
 @@||support-beacon.nakanohito.jp^|
 @@||support-widget.nakanohito.jp^|
 @@||swjoy.com^
@@ -294,6 +177,9 @@
 @@||validate.perfdrive.com^|
 @@||vcentry3.valuecommerce.ne.jp^|
 @@||vd.l.qq.com^
+@@||w.pandora.xiaomi.com^$important
+@@||wallpaper.cdn.pandora.xiaomi.com^$important
+@@||woozooo.com^$important
 @@||wubisheng.net^*.js
 @@||wup-7b4df495.santander.cl^|
 @@||www.googleadservices.com^|
@@ -301,6 +187,7 @@
 @@||www.jdoqocy.com^|
 @@||wxsnsdy.wxs.qq.com^
 @@||xmxing.net^
+@@||yoda.kwd.inkuai.com^
 @@||youku.com^*^adshow
 @@||youku.com^*^showAd
 @@||yzzkb.com.cn^*ad.
@@ -6323,6 +6210,7 @@
 ||algovid.com^
 ||ali-bestshop.ru^
 ||ali-crm.ru^
+||ali-stats.jpush.cn^
 ||ali2d.xyz^
 ||aliadvert.ru^
 ||alibdm.xyz^
@@ -11214,6 +11102,7 @@
 ||cabnnr.com^
 ||cacafly.net^
 ||cache.am^
+||cache.datamart.windows.com^
 ||cache.fm^
 ||cache2.delvenetworks.com^
 ||cachead.com^
@@ -12178,6 +12067,7 @@
 ||chocohjuanfhdhf.com^
 ||choconart.com^
 ||chograud.com^
+||choice.microsoft.com^
 ||cholaga.ru^
 ||chong-wu.net^
 ||chongnikeji.com^
@@ -13748,6 +13638,7 @@
 ||cornerbut.com^
 ||cornplus.cn^
 ||coroplastsheet.cn^
+||corp.sts.microsoft.com^
 ||corporate-marketing.hrs.com^
 ||corporate.americanexpress.com^
 ||corporate.averydennison.com^
@@ -15416,6 +15307,7 @@
 ||data.email-signify.cjm.adobe.com^
 ||data.email-tsb.cjm.adobe.com^
 ||data.engelhorn.de^
+||data.flurry.com^
 ||data.glamour.ru^
 ||data.goertz.de^
 ||data.hicloud.com^
@@ -15987,6 +15879,8 @@
 ||developingstripes.com^
 ||develsdrawal.xyz^
 ||device-metrics-*.amazon.com^
+||device-metrics-us-2.amazon.com^
+||device-metrics-us.amazon.com^
 ||device9.com^
 ||devilspanmute.com^
 ||deviouscoupbrutally.com^
@@ -16104,6 +15998,7 @@
 ||di9qu.com.cn^
 ||diagnose.igstatic.com^
 ||diagnosedifferentlycompute.com^
+||diagnostics.support.microsoft.com^
 ||dialgold.com^
 ||dialogtech.com^
 ||dialogue.de.mazda.ch^
@@ -17319,6 +17214,7 @@
 ||dz5bomaog2c5t.cloudfront.net^
 ||dzais.com^
 ||dzbrr144kh0m6.cloudfront.net^
+||dzc-metrics.mzstatic.com^
 ||dzctkjj.cn^
 ||dzd9.cn^
 ||dzgg.com^
@@ -19636,7 +19532,9 @@
 ||feed-xml.com^
 ||feedads.feedblitz.com^
 ||feedback.cn.ronghub.com^
+||feedback.search.microsoft.com^
 ||feedback.vegasgoldenknights.com^
+||feedback.windows.com^
 ||feedcat.net^
 ||feedgist.com^
 ||feedify.net^
@@ -24203,6 +24101,7 @@
 ||i.wuhaolin.cn^
 ||i.zhuoyaju.com^
 ||i0s26ol9.com^
+||i1.services.social.microsoft.com^
 ||i2.myapkcdn.in^
 ||i218435.net^
 ||i22lo.com^
@@ -25268,6 +25167,7 @@
 ||insights.harvardbusiness.org^
 ||insights.plista.com^
 ||insights.radiometer.com^
+||insights.samsung.com^
 ||insights.sitesearch360.com^
 ||insights.sport1.de^
 ||insigit.com^
@@ -28833,6 +28733,7 @@
 ||livetrafficfeed.com^
 ||liveuniversenetwork.com^
 ||liveviewer.ez.no^
+||liveweb*.msstatic.com^
 ||livewebstats.dk^
 ||liveyield.com^
 ||livezombymil.com^
@@ -31486,6 +31387,7 @@
 ||metrics.dailytelegraph.com.au^
 ||metrics.dairyreporter.com^
 ||metrics.damart.fr^
+||metrics.data.hicloud.com^
 ||metrics.datafeedtoolbox.com^
 ||metrics.dcshoes.com^
 ||metrics.defenseone.com^
@@ -32085,8 +31987,13 @@
 ||metrics1.citi.com^
 ||metrics1.citibank.com^
 ||metrics1.citibankonline.com^
+||metrics1.data.hicloud.com^
+||metrics2.data.hicloud.com^
 ||metrics2.houselogic.com^
+||metrics3.data.hicloud.com^
 ||metrics34.com^
+||metrics4.data.hicloud.com^
+||metrics5.data.hicloud.com^
 ||metricsdirect.com^
 ||metricsinfo.edc.ca^
 ||metricsishare.rediff.com^
@@ -33085,6 +32992,7 @@
 ||msiqhvl.cn^
 ||msjxxz.com^
 ||mskjf.com^
+||msmetrics-test.ws.sonos.com^
 ||msmetrics.ws.sonos.com^
 ||msparktrk.com^
 ||msr.p-antiaging.com^
@@ -35406,6 +35314,7 @@
 ||one88.us^
 ||one88.vip^
 ||one88.vn^
+||onecollector.cloudapp.aria.akadns.net^
 ||onecomcomcomcom.com^
 ||oneday88.com^
 ||onedmp.com^
@@ -38144,6 +38053,7 @@
 ||prod.cm.publishers.advertising.a2z.com^
 ||prod.ew.srp.navigacloud.com^
 ||prod.html5-ads.vk-apps.com^
+||prod.nexusrules.live.com.akadns.net^
 ||prod.untd.com^
 ||proditor.sparda.de^
 ||prodmp.ru^
@@ -39975,6 +39885,7 @@
 ||redianad.com^
 ||redichat.com^
 ||redintelligence.net^
+||redir.metaservices.microsoft.com^
 ||redirecionador.fun^
 ||redirect-ads.com^
 ||redirect18systemsg.com^
@@ -42771,6 +42682,8 @@
 ||setoyourad.biz^
 ||setpadchat.com^
 ||setting.rayjump.com^
+||settings-sandbox.data.microsoft.com^
+||settings-win.data.microsoft.com^
 ||setupbarton.com^
 ||seurne.com^
 ||sev4ifmxa.com^
@@ -43426,6 +43339,7 @@
 ||sk8t.fr^
 ||skadnetwork.singular.net^
 ||skatestooped.com^
+||skdisplay.jd.com^
 ||skenqaamefeoncfegrytbuvksebpefer.com^
 ||sketchinferiorunits.com^
 ||skewlyundazed.com^
@@ -45532,6 +45446,8 @@
 ||spylees.com^
 ||spylog.com^
 ||spylog.ru^
+||spynet2.microsoft.com^
+||spynetalt.microsoft.com^
 ||spyoff.com^
 ||spysubstance.com^
 ||spytrack.tic.ru^
@@ -47268,6 +47184,7 @@
 ||sv-pr.ru^
 ||sv-static-lottery.headlines.pw^
 ||sv-static1-lottery.headlines.pw^
+||sv.mnyh.fun^
 ||sv.sheego.de^
 ||sv88.com^
 ||svacdnjutk.com^
@@ -48314,15 +48231,18 @@
 ||telemetry.allrecipes.com^
 ||telemetry.api.playstation.com^
 ||telemetry.api.swiftkey.com^
+||telemetry.appex.bing.net^
 ||telemetry.art19.com^
 ||telemetry.jivosite.com^
 ||telemetry.malwarebytes.com^
+||telemetry.microsoft.com^
 ||telemetry.reembed.com^
 ||telemetry.soundcloud.com^
 ||telemetry.swe.quicinc.com^
 ||telemetry.swiftkey.com^
 ||telemetry.tableausoftware.com^
 ||telemetry.tradingview.com^
+||telemetry.urs.microsoft.com^
 ||telemetry.voxeet.com^
 ||telemetryverification.net^
 ||telephoneinclination.com^
@@ -50225,6 +50145,7 @@
 ||tracking.hurlmedia.design^
 ||tracking.hyros.com^
 ||tracking.i2w.io^
+||tracking.india.miui.com^
 ||tracking.info.ivanti.com^
 ||tracking.info.servicenow.com^
 ||tracking.insperity.com^
@@ -50335,6 +50256,7 @@
 ||tracking.rotogrinders.com^
 ||tracking.rti-inc.com^
 ||tracking.rtl.de^
+||tracking.rus.miui.com^
 ||tracking.s24.com^
 ||tracking.sailpoint.com^
 ||tracking.scenepass.com^
@@ -52961,6 +52883,9 @@
 ||voronezh136.ru^
 ||vorrireer.com^
 ||vorseh.com^
+||vortex-sandbox.data.microsoft.com^
+||vortex-win.data.microsoft.com^
+||vortex.data.microsoft.com.akadns.net^
 ||vortex.data.microsoft.com^
 ||vortex.data.msn.com^
 ||vortex.hulu.com^
@@ -53444,6 +53369,7 @@
 ||watieb.com^
 ||watrz.com^
 ||wats.gogoinflight.com^
+||watson.live.com^
 ||watson.microsoft.com^
 ||waubasou.com^
 ||waudit.cz^
@@ -55061,6 +54987,7 @@
 ||wxs.qq.com^
 ||wxs666.cn^
 ||wxskqy.cn^
+||wxsnsdy.wxs.qq.com^
 ||wxsnsdythumb.wxs.qq.com^
 ||wxsohu.com^
 ||wxspfkln.com^
