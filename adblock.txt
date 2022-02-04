@@ -4,8 +4,8 @@
 ! Powerd by CatsTeam
 ! Expires: 8 Hours
 ! Description: 该规则合并自My AdFilters（for PC）、EdentwCustom、adgk、ClearUrl等，并补充了一些规则
-! Version: 2022-02-04 02:14:12（北京时间） 
-! Total count: 126618
+! Version: 2022-02-04 08:42:23（北京时间） 
+! Total count: 126643
 -1688-wp-media/ads/
 -988x60.
 -980x60-
@@ -10790,6 +10790,7 @@
 ##.ad-mid-article-container
 ##.ad-midleader
 ##.ad-mobile
+##.ad-mobile--sticky
 ##.ad-mobile-300x150
 ##.ad-mobile-300x250
 ##.ad-mobile-300x50
@@ -30472,7 +30473,7 @@ $~xmlhttprequest,~media,removeparam=source,denyallow=googlevideo.com,domain=1sol
 /adphoto.$domain=~adphoto.eu|~adphoto.fr|~adphoto.pl
 /adpic*
 /adpic.
-/adpic/*$~image
+/adpic/*
 /adpicture.
 /adpictures/*
 /adping.
@@ -30485,10 +30486,10 @@ $~xmlhttprequest,~media,removeparam=source,denyallow=googlevideo.com,domain=1sol
 /adplay.
 /adplayer-
 /adplayer.$domain=~adplayer.media|~adplayer.pro
-/adplayer/*$~image
+/adplayer/*
 /adplogger/*
 /adplugin.
-/adplugin/*
+/adplugin/*$~image
 /adplugin_
 /adpoint.$domain=~adpoint.ca|~adpoint.de|~adpoint.id|~adpoint.video
 /adpolestar*
@@ -30567,7 +30568,7 @@ $~xmlhttprequest,~media,removeparam=source,denyallow=googlevideo.com,domain=1sol
 /adrum.
 /adrum_
 /adrun.
-/adrunner.
+/adrunner.$domain=~adrunner.io
 /adruptive.
 /ads-
 /ads-04.
@@ -42425,6 +42426,7 @@ $~xmlhttprequest,~media,removeparam=source,denyallow=googlevideo.com,domain=1sol
 @@||cnzz.com/c.php?id=30070167$domain=m.tieyou.com
 @@||cnzz.com/q_stat.php$domain=qd.alibaba.com
 @@||cnzz.mmstat.com/*.gif$domain=400gb.com
+@@||codesandbox.io^$generichide
 @@||codicebusiness.shinystat.com/cgi-bin/getcod.cgi?$script,domain=grazia.it|panorama-auto.it|panorama.it
 @@||codicefl.shinystat.com/cgi-bin/getserver.cgi?$script,domain=3bmeteo.com|quotidiano.net|radioitalia.it
 @@||cognition-va.bytedance.com/api/knowledge/$xmlhttprequest,domain=ads.tiktok.com
@@ -42739,6 +42741,7 @@ $~xmlhttprequest,~media,removeparam=source,denyallow=googlevideo.com,domain=1sol
 @@||facebook.com/photo.php?$removeparam
 @@||facebook.com/photo/download/$removeparam
 @@||facebook.com/privacy/specific_audience_selector_dialog/$removeparam
+@@||facebook.com^$removeparam=__s
 @@||fang.com/stats/clickm2011.js
 @@||fangcloud.com^$generichide
 @@||fapoff.com/intermission/loadTargetUrl$xmlhttprequest
@@ -44198,6 +44201,7 @@ $~xmlhttprequest,~media,removeparam=source,denyallow=googlevideo.com,domain=1sol
 @@||rtl.hu^*/gemius_id.js?
 @@||rtoaster.jp^$script,domain=lexus.jp|melonbooks.co.jp
 @@||rtr-vesti.ru/pvc_cdn/js/stat.js$domain=player.vgtrk.com
+@@||rudaw.net/images/pixel.gif$~third-party
 @@||rule34hentai.net^$generichide
 @@||rules.atgsvcs.com/EERules/view/$domain=lenovo.com
 @@||rum.perfops.net/rum.min.js$script,domain=cdnperf.com
@@ -46817,6 +46821,7 @@ avaxhome.cc##.adblock-warning
 avbebe.com##div#primary,A[href^="http://yl6604.com"],TABLE,DIV#footer
 avcn18.com##div.header-bar
 avesha.cn
+avgle.com###aoverlay
 avgle.com###avyc
 avgle.com###nft
 avgle.com##a[href*="/redirect"]
@@ -57308,6 +57313,7 @@ portablesoft.org##.sidebar-widget:first-child
 pos.baidu.com
 pos.baidu.com##.container,#container
 position.dftoutiao.com
+post-gazette.com###benn-poll-iframe-container
 post.m.smzdm.com###J_ad_click
 post.m.smzdm.com###J_testin_header
 post.m.smzdm.com##a.J_ota.red-btn
@@ -59162,6 +59168,8 @@ statics.woozooo.com
 stc.gov.cn###mov
 steachs.com##.adsense,[id^="div-gpt-ad-"],.adsbygoogle
 steachs.com##.sidebar:first-child
+steamanalyst.com##.row.tpbcontainer
+steamanalyst.com##[href^="https://static.steamanalyst.com/steam/delivery/"]
 steamcn.com##.qingyyu_f,[class^="stcn_a_"],.stcn_a_hh,.stcn_a_f,.gou_li_guo_jia_mu,.gou_li_guo_jia_h,.gou_li_guo_jia_f,.gou_li_guo_jia_pr,[class^="qy821_ai_"],.qy821_ai_h,[class$="_ai_f"],[class$="_ai_h"],[class$="_ai_pr"]
 steamcn.com##div > a[href*=".taobao.com"]
 steamcn.com##div[class*="liz_"]
@@ -64001,6 +64009,7 @@ zzpzero.com
 ||123su.top^
 ||123vidz.com^$popup
 ||124.232.160.178^
+||124fe3e59c.com^
 ||126.com/get.do?*=themeHandler.
 ||126.net/caipiao/js2/dialog.js
 ||126.net/caipiao/js2/index/homePop.js
@@ -64619,6 +64628,7 @@ zzpzero.com
 ||268de.com/js/
 ||268mob.cn^
 ||268mob.com^
+||268stephe5en3king.com^
 ||2694f0eeb6.com^
 ||27.221.89.12/qpdxv/other/*.mp4*$app=com.qiyi.video
 ||272xb.com^
@@ -65043,6 +65053,7 @@ zzpzero.com
 ||3dwwwgame.com^
 ||3dwwwgame.com^$third-party
 ||3e787c93af8de.com^
+||3ec9b1217d.com^
 ||3enm.com^$third-party
 ||3f9f440ecad916.com^
 ||3file.info^$popup,third-party
@@ -71763,6 +71774,7 @@ zzpzero.com
 ||atraxio.com^$third-party
 ||atresadvertising.com^$third-party
 ||atrinsic.com^
+||atropiathames.com^
 ||atrx7.com^$popup
 ||ats.alot.com^
 ||atsfi.de^$third-party
@@ -72270,6 +72282,7 @@ zzpzero.com
 ||b1.qqjay.com^
 ||b1.tubexo.tv^$subdocument
 ||b1.xiao84.com^
+||b11stop.com^
 ||b13481647cf775c5.com^
 ||b168.net^*.*?$image
 ||b17.8794.cn^
@@ -74214,6 +74227,7 @@ zzpzero.com
 ||bndbddt.top^
 ||bnet.com^
 ||bnextmedia.com.tw/feed/fetch.js
+||bngpst.com^
 ||bngpt.com^
 ||bngpt.com^$popup
 ||bngwlt.com^
@@ -76161,6 +76175,7 @@ zzpzero.com
 ||chengzhonghuxin.com^
 ||chengzilte.top^
 ||chenjiayu.cn/gg.js
+||chenjie.site^
 ||chenmujiang.com.cn^
 ||chenqi.vip^
 ||chenqinghui.xyz^
@@ -78921,6 +78936,7 @@ zzpzero.com
 ||cycytea.cn^
 ||cycyw.com/mf/
 ||cycyw.com/qdj/
+||cyfyb2.site^
 ||cyglujeshu.com^
 ||cygnus.com^
 ||cyih0e43aty7.com^
@@ -82561,6 +82577,7 @@ zzpzero.com
 ||elefantsearch.com^$third-party
 ||elekted.com^$third-party
 ||elementalantecedent.com^
+||elementdeserts.com^
 ||elephant-ads.com^$popup
 ||elephantqueue.com^
 ||elepocial.pro^
@@ -86269,7 +86286,7 @@ zzpzero.com
 ||girli.top^
 ||girls.xyz^$popup
 ||girlsfuck-tube.com/js/aobj.js
-||girlsofdesire.org/red/
+||girlsofdesire.org/paper/
 ||girlsoncam.info^$popup
 ||girnedsline.cam^
 ||giroud.top^
@@ -88086,6 +88103,7 @@ zzpzero.com
 ||hesterinoc.info^
 ||hesxz.com^
 ||hetadinh.com^
+||hetahien.com^
 ||hetaint.com^
 ||hetaint.com^$popup
 ||hetapus.com^
@@ -89962,7 +89980,6 @@ zzpzero.com
 ||img.servint.net^$third-party
 ||img.sex169.info^*.gif
 ||img.simply.bwin.com^
-||img.toi.de/t.gif$image,domain=t-online.de
 ||img.uu1001.cn^
 ||img.uu1001.cn^$third-party,domain=~1688.com|~alimama.com|~taobao.com
 ||img.wanokm.com/$script
@@ -100206,6 +100223,8 @@ zzpzero.com
 ||ninjacat.io^$third-party
 ||ninjashare.to/js/pp
 ||ninkorant.online^
+||ninobkfvyxdot.com^
+||ninobkfvyxdot.top^
 ||nippona7n2theum.com^
 ||nipwaghue.com^
 ||nipwaghue.com^$popup
@@ -102191,6 +102210,7 @@ zzpzero.com
 ||pagead2.
 ||pagead2.googlesyndication.com^
 ||pagead2.googlesyndication.com^$domain=spiegel.de
+||pageantinsanitydistressed.com^
 ||pagechoice.com^
 ||pagechoice.net^
 ||pagechoice.net^$third-party
@@ -105497,6 +105517,7 @@ zzpzero.com
 ||qqjia.com/images/ad
 ||qqk19.com/data/content
 ||qqm98.com^
+||qqotmtadpamrwho.top^
 ||qqppz.com^
 ||qqq123987.site^
 ||qqq937.com$third-party
@@ -107347,6 +107368,7 @@ zzpzero.com
 ||runtujs.com^
 ||runwaff.com^
 ||rup5.destinia.ru^
+||ruppiamartha.casa^
 ||ruscams.com/promo/
 ||rusdosug.com/Fotos/Banners/
 ||rusenov.com^
@@ -117820,6 +117842,7 @@ zzpzero.com
 ||ufinkln.com^
 ||ufinkln.com^$popup
 ||ufolm.com$third-party
+||ufoomals.net^
 ||ufoukolt.com^
 ||ufpcdn.com^
 ||ufpcdn.com^$popup
@@ -119088,6 +119111,7 @@ zzpzero.com
 ||visit.webhosting.yahoo.com^
 ||visite.scambi.org^
 ||visitimportantly.com^
+||visitingtoelargely.com^
 ||visitor-analytics.io^$third-party
 ||visitor-analytics.net^$third-party
 ||visitor-stats.de^$third-party
@@ -122206,6 +122230,7 @@ zzpzero.com
 ||xkddvf.gigantti.fi^
 ||xkhouse.com/display/displaygg/
 ||xkhouse.com/xkhouse/ggvert/
+||xkkcfmytuci.xyz^
 ||xkkhgnszfd.com^
 ||xknhwv.mobile01.com^
 ||xknnubcqaa.com^
