@@ -4,8 +4,8 @@
 ! Powerd by CatsTeam
 ! Expires: 8 Hours
 ! Description: 该规则合并自My AdFilters（for PC）、EdentwCustom、adgk、ClearUrl等，并补充了一些规则
-! Version: 2022-02-05 16:11:47（北京时间） 
-! Total count: 126660
+! Version: 2022-02-06 00:12:52（北京时间） 
+! Total count: 126679
 -1688-wp-media/ads/
 -988x60.
 -980x60-
@@ -8505,6 +8505,7 @@
 ###sticky-custom-ads
 ###sticky-footer-ad
 ###sticky-footer-ads
+###sticky-left-ad
 ###sticky-rail-ad
 ###sticky-top-ad-spacer
 ###sticky-top-ad-wrap
@@ -15595,6 +15596,7 @@
 ##.banner[align='center']
 ##.banner_160x600
 ##.banner_234x90
+##.banner_240x400
 ##.banner_250x250
 ##.banner_300_250
 ##.banner_300x250
@@ -20809,6 +20811,7 @@
 ##.resourceImagetAd
 ##.respAds
 ##.responsive-ad
+##.responsive-ad-header-container
 ##.responsive-ad-outbrain
 ##.responsive-ad-wrapper
 ##.responsive-ads
@@ -24790,6 +24793,7 @@
 ##a[onmousedown^="this.href='https://paid.outbrain.com/network/redir?"][target="_blank"] + .ob_source
 ##a[src^="https://www.utherverse.com/net/"]
 ##a[style$="2147483647;"][ontouchstart]
+##a[style*=".ajzsa.xyz/"]
 ##a[style*=".e-years.net/"]
 ##a[style*=".memexoxo.com/"]
 ##a[style*=".misigl.com/"]
@@ -42187,6 +42191,7 @@ $~xmlhttprequest,~media,removeparam=source,denyallow=googlevideo.com,domain=1sol
 @@||bing.com/translator/api/Translate/TranslateArray?$third-party,xmlhttprequest
 @@||bingfeng.tw/data/attachment/common/ad/common_ad_icon.png
 @@||bingfeng.tw^$generichide
+@@||biqupai.com^$domain=shudai.cc
 @@||bit-vortex.com/js/antiadblock.js$script
 @@||bitauto.com/bglogpostlog.js
 @@||bitbucket.org^$generichide
@@ -43620,6 +43625,7 @@ $~xmlhttprequest,~media,removeparam=source,denyallow=googlevideo.com,domain=1sol
 @@||mxpnl.com/libs/mixpanel-*.min.js$domain=eloan.co.il
 @@||mxpnl.com^$domain=mixpanel.com
 @@||myaccount.chicagotribune.com/assets/scripts/tag-manager/googleTag.js$~third-party
+@@||myaccount.depositprotection.com/Scripts/lib/jsnlog/$script,~third-party
 @@||myaccount.google.com^$generichide
 @@||mycargo.rzd.ru/dst/scripts/common/analytics-helper.js$~third-party
 @@||mycleverpush.com/iframe?$domain=bsdex.de
@@ -44363,6 +44369,7 @@ $~xmlhttprequest,~media,removeparam=source,denyallow=googlevideo.com,domain=1sol
 @@||smartrevise.online/js/teacher.analytics.min.js$~third-party
 @@||sms-receive.net/advertisment.js$script
 @@||smtcaw.com^$generichide
+@@||snap.licdn.com/li.lms-analytics/insight.min.js$domain=msci.com
 @@||snesfun.com/js/ads.js$script
 @@||softwarebrother.com^$generichide
 @@||sogou.com/adpub/cfg/sendmsg.
@@ -51435,6 +51442,7 @@ goodcome.com.tw###jad-right
 goodcome.com.tw###jad-top
 goodcome.com.tw##.Phase2_BigAdbox
 goodcome.com.tw,sporttery.cn###mask
+goodfon.com##.wallpapers__banner240
 goodgearguide.com.au,pcworld.co.nz,pcworld.idg.com.au##.lo-toppromos
 goodgearguide.com.au,pcworld.idg.com.au###float_leaderboard_bottom
 goodreturns.in###taboola-mid-category-thumbnails
@@ -52130,8 +52138,6 @@ hispasexy.org#$#abort-current-inline-script _cpp
 histats.com
 histock.tw###tbadword
 histock.tw##.bottom-right
-history.com##.m-header-ad
-history.com##.m-in-content-ad-row
 hit180.com##.widget_ui_orbui:nth-child(-n+2)
 hitfm.ua,kissfm.ua,radiorelax.ua,radioroks.ua,rusradio.ua#$#abort-on-property-write prerole_length
 hitime5.com###gg250
@@ -55155,6 +55161,7 @@ mail.yahoo.com###slot_LREC
 mail.yahoo.com##[data-test-id^="pencil-ad"]
 mail.yahoo.com##[rel="noreferrer"][data-test-id][href^="https://beap.gemini.yahoo.com/mbclk?"]
 mail.yahoo.com#@#a[href^="https://ad.doubleclick.net/"]
+mailshub.in##[href^="https://www.amazon.in/"]
 main.m.taobao.com##button
 maiziedu.com##.msg
 majorgeeks.com##.alford > tbody > tr
@@ -57783,6 +57790,7 @@ racingtv.com,twitter.com,wral.com##.promotion
 radaronline.com##.gwzeAW
 radaronline.com##.hIlCTc
 radaronline.com##.hfdIrh
+radaronline.com##.jkqdnZ
 radikal.ru#$#abort-current-inline-script document.createElement String.fromCharCode; abort-on-property-read ads_script; abort-on-property-read atob; abort-on-property-read loaded_blocks_directadvert; abort-on-property-read utarget_script
 radio.yandex.by,radio.yandex.kz,radio.yandex.ru,radio.yandex.ua##.notify
 radioonline.fm###advertise_center
@@ -65265,6 +65273,7 @@ zzpzero.com
 ||51cto.com/home/web/js/new_login/iframe.js
 ||51cto.com/iframe/get-station-ads
 ||51cto.com/js/activity_pop.js
+||51dc.xyz^
 ||51dengshan.cn^
 ||51df7z.cn^
 ||51dianji.cn^
@@ -70416,6 +70425,7 @@ zzpzero.com
 ||amplifypixel.outbrain.com^
 ||amplitude.com^$third-party
 ||amplitudewassnap.com^
+||ampproject.org/preconnect.gif
 ||ampugi334f.com^
 ||ampush.io^$third-party
 ||ampxchange.com^
@@ -86672,6 +86682,7 @@ zzpzero.com
 ||goodcome.com.tw/block/ad/rndtopad.php
 ||goodcounter.org^$third-party
 ||gooderamour.com^
+||goodfon.com/stat/
 ||goodgamesmanship.com^
 ||goodgoodluck.cn^
 ||goodgupiao.com/skins/default/js/backTop.js
@@ -87984,6 +87995,7 @@ zzpzero.com
 ||heiye.cc/js/xuanfu.js
 ||hej.henriksommerfeld.se^
 ||helessenge.club^
+||hello-jm.com/foot.js
 ||hello.bpost.be^
 ||hello.bpost2.be^
 ||hello.myfonts.net/count/
@@ -92149,6 +92161,7 @@ zzpzero.com
 ||jqmt.qq.com^
 ||jqsex.com^
 ||jquery-cdn.download^$third-party
+||jquery.envi-met.com.cn^
 ||jqueryget.com^
 ||jqueryserve.org^
 ||jqueryserver.com^
@@ -94866,6 +94879,7 @@ zzpzero.com
 ||lnzq5.com/js/
 ||lnzqw.net/js/
 ||loa-traffic.com^$third-party
+||loader.zeroform.com^
 ||loadercdn.com^
 ||loading-delivery1.com^$third-party
 ||loading-resource.com^
@@ -105510,6 +105524,7 @@ zzpzero.com
 ||qqm98.com^
 ||qqotmtadpamrwho.top^
 ||qqppz.com^
+||qqq-www-987.site^
 ||qqq123987.site^
 ||qqq937.com$third-party
 ||qqqmmm.top^
@@ -106960,6 +106975,7 @@ zzpzero.com
 ||rmbn.net^
 ||rmcxyfqbm.com^
 ||rmdown.com^$replace=/var rmJson/var fuck/
+||rmdzsw.top^
 ||rmgserving.com^
 ||rmipoz.com/dp.js
 ||rmkflouh.com^
@@ -110030,6 +110046,7 @@ zzpzero.com
 ||smaclick.com^$third-party
 ||smadex.com^$third-party
 ||smagod.com^
+||smallapp.club^
 ||smallbeginner.com^$third-party
 ||smallcapnetwork.com/zfbp/viewtracker/
 ||smallentpation.pro^
@@ -124162,6 +124179,7 @@ zzpzero.com
 ||zhh8886.com^
 ||zhhoeyksp.com^
 ||zhiad.com^
+||zhiai.space^
 ||zhibo.me/js/fd.js
 ||zhibo.me/js/kh.js
 ||zhibo8.cc/js/adv-slide-toggle.js
@@ -125676,6 +125694,7 @@ zzpzero.com
 85lou.com###topwarning_7ree
 85novel.com,digitalocean.com,ikjzd.com#@#.ad-content
 85tube.com##.player + .sponsor
+86cg.me##.vodbt
 86cg.me##[style^="width: 100%; height: auto; position: fixed; left: 0px; bottom: 0px;"]
 86ditu.com##[id^="gg"]
 86mdo.com##.hy_banner,.border01
