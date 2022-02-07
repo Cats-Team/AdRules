@@ -4,8 +4,8 @@
 ! Powerd by CatsTeam
 ! Expires: 8 Hours
 ! Description: 该规则合并自My AdFilters（for PC）、EdentwCustom、adgk、ClearUrl等，并补充了一些规则
-! Version: 2022-02-07 12:14:16（北京时间） 
-! Total count: 126752
+! Version: 2022-02-07 16:14:08（北京时间） 
+! Total count: 126776
 -1688-wp-media/ads/
 -988x60.
 -980x60-
@@ -3353,6 +3353,7 @@
 ###adsense_leaderboard
 ###adsense_overlay
 ###adsense_placeholder_2
+###adsense_r_side_sticky_container
 ###adsense_sidebar
 ###adsense_testa
 ###adsense_top
@@ -3893,6 +3894,9 @@
 ###advertcalc
 ###adverthome
 ###adverti
+###adverticum_r_above
+###adverticum_r_above_container
+###adverticum_r_side_container
 ###advertiframebottom
 ###advertise
 ###advertise-block
@@ -14729,6 +14733,9 @@
 ##.advertembed
 ##.advertheader-red
 ##.adverthome
+##.adverticum_container
+##.adverticum_content
+##.adverticum_gate_banner
 ##.advertis
 ##.advertis-left
 ##.advertis-right
@@ -23784,6 +23791,7 @@
 ##a.broad_roll
 ##a.outlink
 ##a[class="RBAd"]
+##a[class^="adChoices-"]
 ##a[data-nvp*="'trafficUrl':'https://paid.outbrain.com/network/redir?"]
 ##a[data-obtrack^="http://paid.outbrain.com/network/redir?"]
 ##a[data-oburl^="http://paid.outbrain.com/network/redir?"]
@@ -35753,6 +35761,7 @@ $~xmlhttprequest,~media,removeparam=source,denyallow=googlevideo.com,domain=1sol
 /ispy/ads/*
 /istat.aspx?
 /ists.tag?
+/item-stats.
 /item/tracking/*
 /itgdtracksdk.
 /itmdp_code.
@@ -38373,6 +38382,7 @@ $~xmlhttprequest,~media,removeparam=source,denyallow=googlevideo.com,domain=1sol
 /scripts/ad_
 /scripts/ads/*
 /scripts/afc/*
+/scripts/analitics.
 /scripts/analytics.
 /scripts/analytics/*
 /scripts/analytics_
@@ -42685,6 +42695,7 @@ $~xmlhttprequest,~media,removeparam=source,denyallow=googlevideo.com,domain=1sol
 @@||eafyfsuh.net/intermission/loadTargetUrl$xmlhttprequest
 @@||eami.in/images/js/ads.js$script
 @@||easternbank.com/sites/easternbank/files/google_tag/eastern_bank/google_tag.script.js$script,~third-party
+@@||easy-firmware.com/templates/default/html/*/assets/js/fingerprint2.min.js$script,~third-party
 @@||easylife.tw/js/adblockDetector.js
 @@||easylife.tw^$generichide
 @@||easyship.com/api/v1/track/$xmlhttprequest,domain=trackmyshipment.co
@@ -51624,6 +51635,7 @@ gry.pl##.adblock
 gs.chinanews.com.cn##.div1000_2 + .div980
 gsmarena.com###subHeader
 gsmarena.com##div[style="margin-left: -10px; margin-top: 30px; height: 145px;"]
+gsmserver.com##.widget_banner-container_three-horizontal
 gsprating.com##.banner2
 gsxt.gov.cn#@#.ads-right
 gta.com.ua##body > div[id][style*="background"][style*="visible"]
@@ -55234,7 +55246,6 @@ mangable.com,tutorial9.net,webdesign.org##.bsarocks
 mangabz.com###bb1
 mangabz.com###cc1
 mangabz.com###cc2
-mangadna.com,vanime.co,watchseries.ninja,ytmp3.cc##iframe[style*="z-index: 2147483647"]
 mangakakalot.com##.container-chapter-reader > div
 mangamint.com,mangabird.me#@#.ad728
 manganelo.com##[href^="https://oackoubs.com/"]
@@ -60314,6 +60325,8 @@ tvsou.com##.story_ad_content_footer
 tvsou.com##.story_ad_ios
 tvsou.com##[class="clearfix border-btn relative"],[class="shadow recommend-img mt-20"],[class="clearfix border-btn"][style],[class="shadow recommend-img"],.adv-box
 tvtropes.org##.atf_banner
+tvtv.us##.MuiPaper-elevation2
+tvtv.us##.jss67
 tvyb02.com##script + div[style="text-align:center;"]
 tvzoneuk.com##._2JOHk
 tw.beanfun.com###flybeanfun
@@ -66399,6 +66412,7 @@ zzpzero.com
 ||9377ne.com^
 ||9377or.com^
 ||9377os.com^
+||9391434.com^
 ||93aihbjs7bv4.com^
 ||93c82d38a751.com^
 ||93ta.cn^
@@ -71960,6 +71974,7 @@ zzpzero.com
 ||autoretro.com.ua/smtop/
 ||autotrader.ca/result/AutosAvailableListings.aspx?
 ||autotrader.co.za/partners/
+||autotrader.com/pixall/
 ||autotrading.com.cn^
 ||autozone.actonservice.com^
 ||autsaubs.net^
@@ -81001,6 +81016,7 @@ zzpzero.com
 ||dmdi.pl^$third-party
 ||dmdt.io/collect
 ||dmeq7blex6x1u.cloudfront.net^
+||dmfhqzo.cn^
 ||dmg0877nfcvqj.cloudfront.net^
 ||dmhpgshchfoawtn.com^
 ||dmkdtkad2jyb9.cloudfront.net^
@@ -94201,6 +94217,7 @@ zzpzero.com
 ||lf-hl.snssdk.com/*/article/information/
 ||lf-hl.snssdk.com/search/suggest^
 ||lf-hl.snssdk.com/ugc/publish^
+||lf666.xyz^
 ||lfannaifu.cn^
 ||lfcbvf.viata.fr^
 ||lfdydk.com^
@@ -99478,6 +99495,7 @@ zzpzero.com
 ||mystat.it^$third-party
 ||mystats.nl^$third-party
 ||mysteelcdn.com/advert/
+||mysteelcdn.com/common/*/js/img_ad.
 ||mysteelcdn.com/gg/
 ||mysteriousmonth.com^
 ||mystighty.info^$popup
@@ -106063,6 +106081,8 @@ zzpzero.com
 ||raspberryareaurge.com^
 ||raspnd.quadratec.com^
 ||rat.rakuten.co.jp^
+||rat.xxx/rpi/
+||rat.xxx/xdman/
 ||ratedxbiz.com/d/
 ||rategeisteryc.xyz^
 ||ratesupermarket.ca/widgets/
@@ -114443,6 +114463,7 @@ zzpzero.com
 ||tags.newscgp.com^
 ||tags.op-palvelut.fi^
 ||tags.refinery89.com^
+||tags.remixd.com^
 ||tags.sprizzy.com^
 ||tagsd.com^$popup
 ||tagsrvcs.com^$third-party
@@ -114553,6 +114574,7 @@ zzpzero.com
 ||taomike.com$third-party
 ||taomochou.cn^
 ||taomovie.club^
+||taopiaopiao.shop^
 ||taoput.com^
 ||taorun.com^
 ||taose06.com^
@@ -118840,6 +118862,7 @@ zzpzero.com
 ||verblife-2.co^$third-party
 ||verblife-5.co^
 ||verblife-5.co^$popup
+||verbolia.com^$third-party
 ||vercel-analytics.com^$third-party
 ||vercel-insights.com^$third-party
 ||vercel.app/ads/
@@ -119119,7 +119142,7 @@ zzpzero.com
 ||violateerringenglish.com^
 ||violentthinner.com^
 ||violetdistasteful.com^
-||viously.com/mt?
+||viously.com^*/mt?
 ||vip-datings.life^
 ||vip-vip-vup.com^
 ||vip.catcs.cn^
@@ -125904,6 +125927,7 @@ zzpzero.com
 121xz.com###gsxzdz
 121xz.com##.btn + .btn
 121xz.com##.c_money
+123-movies.ninja,dramacool.pk,mangadna.com,vanime.co,watchseries.ninja,ytmp3.cc##iframe[style*="z-index: 2147483647"]
 123.chinaso.com##.right-list6
 123.com.cn##.bottom-ylink
 123.com.cn##.fixed-top
