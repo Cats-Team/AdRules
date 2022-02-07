@@ -17,8 +17,9 @@ cat i*.txt > mergd.txt
 cat mergd.txt | grep '^|' | grep -v './' | grep -v '.\$' > block.txt
 cat mergd.txt | grep '^@' | grep -v './' | grep -v '.\$' > allow.txt
 cat mergd.txt | grep '^/' | grep -v './' | grep -v '.+'| grep -v '.-' | grep -v '.&' | grep -v '._' | grep -v '.?' | grep -v '.x'| grep -v '.\=' | grep -v '.[A-Z]'|grep -v '.\$' | grep -v '.js'| grep -v '.png' | grep -v '.^' | grep -v '.\*'| grep -v '.\|' >> pu.txt
-#cat mergd.txt | grep '^[0-9]' > hosts.txt
-cat block.txt allow.txt pu.txt  brules.dd > new.txt
+cat mergd.txt | grep '^[0-9]' | grep -v '^#' | grep -v 'localhosts'> hosts.txt
+cat hosts.txt | sed 's/127.0.0.1 /||/' | sed 's/0.0.0.0 /||/' | sed "s/$/&^/g" file
+cat block.txt allow.txt pu.txt hosts.txt brules.dd > new.txt
 cat new.txt | grep -v '.#' | grep -v '.?' | grep -v '.=' | grep -v '.]'| grep -v '^!' > tmpp.txt
 sort -n tmpp.txt | uniq > tmp.txt
 
