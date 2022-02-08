@@ -4,8 +4,8 @@
 ! Powerd by CatsTeam
 ! Expires: 8 Hours
 ! Description: 该规则合并自My AdFilters（for PC）、EdentwCustom、adgk、ClearUrl等，并补充了一些规则
-! Version: 2022-02-08 16:13:35（北京时间） 
-! Total count: 126590
+! Version: 2022-02-09 00:16:42（北京时间） 
+! Total count: 126591
 -1688-wp-media/ads/
 -988x60.
 -980x60-
@@ -17330,7 +17330,6 @@
 ##.f-sign-cont[data-dysign-adid]
 ##.fN-affiliateStrip
 ##.f_Ads
-##.fa-ad
 ##.fa-google-ad
 ##.facebook-ad
 ##.fake-container-for-outbrain-sticky
@@ -42036,6 +42035,7 @@ $~xmlhttprequest,~media,removeparam=source,denyallow=googlevideo.com,domain=1sol
 @@||api.adinplay.com/libs/aiptag/$script,domain=bigescapegames.com|brofist.io|findcat.io|squadd.io
 @@||api.adnetmedia.lt/api/$~third-party
 @@||api.ads.tvb.com^
+@@||api.babbel.io/gamma/v1/$ping,domain=my.babbel.com
 @@||api.captchme.net/api/media$image
 @@||api.cxense.com/document/search?$xmlhttprequest,domain=friday.kodansha.co.jp
 @@||api.cxense.com/public/widget/$domain=tn.com.ar
@@ -42078,6 +42078,7 @@ $~xmlhttprequest,~media,removeparam=source,denyallow=googlevideo.com,domain=1sol
 @@||applet.polfan.pl/vendor/fingerprint2.min.js$script,domain=applet.polfan.pl
 @@||apps.admob.com/admob/*.adsense.$script,domain=apps.admob.com
 @@||apps.derstandard.at^*/TrackingCookieCheck?$subdocument
+@@||appspot.com/event/$xmlhttprequest,domain=crab.fit
 @@||appspot.com/static/js/tracker/$script,domain=bugs.avm99963.com
 @@||aquabitcoin.com/show_ads.js$script
 @@||aqy103.com/js/aqy/main.js
@@ -42650,7 +42651,7 @@ $~xmlhttprequest,~media,removeparam=source,denyallow=googlevideo.com,domain=1sol
 @@||docodoco.jp^*/docodoco?key=$script,domain=jrtours.co.jp
 @@||docodoco.jp^*/docodoco?key=$script,domain=nidec-copal-electronics.com
 @@||docs.amplify.aws^*/platform/js/autotrack.json$~third-party
-@@||docs.google.com/document/
+@@||docs.google.com/*/viewdata$~third-party
 @@||docs.woopt.com/wgact/$image,~third-party,xmlhttprequest
 @@||dogecoinpuddle.com/show_ads.js$script
 @@||dogefaucet.com/initializr/js/ads.js$script
@@ -43044,8 +43045,7 @@ $~xmlhttprequest,~media,removeparam=source,denyallow=googlevideo.com,domain=1sol
 @@||googletagmanager.com/gtag/js$script,domain=timparty.tim.it
 @@||googletagmanager.com/gtag/js$script,domain=xl-bygg.no
 @@||googletagmanager.com/gtag/js?id=$domain=av01.tv
-@@||googletagmanager.com/gtm.js$domain=acehardware.com|atptour.com|bsa-whitelabel.com|chipotle.com|complex.com|crello.com|cyclingnews.com|cypress.io|easternbank.com|fortune.com|kedronparkhotel.com.au|nflgamepass.com|nordvpn.com|petsathome.com|pioneer.eu|royalbank.com|scotsman.com|soundguys.com|stressless.com|support.creative.com|trademe.co.nz
-@@||googletagmanager.com/gtm.js$domain=ads.spotify.com
+@@||googletagmanager.com/gtm.js$domain=acehardware.com|ads.spotify.com|atptour.com|bsa-whitelabel.com|chipotle.com|complex.com|crello.com|cyclingnews.com|cypress.io|easternbank.com|fortune.com|kedronparkhotel.com.au|nflgamepass.com|nordvpn.com|petsathome.com|pioneer.eu|royalbank.com|scotsman.com|soundguys.com|stressless.com|support.creative.com|trademe.co.nz
 @@||googletagmanager.com/gtm.js$domain=asus.com.cn|support.amd.com
 @@||googletagmanager.com/gtm.js$domain=asus.com.cn|support.amd.com|warnermusic.com.tw
 @@||googletagmanager.com/gtm.js$domain=besplatka.ua|cdek.ru|glamusha.ru|rustih.ru|sportmaster.ru|teddyfood.com
@@ -45232,7 +45232,6 @@ _ComScore.
 _Digital-ads_
 _Digital_Ads-
 _FLYAD.
-_GoogleTagManager/
 _Mobile_Ad_
 _NYTEF.js
 _NielsenNetRatings.
@@ -46430,6 +46429,7 @@ anime-planet.com##.halo
 anime-shinden.info#@##ads_video
 anime.anidub.life,myanime.online,online.anidub.com#?#div[style^="position: fixed;"]:-abp-has(> :-abp-contains(Обнаружена блокировка рекламы))
 anime4fun.com###hover
+anime4up.com,arabseed.me,baramjak.com,egynow.live,hawak.net,movizland.com,movizland.online,egyanime.com,egydead.com,egydead.live,yalla-shoot.today#$#abort-current-inline-script String.fromCharCode /atob|btoa|break/; abort-current-inline-script Math /atob|btoa|break/
 animecharactersdatabase.com##.promobanner
 animedao.to##.gads
 animedub.ru##.poverh
@@ -46575,7 +46575,6 @@ arabianindustry.com##.da-leaderboard
 arabiaweather.com##.mpu-card
 arabiaweather.com,bloomberg.com,gamesindustry.biz,news957.com,newscientist.com##.leaderboard-container
 arabseed.co,arabseed.com,arabseed.me,arabseed.net,arabseed.tv#$#abort-on-property-read atob; abort-on-property-read decodeURI; abort-on-property-read decodeURIComponent
-arabseed.me,baramjak.com,egynow.live,hawak.net,movizland.com,movizland.online,egyanime.com,egydead.com,egydead.live,yalla-shoot.today#$#abort-current-inline-script String.fromCharCode /atob|btoa|break/
 arabtimesonline.com##.e3lan
 aratta-ukraine.com,drawnstories.ru,gisclub.tv,kinda.media,teremok.org.ua,webos-forums.ru###mdl_adb
 arcadebomb.com##.bannerext
@@ -48983,7 +48982,7 @@ cranestodaymagazine.com,hoistmagazine.com,ttjonline.com,tunnelsonline.info###wra
 crash.net##.dmpu-container
 crash.net##.inarticle-wrapper
 crazygames.com##.css-1h6nq0a
-crazygames.com##div[style^="height:250px;"]
+crazygames.com,tenforums.com##div[style^="height:250px;"]
 creaders.net###guanggao2
 creaders.net##.border_b > tbody > tr > td[height^="2"]
 creaders.net##.pinglun > .btmlist-title
@@ -49531,8 +49530,8 @@ dj6u.com##.banner,.banner_text
 dj92cc.com,djkk.com,tingqq.com#@#.share_list
 djwma.com###logo
 dk.zeronethree.xyz
-dl-protect.best,dl-protect.top,dl-protect.xyz,dl-protect1.com,ed-protect.org,extreme-down.in,extreme-down.link,extreme-down.live,extreme-down.ninja,extreme-down.one,extreme-down.pro,extreme-down.top,extreme-down.tv,extreme-down.video,extreme-down.work,extreme-down.xyz,extreme-download.im,extreme-download.ninja,extreme-download.xyz,french-stream.re,french-stream.run,hdss.la,hdss.to,japscan.cc,japscan.com,japscan.se,japscan.to,japscan.ws,lelscan-vf.co,one-piece-streaming-vostfr.com,streaming-vostfr.net,streamingfrance.com,summarynetworks.com,toonanime.cc,toonanime.tv,toonanime.xyz,,torrent9.si,vostfree.com,wawacity.bz,wawacity.co,wawacity.ec,wawacity.ninja,wawacity.vip#$#abort-current-inline-script Math /atob|btoa|break/
-dl-protect.best,dl-protect.top,dl-protect.xyz,dl-protect1.com,ed-protect.org,extreme-down.plus,extreme-down.site,extreme-down.blue,extreme-down.in,extreme-down.link,extreme-down.live,extreme-down.ninja,extreme-down.one,extreme-down.pro,extreme-down.top,extreme-down.tv,extreme-down.video,extreme-down.work,extreme-down.xyz,extreme-download.im,extreme-download.ninja,extreme-download.xyz,french-stream.re,french-stream.run,hdss.la,hdss.to,japscan.cc,japscan.com,japscan.se,japscan.to,japscan.ws,lelscan-vf.co,one-piece-streaming-vostfr.com,streaming-vostfr.net,streamingfrance.com,summarynetworks.com,toonanime.cc,toonanime.tv,toonanime.xyz,,torrent9.si,vostfree.com,wawacity.bz,wawacity.co,wawacity.ec,wawacity.ninja,wawacity.vip#$#abort-current-inline-script String.fromCharCode /atob|btoa|break/
+dl-protect.best,dl-protect.top,dl-protect.xyz,dl-protect1.com,ed-protect.org,extreme-down.in,extreme-down.link,extreme-down.live,extreme-down.ninja,extreme-down.one,extreme-down.pro,extreme-down.top,extreme-down.tv,extreme-down.video,extreme-down.work,extreme-down.xyz,extreme-download.im,extreme-download.ninja,extreme-download.xyz,french-stream.re,french-stream.run,hdss.la,hdss.to,japscan.cc,japscan.com,japscan.se,japscan.to,japscan.ws,jetanimes.co,jetanimes.com,lelscan-vf.co,one-piece-streaming-vostfr.com,streaming-vostfr.net,streamingfrance.com,summarynetworks.com,toonanime.cc,toonanime.tv,toonanime.xyz,,torrent9.si,vostfree.com,wawacity.bz,wawacity.co,wawacity.ec,wawacity.ninja,wawacity.vip#$#abort-current-inline-script Math /atob|btoa|break/
+dl-protect.best,dl-protect.top,dl-protect.xyz,dl-protect1.com,ed-protect.org,extreme-down.plus,extreme-down.site,extreme-down.blue,extreme-down.in,extreme-down.link,extreme-down.live,extreme-down.ninja,extreme-down.one,extreme-down.pro,extreme-down.top,extreme-down.tv,extreme-down.video,extreme-down.work,extreme-down.xyz,extreme-download.im,extreme-download.ninja,extreme-download.xyz,french-stream.re,french-stream.run,hdss.la,hdss.to,japscan.cc,japscan.com,japscan.se,japscan.to,japscan.ws,jetanimes.co,jetanimes.com,lelscan-vf.co,one-piece-streaming-vostfr.com,streaming-vostfr.net,streamingfrance.com,summarynetworks.com,toonanime.cc,toonanime.tv,toonanime.xyz,,torrent9.si,vostfree.com,wawacity.bz,wawacity.co,wawacity.ec,wawacity.ninja,wawacity.vip#$#abort-current-inline-script String.fromCharCode /atob|btoa|break/
 dl.pconline.com.cn##.box-push
 dl.pconline.com.cn##.dlTips
 dl.pconline.com.cn##.links > p:not([class])
@@ -50733,7 +50732,7 @@ flyingjizz.com,gotporn.com,japan-whores.com,porntube.com##.advertisement
 flyme.cn###appDownloadTips
 flymer.ru#@#.ad-unit
 flyordie.com###asf
-flystream.fr,filmtelecharger.net,jetanimes.co,libertyvf.co,libertyvf.tv,libertyvf.com,streaming-one.com,extreme-down.in,extreme-down.link,extreme-down.live,extreme-down.ninja,extreme-down.one,extreme-down.pro,extreme-down.top,extreme-down.tv,extreme-down.work,extreme-down.video,extreme-down.xyz,extreme-download.im,extreme-download.ninja,extreme-download.xyz#$#abort-current-inline-script Math zfgloaded
+flystream.fr,filmtelecharger.net,libertyvf.co,libertyvf.tv,libertyvf.com,streaming-one.com,extreme-down.in,extreme-down.link,extreme-down.live,extreme-down.ninja,extreme-down.one,extreme-down.pro,extreme-down.top,extreme-down.tv,extreme-down.work,extreme-down.video,extreme-down.xyz,extreme-download.im,extreme-download.ninja,extreme-download.xyz#$#abort-current-inline-script Math zfgloaded
 flyzy2005.com##.baidu_ad
 flyzy2005.com##.widget_kratos_ad
 fm.baidu.com##.ad-material,.audio-ad
@@ -53508,7 +53507,6 @@ jdyou.com###popWrap
 jeasyui.net###carousel-example-generic,.adsbygoogle
 jeepforum.com##table[width="468"]
 jeja.pl#@##bottomAd
-jetanimes.co#$#abort-on-property-read atob
 jetetroll.com#@##adsense
 jetradar.pl##.ng-scope.no_adblock_wrapper
 jeuxactu.com###infoBlock
@@ -65441,6 +65439,7 @@ zzpzero.com
 ||52kmh.com^$third-party
 ||52kmk.com^
 ||52kp2.com^
+||52kshu.info/mgb.
 ||52kst.com/web/vip/
 ||52linglei.com^
 ||52lty.store^
@@ -97879,6 +97878,7 @@ zzpzero.com
 ||mhi9da.cn^
 ||mhidwg.elgiganten.se^
 ||mhmetr.billabongstore.jp^
+||mhqx.store^
 ||mhtky.cn^
 ||mhtrt.com^
 ||mhuijbkkwcz.com^
@@ -113678,6 +113678,7 @@ zzpzero.com
 ||szhongzi.com/js/
 ||szhyzkj.com^
 ||szjianxin.net^
+||szjjzs.com/js/as.js
 ||szjjzs.com/js/dd.js
 ||szjjzs.com/js/zb.js
 ||szjywn.cn^
