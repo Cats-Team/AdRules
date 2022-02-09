@@ -4,8 +4,8 @@
 ! Powerd by CatsTeam
 ! Expires: 8 Hours
 ! Description: 该规则合并自My AdFilters（for PC）、EdentwCustom、adgk、ClearUrl等，并补充了一些规则
-! Version: 2022-02-09 16:14:27（北京时间） 
-! Total count: 126620
+! Version: 2022-02-10 00:17:14（北京时间） 
+! Total count: 126631
 -1688-wp-media/ads/
 -988x60.
 -980x60-
@@ -25337,6 +25337,7 @@ $removeparam=FMID
 $removeparam=FpAffiliate
 $removeparam=FpSub
 $removeparam=HACMP
+$removeparam=INITD,domain=tuclothing.sainsburys.co.uk
 $removeparam=INT_ID,domain=backcountry.com
 $removeparam=IPID
 $removeparam=LGWCODE
@@ -26168,6 +26169,7 @@ $removeparam=ns_fee
 $removeparam=ns_linkname
 $removeparam=ns_mchannel
 $removeparam=ns_source
+$removeparam=nvid,domain=nvidia.com
 $removeparam=o_lid
 $removeparam=o_sch
 $removeparam=o_xid
@@ -26207,6 +26209,7 @@ $removeparam=partid,domain=bellacor.com
 $removeparam=partition_id
 $removeparam=partner,domain=humblebundle.com|fastcompany.com
 $removeparam=partner,domain=ozon.ru
+$removeparam=pbref,domain=pinkbike.com
 $removeparam=pc,domain=bigfishgames.com
 $removeparam=pcampaignid
 $removeparam=pcampaignid,domain=google.*
@@ -26303,7 +26306,7 @@ $removeparam=redirect_mongo_id
 $removeparam=redirect_source,domain=mozilla.org
 $removeparam=redirectedFrom,domain=academic.oup.com
 $removeparam=ref,domain=9gag.com
-$removeparam=ref,domain=abebooks.com|accounts.binance.com|adobe.com|albiononline.com|altcustoms.com|amazon.*|app.blockfi.com|arvopaperi.fi|audible.*|baidu.com|bestbuy.com|bing.com|bitlox.com|bitwarden.com|blogit.fi|bookdepository.com|brave.com|buzzfeed.com|buzzfeednews.com|bybit.com|catch.com.au|comixology.*|coop.no|deal.no|dell.com|digidip.net|domains.ch|eset.com|emag.ro|etsy.com|expo.io|facebook.com|geeksforgeeks.org|github.com|github.io|goodreads.com|hintaseuranta.fi|hs.fi|idenati.com|ikea.com|iltapulu.fi|imdb.com|is.fi|jasonsavard.com|kansanuutiset.fi|kauppalehti.fi|kesaduuni.org|kickstarter.com|mastermind.ac|mediuutiset.fi|megapornfreehd.com|merrell.com|mikrobitti.fi|motouutiset.fi|oikotie.fi|omataloyhtio.fi|protonvpn.com|puutarha.net|rakentaja.fi|reddit.com|sahkovertailu.fi|scandinavianphoto.fi|semrush.com|shein.com|shopping.google.*|sketch.com|spiegel.de|suomi24.fi|talouselama.fi|target.com|tekniikkatalous.fi|telsu.fi|tivi.fi|tokenmetrics.com|twitch.tv|udemy.com|uusisuomi.fi|vultr.com|webhallen.no|woot.com|wormhole.app|yle.fi|zappos.com
+$removeparam=ref,domain=abebooks.com|accounts.binance.com|adobe.com|albiononline.com|altcustoms.com|amazon.*|app.blockfi.com|arvopaperi.fi|audible.*|baidu.com|bestbuy.com|bing.com|bitlox.com|bitwarden.com|blogit.fi|bookdepository.com|brave.com|buzzfeed.com|buzzfeednews.com|bybit.com|catch.com.au|comixology.*|coop.no|deal.no|dell.com|digidip.net|domains.ch|droix.net|eset.com|emag.ro|etsy.com|expo.io|facebook.com|geeksforgeeks.org|github.com|github.io|goodreads.com|hintaseuranta.fi|hs.fi|idenati.com|ikea.com|iltapulu.fi|imdb.com|is.fi|jasonsavard.com|kansanuutiset.fi|kauppalehti.fi|kesaduuni.org|kickstarter.com|mastermind.ac|mediuutiset.fi|megapornfreehd.com|merrell.com|mikrobitti.fi|motouutiset.fi|oikotie.fi|omataloyhtio.fi|protonvpn.com|puutarha.net|rakentaja.fi|reddit.com|sahkovertailu.fi|scandinavianphoto.fi|semrush.com|shein.com|shopping.google.*|sketch.com|spiegel.de|suomi24.fi|talouselama.fi|target.com|tekniikkatalous.fi|telsu.fi|tivi.fi|tokenmetrics.com|twitch.tv|udemy.com|uusisuomi.fi|vultr.com|webhallen.no|woot.com|wormhole.app|yle.fi|zappos.com
 $removeparam=ref,domain=giphy.com
 $removeparam=ref,domain=readdc.com
 $removeparam=refId,domain=linkedin.com
@@ -26545,7 +26548,7 @@ $removeparam=sxsrf,domain=google.*
 $removeparam=szredirectid
 $removeparam=t,domain=hh.ru
 $removeparam=t,domain=rakuten.com|steamcdn-a.akamaihd.net|duckduckgo.com|npr.org|elprecio.es|adressa.no|tiktok.com
-$removeparam=tag,domain=amazon.*|argos.co.uk|tv2.no
+$removeparam=tag,domain=amazon.*|argos.co.uk|habitat.co.uk|tv2.no
 $removeparam=tag,domain=arms-retcode.aliyuncs.com
 $removeparam=tag,domain=ceneo.pl
 $removeparam=tag_ids,domain=shein.com
@@ -26796,7 +26799,6 @@ $~xmlhttprequest,~media,removeparam=source,denyallow=googlevideo.com,domain=1sol
 &adpageurl=
 &adr=
 &adsafe=
-&adserv=
 &adserver=
 &adslot=
 &adslots=
@@ -41751,6 +41753,7 @@ $~xmlhttprequest,~media,removeparam=source,denyallow=googlevideo.com,domain=1sol
 @@||adhexa.com^$image,subdocument,domain=bitzfree.com
 @@||adhood.com^$third-party,domain=dizi-mag.com
 @@||adidasoriginals-lookbook.com.tw/js/adtracking.js
+@@||adinsurance.xyz^$generichide
 @@||adjs.8591.com.tw^$script
 @@||adjust.com/adjust-latest.min.js$domain=anchor.fm
 @@||adk2.co^$image,subdocument,domain=bitzfree.com
@@ -42217,7 +42220,7 @@ $~xmlhttprequest,~media,removeparam=source,denyallow=googlevideo.com,domain=1sol
 @@||bid.g.doubleclick.net/$object-subrequest,domain=play.tv|playtv.fr
 @@||bigfishaudio.com/banners/$image,~third-party
 @@||bild.de^$elemhide
-@@||bilder-a.akamaihd.net/ip/js/ipdvdc/ipdvdc.min.js$script,domain=n-tv.de
+@@||bilder-a.akamaihd.net/ip/js/ipdvdc/ipdvdc.min.js$domain=n-tv.de|toggo.de
 @@||bilibili.com^*/web_page_view?$domain=message.bilibili.com
 @@||binbox.io/adblock.js$script
 @@||binbucks.com/ads/ads.html$subdocument
@@ -43279,6 +43282,7 @@ $~xmlhttprequest,~media,removeparam=source,denyallow=googlevideo.com,domain=1sol
 @@||inpref.s3.amazonaws.com/frosmo.easy.js$domain=elisa.fi|kauppahalli24.fi
 @@||inpref.s3.amazonaws.com/sites/$script,domain=kauppahalli24.fi
 @@||inskinmedia.com^*/js/base/api/$domain=appledaily.com|nextmedia.com
+@@||insurglobal.xyz^$generichide
 @@||investing.com/js/ads.js$script
 @@||invoice-ua.taobao.com/e-invoice/invoice-apply-online.html?source$stealth
 @@||ios-blog.co.uk/*/showads.js$script
@@ -43853,6 +43857,7 @@ $~xmlhttprequest,~media,removeparam=source,denyallow=googlevideo.com,domain=1sol
 @@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$domain=emucr.com
 @@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$domain=file4go.com
 @@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$domain=file4go.net
+@@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$domain=linovelib.com|yodu.org
 @@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$domain=miuipro.ru
 @@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$domain=onperiscope.com
 @@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$domain=robotcoingame.com|monstercoingame.com|wonderlandco.in
@@ -44656,6 +44661,7 @@ $~xmlhttprequest,~media,removeparam=source,denyallow=googlevideo.com,domain=1sol
 @@||tmall.com/go/*/banner.php
 @@||tmx.bestbuy.com/z3nsvo31pnlmt3tw.js$domain=bestbuy.com
 @@||tnabucks.com/intermission/loadTargetUrl$xmlhttprequest
+@@||toggo.de/static/js/sourcepoint.js$domain=toggo.de
 @@||ton.twimg.com/ads-manager/$domain=twitter.com
 @@||ton.twimg.com^$domain=ads.twitter.com|analytics.twitter.com
 @@||toolfk.com/tools/js/share/js/jquery.share.min.js
@@ -47980,6 +47986,9 @@ buzzfeed.com##.js-bfa-impression
 buzzfeednews.com##div[id^="BF_ADX_"]
 buzzhand.com##.mid-post-ad,.adsbygoogle,[class^="mash-lightbox"],#rightFixedAd,[style$="height:600px;"],[style^="display:inline-block;"]
 buzzhand.com##div[style="text-align:left;margin-top:0px;height:600px;"]
+buzzly.art##.h-min.overflow-hidden
+buzzly.art##.z-10.w-max
+buzzly.art##[src^="https://submissions.buzzly.art/CANDY/"]
 bv.lyszsz.cn
 bve8.xyz##div.main:nth-child(3) > div:first-child
 bx0635.com###down_box{display:block!important;}
@@ -76501,6 +76510,7 @@ zzpzero.com
 ||chromefk.com/common/other/11.png
 ||chronicads.com^
 ||chrumedia.com^$third-party
+||chslwea.top^
 ||chsrkred.com^
 ||chtah.com/a/*/spacer-0.gif$third-party
 ||chtah.com^*/1x1.gif
@@ -87522,6 +87532,7 @@ zzpzero.com
 ||guoshipartners.com^$third-party
 ||guotaotaoci.net^
 ||guoxintdh.com^
+||guozh.net/wp-content/plugins/eazy-ad-unblocker/
 ||guphoulr.com^
 ||guq9.vente-unique.it^
 ||guqu.net/Cooperate/
@@ -93824,6 +93835,7 @@ zzpzero.com
 ||laddergrandma.com^
 ||ladepeche.fr/taffrail^
 ||ladghy.jcb.co.jp^
+||ladnet.co^
 ||ladnova.info^
 ||ladsabs.com^
 ||ladsabz.com^
@@ -94873,7 +94885,6 @@ zzpzero.com
 ||linkxchanger.com^$third-party
 ||linkybank.com^$third-party
 ||linovel.net/cp/lk/ad/externalAd?
-||linovelib.com/scripts/code.
 ||linovelib.com/scripts/zation.js
 ||lintyone.top^
 ||linurk.com^
@@ -98185,6 +98196,7 @@ zzpzero.com
 ||mjfunt.bibi.com^
 ||mjiszovwqwn.com^
 ||mjita.cn^
+||mjkha.top^
 ||mjlpqbklxgt.com^
 ||mjlsiopjesbn.com^
 ||mjnpya.marktplaats.nl^
@@ -123242,7 +123254,6 @@ zzpzero.com
 ||yoc-adserver.com^
 ||yoc.younited-credit.com^
 ||yodr.net^
-||yodu.org/scripts/code.
 ||yofdifferents.biz^
 ||yogar2ti8nf09.com^
 ||yogurtrole.com^
