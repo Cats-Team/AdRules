@@ -18,7 +18,7 @@ cat mergd.txt | grep '|\|@' | grep -v './' |grep -v '.\$' | sed '/^$/d' > adbloc
 cat mergd.txt | grep '^[0-9]' | grep -v '^#' | grep -v 'local'> host.txt
 cat host.txt | sed 's/127.0.0.1 /||/' | sed 's/0.0.0.0 /||/' | sed "s/$/&^/g" | sed '/^$/d' > hosts.txt
 cat adblock.txt hosts.txt brules.dd > new.txt
-cat new.txt | grep -v '.#' | grep -v '.?' | grep -v '.=' | grep -v '.]'| grep -v '^!' | grep -v 'local' | grep -v '/' | grep -v '\^|' | sed '/^$/d' > tmpp.txt
+cat new.txt | grep '|\|@' | grep -v '.#' | grep -v '.?' | grep -v '.=' | grep -v '.]'| grep -v '^!' | grep -v 'local' | grep -v '/' | grep -v '\^|' | sed '/^$/d' > tmpp.txt
 sort -n tmpp.txt | uniq > tmp.txt
 
 
