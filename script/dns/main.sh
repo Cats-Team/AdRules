@@ -12,13 +12,13 @@ curl -o i11.txt https://adaway.org/hosts.txt
 
 # Start Merge and Duplicate Removal
 cat i*.txt > mergd.txt
-cat mergd.txt | grep '^|' | grep -v './' | grep -v '.\$' > block.txt
-cat mergd.txt | grep '^@' | grep -v './' | grep -v '.\$' > allow.txt
-cat mergd.txt | grep '^/' | grep -v './' | grep -v '.+'| grep -v '.-' | grep -v '.&' | grep -v '._' | grep -v '.?' | grep -v '.x'| grep -v '.\=' | grep -v '.[A-Z]'|grep -v '.\$' | grep -v '.js'| grep -v '.png' | grep -v '.^' | grep -v '.\*'| grep -v '.\|' >> pu.txt
+cat mergd.txt | grep '|\|@' | grep -v './' |grep -v '.\$' | sed '/^$/d' > adblock.txt
+#cat mergd.txt | grep '^@' | grep -v './' | grep -v '.\$' > allow.txt
+#cat mergd.txt | grep '^/' | grep -v './' | grep -v '.+'| grep -v '.-' | grep -v '.&' | grep -v '._' | grep -v '.?' | grep -v '.x'| grep -v '.\=' | grep -v '.[A-Z]'|grep -v '.\$' | grep -v '.js'| grep -v '.png' | grep -v '.^' | grep -v '.\*'| grep -v '.\|' >> pu.txt
 cat mergd.txt | grep '^[0-9]' | grep -v '^#' | grep -v 'local'> host.txt
 cat host.txt | sed 's/127.0.0.1 /||/' | sed 's/0.0.0.0 /||/' | sed "s/$/&^/g" | sed '/^$/d' > hosts.txt
-cat block.txt allow.txt pu.txt hosts.txt brules.dd > new.txt
-cat new.txt | grep -v '.#' | grep -v '.?' | grep -v '.=' | grep -v '.]'| grep -v '^!' | grep -v 'local' | grep -v '/' | grep -v '\^|' > tmpp.txt
+cat adblock.txt hosts.txt brules.dd > new.txt
+cat new.txt | grep -v '.#' | grep -v '.?' | grep -v '.=' | grep -v '.]'| grep -v '^!' | grep -v 'local' | grep -v '/' | grep -v '\^|' | sed '/^$/d' > tmpp.txt
 sort -n tmpp.txt | uniq > tmp.txt
 
 
