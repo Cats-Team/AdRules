@@ -4,9 +4,14 @@
 ! Powerd by CatsTeam
 ! Expires: 8 Hours
 ! 该规则合并自AdGuardDNS过滤器，adgk等
-! Version: 2022-02-09 15:04:00（北京时间） 
-! Total count: 63452
-
+! Version: 2022-02-09 15:10:33（北京时间） 
+! Total count: 63463
+*_ad.js|
+*_ads.js|
+*_ads.swf|
+*_banner.html|
+*_guanggao.js|
+=ga|
 @@-ds.metric.gstatic.com^
 @@||17173im.allyes.com^
 @@||95599.cn^*ad
@@ -96,6 +101,12 @@
 @@||youku.com^*^showAd
 @@||yzzkb.com.cn^*ad.
 @@||zbj.com^
+^ads.swf|
+^ad|
+_ad.gif|
+advertisers.js|
+getAds|
+piao.js|
 |balmoralmkt.com^
 ||*.wap.xsbiquge.com^
 ||*serror*.wo.com.cn^
