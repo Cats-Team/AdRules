@@ -10,16 +10,17 @@ curl -o i9.txt https://raw.githubusercontent.com/banbendalao/ADgk/master/ADgk.tx
 curl -o i10.txt https://raw.githubusercontent.com/Cats-Team/AdRules/main/adblock.txt
 #curl -o i11.txt https://raw.githubusercontent.com/Cats-Team/AdRules_dev/main/adguard-full.txt
 curl -o i12.txt https://adaway.org/hosts.txt
+wget https://raw.githubusercontent.com/damengzhu/banad/main/jiekouAD.txt
 
 # Start Merge and Duplicate Removal
 cat i*.txt > mergd.txt
-cat mergd.txt | grep '^||' | grep -v './' | grep -Ev "([0-9]{1,3}.){3}[0-9]{1,3}" | grep -v '.\$' | sed '/^$/d' > adblock0.txt
+cat mergd.txt | grep '^||' | grep -v './' | grep -Ev "([0-9]{1,3}.){3}[0-9]{1,3}" | grep -v '.\$' | sed '/^$/d' > adblock0.txt 
 cat mergd.txt | grep '^@@||' | grep -v './' | grep -v '.\$' > adblock1.txt
-cat adblock*.txt > adblock.txt
-#cat mergd.txt | grep '^/' | grep -v './' | grep -v '.+'| grep -v '.-' | grep -v '.&' | grep -v '._' | grep -v '.?' | grep -v '.x'| grep -v '.\=' | grep -v '.[A-Z]'|grep -v '.\$' | grep -v '.js'| grep -v '.png' | grep -v '.^' | grep -v '.\*'| grep -v '.\|' >> pu.txt
-cat mergd.txt | grep '^[0-9]' | grep -v '^#' | grep -v 'local'> host.txt
-cat host.txt | sed 's/127.0.0.1 /||/' | sed 's/0.0.0.0 /||/' | sed "s/$/&^/g" | sed '/^$/d' > hosts.txt
-cat adblock.txt hosts.txt brules.dd > new.txt
+cat adblock*.txt > adblock.txt #abp规则处理合并
+cat mergd.txt | grep '^[0-9]' | grep -v '^#' | grep -v 'local'> host.txt #hosts规则处理
+cat host.txt | sed 's/127.0.0.1 /||/' | sed 's/0.0.0.0 /||/' | sed "s/$/&^/g" | sed '/^$/d' > hosts.txt #hosts转abp规则
+cat jiekouAD.txt | grep -Ev '#|\$|@|!|/|\\|\*'| sed "s/^/||&/g" |sed "s/$/&^/g" >> damian.txt #大萌主规则处理
+cat adblock.txt hosts.txt brules.dd damian.txt > new.txt
 cat new.txt | grep '|\|@' | grep -v '.#' | grep -v '.?' | grep -v '.=' | grep -v '.]'| grep -v '^!' | grep -v 'local' | grep -v '/' | grep -v '\^|' | grep -v '\^\*'| sed '/^$/d' > tmpp.txt
 sort -n tmpp.txt | uniq > tmp.txt
 
