@@ -8,11 +8,12 @@ curl -o i7.txt https://raw.githubusercontent.com/o0HalfLife0o/list/master/ad-pc.
 curl -o i8.txt https://raw.githubusercontent.com/o0HalfLife0o/list/master/ad-edentw.txt
 curl -o i9.txt https://raw.githubusercontent.com/banbendalao/ADgk/master/ADgk.txt
 curl -o i10.txt https://raw.githubusercontent.com/Cats-Team/AdRules/main/adblock.txt
-curl -o i11.txt https://adaway.org/hosts.txt
+curl -o i11.txt https://raw.githubusercontent.com/Cats-Team/AdRules_dev/main/adguard-full.txt
+curl -o i12.txt https://adaway.org/hosts.txt
 
 # Start Merge and Duplicate Removal
 cat i*.txt > mergd.txt
-cat mergd.txt | grep '|\|@' | grep -v './' |grep -v '.\$' | sed '/^$/d' > adblock.txt
+cat mergd.txt | grep '|\|@' | grep -v './' | grep -Ev "([0-9]{1,3}.){3}[0-9]{1,3}" | grep -v '.\$' | sed '/^$/d' > adblock.txt
 #cat mergd.txt | grep '^@' | grep -v './' | grep -v '.\$' > allow.txt
 #cat mergd.txt | grep '^/' | grep -v './' | grep -v '.+'| grep -v '.-' | grep -v '.&' | grep -v '._' | grep -v '.?' | grep -v '.x'| grep -v '.\=' | grep -v '.[A-Z]'|grep -v '.\$' | grep -v '.js'| grep -v '.png' | grep -v '.^' | grep -v '.\*'| grep -v '.\|' >> pu.txt
 cat mergd.txt | grep '^[0-9]' | grep -v '^#' | grep -v 'local'> host.txt
