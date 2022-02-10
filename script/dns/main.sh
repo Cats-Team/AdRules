@@ -13,8 +13,9 @@ curl -o i12.txt https://adaway.org/hosts.txt
 
 # Start Merge and Duplicate Removal
 cat i*.txt > mergd.txt
-cat mergd.txt | grep '|\|@' | grep -v './' | grep -Ev "([0-9]{1,3}.){3}[0-9]{1,3}" | grep -v '.\$' | sed '/^$/d' > adblock.txt
-#cat mergd.txt | grep '^@' | grep -v './' | grep -v '.\$' > allow.txt
+cat mergd.txt | grep '^|' | grep -v './' | grep -Ev "([0-9]{1,3}.){3}[0-9]{1,3}" | grep -v '.\$' | sed '/^$/d' > adblock0.txt
+cat mergd.txt | grep '^@' | grep -v './' | grep -v '.\$' > adblock1.txt
+cat adblock*.txt > adblock.txt
 #cat mergd.txt | grep '^/' | grep -v './' | grep -v '.+'| grep -v '.-' | grep -v '.&' | grep -v '._' | grep -v '.?' | grep -v '.x'| grep -v '.\=' | grep -v '.[A-Z]'|grep -v '.\$' | grep -v '.js'| grep -v '.png' | grep -v '.^' | grep -v '.\*'| grep -v '.\|' >> pu.txt
 cat mergd.txt | grep '^[0-9]' | grep -v '^#' | grep -v 'local'> host.txt
 cat host.txt | sed 's/127.0.0.1 /||/' | sed 's/0.0.0.0 /||/' | sed "s/$/&^/g" | sed '/^$/d' > hosts.txt
