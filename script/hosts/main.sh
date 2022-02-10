@@ -16,7 +16,7 @@ cat i*.txt > mergd.txt
 cat mergd.txt | grep '^1'  > 1.txt
 cat mergd.txt | grep '^0'  > 0.txt
 cat 1.txt 0.txt hosts.txt > tmpp.txt
-cat tmpp.txt | sed 's/127.0.0.1 /0.0.0.0 /' >temp.txt
+cat tmpp.txt | grep -v 'local' | sed 's/127.0.0.1 /0.0.0.0 /' >temp.txt
 sort -n temp.txt | uniq > tmp.txt
 
 # Create ad damian
@@ -29,7 +29,7 @@ num=`cat tmp.txt | wc -l`
 echo "# Version: `date +"%Y-%m-%d %H:%M:%S"`" >> tpdate.txt
 echo "# Total count: $num" >> tpdate.txt
 cat title.dd tpdate.txt tmp.txt > final.txt
-cat damian-init.txt tpdate.txt >> damian.txt
+cat tpdate.txt damian-init.txt >> damian.txt
 
 mv final.txt ../../hosts.txt
 mv damian.txt ../../../damian.txt
