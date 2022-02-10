@@ -16,8 +16,8 @@ cat i*.txt > mergd.txt
 cat mergd.txt | grep '^1'  > 1.txt
 cat mergd.txt | grep '^0'  > 0.txt
 cat 1.txt 0.txt hosts.txt > tmpp.txt
-cat tmpp.txt | sed 's/127.0.0.1 /0.0.0.0 /' >temp.txy
-sort temp.txt | uniq > tmp.txt
+cat tmpp.txt | sed 's/127.0.0.1 /0.0.0.0 /' >temp.txt
+sort -n temp.txt | uniq > tmp.txt
 
 # Create ad damian
 cat tmp.txt | sed 's/0.0.0.0 //' > damian-init.txt
