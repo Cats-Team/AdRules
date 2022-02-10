@@ -8,7 +8,7 @@ curl -o i7.txt https://raw.githubusercontent.com/o0HalfLife0o/list/master/ad-pc.
 curl -o i8.txt https://raw.githubusercontent.com/o0HalfLife0o/list/master/ad-edentw.txt
 curl -o i9.txt https://raw.githubusercontent.com/banbendalao/ADgk/master/ADgk.txt
 curl -o i10.txt https://raw.githubusercontent.com/Cats-Team/AdRules/main/adblock.txt
-curl -o i11.txt https://raw.githubusercontent.com/Cats-Team/AdRules_dev/main/adguard-full.txt
+#curl -o i11.txt https://raw.githubusercontent.com/Cats-Team/AdRules_dev/main/adguard-full.txt
 curl -o i12.txt https://adaway.org/hosts.txt
 
 # Start Merge and Duplicate Removal
