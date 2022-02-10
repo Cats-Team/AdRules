@@ -15,7 +15,8 @@ cat dns.txt | grep '^|' | grep -v '\*'| grep -Ev "([0-9]{1,3}.){3}[0-9]{1,3}" |s
 cat i*.txt > mergd.txt
 cat mergd.txt | grep '^1'  > 1.txt
 cat mergd.txt | grep '^0'  > 0.txt
-cat 1.txt 0.txt hosts.txt > tmpp.txt
+cat 1.txt 0.txt hosts.txt |sed 's/127.0.0.1 /0.0.0.0 /'> tmpp.txt
+
 sort tmpp.txt | uniq > tmp.txt
 
 # Create ad damian
