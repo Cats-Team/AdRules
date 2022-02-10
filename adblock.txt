@@ -4,8 +4,8 @@
 ! Powerd by CatsTeam
 ! Expires: 8 Hours
 ! Description: 该规则合并自My AdFilters（for PC）、EdentwCustom、adgk、ClearUrl等，并补充了一些规则
-! Version: 2022-02-10 13:36:13（北京时间） 
-! Total count: 126685
+! Version: 2022-02-10 16:13:27（北京时间） 
+! Total count: 126688
 -1688-wp-media/ads/
 -988x60.
 -980x60-
@@ -9039,7 +9039,6 @@
 ###vidAdBottom
 ###vidAdRight
 ###vidAdTop
-###video > #ybad
 ###video-ad
 ###video-ad-companion-rectangle
 ###video-adv
@@ -22531,6 +22530,7 @@
 ##.top-half-page-ad
 ##.top-header-ad
 ##.top-horiz-ad
+##.top-horizontal-ad
 ##.top-item-ad
 ##.top-large-google-ad
 ##.top-leaderboard-ad
@@ -22780,6 +22780,7 @@
 ##.tx_smartadserver_pi1
 ##.txp_ad[data-role="txpad-interact-pause"]
 ##.txp_ad_center
+##.txt-ad
 ##.txt-ads
 ##.txtAd
 ##.txtAd5
@@ -23497,7 +23498,6 @@
 ##A[href^="http://www.liveadexchanger.com/a/display.php"]
 ##A[href^="http://www.yourfilezone.com/play?lng="]
 ##A[href^="https://action.metaffiliation.com/trk.php?"]
-##A[onclick^="_czc."] > .add
 ##DFP-AD
 ##DIV.sptable_do_not_remove f_one
 ##DIV.tpc_icon
@@ -24811,6 +24811,7 @@
 ##a[onclick*=".lyty665.com"]
 ##a[onclick*="/dasp.php?a="]
 ##a[onclick*="open"] > img[src*=".dailygn.com/"]
+##a[onclick^="_czc."] > .add
 ##a[onclick^="_czc."] > .ads
 ##a[onclick^="_czc.push(['_trackEvent', '广告"]
 ##a[onclick^="javascript:pc_"] > img[src*=".alicdn.com"]
@@ -25023,6 +25024,7 @@
 ##div[itemtype="http://schema.org/WPAdBlock"]
 ##div[itemtype="http://www.schema.org/WPAdBlock"]
 ##div[jsdata*="CarouselPLA-"][data-id^="CarouselPLA-"]
+##div[onclick*=".rwnyou.com"]
 ##div[onclick^="window.location.href"][onclick*=".bcebos."]
 ##div[onclick^="window.location.href"][onclick*=".haoyundm.com"]
 ##div[style*="box-shadow: rgb(136, 136, 136) 0px 0px 12px; color: "]
@@ -34060,7 +34062,6 @@ $~xmlhttprequest,~media,removeparam=source,denyallow=googlevideo.com,domain=1sol
 /doubleclickplugin.
 /doubleclicktag.
 /doublepimp2.js
-/doubleserve.js
 /dow_analytics.
 /downads.
 /download-ad.
@@ -43856,7 +43857,7 @@ $~xmlhttprequest,~media,removeparam=source,denyallow=googlevideo.com,domain=1sol
 @@||pagead2.googlesyndication.com/pagead/js/*/show_ads_impl.js$script,domain=sc2casts.com
 @@||pagead2.googlesyndication.com/pagead/js/*show_ads_impl.js$domain=buickforums.com
 @@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$domain=bricozone.fr
-@@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$domain=chaojizhibo.net|chtoen.com|dizhishengcheng.com|doitwell.tw|ff14angler.com|haoweichi.com|it365.abctool.info|logi.im|monnsutogatya.com|numberempire.com|patch.ali213.net|pc3mag.com|shenfendaquan.com|switch520.com|vaptcha.com|wenxuecity.com|xiebruce.top|yabook.org
+@@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$domain=chaojizhibo.net|chtoen.com|dizhishengcheng.com|doitwell.tw|ff14angler.com|freedidi.com|haoweichi.com|it365.abctool.info|linovelib.com|logi.im|monnsutogatya.com|numberempire.com|patch.ali213.net|pc3mag.com|shenfendaquan.com|switch520.com|vaptcha.com|wenxuecity.com|xiebruce.top|yabook.org|yodu.org
 @@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$domain=cpu-world.com|megaleech.us
 @@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$domain=dailydoge.org
 @@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$domain=download.pixelexperience.org|knowfacts.info|real-sports.jp|slideplayer.com|smallseotools.com|soranews24.com|tampermonkey.net|thefreedictionary.com
@@ -43864,8 +43865,6 @@ $~xmlhttprequest,~media,removeparam=source,denyallow=googlevideo.com,domain=1sol
 @@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$domain=emucr.com
 @@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$domain=file4go.com
 @@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$domain=file4go.net
-@@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$domain=freedidi.com
-@@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$domain=linovelib.com|yodu.org
 @@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$domain=miuipro.ru
 @@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$domain=onperiscope.com
 @@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$domain=robotcoingame.com|monstercoingame.com|wonderlandco.in
@@ -46217,6 +46216,7 @@ aipai.com##.video_gg
 aipai.com##canvas~*
 aipai.com##div.side_gg,div#baidu_gg,div#pm_bgg,div[class^="wbanner_baidu_"],div.wbanner_baidu_689,div.banner_90,.con_l,.con_r,div#videosRightDown,div.cover_inner,a.pmp_random,[class^="banner_"],#theme_gg,.pm_bgg,[id^="cs_gg"],.spread,.ad
 aiq36.g1kb9u.xyz
+aiqicha.baidu.com##.float-banner
 aiqicha.baidu.com#@#.share-label
 aiqicha.baidu.com#@#.share-title
 airav.cc###Panel_GambleZone
@@ -62909,7 +62909,6 @@ ypppt.com##.login_panel
 yqdown.com##.pgzs,#wrapper1
 yqee.htsrvlink.com
 yqef.hsyfcenter.com
-ys.da.mgtv.com
 ys168.com##div[style="position:fixed; width:200px; top: 330px;right:10px;font-size:9pt;text-align:left;"]
 yse1234.com/template/phone/imagess/sdfwe.js
 yshw1.com###diynews_ad1
@@ -70659,7 +70658,6 @@ zzpzero.com
 ||analytics-api.smzdm.com^
 ||analytics-cdiscount.com^$third-party
 ||analytics-cms.whitebeard.me^
-||analytics-egain.com^$third-party
 ||analytics-gw.games.wanmei.com^
 ||analytics-production.hapyak.com^
 ||analytics-proxy.springboard.com^
@@ -72264,6 +72262,7 @@ zzpzero.com
 ||awsurveys.com^
 ||awtks.com^
 ||awtvnrgwxletd.com^
+||awwlfb.cn^
 ||awxoddnhl.xyz^
 ||awxqiujkhrf.top^
 ||awyys.com^
@@ -89392,6 +89391,7 @@ zzpzero.com
 ||hutawheglu.com^
 ||huuto.net/js/analytic/
 ||huuyluwjkyd.xyz^
+||huyc.info^
 ||huzhanbin.cn^
 ||huzhu.group^
 ||hvato.info^
@@ -105590,7 +105590,7 @@ zzpzero.com
 ||querylead.com^
 ||questintegrity.actonservice.com^
 ||questionmarket.com^
-||questionpro.com^$third-party,domain=~questionpro.com.au
+||questionpro.com^$third-party,domain=~questionpro.com.au|~questionpro.eu
 ||questions.theanswerco.com^
 ||questionsadjournasleep.com^
 ||questionsunpleasantaborigines.com^
@@ -117885,6 +117885,7 @@ zzpzero.com
 ||uluai.com.cn/rcmd^$domain=m.ftchinese.com
 ||ulukaris.com^
 ||uluswozzel.info^
+||ulxypyg.cn^
 ||ulzdk.com/Uploads/ulzdkgif/bfq.gif
 ||ulzdk.com/statics/v2/js/kulis.js
 ||um*.com^$third-party
@@ -122733,6 +122734,7 @@ zzpzero.com
 ||yahugg.com^
 ||yajiuwz.xyz^
 ||yajvdoporjtz.com^
+||yakel.top^
 ||yakuya.cn^
 ||yalingba.com/ggtxjs/
 ||yallarec.com^
@@ -122783,6 +122785,7 @@ zzpzero.com
 ||yanu.qiniudn.com/270300.jpg
 ||yanyanbiji.com^
 ||yaodianzhineng.cn^
+||yaofaweb.xyz^
 ||yaohq.com^
 ||yaojingweiba.com/inc/
 ||yaokuan01.cn^
@@ -123266,6 +123269,7 @@ zzpzero.com
 ||ymapp.com^
 ||ymcdn.cn^
 ||ymcqb.com^
+||ymdxxkj.icu^
 ||ymetrica1.com^$third-party
 ||ymlykj.com/nuxt/static/liveBanner.jpg
 ||ymprove.web.de^
@@ -125546,7 +125550,6 @@ zzpzero.com
 52avhd.com###a3
 52bdys.com###ayx
 52bdys.com##center[style*="background"]
-52bdys.com##div[onclick]
 52bdys.com##div[style^="position: fixed;bottom:"]
 52biquge.com##[onclick*="app"]
 52biquge.com##a[href^="http://html.350.com/"]
