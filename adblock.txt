@@ -4,8 +4,8 @@
 ! Powerd by CatsTeam
 ! Expires: 8 Hours
 ! Description: 该规则合并自My AdFilters（for PC）、EdentwCustom、adgk、ClearUrl等，并补充了一些规则
-! Version: 2022-02-11 15:27:15（北京时间） 
-! Total count: 126577
+! Version: 2022-02-11 15:32:04（北京时间） 
+! Total count: 126582
 -1688-wp-media/ads/
 -988x60.
 -980x60-
@@ -18214,6 +18214,7 @@
 ##.header-banner-advertising
 ##.header-bannerad
 ##.header-blocked-ad
+##.header-content-ad-container
 ##.header-google-ads
 ##.header-google-adsense970
 ##.header-menu-horizontal-ads
@@ -26883,6 +26884,7 @@ $~xmlhttprequest,~media,removeparam=source,denyallow=googlevideo.com,domain=1sol
 */statics/js/hth1111.html
 */svnad/$image,script
 */web/js/th/$domain=cam4.com
+*/widget/spage_game_tab/$domain=tieba.baidu.com
 *ContentAD.
 *H5Logic_
 *[STATUS]*
@@ -59764,6 +59766,7 @@ tieba.baidu.com##.dia_wrapper
 tieba.baidu.com##.father-cut-daoliu-normal-box
 tieba.baidu.com##.father-cut-recommend-normal-box
 tieba.baidu.com##.footer
+tieba.baidu.com##.forum_recommend_w
 tieba.baidu.com##.frs_pb_leadapp_pop_show
 tieba.baidu.com##.hongbao_page_pop_common
 tieba.baidu.com##.img-open-app
@@ -108825,6 +108828,7 @@ zzpzero.com
 ||share-image.com/borky/
 ||share-online.biz/affiliate/$third-party
 ||share-server.com^
+||share.baidu.com/static/js/
 ||share.dmhy.org^*.*?$image
 ||share.gzdsw.com^
 ||share44.com/300
@@ -121602,6 +121606,7 @@ zzpzero.com
 ||wywvyf.discuss.com.hk^
 ||wywy.com^$third-party
 ||wyxcb6.top^
+||wyykxyp.cn^
 ||wyzq.rehuwang.com^
 ||wyzxn.cn^
 ||wz.allianz.fr^
