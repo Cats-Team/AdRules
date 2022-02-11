@@ -2,7 +2,7 @@
 cd script/adblock/src
 
 # Start Download
-curl -o i1.txt https://raw.githubusercontent.com/o0HalfLife0o/list/master/ad-pc.txt
+curl -o i1.txt https://raw.githubusercontent.com/o0HalfLife0o/list/master/ad-mo.txt
 curl -o i2.txt https://raw.githubusercontent.com/o0HalfLife0o/list/master/ad-edentw.txt
 curl -o i3.txt https://raw.githubusercontent.com/banbendalao/ADgk/master/ADgk.txt
 curl -o i4.txt https://raw.githubusercontent.com/banbendalao/ADgk/master/kill-baidu-ad.txt
