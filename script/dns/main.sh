@@ -22,8 +22,11 @@ cat host.txt | sed 's/127.0.0.1 /||/' | sed 's/0.0.0.0 /||/' | sed "s/$/&^/g" | 
 cat jiekouAD.txt | grep -Ev '#|\$|@|!|/|\\|\*'| sed "s/^/||&/g" |sed "s/$/&^/g" >> damian.txt #大萌主规则处理
 cat adblock.txt hosts.txt brules.dd damian.txt > new.txt
 cat new.txt | grep '|\|@' | grep -v '.#' | grep -v '.?' | grep -v '.=' | grep -v '.]'| grep -v '^!' | grep -v 'local' | grep -v '/' | grep -v '\^|' | grep -v '\^\*'| sed '/^$/d' > tmpp.txt
-sort -n tmpp.txt | uniq > tmp.txt
+sort -n tmpp.txt | uniq > tmmp.txt
 
+# Remove Error Rules
+cat tmmp.txt errdamian.dd > ttmp.txt 
+sort -n ttmp.txt | uniq -u > tmp.txt
 
 # Start Count Rules
 num=`cat tmp.txt | wc -l`
