@@ -4,8 +4,8 @@
 ! Powerd by CatsTeam
 ! Expires: 8 Hours
 ! Description: 该规则合并自My AdFilters（for PC）、EdentwCustom、adgk、ClearUrl等，并补充了一些规则
-! Version: 2022-02-12 00:15:35（北京时间） 
-! Total count: 126603
+! Version: 2022-02-12 08:47:29（北京时间） 
+! Total count: 126606
 -1688-wp-media/ads/
 -988x60.
 -980x60-
@@ -26197,6 +26197,7 @@ $removeparam=onetime_FromEmail
 $removeparam=oq,domain=google.*
 $removeparam=orgRef,domain=lenovo.com
 $removeparam=organic_search_click
+$removeparam=organic_search_click,domain=etsy.com
 $removeparam=orig_referrer
 $removeparam=origin,denyallow=platform.twitter.com,domain=yle.fi|flaticon.com|drop.com|symbolab.com|archive.org|norton.com|philips.*|nordstrom.com
 $removeparam=origin,domain=yle.fi
@@ -41321,12 +41322,14 @@ $~xmlhttprequest,~media,removeparam=source,denyallow=googlevideo.com,domain=1sol
 @@$removeparam,domain=api.bilibili.com
 @@$removeparam,domain=api.taiga.io
 @@$removeparam,domain=authorization.td.com
+@@$removeparam,domain=github.com
 @@$removeparam,domain=kreditkarten-banking.lbb.de
 @@$removeparam,domain=login.ingbank.pl
 @@$removeparam,domain=login.progressive.com
 @@$removeparam,domain=myaccount.google.*
 @@$removeparam,domain=support.steampowered.com
 @@$removeparam,domain=www.contestgirl.com
+@@$removeparam,domain=www.mma.go.kr
 @@$removeparam,domain=www.tinkoff.ru
 @@&adurl=http://$domain=360bifen.cc|360bifen.com
 @@-social-bar.$domain=mobi.yahoo.com
