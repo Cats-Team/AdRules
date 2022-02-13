@@ -4,8 +4,8 @@
 ! Powerd by CatsTeam
 ! Expires: 8 Hours
 ! Description: 该规则合并自My AdFilters（for PC）、EdentwCustom、adgk、ClearUrl等，并补充了一些规则
-! Version: 2022-02-13 08:47:20（北京时间） 
-! Total count: 126696
+! Version: 2022-02-13 10:18:36（北京时间） 
+! Total count: 126708
 -1688-wp-media/ads/
 -988x60.
 -980x60-
@@ -25039,6 +25039,7 @@
 ##div[itemtype="http://schema.org/WPAdBlock"]
 ##div[itemtype="http://www.schema.org/WPAdBlock"]
 ##div[jsdata*="CarouselPLA-"][data-id^="CarouselPLA-"]
+##div[onclick*=".8tse9.com"]
 ##div[onclick*=".rwnyou.com"]
 ##div[onclick^="window.location.href"][onclick*=".bcebos."]
 ##div[onclick^="window.location.href"][onclick*=".haoyundm.com"]
@@ -43089,7 +43090,7 @@ $~xmlhttprequest,~media,removeparam=source,denyallow=googlevideo.com,domain=1sol
 @@||googletagmanager.com/gtag/js$script,domain=timparty.tim.it
 @@||googletagmanager.com/gtag/js$script,domain=xl-bygg.no
 @@||googletagmanager.com/gtag/js?id=$domain=av01.tv
-@@||googletagmanager.com/gtm.js$domain=acehardware.com|ads.spotify.com|atptour.com|bsa-whitelabel.com|chipotle.com|complex.com|crello.com|cyclingnews.com|cypress.io|easternbank.com|fortune.com|kedronparkhotel.com.au|nflgamepass.com|nordvpn.com|petsathome.com|pioneer.eu|royalbank.com|scotsman.com|soundguys.com|stressless.com|support.creative.com|trademe.co.nz
+@@||googletagmanager.com/gtm.js$domain=acehardware.com|ads.spotify.com|atptour.com|bsa-whitelabel.com|chipotle.com|complex.com|crello.com|cyclingnews.com|cypress.io|doodle.com|easternbank.com|fortune.com|kedronparkhotel.com.au|nflgamepass.com|nordvpn.com|petsathome.com|pioneer.eu|royalbank.com|scotsman.com|soundguys.com|stressless.com|support.creative.com|trademe.co.nz
 @@||googletagmanager.com/gtm.js$domain=asus.com.cn|support.amd.com
 @@||googletagmanager.com/gtm.js$domain=asus.com.cn|support.amd.com|warnermusic.com.tw
 @@||googletagmanager.com/gtm.js$domain=besplatka.ua|cdek.ru|glamusha.ru|rustih.ru|sportmaster.ru|teddyfood.com
@@ -58748,6 +58749,7 @@ sm.cn##.oab-ball-wrap
 sm.cn##A.sc-title,A.app-wrap,DIV.app-rank app-no-trend sc-padding,DIV.sc-footer,A.uc-download-channel,#ad_*
 sm.cn##a[href^="http://m.sm.cn/adclick?"]
 sm.cn##div[id*="_Shopping_Etao_"]
+sm.cn##div[id^="ad_ele_"]
 sm.cn##div[id^="dl-banner-"]
 sm.ms##.advertising_1
 sm.ms##.advertising_2
@@ -60226,6 +60228,7 @@ tubeoffline.com##a[href^="https://www.xvinlink.com/?a_"]
 tubepornclassic.com##.___it0h1l3u2se2lo
 tuberel.com##.fel-list
 tuberel.com##.vda-item
+tucao.one###t5
 tucao.one##a[href*="/index.php?m=poster&"]
 tucao.one##div[class^="c_c"]
 tucao.one##div[style*="height:10"][style*="width:964"]
@@ -72896,6 +72899,7 @@ zzpzero.com
 ||banners.penthouse.com^
 ||banners.videosecrets.com^
 ||bannershotlink.perfectgonzo.com^
+||bannersmall.com^$third-party
 ||bannersmania.com^$third-party
 ||bannersnack.com^$third-party,domain=~bannersnack.dev
 ||bannersnack.net^$third-party,domain=~bannersnack.dev
@@ -86328,6 +86332,7 @@ zzpzero.com
 ||gg.gw032.com^
 ||gg.huahaimi.work^
 ||gg.kugou.com^
+||gg.miinaa.com^
 ||gg.miued.com^
 ||gg.sonhoo.com^
 ||gg.uuu9.com^
@@ -99350,6 +99355,7 @@ zzpzero.com
 ||mzokqm.cn^
 ||mzol7lbm.com^
 ||mzwfu.xyz^
+||mzwfw.club^
 ||mzxun.com^
 ||mzy2014.com^$third-party
 ||mzya5718.xyz^
@@ -107398,6 +107404,7 @@ zzpzero.com
 ||ryshekeha.com^
 ||rysubmission.biz^
 ||ryturtviaqcana.xyz^
+||rywnvzd.cn^
 ||rywoments.info^
 ||ryxfyjvcdugdf.com^
 ||ryynoljdarrw.com^
@@ -113535,6 +113542,7 @@ zzpzero.com
 ||svoywu.autoscout24.de^
 ||svsub.com^
 ||svtrd.com^$third-party
+||svvbrkk.cn^
 ||svwsvn.top^
 ||svyksa.info^
 ||sw2block.com^
@@ -117292,6 +117300,7 @@ zzpzero.com
 ||tubeviral.com/visitScript/$script,third-party
 ||tucao.one/uploadfile/*/ch.gif
 ||tucao.one/uploadfile/20*/20*.gif
+||tucao.one/uploadfile/2022/0211/t5.
 ||tudotecnologia.site^
 ||tudouui.com/tspecial/assets/PauseContainer.swf
 ||tudown.com/
@@ -120354,6 +120363,7 @@ zzpzero.com
 ||whexamipta.com^
 ||whezogrewha.com^
 ||whfpbc.99.com.cn^
+||whfyhouse.com^
 ||whhd.gov.cn^$script,third-party
 ||whhepyd.cn^
 ||whhxnz.com^
@@ -122270,6 +122280,7 @@ zzpzero.com
 ||xkqpco.com^
 ||xkunjfkb.com^
 ||xkyn.com/imgs/js/xx.js
+||xkzjq.cn^
 ||xl.pt/api/stats.ashx?
 ||xl4z7.cn^
 ||xl720.com/tmp/
@@ -124015,6 +124026,7 @@ zzpzero.com
 ||zdtag.com^$third-party
 ||zdw.w8.com.cn/p.ht?
 ||zdwgpb.moblum.com^
+||zdwsh.tech^
 ||zdyldoijanx.com^
 ||zdzdm.com/static/img/*ljs.jpg
 ||zdzk0371.cn^
