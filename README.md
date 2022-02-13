@@ -4,8 +4,8 @@
 - 注意：本项目规则具有一定的误杀请思考再三再使用
 - 并且本项目部分规则引入由本团队添加的黑白名单 
 - 具体请看↓
-- [AdRules for adblock 所添加的规则](https://github.com/Cats-Team/AdRules/blob/main/script/adblock/src/user-rules.dd)  
-- [AdRules for DNS添加的黑白名单](https://github.com/Cats-Team/AdRules/blob/main/script/dns/src/user-rules.dd)
+- [AdRules For Adblock 所添加的规则](https://github.com/Cats-Team/AdRules/blob/main/script/adblock/src/user-rules.dd)  
+- [AdRules For DNS添加的黑白名单](https://github.com/Cats-Team/AdRules/blob/main/script/dns/src/brule.dd)
 
 *除此之外本项目还提供一些规则的cdn链接*  
 *具体看[Mirror.md](/mirror.md)*
