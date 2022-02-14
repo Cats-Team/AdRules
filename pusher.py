@@ -18,8 +18,12 @@ count_a = iter_count("adguard.txt") -8
 count_al = iter_count("allow.txt") -8
 count_A = iter_count("adblock.txt") -8
 count_d = iter_count("dns.txt") -8
+count_ad = iter_count("hosts.txt") -6
+count_damian = iter_count("damian.txt") -2
 
-CONTENT = 'AdRules规则更新完毕！ 来自Github~<br>allow.txt共计' + str(count_al) + '条规则，<br>adguard.txt共计' + str(count_a) + '条规则，<br>adblock共计' + str(count_A) + '条规则，<br>dns.txt共计' + str(count_d) + '条规则。'
+
+
+CONTENT = 'AdRules规则更新完毕！ 来自Github~<br>Allowlist共计' + str(count_al) + '条规则，<br>AdRules (For AdGuard)共计' + str(count_a) + '条规则，<br>AdRules (For AdBlock)共计' + str(count_A) + '条规则，<br>AdRules (For DNS)共计' + str(count_d) + '条规则。'，<br>AdRules (For Adaway)共计' + str(count_ad) + '条规则，<br>广告damian共计' + str(count_damian) + '个。'
 
 #def post_tg(message):
 #    telegram_message = f"{message}"
