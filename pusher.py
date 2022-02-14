@@ -29,7 +29,7 @@ tz_utc_8 = timezone(timedelta(hours=8))
 now = datetime.now()
 
 
-CONTENT = 'AdRules规则更新完毕！ 来自Github~<br>Allowlist共计' + str(count_al) + '条规则，<br>AdRules (For AdGuard)共计' + str(count_a) + '条规则，<br>AdRules (For AdBlock)共计' + str(count_A) + '条规则，<br>AdRules (For DNS)共计' + str(count_d) + '条规则，<br>AdRules (For Adaway)共计' + str(count_ad) + '条规则，<br>广告damian共计' + str(count_damian) + '个。<br>更新时间' + str(now.strftime('%Y-%m-%d %H:%M:%S')) '
+CONTENT = 'AdRules规则更新完毕！ 来自Github~<br>Allowlist共计' + str(count_al) + '条规则，<br>AdRules (For AdGuard)共计' + str(count_a) + '条规则，<br>AdRules (For AdBlock)共计' + str(count_A) + '条规则，<br>AdRules (For DNS)共计' + str(count_d) + '条规则，<br>AdRules (For Adaway)共计' + str(count_ad) + '条规则，<br>广告damian共计' + str(count_damian) + '个。<br>更新时间' + str(now.strftime('%Y-%m-%d %H:%M:%S')) '（北京时间）'
 
 #def post_tg(message):
 #    telegram_message = f"{message}"
