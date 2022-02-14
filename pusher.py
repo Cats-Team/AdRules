@@ -4,8 +4,8 @@ import json
 import os
 
 PUSH_TOKEN = os.environ["SCKEY"]
-TG_TOKEN = os.environ["TG_TOKEN"]
-CHAT_ID = os.environ["CHAT_ID"]
+#TG_TOKEN = os.environ["TG_TOKEN"]
+#CHAT_ID = os.environ["CHAT_ID"]
 
 def iter_count(file_name):
     from itertools import (takewhile, repeat)
@@ -16,26 +16,26 @@ def iter_count(file_name):
 
 count_a = iter_count("adguard.txt") -8
 count_al = iter_count("allow.txt") -8
-count_A = iter_count("AdKillRules.txt") -8
+count_A = iter_count("adblock.txt") -8
 count_d = iter_count("dns.txt") -8
 
-CONTENT = 'AdRules规则更新完毕，来自Github~<br>allow.txt共计' + str(count_al) + '条规则，<br>adguard.txt共计' + str(count_a) + '条规则，<br>AdKillRules共计' + str(count_A) + '条规则，<br>dns.txt共计' + str(count_d) + '条规则。'
+CONTENT = 'AdRules规则更新完毕！ 来自Github~<br>allow.txt共计' + str(count_al) + '条规则，<br>adguard.txt共计' + str(count_a) + '条规则，<br>adblock共计' + str(count_A) + '条规则，<br>dns.txt共计' + str(count_d) + '条规则。'
 
-def post_tg(message):
-    telegram_message = f"{message}"
-    params = (
-        ('chat_id', CHAT_ID),
-        ('text', telegram_message),
-        ('parse_mode', "Html"),
-        ('disable_web_page_preview', "yes")
-    )
-    telegram_url = "https://api.telegram.org/bot" + TG_TOKEN + "/sendMessage"
-    telegram_req = requests.post(telegram_url, params=params)
-    telegram_status = telegram_req.status_code
-    if telegram_status == 200:
-        print(f"INFO: Telegram Message sent")
-    else:
-        print(telegram_status)
+#def post_tg(message):
+#    telegram_message = f"{message}"
+#    params = (
+#        ('chat_id', CHAT_ID),
+#        ('text', telegram_message),
+#        ('parse_mode', "Html"),
+#        ('disable_web_page_preview', "yes")
+#    )
+#    telegram_url = "https://api.telegram.org/bot" + TG_TOKEN + "/sendMessage"
+#    telegram_req = requests.post(telegram_url, params=params)
+#    telegram_status = telegram_req.status_code
+#    if telegram_status == 200:
+#        print(f"INFO: Telegram Message sent")
+#    else:
+#        print(telegram_status)
 
 def post_pp():
     TITLE = 'AdRules'
@@ -49,5 +49,5 @@ def post_pp():
     headers = {'Content-Type':'application/json'}
     requests.post(url, data=body, headers=headers)
 
-post_tg(CONTENT)
+#post_tg(CONTENT)
 post_pp()
