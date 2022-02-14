@@ -4,8 +4,8 @@
 ! Powerd by CatsTeam
 ! Expires: 8 Hours
 ! Description: 该规则合并自My AdFilters（for PC）、EdentwCustom、adgk、ClearUrl等，并补充了一些规则
-! Version: 2022-02-14 16:14:22（北京时间） 
-! Total count: 126753
+! Version: 2022-02-15 00:16:03（北京时间） 
+! Total count: 126764
 -1688-wp-media/ads/
 -988x60.
 -980x60-
@@ -21435,6 +21435,7 @@
 ##.sidebar-ad-container-2
 ##.sidebar-ad-container-3
 ##.sidebar-ad-div
+##.sidebar-ad-label
 ##.sidebar-ad-left
 ##.sidebar-ad-rect
 ##.sidebar-ad-right
@@ -23579,6 +23580,7 @@
 ##[href*="//securesafemembers.com"]
 ##[href*="//trackmstr.com"]
 ##[href*="//trackout.business"]
+##[href*="/entry/register/?i_code="]
 ##[href*="cadsecs.com/"]
 ##[href*="get-download.club/"]
 ##[href*="https://www.jmbullion.com/gold/"]
@@ -34931,7 +34933,6 @@ $~xmlhttprequest,~media,removeparam=source,denyallow=googlevideo.com,domain=1sol
 /getTextAD.
 /getThirdPartyTracking?
 /getTotalHits.
-/getViewBeans.action?
 /get_ad_
 /get_adds_
 /get_ads.
@@ -39645,6 +39646,7 @@ $~xmlhttprequest,~media,removeparam=source,denyallow=googlevideo.com,domain=1sol
 /track/PartnerAnalyzerPageRequest?
 /track/aggregate?
 /track/alooma-
+/track/attention-event
 /track/batch?
 /track/client-event/*
 /track/client-events
@@ -41383,6 +41385,7 @@ $~xmlhttprequest,~media,removeparam=source,denyallow=googlevideo.com,domain=1sol
 @@/Advertisement.css$stylesheet,domain=openload.co|openload.io|openload.tv
 @@/BTVQRA6OS11SO6ARQVTB/*.php$script,domain=up2stream.com
 @@/BTVQRA6OS11SO6ARQVTB/*.php$script,domain=videomega.tv
+@@/WebAd/*$domain=yongyoujia.com
 @@/^https?:\/\/([a-z0-9-\.])*drive\.google\.com\/videoplayback/$removeparam
 @@/^https?:\/\/([a-z0-9-]+\.)*?(cloudflare\.com|prismic\.io|tangerine\.ca|gitlab\.com)/$removeparam
 @@/^https?:\/\/([a-z0-9-]+\.)*?amazon(\.[a-z]{2,}){1,}\/(hz\/reviews-render\/ajax\/|message-us\?|s\?)/$removeparam
@@ -42822,6 +42825,7 @@ $~xmlhttprequest,~media,removeparam=source,denyallow=googlevideo.com,domain=1sol
 @@||ez3c.tw^$generichide
 @@||ezoic.net/detroitchicago/cmb.js$script,domain=gerweck.net
 @@||ezsoftwarestorage.com^$image,media,domain=ezfunnels.com
+@@||f-droid.org/assets/Ads_$~third-party
 @@||f11.baidu.com/it^
 @@||facebook.com/ads/profile/$~third-party,xmlhttprequest
 @@||facebook.com/groups/member_bio/bio_dialog/$removeparam
@@ -43586,6 +43590,7 @@ $~xmlhttprequest,~media,removeparam=source,denyallow=googlevideo.com,domain=1sol
 @@||manageengine.com/products/ad-manager/$~third-party
 @@||manga-news.com/js/advert.js$script
 @@||manhua.weibo.com/adv/
+@@||manhwaid.org^$generichide
 @@||marketingsolutions.com.pl^*/googleanalytics-$image,domain=marketingsolutions.com.pl
 @@||marketscreener.com/search/?$removeparam
 @@||marktest.pt/netscope-gemius.js$script,domain=ojogo.pt
@@ -46089,7 +46094,7 @@ acgzone.us##DIV#page > DIV[style^="width:960px;height:"],a[href^="http://www.S99
 ackcdn.net
 acomics.ru##div[style*="/design/common/pic/please"]
 acprimetime.com,brigantinenow.com,downbeachbuzz.com##.widget_sp_image
-actionz.tv,cimaclub.com,cimaclub.in,elmstba.com,hawak.net,hawak.tv,lodynet.co,lodynet.tv,rotana.video#$#abort-on-property-read decodeURIComponent
+actionz.tv,cimaclub.com,cimaclub.in,elmstba.com,hawak.net,hawak.tv,lodynet.co,lodynet.dev,lodynet.live,lodynet.tv,rotana.video#$#abort-on-property-read decodeURIComponent
 active.com###med_rec_bottom
 active.com###med_rec_top
 activity.hnhnmg.com
@@ -46472,7 +46477,7 @@ anime-planet.com##.halo
 anime-shinden.info#@##ads_video
 anime.anidub.life,myanime.online,online.anidub.com#?#div[style^="position: fixed;"]:-abp-has(> :-abp-contains(Обнаружена блокировка рекламы))
 anime4fun.com###hover
-anime4up.com,arabseed.me,baramjak.com,egynow.live,hawak.net,movizland.com,movizland.online,egyanime.com,egydead.com,egydead.live,yalla-shoot.today#$#abort-current-inline-script String.fromCharCode /atob|btoa|break/; abort-current-inline-script Math /atob|btoa|break/
+anime4up.com,arabseed.me,baramjak.com,egynow.live,faselhd.top,hawak.net,movizland.com,movizland.online,egyanime.com,egydead.com,egydead.live,yalla-shoot.today#$#abort-current-inline-script String.fromCharCode /atob|btoa|break/; abort-current-inline-script Math /atob|btoa|break/
 animecharactersdatabase.com##.promobanner
 animedao.to##.gads
 animedub.ru##.poverh
@@ -48527,7 +48532,7 @@ ci123.com##div[onclick^="window.location="]
 ciiradio.com,hapskorea.com,thetruthwins.com##img[height="300"]
 cilil.cn,magnet2048.com##.hotwords
 cilimao.co,cilimao.one##div[class^="FixBanner"]
-cima-club.cc,egy.best,egybest.asia,egybest.bid,egybest.biz,egybest.cheap,egybest.co,egybest.com,egybest.cool,egybest.fail,egybest.life,egybest.ltd,egybest.ist,egybest.name,egybest.net,egybest.network,egybest.ninja,egybest.nl,egybest.online,egybest.org,egybest.pw,egybest.rocks,egybest.site,egybest.xyz,egybest.zone,egybest2.com,iegy.best#$#abort-on-property-read open
+cima-club.cc,egy.best,egybest.asia,egybest.bid,egybest.biz,egybest.cheap,egybest.co,egybest.com,egybest.cool,egybest.fail,egybest.life,egybest.ltd,egybest.ist,egybest.name,egybest.net,egybest.network,egybest.ninja,egybest.nl,egybest.online,egybest.org,egybest.pw,egybest.rocks,egybest.site,egybest.xyz,egybest.zone,egybest2.com,faselhd.top,iegy.best#$#abort-on-property-read open
 cinemablend.com#@#.adsbox
 cinemablend.com#@#.adsense
 cinemablend.com#@#.adslot
@@ -49564,8 +49569,7 @@ dj6u.com##.banner,.banner_text
 dj92cc.com,djkk.com,tingqq.com#@#.share_list
 djwma.com###logo
 dk.zeronethree.xyz
-dl-protect.best,dl-protect.top,dl-protect.xyz,dl-protect1.com,ed-protect.org,extreme-down.in,extreme-down.link,extreme-down.live,extreme-down.ninja,extreme-down.one,extreme-down.pro,extreme-down.top,extreme-down.tv,extreme-down.video,extreme-down.work,extreme-down.xyz,extreme-download.im,extreme-download.ninja,extreme-download.xyz,french-stream.re,french-stream.run,hdss.la,hdss.to,japscan.cc,japscan.com,japscan.se,japscan.to,japscan.ws,jetanimes.co,jetanimes.com,lelscan-vf.co,one-piece-streaming-vostfr.com,streaming-vostfr.net,streamingfrance.com,summarynetworks.com,toonanime.cc,toonanime.tv,toonanime.xyz,torrent9.si,vostfree.com,wawacity.bz,wawacity.co,wawacity.ec,wawacity.ninja,wawacity.vip#$#abort-current-inline-script Math /atob|btoa|break/
-dl-protect.best,dl-protect.top,dl-protect.xyz,dl-protect1.com,ed-protect.org,extreme-down.plus,extreme-down.site,extreme-down.blue,extreme-down.in,extreme-down.link,extreme-down.live,extreme-down.ninja,extreme-down.one,extreme-down.pro,extreme-down.top,extreme-down.tv,extreme-down.video,extreme-down.work,extreme-down.xyz,extreme-download.im,extreme-download.ninja,extreme-download.xyz,french-stream.re,french-stream.run,hdss.la,hdss.to,japscan.cc,japscan.com,japscan.se,japscan.to,japscan.ws,jetanimes.co,jetanimes.com,lelscan-vf.co,one-piece-streaming-vostfr.com,streaming-vostfr.net,streamingfrance.com,summarynetworks.com,toonanime.cc,toonanime.tv,toonanime.xyz,torrent9.si,vostfree.com,wawacity.bz,wawacity.co,wawacity.ec,wawacity.ninja,wawacity.vip#$#abort-current-inline-script String.fromCharCode /atob|btoa|break/
+dl-protect.best,dl-protect.top,dl-protect.xyz,dl-protect1.com,ed-protect.org,extreme-down.blue,extreme-down.in,extreme-down.link,extreme-down.live,extreme-down.ninja,extreme-down.one,extreme-down.plus,extreme-down.pro,extreme-down.site,extreme-down.top,extreme-down.tv,extreme-down.video,extreme-down.work,extreme-down.xyz,extreme-download.im,extreme-download.ninja,extreme-download.xyz,french-stream.re,french-stream.run,hdss.la,hdss.to,japscan.cc,japscan.com,japscan.se,japscan.to,japscan.ws,jetanimes.co,jetanimes.com,lelscan-vf.co,one-piece-streaming-vostfr.com,streaming-vostfr.net,streamingfrance.com,summarynetworks.com,toonanime.cc,toonanime.tv,toonanime.xyz,torrent9.si,voirseries.io,vostfree.com,wawacity.bz,wawacity.co,wawacity.ec,wawacity.ninja,wawacity.vip#$#abort-current-inline-script String.fromCharCode /atob|btoa|break/; abort-current-inline-script Math /atob|btoa|break/
 dl.pconline.com.cn##.box-push
 dl.pconline.com.cn##.dlTips
 dl.pconline.com.cn##.links > p:not([class])
@@ -53531,7 +53535,7 @@ jdyou.com###popWrap
 jeasyui.net###carousel-example-generic,.adsbygoogle
 jeepforum.com##table[width="468"]
 jeja.pl#@##bottomAd
-jetanimes.co,jetanimes.com#$#abort-on-property-read open
+jetanimes.co,jetanimes.com,voirseries.io#$#abort-on-property-read open
 jetetroll.com#@##adsense
 jetradar.pl##.ng-scope.no_adblock_wrapper
 jeuxactu.com###infoBlock
@@ -54218,6 +54222,7 @@ kmf.com##.g-kmf-906banner
 kmg.fshanys-vip.top
 kmr.jiujigroup.top
 kmr.yhjzg.cn
+kmt.xkzjq.cn
 kmt.zhwpg.cn
 kn.zhangdujia.com
 knowlet3389.blogspot.com,knowlet3389.blogspot.hk,knowlet3389.blogspot.jp,knowlet3389.blogspot.tw#@##gAds
@@ -63684,6 +63689,7 @@ zzpzero.com
 ||0b9d84d93f1b.com^
 ||0bc.top^
 ||0byv9mgbn0.com^$popup
+||0c6fb44787.com^
 ||0ci.top^
 ||0d077ef9e74d8.cdn.sohucs.com^*_gif
 ||0dbcf515975d.com^
@@ -66177,6 +66183,7 @@ zzpzero.com
 ||8603887.com^
 ||861ht.com^
 ||863my.com^
+||864db374c6.com^
 ||864feb57ruary.com^
 ||86695755.cn^
 ||8684.cn/id/ad_
@@ -84640,6 +84647,8 @@ zzpzero.com
 ||firescorrelationprodigy.com^$popup
 ||fireworkadservices.com^$third-party
 ||fireworkanalytics.com^$third-party
+||fireworkapi.com^$third-party
+||fireworktv.com^$third-party
 ||firexclamation.com^
 ||firingair.com^
 ||firon.xyz^
@@ -91992,6 +92001,7 @@ zzpzero.com
 ||jia.com/js/zixun/news.js
 ||jia.com/js/zixun/zixun_
 ||jiachangwuliu.cn^
+||jiage.ink^
 ||jiahewine.cn^
 ||jiaheyonggu.com^
 ||jiajiann.cn^
@@ -122080,6 +122090,7 @@ zzpzero.com
 ||xiancn.com^*/adv_content/
 ||xiandafood.cn^
 ||xiangai365.com/ad_js/
+||xianggouwu.vip^
 ||xiangjiao.xxx/js/$script
 ||xiangkantv.cn^
 ||xianglong360.cn^
@@ -123960,7 +123971,7 @@ zzpzero.com
 ||zampad.com^$third-party
 ||zampda.net^$third-party
 ||zampdsp.com^$third-party
-||zanghaihua.org^
+||zanghaihua.org/js/
 ||zangocash.com^
 ||zangtui.com^
 ||zanox-affiliate.de/ppv/$third-party
