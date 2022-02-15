@@ -3,7 +3,7 @@ import requests
 import json
 import os
 import re
-import datetime
+import time
 from datetime import datetime, timezone, timedelta
 
 PUSH_TOKEN = os.environ["SCKEY"]
@@ -27,7 +27,7 @@ count_damian = iter_count("damian.txt") -2
 #设置时区
 #tz_utc_8 = timezone(timedelta(hours=8))
 #设置时间
-time = datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S')
+time = (time.strftime('%Y-%m-%d %H:%M:%S',time.localtime(time.time())))       # 打印按指定格式排版的时间
 
 
 
