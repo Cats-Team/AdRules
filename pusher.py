@@ -7,6 +7,8 @@ import time
 from datetime import datetime, timezone, timedelta
 
 PUSH_TOKEN = os.environ["SCKEY"]
+PUSH_PUSH = os.environ["PUSH_PUSH"]
+MAILCHANNEL = "mail"
 #TG_TOKEN = os.environ["TG_TOKEN"]
 #CHAT_ID = os.environ["CHAT_ID"]
 
@@ -57,12 +59,25 @@ CONTENT = 'AdRules规则更新完毕！ 来自Github~<br>更新时间 ' + str(ti
 #        print(telegram_status)
 
 def post_pp():
-    TITLE = 'AdRules'
+    TITLE = 'AdRules更新通知'
     url = 'http://pushplus.hxtrip.com/send'
     data = {
 		  "token":PUSH_TOKEN,
 		  "title":TITLE,
 		  "content":CONTENT
+        }
+    body = json.dumps(data).encode(encoding = 'utf-8')
+    headers = {'Content-Type':'application/json'}
+    requests.post(url, data=body, headers=headers)
+	
+def post_ppp():
+    TITLE = 'AdRules更新通知'
+    url = 'http://www.pushplus.plus/send'
+    data = {
+		  "token":PUSH_PUSH,
+		  "title":TITLE,
+		  "content":CONTENT,
+	          "channel":MAILCHANNEL
         }
     body = json.dumps(data).encode(encoding = 'utf-8')
     headers = {'Content-Type':'application/json'}
