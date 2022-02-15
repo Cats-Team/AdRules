@@ -25,7 +25,10 @@ count_ad = iter_count("hosts.txt") -6
 count_damian = iter_count("damian.txt") -2
 
 #设置时区
-tz_utc_8 = timezone(timedelta(hours=8))
+#tz_utc_8 = timezone(timedelta(hours=8))
+now_time = datetime.now()
+
+tz_utc_8 = now_time - timedelta(hours=8)
 #设置时间
 #time = (time.strftime('%Y-%m-%d %H:%M:%S',time.localtime(time.time())))       # 打印按指定格式排版的时间
 time = tz_utc_8.strftime("%Y-%m-%dT%H:%M:%S")
