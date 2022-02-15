@@ -85,3 +85,4 @@ def post_ppp():
 
 #post_tg(CONTENT)
 post_pp()
+post_ppp()
