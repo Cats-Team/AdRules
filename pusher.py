@@ -33,8 +33,12 @@ tz_utc_8 = now_time + timedelta(hours=8)
 #time = (time.strftime('%Y-%m-%d %H:%M:%S',time.localtime(time.time())))       # 打印按指定格式排版的时间
 time = tz_utc_8.strftime("%Y-%m-%d %H:%M:%S")
 
+#一言
+api_url = 'https://v1.hitokoto.cn/?&encode=text'
+one = requests.get(api_url)
 
-CONTENT = 'AdRules规则更新完毕！ 来自Github~<br>Allowlist共计' + str(count_al) + '条规则，<br>AdRules (For AdGuard)共计' + str(count_a) + '条规则，<br>AdRules (For AdBlock)共计' + str(count_A) + '条规则，<br>AdRules (For DNS)共计' + str(count_d) + '条规则，<br>AdRules (For Adaway)共计' + str(count_ad) + '条规则，<br>广告damian共计' + str(count_damian) + '个。<br>更新时间' + str(time) + '（北京时间）'
+
+CONTENT = 'AdRules规则更新完毕！ 来自Github~<br>更新时间' + str(time) + '（北京时间）<br>Allowlist共计' + str(count_al) + '条规则，<br>AdRules (For AdGuard)共计' + str(count_a) + '条规则，<br>AdRules (For AdBlock)共计' + str(count_A) + '条规则，<br>AdRules (For DNS)共计' + str(count_d) + '条规则，<br>AdRules (For Adaway)共计' + str(count_ad) + '条规则，<br>广告damian共计' + str(count_damian) + '个。<br>一言：<br>' + str(one.text)
 
 #def post_tg(message):
 #    telegram_message = f"{message}"
