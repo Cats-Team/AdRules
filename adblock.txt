@@ -4,8 +4,8 @@
 ! Powerd by CatsTeam
 ! Expires: 8 Hours
 ! Description: 该规则合并自My AdFilters（for PC）、EdentwCustom、adgk、ClearUrl等，并补充了一些规则
-! Version: 2022-02-15 20:18:58（北京时间） 
-! Total count: 126820
+! Version: 2022-02-15 20:57:50（北京时间） 
+! Total count: 126829
 -1688-wp-media/ads/
 -988x60.
 -980x60-
@@ -39847,6 +39847,7 @@ $~xmlhttprequest,~media,removeparam=source,denyallow=googlevideo.com,domain=1sol
 /tracking/adobe.js
 /tracking/adobe/*
 /tracking/ads.
+/tracking/airdog
 /tracking/analytics/*
 /tracking/article.
 /tracking/article/*
@@ -39873,6 +39874,7 @@ $~xmlhttprequest,~media,removeparam=source,denyallow=googlevideo.com,domain=1sol
 /tracking/impression
 /tracking/index.
 /tracking/ipify
+/tracking/jitney/*
 /tracking/json2.
 /tracking/log.php?
 /tracking/log?
@@ -44770,6 +44772,7 @@ $~xmlhttprequest,~media,removeparam=source,denyallow=googlevideo.com,domain=1sol
 @@||tvb.com/player/*/videojs.ads.
 @@||tvb.com/social/share_
 @@||tvb.com^*/videojs.ads.
+@@||tvcom-static.ssl.cdn.cra.cz/*/videojs.ga.js$script,domain=tvcom.cz
 @@||tvseriesonline.pl/wp-content/themes/tvseriesonline/js/adsbygoogle.js$script
 @@||tvsierpc.pl/media/videoads/FILMY/*.mp4$object,image,domain=tvsierpc.pl
 @@||tw.cx/c?a=$xmlhttprequest,domain=justwatch.com
@@ -45729,6 +45732,7 @@ _engine_ads_
 _english/adv/
 _event_tracking-
 _event_tracking.
+_event_tracking?
 _externalad.
 _fach_ad.
 _fbadbookingsystem&
@@ -46046,6 +46050,7 @@ about:blank$popup,domain=ianimes.org|vizplay.icu|streamzz.to
 about:blank$popup,domain=streamtape.cc|streamtape.net|streamtape.xyz|streamtape.com|strtapeadblock.me|slreamplay.cc
 abovethelaw.com###div-id-for-middle-300x250
 abovethelaw.com###div-id-for-top-300x250
+abovetopsecret.com##[href^="https://mypatriotsupply.com/apps/todays-deals"]
 abpclub.co.uk##img[width="118"]
 absolutelyrics.com,cdrlabs.com,exiledonline.com,findtheword.info,realitywanted.com,revizoronline.com,snapfiles.com###topbanner
 abtt.pufenchuanmu.com
@@ -49045,6 +49050,8 @@ crsky.com##.banner-leader
 crsky.com##.ml10.Gs_d
 crsky.com##a[href^="http://count."][href$=".exe"]
 crsky.com##div[class^="banner banner-"],.row_down,.banner-square,.fast_down,.clear_qc,.mirror-special,.yellowdown,.localdown
+cruisecritic.co.uk,cruisecritic.com##.css-1kyizeh
+cruisecritic.co.uk,cruisecritic.com##div[class^="ArticleItem_ad"]
 crunchyroll.com#$#json-prune 'value.media.ad_breaks'
 crx4.com,galacg.me,moneyweekly.com.tw###carousel-example-generic
 crypto-clix.net#@#.ad-block
@@ -54011,7 +54018,6 @@ jx.xinhuanet.com##.glgg,[height="86"],.flash,.flash2
 jx3pve.com##.m-banner-tool
 jxbtl.com
 jxcn.cn,redianyule.com##.dsp_yxxf
-jxdbg.com##.adindex
 jxdbg.com##.indexmv
 jxedt.com###footer
 jxedt.com##.adlink1
@@ -69862,7 +69868,6 @@ zzpzero.com
 ||airav.cc/Ucenter/*_Ad
 ||airav.cc/iframe/
 ||airav.cc/static/js/*_ad.js
-||airbnb.*/tracking/
 ||airbrake.io^$third-party
 ||airconditiondescendent.com^
 ||airefcoinc.actonservice.com^
@@ -75380,6 +75385,7 @@ zzpzero.com
 ||cacheserve.*/promodisplay?
 ||caclick.baidu.com^
 ||cactusglobal.io^$third-party
+||cactusmedia.com^$third-party
 ||cad.chosun.com^
 ||cadfixbig.site^
 ||cadlsyndicate.com^
@@ -75760,6 +75766,7 @@ zzpzero.com
 ||cb.baidu.com^
 ||cb.com.cn/index/ad/
 ||cb.lomark.cn^
+||cb8lvgd.cn^
 ||cba-fed-igh.com^
 ||cbba8228b1.com^
 ||cbc.ca/g/stats/
@@ -95834,7 +95841,7 @@ zzpzero.com
 ||lushcrush.com^
 ||lusrg.cn^
 ||lustmanicureput.com^
-||lustre.ai^$third-party
+||lustre.ai^$script,third-party
 ||lustypuppy.com/sbbi/
 ||lutachechu.pro^
 ||lutouwang.net/static/images/boss_gao_hb.jpeg
@@ -115129,6 +115136,7 @@ zzpzero.com
 ||tiedme.com^
 ||tielengthenelaborate.com^
 ||tiendeo.*/_statsapi/
+||tienu.tech^
 ||tieqifeng.com^
 ||tietuku.$domain=papa1024.com
 ||tietuku.cn$image,domain=fulidh.com
@@ -123328,6 +123336,7 @@ zzpzero.com
 ||yiyilm.com$third-party
 ||yiyu-fz.cn^
 ||yiyuantian.com^
+||yiyuwl.cn^
 ||yizhanghaoquan.pw^
 ||yizhibo.com/special/h5corner.html
 ||yjbuhao.top^
