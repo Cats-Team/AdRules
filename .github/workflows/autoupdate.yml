@@ -27,6 +27,7 @@ jobs:
           bash ./script/allow/main.sh
           bash ./script/hosts/main.sh
           bash ./script/adblock+adguard/main.sh
+          python3 ./script/adblock+adguard/pytext.py
       - name: Update other rules
         run: |
           cd rules
