@@ -4,8 +4,8 @@
 ! Powerd by CatsTeam
 ! Expires: 8 Hours
 ! Description: 该规则合并自My AdFilters（for PC）、EdentwCustom、adgk、ClearUrl等，并补充了一些规则
-! Version: 2022-02-16 21:17:08（北京时间） 
-! Total count: 126891
+! Version: 2022-02-16 22:55:01（北京时间） 
+! Total count: 126896
 -1688-wp-media/ads/
 -988x60.
 -980x60-
@@ -25211,6 +25211,7 @@ $removeparam=/^ath[a-z]*=/,domain=walmart.com
 $removeparam=/^bi[a-z]*=/,domain=google.*
 $removeparam=/^bsft_/
 $removeparam=/^btn[a-z]*=/,domain=google.*
+$removeparam=/^cid=DSS-Affiliate/,domain=disneyplus.com
 $removeparam=/^cid_/
 $removeparam=/^clickid=/i
 $removeparam=/^clickref[0-9]?=/
@@ -26291,6 +26292,9 @@ $removeparam=pldnSite,domain=amazon.com
 $removeparam=plim,domain=hh.ru
 $removeparam=plink,domain=audible.*
 $removeparam=plkey,domain=etsy.com
+$removeparam=pm_campaign
+$removeparam=pm_medium
+$removeparam=pm_source
 $removeparam=pool,domain=nytimes.com|nytimes3xbfgragh.onion
 $removeparam=pop,domain=etsy.com
 $removeparam=porc
@@ -47385,6 +47389,7 @@ bbjtoday.com##.replacement
 bbk5831.yncjsc.cn
 bbk6133.hanjw1988.com
 bbk6371.hanjw1988.com
+bbk6375.xhzmjs.com
 bbk6384.hanjw1988.com
 bbk6384.xhzmjs.com
 bbs-mychat.com###cate_top > tr > .f_one
