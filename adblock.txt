@@ -4,8 +4,8 @@
 ! Powerd by CatsTeam
 ! Expires: 8 Hours
 ! Description: 该规则合并自My AdFilters（for PC）、EdentwCustom、adgk、ClearUrl等，并补充了一些规则
-! Version: 2022-02-17 17:53:10（北京时间） 
-! Total count: 126926
+! Version: 2022-02-18 00:16:30（北京时间） 
+! Total count: 126795
 -1688-wp-media/ads/
 -988x60.
 -980x60-
@@ -64,7 +64,6 @@
 -120x600.
 -120x600_
 -90mh-gg.
--3ec48de3e3aa4a591bed4da40d172dad01e1032f.js$script,domain=ahaonline.cz|auto.cz|autorevue.cz|blesk.cz|dama.cz|e15.cz|maminka.cz|mobilmania.cz|mojezdravi.cz|onetv.cz|reflex.cz|zeny.cz|zive.cz
 
 ###A9AdsMiddleBoxTop
 ###A9AdsOutOfStockWidgetTop
@@ -5136,6 +5135,7 @@
 ###cornerad
 ###cosponsor
 ###cosponsorTab
+###coupangAd
 ###coupletBox
 ###coverADS
 ###coverads
@@ -19218,6 +19218,7 @@
 ##.list-feature-ad
 ##.list-footer-ad
 ##.listAdvertGenerator
+##.list_bottom_ad
 ##.listad
 ##.listicle--ad-rail
 ##.listing-card-ad
@@ -22996,6 +22997,8 @@
 ##.view_ads_content_bg
 ##.view_ads_top_bg
 ##.view_ads_top_bg_middle
+##.view_bottom_ad
+##.view_center_ad
 ##.view_rig_ad
 ##.views-field-field-ad
 ##.views-field-field-adbox-1
@@ -24030,6 +24033,7 @@
 ##a[href*=".xxmh727.com/"]
 ##a[href*=".xxmh735.com/"]
 ##a[href*=".xxmh779.com/"]
+##a[href*=".xxmh920.com/"]
 ##a[href*=".yabo414.com"]
 ##a[href*=".yabo816.com"]
 ##a[href*=".yabo824.com"]
@@ -25495,15 +25499,15 @@ $removeparam=action_object_map
 $removeparam=action_ref_map
 $removeparam=action_type_map
 $removeparam=activity_id,domain=tmall.com
-$removeparam=ad,domain=discshop.fi|moosejaw.com|multitronic.fi|adlibris.com|scandinavianphoto.fi|e-ville.com|data-systems.fi|24hshop.fi|swamp.fi
+$removeparam=ad,domain=moosejaw.com|multitronic.fi|adlibris.com|scandinavianphoto.fi|e-ville.com|data-systems.fi|24hshop.fi|swamp.fi
 $removeparam=ad_config_id
-$removeparam=ad_content,domain=discshop.fi|adlibris.com|scandinavianphoto.fi|e-ville.com|data-systems.fi|24hshop.fi|swamp.fi
+$removeparam=ad_content,domain=adlibris.com|scandinavianphoto.fi|e-ville.com|data-systems.fi|24hshop.fi|swamp.fi
 $removeparam=ad_id
 $removeparam=ad_medium
 $removeparam=ad_name
-$removeparam=ad_prodid,domain=discshop.fi|adlibris.com|scandinavianphoto.fi|e-ville.com|data-systems.fi|24hshop.fi|swamp.fi
+$removeparam=ad_prodid,domain=adlibris.com|scandinavianphoto.fi|e-ville.com|data-systems.fi|24hshop.fi|swamp.fi
 $removeparam=ad_pvid
-$removeparam=ad_src,domain=discshop.fi|adlibris.com|scandinavianphoto.fi|e-ville.com|data-systems.fi|24hshop.fi|swamp.fi
+$removeparam=ad_src,domain=adlibris.com|scandinavianphoto.fi|e-ville.com|data-systems.fi|24hshop.fi|swamp.fi
 $removeparam=ad_src,domain=lazada.com.my
 $removeparam=ad_type
 $removeparam=adblock,domain=reddit.app.link
@@ -26872,34 +26876,23 @@ $~xmlhttprequest,~media,removeparam=source,denyallow=googlevideo.com,domain=1sol
 &adstrade=
 &adstype=
 &adurl=
-&bbtarget=$subdocument,domain=tiscali.cz|kinobox.cz|osobnosti.cz|karaoketexty.cz|nasepenize.cz|fights.cz
-&blaf=$script,domain=tiscali.cz|kinobox.cz|osobnosti.cz|karaoketexty.cz|nasepenize.cz|fights.cz
-&border=0&bust=$script,domain=tiscali.cz|kinobox.cz|osobnosti.cz|karaoketexty.cz|nasepenize.cz|fights.cz
 &callback=hitStats_
 &cbrandom=
-&checkdupl=0&unsafe=0$script,domain=auto.cz|autorevue.cz|maminka.cz|reflex.cz|ahaonline.cz|blesk.cz|dama.cz|e15.cz|info.cz|mobilmania.cz|mojezdravi.cz|onetv.cz|zeny.cz|zive.cz
 &clicktag=http
 &cmpState=$script,domain=auto.cz|autorevue.cz|maminka.cz|reflex.cz|ahaonline.cz|blesk.cz|dama.cz|e15.cz|info.cz|mobilmania.cz|mojezdravi.cz|onetv.cz|zeny.cz|zive.cz|expres.cz|www.idnes.cz
 &collocation-$xmlhttprequest,domain=televizeseznam.cz
 &displayads=
 &event=view&
-&garden6=$script,domain=tiscali.cz|kinobox.cz|osobnosti.cz|karaoketexty.cz|nasepenize.cz|fights.cz
 &hitType=pageview&
 &http_referer=$script,xmlhttprequest,domain=~facebook.com|~jobscore.com
-&ibbid=BBID$script,domain=tiscali.cz|kinobox.cz|osobnosti.cz|karaoketexty.cz|nasepenize.cz|fights.cz
 &ifr=0|$script,domain=www.idnes.cz|expres.cz|auto.cz|autorevue.cz|maminka.cz|reflex.cz|ahaonline.cz|blesk.cz|dama.cz|e15.cz|info.cz|mobilmania.cz|mojezdravi.cz|onetv.cz|zeny.cz|zive.cz|iprima.cz
-&jaden$subdocument,domain=tiscali.cz|kinobox.cz|osobnosti.cz|karaoketexty.cz|nasepenize.cz|fights.cz
 &mf_referrer=
 &mi_ecmp=
 &no_comply-$xmlhttprequest,domain=televizeseznam.cz
-&oVneN2nV1=/$script,domain=tiscali.cz|kinobox.cz|osobnosti.cz|karaoketexty.cz|nasepenize.cz|fights.cz
-&one2n1=$script,xmlhttprequest,domain=tiscali.cz|kinobox.cz|osobnosti.cz|karaoketexty.cz|nasepenize.cz|fights.cz
 &pageReferrer=
 &pagegroup=*&url=$script
-&pip11meh=$script,domain=ahaonline.cz|auto.cz|autorevue.cz|blesk.cz|dama.cz|e15.cz|maminka.cz|mobilmania.cz|mojezdravi.cz|onetv.cz|reflex.cz|zeny.cz|zive.cz
 &popunder=$popup
 &popundersPerIP=$popup
-&pssp1=$subdocument,domain=novinky.cz|super.cz|sport.cz|kupi.cz|horoskopy.cz|seznamzpravy.cz|sreality.cz|tiscali.cz|kinobox.cz|osobnosti.cz|karaoketexty.cz|nasepenize.cz|fights.cz
 &pssp1=$xmlhttprequest,domain=auto.cz|autorevue.cz|maminka.cz|reflex.cz|ahaonline.cz|blesk.cz|dama.cz|e15.cz|info.cz|mobilmania.cz|mojezdravi.cz|onetv.cz|zeny.cz|zive.cz|www.idnes.cz|expres.cz
 &ref=*&tag=
 &refer=http$script
@@ -26910,12 +26903,9 @@ $~xmlhttprequest,~media,removeparam=source,denyallow=googlevideo.com,domain=1sol
 &t=pageview&
 &tag=IMPRESSION&
 &trackingserver=
-&ubl=$script,domain=tiscali.cz|kinobox.cz|osobnosti.cz|karaoketexty.cz|nasepenize.cz|fights.cz
 &uid=ssp-$script,domain=auto.cz|autorevue.cz|maminka.cz|reflex.cz|ahaonline.cz|blesk.cz|dama.cz|e15.cz|info.cz|mobilmania.cz|mojezdravi.cz|onetv.cz|zeny.cz|zive.cz
-&userLimits=*&breaktime=$script,domain=ahaonline.cz|auto.cz|autorevue.cz|blesk.cz|dama.cz|e15.cz|maminka.cz|mobilmania.cz|mojezdravi.cz|onetv.cz|reflex.cz|zeny.cz|zive.cz
 &visitorUuid=
 &vratislavice-1=$xmlhttprequest,domain=televizeseznam.cz
-&warden6=$script,domain=tiscali.cz|kinobox.cz|osobnosti.cz|karaoketexty.cz|nasepenize.cz|fights.cz
 &xhtml?$script,third-party
 &zoneid=*&ad_$popup
 &zoneid=*&direct=$popup
@@ -27799,12 +27789,9 @@ $~xmlhttprequest,~media,removeparam=source,denyallow=googlevideo.com,domain=1sol
 .com:9120/discor_list.js
 .content_tracking.
 .ct.sendgrid.net/$image
-.cz-hb-settings-sas.js$script,domain=ahaonline.cz|auto.cz|autorevue.cz|blesk.cz|dama.cz|e15.cz|maminka.cz|mobilmania.cz|mojezdravi.cz|onetv.cz|reflex.cz|zeny.cz|zive.cz
 .cz/*,,*,|$xmlhttprequest,domain=auto.cz|autorevue.cz|maminka.cz|reflex.cz|ahaonline.cz|blesk.cz|dama.cz|e15.cz|info.cz|mobilmania.cz|mojezdravi.cz|onetv.cz|zeny.cz|zive.cz
-.cz/*.webp|$image,domain=auto.cz|blesk.cz|mojezdravi.cz|dama.cz|autorevue.cz|tiscali.cz|maminka.cz
 .cz/*/area=adblock$script,popup,domain=auto.cz|autorevue.cz|maminka.cz|reflex.cz|ahaonline.cz|blesk.cz|dama.cz|e15.cz|info.cz|mobilmania.cz|mojezdravi.cz|onetv.cz|zeny.cz|zive.cz
 .cz/*/js/a.js|$script,domain=auto.cz|autorevue.cz|maminka.cz|reflex.cz|ahaonline.cz|blesk.cz|dama.cz|e15.cz|info.cz|mobilmania.cz|mojezdravi.cz|onetv.cz|zeny.cz|zive.cz
-.cz/*?271|$script,domain=ahaonline.cz|auto.cz|autorevue.cz|blesk.cz|dama.cz|e15.cz|maminka.cz|mobilmania.cz|mojezdravi.cz|onetv.cz|reflex.cz|zeny.cz|zive.cz
 .cz/*?action=ppc&cid=$popup,domain=auto.cz|autorevue.cz|maminka.cz|reflex.cz|ahaonline.cz|blesk.cz|dama.cz|e15.cz|info.cz|mobilmania.cz|mojezdravi.cz|onetv.cz|zeny.cz|zive.cz
 .cz/adv/
 .cz/affil/
@@ -27911,8 +27898,19 @@ $~xmlhttprequest,~media,removeparam=source,denyallow=googlevideo.com,domain=1sol
 .k618.cn/zbggw/
 .ke/ads/
 .keap-link003.com/$image
+.keap-link004.com/$image
+.keap-link005.com/$image
+.keap-link006.com/$image
+.keap-link007.com/$image
+.keap-link008.com/$image
+.keap-link009.com/$image
+.keap-link010.com/$image
 .keap-link011.com/$image
+.keap-link012.com/$image
+.keap-link013.com/$image
+.keap-link014.com/$image
 .keap-link015.com/$image
+.keap-link016.com/$image
 .kijiji.ca/r/
 .klclick.com/$image
 .la/style/vue.js?v=
@@ -28340,7 +28338,6 @@ $~xmlhttprequest,~media,removeparam=source,denyallow=googlevideo.com,domain=1sol
 /470x030_
 /480x030.
 /480x030_
-/480x300_$image,domain=www.idnes.cz|expres.cz|auto.cz|autorevue.cz|maminka.cz|reflex.cz|ahaonline.cz|blesk.cz|dama.cz|e15.cz|info.cz|mobilmania.cz|mojezdravi.cz|onetv.cz|zeny.cz|zive.cz
 /480x60-
 /480x60.
 /480x60/*
@@ -28408,7 +28405,6 @@ $~xmlhttprequest,~media,removeparam=source,denyallow=googlevideo.com,domain=1sol
 /960_60_
 /960x*0.gif
 /960x90.
-/970x250_ufo_$image,domain=www.idnes.cz|expres.cz|auto.cz|autorevue.cz|maminka.cz|reflex.cz|ahaonline.cz|blesk.cz|dama.cz|e15.cz|info.cz|mobilmania.cz|mojezdravi.cz|onetv.cz|zeny.cz|zive.cz
 /980x90.
 /993dy_new//gg123/*
 /99rejs/
@@ -28431,14 +28427,9 @@ $~xmlhttprequest,~media,removeparam=source,denyallow=googlevideo.com,domain=1sol
 /?placement=*&redirect$popup
 /?record&key=
 /?redirect&placement=$popup
-/?seHdazona=$script,domain=auto.cz|autorevue.cz|maminka.cz|reflex.cz|ahaonline.cz|blesk.cz|dama.cz|e15.cz|info.cz|mobilmania.cz|mojezdravi.cz|onetv.cz|zeny.cz|zive.cz
-/?sedaGsezona=$script,domain=auto.cz|autorevue.cz|maminka.cz|reflex.cz|ahaonline.cz|blesk.cz|dama.cz|e15.cz|info.cz|mobilmania.cz|mojezdravi.cz|onetv.cz|zeny.cz|zive.cz
-/?sedasezoGna=$script,domain=auto.cz|autorevue.cz|maminka.cz|reflex.cz|ahaonline.cz|blesk.cz|dama.cz|e15.cz|info.cz|mobilmania.cz|mojezdravi.cz|onetv.cz|zeny.cz|zive.cz
 /?sentry_key=
 /?sentry_version=
 /?swift-performance-tracking
-/?typ*kodu=js*=pop_$script,domain=tiscali.cz|kinobox.cz|osobnosti.cz|karaoketexty.cz|nasepenize.cz|fights.cz
-/?typkodu=js&$xmlhttprequest,domain=tiscali.cz|kinobox.cz|osobnosti.cz|karaoketexty.cz|nasepenize.cz|fights.cz
 /?view=ad
 /?zoneid=*&timeout=$popup
 /@adshield/*
@@ -28658,7 +28649,6 @@ $~xmlhttprequest,~media,removeparam=source,denyallow=googlevideo.com,domain=1sol
 /EventLog.axd?
 /EventhubStats.js
 /Events/Impression?
-/FLIGHTID=$script,domain=ahaonline.cz|auto.cz|autorevue.cz|blesk.cz|dama.cz|e15.cz|expres.cz|info.cz|iprima.cz|karaoketexty.cz|kinobox.cz|kupi.cz|lidovky.cz|maminka.cz|mobilmania.cz|mojezdravi.cz|nasepenize.cz|novinky.cz|onetv.cz|osobnosti.cz|reflex.cz|sport.cz|super.cz|tiscali.cz|zeny.cz|zive.cz
 /FTTrack2.js
 /FacebookTracking.
 /FduttjAlivqpo/*
@@ -28922,7 +28912,6 @@ $~xmlhttprequest,~media,removeparam=source,denyallow=googlevideo.com,domain=1sol
 /Tealeaf_UI_
 /Text_AD
 /ThirdPartyTracking.
-/TipsportLiga$image,domain=auto.cz|autorevue.cz|maminka.cz|reflex.cz|ahaonline.cz|blesk.cz|dama.cz|e15.cz|info.cz|mobilmania.cz|mojezdravi.cz|onetv.cz|zeny.cz|zive.cz
 /Totem-Cash/*
 /TouchClarity.
 /Track.aspx/*
@@ -28998,7 +28987,6 @@ $~xmlhttprequest,~media,removeparam=source,denyallow=googlevideo.com,domain=1sol
 /Web_JS_Stats.
 /WikiaStats/*
 /Wrappers?cmd=
-/XO00\d$/$script,domain=ahaonline.cz|auto.cz|autorevue.cz|blesk.cz|dama.cz|e15.cz|maminka.cz|mobilmania.cz|mojezdravi.cz|onetv.cz|reflex.cz|zeny.cz|zive.cz
 /YahooAd_
 /YuduStatistics/*
 /ZagUser.js
@@ -29011,8 +28999,6 @@ $~xmlhttprequest,~media,removeparam=source,denyallow=googlevideo.com,domain=1sol
 /\/ad\d*\./$script
 /\/data\/cache\/(?!(common\.|common_extra\.|forum\.|forum_viewthread\.js|home\.|portal\.|seditor|smilies))[a-z_]+\.js/$script,domain=pcbeta.com
 /^https:\/\/st2\.razlozhi\.ru\/\w{9}\/.{100,300}$/$script,domain=razlozhi.ru
-/^https:\/\/www\.(kupi|super|sport|novinky|sreality)\.cz\/[A-Za-z0-9\/_!=-]{140,}/$subdocument,domain=kupi.cz|super.cz|sport.cz|novinky.cz|sreality.cz
-/^https:\/\/www\.seznamzpravy\.cz\/[A-Za-z0-9\/_!=-]{100,}/$subdocument,xmlhttprequest,domain=seznamzpravy.cz
 /^https?://www\.liveinternet\.ru/[^\s]{100,}/$header=content-type=application/json
 /^https?:\/\/(.+?\.)?allthingsvegas\.com[\/]{1,9}.*[a-zA-Z0-9]{8,}\/[a-zA-Z0-9]{6,}.*\.(png|jpg)/$image
 /^https?:\/\/(.+?\.)?aupetitparieur\.com[\/]{1,}.*[a-zA-Z0-9]{8,}\/[a-zA-Z0-9]{6,}\/.*/
@@ -29373,7 +29359,6 @@ $~xmlhttprequest,~media,removeparam=source,denyallow=googlevideo.com,domain=1sol
 /ad.php?
 /ad.php?tag=$popup
 /ad.php?zone$popup
-/ad.php|
 /ad.popup?
 /ad.premium-
 /ad.redirect.
@@ -29599,6 +29584,7 @@ $~xmlhttprequest,~media,removeparam=source,denyallow=googlevideo.com,domain=1sol
 /ad?currentview=
 /ad?data=
 /ad?iframe_
+/ad?keyword=
 /ad?pos_
 /ad?sponsor=
 /ad?type=
@@ -30255,7 +30241,6 @@ $~xmlhttprequest,~media,removeparam=source,denyallow=googlevideo.com,domain=1sol
 /adfrequencycapping.
 /adfrm.
 /adfront/*
-/adfscript/?$script,domain=ahaonline.cz|auto.cz|autorevue.cz|blesk.cz|dama.cz|e15.cz|expres.cz|info.cz|iprima.cz|karaoketexty.cz|kinobox.cz|kupi.cz|lidovky.cz|maminka.cz|mobilmania.cz|mojezdravi.cz|nasepenize.cz|novinky.cz|onetv.cz|osobnosti.cz|reflex.cz|sport.cz|super.cz|tiscali.cz|zeny.cz|zive.cz
 /adfshow*
 /adfshow?
 /adfuncs.
@@ -32463,10 +32448,8 @@ $~xmlhttprequest,~media,removeparam=source,denyallow=googlevideo.com,domain=1sol
 /arcads.js
 /ard.png?
 /area=*/posid=*$subdocument,xmlhttprequest,script,domain=iprima.cz
-/area=Ostatni$domain=ahaonline.cz|auto.cz|autorevue.cz|blesk.cz|dama.cz|e15.cz|maminka.cz|mobilmania.cz|mojezdravi.cz|onetv.cz|reflex.cz|zeny.cz|zive.cz
 /area=branding$xmlhttprequest,domain=iprima.cz
 /area=halfpagead$xmlhttprequest,domain=iprima.cz
-/area=lupochOnyk^$script,domain=auto.cz|autorevue.cz|maminka.cz|reflex.cz|ahaonline.cz|blesk.cz|dama.cz|e15.cz|info.cz|mobilmania.cz|mojezdravi.cz|onetv.cz|zeny.cz|zive.cz
 /argtk.min.
 /aria-web-telemetry-
 /arms-datacollectorjs/*
@@ -32903,7 +32886,6 @@ $~xmlhttprequest,~media,removeparam=source,denyallow=googlevideo.com,domain=1sol
 /bigads/*
 /bigboxad.
 /bilibili/okretro/GeneralResponse
-/bimbu$script,subdocument,domain=novinky.cz|super.cz|sport.cz|kupi.cz|horoskopy.cz|televizeseznam.cz
 /bin/ads/*
 /bin/reff.php
 /bin/stats?
@@ -33107,10 +33089,8 @@ $~xmlhttprequest,~media,removeparam=source,denyallow=googlevideo.com,domain=1sol
 /c/cevent.
 /c/i.php?id=$script,third-party
 /c2_count.js
-/c7controller.$script,domain=ahaonline.cz|auto.cz|autorevue.cz|blesk.cz|dama.cz|e15.cz|maminka.cz|mobilmania.cz|mojezdravi.cz|onetv.cz|reflex.cz|zeny.cz|zive.cz
 /c?siteID=$image,script
 /cXense-Analytics-
-/c_img_$image,domain=www.idnes.cz|expres.cz|auto.cz|autorevue.cz|maminka.cz|reflex.cz|ahaonline.cz|blesk.cz|dama.cz|e15.cz|info.cz|mobilmania.cz|mojezdravi.cz|onetv.cz|zeny.cz|zive.cz
 /c_track.php?
 /cablog?
 /cache/OTca.js
@@ -33148,7 +33128,6 @@ $~xmlhttprequest,~media,removeparam=source,denyallow=googlevideo.com,domain=1sol
 /capture_client.js
 /carbonads-
 /carbonads/*
-/carcetherite=$script,domain=auto.cz|autorevue.cz|maminka.cz|reflex.cz|ahaonline.cz|blesk.cz|dama.cz|e15.cz|info.cz|mobilmania.cz|mojezdravi.cz|onetv.cz|zeny.cz|zive.cz
 /cari/banner/*
 /cari/daybanner/*
 /carousel_ads.
@@ -33276,7 +33255,6 @@ $~xmlhttprequest,~media,removeparam=source,denyallow=googlevideo.com,domain=1sol
 /ci-capture.
 /ciaad.
 /cim_tns/spring.js
-/cimetkars:=$script,domain=auto.cz|autorevue.cz|maminka.cz|reflex.cz|ahaonline.cz|blesk.cz|dama.cz|e15.cz|info.cz|mobilmania.cz|mojezdravi.cz|onetv.cz|zeny.cz|zive.cz
 /circads.
 /ciso_tracking/*
 /citycounter.
@@ -33420,7 +33398,6 @@ $~xmlhttprequest,~media,removeparam=source,denyallow=googlevideo.com,domain=1sol
 /cmp-hello.
 /cmp/messaging.js
 /cmp3.js
-/cmp?zoneId=$xmlhttprequest,domain=novinky.cz|super.cz|sport.cz|kupi.cz|horoskopy.cz
 /cms-gg.js
 /cms.gif?
 /cms/ads/*
@@ -33434,8 +33411,6 @@ $~xmlhttprequest,~media,removeparam=source,denyallow=googlevideo.com,domain=1sol
 /cn.wasm$third-party
 /cnads.js
 /cnavperf?
-/cnc-bf-$image,domain=ahaonline.cz|auto.cz|autorevue.cz|blesk.cz|dama.cz|e15.cz|maminka.cz|mobilmania.cz|mojezdravi.cz|onetv.cz|reflex.cz|zeny.cz|zive.cz
-/cnc_$image,domain=auto.cz|autorevue.cz|maminka.cz|reflex.cz|ahaonline.cz|blesk.cz|dama.cz|e15.cz|info.cz|mobilmania.cz|mojezdravi.cz|onetv.cz|zeny.cz|zive.cz
 /cnfriend/love.php
 /cnki/js/adDetail1124.js
 /cnnslads.
@@ -33730,7 +33705,6 @@ $~xmlhttprequest,~media,removeparam=source,denyallow=googlevideo.com,domain=1sol
 /cpc/*.ashx?u=$script,third-party
 /cpeEvent.
 /cpeEventTracking.
-/cpex-hb-sas-cnc-min.js$script,domain=ahaonline.cz|auto.cz|autorevue.cz|blesk.cz|dama.cz|e15.cz|maminka.cz|mobilmania.cz|mojezdravi.cz|onetv.cz|reflex.cz|zeny.cz|zive.cz
 /cpg_ads.
 /cpm/i.ashx?
 /cpm160.
@@ -33976,7 +33950,6 @@ $~xmlhttprequest,~media,removeparam=source,denyallow=googlevideo.com,domain=1sol
 /detroitchicago/raleigh.js
 /detroitchicago/rochester.js
 /detroitchicago/tampa.js
-/dev_display_width=$script,domain=ahaonline.cz|auto.cz|autorevue.cz|blesk.cz|dama.cz|e15.cz|expres.cz|info.cz|karaoketexty.cz|kinobox.cz|kupi.cz|lidovky.cz|maminka.cz|mobilmania.cz|mojezdravi.cz|nasepenize.cz|novinky.cz|onetv.cz|osobnosti.cz|reflex.cz|tiscali.cz|zeny.cz|zive.cz
 /develop/ads_
 /device-fingerprint.
 /devicead/*
@@ -34408,7 +34381,6 @@ $~xmlhttprequest,~media,removeparam=source,denyallow=googlevideo.com,domain=1sol
 /ewtrack.
 /exads/*
 /exaonclick.js
-/exbaemintes=$subdocument,script,image,domain=auto.cz|autorevue.cz|maminka.cz|reflex.cz|ahaonline.cz|blesk.cz|dama.cz|e15.cz|info.cz|mobilmania.cz|mojezdravi.cz|onetv.cz|zeny.cz|zive.cz
 /excellence/ads/*
 /exchange_banner_
 /exelate.htm?
@@ -34458,7 +34430,6 @@ $~xmlhttprequest,~media,removeparam=source,denyallow=googlevideo.com,domain=1sol
 /external/ad/*
 /external/ads/*
 /external/nielsen_
-/external=CASALE$script,domain=auto.cz|autorevue.cz|maminka.cz|reflex.cz|ahaonline.cz|blesk.cz|dama.cz|e15.cz|info.cz|mobilmania.cz|mojezdravi.cz|onetv.cz|zeny.cz|zive.cz
 /external=retargeting/*
 /external_ad?
 /external_ads.
@@ -34489,7 +34460,6 @@ $~xmlhttprequest,~media,removeparam=source,denyallow=googlevideo.com,domain=1sol
 /fairfax_tracking.js
 /fake_app.mp4$domain=91porn.com
 /fal854heat^$xmlhttprequest,domain=auto.cz|autorevue.cz|maminka.cz|reflex.cz|ahaonline.cz|blesk.cz|dama.cz|e15.cz|info.cz|mobilmania.cz|mojezdravi.cz|onetv.cz|zeny.cz|zive.cz
-/fallbacks^$subdocument,domain=novinky.cz|televizeseznam.cz|super.cz|sport.cz|kupi.cz|horoskopy.cz
 /famobi_tracking_
 /fans/*$domain=91porn.com|email.91dizhi.at.gmail.com.8h9.space
 /fastcounter.
@@ -35218,7 +35188,6 @@ $~xmlhttprequest,~media,removeparam=source,denyallow=googlevideo.com,domain=1sol
 /gtm.min.js
 /gtm/gtm-
 /gtmProd.
-/gtmService-2.0.0.js|$script,domain=auto.cz|autorevue.cz|maminka.cz|reflex.cz|ahaonline.cz|blesk.cz|dama.cz|e15.cz|info.cz|mobilmania.cz|mojezdravi.cz|onetv.cz|zeny.cz|zive.cz
 /gtmTracking.
 /gtm_monitor?
 /gtrack.
@@ -35641,7 +35610,6 @@ $~xmlhttprequest,~media,removeparam=source,denyallow=googlevideo.com,domain=1sol
 /imp?imp_key=
 /imp?sid=
 /imp?slot=
-/imp^$subdocument,domain=novinky.cz|super.cz|sport.cz|kupi.cz|horoskopy.cz|televizeseznam.cz
 /imp_check.php
 /imp_cnt.gif?
 /imp_img.php?
@@ -36890,7 +36858,6 @@ $~xmlhttprequest,~media,removeparam=source,denyallow=googlevideo.com,domain=1sol
 /nad_exo.
 /namediaad.$~script
 /nano.wasm
-/narciatocery=$script,domain=auto.cz|autorevue.cz|maminka.cz|reflex.cz|ahaonline.cz|blesk.cz|dama.cz|e15.cz|info.cz|mobilmania.cz|mojezdravi.cz|onetv.cz|zeny.cz|zive.cz
 /natad.
 /natero_analytics.
 /native-ad-
@@ -37718,7 +37685,6 @@ $~xmlhttprequest,~media,removeparam=source,denyallow=googlevideo.com,domain=1sol
 /pm_ads/*
 /pmspxl.
 /poho0ze5nci=$xmlhttprequest,domain=auto.cz|autorevue.cz|maminka.cz|reflex.cz|ahaonline.cz|blesk.cz|dama.cz|e15.cz|info.cz|mobilmania.cz|mojezdravi.cz|onetv.cz|zeny.cz|zive.cz
-/poho22zenec=$script,domain=auto.cz|autorevue.cz|maminka.cz|reflex.cz|ahaonline.cz|blesk.cz|dama.cz|e15.cz|info.cz|mobilmania.cz|mojezdravi.cz|onetv.cz|zeny.cz|zive.cz
 /point_roll.
 /pointeur.gif?
 /poker-ad.
@@ -37798,7 +37764,6 @@ $~xmlhttprequest,~media,removeparam=source,denyallow=googlevideo.com,domain=1sol
 /popwinscript.js*
 /porpoiseant/*
 /portalwlanad/pages/*$popup
-/pos=$script,image,domain=ahaonline.cz|auto.cz|autorevue.cz|blesk.cz|dama.cz|e15.cz|expres.cz|info.cz|iprima.cz|maminka.cz|mobilmania.cz|mojezdravi.cz|onetv.cz|reflex.cz|zeny.cz|zive.cz
 /post-ad-
 /post-tracking/*
 /post/ads/*
@@ -38079,7 +38044,6 @@ $~xmlhttprequest,~media,removeparam=source,denyallow=googlevideo.com,domain=1sol
 /r/collect?
 /r/ucb.js$script,~third-party
 /r/video/*$domain=youxi.baidu.com
-/r:*$script,domain=ahaonline.cz|auto.cz|autorevue.cz|blesk.cz|dama.cz|e15.cz|expres.cz|fights.cz|horoskopy.cz|idnes.cz|iprima.cz|karaoketexty.cz|kinobox.cz|kupi.cz|maminka.cz|mobilmania.cz|mojezdravi.cz|nasepenize.cz|novinky.cz|onetv.cz|osobnosti.cz|reflex.cz|spisovatele.cz|sport.cz|super.cz|televizeseznam.cz|tiscali.cz|zeny.cz|zive.cz
 /r_ads/*
 /ra_track.
 /radar/trace?
@@ -38176,7 +38140,6 @@ $~xmlhttprequest,~media,removeparam=source,denyallow=googlevideo.com,domain=1sol
 /referrer.php?*http
 /referrer_invisible.js?
 /referrer_tracking.
-/refresh-ads-$script,domain=ahaonline.cz|auto.cz|autorevue.cz|blesk.cz|dama.cz|e15.cz|maminka.cz|mobilmania.cz|mojezdravi.cz|onetv.cz|reflex.cz|zeny.cz|zive.cz
 /refresh_uid?$script
 /refreshads-
 /refstats.asp?
@@ -38293,7 +38256,6 @@ $~xmlhttprequest,~media,removeparam=source,denyallow=googlevideo.com,domain=1sol
 /rlvt-track/*
 /rm.gif?
 /rmntracking.
-/roho132hlavec$script,domain=ahaonline.cz|auto.cz|autorevue.cz|blesk.cz|dama.cz|e15.cz|maminka.cz|mobilmania.cz|mojezdravi.cz|onetv.cz|reflex.cz|zeny.cz|zive.cz
 /roiTrax.
 /roi_tracker.
 /roiengine.
@@ -38401,12 +38363,9 @@ $~xmlhttprequest,~media,removeparam=source,denyallow=googlevideo.com,domain=1sol
 /sailthru.js
 /salesad/*
 /salog.js
-/samo6cipXo=$script,domain=auto.cz|autorevue.cz|maminka.cz|reflex.cz|ahaonline.cz|blesk.cz|dama.cz|e15.cz|info.cz|mobilmania.cz|mojezdravi.cz|onetv.cz|zeny.cz|zive.cz
 /samplead1.
 /samsung_ad.
-/sas-wrapper.$script,domain=ahaonline.cz|auto.cz|autorevue.cz|blesk.cz|dama.cz|e15.cz|maminka.cz|mobilmania.cz|mojezdravi.cz|onetv.cz|reflex.cz|zeny.cz|zive.cz
 /sas/ads/*
-/satelliteLib-$script,domain=tiscali.cz|kinobox.cz|osobnosti.cz|karaoketexty.cz|nasepenize.cz|fights.cz
 /satismeter.js
 /satnetads.
 /satnetgoogleads.
@@ -38718,7 +38677,6 @@ $~xmlhttprequest,~media,removeparam=source,denyallow=googlevideo.com,domain=1sol
 /site/ads/*
 /site/ads?
 /site/dfp-
-/site=*/area=$subdocument,script,domain=auto.cz|autorevue.cz|maminka.cz|reflex.cz|ahaonline.cz|blesk.cz|dama.cz|e15.cz|info.cz|mobilmania.cz|mojezdravi.cz|onetv.cz|zeny.cz|zive.cz
 /site=*/size=*/viewid=
 /site=*/viewid=*/size=
 /siteAnalytics-
@@ -38780,7 +38738,6 @@ $~xmlhttprequest,~media,removeparam=source,denyallow=googlevideo.com,domain=1sol
 /skinads/*
 /skins/ads-
 /skins/ads/*
-/sklik/imp?$script,xmlhttprequest,domain=auto.cz|autorevue.cz|maminka.cz|reflex.cz|ahaonline.cz|blesk.cz|dama.cz|e15.cz|info.cz|mobilmania.cz|mojezdravi.cz|onetv.cz|zeny.cz|zive.cz|expres.cz|www.idnes.cz|tiscali.cz|kinobox.cz|osobnosti.cz|karaoketexty.cz|nasepenize.cz|fights.cz|novinky.cz|super.cz|sport.cz|kupi.cz|horoskopy.cz
 /skn_ad/*
 /skstats-
 /skstats_
@@ -38801,7 +38758,6 @@ $~xmlhttprequest,~media,removeparam=source,denyallow=googlevideo.com,domain=1sol
 /sl/assetlisting/?
 /slade.js
 /slafc.js
-/slepe3nic5e=$script,domain=auto.cz|autorevue.cz|maminka.cz|reflex.cz|ahaonline.cz|blesk.cz|dama.cz|e15.cz|info.cz|mobilmania.cz|mojezdravi.cz|onetv.cz|zeny.cz|zive.cz
 /slide_in_ads_
 /slideadverts/*
 /slideinad.
@@ -39104,7 +39060,6 @@ $~xmlhttprequest,~media,removeparam=source,denyallow=googlevideo.com,domain=1sol
 /static/advertising/*
 /static/analytics.js
 /static/common/js/djlib_
-/static/html^$subdocument,domain=novinky.cz|super.cz|sport.cz|kupi.cz|horoskopy.cz|televizeseznam.cz
 /static/js/4728ba74bc.js$~third-party
 /static/js/aall.js
 /static/js/bds_
@@ -39457,7 +39412,6 @@ $~xmlhttprequest,~media,removeparam=source,denyallow=googlevideo.com,domain=1sol
 /template/shoujigg/*
 /template/znfls/asd/*
 /template/zsy_badian/dddytt-gg/*
-/template=category^$subdocument,domain=auto.cz|autorevue.cz|maminka.cz|reflex.cz|ahaonline.cz|blesk.cz|dama.cz|e15.cz|info.cz|mobilmania.cz|mojezdravi.cz|onetv.cz|zeny.cz|zive.cz
 /templateadvimages/*
 /templates/*/js/_banner.js
 /templates/ad.
@@ -39547,7 +39501,6 @@ $~xmlhttprequest,~media,removeparam=source,denyallow=googlevideo.com,domain=1sol
 /tjp_beacon.
 /tjx-tracking-
 /tl.ads-
-/tmadvideo^madvideo.js|$script,domain=tiscali.cz|kinobox.cz|osobnosti.cz|karaoketexty.cz|nasepenize.cz|fights.cz
 /tmnadsense-
 /tmnadsense.
 /tmobilead.
@@ -40259,7 +40212,6 @@ $~xmlhttprequest,~media,removeparam=source,denyallow=googlevideo.com,domain=1sol
 /v60.js
 /v7/ads/*
 /v9/adv/*
-/vCAv.IAAAAAoAA$script,domain=ahaonline.cz|auto.cz|autorevue.cz|blesk.cz|dama.cz|e15.cz|expres.cz|fights.cz|horoskopy.cz|idnes.cz|iprima.cz|karaoketexty.cz|kinobox.cz|kupi.cz|maminka.cz|mobilmania.cz|mojezdravi.cz|nasepenize.cz|novinky.cz|onetv.cz|osobnosti.cz|reflex.cz|spisovatele.cz|sport.cz|super.cz|televizeseznam.cz|tiscali.cz|zeny.cz|zive.cz
 /vTracker_
 /va-stat.
 /vads/*
@@ -40374,7 +40326,6 @@ $~xmlhttprequest,~media,removeparam=source,denyallow=googlevideo.com,domain=1sol
 /viewcounterproxy.
 /viewer/rad?
 /viewerimpressions?
-/viewid=*^size=fix^$script,domain=ahaonline.cz|auto.cz|autorevue.cz|blesk.cz|dama.cz|e15.cz|maminka.cz|mobilmania.cz|mojezdravi.cz|onetv.cz|reflex.cz|zeny.cz|zive.cz
 /views-native-ads.
 /views/ads/*
 /views/vw.js
@@ -40807,7 +40758,6 @@ $~xmlhttprequest,~media,removeparam=source,denyallow=googlevideo.com,domain=1sol
 /xhr/ad/*
 /xhr/b/c
 /xhr/b/s|
-/xhr|$xmlhttprequest,domain=novinky.cz|super.cz|sport.cz|kupi.cz|horoskopy.cz
 /xiaoyi/360_
 /xiaoyi/960_
 /xitcore-min.js
@@ -40966,7 +40916,6 @@ $~xmlhttprequest,~media,removeparam=source,denyallow=googlevideo.com,domain=1sol
 /zzzz/assets/js/common/discor_list.js
 /~cdn/ads/*
 /~shared/do/~/count/?$image
-00,,1|$image,domain=www.idnes.cz|expres.cz|auto.cz|autorevue.cz|maminka.cz|reflex.cz|ahaonline.cz|blesk.cz|dama.cz|e15.cz|info.cz|mobilmania.cz|mojezdravi.cz|onetv.cz|zeny.cz|zive.cz
 000webhost.com###bottom-banner-with-counter-holder-desktop
 000webhost.com,aarp.org,al-monitor.com,animax-asia.com,apkcombo.com,apkforpc.com,araratadvertiser.com.au,areanews.com.au,armidaleexpress.com.au,audioxpress.com,axn-asia.com,batemansbaypost.com.au,begadistrictnews.com.au,bendigoadvertiser.com.au,benfergusonshow.com,blayneychronicle.com.au,bluemountainsgazette.com.au,boorowanewsonline.com.au,bordermail.com.au,braidwoodtimes.com.au,bravotv.com,bunburymail.com.au,busseltonmail.com.au,camdenadvertiser.com.au,camdencourier.com.au,canowindranews.com.au,centralwesterndaily.com.au,cessnockadvertiser.com.au,cnbctv18.com,conservativeradio.com,controleng.com,cootamundraherald.com.au,cowraguardian.com.au,dailyadvertiser.com.au,dailyliberal.com.au,dungogchronicle.com.au,easternriverinachronicle.com.au,edenmagnet.com.au,esperanceexpress.com.au,examiner.com.au,fairfieldchampion.com.au,forbesadvocate.com.au,gemtvasia.com,gleninnesexaminer.com.au,gloucesteradvocate.com.au,goondiwindiargus.com.au,goulburnpost.com.au,greatlakesadvocate.com.au,grenfellrecord.com.au,hardenexpress.com.au,hawkesburygazette.com.au,hcn.org,hepburnadvocate.com.au,huffingtonpost.co.uk,huntervalleynews.net.au,inqld.com.au,inverelltimes.com.au,jewishworldreview.com,juneesoutherncross.com.au,katherinetimes.com.au,legion.org,lifezette.com,lithgowmercury.com.au,liverpoolchampion.com.au,macarthuradvertiser.com.au,macleayargus.com.au,magtheweekly.com,mailtimes.com.au,maitlandmercury.com.au,mandurahmail.com.au,manningrivertimes.com.au,margaretrivermail.com.au,martechadvisor.com,moreechampion.com.au,mudgeeguardian.com.au,murrayvalleystandard.com.au,muswellbrookchronicle.com.au,naroomanewsonline.com.au,narrominenewsonline.com.au,northerndailyleader.com.au,northweststar.com.au,nvi.com.au,oann.com,oberonreview.com.au,onetvasia.com,oxygen.com,parkeschampionpost.com.au,pch.com,portlincolntimes.com.au,portnews.com.au,portpirierecorder.com.au,portstephensexaminer.com.au,readamericanfootball.com,readarsenal.com,readastonvilla.com,readbasketball.com,readbetting.com,readbournemouth.com,readboxing.com,readbrighton.com,readbundesliga.com,readburnley.com,readcars.co,readceltic.com,readchampionship.com,readchelsea.com,readcricket.com,readcrystalpalace.com,readeverton.com,readeverything.co,readfashion.co,readfilm.co,readfood.co,readfootball.co,readgaming.co,readgolf.com,readhorseracing.com,readhuddersfield.com,readhull.com,readinternationalfootball.com,readlaliga.com,readleicester.com,readliverpoolfc.com,readmancity.com,readmanutd.com,readmiddlesbrough.com,readmma.com,readmotorsport.com,readmusic.co,readnewcastle.com,readnorwich.com,readnottinghamforest.com,readolympics.com,readpl.com,readrangers.com,readrugbyunion.com,readseriea.com,readshowbiz.co,readsouthampton.com,readsport.co,readstoke.com,readsunderland.com,readswansea.com,readtech.co,readtennis.co,readtottenham.com,readtv.co,readussoccer.com,readwatford.com,readwestbrom.com,readwestham.com,readwsl.com,redvoicemedia.com,revolver.news,salife.com.au,sconeadvocate.com.au,sify.com,singletonargus.com.au,smithsonianmag.com,southcoastregister.com.au,southernhighlandnews.com.au,standard.net.au,stawelltimes.com.au,stockandland.com.au,streamingmedia.com,tenterfieldstar.com.au,the-scientist.com,theadvocate.com.au,thecatholicthing.org,thecourier.com.au,thecurrent.org,thedirect.com,theflindersnews.com.au,theislanderonline.com.au,theland.com.au,theleader.com.au,therural.com.au,townandcountrymagazine.com.au,transcontinental.com.au,ulladullatimes.com.au,victorharbortimes.com.au,wellingtontimes.com.au,westernadvocate.com.au,westernmagazine.com.au,whyallanewsonline.com.au,wollondillyadvertiser.com.au,woot.com,yasstribune.com.au,youngwitness.com.au##.advertisement
 00kxs.com##.gg
@@ -41088,19 +41037,7 @@ $~xmlhttprequest,~media,removeparam=source,denyallow=googlevideo.com,domain=1sol
 :8898/ads_
 :9001/code/
 :99/js/ads/
-:contnets/$script,domain=auto.cz|autorevue.cz|maminka.cz|reflex.cz|ahaonline.cz|blesk.cz|dama.cz|e15.cz|info.cz|mobilmania.cz|mojezdravi.cz|onetv.cz|zeny.cz|zive.cz
 :text^$popup,domain=zippyshare.com
-;adfxid=$script,domain=ahaonline.cz|auto.cz|autorevue.cz|blesk.cz|dama.cz|e15.cz|expres.cz|info.cz|karaoketexty.cz|kinobox.cz|kupi.cz|lidovky.cz|maminka.cz|mobilmania.cz|mojezdravi.cz|nasepenize.cz|novinky.cz|onetv.cz|osobnosti.cz|reflex.cz|tiscali.cz|zeny.cz|zive.cz
-;arrowgaKance=$domain=ahaonline.cz|auto.cz|autorevue.cz|blesk.cz|dama.cz|e15.cz|maminka.cz|mobilmania.cz|mojezdravi.cz|onetv.cz|reflex.cz|zeny.cz|zive.cz
-;attKaelling=$script,domain=auto.cz|autorevue.cz|maminka.cz|reflex.cz|ahaonline.cz|blesk.cz|dama.cz|e15.cz|info.cz|mobilmania.cz|mojezdravi.cz|onetv.cz|zeny.cz|zive.cz
-;attellKaing=$script,domain=auto.cz|autorevue.cz|maminka.cz|reflex.cz|ahaonline.cz|blesk.cz|dama.cz|e15.cz|info.cz|mobilmania.cz|mojezdravi.cz|onetv.cz|zeny.cz|zive.cz
-;baboKanes=$script,domain=auto.cz|autorevue.cz|maminka.cz|reflex.cz|ahaonline.cz|blesk.cz|dama.cz|e15.cz|info.cz|mobilmania.cz|mojezdravi.cz|onetv.cz|zeny.cz|zive.cz
-;boKaxscape=$domain=auto.cz|autorevue.cz|maminka.cz|reflex.cz|ahaonline.cz|blesk.cz|dama.cz|e15.cz|info.cz|mobilmania.cz|mojezdravi.cz|onetv.cz|zeny.cz|zive.cz
-;boxscKoape=$script,domain=auto.cz|autorevue.cz|maminka.cz|reflex.cz|ahaonline.cz|blesk.cz|dama.cz|e15.cz|info.cz|mobilmania.cz|mojezdravi.cz|onetv.cz|zeny.cz|zive.cz
-;boxscaKape=$script,domain=auto.cz|autorevue.cz|maminka.cz|reflex.cz|ahaonline.cz|blesk.cz|dama.cz|e15.cz|info.cz|mobilmania.cz|mojezdravi.cz|onetv.cz|zeny.cz|zive.cz
-;click=*/keyword=$script,domain=auto.cz|autorevue.cz|maminka.cz|reflex.cz|ahaonline.cz|blesk.cz|dama.cz|e15.cz|info.cz|mobilmania.cz|mojezdravi.cz|onetv.cz|zeny.cz|zive.cz
-;encodedclick=$script,domain=novinky.cz|super.cz|sport.cz|kupi.cz|horoskopy.cz
-;impenegatuesKas=$script,domain=auto.cz|autorevue.cz|maminka.cz|reflex.cz|ahaonline.cz|blesk.cz|dama.cz|e15.cz|info.cz|mobilmania.cz|mojezdravi.cz|onetv.cz|zeny.cz|zive.cz
 ;type=eligibleimpression;
 ;type=pixel;
 =120x600,
@@ -41126,10 +41063,8 @@ $~xmlhttprequest,~media,removeparam=source,denyallow=googlevideo.com,domain=1sol
 =728x90,
 =728x90/
 =728x90;
-=?$subdocument,domain=horoskopy.cz
 =Ad_ZPlusGoods&
 =BAIDU_SSP_define&
-=BBID-$script,domain=tiscali.cz|kinobox.cz|osobnosti.cz|karaoketexty.cz|nasepenize.cz|fights.cz
 =Busroll-$xmlhttprequest,domain=auto.cz|autorevue.cz|maminka.cz|reflex.cz|ahaonline.cz|blesk.cz|dama.cz|e15.cz|info.cz|mobilmania.cz|mojezdravi.cz|onetv.cz|zeny.cz|zive.cz
 =DisplayAd&
 =GetSponsorAds&
@@ -41197,9 +41132,7 @@ $~xmlhttprequest,~media,removeparam=source,denyallow=googlevideo.com,domain=1sol
 =googleanalytics_
 =half-page-ad&
 =iframe_adv&
-=js&*=no&*=0|$script,domain=ahaonline.cz|auto.cz|autorevue.cz|blesk.cz|dama.cz|e15.cz|maminka.cz|mobilmania.cz|mojezdravi.cz|onetv.cz|reflex.cz|zeny.cz|zive.cz
 =js&lst=$script,domain=www.idnes.cz|expres.cz|auto.cz|autorevue.cz|maminka.cz|reflex.cz|ahaonline.cz|blesk.cz|dama.cz|e15.cz|info.cz|mobilmania.cz|mojezdravi.cz|onetv.cz|zeny.cz|zive.cz|iprima.cz|tiscali.cz|kinobox.cz|osobnosti.cz|karaoketexty.cz|nasepenize.cz|fights.cz|novinky.cz|super.cz|sport.cz|kupi.cz|horoskopy.cz|televizeseznam.cz
-=js*&href=$script,domain=tiscali.cz|kinobox.cz|osobnosti.cz|karaoketexty.cz|nasepenize.cz|fights.cz
 =js_ads&
 =lightboxAd&
 =loadAdStatus&
@@ -41211,7 +41144,6 @@ $~xmlhttprequest,~media,removeparam=source,denyallow=googlevideo.com,domain=1sol
 =pageImpression&
 =partnerad&
 =pm_ads&
-=pop_|$script,domain=tiscali.cz|kinobox.cz|osobnosti.cz|karaoketexty.cz|nasepenize.cz|fights.cz
 =rightAds_
 =show_poster&id=
 =showsearchgoogleads&
@@ -41231,7 +41163,6 @@ $~xmlhttprequest,~media,removeparam=source,denyallow=googlevideo.com,domain=1sol
 ?*=*=*=$subdocument,domain=00cha.com|01fy.cn|06ps.com|08160.cn|0s.net.cn|10000xing.cn|100how.com|1010jiajiao.com|1024sj.com|11467.com|114piaowu.com|120ask.com|16xx8.com|192ly.com|1ppt.com|1ting.com|201980.com|21hubei.com|23yy.com|263y.com|2hanju.com|2liang.net|315hyw.com|32r.com|32xp.com|360changshi.com|360doc.cn|360zuowen.com|39.net|4aqq.com|5000yan.com|515fa.com|51edu.com|51sxue.com|51test.net|51zxw.net|52wubi.com|52zxw.com|5djiaren.com|5h.com|5nd.com|5seestar.com|64foot.com|66law.cn|7y7.com|800400.net|86huoche.com|8794.cn|911cha.com|91jucai.com|91zhongkao.com|949949.com|9553.com|99.com.cn|9939.com|9ht.com|ab126.com|admin5.com|aihami.com|aiyangedu.com|aizhan.com|ankangwang.com|annhe.net|apple886.com|arpun.com|askci.com|aspku.com|atobo.com|b2b168.com|b2b6.com|babihu.com|baicaolu.net|baotang5.com|baoxianzx.com|bbdj.com|bendibao.com|bianzhile.com|blog.sina.cn|boosj.com|bu-shen.com|bytravel.cn|c1km4.com|chajiaotong.com|chazidian.com|china.com|chinacar.com.cn|chinakaoyan.com|chinawj.com.cn|chuiyue.com|cidianwang.com|cjcp.com.cn|cnbanbao.cn|cncn.com|cnkang.com|cnlinfo.net|coozhi.com|cr173.com|csai.cn|cyyangqiguan.com|d17.cc|d1xz.net|daquan.com|dayfund.cn|dgzj.com|diangon.com|ditiezu.com|diyifanwen.com|diyju.com|dugoogle.com|dxsbb.com|eastday.com|enterdesk.com|exam58.com|fangdaijisuanqi.com|faxingzhan.com|friok.com|fun48.com|game234.com|gaosan.com|gaotie.cn|gucheng.com|gugu5.com|guidaye.com|gulongbbs.com|gushiwen.cn|hc23.com|hqhot.com|huangye88.com|hxnews.com|hydcd.com|icauto.com.cn|idongde.com|isanxia.com|ixinwei.com|ixiunv.com|jeasyui.net|jf258.com|jianbihua.com|jianbihuadq.com|jinbaodm.com|jingdianlaoge.com|jintang114.org|jj20.com|jy135.com|kdslife.com|latiaozixun.net|liuxue86.com|m.douban.com|makepolo.com|mama.cn|meishij.net|mipcache.bdstatic.com|miyudaquan.com|mmyuer.com|nanhuwang.com|oh100.com|pansoso.com|phb123.com|pig66.com|pikacn.com|pingguolv.com|pingshu8.com|ppzuowen.com|qcrx.cn|qcwxjs.com|qizuang.com|qm120.com|qncye.com|qqzhi.com|quwenqushi.com|riji.cn|riji100zi.com|rr95.com|ruiwen.com|sc115.com|shadafang.com|shangc.net|shenchuang.com|souid.com|ssqzj.com|szdushi.com.cn|szhk.com|tvmao.com|uzuzuz.com|weather.com.cn|webshu.net|wenkuxiazai.com|wenshenxiu.com|wenzhangba.com|wmxa.cn|woyaogexing.com|xiachufang.com|xiangha.com|xiao84.com|xiaole8.com|xiegw.cn|xywy.com|xzbu.com|yanyue.cn|yaozui.com|yellowurl.cn|yiqig.cn|yiyouliao.com|yjbys.com|yuwenmi.com|yxlady.com|yyrtv.com|zdface.com|zhifure.com|zhongyoo.com|zixuntop.com|ziyuanm.com|zjbiz.net|zuowen8.com|zuowenku.net|zuowenwang.net|zuoyesou.com
 ?*=*=*=$subdocument,domain=00cha.com|01fy.cn|06ps.com|08160.cn|0s.net.cn|10000xing.cn|1010jiajiao.com|1024sj.com|11467.com|114piaowu.com|120ask.com|16xx8.com|192ly.com|1ting.com|201980.com|23yy.com|256.cc|263y.com|2hanju.com|2liang.net|315hyw.com|3199.cn|32xp.com|3454.com|360changshi.com|360doc.cn|360zuowen.com|39.net|39yst.com|4aqq.com|515fa.com|51edu.com|51sxue.com|51test.net|51zxw.net|52che.com|52qj.com|52wubi.com|52zxw.com|59wz.com|5djiaren.com|5h.com|5nd.com|5seestar.com|5tps.com|5ykj.com|66law.cn|66wenshen.com|6822.com|7k7k.com|7y7.com|86huoche.com|8794.cn|911cha.com|91jucai.com|91zhongkao.com|949949.com|9553.com|9939.com|9ht.com|ab126.com|admin5.com|aihami.com|aiyangedu.com|aizhan.com|ankangwang.com|apple886.com|arpun.com|askci.com|aspku.com|atobo.com|baoxianzx.com|blog.sina.cn|chajiaotong.com|chazidian.com|coozhi.com|d1xz.net|daquan.com|dgzj.com|dugoogle.com|faxingzhan.com|fun48.com|hqhot.com|huangye88.com|hydcd.com|icauto.com.cn|isanxia.com|ixinwei.com|jianbihuadq.com|jiazhao.com|jingdianlaoge.com|liuxue86.com|m.douban.com|makepolo.com|mama.cn|mipcache.bdstatic.com|mmonly.cc|pctowap.com|pingshu8.com|riji.cn|riji100zi.com|rr95.com|shangc.net|tianya999.com|weather.com.cn|win7sky.com|woyaogexing.com|xiachufang.com|xiangha.com|xiaole8.com|xinwenlianbo.tv|yiqig.cn|zhifure.com|zhongyoo.com|zjbiz.net|zuowen8.com|zuowenku.net|zuowenwang.net
 ?*__$~xmlhttprequest,removeparam=/^__[bce-z]/,domain=facebook.com|facebookwkhpilnemxj7asaniu7vnjjbiltxjqhye3mhbshg7kx5tfyd.onion|messenger.com
-?CC=1&$script,domain=ahaonline.cz|auto.cz|autorevue.cz|blesk.cz|dama.cz|e15.cz|maminka.cz|mobilmania.cz|mojezdravi.cz|onetv.cz|reflex.cz|zeny.cz|zive.cz
 ?ZoneID=*&PageID=*&SiteID=$~image
 ?ZoneID=*&SiteID=*&PageID=$~image
 ?[AQB]&ndh=1&t=
@@ -41290,19 +41221,12 @@ $~xmlhttprequest,~media,removeparam=source,denyallow=googlevideo.com,domain=1sol
 ?advsystem=
 ?advtile=
 ?advurl=
-?b4geta=jj&$script,domain=auto.cz|autorevue.cz|maminka.cz|reflex.cz|ahaonline.cz|blesk.cz|dama.cz|e15.cz|info.cz|mobilmania.cz|mojezdravi.cz|onetv.cz|zeny.cz|zive.cz|expres.cz|www.idnes.cz|tiscali.cz|kinobox.cz|osobnosti.cz|karaoketexty.cz|nasepenize.cz|fights.cz|novinky.cz|super.cz|sport.cz|kupi.cz|horoskopy.cz|iprima.cz
 ?banner.id=
 ?bannerid=
-?bn=*$script,domain=auto.cz|autorevue.cz|maminka.cz|reflex.cz|ahaonline.cz|blesk.cz|dama.cz|e15.cz|info.cz|mobilmania.cz|mojezdravi.cz|onetv.cz|zeny.cz|zive.cz
-?bn=*;click=$script,domain=tiscali.cz|kinobox.cz|osobnosti.cz|karaoketexty.cz|nasepenize.cz|fights.cz
 ?bv=0&autoScaleBox=$media,domain=auto.cz|autorevue.cz|maminka.cz|reflex.cz|ahaonline.cz|blesk.cz|dama.cz|e15.cz|info.cz|mobilmania.cz|mojezdravi.cz|onetv.cz|zeny.cz|zive.cz
 ?category=ad&
-?chl2ba=$script,domain=ahaonline.cz|auto.cz|autorevue.cz|blesk.cz|dama.cz|e15.cz|maminka.cz|mobilmania.cz|mojezdravi.cz|onetv.cz|reflex.cz|zeny.cz|zive.cz
-?click=*name=|$subdocument,domain=auto.cz|autorevue.cz|maminka.cz|reflex.cz|ahaonline.cz|blesk.cz|dama.cz|e15.cz|info.cz|mobilmania.cz|mojezdravi.cz|onetv.cz|zeny.cz|zive.cz
-?deb=$script,domain=ahaonline.cz|auto.cz|autorevue.cz|blesk.cz|dama.cz|e15.cz|maminka.cz|mobilmania.cz|mojezdravi.cz|onetv.cz|reflex.cz|zeny.cz|zive.cz
-?debufe=k&$script,domain=auto.cz|autorevue.cz|maminka.cz|reflex.cz|ahaonline.cz|blesk.cz|dama.cz|e15.cz|info.cz|mobilmania.cz|mojezdravi.cz|onetv.cz|zeny.cz|zive.cz
+?client=ca-pub-$script,domain=karaoketexty.cz
 ?dfpadname=
-?dog=anot&$script,domain=auto.cz|autorevue.cz|maminka.cz|reflex.cz|ahaonline.cz|blesk.cz|dama.cz|e15.cz|info.cz|mobilmania.cz|mojezdravi.cz|onetv.cz|zeny.cz|zive.cz
 ?euidlls=$script,~third-party
 ?event=impressions&
 ?event=log&
@@ -41312,22 +41236,13 @@ $~xmlhttprequest,~media,removeparam=source,denyallow=googlevideo.com,domain=1sol
 ?event=tracking:ajax
 ?eventtype=impression&pid=
 ?eventtype=request&pid=
-?fix=okon&$script,domain=auto.cz|autorevue.cz|maminka.cz|reflex.cz|ahaonline.cz|blesk.cz|dama.cz|e15.cz|info.cz|mobilmania.cz|mojezdravi.cz|onetv.cz|zeny.cz|zive.cz
 ?fl=res,$image,domain=www.idnes.cz|expres.cz|novinky.cz|super.cz|sport.cz|kupi.cz|horoskopy.cz
-?format=js&$script,domain=ahaonline.cz|auto.cz|autorevue.cz|blesk.cz|dama.cz|e15.cz|maminka.cz|mobilmania.cz|mojezdravi.cz|onetv.cz|reflex.cz|zeny.cz|zive.cz
 ?format=js|$script,domain=iprima.cz
 ?framId=ad_
 ?guci=$subdocument,domain=iprima.cz
 ?handler=ads&
-?id=GTM-$script,domain=auto.cz|autorevue.cz|maminka.cz|reflex.cz|ahaonline.cz|blesk.cz|dama.cz|e15.cz|info.cz|mobilmania.cz|mojezdravi.cz|onetv.cz|zeny.cz|zive.cz|expres.cz|www.idnes.cz|tiscali.cz|kinobox.cz|osobnosti.cz|karaoketexty.cz|nasepenize.cz|fights.cz|novinky.cz|super.cz|sport.cz|kupi.cz|horoskopy.cz|iprima.cz
 ?impr?pageid=
-?k=$subdocument,domain=novinky.cz|televizeseznam.cz|super.cz|sport.cz|kupi.cz|horoskopy.cz
-?kGostoprd=$script,domain=auto.cz|autorevue.cz|maminka.cz|reflex.cz|ahaonline.cz|blesk.cz|dama.cz|e15.cz|info.cz|mobilmania.cz|mojezdravi.cz|onetv.cz|zeny.cz|zive.cz|tiscali.cz|kinobox.cz|osobnosti.cz|karaoketexty.cz|nasepenize.cz|fights.cz|novinky.cz|super.cz|sport.cz|kupi.cz
 ?key=$popup,domain=verystream.com
-?klik*truu=$subdocument,domain=novinky.cz|super.cz|sport.cz|kupi.cz|horoskopy.cz|televizeseznam.cz
-?ko562ty=js$script,domain=tiscali.cz|kinobox.cz|osobnosti.cz|karaoketexty.cz|nasepenize.cz|fights.cz
-?ko=sofix&$script,domain=ahaonline.cz|auto.cz|autorevue.cz|blesk.cz|dama.cz|e15.cz|maminka.cz|mobilmania.cz|mojezdravi.cz|onetv.cz|reflex.cz|zeny.cz|zive.cz
-?kosofi=$script,domain=auto.cz|autorevue.cz|maminka.cz|reflex.cz|ahaonline.cz|blesk.cz|dama.cz|e15.cz|info.cz|mobilmania.cz|mojezdravi.cz|onetv.cz|zeny.cz|zive.cz
 ?kruchekl=$xmlhttprequest,domain=televizeseznam.cz
 ?kruchkehl=undefined&$xmlhttprequest,domain=televizeseznam.cz
 ?local_ga_js=
@@ -41335,13 +41250,7 @@ $~xmlhttprequest,~media,removeparam=source,denyallow=googlevideo.com,domain=1sol
 ?logType=impression&
 ?logType=trackEvent&
 ?log_performance_metrics
-?malahokejka=$script,domain=auto.cz|autorevue.cz|maminka.cz|reflex.cz|ahaonline.cz|blesk.cz|dama.cz|e15.cz|info.cz|mobilmania.cz|mojezdravi.cz|onetv.cz|zeny.cz|zive.cz
-?malakGolejka=$script,domain=auto.cz|autorevue.cz|maminka.cz|reflex.cz|ahaonline.cz|blesk.cz|dama.cz|e15.cz|info.cz|mobilmania.cz|mojezdravi.cz|onetv.cz|zeny.cz|zive.cz
 ?method=baidu.ting.commercial.tactics&
-?model=xbox&$script,domain=auto.cz|autorevue.cz|maminka.cz|reflex.cz|ahaonline.cz|blesk.cz|dama.cz|e15.cz|info.cz|mobilmania.cz|mojezdravi.cz|onetv.cz|zeny.cz|zive.cz
-?modryozoGn=$script,domain=auto.cz|autorevue.cz|maminka.cz|reflex.cz|ahaonline.cz|blesk.cz|dama.cz|e15.cz|info.cz|mobilmania.cz|mojezdravi.cz|onetv.cz|zeny.cz|zive.cz
-?no=torin&$script,domain=auto.cz|autorevue.cz|maminka.cz|reflex.cz|ahaonline.cz|blesk.cz|dama.cz|e15.cz|info.cz|mobilmania.cz|mojezdravi.cz|onetv.cz|zeny.cz|zive.cz
-?noto=rin&$script,domain=auto.cz|autorevue.cz|maminka.cz|reflex.cz|ahaonline.cz|blesk.cz|dama.cz|e15.cz|info.cz|mobilmania.cz|mojezdravi.cz|onetv.cz|zeny.cz|zive.cz
 ?pageviews=$third-party
 ?phpAds_
 ?proxy=*?pool=
@@ -41349,24 +41258,13 @@ $~xmlhttprequest,~media,removeparam=source,denyallow=googlevideo.com,domain=1sol
 ?proxy=ws://$script,websocket
 ?proxy=wss://$script,websocket
 ?pvId=$xmlhttprequest,domain=televizeseznam.cz
-?r0hlik=jj$script,domain=ahaonline.cz|auto.cz|autorevue.cz|blesk.cz|dama.cz|e15.cz|maminka.cz|mobilmania.cz|mojezdravi.cz|onetv.cz|reflex.cz|zeny.cz|zive.cz
 ?service=ad&
 ?sponsor_pixel=
 ?statify_referrer=
 ?type=ad&
 ?type=pageview&
-?typkodu=js$script,domain=tiscali.cz|kinobox.cz|osobnosti.cz|karaoketexty.cz|nasepenize.cz|fights.cz
-?url=$subdocument,domain=novinky.cz|super.cz|sport.cz|kupi.cz|horoskopy.cz
-?user=ps4&$script,domain=ahaonline.cz|auto.cz|autorevue.cz|blesk.cz|dama.cz|e15.cz|maminka.cz|mobilmania.cz|mojezdravi.cz|onetv.cz|reflex.cz|zeny.cz|zive.cz
 ?v127|$script,domain=iprima.cz
-?v972|$script,domain=ahaonline.cz|auto.cz|autorevue.cz|blesk.cz|dama.cz|e15.cz|maminka.cz|mobilmania.cz|mojezdravi.cz|onetv.cz|reflex.cz|zeny.cz|zive.cz
-?v981|$script,domain=ahaonline.cz|auto.cz|autorevue.cz|blesk.cz|dama.cz|e15.cz|maminka.cz|mobilmania.cz|mojezdravi.cz|onetv.cz|reflex.cz|zeny.cz|zive.cz
-?v999|$script,domain=ahaonline.cz|auto.cz|autorevue.cz|blesk.cz|dama.cz|e15.cz|maminka.cz|mobilmania.cz|mojezdravi.cz|onetv.cz|reflex.cz|zeny.cz|zive.cz
-?v=1.006|$script,domain=ahaonline.cz|auto.cz|autorevue.cz|blesk.cz|dama.cz|e15.cz|maminka.cz|mobilmania.cz|mojezdravi.cz|onetv.cz|reflex.cz|zeny.cz|zive.cz
-?v=2.001|$script,domain=ahaonline.cz|auto.cz|autorevue.cz|blesk.cz|dama.cz|e15.cz|maminka.cz|mobilmania.cz|mojezdravi.cz|onetv.cz|reflex.cz|zeny.cz|zive.cz
-?verze_$script,domain=ahaonline.cz|auto.cz|autorevue.cz|blesk.cz|dama.cz|e15.cz|maminka.cz|mobilmania.cz|mojezdravi.cz|onetv.cz|reflex.cz|zeny.cz|zive.cz
 ?view=ad&
-?wimvr=$subdocument,script,domain=novinky.cz|super.cz|sport.cz|kupi.cz|horoskopy.cz|televizeseznam.cz
 ?wm=*&prm=rev&
 ?wppaszoneid=
 ?wpproads-
@@ -42763,6 +42661,7 @@ $~xmlhttprequest,~media,removeparam=source,denyallow=googlevideo.com,domain=1sol
 @@||dr.dk^*^sasfid=*&clicktag=$subdocument,domain=dr.dk
 @@||dragoart.com/ads.js$script,~third-party
 @@||drive.google.com^$generichide
+@@||drivetrain.ai/drive/api/v1/metrics/$~third-party
 @@||dropbox.com^$generichide
 @@||dropboxstatic.com/static/js/modules/clean/ux_analytics/$script,domain=dropbox.com
 @@||drstickyfingers.com/intermission/loadTargetUrl$xmlhttprequest
@@ -43462,6 +43361,8 @@ $~xmlhttprequest,~media,removeparam=source,denyallow=googlevideo.com,domain=1sol
 @@||kameleoon.eu/kameleoon.js$domain=welt.de
 @@||kanalfrederikshavn.dk^*/jquery.openx.js?
 @@||kaptcha.com/collect/sdk?$domain=wyze.com
+@@||karaoketexty.cz/img/*.jpg$image,domain=karaoketexty.cz
+@@||karaoketexty.cz/img/*.png$image,domain=karaoketexty.cz
 @@||kataweb.it/wt/wt.js?http$domain=gelocal.it|video.huffingtonpost.it|video.ilsecoloxix.it|video.lanuovasardegna.it|video.lastampa.it|video.rep.repubblica.it|video.repubblica.it
 @@||kawasaki.com/Scripts/Analytics/BaseAnalytics.js$script,~third-party
 @@||kaxsdc.com/collect/sdk$xmlhttprequest,domain=vanillaereward.com
@@ -45160,17 +45061,9 @@ $~xmlhttprequest,~media,removeparam=source,denyallow=googlevideo.com,domain=1sol
 @@||zylom.com/images/site/zylom/scripts/google-analytics.js
 @@||zynga.com/current/iframe/track.php?$domain=apps.facebook.com
 @||crunchyroll.com/*/ads_enabled_flag*.js$script
-AKp$script,image,match-case,domain=tiscali.cz|kinobox.cz|osobnosti.cz|karaoketexty.cz|nasepenize.cz|fights.cz
-Forge-of-Empires$image,domain=www.idnes.cz|expres.cz|auto.cz|autorevue.cz|maminka.cz|reflex.cz|ahaonline.cz|blesk.cz|dama.cz|e15.cz|info.cz|mobilmania.cz|mojezdravi.cz|onetv.cz|zeny.cz|zive.cz
 MRelateFeedAd
 MoBi*.baidu.js$script,third-party
-N3L00Ax6T00V$image,domain=www.idnes.cz|expres.cz|auto.cz|autorevue.cz|maminka.cz|reflex.cz|ahaonline.cz|blesk.cz|dama.cz|e15.cz|info.cz|mobilmania.cz|mojezdravi.cz|onetv.cz|zeny.cz|zive.cz
-Pici?*Pici|$script,match-case,domain=auto.cz|autorevue.cz|maminka.cz|reflex.cz|ahaonline.cz|blesk.cz|dama.cz|e15.cz|info.cz|mobilmania.cz|mojezdravi.cz|onetv.cz|zeny.cz|zive.cz
 QURna+inhOWImQ==
-SB30D0xC60W0F$image,domain=www.idnes.cz|expres.cz|auto.cz|autorevue.cz|maminka.cz|reflex.cz|ahaonline.cz|blesk.cz|dama.cz|e15.cz|info.cz|mobilmania.cz|mojezdravi.cz|onetv.cz|zeny.cz|zive.cz
-Skyscraper$image,domain=auto.cz|autorevue.cz|maminka.cz|reflex.cz|ahaonline.cz|blesk.cz|dama.cz|e15.cz|info.cz|mobilmania.cz|mojezdravi.cz|onetv.cz|zeny.cz|zive.cz
-X3V00Hx6H00E$image,script,domain=www.idnes.cz|expres.cz|auto.cz|autorevue.cz|maminka.cz|reflex.cz|ahaonline.cz|blesk.cz|dama.cz|e15.cz|info.cz|mobilmania.cz|mojezdravi.cz|onetv.cz|zeny.cz|zive.cz
-YU30M0xW60A0O$image,domain=www.idnes.cz|expres.cz|auto.cz|autorevue.cz|maminka.cz|reflex.cz|ahaonline.cz|blesk.cz|dama.cz|e15.cz|info.cz|mobilmania.cz|mojezdravi.cz|onetv.cz|zeny.cz|zive.cz
 \:[0-9]{4,5}\/sogou\/
 ^adreaper^
 ^ads.swf|
@@ -45327,7 +45220,6 @@ _StickyAd.
 _StickyAdFunc.
 _Tacoda_
 _UIM-Ads_
-_WPGvW.min.js$script,domain=ahaonline.cz|auto.cz|autorevue.cz|blesk.cz|dama.cz|e15.cz|maminka.cz|mobilmania.cz|mojezdravi.cz|onetv.cz|reflex.cz|zeny.cz|zive.cz
 _WebBannerAd_
 _Web_ad.
 _acorn_ad_
@@ -45701,8 +45593,6 @@ _bannerad.
 _bannerads_
 _baynote.
 _beacon?
-_bf_$image,domain=ahaonline.cz|auto.cz|autorevue.cz|blesk.cz|dama.cz|e15.cz|maminka.cz|mobilmania.cz|mojezdravi.cz|onetv.cz|reflex.cz|zeny.cz|zive.cz
-_bfr_$image,domain=ahaonline.cz|auto.cz|autorevue.cz|blesk.cz|dama.cz|e15.cz|maminka.cz|mobilmania.cz|mojezdravi.cz|onetv.cz|reflex.cz|zeny.cz|zive.cz
 _bg_ad_left.
 _billboard_320x100.iframe.
 _blank_ads.
@@ -45712,7 +45602,6 @@ _bnTracker.min.js?
 _bottom_ads.
 _bottom_ads_
 _box_ad_
-_branidng.$image,domain=auto.cz|autorevue.cz|maminka.cz|reflex.cz|ahaonline.cz|blesk.cz|dama.cz|e15.cz|info.cz|mobilmania.cz|mojezdravi.cz|onetv.cz|zeny.cz|zive.cz
 _btbttme/fox/img/QT_
 _btnad_
 _bucks_ad.
@@ -45720,15 +45609,10 @@ _button_ad_
 _buttonad.
 _buzzAd_
 _c.gif?c=
-_c7.b-$script,domain=ahaonline.cz|auto.cz|autorevue.cz|blesk.cz|dama.cz|e15.cz|maminka.cz|mobilmania.cz|mojezdravi.cz|onetv.cz|reflex.cz|zeny.cz|zive.cz
-_c7.scptBan-$script,domain=ahaonline.cz|auto.cz|autorevue.cz|blesk.cz|dama.cz|e15.cz|maminka.cz|mobilmania.cz|mojezdravi.cz|onetv.cz|reflex.cz|zeny.cz|zive.cz
-_c7.stBan-$script,domain=ahaonline.cz|auto.cz|autorevue.cz|blesk.cz|dama.cz|e15.cz|maminka.cz|mobilmania.cz|mojezdravi.cz|onetv.cz|reflex.cz|zeny.cz|zive.cz
 _cedexis.
 _centre_ad.
 _cgbanners.php?
 _chartbeat.js
-_cnc-$image,domain=auto.cz|autorevue.cz|maminka.cz|reflex.cz|ahaonline.cz|blesk.cz|dama.cz|e15.cz|info.cz|mobilmania.cz|mojezdravi.cz|onetv.cz|zeny.cz|zive.cz
-_cnc_$image,domain=ahaonline.cz|auto.cz|autorevue.cz|blesk.cz|dama.cz|e15.cz|maminka.cz|mobilmania.cz|mojezdravi.cz|onetv.cz|reflex.cz|zeny.cz|zive.cz
 _collect/ads/
 _commonAD.
 _companionad.
@@ -45817,7 +45701,6 @@ _hosting_ad.
 _house_ad_
 _hr_advt/
 _html5/ads.
-_iSPORT_$image,domain=auto.cz|autorevue.cz|maminka.cz|reflex.cz|ahaonline.cz|blesk.cz|dama.cz|e15.cz|info.cz|mobilmania.cz|mojezdravi.cz|onetv.cz|zeny.cz|zive.cz
 _iad.html?
 _id/ads/
 _iframe_ad_
@@ -45878,8 +45761,6 @@ _newrelic_min.
 _nielsen.js
 _nine_ad/
 _ntpagetag.
-_ok_bf.$image,domain=ahaonline.cz|auto.cz|autorevue.cz|blesk.cz|dama.cz|e15.cz|maminka.cz|mobilmania.cz|mojezdravi.cz|onetv.cz|reflex.cz|zeny.cz|zive.cz
-_oktagon_$image,domain=auto.cz|autorevue.cz|maminka.cz|reflex.cz|ahaonline.cz|blesk.cz|dama.cz|e15.cz|info.cz|mobilmania.cz|mojezdravi.cz|onetv.cz|zeny.cz|zive.cz
 _online_ad.
 _onlinead_
 _openx.
@@ -45942,7 +45823,6 @@ _sdcTrackingCode.
 _sectionfront_ad.
 _semanticTag/
 _setAnalyticsFields&
-_sezonni_nabidka$image,domain=auto.cz|autorevue.cz|maminka.cz|reflex.cz|ahaonline.cz|blesk.cz|dama.cz|e15.cz|info.cz|mobilmania.cz|mojezdravi.cz|onetv.cz|zeny.cz|zive.cz
 _show_ads=
 _show_ads_
 _showad*
@@ -46662,7 +46542,6 @@ aratta-ukraine.com,drawnstories.ru,gisclub.tv,kinda.media,teremok.org.ua,webos-f
 arcadebomb.com##.bannerext
 arcadebomb.com##.bottombox
 arcadebomb.com##.colunit1
-area_Ostatni$script,image,subdocument,domain=auto.cz|autorevue.cz|maminka.cz|reflex.cz|ahaonline.cz|blesk.cz|dama.cz|e15.cz|info.cz|mobilmania.cz|mojezdravi.cz|onetv.cz|zeny.cz|zive.cz
 arizonasports.com,ktar.com##.sponsorBy
 armageddonexpo.com,audiforums.com,f1gamesetup.com,ferrarichat.com,jaguarforums.com,pypi.org,thebugle.co.za,waamradio.com,wbal.com##.sponsors
 armenpress.am###topbnnr
@@ -46755,7 +46634,6 @@ auto-online.com.tw##div[style="width:336px;height:280px;margin:0;background:#000
 auto-online.com.tw##div[style="width:728px;height:130px;margin:0;background:#000000"]
 auto.163.com##.post_adtop_main,.post_end_ad,.ga-x_100,.ga-300_400,.ga-1200_125
 auto.cz##.halfpageAd, [class*="wrapperH-prapper"], [class*="billboard-bottom"], img[width='970'][height="310"], [data-io-article-url] a[target='_top'], video[id^="video-"][preload="auto"][webkit-playsinline="webkit-playsinline"], [class*="ads-leader"], #KoqisAoAce
-auto.cz,autorevue.cz,maminka.cz,reflex.cz,ahaonline.cz,blesk.cz,dama.cz,e15.cz,info.cz,mobilmania.cz,mojezdravi.cz,onetv.cz,zeny.cz,zive.cz###BovisACAce
 auto.cz,autorevue.cz,maminka.cz,reflex.cz,ahaonline.cz,blesk.cz,dama.cz,e15.cz,info.cz,mobilmania.cz,mojezdravi.cz,onetv.cz,zeny.cz,zive.cz###Klapsnice-1
 auto.cz,autorevue.cz,maminka.cz,reflex.cz,ahaonline.cz,blesk.cz,dama.cz,e15.cz,info.cz,mobilmania.cz,mojezdravi.cz,onetv.cz,zeny.cz,zive.cz###Moitor-1
 auto.cz,autorevue.cz,maminka.cz,reflex.cz,ahaonline.cz,blesk.cz,dama.cz,e15.cz,info.cz,mobilmania.cz,mojezdravi.cz,onetv.cz,zeny.cz,zive.cz###ProsteCtverecek
@@ -46766,7 +46644,6 @@ auto.cz,autorevue.cz,maminka.cz,reflex.cz,ahaonline.cz,blesk.cz,dama.cz,e15.cz,i
 auto.cz,autorevue.cz,maminka.cz,reflex.cz,ahaonline.cz,blesk.cz,dama.cz,e15.cz,info.cz,mobilmania.cz,mojezdravi.cz,onetv.cz,zeny.cz,zive.cz###brandingCreativeWrapper
 auto.cz,autorevue.cz,maminka.cz,reflex.cz,ahaonline.cz,blesk.cz,dama.cz,e15.cz,info.cz,mobilmania.cz,mojezdravi.cz,onetv.cz,zeny.cz,zive.cz###creativelink
 auto.cz,autorevue.cz,maminka.cz,reflex.cz,ahaonline.cz,blesk.cz,dama.cz,e15.cz,info.cz,mobilmania.cz,mojezdravi.cz,onetv.cz,zeny.cz,zive.cz###lapapAoce-z
-auto.cz,autorevue.cz,maminka.cz,reflex.cz,ahaonline.cz,blesk.cz,dama.cz,e15.cz,info.cz,mobilmania.cz,mojezdravi.cz,onetv.cz,zeny.cz,zive.cz###lapapsnice-y
 auto.cz,autorevue.cz,maminka.cz,reflex.cz,ahaonline.cz,blesk.cz,dama.cz,e15.cz,info.cz,mobilmania.cz,mojezdravi.cz,onetv.cz,zeny.cz,zive.cz###leader_board
 auto.cz,autorevue.cz,maminka.cz,reflex.cz,ahaonline.cz,blesk.cz,dama.cz,e15.cz,info.cz,mobilmania.cz,mojezdravi.cz,onetv.cz,zeny.cz,zive.cz##.SC_TBlock
 auto.cz,autorevue.cz,maminka.cz,reflex.cz,ahaonline.cz,blesk.cz,dama.cz,e15.cz,info.cz,mobilmania.cz,mojezdravi.cz,onetv.cz,zeny.cz,zive.cz##.ad-skycrapper
@@ -46798,7 +46675,6 @@ auto.cz,autorevue.cz,maminka.cz,reflex.cz,ahaonline.cz,blesk.cz,dama.cz,e15.cz,i
 auto.cz,autorevue.cz,maminka.cz,reflex.cz,ahaonline.cz,blesk.cz,dama.cz,e15.cz,info.cz,mobilmania.cz,mojezdravi.cz,onetv.cz,zeny.cz,zive.cz##iframe[id^="iframeWrapper-"]
 auto.cz,autorevue.cz,maminka.cz,reflex.cz,ahaonline.cz,blesk.cz,dama.cz,e15.cz,info.cz,mobilmania.cz,mojezdravi.cz,onetv.cz,zeny.cz,zive.cz##img[id*="Ad"][id*="form"]
 auto.cz,autorevue.cz,maminka.cz,reflex.cz,ahaonline.cz,blesk.cz,dama.cz,e15.cz,info.cz,mobilmania.cz,mojezdravi.cz,onetv.cz,zeny.cz,zive.cz##leaderBoard
-auto.cz,autorevue.cz,maminka.cz,reflex.cz,ahaonline.cz,blesk.cz,dama.cz,e15.cz,info.cz,mobilmania.cz,mojezdravi.cz,onetv.cz,zeny.cz,zive.cz#$#abort-on-property-read Element.prototype.attachShadow
 auto.cz,autorevue.cz,maminka.cz,reflex.cz,ahaonline.cz,blesk.cz,dama.cz,e15.cz,info.cz,mobilmania.cz,mojezdravi.cz,onetv.cz,zeny.cz,zive.cz#?#div:-abp-has(>[class$="selfpromo"])
 auto.cz,autorevue.cz,maminka.cz,reflex.cz,ahaonline.cz,blesk.cz,dama.cz,e15.cz,info.cz,mobilmania.cz,mojezdravi.cz,onetv.cz,zeny.cz,zive.cz#?#div:-abp-has(>p:-abp-contains(REKLAMA))
 auto.cz,autorevue.cz,maminka.cz,reflex.cz,ahaonline.cz,blesk.cz,dama.cz,e15.cz,info.cz,mobilmania.cz,mojezdravi.cz,onetv.cz,zeny.cz,zive.cz#?#div:-abp-has(>small:-abp-contains(Reklamy))
@@ -46907,7 +46783,6 @@ axn-asia.com,onetvasia.com##.pane-dart-dart-tag-300x250-rectangle
 ayidaye.m.zwdu.com
 azcardinals.com###adblock-notice
 azcentral.com,detroitnews.com,freep.com##div[id^="ad-slot-"]
-azdab|$script,domain=tiscali.cz|kinobox.cz|osobnosti.cz|karaoketexty.cz|nasepenize.cz|fights.cz
 azernews.az##.banner-block
 azhibo.com##.ad-couplet-common,.ad-wrapper
 azhibo.tv##.fill-content,[width="680"][height="60"],[href^="http://www.00880808.com/go/"],[src="/images/leisu.png"]
@@ -47359,7 +47234,6 @@ banjiajia.com##.register-ten
 banma.com##.rightad,.guanggao
 banma.com##div[id^="disapper"]
 bannedbook.org
-banner$image,domain=auto.cz|autorevue.cz|maminka.cz|reflex.cz|ahaonline.cz|blesk.cz|dama.cz|e15.cz|info.cz|mobilmania.cz|mojezdravi.cz|onetv.cz|zeny.cz|zive.cz
 banyungong.org##.ad,.gg,#lnkTB,.xnf
 banzou.name###ads_1
 banzou.name###ads_2
@@ -47793,7 +47667,6 @@ bleedingcool.com,jamaicaobserver.com,pastemagazine.com###top_leaderboard
 bleepingcomputer.com##[href^="https://www.bleepingcomputer.com/go/"]
 blesk.cz###stickyfloatLeftEmptySpaceCheckLeft
 blesk.cz##.gam-wrapper
-blesk.cz##[class$="-kukakomeha"]
 bljiex.com,zhenbuka3.com###player_pause
 blockchair.com##.bottom--buttons-container
 blockchair.com##.d-block
@@ -47932,8 +47805,6 @@ bozhou.cn##.bannerad
 bqg5200.com##.content_ad,.ad250left
 brainyquote.com##.bq_ad_320x250_multi
 brandexperience-group.com#@#.adv-banner
-branding$image,domain=www.idnes.cz|expres.cz|auto.cz|autorevue.cz|maminka.cz|reflex.cz|ahaonline.cz|blesk.cz|dama.cz|e15.cz|info.cz|mobilmania.cz|mojezdravi.cz|onetv.cz|zeny.cz|zive.cz
-branding$subdocument,domain=auto.cz|autorevue.cz|maminka.cz|reflex.cz|ahaonline.cz|blesk.cz|dama.cz|e15.cz|info.cz|mobilmania.cz|mojezdravi.cz|onetv.cz|zeny.cz|zive.cz
 brandsales.58.com#@#div[id^="ad_"]
 bravoteens.com##.a352
 bravoteens.com##.good_list_wrap
@@ -48208,7 +48079,6 @@ cast4u.tv###notice
 cast4u.tv###video_ads_overdiv
 castanet.net###hdad
 caster.fm##.sidebar_ablock
-cat_*dog$subdocument,domain=novinky.cz|super.cz|sport.cz|kupi.cz|horoskopy.cz|televizeseznam.cz
 catb.org#@##banner-ad
 cathnews.co.nz,cryptoreporter.info,net-load.com,wakingtimes.com###text-12
 catholic.net##.publicidad
@@ -48752,7 +48622,6 @@ cnblogs.com##a[href*=".gridsumdissector.com/"]
 cnblogs.com##div[id^="google_ad_"],[id^="ad_"],#banner_right,[id^="cnblogs_a"],[id^="cnblogs_b"],[id^="cnblogs_c"].c_ad_block,[id^="div-gpt-ad-"],[height="60"],.adPopup
 cnbzol.com##.ad300x250
 cnc.qzs.qq.com###bottom-sponsor
-cnc1/$image,domain=auto.cz|autorevue.cz|maminka.cz|reflex.cz|ahaonline.cz|blesk.cz|dama.cz|e15.cz|info.cz|mobilmania.cz|mojezdravi.cz|onetv.cz|zeny.cz|zive.cz
 cncrk.com##.dxzq
 cndesign.com##.index-add
 cndesign.com##a[href="https://7344.taobao.com/"],ins.adsbygoogle
@@ -50044,7 +49913,6 @@ e2mv.com##.left_advert
 e3zy.com##.jiacu
 e3zy.com##img[style="height: 80px; width: 100%;"]
 e4dy.com##img[src^="style/"],[height="70"]
-ePojisteni$image,domain=www.idnes.cz|expres.cz|auto.cz|autorevue.cz|maminka.cz|reflex.cz|ahaonline.cz|blesk.cz|dama.cz|e15.cz|info.cz|mobilmania.cz|mojezdravi.cz|onetv.cz|zeny.cz|zive.cz
 eachporn.com##.item[style]
 earlygame.com##a[rel*="sponsored"]
 earnmoneyhub.com###div-outer-4398
@@ -52868,7 +52736,7 @@ igorchernomoretz.com##body > div[id^="ab"]
 igorchernomoretz.com##body > div[id^="ab"] + div[style*="cursor"]
 igorslab.de##.herald-sidebar
 iguang.tw##.mall[shop],#googleAD1
-iguarras.com,iputitas.net#$#abort-on-property-read afScript
+iguarras.com,iputitas.net,ytanime.tv#$#abort-on-property-read afScript
 igxe.cn##.lion-flexd
 ihacksoft.com##.post-top-gg
 iheartradio.ca##.lightbox-wrapper
@@ -52993,7 +52861,6 @@ imgo.tv##[id^="ac-"]
 imgtaxi.com##.bottom_abs
 imgur.com,pushsquare.com,songlyrics.com##.masthead
 imooc.com##.redrain-bg-shade
-impressionId$subdocument,domain=tiscali.cz|kinobox.cz|osobnosti.cz|karaoketexty.cz|nasepenize.cz|fights.cz
 in-page-push.com
 in-trend.biz##body > [id][style^="z-index"]
 in.18gg.net##Table
@@ -53141,6 +53008,7 @@ iprima.cz##div[data-d-area]
 iprima.cz#?#div:-abp-has(>.mone_header)
 iprima.cz#@#.adsbox
 iprima.cz#@#.bannerAd
+iprima.cz,www.seznam.cz,novinky.cz,super.cz,ahaonline.cz,expres.cz,kinobox.cz,horoskopy.cz#$#json-override ads ''
 iptv444.com$$a[target="_blank"]
 ipv6.baidu.com,m.baidu.com,www.baidu.com,www1.baidu.com,xueshu.baidu.com###results > div[class]:not(.result):not(.result-op):not(.sp-rslt-bar):not(.s-group-result)
 ipv6.baidu.com,www.baidu.com,www1.baidu.com,xueshu.baidu.com###con-ar > .result-op[mu*="nourl.ubs.baidu.com"]
@@ -54349,7 +54217,6 @@ kuaishouba.com##.index_adbox
 kuakao.com##.addTQBar
 kubik3.ru##.adbs
 kuchnia.wp.pl#$#abort-on-property-read pbjs.libLoaded
-kukaj879nokov$image,domain=auto.cz|autorevue.cz|maminka.cz|reflex.cz|ahaonline.cz|blesk.cz|dama.cz|e15.cz|info.cz|mobilmania.cz|mojezdravi.cz|onetv.cz|zeny.cz|zive.cz
 kuklaskorner.com###ultimate
 kukudm.com##a[href="/exit/exit.htm"] > img[src="/images/d.gif"]
 kukuw.com###gg_rl
@@ -54763,8 +54630,6 @@ longzhu.com##.recommend-pop-up
 longzhu.com##.scroll-ad,[class^="video-ad-"],.ap-container,div.banner-style2-linkcon,div.video-ap1,div.side-ap-wrap.o2-listener,.movie-advert-time,.video-pos + .side,.movie-advert-link,.chatroom-ap
 lookae.com##.zhongjian
 lookbook.nu##.leaderboard_container
-lopatasvocima$script,domain=ahaonline.cz|auto.cz|autorevue.cz|blesk.cz|dama.cz|e15.cz|maminka.cz|mobilmania.cz|mojezdravi.cz|onetv.cz|reflex.cz|zeny.cz|zive.cz
-lopatysocimahttps:$script,domain=auto.cz|autorevue.cz|maminka.cz|reflex.cz|ahaonline.cz|blesk.cz|dama.cz|e15.cz|info.cz|mobilmania.cz|mojezdravi.cz|onetv.cz|zeny.cz|zive.cz
 lostfilm.tv##div[class^="alarm"]
 lostintechnology.com,ripplecoinnews.com,webkinznewz.ganzworld.com##.widget_text
 lotpc.com##[class^="articlebanner"],.adsbygoogle
@@ -55400,7 +55265,6 @@ masalaseen.net##[href^="https://rajabets.com/"]
 mashable.com###sidebar-1
 mashable.com##.top-0.sticky > div
 mashable.com##section.mt-4 > div
-maslo=$script,domain=auto.cz|autorevue.cz|maminka.cz|reflex.cz|ahaonline.cz|blesk.cz|dama.cz|e15.cz|info.cz|mobilmania.cz|mojezdravi.cz|onetv.cz|zeny.cz|zive.cz
 masok.cn###bottomLayer
 mastersclub.jp#@#.ads.widget
 masturbation22.com,playallvideos.com,pron.co,ratedxbiz.com,taporn.com##.ima
@@ -56480,7 +56344,6 @@ novinky.cz,kupi.cz,sport.cz,super.cz,horoskopy.cz##iframe[frameborder="no"][scro
 novinky.cz,kupi.cz,sport.cz,super.cz,horoskopy.cz##iframe[frameporder]
 novinky.cz,kupi.cz,sport.cz,super.cz,horoskopy.cz##iframe[hehehe="no"][scrolling="no"][style*="display: block;"]
 novinky.cz,kupi.cz,sport.cz,super.cz,horoskopy.cz##iframe[ramefamorderx]
-novinky.cz,kupi.cz,sport.cz,super.cz,horoskopy.cz##iframe[ramefamorderx], iframe[mfookasinyx]
 novinky.cz,kupi.cz,sport.cz,super.cz,horoskopy.cz,televizeseznam.cz###sznad-video-takeover
 novinky.cz,kupi.cz,sport.cz,super.cz,horoskopy.cz,televizeseznam.cz##.ssp_top
 novinky.cz,kupi.cz,sport.cz,super.cz,horoskopy.cz,televizeseznam.cz##[href*="/pimpu?"]
@@ -56495,7 +56358,6 @@ novinky.cz,kupi.cz,sport.cz,super.cz,horoskopy.cz,televizeseznam.cz##a[href*="ad
 novinky.cz,kupi.cz,sport.cz,super.cz,horoskopy.cz,televizeseznam.cz##a[href*="klik"][href*="truu"]
 novinky.cz,kupi.cz,sport.cz,super.cz,televizeseznam.cz##a[href*="/clickthru?"]
 novinky.cz,sport.cz,super.cz##[class$="_main__ad"]
-novinky.cz,super.cz,ahaonline.cz,expres.cz,kinobox.cz,horoskopy.cz#$#json-override ads ''
 novinky.cz,super.cz,sport.cz##[class*="ClickThrough"]
 novinky.cz,super.cz,sport.cz,expres.cz##.barMan
 novinky.cz,super.cz,sport.cz,horoskopy.cz##div[data-impressionurl]
@@ -56696,7 +56558,6 @@ optimum.net##.paidResult
 oqjkskjkdsl.yuhunwang.net
 oqkdjkdokj4l.xinerdact.com
 or123.top##.qfe_wrapper > div > a[href^="http"]:not([href*="or123."])
-orcie178nohy$image,domain=auto.cz|autorevue.cz|maminka.cz|reflex.cz|ahaonline.cz|blesk.cz|dama.cz|e15.cz|info.cz|mobilmania.cz|mojezdravi.cz|onetv.cz|zeny.cz|zive.cz
 orgasm.com##.horizontal-banner-module
 orschlurch.net##.amazon-wrapper
 orschlurch.net,tetris.com##[href^="https://amzn.to/"]
@@ -57059,7 +56920,6 @@ pilifx.com##.home_row_1
 pilifx.com##.imoney
 pilipali.cc##.tips-widget-weixin
 pilipili.site##.block-sales
-pilo=|$script,domain=auto.cz|autorevue.cz|maminka.cz|reflex.cz|ahaonline.cz|blesk.cz|dama.cz|e15.cz|info.cz|mobilmania.cz|mojezdravi.cz|onetv.cz|zeny.cz|zive.cz
 pimpandhost.com###ad2
 pimpandhost.com##.aaablock_yes
 pimpletv.ru##.adblock-notification
@@ -57146,7 +57006,6 @@ pjtime.com##[id^="Ad_"],.top_R,.logoad180,.ad_r,[id^="Couplet_"],#epop
 pjyu.golden1.sogou.com
 pkmods.com##body > div[style*="z-index"][style*="background"]
 plagiarismtoday.com##.plagi-widget
-planeo$image,domain=www.idnes.cz|expres.cz|auto.cz|autorevue.cz|maminka.cz|reflex.cz|ahaonline.cz|blesk.cz|dama.cz|e15.cz|info.cz|mobilmania.cz|mojezdravi.cz|onetv.cz|zeny.cz|zive.cz
 planet-series.tv##[href*="/offer?prod="]
 planetatvonlinehd.blogspot.com###anuncio
 planetatvonlinehd.blogspot.com###tupiklan
@@ -57241,7 +57100,6 @@ pocketgamer.com##.item-unit
 poedb.tw#?#div[id]:-abp-contains(ad blocker)
 pogocheats.net#@#.adsbygoogle
 pogoda.wp.pl#$#abort-on-property-read prebidConfig.config.floorprices
-pohled8nicky$subdocument,domain=auto.cz|autorevue.cz|maminka.cz|reflex.cz|ahaonline.cz|blesk.cz|dama.cz|e15.cz|info.cz|mobilmania.cz|mojezdravi.cz|onetv.cz|zeny.cz|zive.cz
 pok.hnyrd.com.cn
 pokeminers.com#@#.ad-container
 pokemonizle.net#@##adsense
@@ -58777,6 +58635,8 @@ skydy.top##.swiper-slide[style="width: 1170px;"]
 skykiwi.com##div[style^="width:1200px;height:"]
 skykiwichina.com###main_right_ad,.soku_ad,#topads,[src^="http://www.gcemedia.co.nz/www/delivery/afr.php"],[src^="http://ads.skykiwi.com/www/delivery/afr.php"],[id^="ad_"]
 skylinewebcams.com###hostedby
+skylinewebcams.com###s1123
+skylinewebcams.com###s4152
 skylinewebcams.com###skylinewebcams-ads2
 skyrock.com###pub_up
 skyrock.com##IMG[src*="adblock/megabanner.png"]
@@ -59328,6 +59188,7 @@ suizhoushi.com##.sznew_ad_top
 suizhoushi.com##div[id^="sznew_ad"]
 sumanasa.com##.adcontent
 summeng.com###diy1,.sxp60ad,[class$="rightad"],.ad_sxp
+summit.news##[href="https://infowarsstore.com/"]
 sun0769.com##div[class^="pagecenter sungg"],div[class^="gg"],div.ad950,div[id^="sungg"]
 sundayworld.co.za##.spnsorhome
 sundayworld.co.za,universityaffairs.ca##a[href*="/sponsored-content/"]
@@ -60024,8 +59885,6 @@ tiscali.cz,kinobox.cz,osobnosti.cz,karaoketexty.cz,nasepenize.cz,fights.cz##.pe-
 tiscali.cz,kinobox.cz,osobnosti.cz,karaoketexty.cz,nasepenize.cz,fights.cz##.quaquaquakva
 tiscali.cz,kinobox.cz,osobnosti.cz,karaoketexty.cz,nasepenize.cz,fights.cz##.wrap-advert
 tiscali.cz,kinobox.cz,osobnosti.cz,karaoketexty.cz,nasepenize.cz,fights.cz##[href*=";cdata="]
-tiscali.cz,kinobox.cz,osobnosti.cz,karaoketexty.cz,nasepenize.cz,fights.cz##[id$=".1.1.1"]
-tiscali.cz,kinobox.cz,osobnosti.cz,karaoketexty.cz,nasepenize.cz,fights.cz##[id$=".1.1.9"]
 tiscali.cz,kinobox.cz,osobnosti.cz,karaoketexty.cz,nasepenize.cz,fights.cz##[id*="tmAdVideo"], [class=" pe-banner"]
 tiscali.cz,kinobox.cz,osobnosti.cz,karaoketexty.cz,nasepenize.cz,fights.cz##a[href$="Kp"]
 tiscali.cz,kinobox.cz,osobnosti.cz,karaoketexty.cz,nasepenize.cz,fights.cz,spisovatele.cz##.SC_TBlock
@@ -61790,7 +61649,6 @@ www.ib-china.com##.huuige,.huige,.ads_er,.wid980,.a_guanggao,[style^="height:80p
 www.idnes.cz,expres.cz###\39 -ble31, a[href*="perf-bann"]
 www.idnes.cz,expres.cz##a[href="bla"]
 www.idnes.cz,expres.cz##a[href="bla"], [class$="kukekemehe"]
-www.idnes.cz,expres.cz,auto.cz,autorevue.cz,maminka.cz,reflex.cz,ahaonline.cz,blesk.cz,dama.cz,e15.cz,info.cz,mobilmania.cz,mojezdravi.cz,onetv.cz,zeny.cz,zive.cz#?#a:-abp-has(div>img[src$="00,,1"])
 www.iefans.net###attachment_23454
 www.ifxtx.com##div.ad,div.sj_ad,div.ad_banner,div.ad_footerbanner,DIV[class^="sy_ad0"]
 www.igta.cn##ins.adsbygoogle,div#ad_cover,div.wzad
@@ -62385,7 +62243,6 @@ xizi.com##div.pageAD1,div.banner,div.pageRight-ad,a[href^="http://bbs.xizi.com/x
 xkb.com.cn##.xwAd
 xkcpw.cn##[height="65"],.a_pb,[href^="http://888.yiding444.com:8088/Register/"],.a_pt > pr > div > :not(.pcb)
 xlfans.com##div[class$="banner"],div.banner
-xlocate$subdocument,script,domain=auto.cz|autorevue.cz|maminka.cz|reflex.cz|ahaonline.cz|blesk.cz|dama.cz|e15.cz|info.cz|mobilmania.cz|mojezdravi.cz|onetv.cz|zeny.cz|zive.cz
 xlpe.husky.sogou.com
 xlyy100.com##.nicegame,.dw_propt
 xm.gzwxdq.cn
@@ -66532,6 +66389,7 @@ zzpzero.com
 ||9669.cn/jsam/play_
 ||9669.com^$script,third-party
 ||967rett6fzaf.com^
+||96e0993c2f.com^
 ||96e8abd9c4.com^
 ||96mob.com^
 ||9700hg.com^
@@ -75405,6 +75263,7 @@ zzpzero.com
 ||c63d72a4022.com^
 ||c6890.cn^
 ||c7e4d34b2afc3.com^
+||c8f502ed61.com^
 ||c90752b0b5.com^
 ||c9e5089374.com^
 ||c9emgwai66zi.com^
@@ -88888,6 +88747,7 @@ zzpzero.com
 ||hncpz.cn^
 ||hncsdayu.com^
 ||hnctsm.com^
+||hndshop.cn^
 ||hnfxhx.xyz^
 ||hnfxty.cn^
 ||hngezj.com^
@@ -93012,6 +92872,7 @@ zzpzero.com
 ||jytitenu.com^
 ||jytjw.com^
 ||jyzae.cn^
+||jyzag.cn^
 ||jyzah.cn^
 ||jyzai.cn^
 ||jyzaj.cn^
@@ -96079,6 +95940,7 @@ zzpzero.com
 ||lzjsjw.cn^
 ||lzk.hl.cn/lctp/
 ||lzljhs.com^
+||lzls.ltd^
 ||lzmm8.com^
 ||lzqicpumq.com^
 ||lzrljv.tradera.com^
@@ -98464,6 +98326,7 @@ zzpzero.com
 ||mlno6.com^$third-party
 ||mlog.aipai.com^
 ||mlovem.pw^
+||mlqq.store^
 ||mlre.com.cn^
 ||mlscmevlspljh.com^
 ||mlstat.com^$third-party
@@ -99163,6 +99026,7 @@ zzpzero.com
 ||mugapi.lazzarionline.com^
 ||muggedlancemutilate.com^
 ||mugleafly.com^
+||mugogfy.cn^
 ||mugpothop.com^
 ||mugrikees.com^$popup
 ||muhaingi.com^
@@ -100419,6 +100283,7 @@ zzpzero.com
 ||nmqdnykj.com^
 ||nmrlx.cn^
 ||nmrodam.com^$third-party
+||nmsl.ink^
 ||nmtdoyrjpieikj.com^
 ||nmtouzi.com^
 ||nmwbank.cn^
@@ -100637,6 +100502,7 @@ zzpzero.com
 ||npo.nl/tag/atinternet/
 ||nposition.club^
 ||nprove.com^$third-party
+||npubvjw.cn^
 ||npubzssuoini.com^
 ||npvbjv.yourroom.ru^
 ||npvos.com^
@@ -104132,6 +103998,7 @@ zzpzero.com
 ||pqlcpm.kindoh.co.kr^
 ||pqn7.cheque-dejeuner.fr^
 ||pqorwmmlkf.com^
+||pqsjb.cn^
 ||pqtiqpfyeeayjk.com^
 ||pqvnjgeimffiu.com^
 ||pqztggmplviyxy.com^
@@ -105239,6 +105106,7 @@ zzpzero.com
 ||qdchunyu.com^
 ||qdcode.com^
 ||qddrusjdrjuj.com^
+||qdftsac.cn^
 ||qdglzx.com^
 ||qdhhdsw.cn^
 ||qdhyy.cn^
@@ -106287,6 +106155,7 @@ zzpzero.com
 ||readiong.net^
 ||readly-renterval.icu^
 ||readme.ru/informer/
+||readnos.com^
 ||readnotify.com^$third-party
 ||readpeak.com^$third-party
 ||readserver.net^
@@ -122186,6 +122055,7 @@ zzpzero.com
 ||xfinity.com/event/
 ||xfinity.com/prod/event/
 ||xfinity.com/z8ufpC5q/
+||xfnkds.com^
 ||xfobuc.serenaandlily.com^
 ||xfsub.com:88/js/*ad
 ||xfuckbook.com^
@@ -126619,7 +126489,6 @@ zzpzero.com
 1980-games.com,flash-mp3-player.net,larousse.com,theportugalnews.com,tolonews.com##.pub
 2000fun.com##.single-box
 2000fun.com##div[id^="div-gpt-ad-"],div.single-box
-2000x1400$image,domain=auto.cz|autorevue.cz|maminka.cz|reflex.cz|ahaonline.cz|blesk.cz|dama.cz|e15.cz|info.cz|mobilmania.cz|mojezdravi.cz|onetv.cz|zeny.cz|zive.cz
 2014.qq.com#@##adIframe
 2018x.bid##[width="960"],.wp.a_t,[class^="a_"]
 2020mustang.com
