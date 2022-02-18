@@ -4,6 +4,8 @@ import json
 import os
 import re
 import time
+import base64
+from io import BytesIO
 from datetime import datetime, timezone, timedelta
 
 PUSH_TOKEN = os.environ["SCKEY"]
@@ -42,9 +44,10 @@ one = requests.get(api_url)
 #图库
 png_url = 'https://api.ixiaowai.cn/api/api.php'
 png = requests.get(png_url)
+#图片转base64
+pngb6 = base64.b64encode(BytesIO(png.content).read())
 
-
-CONTENT = 'AdRules规则更新完毕！ 来自Github~<br>更新时间 ' + str(time) + '（北京时间）<br><br>AdRules (For AdBlock)共计' + str(count_A) + '条规则，<br>AdRules (For AdGuard)共计' + str(count_a) + '条规则，<br>AdRules (For DNS)共计' + str(count_d) + '条规则，<br>AdRules (For Adaway)共计' + str(count_ad) + '条规则，<br>Allowlist共计' + str(count_al) + '条规则，<br>广告damian共计' + str(count_damian) + '个。<br><br>一言：' + str(one.text) +' <img style="max-width:100%;overflow:hidden;" src="' + str(png.url) + '"/>' 
+CONTENT = 'AdRules规则更新完毕！ 来自Github~<br>更新时间 ' + str(time) + '（北京时间）<br><br>AdRules (For AdBlock)共计' + str(count_A) + '条规则，<br>AdRules (For AdGuard)共计' + str(count_a) + '条规则，<br>AdRules (For DNS)共计' + str(count_d) + '条规则，<br>AdRules (For Adaway)共计' + str(count_ad) + '条规则，<br>Allowlist共计' + str(count_al) + '条规则，<br>广告damian共计' + str(count_damian) + '个。<br><br>一言：' + str(one.text) +' <img style="max-width:100%;overflow:hidden;" src="data:image/jpg;base64,' + str(pngb6) + '"/>' 
 
 #def post_tg(message):
 #    telegram_message = f"{message}"
