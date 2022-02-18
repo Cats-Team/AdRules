@@ -4,8 +4,8 @@
 ! Powerd by CatsTeam
 ! Expires: 8 Hours
 ! Description: 该规则合并自My AdFilters（for PC）、EdentwCustom、adgk、ClearUrl等，并补充了一些规则
-! Version: 2022-02-18 23:38:39（北京时间） 
-! Total count: 126867
+! Version: 2022-02-19 00:16:40（北京时间） 
+! Total count: 126873
 -1688-wp-media/ads/
 -988x60.
 -980x60-
@@ -23539,7 +23539,6 @@
 ##DIV.sptable_do_not_remove f_one
 ##DIV.tpc_icon
 ##DIV[id*="BAIDU_SSP__wrapper_"]
-##DIV[id^="adv-"].adv
 ##FBS-AD
 ##IFRAME[src*="//pos.baidu.com/"]
 ##LEADERBOARD-AD
@@ -25025,6 +25024,7 @@
 ##div[id^="ads300_250-widget"]
 ##div[id^="ads300_600-widget"]
 ##div[id^="adspot-"]
+##div[id^="adv-"].adv
 ##div[id^="advads-"]
 ##div[id^="advads_"]
 ##div[id^="advt-"]
@@ -26826,7 +26826,6 @@ $script,third-party,websocket,domain=52codes.net|m.ting56.com
 $script,third-party,xmlhttprequest,domain=abcvideo.cc
 $script,third-party,xmlhttprequest,domain=btio.pw
 $script,third-party,xmlhttprequest,domain=govid.co
-$script,third-party,xmlhttprequest,domain=mixdrop.co
 $script,third-party,xmlhttprequest,domain=ouo.io|ouo.press
 $third-party,domain=baoshuu.com
 $third-party,domain=biquge001.com|shuquge.com|biqu.ge|xbiquge.la|biquw.com|biquge5200.cc|yuanzunxs.cc|biqubao.com|biquge.tv|12zw.com|biqugle.com|32xs.org|biqugeg.com|biqugedu.com|xswang.com|biquduge.com|gebiqu.com|xshengyan.com|bbiqugew.com|biquges.com|xsbiquge.com|ibqg5200.com|biquge.info|biquwu.cc|biquger.com|mybooks8.com|zzbiquge.com|3xs.cc|biquge123.com|yiyi120.com|zuimeng8.com|biquga.com|hehuamei.com|biquku.la|biqug.org|biqugewx.com
@@ -41432,7 +41431,7 @@ $~xmlhttprequest,~media,removeparam=source,denyallow=googlevideo.com,domain=1sol
 @@/friendbuy.min.js$script,domain=butcherbox.com
 @@/frosmo.easy.js$domain=sklep.pl.canalplus.com
 @@/fuckadblock.$domain=bde4.com|ck101.com|datehub.co|dilidili.one|golangnote.com|lnk2.cc|nfmovies.com|papalah.com|qqdie.com
-@@/fuckadblock.$domain=ck101.com|datehub.co|golangnote.com|joyk.com|liumingye.cn|lnk2.cc|papalah.com|poedb.tw|share1223.com
+@@/fuckadblock.$domain=datehub.co|golangnote.com|joyk.com|liumingye.cn|lnk2.cc|papalah.com|poedb.tw|share1223.com
 @@/google-ad-block-test-googleadservices-gpt-pubads.js$script,domain=viki.mx|viki.com
 @@/guanggao/*$domain=icbc.com.cn|igame.qq.com
 @@/hitCount.$script,domain=on.cc
@@ -41802,7 +41801,6 @@ $~xmlhttprequest,~media,removeparam=source,denyallow=googlevideo.com,domain=1sol
 @@||ads.amazon^$popup
 @@||ads.askgamblers.com^$popup
 @@||ads.cdn.tvb.com^*.key
-@@||ads.ck101.com/www/delivery/asyncjs.php
 @@||ads.com^$popup
 @@||ads.dollartree.com/SneakPeek/$~third-party
 @@||ads.emarketer.com/redirect.spark?$popup,domain=emarketer.com
@@ -43089,7 +43087,6 @@ $~xmlhttprequest,~media,removeparam=source,denyallow=googlevideo.com,domain=1sol
 @@||gstatic.com/images/icons/product/adsense-$image,domain=accounts.google.com
 @@||gstatic.com/images/icons/product/adsense_$image,domain=accounts.google.com
 @@||gstatic.com/recaptcha/
-@@||gstatic.com^$domain=mixdrop.co
 @@||gstatic.com^*/adwords/$domain=support.google.com
 @@||gstatic.com^*/firebase-performance-standalone.js$script,domain=flightradar24.com
 @@||gtimg.cn/images/nz/cp/*/adimg.png$domain=qq.com
@@ -48128,6 +48125,7 @@ cctime.com###ad_three
 cctime.com###nav_banner,[id^="ad_"],[id$="_ad"],[height="80"],[height="90"],[height="100"]
 cctime.com##.nav_banner
 cctime.com,ck101.com,doyo.cn###top_banner
+cctime.com,doyo.cn###top_banner
 cctv.com##.anime_ewm
 cctv.com##[id^="div-gpt-ad-"],[src^="http://pubads.g.doubleclick.net/gampad/"],.adv
 cd1025.com###hp-leader
@@ -48486,12 +48484,8 @@ cjw123.com##a[href="http://tb.cjw123.com"]
 ck.tcsgcdn.top
 ck101.com###av_a
 ck101.com###canvas-section
-ck101.com###image_ad_long
 ck101.com###popupGameAd
-ck101.com###sideAds1
 ck101.com##.a_cn,.adsbygoogle,#image_ad_long,#image_ad_short,.imgAd,.adTopBox,[id^="sideAds"],.ad728Top,.viewthread_announcements
-ck101.com##.ad728Top
-ck101.com##.adTopBox
 ck101.com##.ad_logo
 ck101.com##.adfixWp
 ck101.com##.btn_dw_app
@@ -48812,7 +48806,7 @@ comicbookrealm.com###rad
 comicbookrealm.com###right-rail > .module
 comicbookrealm.com###tad
 comicbus.com##[src^="../images/ads/"]
-comicsporno.xxx,pornoreino.com,mespornogratis.com,felizporno.com,orgasmatrix.com,pornocolombiano.net#$#abort-current-inline-script document.querySelectorAll popMagic
+comicsporno.xxx,eshentai.tv,felizporno.com,hentaila.com,latinohentai.com,mespornogratis.com,orgasmatrix.com,pornoreino.com,pornocolombiano.net,xculitos.com#$#abort-current-inline-script document.querySelectorAll popMagic
 comicsxxxgratis.com,video.javdock.com##.video-container
 community.spiceworks.com##.community-content--ad_card
 community.spiceworks.com##.gekko_leaderboard
@@ -51089,6 +51083,15 @@ gamer.com.tw##.a-mercy-d:not([href*=".gamer."])
 gamer.com.tw##.b-list_ad
 gamer.com.tw##.goAPP
 gamer.com.tw##.iframe:last-child
+gamer.com.tw,papalah.com,pili.com.tw#@#.pub_300x250
+gamer.com.tw,papalah.com,pili.com.tw#@#.pub_300x250m
+gamer.com.tw,papalah.com,pili.com.tw#@#.pub_728x90
+gamer.com.tw,papalah.com,pili.com.tw#@#.text-ad
+gamer.com.tw,papalah.com,pili.com.tw#@#.text-ad-links
+gamer.com.tw,papalah.com,pili.com.tw#@#.text-ads
+gamer.com.tw,papalah.com,pili.com.tw#@#.textAd
+gamer.com.tw,papalah.com,pili.com.tw#@#.text_ad
+gamer.com.tw,papalah.com,pili.com.tw#@#.text_ads
 gamersky.com##.dl_url:nth-child(4)
 gamersky.com##.ngg_down
 gamersky.com##header[class^="ymw-header20"]
@@ -51934,7 +51937,7 @@ hcbbs.com##table[width="100%"][bordercolor="#CCCCCC"]
 hclips.com##.partners-wrap
 hclips.com#$#abort-on-property-read adver
 hclips.com#$#abort-on-property-read btoa
-hclips.com,hdzog.com,hotmovs.com,thegay.com,thegay.tube,txxx.com,upornia.com,vjav.com,voyeurhit.com#$#abort-current-inline-script mz
+hclips.com,hdzog.com,hotmovs.com,porntop.com,thegay.com,thegay.tube,txxx.com,upornia.com,vjav.com,voyeurhit.com#$#abort-current-inline-script mz
 hclips.com,thegay.com,tubepornclassic.com##.footer-banners
 hcll20.oxjaus.com
 hcomic.in###pv_all > a[onclick^="trackOutboundLink"]
@@ -56772,6 +56775,7 @@ pcgamingwiki.com##.home-gamesplanet-promo
 pcgamingwiki.com##.upcoming-releases.home-card:first-child
 pch.com###minipath_panel
 pch.com##.wide_banner
+pchome.com.tw###div_superbar_swf
 pchome.com.tw###test2
 pchome.com.tw##.ad_triple
 pchome.com.tw##.adcon
@@ -75320,7 +75324,6 @@ zzpzero.com
 ||cactusglobal.io^$third-party
 ||cactusmedia.com^$third-party
 ||cad.chosun.com^
-||cadenaazul.com/img/advertising/
 ||cadfixbig.site^
 ||cadlsyndicate.com^
 ||cadlsyndicate.com^$popup
@@ -94068,7 +94071,6 @@ zzpzero.com
 ||laozuo.org/wp-content/themes/weisaysimple/js/content40width.js
 ||laozuo.org/wp-content/themes/weisaysimple/js/index-top.js
 ||laozuo.org/wp-content/themes/weisaysimple/js/sidebar
-||lapoderosa.com/img/advertising/
 ||lapre28rmcat2.com^
 ||laprovence.com/fatalistic^
 ||lapsefledmayor.com^
@@ -97106,6 +97108,7 @@ zzpzero.com
 ||mcix.cn^
 ||mcloud.to/log/
 ||mcloudglobal.com^$third-party
+||mclseww.top^
 ||mcncc.com/yeyou/*.htm
 ||mcning.com^
 ||mcontigo.com^$third-party
@@ -103887,6 +103890,7 @@ zzpzero.com
 ||pornstargold.com/3b0a0cdcb8b4.js
 ||pornstargold.com/cddc4c9399c7.js
 ||porntagged.com^$third-party
+||porntop.com/magic/*.js^$script,domain=porntop.com
 ||porntrack.com^$third-party
 ||porojo.net^
 ||porpoise.azettl.net^
@@ -122297,6 +122301,7 @@ zzpzero.com
 ||xije.ren^
 ||xiji-express.com^
 ||xijinfa.com^$third-party
+||xikaijz.top^
 ||xilbalar.com^
 ||xilele.com^
 ||xilu.com/iframe/pagepic/
@@ -125682,6 +125687,7 @@ zzpzero.com
 51credit.com##.credit-box
 51credit.com##.main-r-ka
 51credit.com,ck101.com,hkepc.com##tbody[id^="normalthread_"] + tbody:not([id])
+51credit.com,hkepc.com##tbody[id^="normalthread_"] + tbody:not([id])
 51cto.com###ADsList
 51cto.com###edu_adver
 51cto.com###f_close_box
