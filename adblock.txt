@@ -4,8 +4,8 @@
 ! Powerd by CatsTeam
 ! Expires: 8 Hours
 ! Description: 该规则合并自My AdFilters（for PC）、EdentwCustom、adgk、ClearUrl等，并补充了一些规则
-! Version: 2022-02-19 00:16:40（北京时间） 
-! Total count: 126873
+! Version: 2022-02-19 02:42:55（北京时间） 
+! Total count: 126864
 -1688-wp-media/ads/
 -988x60.
 -980x60-
@@ -2825,6 +2825,9 @@
 ###admon-728x90
 ###admpubottom
 ###admpubottom2
+###admpudyn1
+###admpudyn2
+###admpudyn3
 ###admpufoot
 ###admpumiddle
 ###admpumiddle2
@@ -36149,7 +36152,6 @@ $~xmlhttprequest,~media,removeparam=source,denyallow=googlevideo.com,domain=1sol
 /ktag/*
 /kuaiyuncn/ad/*
 /kumi/file/js/float.js
-/kyblik^$image,domain=www.idnes.cz|expres.cz
 /landerbanners/*
 /landingads?
 /landingadvertisements/*
@@ -41250,7 +41252,6 @@ $~xmlhttprequest,~media,removeparam=source,denyallow=googlevideo.com,domain=1sol
 ?event=tracking:ajax
 ?eventtype=impression&pid=
 ?eventtype=request&pid=
-?fl=res,$image,domain=www.idnes.cz|expres.cz|novinky.cz|super.cz|sport.cz|kupi.cz|horoskopy.cz
 ?format=js|$script,domain=iprima.cz
 ?framId=ad_
 ?guci=$subdocument,domain=iprima.cz
@@ -45633,7 +45634,6 @@ _content_ad_
 _contest_ad_
 _custom_ad.
 _custom_ad_
-_cz?format=js&async=1|$domain=www.idnes.cz
 _dart_ads.
 _dart_interstitial.
 _dashad_
@@ -45812,7 +45812,6 @@ _quick_prop_
 _radio_ad_
 _railads.
 _rebid.js
-_recombee|$script,domain=www.idnes.cz|expres.cz
 _rectangle_ads.
 _reklama_$domain=~youtube.com
 _reporting_ads.
@@ -46737,7 +46736,6 @@ automobile-catalog.com,itnewsonline.com##table[width="300"]
 automotive-fleet.com,businessfleet.com,cfl.ca,fleetfinancials.com,government-fleet.com,howsecureismypassword.net,ncaa.com,schoolbusfleet.com##.top-banner
 autonet.com.tw##[src^="http://www.autonet.com.tw/90/"],[name="ntwad2"]
 autorevue.cz##.bx-sky, .bx-rectangle-article
-autorevue.cz,blesk.cz##div[style="margin-top: 12px; position: relative;"]
 autosport.com##.ms-apb
 autosport.com##.ms-side-items--with-banner
 auwkd7fdk23x.zhengshaoze.com
@@ -50507,11 +50505,9 @@ fifm.live###player_ad,.adsbygoogle
 fifthinternational.org#@#.adbar
 fightful.com###betway-sports
 fightnews.info##body > blockquote
-fights.cz###desktop-leader-top
-fights.cz###desktop-square-top
 fights.cz##.banner-add
 fights.cz,spisovatele.cz##body>a[target="_blank"]
-fights.cz,tiscali.cz,hudebniskupiny.cz,osobnosti.cz,ahaonline.cz#$#prevent-listener beforeunload ()
+fights.cz,tiscali.cz###desktop-square-top, #desktop-leader-top, .desktop-square-top, .desktop-leader-top
 fijisun.com.fj##.widget-1
 fijisun.com.fj##.widget-3
 file-up.org,zippyshare.com,uploadproper.com,uploadproper.net#$#abort-on-property-write Fingerprint2
@@ -53008,14 +53004,12 @@ iplaysoft.com##div[style*="width:3"][style*="height:2"]
 iplaysoft.com##div[style*="width:6"][style*="height:1"]
 iplaysoft.com##div[style="margin:-10px 0 0 0;overflow:hidden"]
 iprima.cz##.dekes_reblika
-iprima.cz##.meht_burbuzela
 iprima.cz##.px-type-banner
 iprima.cz##.sas_center, .px-ad, .sas_mone, .mone_box, .ifr-passback, [data-sas_status], div[id^="sas_"], div[class^="mas_mone_"], [data-alter_area="leaderboardpremium-1"], [data-alter_area="boardbottom-1"], .ifr-masshack, .px-zone, .sas_megaboard, .ifr-classflak, [data-sas-creative], #cnn_reklama, div[class^="mas_"], ._sasia_fcid, [class^="mas"][class$="_clue"]
 iprima.cz##.vjs-ad-link, .vjs-ad-clickthru
 iprima.cz##[class$="_fcid"], [data-mashiatus]
 iprima.cz##[class$="_value"], [id^="px-id-"]
 iprima.cz##[class*="sas"]
-iprima.cz##[data-masparabus], [class$="_bubuzela"]
 iprima.cz##[id*="-ad-"], .ifr-claassflak, a[href*="/posid=sas_"]
 iprima.cz##a[href*="/area=branding"]
 iprima.cz##div[data-d-area]
@@ -54100,6 +54094,7 @@ kingsofchaos.com#@#.textad
 kingsoft.hz.letv.com##div.fix-box,div.tab-content,.video-advert,#fixedad
 kinoafisha.ua##.turn-off-add-block-text
 kinobox.cz##.box.banner_300, #b300_fixbox
+kinobox.cz,novinky.cz,expres.cz,fights.cz,tiscali.cz,hudebniskupiny.cz,osobnosti.cz,ahaonline.cz#$#prevent-listener beforeunload (); cookie-remover /adb/
 kinogo.eu,gidonline.eu#$#abort-on-property-read target_script
 kinohome.net##a[data-i]
 kinoman.tv##IMG[src="http://static.kinoman.tv/assets/img/vip-info.png?v"]
@@ -58171,6 +58166,7 @@ sat24.com###headercontent-onder
 satbeams.com##.footer_banner
 satdl.com##.advertizement
 saultonline.com##.gsmfab
+sauto.cz#$#override-property-read sssp undefined
 save.ca##.leaderboardMainWrapper
 savebt.com##[src^="http://go.gotourl"]
 savevideo.me##div[id^="ads_notice_"]
@@ -59882,8 +59878,6 @@ tingvoa.com##.rightgood
 tingvoa.com##a[href*="?adid="]
 tiresandparts.net##.e3lanat-layout-rotator
 tiresandparts.net##.footer_top_banner
-tiscali.cz###desktop-leader-top
-tiscali.cz###desktop-square-top
 tiscali.cz##.bs-hp
 tiscali.cz##[class*="-ld-top"]
 tiscali.cz##a[target="_blank"][href*="tiscali.cz"]>img[src*="tiscali.cz"]
@@ -59901,7 +59895,6 @@ tiscali.cz,kinobox.cz,osobnosti.cz,karaoketexty.cz,nasepenize.cz,fights.cz##.qua
 tiscali.cz,kinobox.cz,osobnosti.cz,karaoketexty.cz,nasepenize.cz,fights.cz##.wrap-advert
 tiscali.cz,kinobox.cz,osobnosti.cz,karaoketexty.cz,nasepenize.cz,fights.cz##[href*=";cdata="]
 tiscali.cz,kinobox.cz,osobnosti.cz,karaoketexty.cz,nasepenize.cz,fights.cz##[id*="tmAdVideo"], [class=" pe-banner"]
-tiscali.cz,kinobox.cz,osobnosti.cz,karaoketexty.cz,nasepenize.cz,fights.cz##a[href$="Kp"]
 tiscali.cz,kinobox.cz,osobnosti.cz,karaoketexty.cz,nasepenize.cz,fights.cz,spisovatele.cz##.SC_TBlock
 titan007.com###table_live > tbody > tr > td[height="18"] > a
 titan24.com###ad-index-01
@@ -61661,9 +61654,6 @@ www.hxsteel.cn###paihang,.xuanchuan,.baidulianmeng
 www.hxsxw.com##div.tac.mb5
 www.iapps.im##aside.ad-a45-wrap,div.block-right.block-right_than_zjbb_ads
 www.ib-china.com##.huuige,.huige,.ads_er,.wid980,.a_guanggao,[style^="height:80px;"]
-www.idnes.cz,expres.cz###\39 -ble31, a[href*="perf-bann"]
-www.idnes.cz,expres.cz##a[href="bla"]
-www.idnes.cz,expres.cz##a[href="bla"], [class$="kukekemehe"]
 www.iefans.net###attachment_23454
 www.ifxtx.com##div.ad,div.sj_ad,div.ad_banner,div.ad_footerbanner,DIV[class^="sy_ad0"]
 www.igta.cn##ins.adsbygoogle,div#ad_cover,div.wzad
@@ -83108,6 +83098,7 @@ zzpzero.com
 ||engageya.com^$third-party
 ||engagio.com^$third-party
 ||engine.eroge.com^
+||engine.fxempire.com^
 ||engine.laweekly.com^
 ||engine212.com^$third-party
 ||engine64.com^$third-party
