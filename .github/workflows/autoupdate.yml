@@ -63,8 +63,14 @@ jobs:
         run: |
           pip3 install requests
           python3 ./pusher.py
+          rm -rf .git/
+          git init
+          git config --local user.name "hacamer"
+          git config --local user.email "hcamer145@gmail.com"
+          git branch -m main
           git add --all
           git commit -m "Updated at $(TZ=UTC-8 date +'%Y-%m-%d %H:%M:%S')（北京时间）"
           #git remote add origin "https://${{ secrets.CODING_ACCOUNT }}:${{ secrets.CODING_PASSWORD }}@e.coding.net/cats-team/adguard/AdRules.git"
+          git remote add origin 'https://github.com/Cats-Team/AdRules.git'
           git push -u -f origin --all
 
