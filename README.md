@@ -5,7 +5,7 @@
 - 并且本项目部分规则引入由本团队添加的黑白名单 
 - 具体请看↓
 - [AdRules For Adblock 所添加的规则](https://github.com/Cats-Team/AdRules/blob/main/script/adblock/src/user-rules.dd)  
-- [AdRules For DNS添加的黑白名单](https://github.com/Cats-Team/AdRules/blob/main/script/dns/src/brules.dd)
+- [AdRules For DNS 添加的黑白名单](https://github.com/Cats-Team/AdRules/blob/main/script/dns/src/brules.dd)
 
 *除此之外本项目还提供一些规则的cdn链接*  
 *具体看[Mirror.md](/mirror.md)*
@@ -15,12 +15,19 @@
 * [更新日志](/Update-log.md)
 ## 规则总数
 ```
+
 更新时间: 2022-02-19 16:41:01 （北京时间） 
+
 AdRules（For Adblock）规则数量: 126909 
+
 AdRules（For AdGuard）规则数量: 105007 
+
 AdRules（For DNS）规则数量: 64084 
-AdRules（For adaway）规则数量: 64335 
+
+AdRules（For Adaway）规则数量: 64335 
+
 Allowlist规则数量: 64335 
+
 Damian数量: 64335 
 ``` 
 ## 说明
