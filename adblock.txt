@@ -4,8 +4,8 @@
 ! Powerd by CatsTeam
 ! Expires: 8 Hours
 ! Description: 该规则合并自My AdFilters（for PC）、EdentwCustom、adgk、ClearUrl等，并补充了一些规则
-! Version: 2022-02-19 20:55:14（北京时间） 
-! Total count: 126915
+! Version: 2022-02-19 22:07:58（北京时间） 
+! Total count: 126921
 -1688-wp-media/ads/
 -988x60.
 -980x60-
@@ -19420,6 +19420,7 @@
 ##.maomi-content > .section-banner
 ##.maomi-content > .section-menu > .row > a[target="_blank"]
 ##.maomi-content > a[target="_blank"]
+##.map-ad
 ##.mapAdvertising
 ##.map_google_ad
 ##.map_media_banner_ad
@@ -42024,6 +42025,7 @@ $~xmlhttprequest,~media,removeparam=source,denyallow=googlevideo.com,domain=1sol
 @@||aobi.100bt.com/play/ad/ad*.swf
 @@||aone-soft.com/style/images/ad2.jpg
 @@||apc-pli.com/api/tracking/$~third-party,xmlhttprequest
+@@||api*.toutiaoapi.com^$app=com.ss.android.article.news
 @@||api-merchants.skimlinks.com^
 @@||api.academia.edu/v0/users/*/stats$script
 @@||api.ad-gone.com^
@@ -50666,6 +50668,9 @@ flicksmore.com###pc_show
 flight.qunar.com##.l_rside > .b_fly_ban_b:nth-child(2)
 flightcentre.co.uk,out.com#@#.dfp-tag-wrapper
 flightclub.cn##.banner_area,.home_banner_section,.adsbygoogle,.fc_thread_top_banner
+flightconnections.com##.display-box
+flightconnections.com##.display-box-2
+flightconnections.com##.route-display-box
 flightglobal.com,thriftyfun.com##.adp
 flightradar24.com###bottomRightPanel
 flightradar24.com###responsiveBottomPanel
@@ -51318,7 +51323,7 @@ ghacks.net##.ghacks-ad
 ghoffice.com##.tac > a > img[src*=".gif?"]
 ghoffice.com##[class="tac"],[class="mb5 tac cc"],[id^="ads_"],.textMes
 ghoffice.com,ksbbs.com,kshot.com##[id^="ads_"]
-ghxi.com##.ad_single_1
+ghxi.com##.ad_single_11
 ghxi.com#@#.social-item
 ghxi.com,mcdulll.com,pixnet.net##div[id*="-ad-"]
 giantfreakinrobot.com##.pw-leaderboard-atf-container
@@ -98623,6 +98628,7 @@ zzpzero.com
 ||momently.com^$third-party
 ||momenturede.fun^
 ||momijoy.ru^
+||momondo.com/s/vestigo/v1/measure
 ||momoshop.com.tw/goods/GoodsDetail.jsp?$subdocument
 ||momoshop.com.tw/league/$domain=beephone.com.tw
 ||momotaro.craigmod.com^
