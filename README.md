@@ -16,12 +16,12 @@
 ## 规则总数
 ```
 更新时间：
-AdRules（For Adblock）规则数量: 
-AdRules（For AdGuard）规则数量: 
-AdRules（For DNS）规则数量: 
-AdRules（For adaway）规则数量: 
-Allowlist规则数量: 
-Damian数量: 
+AdRules（For Adblock）规则数量: $count_adb 
+AdRules（For AdGuard）规则数量: $count_adg 
+AdRules（For DNS）规则数量: $count_dns 
+AdRules（For adaway）规则数量: $count_hosts 
+Allowlist规则数量: $count_hosts 
+Damian数量: $count_damian 
 ``` 
 ## 说明
 
