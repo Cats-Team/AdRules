@@ -15,7 +15,7 @@
 * [更新日志](/Update-log.md)
 ## 规则总数
 ```
-更新时间: $time （北京时间） 
+更新时间: 2022-02-19 16:08:56 （北京时间） 
 AdRules（For Adblock）规则数量: 126909 
 AdRules（For AdGuard）规则数量: 105005 
 AdRules（For DNS）规则数量: 64084 
