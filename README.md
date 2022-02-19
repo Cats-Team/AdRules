@@ -13,7 +13,16 @@
 * 此列表规则均适用于内容过滤器
 * DNS过滤器请使用AdRules (For DNS)
 * [更新日志](/Update-log.md)
-
+## 规则总数
+```
+更新时间：
+AdRules（For Adblock）规则数量: 
+AdRules（For AdGuard）规则数量: 
+AdRules（For DNS）规则数量: 
+AdRules（For adaway）规则数量: 
+Allowlist规则数量: 
+Damian数量: 
+``` 
 ## 说明
 
 这是基于中文区的广告过滤列表，实现了精准的广告屏蔽。
