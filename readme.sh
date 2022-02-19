@@ -12,7 +12,7 @@ declare -i count_dns=$num_dns-$num
 declare -i count_hosts=$num_hosts-$num
 declare -i count_damian=$num_damian-2
 time=$(TZ=UTC-8 date +'%Y-%m-%d %H:%M:%S')
-sed -i 's/^更新时间:.*/更新时间: '$time' （北京时间） /g' README.md
+sed -i 's/^更新时间:.*/更新时间: $time （北京时间） /g' README.md
 sed -i 's/^AdRules（For Adblock）规则数量:.*/AdRules（For Adblock）规则数量: '$count_adb' /g' README.md
 sed -i 's/^AdRules（For AdGuard）规则数量:.*/AdRules（For AdGuard）规则数量: '$count_adg' /g' README.md
 sed -i 's/^AdRules（For DNS）规则数量:.*/AdRules（For DNS）规则数量: '$count_dns' /g' README.md
