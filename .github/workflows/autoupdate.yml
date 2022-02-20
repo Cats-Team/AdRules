@@ -10,11 +10,12 @@ on:
 
   repository_dispatch:
    type:
-    - [update]
+    - [Manual-Update]
 
 env:
   SCKEY: ${{ secrets.SCKEY }}
   PUSH_PUSH: ${{ secrets.PUSH_PUSH }}
+  GITHUBTOKEN: ${{ secrets.GITHUBTOKEN }}
     
 
   
@@ -72,3 +73,6 @@ jobs:
         run: |
           pip3 install requests
           python3 ./pusher.py
+      - name: Manual-Update Other Repository
+        run: |
+          bash ./script/manual-update.sh
