@@ -8,7 +8,7 @@ on:
 
   workflow_dispatch:
    type:
-    - manual-update
+    - [webhook]
 
 env:
   SCKEY: ${{ secrets.SCKEY }}
