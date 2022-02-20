@@ -28,11 +28,11 @@ AdRules（For Adaway）规则数量: 64335
 
 Allowlist规则数量: 64362 
 
-Damian数量: 64362 
+AD Damian数量: 64362 
 ``` 
 ## 说明
 
-这是基于中文区的广告过滤列表，实现了精准的广告屏蔽。
+这是基于中文区的广告过滤列表，实现了比较精准的广告屏蔽。
 
 我们的原则是：**移除广告！**
 
@@ -46,13 +46,6 @@ Damian数量: 64362
 | AdRules (For Adaway) | [Link](https://cats-team.coding.net/p/adguard/d/AdRules/git/raw/main/hosts.txt) | [一键订阅](https://subscribe.adblockplus.org/?location=https://cats-team.coding.net/p/adguard/d/AdRules/git/raw/main/hosts.txt) |
 | Allowlist| [Link](https://cats-team.coding.net/p/adguard/d/AdRules/git/raw/main/allow.txt)|[一键订阅](https://subscribe.adblockplus.org/?location=https://cats-team.coding.net/p/adguard/d/AdRules/git/raw/main/allow.txt) |
 
-- **AdRules (For AdBlock)** - 快速、极致的去广告体验
-
-- **AdRules (For AdGuard)** - 针对AdGuard的专用规则
-
-- **AdRules (For DNS)** - 拦截广告，当然要在DNS处先下手为强
-
-- **Allowlist** - 解除误杀的网站
 #### 规则说明：
 - **AdRules (For AdBlock):** -
 源自上游列表规则合并而成，并添加了一些补充规则  
@@ -78,12 +71,6 @@ Damian数量: 64362
 * [@DoingDog](https://github.com/DoingDog) 
 * [@杏梢](https://github.com/hacamer)
 * 以及提交Issue的各位朋友
-## 感谢
-- [AdGuard](https://adguard.com/) - 世界上最高级的广告拦截程序！
-- [Adaday](https://adaway.org/) - AdAway 是使用hosts文件的 Android 开源广告拦截器。
-- [uniartisan/adblock_list](https://github.com/uniartisan/adblock_list) - adblock_list 一个订阅，拦截所有
-- [halflife / list](https://gitee.com/halflife/list) - ABP/ublock订阅规则
-- [banbendalao/ADgk](https://github.com/banbendalao/ADgk) - 一个专门为AdGuard For Android写的规则
-- [Coding](https://coding.net) - CODING 是一站式软件研发管理协作平台，提供Git/SVN 代码托管、项目协同、测试管理、制品库、CI/CD 等一系列在线工具，帮助研发团队快速落地敏捷开发与DevOps 开发方式 ...
+
 ## 访问量
 ![](http://profile-counter.glitch.me/cats-team/count.svg)
