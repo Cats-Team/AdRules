@@ -7,8 +7,10 @@ on:
     - main
 
   workflow_dispatch:
+
+  repository_dispatch:
    type:
-    - [webhook]
+    - [update]
 
 env:
   SCKEY: ${{ secrets.SCKEY }}
