@@ -16,11 +16,11 @@
 ## 规则总数
 ```
 
-更新时间: 2022-02-21 00:16:11 （北京时间） 
+更新时间: 2022-02-21 08:45:35 （北京时间） 
 
-AdRules（For Adblock）规则数量: 126981 
+AdRules（For Adblock）规则数量: 126983 
 
-AdRules（For AdGuard）规则数量: 104973 
+AdRules（For AdGuard）规则数量: 104980 
 
 AdRules（For DNS）规则数量: 64119 
 

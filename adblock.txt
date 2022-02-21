@@ -4,7 +4,7 @@
 ! Powerd by CatsTeam
 ! Expires: 8 Hours
 ! Description: 该规则合并自My AdFilters（for PC）、EdentwCustom、adgk、ClearUrl等，并补充了一些规则
-! Version: 2022-02-21 00:15:48（北京时间） 
+! Version: 2022-02-21 08:45:14（北京时间） 
 ! Total count: 126983
 -1688-wp-media/ads/
 -988x60.
@@ -23530,9 +23530,6 @@
 ##AFS-AD
 ##AMP-AD
 ##A[href*=".com/?Agent="]
-##A[href*="/0996916.com/"]
-##A[href*="/ky7993.com:"]
-##A[href*="/v9038.com:"]
 ##A[href*="emprestimo.eu"]
 ##A[href*="googleme.eu"]
 ##A[href="http://goo.gl/jQ9bcz"]
@@ -24076,6 +24073,7 @@
 ##a[href*="//promo-bc.com/track?"]
 ##a[href*="//ridingintractable.com/"]
 ##a[href*="//syndication.optimizesrv.com/splash.php?"]
+##a[href*="/0996916.com/"]
 ##a[href*="/10093813.com"]
 ##a[href*="/111.231.78.194/"]
 ##a[href*="/1240486.com/"]
@@ -24128,6 +24126,7 @@
 ##a[href*="/hxzfcz.com/"]
 ##a[href*="/kst6632.com/"]
 ##a[href*="/kt169.com"]
+##a[href*="/ky7993.com:"]
 ##a[href*="/l1y5.com"]
 ##a[href*="/l1y9.com"]
 ##a[href*="/leyu001.ee"]
@@ -24160,6 +24159,7 @@
 ##a[href*="/t4741.com"]
 ##a[href*="/tg.602.com/"]
 ##a[href*="/uuzb50.cc/"]
+##a[href*="/v9038.com:"]
 ##a[href*="/winbox.plus"]
 ##a[href*="/x5092.com"]
 ##a[href*="/xapps5.xyz"]
@@ -26124,7 +26124,7 @@ $removeparam=je,domain=google.*
 $removeparam=k_clickid
 $removeparam=k_clickid,domain=backcountry.com
 $removeparam=kc,domain=autoanything.com
-$removeparam=keyword,domain=bindright.com|ebay.*|lendgo.com
+$removeparam=keyword,domain=bindright.com|lendgo.com
 $removeparam=keyword,domain=reddit.app.link
 $removeparam=keywords,domain=amazon.*
 $removeparam=ko_click_id
@@ -30345,7 +30345,7 @@ $~xmlhttprequest,~media,removeparam=source,denyallow=googlevideo.com,domain=1sol
 /adinator/*
 /adinclude.
 /adinclude/*
-/adindex/*
+/adindex/*$~image
 /adindicatortext.
 /adinfo?
 /adinfos?*&ane=pic1
@@ -30361,7 +30361,7 @@ $~xmlhttprequest,~media,removeparam=source,denyallow=googlevideo.com,domain=1sol
 /adintrs/*
 /adiquity.
 /adiro.$domain=~adiro.se
-/aditems/*
+/aditems/*$~image
 /adition.
 /adixs.
 /adj.php?
@@ -125653,8 +125653,8 @@ zzpzero.com
 18avinin.com##a[href^="https://forms.gle/"]
 18avinin.com,sunnylife.tw###custom_html-5
 18board.com##[height="60"],[height="70"],[height="80"],[height="500"],[src^="http://dioimg.net"],[href="http://www.554400.com"],[href="http://zdpdfb.co/"],[href="http://mws3032.tk"]
-18board.com,18board.net,18p2p.com,18p2p.tv##.altbg2 > TD[width="20%"] > A[target="_blank"]
-18board.com,18board.net,18p2p.com,18p2p.tv##.altbg2 > TD[width="33%"]
+18board.com,18board.net,18p2p.com,18p2p.tv##.altbg2 > td[width="20%"] > a[target="_blank"]
+18board.com,18board.net,18p2p.com,18p2p.tv##.altbg2 > td[width="33%"]
 18board.com,18board.net,18p2p.com,18p2p.tv##a[target="_blank"] > img[width="320"]
 18board.com,18board.net,18p2p.com,18p2p.tv##a[target="_blank"] > img[width="330"]
 18board.com,18board.net,18p2p.com,18p2p.tv##a[target="_blank"] > img[width="900"]
