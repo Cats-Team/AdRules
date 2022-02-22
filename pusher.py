@@ -93,7 +93,3 @@ post_tg(CONTENT)
 post_pp()
 post_ppp()
 
-#写出日志
-exfile = open('update_log.txt', 'w')
-exfile.write(CONTENT)
-exfile.close()
