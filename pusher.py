@@ -49,21 +49,21 @@ png = requests.get(png_url)
 
 CONTENT = 'AdRules规则更新完毕！ 来自Github~<br>更新时间 ' + str(time) + '（北京时间）<br><br>AdRules (For AdBlock)共计' + str(count_A) + '条规则，<br>AdRules (For AdGuard)共计' + str(count_a) + '条规则，<br>AdRules (For DNS)共计' + str(count_d) + '条规则，<br>AdRules (For Adaway)共计' + str(count_ad) + '条规则，<br>Allowlist共计' + str(count_al) + '条规则，<br>广告damian共计' + str(count_damian) + '个。<br><br>一言：' + str(one.text) +' <img style="max-width:100%;overflow:hidden;" src="' + str(png.url) + '"/>' 
 
-#def post_tg(message):
-#    telegram_message = f"{message}"
-#    params = (
-#        ('chat_id', CHAT_ID),
-#        ('text', telegram_message),
-#        ('parse_mode', "Html"),
-#        ('disable_web_page_preview', "yes")
-#    )
-#    telegram_url = "https://api.telegram.org/bot" + TG_TOKEN + "/sendMessage"
-#    telegram_req = requests.post(telegram_url, params=params)
-#    telegram_status = telegram_req.status_code
-#    if telegram_status == 200:
-#        print(f"INFO: Telegram Message sent")
-#    else:
-#        print(telegram_status)
+def post_tg(message):
+    telegram_message = f"{message}"
+    params = (
+        ('chat_id', CHAT_ID),
+        ('text', telegram_message),
+        ('parse_mode', "Html"),
+        ('disable_web_page_preview', "yes")
+    )
+    telegram_url = "https://api.telegram.org/bot" + TG_TOKEN + "/sendMessage"
+    telegram_req = requests.post(telegram_url, params=params)
+    telegram_status = telegram_req.status_code
+    if telegram_status == 200:
+        print(f"INFO: Telegram Message sent")
+    else:
+        print(telegram_status)
 
 def post_pp():
     TITLE = 'AdRules更新通知'
@@ -90,7 +90,7 @@ def post_ppp():
     headers = {'Content-Type':'application/json'}
     requests.post(url, data=body, headers=headers)
 
-#post_tg(CONTENT)
+post_tg(CONTENT)
 post_pp()
 post_ppp()
 
