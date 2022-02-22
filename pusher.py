@@ -11,8 +11,8 @@ from datetime import datetime, timezone, timedelta
 PUSH_TOKEN = os.environ["SCKEY"]
 PUSH_PUSH = os.environ["PUSH_PUSH"]
 MAILCHANNEL = "mail"
-#TG_TOKEN = os.environ["TG_TOKEN"]
-#CHAT_ID = os.environ["CHAT_ID"]
+TG_TOKEN = os.environ["TG_TOKEN"]
+CHAT_ID = os.environ["CHAT_ID"]
 
 def iter_count(file_name):
     from itertools import (takewhile, repeat)
