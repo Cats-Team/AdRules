@@ -67,9 +67,9 @@ def post_tg(message):
 
 def post_pp():
     TITLE = 'AdRules更新通知'
-    url = 'http://pushplus.hxtrip.com/send'
+    url = 'http://www.pushplus.plus/send'
     data = {
-		  "token":PUSH_TOKEN,
+		  "token":PUSH_PUSH,
 		  "title":TITLE,
 		  "content":CONTENT
         }
