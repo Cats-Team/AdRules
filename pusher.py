@@ -54,8 +54,7 @@ def post_tg(message):
     params = (
         ('chat_id', CHAT_ID),
         ('text', telegram_message),
-        ('parse_mode', "Html"),
-        ('disable_web_page_preview', "yes")
+        ('parse_mode', "Html")
     )
     telegram_url = "https://api.telegram.org/bot" + TG_TOKEN + "/sendMessage"
     telegram_req = requests.post(telegram_url, params=params)
