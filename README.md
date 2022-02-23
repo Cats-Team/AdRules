@@ -38,13 +38,13 @@ AD Damian数量: 64362
 
 ### 📃 规则列表
 
-|   规则名称   | 🚀 Coding  | 🚀 一键订阅  |
-|  :----:  | :----:  | :----:  |
-| AdRules (For AdBlock) | [Link](https://cats-team.coding.net/p/adguard/d/AdRules/git/raw/main/adblock.txt) |[一键订阅](https://subscribe.adblockplus.org/?location=https://cats-team.coding.net/p/adguard/d/AdRules/git/raw/main/adblock.txt) |
-| AdRules (For AdGuard) | [Link](https://cats-team.coding.net/p/adguard/d/AdRules/git/raw/main/adguard.txt)|[一键订阅](https://subscribe.adblockplus.org/?location=https://cats-team.coding.net/p/adguard/d/AdRules/git/raw/main/adguard.txt) |
-| AdRules (For DNS) | [Link](https://cats-team.coding.net/p/adguard/d/AdRules/git/raw/main/dns.txt) | [一键订阅](https://subscribe.adblockplus.org/?location=https://cats-team.coding.net/p/adguard/d/AdRules/git/raw/main/dns.txt) |
-| AdRules (For Adaway) | [Link](https://cats-team.coding.net/p/adguard/d/AdRules/git/raw/main/hosts.txt) | [一键订阅](https://subscribe.adblockplus.org/?location=https://cats-team.coding.net/p/adguard/d/AdRules/git/raw/main/hosts.txt) |
-| Allowlist| [Link](https://cats-team.coding.net/p/adguard/d/AdRules/git/raw/main/allow.txt)|[一键订阅](https://subscribe.adblockplus.org/?location=https://cats-team.coding.net/p/adguard/d/AdRules/git/raw/main/allow.txt) |
+|   规则名称   | 🚀Raw | 🚀 Coding  | 🚀 一键订阅  |
+|  :----:  | :----:  | :----:  | :----:  |
+| AdRules (For AdBlock) | [Link](https://raw.githubusercontent.com/Cats-Team/AdRules/main/adblock.txt)|[Link](https://cats-team.coding.net/p/adguard/d/AdRules/git/raw/main/adblock.txt) |[一键订阅](https://subscribe.adblockplus.org/?location=https://cats-team.coding.net/p/adguard/d/AdRules/git/raw/main/adblock.txt) |
+| AdRules (For AdGuard) | [Link](https://raw.githubusercontent.com/Cats-Team/AdRules/main/adguard.txt)|[Link](https://cats-team.coding.net/p/adguard/d/AdRules/git/raw/main/adguard.txt)|[一键订阅](https://subscribe.adblockplus.org/?location=https://cats-team.coding.net/p/adguard/d/AdRules/git/raw/main/adguard.txt) |
+| AdRules (For DNS) | [Link](https://raw.githubusercontent.com/Cats-Team/AdRules/main/dns.txt)|[Link](https://cats-team.coding.net/p/adguard/d/AdRules/git/raw/main/dns.txt) | [一键订阅](https://subscribe.adblockplus.org/?location=https://cats-team.coding.net/p/adguard/d/AdRules/git/raw/main/dns.txt) |
+| AdRules (For Adaway) | [Link](https://raw.githubusercontent.com/Cats-Team/AdRules/main/hosts.txt)|[Link](https://cats-team.coding.net/p/adguard/d/AdRules/git/raw/main/hosts.txt) | [一键订阅](https://subscribe.adblockplus.org/?location=https://cats-team.coding.net/p/adguard/d/AdRules/git/raw/main/hosts.txt) |
+| Allowlist| [Link](https://raw.githubusercontent.com/Cats-Team/AdRules/main/allow.txt)|[Link](https://cats-team.coding.net/p/adguard/d/AdRules/git/raw/main/allow.txt)|[一键订阅](https://subscribe.adblockplus.org/?location=https://cats-team.coding.net/p/adguard/d/AdRules/git/raw/main/allow.txt) |
 
 #### 规则说明：
 - **AdRules (For AdBlock):** -
