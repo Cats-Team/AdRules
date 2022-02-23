@@ -4,8 +4,8 @@
 ! Powerd by CatsTeam
 ! Expires: 8 Hours
 ! Description: 该规则合并自My AdFilters（for PC）、EdentwCustom、adgk、ClearUrl等，并补充了一些规则
-! Version: 2022-02-23 18:47:59（北京时间） 
-! Total count: 126992
+! Version: 2022-02-24 00:16:46（北京时间） 
+! Total count: 127013
 -1688-wp-media/ads/
 -988x60.
 -980x60-
@@ -3999,6 +3999,8 @@
 ###advertising_728
 ###advertising_728_under
 ###advertising__banner__content
+###advertising_anglerect
+###advertising_billboard
 ###advertising_btm
 ###advertising_column
 ###advertising_container
@@ -4008,6 +4010,7 @@
 ###advertising_holder
 ###advertising_horiz_cont
 ###advertising_iab
+###advertising_leaderboard
 ###advertising_top_container
 ###advertising_wrapper
 ###advertisment-block-1
@@ -11853,6 +11856,7 @@
 ##.adRegionSelector
 ##.adRemove
 ##.adRenderer
+##.adRendererInfinite
 ##.adReportsLink
 ##.adResponsive
 ##.adResult
@@ -22092,6 +22096,7 @@
 ##.standard-ad
 ##.star-ad
 ##.start__advertising_container
+##.start__advertising_container_banner
 ##.start__newest__big_game_container_body_games_advertising
 ##.start_overview_adv_container
 ##.statTop_adsense
@@ -23524,6 +23529,7 @@
 ##AFS-AD
 ##AMP-AD
 ##A[href*=".com/?Agent="]
+##A[href*="/1033776.com/"]
 ##A[href*="emprestimo.eu"]
 ##A[href*="googleme.eu"]
 ##A[href="http://goo.gl/jQ9bcz"]
@@ -29108,11 +29114,11 @@ $~xmlhttprequest,~media,removeparam=source,denyallow=googlevideo.com,domain=1sol
 /ad-serve?
 /ad-server.$~script
 /ad-server/*$~image
-/ad-side/*
+/ad-side/*$~image
 /ad-sidebar-
 /ad-skin-
 /ad-skyscraper.
-/ad-source/*
+/ad-source/*$~image
 /ad-sovrn.
 /ad-space/*$~image
 /ad-specs.
@@ -29121,7 +29127,7 @@ $~xmlhttprequest,~media,removeparam=source,denyallow=googlevideo.com,domain=1sol
 /ad-strip.
 /ad-stroeer.min.js
 /ad-stub-
-/ad-studio/*
+/ad-studio/*$~image
 /ad-styles.
 /ad-tag-
 /ad-tag2.
@@ -53907,6 +53913,7 @@ khaama.com##.ad8
 kickassanime.io##.ka-ax-wrapper
 kickassanime.io##.ka-ax-wrp.mb-3
 kickasstorrents.to##.dssdffds
+kickoff.com#@#.takeover-ad
 kidspot.com.au##.secondary-video
 kijiji.ca##div[class^="adChoices-"]
 kijiji.ca##div[class^="sponsored-"]
@@ -55387,6 +55394,8 @@ mitbbs.ca,mitbbs.com##.index_add
 mitbbs.ca,mitbbs.com##.newskuang2
 mitbbs.ca,mitbbs.com##table[width="336"][height="280"]
 mitbbs.ca,mitbbs.com##table[width="915"] > tbody > tr:first-child > td[width]
+mitom1.tv#$#'abort-on-property-read adsRedirectPopups
+mitom1.tv#$#abort-current-inline-script jQuery overlay
 miui.com###app
 miui.com##.single-poster-out__img
 miv.ububyiw6655.xyz
@@ -56887,6 +56896,7 @@ playerapp1.pw###divPanel
 playerapp1.pw##[id^="total"]
 playerhd1.pw,playerhd2.pw###divPanel
 playerhd1.pw,playerhd2.pw##[id^="total"]
+playmt.fastlycdn.xyz#$#override-property-read adsPlayer undefined;override-property-read adsTvc undefined;override-property-read adsButton undefined
 playno1.com###frame8I822E
 playno1.com###m12
 playno1.com###m2
@@ -58516,7 +58526,7 @@ slantmagazine.com##.gray_bgBottom
 slashdot.org##.deals-wrapper
 sleazyneasy.com##.advertising
 slickdeals.net##.abc
-slickdeals.net##.rightRailBannerWidget
+slickdeals.net##.rightRailBannerSection
 slickdeals.net#@#a[href*="adzerk.net"]
 slide.history.sina.com.cn##iframe[src^="http://d1.sina.com.cn/litong/"]
 slideme.org###block-block-31
@@ -65345,6 +65355,7 @@ zzpzero.com
 ||592man.com^
 ||593pi.cn^
 ||59519.com^$third-party
+||595fb25f30.com^
 ||597txt1.com^*.php
 ||59cn7.com^
 ||59e6ea7248001c.com^
@@ -65836,6 +65847,7 @@ zzpzero.com
 ||7hu8e1u001.com^
 ||7ia9h.cn^
 ||7insight.com^
+||7iouh9y.cn^
 ||7j7jv5.cn^
 ||7jiu.com.hk/hotsearch_box.php
 ||7junshi.com/con/ad
@@ -74790,6 +74802,7 @@ zzpzero.com
 ||bucogrzbgyysen.com^
 ||bucojji.cn^
 ||budapebluest.com^
+||buddieconine.com^
 ||budech.com^
 ||budgetcolt.com^
 ||budibu.saksfifthavenue.com^
@@ -77734,6 +77747,7 @@ zzpzero.com
 ||conditionwildest.com^
 ||condles-temark.com^
 ||condles-temark.com^$popup
+||condolecourtesywry.com^
 ||condolencesinflamepoint.com^
 ||condolencesquakeyourselves.com^
 ||condolencessumcomics.com^
@@ -83679,6 +83693,7 @@ zzpzero.com
 ||exgt.xyz^
 ||exhaustedannulmentaccredited.com^
 ||exhaustedgemini.com^
+||exhibitedderivedremarkable.com^
 ||exi8ef83z9.com^
 ||existsobey.com^
 ||exitbee.com^$third-party
@@ -92262,6 +92277,7 @@ zzpzero.com
 ||jku62.com/other/gameEntrance
 ||jkxtd77.com^
 ||jkzlzx.com^
+||jl-mt.com^
 ||jl027.com^
 ||jl1130.com^
 ||jl368.cn^
@@ -103884,6 +103900,7 @@ zzpzero.com
 ||pornj.com/gabril/
 ||pornjam.com/assets/js/renderer.
 ||pornkings.com^$third-party
+||pornktube.tv/js/kt.js
 ||pornleep.com^$third-party
 ||pornlemon.com^
 ||pornnperfect.com^$third-party
@@ -114847,6 +114864,7 @@ zzpzero.com
 ||textonlyads.com^$third-party
 ||textsrv.com^
 ||textsrv.com^$popup
+||texttenderness.com^
 ||texturetrick.com^
 ||tf-con.com^
 ||tf.360.cn^
@@ -119045,6 +119063,7 @@ zzpzero.com
 ||viatorayme.com^
 ||vibrant.co^$third-party
 ||vibrantmedia.com^$third-party
+||vic-m.co^
 ||viccscxz.cn^
 ||vice-publishers-cdn.vice.com^
 ||vicspendig.club^
@@ -120597,6 +120616,7 @@ zzpzero.com
 ||whdafei.com^
 ||whdx.cc/js/
 ||whdzxabhqsdnlc.com^
+||whechypheshu.com^
 ||wheeptit.net^
 ||wheeshoo.net^
 ||wheeshoo.net^$popup
@@ -125438,6 +125458,7 @@ zzpzero.com
 4tube.com###main-jessy-grid
 4tube.com##.cpp
 4tube.com##.footer-la-jesi
+4tube.com##.la-jessy-frame
 4tube.com##img[src][style][width]
 4tube.com,fux.com,pornerbros.com,porntube.com##a[href*="/redirect-channel/"]
 4tuning.ro#@#.adsbygoogle
