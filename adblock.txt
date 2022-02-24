@@ -4,8 +4,8 @@
 ! Powerd by CatsTeam
 ! Expires: 8 Hours
 ! Description: 该规则合并自My AdFilters（for PC）、EdentwCustom、adgk、ClearUrl等，并补充了一些规则
-! Version: 2022-02-24 16:14:33（北京时间） 
-! Total count: 127057
+! Version: 2022-02-25 00:16:53（北京时间） 
+! Total count: 127074
 -1688-wp-media/ads/
 -988x60.
 -980x60-
@@ -29339,8 +29339,8 @@ $~xmlhttprequest,~media,removeparam=source,denyallow=googlevideo.com,domain=1sol
 /ad125x125.
 /ad132m.
 /ad132m/*$~image
-/ad134m/*
-/ad136/*
+/ad134m/*$~image
+/ad136/*$~image
 /ad15.
 /ad16.$domain=~ad16.asmrc.org
 /ad160.
@@ -29352,7 +29352,7 @@ $~xmlhttprequest,~media,removeparam=source,denyallow=googlevideo.com,domain=1sol
 /ad2/*php
 /ad2/index.
 /ad2/res/*
-/ad24/*
+/ad24/*$~image
 /ad247realmedia/*
 /ad250.
 /ad290x60_
@@ -41665,6 +41665,7 @@ $~xmlhttprequest,~media,removeparam=source,denyallow=googlevideo.com,domain=1sol
 @@||adsrv.gpm-digital.com/$object-subrequest,domain=rutube.ru
 @@||adswizz.com/adswizz/js/SynchroClient*.js$script,third-party,domain=esradio.libertaddigital.com
 @@||adswizz.com/adswizz/js/SynchroClient*.js$script,third-party,domain=jjazz.net
+@@||adswizz.com/sca_newenco/$xmlhttprequest,domain=triplem.com.au
 @@||adsynth-ofx-quotewidget-prod.herokuapp.com/api/1
 @@||adternal.com/*/ad-loading.bmp$image
 @@||adtng.com/get/$subdocument,domain=hanime.tv
@@ -44422,6 +44423,7 @@ $~xmlhttprequest,~media,removeparam=source,denyallow=googlevideo.com,domain=1sol
 @@||th-sjy.com^$generichide
 @@||th7.cn/sanda2015/css/ads.js
 @@||the-japan-news.com/modules/js/lib/fgp/fingerprint2.js
+@@||thedailywtf.com/images/*-advertisement.png$~third-party
 @@||thefreedictionary.com^$generichide
 @@||themarker.com/logger/p.gif?$image,xmlhttprequest
 @@||thepiratebay.*/static/js/details.js$domain=pirateproxy.live|thehiddenbay.com|thepiratebay.org
@@ -48665,6 +48667,8 @@ coolapk.com##[style*="position: fixed;bottom: 0"]
 coolapk.com##div[style="width:728px;height:90px;margin:5px auto;"]
 coolhii.com###bottommob
 coolinet.com##.section-banner
+coolors.co###header-cad
+coolors.co###sticky-cad
 coolpc.com.tw##TD[onclick="cancelBubble()"]
 copart.com#@#.adscontainer
 coral.qq.com##div[id^="PL_ad_cmt_"],div.mod-ad
@@ -49030,11 +49034,11 @@ dappradar.com##[href^="https://bogged.finance/"]
 dappradar.com##[rel*="sponsored"]
 daringfireball.net###SidebarMartini
 darknessporn.com##.a-3.g-single
-darknessporn.com##.after-boxes
-darknessporn.com##.beside-video
-darknessporn.com##.inside-list-boxes
-darknessporn.com##.native-boxes
-darknessporn.com##.related-boxes-footer
+darknessporn.com,familyporner.com##.after-boxes
+darknessporn.com,familyporner.com##.beside-video
+darknessporn.com,familyporner.com##.inside-list-boxes
+darknessporn.com,familyporner.com##.native-boxes
+darknessporn.com,familyporner.com##.related-boxes-footer
 darko.audio##.ubm_widget
 darkteam.net##.pls_rmv
 dasai8.com##.L > font[color="#0000FF"]
@@ -50189,6 +50193,9 @@ faloo.com##[class^="ad_"],[id^="ad_"],.ad200
 familydoctor.com.cn##.adExtra
 familydoctor.com.cn##.global-top-links-wrap
 familyporn.tv##.side_spot
+familyporner.com##.inside-list-absolute
+familyporner.com##.native-boxes-2
+familyporner.com##.single.alrt
 fan0876.com##.ad-pc
 fandom.com##.aff-unit__wrapper
 fandom.com##.featured-video__wrapper
@@ -55404,8 +55411,8 @@ mitbbs.ca,mitbbs.com##.index_add
 mitbbs.ca,mitbbs.com##.newskuang2
 mitbbs.ca,mitbbs.com##table[width="336"][height="280"]
 mitbbs.ca,mitbbs.com##table[width="915"] > tbody > tr:first-child > td[width]
-mitom1.tv#$#'abort-on-property-read adsRedirectPopups
 mitom1.tv#$#abort-current-inline-script jQuery overlay
+mitom1.tv#$#abort-on-property-read adsRedirectPopups
 miui.com###app
 miui.com##.single-poster-out__img
 miv.ububyiw6655.xyz
@@ -70847,6 +70854,7 @@ zzpzero.com
 ||answers.teradata.com^
 ||answers.teradata.pl^
 ||answerscloud.com^$third-party
+||antaciddjebel.com^
 ||antananarbdivu.com^
 ||antaraimedia.com^
 ||antdivisitlodg.info^$third-party
@@ -78859,6 +78867,7 @@ zzpzero.com
 ||curvecaressmean.com^
 ||curveconjure.com^
 ||curvycry.com^$third-party
+||cuseccharm.com^
 ||cushionpig.com^$third-party
 ||custodyabsolutiondrawback.com^
 ||custom.plausible.io^
@@ -85038,6 +85047,7 @@ zzpzero.com
 ||forzubatr.com^
 ||forzubatr.com^$popup
 ||fosiecajeta.com^
+||fosterhindtalent.com^
 ||fotao9.com$script
 ||fotao9.com^
 ||fotomoto.com/analytics/
@@ -85662,6 +85672,7 @@ zzpzero.com
 ||g.siliconweek.es^
 ||g.vev.io^
 ||g.yccdn.com^
+||g081fme.cn^
 ||g1.pptair.com^
 ||g1.tagtic.cn^
 ||g1.taijuba.com^
@@ -92026,6 +92037,7 @@ zzpzero.com
 ||jia.com/js/zixun/news.js
 ||jia.com/js/zixun/zixun_
 ||jiachangwuliu.cn^
+||jiadunkeji.com^
 ||jiage.ink^
 ||jiahewine.cn^
 ||jiaheyonggu.com^
@@ -93050,6 +93062,7 @@ zzpzero.com
 ||kan8.xyz^
 ||kan98.com/images/*.gif
 ||kan98.com/statics/js/k2017/kan98.js
+||kanbook.net/static/js_union/
 ||kanclick.com$third-party
 ||kancloud.cn/ad/
 ||kanfaxing.com^
@@ -94036,6 +94049,7 @@ zzpzero.com
 ||landing.computershare.com^
 ||landing.wolterskluwer.hu^
 ||landingpg.com^$third-party
+||landlordbrieflywhereupon.com^
 ||landlordmanoeuvre.com^
 ||landscapeuproar.com^
 ||landslidechoreloft.com^
@@ -101620,6 +101634,7 @@ zzpzero.com
 ||ophoahik.net^
 ||opingexamplyt.info^
 ||opinionsurprise.com^
+||opiwb.com^
 ||oplo.org^
 ||oplwseln.com^
 ||opoapibs.net^
@@ -102380,6 +102395,7 @@ zzpzero.com
 ||papa999.xyz^
 ||papaneecorche.com^
 ||papaqq.com^
+||papawrefits.com^
 ||papayaburbles.com^
 ||papayads.net^$third-party
 ||paperclipservice.com^$third-party
@@ -111868,6 +111884,7 @@ zzpzero.com
 ||spartoo.$removeparam=track_id
 ||spattermutiny.com^$popup
 ||spaung.cn^
+||spawnpredicatemutual.com^
 ||spaziogames.it/ajax/player_impression.ashx?
 ||spcode.baidu.com^
 ||speaknews.cn^
