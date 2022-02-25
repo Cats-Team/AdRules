@@ -89,7 +89,7 @@ def post_ppp():
     headers = {'Content-Type':'application/json'}
     requests.post(url, data=body, headers=headers)
 
-post_tg(CONTENT)
+#post_tg(CONTENT)
 post_pp()
 post_ppp()
 
