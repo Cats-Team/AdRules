@@ -4,8 +4,8 @@
 ! Powerd by CatsTeam
 ! Expires: 8 Hours
 ! Description: 该规则合并自My AdFilters（for PC）、EdentwCustom、adgk、ClearUrl等，并补充了一些规则
-! Version: 2022-02-26 08:45:24（北京时间） 
-! Total count: 127180
+! Version: 2022-02-26 14:30:55（北京时间） 
+! Total count: 127209
 -1688-wp-media/ads/
 -988x60.
 -980x60-
@@ -22037,6 +22037,7 @@
 ##.sponsorship_ad
 ##.sponsorshipbox
 ##.sponsorwrapper
+##.sponstitle
 ##.sponstop
 ##.sport-mpu-box
 ##.sportsbet_sbad
@@ -29885,7 +29886,7 @@ $~xmlhttprequest,~media,removeparam=source,denyallow=googlevideo.com,domain=1sol
 /adcast_
 /adcde.js
 /adcdn.
-/adcell/*
+/adcell/*$~image
 /adcenter.$script,domain=~adcenter.capgemini.com|~adcenter.nu|~m-m-g.com
 /adcentral.
 /adcframe.
@@ -29897,7 +29898,7 @@ $~xmlhttprequest,~media,removeparam=source,denyallow=googlevideo.com,domain=1sol
 /adcheck.
 /adcheck?
 /adchoice.
-/adchoice/*
+/adchoice/*$~image
 /adchoice_
 /adchoices-
 /adchoices.
@@ -35712,6 +35713,7 @@ $~xmlhttprequest,~media,removeparam=source,denyallow=googlevideo.com,domain=1sol
 /js/aahome.htm
 /js/adbuddy.min.js$script
 /js/admiral-
+/js/ads
 /js/ads/*0.js
 /js/ads/*2.js
 /js/ads/*5.js
@@ -44276,6 +44278,7 @@ $~xmlhttprequest,~media,removeparam=source,denyallow=googlevideo.com,domain=1sol
 @@||ssl-images-amazon.com^*/satelliteLib-$script,domain=audible.com
 @@||ssl.gstatic.com/analytics/$script,domain=analytics.google.com
 @@||ssl.p.jwpcdn.com/player/*/jwpsrv.js$script,domain=bgr.com
+@@||ssl.pstatic.net/sstatic/sdyn.js$script,domain=search.naver.com
 @@||sso.serverplan.com/manage2fa/check?ref=$removeparam
 @@||ssp.rambler.ru/acp/capirs_main.$script,domain=afisha.ru
 @@||ssp.rambler.ru/capirs.js$domain=afisha.ru
@@ -45745,6 +45748,7 @@ a.9game.cn##.gameInformation
 a.9game.cn##.newGame.normal-module
 a.9game.cn##section.normal-module:nth-of-type(2)
 a.amghais.cn
+a.breaktime.com.tw
 a.exdynsrv.com
 a.exosrv.com
 a.gougou88.xyz
@@ -46096,6 +46100,8 @@ allnewspipeline.com##[href="http://www.sqmetals.com/"]
 allnurses.com##.ipsAreaBackground
 allnurses.com##.ipsSpacer_both
 allnurses.com##.medrec
+alloldpics.com,sexygirlspics.com##.custom-spot
+alloldpics.com,sexygirlspics.com##.live-spot
 allscrabblewords.com,famously-dead.com,famouslyarrested.com,famouslyscandalous.com,iamgujarat.com,lolcounter.com,mpog100.com,samayam.com,timesofindia.com,vijaykarnataka.com##.ad1
 allscrabblewords.com,famously-dead.com,famouslyarrested.com,famouslyscandalous.com,khaama.com,mpog100.com##.ad2
 allscrabblewords.com,mpog100.com##.ad3
@@ -46306,6 +46312,7 @@ api.7017k.com
 api.bwdhuanbao.com
 api.callget.cn
 api.cxzudwk.com
+api.ldjx.cc
 api.lwxs99.com
 api.qvpublish.com
 api.scelsbql.cn
@@ -46393,6 +46400,8 @@ as.tiandesign.top
 asacdn.com/prod/redirect.html
 ascii.jp#@#.adrect
 asdfjkls.jianyihang.com
+asdfkskf.cloudasbook.com
+asdklfjal.shanxicloud.net
 asdklsdkfj.ahpengjie.com
 asianmirror.lk,catholicregister.org,crown.co.za,marengo-uniontimes.com,nikktech.com##.banneritem
 asiatvro.com##.wp.a_t,.a_pt
@@ -46603,6 +46612,7 @@ awsfjlalsf.huiyigou111.com
 axiang.cc###photo-sliders + .widget_text
 axn-asia.com,onetvasia.com##.pane-dart-dart-tag-300x250-rectangle
 ayidaye.m.zwdu.com
+az.tiandesign.top
 azcardinals.com###adblock-notice
 azcentral.com,detroitnews.com,freep.com##div[id^="ad-slot-"]
 azernews.az##.banner-block
@@ -47058,6 +47068,7 @@ banjiajia.com##.register-ten
 banma.com##.rightad,.guanggao
 banma.com##div[id^="disapper"]
 bannedbook.org
+banner-cfnetwork.cdn.hinet.net
 banyungong.org##.ad,.gg,#lnkTB,.xnf
 banzou.name###ads_1
 banzou.name###ads_2
@@ -47096,6 +47107,7 @@ bbhou.com##div[style*="height: 90px;"],.gg_300
 bbjtoday.com##.replacement
 bbk5831.yncjsc.cn
 bbk6133.hanjw1988.com
+bbk6133.jianchajingmk.net
 bbk6371.hanjw1988.com
 bbk6375.xhzmjs.com
 bbk6384.hanjw1988.com
@@ -47957,6 +47969,7 @@ cdn.7nsc.cn
 cdn.9823df.com
 cdn.ampproject.org,linguee.com,thesuburban.com###banner_top
 cdn.baidu.xahycw.com
+cdn.holmesmind.com
 cdn.jinfu.love
 cdn.pg88cdn.com
 cdn.tiv.pw###Advertisement1
@@ -50214,6 +50227,9 @@ fang.com,soufun.com##.add1200
 fangniaowang.net
 fangying.tv##img[alt="Xzy"]
 fanjian.net###vad,.banner
+fanlesstech.com###HTML2 > .widget-content
+fanlesstech.com###HTML4 > .widget-content
+fanlesstech.com###HTML5 > .widget-content
 fanqiangzhe.com###mobile-bottom-ads
 fanqiangzhe.com###news-include + .text-center
 fanqiangzhe.com###popupModal
@@ -53618,6 +53634,7 @@ js.qajypx.com
 js.qygzbxpt.com
 js.users.51.la
 js.wangxialin.top
+js.whfyhouse.com
 js.xz6d.com
 js0573.com###adv1
 js0573.com###adv2
@@ -54027,6 +54044,7 @@ koolhydraatarmerecepten.info##body > [style^="z-index: 1000000; "]
 koreanstreamer.xyz##.happy-header
 koreanstreamer.xyz##[href^="https://www.saltycams.com"]
 koreanstreamer.xyz##section.korea-widget
+kos.qasqs.com
 kostool.cn#?#div:-abp-has(> h1:-abp-contains(推广))
 kpd122.com,ssp28.pw##.index-owl-carousel
 kpw6.com###daojs
@@ -54361,6 +54379,7 @@ lineageos18.com###contentLocker
 linfoweb.com#$#abort-on-property-write num
 ling.online,pornj.com,upornia.com,realgfporn.com#$#abort-on-property-read encodeURI
 link-base.org##.col-lg-12
+link.21373.com
 link.jzzxapp.cn
 linkdecode.com#@#.adsbygoogle
 linkedin.com##li[data-is-sponsored="true"]
@@ -54454,6 +54473,7 @@ lkong.com##.lkong-ads
 lkr.autotrading.com.cn
 llduang.com##[class$="cokitaobao1"]
 lls.mblai.com
+llsdkfjkls.cnlouissegur.com
 llss.bz###secondary img:not(.avatar)
 llwx.net##.ad336left,[height="90"]
 lm-us.com#@#.advertisement_above_footer
@@ -55204,6 +55224,7 @@ mc-market.org##[href="https://etherlands.com/"]
 mc-market.org##[href^="https://bit.ly/"] img
 mc-market.org##[href^="https://www.mc-market.org/advertising/ads/create"]
 mc.a48505.cn
+mc.kmhmyaj.cn
 mc.maljxp.cn
 mc.meaqcj.cn
 mc.mmkkhhnn.cn
@@ -55340,6 +55361,7 @@ mg.mngjrn.cn
 mg.njzyjy.cn
 mg.nnocsin.cn
 mg.rdlbkvo.cn
+mg.rywnvzd.cn
 mg.shengminsy.com
 mg.tumeite.cn
 mg.yunchong6.cn
@@ -56981,6 +57003,7 @@ plus28.com##div[style="margin: auto;width: 960px;margin-bottom: 10px;"]
 plus28.com##div[style="width:270px; height:180px;"]
 plus28.com##div[style="width:960px;margin: auto;"]
 pm.birjkhm.cn
+pm.mdkjefq.cn
 pm.pexnjio.cn
 pn.birjkhm.cn
 pn.mdkjefq.cn
@@ -58258,8 +58281,6 @@ sexvid.xxx##.spots_field
 sexvid.xxx##.top-cube
 sexyandfunny.com###best-friends
 sexyandfunny.com###sexy-links
-sexygirlspics.com##.custom-spot
-sexygirlspics.com##.live-spot
 sezhan8.com##div.topAdv,div#s8-friendlinks,TABLE.read_form:first-child + * + * > TABLE.read_form
 seznam.cz#@#.adMiddle
 seznamzpravy.cz#$#abort-on-property-write Object.prototype.writeAd
@@ -61162,6 +61183,7 @@ wk.baidu.com##div.btn-view-in-app
 wk.baidu.com##div.gain-doc-block-root.wk-container
 wk.baidu.com##div.guidetowkappwg-root
 wk.baidu.com##div.guidetowkvipwg-root.vip-guide-contanier
+wk.eccbb.com
 wltmv.com##.box_xf
 wm927.com##[src^="http://www.wm927.com/static/images/list_ad"],.ad-banner,[src="http://www.wm927.com/static/images/gp_ad1.jpg"]
 wmtips.com##.img100
@@ -65418,6 +65440,7 @@ zzpzero.com
 ||5dimes.com^$popup
 ||5dm.tv/html/5dma.jpg
 ||5dm.tv/html/5dmm.jpg
+||5dm6ghn.cn^
 ||5dmail.net/image/$object
 ||5dmail.net/image/ORF_1000.gif
 ||5dmail.net/image/ad_
@@ -73210,6 +73233,7 @@ zzpzero.com
 ||beacon.qq.com^
 ||beacon.riskified.com^
 ||beacon.rum.dynapis.com^
+||beacon.s.llnwi.net^
 ||beacon.samsclub.com^
 ||beacon.searchspring.io^
 ||beacon.securestudies.com^
@@ -74070,6 +74094,7 @@ zzpzero.com
 ||blasensex.com/extras/
 ||blastcahs.com^
 ||blazingswatstated.com^
+||blb2s77r.cn^
 ||blbclassic.org/assets/images/*banners/
 ||blbhqqdfmvfsu.com^
 ||blcjqrkmufydoxl.top^
@@ -82550,6 +82575,7 @@ zzpzero.com
 ||efjbjykvyxpil.com^
 ||efmqnhbbqyko.xyz^
 ||efpvhqdw.xyz^
+||efreecode.com^
 ||efukheretool.com^
 ||efuxqe.tatilbudur.com^
 ||efyt6.com^
@@ -88625,6 +88651,7 @@ zzpzero.com
 ||hionedaugsbu.info^
 ||hioqbb99.biqugeso.com^
 ||hiorange1.jobui.com^
+||hip-97166b.com^
 ||hipals.com^
 ||hiperdex.ml^
 ||hiperstat.com^$third-party
@@ -94215,6 +94242,7 @@ zzpzero.com
 ||laurieconstitutionalsupposedly.com^
 ||lauriegrowingdrops.com^
 ||lauriestatuestroll.com^
+||lauvlku.cn^
 ||lauwhada.com^
 ||lavageethion.com^
 ||lavando2scas1hh1.com^
@@ -103270,6 +103298,7 @@ zzpzero.com
 ||pincai.com^$third-party
 ||pincidao.cn^
 ||pindenspat.com^
+||ping-admin.ru^$third-party
 ||ping-dot-acp-magento.appspot.com^
 ||ping-fast.com^$third-party
 ||ping-traffic.info^
@@ -109347,6 +109376,7 @@ zzpzero.com
 ||shenkun.xyz^
 ||shenouth.com^
 ||shentupk85.com^
+||shenwupower.com.cn^
 ||shenxiangkeji.com^
 ||shenyunkeji.com^
 ||shenzhengov.work^
@@ -115823,7 +115853,6 @@ zzpzero.com
 ||tokei.upstract.com^
 ||tokenads.com^
 ||tokopedia.com^$removeparam=whid
-||tokopedia.com^*/pixel$xmlhttprequest
 ||tokyoredcirce.com^
 ||tolijoob.com^
 ||tollfreeforwarding.com^$third-party
@@ -125618,7 +125647,7 @@ zzpzero.com
 4kfv18.cn
 4kporn.xxx,cambro.tv,mangovideo.club#$#override-property-read flashvars.popunder_url null
 4kporn.xxx,fpo.xxx##.footer-margin
-4kpornvideos.tv,flashtranny.com,gaymovievids.com,gayporno.fm,igayporn.tv,machogaytube.com,onlydudes.tv,ts-tube.net,verygayboys.com,xgaytube.tv##.ae-player__itv
+4kpornvideos.tv,flashtranny.com,gaymovievids.com,gaypornarchive.com,gayporno.fm,igayporn.tv,machogaytube.com,onlydudes.tv,ts-tube.net,verygayboys.com,xgaytube.tv##.ae-player__itv
 4kzw.com,quanxiong.org,dijiuzww.com##[style="width:770px;height:260px"]
 4shared.com##.remove-rekl
 4teachers.org###banner-wrapper
