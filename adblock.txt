@@ -4,8 +4,8 @@
 ! Powerd by CatsTeam
 ! Expires: 8 Hours
 ! Description: 该规则合并自My AdFilters（for PC）、EdentwCustom、adgk、ClearUrl等，并补充了一些规则
-! Version: 2022-02-26 16:13:55（北京时间） 
-! Total count: 127218
+! Version: 2022-02-26 19:17:49（北京时间） 
+! Total count: 127225
 -1688-wp-media/ads/
 -988x60.
 -980x60-
@@ -11536,6 +11536,7 @@
 ##.ad960x90
 ##.ad970
 ##.ad970_250
+##.ad970x250
 ##.ad970x30
 ##.ad970x90
 ##.ad980
@@ -12143,6 +12144,7 @@
 ##.ad_ad_160
 ##.ad_ad_300
 ##.ad_adblade
+##.ad_adc
 ##.ad_adsense_spacer
 ##.ad_adv
 ##.ad_after_section
@@ -18517,6 +18519,7 @@
 ##.hoverad
 ##.hp-ad-container
 ##.hp-ad-grp
+##.hp-adsection
 ##.hp-col4-ads
 ##.hp-content__ad
 ##.hp-inline-ss-service-ad
@@ -19568,6 +19571,7 @@
 ##.middleAdLeft
 ##.middleAdMid
 ##.middleAdRight
+##.middleAdWrapper
 ##.middleAds
 ##.middleBannerAd
 ##.middle_AD
@@ -22048,6 +22052,7 @@
 ##.spotlight-ad-left
 ##.spotlightAd
 ##.sprite-ad_label_vert
+##.spt-footer-ad
 ##.sqAd2
 ##.sq_ad
 ##.sqrd-ad-manager
@@ -29912,15 +29917,15 @@ $~xmlhttprequest,~media,removeparam=source,denyallow=googlevideo.com,domain=1sol
 /adchoiceslogo.
 /adchoicesv4.
 /adcircle.
-/adcla/*
+/adcla/*$~image
 /adclick-
 /adclick.
 /adclick.$popup
-/adclick/*
+/adclick/*$~image
 /adclient*
 /adclient-
 /adclient.
-/adclient/*
+/adclient/*$~image
 /adclix.$~image
 /adclixad.
 /adclutter.
@@ -37146,7 +37151,7 @@ $~xmlhttprequest,~media,removeparam=source,denyallow=googlevideo.com,domain=1sol
 /pageview?user_guid=
 /pageviews-counter-
 /pageviews.gif?
-/pageviews/*$domain=~mediawiki.org|~pageviews.toolforge.org|~tools.wmflabs.org|~wikimedia.org|~wikipedia.org
+/pageviews/*$domain=~mediawiki.org|~pageviews.wmcloud.org|~tools.wmflabs.org|~wikimedia.org|~wikipedia.org
 /pageviews?token=
 /pageviews_counter.
 /paidads/*
@@ -55249,6 +55254,9 @@ mcncc.com##div.a_mu,div.a_cn,div.wp.a_t,div.GzList,div#diynavtop.area
 mcpmag.com##.xContent
 mcvuk.com,technologyx.com,thessdreview.com##.background-cover
 md4u.ru###pagecontent > div[style*="background-color"]
+mdisk.me##.robot
+mdisk.me##.spdownloader-ad
+mdisk.me##.taka-gif-con
 me360.com##.footer-booking-open
 med66.com##.banner
 med66.com##.coach_pic
@@ -58051,7 +58059,6 @@ s.m2pub.com###adk2_img
 s.parentNode.insertBefore(hm, s);
 s.qiangger.pw
 s.shufapeixun.shop
-s.ssl.qhres2.com
 s1.m.ikkdm.com/mg/show2.js
 s11.zhangyumo.top
 s2.m.ikkdm.com/mg/show2.js
