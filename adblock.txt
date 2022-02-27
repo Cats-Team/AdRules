@@ -4,7 +4,7 @@
 ! Powerd by CatsTeam
 ! Expires: 8 Hours
 ! Description: 该规则合并自My AdFilters（for PC）、EdentwCustom、adgk、ClearUrl等，并补充了一些规则
-! Version: 2022-02-27 00:15:52（北京时间） 
+! Version: 2022-02-27 08:51:12（北京时间） 
 ! Total count: 127244
 -1688-wp-media/ads/
 -988x60.
@@ -29940,11 +29940,11 @@ $~xmlhttprequest,~media,removeparam=source,denyallow=googlevideo.com,domain=1sol
 /adcomp.
 /adcomponent/*$~image
 /adconfig.
-/adconfig/*
+/adconfig/*$~image
 /adconfigproxy.
 /adcontainer?
 /adcontent*
-/adcontent.$~object
+/adcontent.$~image,~object
 /adcontent/*
 /adcontents_
 /adcontrol.$domain=~adcinjector.com|~adcontrol.sk
@@ -126390,7 +126390,7 @@ zzpzero.com
 121xz.com###gsxzdz
 121xz.com##.btn + .btn
 121xz.com##.c_money
-123-movies.ninja,123movies.net,4anime.gg,animekisa.tv,dramacool.pk,dulu.to,mangceh.cc,mangadna.com,vanime.co,watchseries.ninja,ytmp3.cc##iframe[style*="z-index: 2147483647"]
+123-movies.ninja,123movies.net,4anime.gg,animekisa.tv,dramacool.pk,dulu.to,mangadna.com,mangceh.cc,vanime.co,watchseries.ninja,ytmp3.cc##iframe[style*="z-index: 2147483647"]
 123.chinaso.com##.right-list6
 123.com.cn##.bottom-ylink
 123.com.cn##.fixed-top
