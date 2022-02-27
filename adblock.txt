@@ -4,8 +4,8 @@
 ! Powerd by CatsTeam
 ! Expires: 8 Hours
 ! Description: 该规则合并自My AdFilters（for PC）、EdentwCustom、adgk、ClearUrl等，并补充了一些规则
-! Version: 2022-02-27 08:51:12（北京时间） 
-! Total count: 127244
+! Version: 2022-02-27 16:13:50（北京时间） 
+! Total count: 127256
 -1688-wp-media/ads/
 -988x60.
 -980x60-
@@ -29945,19 +29945,20 @@ $~xmlhttprequest,~media,removeparam=source,denyallow=googlevideo.com,domain=1sol
 /adcontainer?
 /adcontent*
 /adcontent.$~image,~object
-/adcontent/*
+/adcontent/*$~image
 /adcontents_
 /adcontrol.$domain=~adcinjector.com|~adcontrol.sk
 /adcontrol/*
+/adcontrol/*$~image
 /adcontroller.
 /adcore.$domain=~adcore.ch|~adcore.com.au|~adcore.ua
 /adcore_$domain=~adcore.ch|~adcore.com.au
 /adcount.$domain=~adcount.com|~adcount.fi
 /adcounter.
 /adcreative.
-/adcreative/*
+/adcreative/*$~image
 /adcreatives/*
-/adcss/*
+/adcss/*$~image
 /adctrl/*
 /adcxtnew_
 /adcycle*
@@ -41038,7 +41039,6 @@ $~xmlhttprequest,~media,removeparam=source,denyallow=googlevideo.com,domain=1sol
 ?adspot_
 ?adtarget=
 ?adtechplacementid=
-?adunit=
 ?adunit_id=
 ?adunitid=
 ?adunitname=
@@ -65098,6 +65098,7 @@ zzpzero.com
 ||4shared.com/js/blockDetect/blockDetect.4min.js$script
 ||4skd2j.cn^
 ||4stats.de^$third-party
+||4takaixi.xyz^
 ||4tdbbs.cn^
 ||4tube.com/assets/abpe-
 ||4tube.com/assets/adf-
@@ -65927,6 +65928,7 @@ zzpzero.com
 ||7fkm2r4pzi.com^
 ||7g9m3r.com^
 ||7gg.cc^
+||7gukaip.xyz^
 ||7gustis.xyz^
 ||7hcn.com//f/*.swf
 ||7hjb8.com^*.php
@@ -81704,6 +81706,7 @@ zzpzero.com
 ||dunhilltraveldeals.com^$third-party
 ||duobaoqj.com^
 ||duodada.com/111/
+||duodada.com/333/
 ||duoduo.net^
 ||duofulai.vip^
 ||duojixing.com^
@@ -88040,6 +88043,7 @@ zzpzero.com
 ||haoyiwang.net^$third-party
 ||haoyundm.com^
 ||haoyundmn.com^
+||haoyundmtaotao.com^
 ||haphazarddrunk.com^
 ||haphazardhum.com^
 ||hapic1.zhuangxiu22.com^
@@ -89457,6 +89461,7 @@ zzpzero.com
 ||hujiang.com/ciku/getDetailSoftText/
 ||hujiang.com/ciku/getLesson
 ||hujiang.com/v2/log
+||hulauf.cn^
 ||hulemedia.com^
 ||hulewangsi.cn^
 ||hulkflugarb.com^
@@ -93457,6 +93462,7 @@ zzpzero.com
 ||khgj.cn^$third-party
 ||khimxz.shoesforcrews.com^
 ||khovdimina.com^
+||khphkum.cn^
 ||khrg04h.cn^
 ||khrtac.xiangha.com^
 ||khufaw2.com^
@@ -105510,6 +105516,7 @@ zzpzero.com
 ||qianhua.*/data/attachment/portal/
 ||qianjia.com/HotImages/2017/11/img20171109122716999.jpg
 ||qianmeiby.com^
+||qiannian.biz^
 ||qianrenge.cc/qian/
 ||qianyuntengyue.com^
 ||qianzhan.com/qiye/images/qcm_
@@ -105590,6 +105597,7 @@ zzpzero.com
 ||qiqipu.com/ajs/waptj.js
 ||qiqipu.com/nplayer/ckplayer1/ckplayer.js
 ||qiqipu.tv/js/123^
+||qiqivoip.com/333/
 ||qiqivv.com^
 ||qiqiww.com^
 ||qiqiyii.com^
@@ -114614,6 +114622,7 @@ zzpzero.com
 ||taose06.com^
 ||taosq.net/public/250x250.jpg
 ||taotaoxiang.*/111/
+||taotaoxiang.cc/333/
 ||taoyao.tech^
 ||taoyouhuiquan.top^
 ||taoyuay.top^
@@ -122455,6 +122464,7 @@ zzpzero.com
 ||xfinity.com/event/
 ||xfinity.com/prod/event/
 ||xfinity.com/z8ufpC5q/
+||xflz.xyz^
 ||xfnkds.com^
 ||xfobuc.serenaandlily.com^
 ||xfsub.com:88/js/*ad
@@ -122897,6 +122907,7 @@ zzpzero.com
 ||xo704w18yt75.filmustage.com^
 ||xoalt.com^
 ||xoassxowovsrk.com^
+||xocs.ren^
 ||xoflgafl.com^
 ||xogogowebcams.com^$third-party
 ||xoimg.com^$domain=18board.com|18p2p.com
@@ -124568,6 +124579,7 @@ zzpzero.com
 ||zdyldoijanx.com^
 ||zdzdm.com/static/img/*ljs.jpg
 ||zdzk0371.cn^
+||zdzy.shop^
 ||ze5.com^
 ||ze5.com^$third-party
 ||zeads.com^
@@ -126294,8 +126306,8 @@ zzpzero.com
 91mjw.com,hahamx.cn##a[href^="https://s.click.taobao.com/"]
 91mjw.com/hy-66-90.php
 91porn.com,dizhi.i7p.work,i9p.co,caoporn.com##[src^="http://fans.bestvogue.com/fans/"],#ad_text,.ad_float_left,#ad_headerbanner
-91porny.com,jiuse205.com##.container-fluid.p-0[class*="mb-"]
-91porny.com,jiuse205.com##.jsv-g1
+91porny.com,jiuse205.com,jiuse702.com##.container-fluid.p-0[class*="mb-"]
+91porny.com,jiuse205.com,jiuse702.com##.jsv-g1
 91s.org##div.banner_ad,div.gg,div.right_Bor
 91wenmi.com###xiezuo
 91wenmi.com###xzsp
