@@ -22,11 +22,11 @@ AdRules（For Adblock）规则数量: 127319
 
 AdRules（For AdGuard）规则数量: 105788 
 
-AdRules（For DNS）规则数量: 64481 
+AdRules（For DNS）规则数量: 6448
 
 AdRules（For Adaway）规则数量: 64335 
 
-Allowlist规则数量: 64737 
+Allowlist规则数量: 647
 
 AD Damian数量: 64362 
 ``` 
