@@ -4,8 +4,8 @@
 ! Powerd by CatsTeam
 ! Expires: 8 Hours
 ! Description: 该规则合并自My AdFilters（for PC）、EdentwCustom、adgk、ClearUrl等，并补充了一些规则
-! Version: 2022-03-05 08:52:30（北京时间） 
-! Total count: 127072
+! Version: 2022-03-05 11:13:42（北京时间） 
+! Total count: 127100
 -1688-wp-media/ads/
 -988x60.
 -980x60-
@@ -41310,6 +41310,7 @@ $~xmlhttprequest,~media,removeparam=source,denyallow=googlevideo.com,domain=1sol
 @@.jpg#$domain=huhupan.com
 @@.png#$domain=3dpchip.com|9zvip.net|club.tgfcer.com|coolinet.com|d1-dm.com|digit77.com|e9china.net|upxin.net
 @@.png#$domain=9zvip.net|club.tgfcer.com|coolinet.com|d1-dm.com
+@@.qq.com/*.mp4?
 @@/.adforge.|$script,domain=solidfiles.com|userscloud.com|uplod.it|hulkload.com
 @@/520cc/myxedetectadsx.js$domain=520cc.cc|520cc.me
 @@/AdDefender/adwordstracking.js$script
@@ -41584,6 +41585,7 @@ $~xmlhttprequest,~media,removeparam=source,denyallow=googlevideo.com,domain=1sol
 @@||4shared.com/show_ad_.gif$image
 @@||4shared.com/show_ad_.xml$script
 @@||4shared.com/show_ad_.xml$stylesheet
+@@||50zera.com^$domain=1905.com
 @@||51hanhua.com/2013/brtxt.js
 @@||51img1.com/??*/adsys.
 @@||51job.com^$generichide
@@ -41886,6 +41888,7 @@ $~xmlhttprequest,~media,removeparam=source,denyallow=googlevideo.com,domain=1sol
 @@||affyun.com^$generichide
 @@||afisha.ru/proxy/videonetworkproxy.ashx?$xmlhttprequest
 @@||aflrm.com/$subdocument,domain=dayt.se
+@@||afpssp.alimama.com^$domain=1905.com
 @@||afreecatv.com/js/plugin/ad/preroll.js$script,domain=afreecatv.com
 @@||afreesms.com/advertisement.js$script,xmlhttprequest
 @@||agar.io/js/a.js$script
@@ -41935,6 +41938,7 @@ $~xmlhttprequest,~media,removeparam=source,denyallow=googlevideo.com,domain=1sol
 @@||alicdn.com^*/log.js,
 @@||alicdn.com^*/tanxssp.js$domain=dlkoo.cc
 @@||alicdn.com^*/tanxssp.js$domain=dlkoo.com
+@@||alicdn.com^*yksdk/*sdk.js$script,domain=youku.com
 @@||alimama.com^$domain=tanx.com
 @@||aliyun.com/nocaptcha/analyze.js
 @@||aliyun.com/scratchCardSlide/analyze.jsonp?
@@ -42067,6 +42071,7 @@ $~xmlhttprequest,~media,removeparam=source,denyallow=googlevideo.com,domain=1sol
 @@||archive.org/BookReader/$image,~third-party,xmlhttprequest
 @@||archive.org/services/$image,~third-party,xmlhttprequest
 @@||argep.hu/googleanalytics.js
+@@||ark.letv.com^
 @@||arnhemland-safaris.com/images/made/$image,~third-party
 @@||arukikata.com/images_ad/$image,~third-party
 @@||asahi.com/ads/$image,~third-party
@@ -42078,6 +42083,8 @@ $~xmlhttprequest,~media,removeparam=source,denyallow=googlevideo.com,domain=1sol
 @@||aseanlegacy.net/modules/adblock/controller.php
 @@||aseanlegacy.net/senzement/ads.png
 @@||aseanlegacy.net/senzement/senzement.js.php
+@@||asimgs.pplive.cn^*.flv
+@@||asimgs.pplive.cn^*.mp4
 @@||ask4movie.io^$generichide
 @@||assets.adobedtm.com^$script,domain=mtvuutiset.fi
 @@||assets.adobedtm.com^*-librarycode_source.min.js$script,domain=mora.jp
@@ -42390,6 +42397,7 @@ $~xmlhttprequest,~media,removeparam=source,denyallow=googlevideo.com,domain=1sol
 @@||chtoen.com/js/adsbygoogle.js
 @@||chuangkit.com^$generichide
 @@||chuiyao.com/static/js*/pinglun.js?v=
+@@||cibntv.net/youku/*.mp4?
 @@||cinema.pia.co.jp/img/ad/$image,~third-party
 @@||cio.com/www/js/ads/gpt_includes.js$~third-party
 @@||circuitv.com/assets/js/analytics.js$~third-party
@@ -42536,6 +42544,7 @@ $~xmlhttprequest,~media,removeparam=source,denyallow=googlevideo.com,domain=1sol
 @@||d41.co/tags/ff-2.min.js$domain=ads.spotify.com
 @@||da.mgtv.com/m/player?
 @@||da.mgtv.com/m5/page?
+@@||da.mgtv.com^
 @@||daan.dev/wp-content/*/caos-supports-google-analytics-$image,~third-party
 @@||dailybitcoins.org/banners/$image
 @@||dailymotion.com/advertise/$xmlhttprequest
@@ -42570,6 +42579,8 @@ $~xmlhttprequest,~media,removeparam=source,denyallow=googlevideo.com,domain=1sol
 @@||ddmcdn.com^*/comscore.streaming.$script,domain=ahctv.com|animalplanet.com|cookingchanneltv.com|destinationamerica.com|discovery.com|discoverylife.com|diynetwork.com|foodnetwork.com|hgtv.com|investigationdiscovery.com|motortrend.com|sciencechannel.com|tlc.com|travelchannel.com
 @@||ddtorun.pl/pl/js/show_ads.js$script
 @@||ddwloclawek.pl/pl/js/show_ads.js$script
+@@||de.as.pptv.com/crossdomain.xml
+@@||de.as.pptv.com/ikandelivery/
 @@||deb.gs/intermission/loadTargetUrl$xmlhttprequest
 @@||decision.taplytics.com^$domain=royalbank.com
 @@||delet.jhi.pl/bower_components/angular-google-analytics/$script,~third-party
@@ -43085,6 +43096,7 @@ $~xmlhttprequest,~media,removeparam=source,denyallow=googlevideo.com,domain=1sol
 @@||gstatic.com^*/firebase-performance-standalone.js$script,domain=flightradar24.com
 @@||gtimg.cn/images/nz/cp/*/adimg.png$domain=qq.com
 @@||gtimg.cn/qz-proj/wy-pc-v3/static/img/svg/icon-share-
+@@||gtimg.com/adplugin/js/adplayer.js
 @@||gtimg.com/adplugin/swf/MediaPlugin.swf$domain=qq.com
 @@||gtimg.com/libs/$domain=18xs.org
 @@||gtimg.com/qqcdn/*/beacon.min.js$script,domain=qq.com
@@ -43201,6 +43213,7 @@ $~xmlhttprequest,~media,removeparam=source,denyallow=googlevideo.com,domain=1sol
 @@||identity.mparticle.com^$xmlhttprequest
 @@||idfcbank.com/static/features/*/scripts/FingerPrint.js$script,~third-party
 @@||iejima.org/ad-banner/$image,~third-party
+@@||ifeng.com/mfp/mfpMultipleDelivery.do
 @@||ifeng.com^*?new=*?new=$domain=i.ifeng.com
 @@||ifengimg.com/a/201*Player
 @@||ifengimg.com/pdt/cfg/mudu/aplayer.xml$domain=v.ifeng.com
@@ -43273,7 +43286,10 @@ $~xmlhttprequest,~media,removeparam=source,denyallow=googlevideo.com,domain=1sol
 @@||ipip.net/ping.php?
 @@||ipstatp.com/business_center/dist/img/ad-$domain=tiktok.com
 @@||iptvforever.com/js/adsbygoogle.js$script
+@@||iqiyi.com/show2?
 @@||island.lk/userfiles/image/danweem/island.gif
+@@||itc.*^prod=ad&
+@@||itc.cn/?prod=rtb&
 @@||itc.cn/site/share/
 @@||item-voyage.fr/ads.css
 @@||itsrainingbitcoins.com/banner.gif$image
@@ -43401,6 +43417,7 @@ $~xmlhttprequest,~media,removeparam=source,denyallow=googlevideo.com,domain=1sol
 @@||kukuplay.com/upload/*.*.swf
 @@||kupongid.ru/design/js/adblock_detector.js$script
 @@||kwejk.pl^$elemhide
+@@||l.qq.com/lview?
 @@||l.qq.com/lview?$domain=888.sports.qq.com
 @@||l2topzone.com/ads.png$image,~third-party
 @@||labrc.pw/advstats/$xmlhttprequest
@@ -43476,6 +43493,7 @@ $~xmlhttprequest,~media,removeparam=source,denyallow=googlevideo.com,domain=1sol
 @@||liveadexchanger.com/a/display.php$script,domain=prem.link
 @@||livenewschat.eu^$generichide
 @@||livew.l.qq.com/crossdomain.xml
+@@||livew.l.qq.com/livemsg?
 @@||livew.l.qq.com/livemsg?pf=H5&ad$domain=m.v.qq.com
 @@||lncn.org/ad.json
 @@||lnk2.cc/js/ad_code.js
@@ -43497,6 +43515,7 @@ $~xmlhttprequest,~media,removeparam=source,denyallow=googlevideo.com,domain=1sol
 @@||loxtk.com/gLoader.php?GID=$script,third-party
 @@||loxtk.com/gTemplate.php?GID=$subdocument,third-party
 @@||lr-ingest.io/logger.min.js$script,domain=pumpkin.care
+@@||lts*.qq.com^*.ts?index=
 @@||ltzn.9377.com^
 @@||luminalearning.com/affiliate-content/$image,~third-party
 @@||lumload.com/pop.js$script
@@ -43504,6 +43523,7 @@ $~xmlhttprequest,~media,removeparam=source,denyallow=googlevideo.com,domain=1sol
 @@||lwadm.com/lw/pbjs?pid=$script,domain=sydostran.se
 @@||lzstatic.com^*/gdpr/consentHandler/google_analytics.js$domain=ladenzeile.de
 @@||lzstatic.com^*/gdpr/consentHandler/optimizely.js$domain=ladenzeile.de
+@@||m.aty.sohu.com^
 @@||m.v.fwmrm.net/p/release/latest-JS/adm/prd/AdManager.js$domain=revision3.com
 @@||macauo2o.com/advertise/
 @@||mail.bg/mail/index/getads/$xmlhttprequest
@@ -43571,6 +43591,7 @@ $~xmlhttprequest,~media,removeparam=source,denyallow=googlevideo.com,domain=1sol
 @@||metrics.el-mundo.net/b/ss/$image,domain=expansion.com
 @@||metrics.torproject.org^$~third-party
 @@||metrics1.data.hicloud.com^
+@@||mf.atm.youku.com^
 @@||mgcashgate.com/cpalocker/?$domain=free-movie-home.com
 @@||mgcashgate.com/cpalocker/?$script,domain=pc.online143.com
 @@||mhxk.com^*/main/entry.common.$script
@@ -44759,6 +44780,7 @@ $~xmlhttprequest,~media,removeparam=source,denyallow=googlevideo.com,domain=1sol
 @@||uze-ads.com/ads/$~third-party
 @@||v.17173.com/advideo/*.mp4
 @@||v.17173.com/advideo/20*.flv
+@@||v.aty.sohu.com/v?
 @@||v.fwmrm.net/ad/g/1?$xmlhttprequest,domain=www.mycanal.fr
 @@||v.fwmrm.net/ad/g/1?csid=vcbs_cbsnews_desktop_$xmlhttprequest
 @@||v.fwmrm.net/ad/p/1?$domain=cc.com|channel5.com|cmt.com|eonline.com|foodnetwork.com|nbcnews.com|ncaa.com|player.theplatform.com|simpsonsworld.com|today.com|uktv.co.uk
@@ -44767,6 +44789,7 @@ $~xmlhttprequest,~media,removeparam=source,denyallow=googlevideo.com,domain=1sol
 @@||v1.cn/player/cloud/cloud_player
 @@||v2rayssr.com^$generichide
 @@||valf.atm.youku.com/vf?site=1&rst=mp4&
+@@||valf.atm.youku.com^
 @@||valuecommerce.com^$image,domain=pointtown.com
 @@||vanclimg.com/js.ashx?*/google-analytics.js$domain=vancl.com
 @@||varagesale.com/assets/analytics-$script,~third-party
@@ -76368,6 +76391,7 @@ zzpzero.com
 ||chuzushijian.cn^
 ||chvkyymv.xyz^
 ||chy365.cn^
+||chyfkf.cn^
 ||chygkk.com^
 ||chykohija.pro^
 ||chykohija.pro^$popup
@@ -84021,6 +84045,7 @@ zzpzero.com
 ||fampin.com^
 ||fan.volleyball.world^
 ||fanatics.com/api/track
+||fanchuangyi.xyz^
 ||fancyactivity.com^
 ||fancybar.net/ac/fancybar.js?zoneid
 ||fancyfourthvolcano.com^
@@ -88078,6 +88103,7 @@ zzpzero.com
 ||hdfdm.com^
 ||hdherpc.cn^
 ||hditers.com^
+||hdjlkj.vip^
 ||hdjxmf.com^
 ||hdkal67.cn^
 ||hdketang.cn^
@@ -95959,6 +95985,7 @@ zzpzero.com
 ||lyaeccn.com^
 ||lyatblkpblca.com^
 ||lyautotech.club^
+||lybctx.com^
 ||lycc72.com/resources/js/content.js
 ||lyceasannop.com^
 ||lychangxu.cn^
@@ -108045,6 +108072,7 @@ zzpzero.com
 ||sanmenxia.info^
 ||sanmiyangguang.com^$third-party
 ||sanoma.nl/pixel/
+||sanqianxingxuan.icu^
 ||sansrl.cn/mir300/attachment/portal/
 ||santonpardal.com^
 ||sanwukeji.xyz^
