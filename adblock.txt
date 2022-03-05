@@ -4,8 +4,8 @@
 ! Powerd by CatsTeam
 ! Expires: 8 Hours
 ! Description: 该规则合并自My AdFilters（for PC）、EdentwCustom、adgk、ClearUrl等，并补充了一些规则
-! Version: 2022-03-05 18:23:01（北京时间） 
-! Total count: 127112
+! Version: 2022-03-05 22:19:49（北京时间） 
+! Total count: 127117
 -1688-wp-media/ads/
 -988x60.
 -980x60-
@@ -37685,6 +37685,7 @@ $~xmlhttprequest,~media,removeparam=source,denyallow=googlevideo.com,domain=1sol
 /plugins/ibd-block-adblocker/*$script,stylesheet
 /plugins/main/js/jquery.simplemodal.js$script
 /plugins/mts-wp-in-post-ads/*
+/plugins/nimiq/*$script
 /plugins/no-adblock/*
 /plugins/page-cornr-
 /plugins/social-traffic-pop/stp.js$script
@@ -41407,7 +41408,7 @@ $~xmlhttprequest,~media,removeparam=source,denyallow=googlevideo.com,domain=1sol
 @@/adx.$domain=tanx.com
 @@/aff_c?$removeparam=/^aff_id[0-9]?=/i
 @@/analytics.php?$domain=xcar.com.cn
-@@/analyticsmediator.$script,domain=mysortimo.be|mysortimo.co.uk|mysortimo.com|mysortimo.com.au|mysortimo.de|mysortimo.dk|mysortimo.es|mysortimo.fr|mysortimo.no|mysortimo.se
+@@/analyticsmediator.$script,domain=mysortimo.be|mysortimo.co.uk|mysortimo.com|mysortimo.com.au|mysortimo.de|mysortimo.dk|mysortimo.es|mysortimo.fr|mysortimo.no|mysortimo.se|repco.co.nz|repco.com.au
 @@/api/ad/*$domain=pinduoduo.com
 @@/api/ads?$domain=nmkjxy.com
 @@/b/ref=$removeparam=ie
@@ -44227,7 +44228,6 @@ $~xmlhttprequest,~media,removeparam=source,denyallow=googlevideo.com,domain=1sol
 @@||removeadblock.com/js/show_ads.js$script
 @@||renewcanceltv.com/porpoiseant/banger.js$script,~third-party
 @@||repairtrackingsite.nintendo.eu/Tracking/$subdocument,domain=nintendo.co.uk
-@@||repco.co.nz/_ui/shared/js/analyticsmediator.js
 @@||repstatic.it/minify/sites/common/config_webtrekk_$script,domain=video.repubblica.it
 @@||repstatic.it^*/Nielsen.js
 @@||repubblica.it/pw/pw.js?deskurl=$domain=gelocal.it|ilsecoloxix.it|lastampa.it
@@ -44757,6 +44757,7 @@ $~xmlhttprequest,~media,removeparam=source,denyallow=googlevideo.com,domain=1sol
 @@||union2.50bang.org^$third-party
 @@||uniqlo.com^*/trackingservice/$~third-party
 @@||universfreebox.com/js/advertisement.js
+@@||unpkg.com/@optimizely/optimizely-sdk$script,domain=talktalk.co.uk
 @@||unpkg.com/web-vitals/dist/web-vitals.base.iife.js$script,domain=wpolityce.pl
 @@||unshowmasonline.com/banner.gif$image
 @@||up-load.io^$generichide
@@ -64413,6 +64414,7 @@ zzpzero.com
 ||2gis.ru/_/log
 ||2gis.ru/_/metrics
 ||2gmbbl.cn^
+||2gustis.xyz^
 ||2gvuukm1lm.com^
 ||2gz9nc.cn^
 ||2h81gp.tkepyc.com^$script,xmlhttprequest,domain=pch.com
@@ -78389,6 +78391,7 @@ zzpzero.com
 ||cqerbihou.com^
 ||cqfangduan.com^
 ||cqftonline.com^
+||cqfygc.xyz^
 ||cqgya.com^
 ||cqhot.club^
 ||cqishr.mobile.de^
@@ -80880,6 +80883,7 @@ zzpzero.com
 ||dlvjmr.cn^
 ||dlxgm.cn^
 ||dlxrlc2ni2.com^
+||dlxxjsh.top^
 ||dlyukun.cn^
 ||dlzjdesign.com^
 ||dlzm790g.com^
@@ -100266,6 +100270,7 @@ zzpzero.com
 ||nimblecommerce.com/widget.action?
 ||nimbleswan.io^
 ||nimhuemark.com^
+||nimiq.com^$third-party
 ||nimiqpool.com^$third-party
 ||nimiqtest.net^$third-party
 ||nimmediu.info^
