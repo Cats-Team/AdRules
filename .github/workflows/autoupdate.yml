@@ -44,7 +44,6 @@ jobs:
           rm *.txt
           wget -O ADgk.txt https://raw.githubusercontent.com/banbendalao/ADgk/master/ADgk.txt
           wget -O kill-baidu-ad.txt https://raw.githubusercontent.com/banbendalao/ADgk/master/kill-baidu-ad.txt
-          wget -T 8 -O allow-lm.txt https://trli.coding.net/p/file/d/allow/git/lfs/master/allow.txt
           wget -O fasthosts.txt https://raw.githubusercontent.com/hacamer/filtering/master/hosts
       - name: Move files
         run: |
