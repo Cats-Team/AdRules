@@ -3,17 +3,15 @@ cd script/adblock/src
 
 # Start Download
 easylist=(
-  "https://easylist-downloads.adblockplus.org/easylist.txt"
   "https://easylist-downloads.adblockplus.org/abp-filters-anti-cv.txt"
   "https://raw.githubusercontent.com/cjx82630/cjxlist/master/cjx-annoyance.txt"
   "https://easylist.to/easylist/fanboy-annoyance.txt"
-  "https://easylist.to/easylist/easyprivacy.txt"
   "https://raw.githubusercontent.com/reek/anti-adblock-killer/master/anti-adblock-killer-filters.txt"
   "https://raw.githubusercontent.com/cjx82630/cjxlist/master/cjx-annoyance.txt"
   "https://raw.githubusercontent.com/cjx82630/cjxlist/master/cjxlist.txt"
   "https://easylist-downloads.adblockplus.org/antiadblockfilters.txt"
   "https://easylist-downloads.adblockplus.org/easyprivacy.txt"
-  "https://raw.githubusercontent.com/hacamer/Adblist/master/ad-pc.txt"
+  "https://easylist-downloads.adblockplus.org/easylistchina+easylistchina_compliance+easylist.txt"
   "https://raw.githubusercontent.com/banbendalao/ADgk/master/ADgk.txt"
   "https://raw.githubusercontent.com/banbendalao/ADgk/master/kill-baidu-ad.txt"
   "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/LegitimateURLShortener.txt"
@@ -21,6 +19,7 @@ easylist=(
   "https://raw.githubusercontent.com/Noyllopa/NoAppDownload/master/NoAppDownload.txt"
   "https://raw.githubusercontent.com/damengzhu/banad/main/jiekouAD.txt"
   "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/ClearURLs%20for%20uBo/clear_urls_uboified.txt"
+  "https://raw.githubusercontent.com/o0HalfLife0o/list/master/ad-pc.txt"
 )
 
 for i in "${!easylist[@]}"
