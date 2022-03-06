@@ -5,7 +5,6 @@ cd script/adblock/src
 easylist=(
   "https://easylist-downloads.adblockplus.org/abp-filters-anti-cv.txt"
   "https://raw.githubusercontent.com/cjx82630/cjxlist/master/cjx-annoyance.txt"
-  "https://easylist.to/easylist/fanboy-annoyance.txt"
   "https://raw.githubusercontent.com/reek/anti-adblock-killer/master/anti-adblock-killer-filters.txt"
   "https://raw.githubusercontent.com/cjx82630/cjxlist/master/cjx-annoyance.txt"
   "https://raw.githubusercontent.com/cjx82630/cjxlist/master/cjxlist.txt"
