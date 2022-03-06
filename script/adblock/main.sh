@@ -2,6 +2,19 @@
 cd script/adblock/src
 
 # Start Download
+easylist=(
+  "https://easylist-downloads.adblockplus.org/easylist.txt"
+  "https://easylist-downloads.adblockplus.org/abp-filters-anti-cv.txt"
+  "https://raw.githubusercontent.com/cjx82630/cjxlist/master/cjx-annoyance.txt"
+  "https://easylist.to/easylist/fanboy-annoyance.txt"
+  "https://easylist.to/easylist/easyprivacy.txt"
+  "https://raw.githubusercontent.com/reek/anti-adblock-killer/master/anti-adblock-killer-filters.txt"
+  "https://raw.githubusercontent.com/cjx82630/cjxlist/master/cjx-annoyance.txt"
+  "https://raw.githubusercontent.com/cjx82630/cjxlist/master/cjxlist.txt"
+  "https://easylist-downloads.adblockplus.org/antiadblockfilters.txt"
+  "https://easylist-downloads.adblockplus.org/easyprivacy.txt"
+)
+
 curl -o i1.txt https://raw.githubusercontent.com/hacamer/Adblist/master/ad-pc.txt
 curl -o i3.txt https://raw.githubusercontent.com/banbendalao/ADgk/master/ADgk.txt
 curl -o i4.txt https://raw.githubusercontent.com/banbendalao/ADgk/master/kill-baidu-ad.txt
@@ -19,8 +32,19 @@ curl -o i15.txt https://raw.githubusercontent.com/Noyllopa/NoAppDownload/master/
 curl -o i16.txt https://raw.githubusercontent.com/damengzhu/banad/main/jiekouAD.txt
 curl -o i17.txt https://raw.githubusercontent.com/DandelionSprout/adfilt/master/ClearURLs%20for%20uBo/clear_urls_uboified.txt
 
+for i in "${!easylist[@]}"
+do
+  echo "开始下载 easylist${i}..."
+  curl -o "easylist${i}.txt" --connect-timeout 60 -s "${easylist[$i]}"
+  # shellcheck disable=SC2181
+  if [ $? -ne 0 ];then
+    echo '下载失败，请重试'
+    exit 1
+  fi
+done
+
 # Start Merge and Duplicate Removal
-cat i*.txt user-rules.dd > mergd.txt
+cat i*.txt user-rules.dd easy*.txt > mergd.txt
 cat mergd.txt | grep -v '^!' | grep -v '^！' | grep -v '^# ' | grep -v '^# ' | grep -v '^\[' | grep -v '^\【' | grep -v 'local.adguard.org' > tmpp.txt
 sort -n tmpp.txt | uniq > tmmp.txt
 
