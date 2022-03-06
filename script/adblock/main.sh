@@ -6,6 +6,7 @@ curl -o i1.txt https://raw.githubusercontent.com/hacamer/Adblist/master/ad-pc.tx
 curl -o i3.txt https://raw.githubusercontent.com/banbendalao/ADgk/master/ADgk.txt
 curl -o i4.txt https://raw.githubusercontent.com/banbendalao/ADgk/master/kill-baidu-ad.txt
 curl -o i5.txt https://raw.githubusercontent.com/DandelionSprout/adfilt/master/LegitimateURLShortener.txt
+curl -o i6.txt https://raw.githubusercontent.com/xinggsf/Adblock-Plus-Rule/master/mv.txt
 #curl -o i6.txt https://raw.githubusercontent.com/uniartisan/adblock_list/master/adblock.txt
 #curl -o i7.txt https://raw.githubusercontent.com/uniartisan/adblock_list/master/adblock_lite.txt
 #curl -o i9.txt https://raw.githubusercontent.com/uniartisan/adblock_list/master/adblock_plus.txt
