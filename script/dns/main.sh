@@ -39,7 +39,7 @@ curl -o i1.txt https://adaway.org/hosts.txt
 wget https://raw.githubusercontent.com/damengzhu/banad/main/jiekouAD.txt
 
 # Start Merge and Duplicate Removal
-cat i*.txt > mergd.txt
+cat i*.txt easy*.txt > mergd.txt
 cat mergd.txt | grep '^||' | grep -v './' | grep -Ev "([0-9]{1,3}.){3}[0-9]{1,3}" | grep -v '.\$' | sed '/^$/d' > adblock0.txt 
 cat mergd.txt | grep '^@@||' | grep -v './' | grep -v '.\$' > adblock1.txt
 cat adblock*.txt > adblock.txt #abp规则处理合并
