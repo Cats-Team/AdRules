@@ -1,5 +1,6 @@
 <div align="center">
 <h1 align="center">AdRules</h1>
+<h2 align="center">一个强力去广告的规则</h2>
 <img src="https://img.shields.io/github/stars/Cats-Team/AdRules?color=yellow">
 <img src="https://img.shields.io/github/forks/Cats-Team/AdRules?color=orange">
 <img src="https://img.shields.io/github/issues/Cats-Team/AdRules?color=green">
@@ -9,9 +10,9 @@
 <img src='https://github.com/Cats-Team/AdRules/actions/workflows/autoupdate.yml/badge.svg'>
 
 <br>
-</div>
-                                                                                                   
-**一个强力去广告的规则**  
+</div>                                                                                                   
+<br>
+
 - 注意：本项目规则具有一定的误杀请思考再三再使用
 - 并且本项目部分规则引入由本团队添加的黑白名单 
 - 具体请看↓
