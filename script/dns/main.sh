@@ -2,15 +2,40 @@
 cd script/dns/src
 #cd ./src
 # Start Download
-curl -o i1.txt https://adguardteam.github.io/AdGuardSDNSFilter/Filters/filter.txt
-curl -o i6.txt https://raw.githubusercontent.com/xinggsf/Adblock-Plus-Rule/master/rule.txt
-curl -o i7.txt https://raw.githubusercontent.com/o0HalfLife0o/list/master/ad-pc.txt
-curl -o i8.txt https://raw.githubusercontent.com/o0HalfLife0o/list/master/ad-edentw.txt
-curl -o i9.txt https://raw.githubusercontent.com/banbendalao/ADgk/master/ADgk.txt
-curl -o i10.txt https://raw.githubusercontent.com/Cats-Team/AdRules/main/adblock.txt
-curl -o i11.txt https://raw.githubusercontent.com/hacamer/Adblist/master/ad-pc.txt
-#curl -o i11.txt https://raw.githubusercontent.com/Cats-Team/AdRules_dev/main/adguard-full.txt
-curl -o i12.txt https://adaway.org/hosts.txt
+easylist=(
+  "https://easylist-downloads.adblockplus.org/abp-filters-anti-cv.txt"
+  "https://raw.githubusercontent.com/cjx82630/cjxlist/master/cjx-annoyance.txt"
+  "https://easylist.to/easylist/fanboy-annoyance.txt"
+  "https://raw.githubusercontent.com/reek/anti-adblock-killer/master/anti-adblock-killer-filters.txt"
+  "https://raw.githubusercontent.com/cjx82630/cjxlist/master/cjx-annoyance.txt"
+  "https://raw.githubusercontent.com/cjx82630/cjxlist/master/cjxlist.txt"
+  "https://easylist-downloads.adblockplus.org/antiadblockfilters.txt"
+  "https://easylist-downloads.adblockplus.org/easyprivacy.txt"
+  "https://easylist-downloads.adblockplus.org/easylistchina+easylistchina_compliance+easylist.txt"
+  "https://raw.githubusercontent.com/banbendalao/ADgk/master/ADgk.txt"
+  "https://raw.githubusercontent.com/banbendalao/ADgk/master/kill-baidu-ad.txt"
+  "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/LegitimateURLShortener.txt"
+  "https://raw.githubusercontent.com/xinggsf/Adblock-Plus-Rule/master/mv.txt"
+  "https://raw.githubusercontent.com/Noyllopa/NoAppDownload/master/NoAppDownload.txt"
+  "https://raw.githubusercontent.com/damengzhu/banad/main/jiekouAD.txt"
+  "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/ClearURLs%20for%20uBo/clear_urls_uboified.txt"
+  "https://adguardteam.github.io/AdGuardSDNSFilter/Filters/filter.txt"
+  "https://raw.githubusercontent.com/o0HalfLife0o/list/master/ad-pc.txt"
+)
+
+for i in "${!easylist[@]}"
+do
+  echo "开始下载 easylist${i}..."
+  curl -o "easylist${i}.txt" --connect-timeout 60 -s "${easylist[$i]}"
+  # shellcheck disable=SC2181
+  if [ $? -ne 0 ];then
+    echo '下载失败，请重试'
+    exit 1
+  fi
+done
+
+## Other filter
+curl -o i1.txt https://adaway.org/hosts.txt
 wget https://raw.githubusercontent.com/damengzhu/banad/main/jiekouAD.txt
 
 # Start Merge and Duplicate Removal
