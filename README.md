@@ -6,6 +6,7 @@
 <br>
 <img src="https://img.shields.io/github/license/Cats-Team/AdRules?color=bule">
 <img src="https://img.shields.io/github/languages/code-size/Cats-Team/AdRules?color=blueviolet">
+<img src='https://github.com/Cats-Team/AdRules/actions/workflows/autoupdate.yml/badge.svg'>
 
 <br>
 </div>
