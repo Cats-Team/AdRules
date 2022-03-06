@@ -13,7 +13,7 @@ curl -o i7.txt https://filters.adtidy.org/android/filters/4_optimized.txt
 # Start Merge and Duplicate Removal
 cat i*.txt > mergd.txt
 cat mergd.txt | grep -v '^!' | grep -v '^！' | grep -v '^# ' | grep -v '^# ' | grep -v '^\[' | grep -v '^\【' > tmpp.txt
-sort tmpp.txt | uniq -n > tmp.txt
+sort -n tmpp.txt | uniq -u > tmp.txt
 sort -n tmp.txt > tmmp.txt
 
 
