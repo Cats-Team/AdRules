@@ -34,9 +34,6 @@ jobs:
           bash ./script/hosts/main.sh
           bash ./script/adblock+adguard/main.sh
           
-      - name: Update ReadMe
-        run: |
-          bash ./readme.sh
 
       - name: Update other rules
         run: |
@@ -49,6 +46,11 @@ jobs:
         run: |
           cd script
           mv adblock.txt adguard.txt dns.txt hosts.txt allow.txt adblock+adguard.txt ../
+
+      - name: Update ReadMe
+        run: |
+          bash ./readme.sh
+
       - name: Git push assets to Github
         run: |
           git init
