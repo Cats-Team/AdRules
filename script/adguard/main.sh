@@ -5,9 +5,9 @@ cd script/adguard/src
 curl -o i1.txt https://filters.adtidy.org/android/filters/2_optimized.txt
 curl -o i2.txt https://filters.adtidy.org/android/filters/11_optimized.txt
 curl -o i3.txt https://filters.adtidy.org/android/filters/3_optimized.txt
-curl -o i4.txt https://filters.adtidy.org/android/filters/224_optimized.txt
+#curl -o i4.txt https://filters.adtidy.org/android/filters/224_optimized.txt #移除中文过滤器
 curl -o i5.txt https://filters.adtidy.org/android/filters/14_optimized.txt
-#curl -o i6.txt https://filters.adtidy.org/android/filters/5_optimized.txt
+curl -o i6.txt https://filters.adtidy.org/android/filters/5_optimized.txt
 curl -o i7.txt https://filters.adtidy.org/android/filters/4_optimized.txt
 
 # Start Merge and Duplicate Removal
