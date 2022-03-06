@@ -92,3 +92,9 @@ AD Damian数量: 64362
 
 ## 访问量
 ![](http://profile-counter.glitch.me/cats-team/count.svg)
+
+
+## Star数
+
+[![Stargazers over time](https://starchart.cc/Cats-Team/AdRules.svg)](https://starchart.cc/Cats-Team/AdRules)
+
