@@ -4,12 +4,18 @@
 <img src="https://img.shields.io/github/stars/Cats-Team/AdRules?color=yellow">
 <img src="https://img.shields.io/github/forks/Cats-Team/AdRules?color=orange">
 <img src="https://img.shields.io/github/issues/Cats-Team/AdRules?color=green">
+
+<br>
+<img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/cats-team/adrules">
+<img alt="GitHub commit activity" src="https://img.shields.io/github/commit-activity/w/cats-team/adrules">
 <br>
 <img src="https://img.shields.io/github/license/Cats-Team/AdRules?color=bule">
 <img src="https://img.shields.io/github/languages/code-size/Cats-Team/AdRules?color=blueviolet">
-<img src='https://github.com/Cats-Team/AdRules/actions/workflows/autoupdate.yml/badge.svg'>
+<img alt="GitHub Workflow Status" src="https://img.shields.io/github/workflow/status/cats-team/adrules/update%20rules">
 
 <br>
+  
+
 </div>                                                                                                   
 <br>
 
