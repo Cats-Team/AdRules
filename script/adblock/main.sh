@@ -36,10 +36,10 @@ done
 # Start Merge and Duplicate Removal
 cat user-rules.dd easy*.txt > mergd.txt
 cat mergd.txt | grep -v '^!' | grep -v '^！' | grep -v '^# ' | grep -v '^# ' | grep -v '^\[' | grep -v '^\【' | grep -v 'local.adguard.org' > tmpp.txt
-sort -n tmpp.txt | uniq -u > tmmp.txt
-
+sort -n tmpp.txt | uniq > tmmp.txt
+awk '!a[$0]++' tmmp.txt > timp.txt
 # Remove Error Rules
-cat tmmp.txt err-rules.dd > ttmp.txt 
+cat timp.txt err-rules.dd > ttmp.txt 
 sort -n ttmp.txt | uniq -u > tmp.txt
 
 # Start Count Rules
