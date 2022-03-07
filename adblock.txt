@@ -4,8 +4,8 @@
 ! Powerd by CatsTeam
 ! Expires: 8 Hours
 ! Description: 该规则合并自My AdFilters（for PC）、EdentwCustom、adgk、ClearUrl等，并补充了一些规则
-! Version: 2022-03-07 20:30:26（北京时间） 
-! Total count: 126237
+! Version: 2022-03-07 20:38:42（北京时间） 
+! Total count: 126245
 -1688-wp-media/ads/
 -988x60.
 -980x60-
@@ -13359,6 +13359,7 @@
 ##.ads-skyscraper-container-right
 ##.ads-skyscraper-left
 ##.ads-skyscraper-right
+##.ads-slot-mb-container
 ##.ads-small
 ##.ads-smartphone
 ##.ads-social-box
@@ -57590,6 +57591,7 @@ redtube.com,tube8.com,tube8.es,tube8.fr,xvideos.com,youjizz.com,youporn.com,youp
 redtube.com,tube8.com,tube8.es,tube8.fr,xvideos.com,youjizz.com,youporn.com,youporngay.com#?#:-abp-properties(base64)
 redtube.com,tube8.com,tube8.es,tube8.fr,xvideos.com,youjizz.com,youporn.com,youporngay.com#?#:-abp-properties(data:)
 redtube.com,tube8.com,tube8.es,tube8.fr,xvideos.com,youjizz.com,youporn.com,youporngay.com#?#:-abp-properties(image/)
+redtube.com,tube8.com,tube8.es,tube8.fr,youporn.com,youporngay.com##video[playinline][loop]
 redtube.com,youporn.com,youporngay.com##img[src^="bLob:" i]
 redtube.com,youporn.com,youporngay.com##video[loop][src^="bLob:" i]
 ref.so##div[style="overflow:hidden; height:auto; width:1002px; margin:0 auto;  "]
@@ -59768,10 +59770,13 @@ tube-bunny.com##.mobile-vision
 tube-bunny.com##.visions
 tube8.com##.footerBanner
 tube8.com##.gridBanner_
+tube8.com##[data-spot-id]
+tube8.com##[data-spot]
 tube8.com#$#abort-on-property-write AdDelivery
 tube8.com,tube8.es,tube8.fr##.adsbytrafficjunky
 tube8.com,tube8.es,tube8.fr##.col-3-lg.col-4-md.col-4
 tube8.com,tube8.es,tube8.fr##[id][style="display: block;"]
+tube8.com,tube8.es,tube8.fr##[src*="bloB:https://www.tube8."]
 tube8.com,tube8.es,tube8.fr##[src^="bloB:https://www.tube8."]
 tube8.com,tube8.es,tube8.fr##[style*="background-color: rgb(255, 255, 255)"]
 tube8.com,tube8.es,tube8.fr,youjizz.com,youporn.com,youporngay.com##[src*="blob:"]
@@ -98784,6 +98789,7 @@ zzpzero.com
 ||mylikechat.com^$third-party
 ||myline1.club^
 ||mylinkbox.com^
+||mylust.com/b/
 ||mymarketing.co.il/Include/tracker.js
 ||mymed.su/counter/
 ||mymetal.ru/counter/
@@ -124180,6 +124186,8 @@ zzpzero.com
 ||znjj.tv/uploadfiles/abi/ad201
 ||znlgplt.com^
 ||znq9.destinia.mx^
+||znqip.net
+||znqip.net$popup
 ||znqip.net^
 ||znqip.net^$popup
 ||znrttr.jaypore.com^
