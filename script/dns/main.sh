@@ -28,7 +28,6 @@ do
   echo "开始下载 easylist${i}..."
   curl -o "easylist${i}.txt" --connect-timeout 60 -s "${easylist[$i]}"
   # shellcheck disable=SC2181
-  fi
 done
 
 ## Other filter
