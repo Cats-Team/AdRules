@@ -2,6 +2,7 @@
 cd script/adblock/src
 
 # Start Download
+echo "开始更新AdRules（For AdBlock）"
 easylist=(
   "https://easylist-downloads.adblockplus.org/abp-filters-anti-cv.txt"
   "https://raw.githubusercontent.com/reek/anti-adblock-killer/master/anti-adblock-killer-filters.txt"
@@ -28,6 +29,7 @@ do
 done
 
 # Start Merge and Duplicate Removal
+echo "开始处理规则"
 cat user-rules.dd easy*.txt > mergd.txt
 cat mergd.txt | grep -v '^!' | grep -v '^！' | grep -v '^# ' | grep -v '^# ' | grep -v '^\[' | grep -v '^\【' | grep -v 'local.adguard.org' | sort -n | uniq | awk '!a[$0]++' > timp.txt
 
@@ -42,7 +44,7 @@ num=`cat tmp.txt | wc -l`
 echo "! Version: $(TZ=UTC-8 date +'%Y-%m-%d %H:%M:%S')（北京时间） " >> tpdate.txt
 echo "! Total count: $num" >> tpdate.txt
 cat title.dd tpdate.txt tmp.txt > final.txt
-
+echo "规则处理完毕"
 mv final.txt ../../adblock.txt
 rm *.txt
 cd ../../
