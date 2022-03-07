@@ -2,29 +2,35 @@
 cd script/adguard/src
 
 # Start Download
-curl -o i1.txt https://filters.adtidy.org/android/filters/2_optimized.txt
-curl -o i2.txt https://filters.adtidy.org/android/filters/11_optimized.txt
-curl -o i3.txt https://filters.adtidy.org/android/filters/3_optimized.txt
-#curl -o i4.txt https://filters.adtidy.org/android/filters/224_optimized.txt #移除中文过滤器
-curl -o i5.txt https://filters.adtidy.org/android/filters/14_optimized.txt
-curl -o i6.txt https://filters.adtidy.org/android/filters/5_optimized.txt
-curl -o i7.txt https://filters.adtidy.org/android/filters/4_optimized.txt
+adguard=(
+  "https://filters.adtidy.org/android/filters/2_optimized.txt"
+  "https://filters.adtidy.org/android/filters/11_optimized.txt"
+  "https://filters.adtidy.org/android/filters/3_optimized.txt"
+  "https://filters.adtidy.org/android/filters/224_optimized.txt"
+  "https://filters.adtidy.org/android/filters/14_optimized.txt"
+  "https://filters.adtidy.org/android/filters/5_optimized.txt"
+  "https://filters.adtidy.org/android/filters/4_optimized.txt"
+)
+
+for i in "${!adguard[@]}"
+do
+  echo "开始下载 easylist${i}..."
+  curl -o "easylist${i}.txt" --connect-timeout 60 -s "${adguard[$i]}"
+  # shellcheck disable=SC2181
+done
 
 # Start Merge and Duplicate Removal
-cat i*.txt > mergd.txt
-cat mergd.txt | grep -v '^!' | grep -v '^！' | grep -v '^# ' | grep -v '^# ' | grep -v '^\[' | grep -v '^\【' > tmpp.txt
-sort -n tmpp.txt | uniq -u > tmp.txt
-sort -n tmp.txt > tmmp.txt
-
+cat easy*.txt | grep -v '^!' | grep -v '^！' | grep -v '^# ' | grep -v '^# ' | grep -v '^\[' | grep -v '^\【' |sort -n | uniq | awk '!a[$0]++'> tmp.txt
+echo "开始处理规则"
 
 # Start Count Rules
-num=`cat tmmp.txt | wc -l`
+num=`cat tmp.txt | wc -l`
 
 # Start Add title and date
 echo "! Version: $(TZ=UTC-8 date +'%Y-%m-%d %H:%M:%S')（北京时间） " >> tpdate.txt
 echo "! Total count: $num" >> tpdate.txt
 cat title.dd tpdate.txt tmmp.txt > final.txt
-
+echo "规则处理完毕"
 mv final.txt ../../adguard.txt
 rm *.txt
 cd ../../
