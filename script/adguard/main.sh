@@ -2,6 +2,7 @@
 cd script/adguard/src
 
 # Start Download
+echo "开始更新AdRules（For AdGuard）"
 adguard=(
   "https://filters.adtidy.org/android/filters/2_optimized.txt"
   "https://filters.adtidy.org/android/filters/11_optimized.txt"
@@ -29,7 +30,7 @@ num=`cat tmp.txt | wc -l`
 # Start Add title and date
 echo "! Version: $(TZ=UTC-8 date +'%Y-%m-%d %H:%M:%S')（北京时间） " >> tpdate.txt
 echo "! Total count: $num" >> tpdate.txt
-cat title.dd tpdate.txt tmmp.txt > final.txt
+cat title.dd tpdate.txt tmp.txt > final.txt
 echo "规则处理完毕"
 mv final.txt ../../adguard.txt
 rm *.txt
