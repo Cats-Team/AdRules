@@ -22,6 +22,7 @@ easylist=(
   "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/ClearURLs%20for%20uBo/clear_urls_uboified.txt"
   "https://adguardteam.github.io/AdGuardSDNSFilter/Filters/filter.txt"
   "https://raw.githubusercontent.com/o0HalfLife0o/list/master/ad-pc.txt"
+  "https://adaway.org/hosts.txt"
 )
 
 for i in "${!easylist[@]}"
@@ -32,12 +33,11 @@ do
 done
 
 ## Other filter
-curl -o -s i1.txt https://adaway.org/hosts.txt
 wget -q https://raw.githubusercontent.com/damengzhu/banad/main/jiekouAD.txt
 
 # Start Merge and Duplicate Removal
 echo "开始处理规则"
-cat i*.txt easy*.txt > mergd.txt
+cat easy*.txt > mergd.txt
 cat mergd.txt | grep '^||' | grep -v './' | grep -Ev "([0-9]{1,3}.){3}[0-9]{1,3}" | grep -v '.\$' | sed '/^$/d' > adblock0.txt 
 cat mergd.txt | grep '^@@||' | grep -v './' | grep -v '.\$' > adblock1.txt
 cat adblock*.txt > adblock.txt #abp规则处理合并
