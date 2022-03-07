@@ -5,10 +5,9 @@ cd script/hosts/src
 echo "开始更新AdRules（For Adaway）"
 #wget https://raw.githubusercontent.com/Cats-Team/AdRules/main/dns.txt
 cp ../../dns.txt ./dns.txt
-cat dns.txt | grep '^|' | grep -v '\*'| grep -Ev "([0-9]{1,3}.){3}[0-9]{1,3}" |sed 's/||/0.0.0.0 /' | sed 's/\^//' | grep -v "^|" > hosts.txt
+cat dns.txt | grep '^|' | grep -v '\*'| grep -Ev "([0-9]{1,3}.){3}[0-9]{1,3}" |sed 's/||/0.0.0.0 /' | sed 's/\^//' | grep -v "^|" > mergd.txt
 
 # Start Merge and Duplicate Removal
-cat i*.txt > mergd.txt
 cat mergd.txt | grep '^1'  > 1.txt
 cat mergd.txt | grep '^0'  > 0.txt
 cat 1.txt 0.txt hosts.txt > tmpp.txt
