@@ -39,7 +39,7 @@ do
   # shellcheck disable=SC2181
 done
 # Start Merge and Duplicate Removal
-cat i*.txt > mergd.txt
+cat easy*.txt > mergd.txt
 cat mergd.txt | grep -v '^!' | grep -v '^！' | grep -v '^# ' | grep -v '^# ' | grep -v '^\[' | grep -v '^\【' > tmpp.txt
 sort -n tmpp.txt | uniq > tmmp.txt
 awk '!a[$0]++' tmmp.txt > tmp.txt
