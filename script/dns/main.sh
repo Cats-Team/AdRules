@@ -2,6 +2,7 @@
 cd script/dns/src
 #cd ./src
 # Start Download
+echo "开始更新AdRules（For DNS）"
 easylist=(
   "https://easylist-downloads.adblockplus.org/abp-filters-anti-cv.txt"
   "https://raw.githubusercontent.com/cjx82630/cjxlist/master/cjx-annoyance.txt"
@@ -31,10 +32,11 @@ do
 done
 
 ## Other filter
-curl -o i1.txt https://adaway.org/hosts.txt
-wget https://raw.githubusercontent.com/damengzhu/banad/main/jiekouAD.txt
+curl -o -s i1.txt https://adaway.org/hosts.txt
+wget -q https://raw.githubusercontent.com/damengzhu/banad/main/jiekouAD.txt
 
 # Start Merge and Duplicate Removal
+echo "开始处理规则"
 cat i*.txt easy*.txt > mergd.txt
 cat mergd.txt | grep '^||' | grep -v './' | grep -Ev "([0-9]{1,3}.){3}[0-9]{1,3}" | grep -v '.\$' | sed '/^$/d' > adblock0.txt 
 cat mergd.txt | grep '^@@||' | grep -v './' | grep -v '.\$' > adblock1.txt
@@ -57,7 +59,7 @@ num=`cat tmp.txt | wc -l`
 echo "! Version: $(TZ=UTC-8 date +'%Y-%m-%d %H:%M:%S')（北京时间） " >> tpdate.txt
 echo "! Total count: $num" >> tpdate.txt
 cat title.dd tpdate.txt tmp.txt > final.txt
-
+echo "规则处理完毕"
 mv final.txt ../../dns.txt
 rm *.txt
 cd ../../
