@@ -4,7 +4,6 @@ cd script/adblock/src
 # Start Download
 easylist=(
   "https://easylist-downloads.adblockplus.org/abp-filters-anti-cv.txt"
-  "https://raw.githubusercontent.com/cjx82630/cjxlist/master/cjx-annoyance.txt"
   "https://raw.githubusercontent.com/reek/anti-adblock-killer/master/anti-adblock-killer-filters.txt"
   "https://raw.githubusercontent.com/cjx82630/cjxlist/master/cjx-annoyance.txt"
   "https://raw.githubusercontent.com/cjx82630/cjxlist/master/cjxlist.txt"
@@ -31,14 +30,14 @@ do
     exit 1
   fi
 done
+
 # Start Merge and Duplicate Removal
 cat user-rules.dd easy*.txt > mergd.txt
-cat mergd.txt | grep -v '^!' | grep -v '^！' | grep -v '^# ' | grep -v '^# ' | grep -v '^\[' | grep -v '^\【' | grep -v 'local.adguard.org' > tmpp.txt
-sort -n tmpp.txt | uniq > tmmp.txt
-awk '!a[$0]++' tmmp.txt > timp.txt
+cat mergd.txt | grep -v '^!' | grep -v '^！' | grep -v '^# ' | grep -v '^# ' | grep -v '^\[' | grep -v '^\【' | grep -v 'local.adguard.org' | sort -n | uniq | awk '!a[$0]++' > timp.txt
+
+
 # Remove Error Rules
-cat timp.txt err-rules.dd > ttmp.txt 
-sort -n ttmp.txt | uniq -u > tmp.txt
+cat timp.txt err-rules.dd |sort -n | uniq -u > tmp.txt
 
 # Start Count Rules
 num=`cat tmp.txt | wc -l`
