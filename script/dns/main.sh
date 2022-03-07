@@ -49,7 +49,7 @@ cat new.txt | grep '|\|@' | grep -v '.#' | grep -v '.?' | grep -v '.=' | grep -v
 sort -n tmpp.txt | uniq > tmmp.txt
 
 # Remove Error Rules
-cat tmmp.txt errdamian.dd > ttmp.txt 
+cat tmmp.txt errdamain.dd > ttmp.txt 
 sort -n ttmp.txt | uniq -u > tmp.txt
 
 # Start Count Rules
