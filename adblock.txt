@@ -4,8 +4,8 @@
 ! Powerd by CatsTeam
 ! Expires: 8 Hours
 ! Description: 该规则合并自My AdFilters（for PC）、EdentwCustom、adgk、ClearUrl等，并补充了一些规则
-! Version: 2022-03-08 21:01:46（北京时间） 
-! Total count: 126344
+! Version: 2022-03-09 00:18:01（北京时间） 
+! Total count: 126357
 -1688-wp-media/ads/
 -988x60.
 -980x60-
@@ -1340,8 +1340,12 @@
 ###ad-wrap2
 ###ad-wrapper
 ###ad-wrapper-728x90
+###ad-wrapper-footer-1
 ###ad-wrapper-left
+###ad-wrapper-main-1
 ###ad-wrapper-right
+###ad-wrapper-sidebar-1
+###ad-wrapper-top-1
 ###ad-wrapper1
 ###ad-yahoo-simple
 ###ad-zone-1
@@ -7447,6 +7451,7 @@
 ###perm_ad
 ###permads
 ###persistentAd
+###personal-ads-sticky-wrapper
 ###personalization_ads
 ###pf-dialog-ads
 ###pg-ad-160x600
@@ -23790,6 +23795,7 @@
 ##[onclick="window.open('/statics/js/hth906.html')"]
 ##[onclick="window.open('https://docs.qq.com/doc/DZEpZc2pOaFdXa0tD');"]
 ##[onclick='window.open(this.url)']
+##[onclick^="location.href='http://www.reimageplus.com"]
 ##[onclick^="window.location.href = 'http://wd.haoyundm.com"]
 ##[onclick^="window.location.href"][onclick*=".bcebos."]
 ##[onclick^="window.location.href='https://apps.apple.com/cn/app/%E9%80%9F%E9%98%85%E5%B0%8F%E8%AF%B4"]
@@ -24133,11 +24139,13 @@
 ##a[href="javascript:GoGd();"]
 ##a[href="javascript:GoTp();"]
 ##a[href="javascript:window.GoTp();"]
+##a[href^="//benoopto.com/"]
 ##a[href^="//porngames.adult/?SID="]
 ##a[href^="//postlnk.com/"]
 ##a[href^="//pubads.g.doubleclick.net/"]
 ##a[href^="//srv.buysellads.com/"]
 ##a[href^="//syndication.dynsrvtbg.com/"]
+##a[href^="//thaudray.com/"]
 ##a[href^="//voyeurhit.com/cs/"]
 ##a[href^="//www.mgid.com/"]
 ##a[href^="//www.pd-news.com/"]
@@ -42587,6 +42595,7 @@ $~xmlhttprequest,~media,removeparam=source,denyallow=googlevideo.com,domain=1sol
 @@||easyship.com/api/v1/track/$xmlhttprequest,domain=trackmyshipment.co
 @@||eatstreet.com/api/v2/tracking/$~third-party
 @@||ebaykorea.com/ADS/$image,domain=gmarket.co.kr
+@@||ec.europa.eu/eurostat/databrowser/assets/analytics/piwik.js$script,~third-party
 @@||ecestaticos.com/build/js/common/statistics/engines/deepbieventadapter.$domain=elconfidencial.com
 @@||ecitic.com/source/*/pop
 @@||ecitic.com^
@@ -57174,6 +57183,8 @@ qiannao.com###main > div[style="padding-left:20px;margin-top:10px;"]:first-child
 qiannao.com##A[href="http://www.2tietu.com/"],div#rightDiv,div[style="padding-left:20px;margin-top:10px;"],div#tg2_main,img[src^="http://i1.imgbus.com/doimg/"],ins.adsbygoogle,div#yzjy_div
 qianyan001.com##div.gg,div.gg2,div[class*="_gg"]
 qianyifa.net###ad_text
+qianzhan.com##.kfonline2
+qianzhan.com##.qqonline
 qianzhan.com##[src^="http://img3.qianzhan123.com/gg/"]
 qianzhan.com##div[id^="baidu_ad_"]
 qiaobutang.com##.fixed-footer-wrap
@@ -68990,6 +69001,7 @@ zzpzero.com
 ||agamagcargoan.com^
 ||agates.ru/counters/
 ||agathaedith.com^
+||agathazanna.com^
 ||agauxietor.com^
 ||agazev.com^
 ||agcdn.com^
@@ -93462,6 +93474,7 @@ zzpzero.com
 ||ladyye.site^
 ||laf1ma3eban85ana.com^
 ||laferia.cr^$third-party
+||lafrjs.com^
 ||lagacetanewspaper.com/wp-content/uploads/banners/
 ||lagoonolivia.com^
 ||lagou.com/js/cooperation/
