@@ -4,8 +4,8 @@
 ! Powerd by CatsTeam
 ! Expires: 8 Hours
 ! Description: 该规则合并自My AdFilters（for PC）、EdentwCustom、adgk、ClearUrl等，并补充了一些规则
-! Version: 2022-03-08 16:15:32（北京时间） 
-! Total count: 126331
+! Version: 2022-03-08 21:01:46（北京时间） 
+! Total count: 126344
 -1688-wp-media/ads/
 -988x60.
 -980x60-
@@ -12963,6 +12963,8 @@
 ##.adheader100
 ##.adheader401
 ##.adheader416
+##.adheightpromo
+##.adheighttall
 ##.adherebox
 ##.adhesion-block
 ##.adhesion-header
@@ -22163,6 +22165,7 @@
 ##.sticky-bottom-ad
 ##.sticky-footer-ad
 ##.sticky-rail-ad-container
+##.sticky-side-ad
 ##.sticky-sidebar-ad
 ##.sticky-top-ad-wrap
 ##.stickyAd
@@ -24974,6 +24977,7 @@
 ##img[onclick="window.open(this.url)"][src*="qq.com"]
 ##img[onclick^="window.open"][src*=".360buyimg.com"]
 ##img[onclick^="window.open"][src*="pc.qq.com"]
+##img[src$=".gif"][style="width:100%;max-width: 960px;height:45px;margin-bottom:2px;"]
 ##img[src$="/img/tianbo.gif"]
 ##img[src*=".qpic.cn"][width="980"][height="80"]
 ##img[src*=".sinaimg."][style="width:1025px;height:80px"]
@@ -46027,6 +46031,8 @@ aguitar.cn##img[width="470"][height="60"]
 aguitar.cn,guitarchina.com##.headerbanner
 ah-me.com##.flirt-block
 ah123z.com##script + div[style]
+ahaan.co.uk##.MuiSnackbar-anchorOriginBottomCenter
+ahaan.co.uk##[href^="https://go.nordvpn.net/"]
 ahaonline.cz,auto.cz,autorevue.cz,blesk.cz,dama.cz,e15.cz,expres.cz,info.cz,iprima.cz,karaoketexty.cz,kinobox.cz,kupi.cz,maminka.cz,mojezdravi.cz,nasepenize.cz,novinky.cz,onetv.cz,osobnosti.cz,reflex.cz,sport.cz,super.cz,tiscali.cz,zeny.cz,zive.cz##.advert
 ahaonline.cz,auto.cz,autorevue.cz,blesk.cz,dama.cz,e15.cz,expres.cz,info.cz,iprima.cz,karaoketexty.cz,kinobox.cz,kupi.cz,maminka.cz,mojezdravi.cz,nasepenize.cz,novinky.cz,onetv.cz,osobnosti.cz,reflex.cz,sport.cz,super.cz,tiscali.cz,zeny.cz,zive.cz##.pe-banner
 ahaonline.cz,auto.cz,autorevue.cz,blesk.cz,dama.cz,e15.cz,expres.cz,info.cz,iprima.cz,karaoketexty.cz,kinobox.cz,kupi.cz,maminka.cz,mojezdravi.cz,nasepenize.cz,novinky.cz,onetv.cz,osobnosti.cz,reflex.cz,sport.cz,super.cz,tiscali.cz,zeny.cz,zive.cz##a[href*="?action=ppl&cid="]
@@ -47102,7 +47108,7 @@ baixing.com##.refashion-listing-banner
 baiy.net##.ad300
 baiyjk.com###ads_14
 baliphim.com#$#override-property-read time_load_ads_1 0; override-property-read time_load_ads_2 0
-baliphim.com,khophimhd.net,downloadsachmienphi.com,lucaphim.com#$#abort-current-inline-script JSON.parse atob
+baliphim.com,khophimhd.net,downloadsachmienphi.com,lucaphim.com,truyen3s.com#$#abort-current-inline-script JSON.parse atob
 ball365.cn-ce.net##td[id^="idad_"]
 ballbar.cc###top_970x250,#left_300x600_1,.pup_time,#pup_box,.adsbygoogle,#obsbar
 ballbar.cc,mse.360.cn###banner2
@@ -59756,7 +59762,6 @@ trustedgatetocontent.com
 trustedreviews.com##.keystone-single-widget
 trustnet.com#@#.ads_right
 trustpilot.com##.ad-block
-truyen3s.com#$#abort-current-inline-script document.createElement _zepaf
 tryindianporn.com##.mle
 tryindianporn.com##.uvk
 ts-tube.net##.js-uvb-spot
@@ -72248,6 +72253,7 @@ zzpzero.com
 ||bangbros-free.com/i2/
 ||bangdom.com^$third-party
 ||bangdu2.com^
+||banggongxia.xyz^
 ||banggood.com/collectBanner?
 ||banggood.com/collectException
 ||banggood.com^$removeparam=custlinkid
@@ -80886,6 +80892,7 @@ zzpzero.com
 ||dq95d35.com^$third-party
 ||dqbtlylnujxuoo.com^
 ||dqbwqzkajkuif.com^
+||dqcztxmu.com^
 ||dqhi3ea93ztgv.cloudfront.net^
 ||dqs3.darjeeling.fr^
 ||dqsft.com^
@@ -82384,6 +82391,7 @@ zzpzero.com
 ||embtrk.com^
 ||emc.dr-stick.shop^
 ||emccgujavc.xyz^
+||emcoper.com^
 ||emdcadvertise.eastmoney.com^
 ||emea.info.mouser.com^
 ||emeaevents.americanexpress.com^
@@ -95332,6 +95340,7 @@ zzpzero.com
 ||luojianrong.cn^
 ||luolikong.net^$third-party
 ||luomjtajrhaqan.xyz^
+||luoshihua.club^
 ||luoyuanedu.cn^
 ||lupoot.com^
 ||lupoporno.com/js/analytics
@@ -118723,6 +118732,7 @@ zzpzero.com
 ||vip/inc/*my*.js
 ||vip/style/vue.js?v=
 ||vip/vs.php?id=$script,third-party
+||vip1221.com^$third-party
 ||vipads.cn$third-party
 ||vipaicka.net^
 ||vipcn.com/hezuo/
@@ -125206,6 +125216,7 @@ zzpzero.com
 42xz.com##[onclick*="godownload"]
 42xz.com,aiweibk.com,kuhou.com,pcsoft.com.cn,yesky.com##.gsxz
 43aq.com##[width="990"][height="70"],[width="990"][height="60"]
+44r9fl.xyz
 45fan.com##.botad1,.adz
 46pj.com##.DaKuang,[height="79"]
 47.107.65.95
@@ -125400,6 +125411,7 @@ zzpzero.com
 77kpp.com##div[style="z-index:1000000;position: fixed;top:0;left:0;"]
 77mh.cc###bdcotopnew
 77nnsc.com##[name^="ad"],[height="45"],p
+77nnv9.xyz
 78dm.net###qpgg
 78dm.net##.ad_logor
 78dm.net##.add-980
@@ -126323,6 +126335,7 @@ zzpzero.com
 703804.com##.hotad
 872872.com##.yslm645d,.yslm300x,.footertopB
 888173.com##iframe[width="168"][height="608"],.textwidget,.holder
+939394.xyz##A[href="https://pic.13709394.net/upload/"]
 939394.xyz##img[src*=".xyz"][src*=".gif"]
 939394.xyz#?#a:-abp-has(img[src*=".alicdn."])
 939394.xyz#?#a:-abp-has(img[src*="/ddimg/"])
