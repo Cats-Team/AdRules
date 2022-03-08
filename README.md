@@ -34,13 +34,13 @@
 ## 规则总数
 ```
 
-更新时间: 2022-03-08 08:50:08 （北京时间） 
+更新时间: 2022-03-08 16:04:55 （北京时间） 
 
-AdRules（For Adblock）规则数量: 126319 
+AdRules（For Adblock）规则数量: 126332 
 
 AdRules（For AdGuard）规则数量: 106094 
 
-AdRules（For DNS）规则数量: 64638 
+AdRules（For DNS）规则数量: 64646 
 
 AdRules（For Adaway）规则数量: 64335 
 
