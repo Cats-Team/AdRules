@@ -46,7 +46,9 @@ jobs:
         run: |
           cd script
           mv adblock.txt adguard.txt dns.txt hosts.txt allow.txt adblock+adguard.txt ../
-
+          for i in $(ls ../*.txt); do
+            sed -i '/^$/d' $i
+          done
       - name: Update ReadMe
         run: |
           bash ./readme.sh
