@@ -36,13 +36,7 @@ jobs:
           wget -O ADgk.txt https://raw.githubusercontent.com/banbendalao/ADgk/master/ADgk.txt
           wget -O kill-baidu-ad.txt https://raw.githubusercontent.com/banbendalao/ADgk/master/kill-baidu-ad.txt
           wget -O fasthosts.txt https://raw.githubusercontent.com/hacamer/filtering/master/hosts
-      - name: Move files
-        run: |
-          cd script
-          mv adblock.txt adguard.txt dns.txt hosts.txt allow.txt adblock+adguard.txt ../
-          for i in $(ls ../*.txt); do
-            sed -i '/^$/d' $i
-          done
+
       - name: Update ReadMe
         run: |
           bash ./readme.sh
