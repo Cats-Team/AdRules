@@ -146,5 +146,6 @@ for i in $diffFile; do
  sed -i '/^$/d' $i
  echo "合并${i}的标题中"
 done
+echo '规则处理完成'
 rm -rf tmp pre
 exit
