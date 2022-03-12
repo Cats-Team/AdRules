@@ -27,14 +27,8 @@ jobs:
       - uses: actions/checkout@main
       - name: Update Rules
         run: |
-          bash ./script/adblock/main.sh
-          bash ./script/adguard/main.sh
-          bash ./script/dns/main.sh
-          bash ./script/allow/main.sh
-          bash ./script/hosts/main.sh
-          bash ./script/adblock+adguard/main.sh
+          bash ./script/update-rules.sh
           
-
       - name: Update other rules
         run: |
           cd rules
