@@ -17,3 +17,4 @@ fasthosts:
 ```
 https://cats-team.coding.net/p/adguard/d/AdRules/git/raw/main/rules/fasthosts.txt
 ```
+
