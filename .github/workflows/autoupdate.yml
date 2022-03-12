@@ -27,6 +27,7 @@ jobs:
       - uses: actions/checkout@main
       - name: Update Rules
         run: |
+          rm *.txt
           bash ./script/update-rules.sh
           
       - name: Update other rules
