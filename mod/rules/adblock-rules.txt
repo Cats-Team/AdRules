@@ -1,0 +1,162 @@
+! ------加强屏蔽Start------ !
+
+!酷安"提到的好物"
+||coolapk.com/v6/page/dataList?$replace=/extra_entities//
+||coolapk.com/v6/feed/detail?$replace=/extra_entities//
+||coolapk.com/v6/main/indexV?$replace=/extra_entities//
+||coolapk.com/v6/feed/detail?$replace=/extra_title//
+||coolapk.com/v6/feed/detail?$replace=/include_goods//
+
+!去除"什么值得买"
+||coolapk.com/v6/main/indexV8?$replace=/\{"entityType":"card"\,"entityTemplate":"listCard".*?\}\,\{"id/{"id/
+!去除热搜
+||coolapk.com/v6/main/init?$replace=/\{"data":\[\{"entityType":"card"\,"entityTemplate":"textCard"\,"title":"\\u70ed\\u95e8\\u641c\\u7d22".*?\}\,\{"entityType":"card"\,"entityTemplate":"configCard"/\{"data":[\{"entityType":"card"\,"entityTemplate":"configCard"/
+||coolapk.com/v6/search?type=hotSearch$replace=/\{"data":\[.*\]/{"data":[]/
+!去除随机应用推荐
+||coolapk.com/v6/main/indexV8?$replace=/\,\{.*?"entityType": "card"\,"entityTemplate":"apkImageCard".*?\}\,\{"id"/,{"id"/
+!去除评论区下某广告
+||coolapk.com/v6/feed/detail?$replace=/detailSponsorCard//
+
+! 某广告
+malimali2.com##div.leo-container:nth-child(4) > div:nth-child(7)
+malimali2.com##div.leo-container:nth-child(4) > div:nth-child(6)
+malimali2.com##div.leo-container:nth-child(4) > div:nth-child(5)
+
+! 腾讯的广点通(优量汇)和字节跳动的穿山甲广告
+||access1.tpns.tencent.com^
+||astrategy.beacon.qq.com^
+||aeventlog.beacon.qq.com^
+||oth.eve.mdt.qq.com^
+||oth.eve.qq.com^
+||ug.snssdk.com^
+||v3-be-pack.pglstatp-toutiao.com^
+||sf3-be-pack.pglstatp-toutiao.com^
+||tobapplog.ctobsnssdk.com^
+||access.pangolin-sdk-toutiao-b.com^
+||ulogs.umengcloud.com^
+||game.weixin.qq.com^
+||wxsnsdythumb.wxs.qq.com^
+||oth.eve.mdt.qq.com^
+||wxsnsdythumb.wxs.qq.com^
+||api-access.pangolin-sdk-toutiao-b.com^
+||mssdk-bu.snssdk.com^
+||aaid.umeng.com^
+||i.snssdk.com^
+||is.snssdk.com^
+||pangolin.snssdk.com^
+||extlog.snssdk.com^
+||sf3-ttcdn-tos.pstatp.com^
+||bds.snssdk.com^
+||dig.bdurl.net^
+||api-access.pangolin-sdk-toutiao.com^
+||sfl-fe-tos.pglstatp-toutiao.com^
+||sf1-be-pack.pglstatp-toutiao.com^
+||sf3-fe-tos.pglstatp-toutiao.com^
+||log-api.pangolin-sdk-toutiao.com^
+||s3-fe-scm.pglstatp-toutiao.com^
+||s3a.pstatp.com^
+||log-api.pangolin-sdk-toutiao-b.com^
+||sf6-be-pack.pglstatp-toutiao.com^
+||toblog.volceapplog.com^
+||access.toggle.qq.com^
+||in-addr.arpa^
+||wxsnsdy.wxs.qq.com^
+@@||midas.gtimg.cn^
+! 大海影视
+||uty.micocc.com^
+||lanm.huliyinzi.com^
+||ns.adobe.com^
+||swimg2.tsderen.cn^
+||st.huliyinzi.com/ads_app_pic/^
+！ 移除某大佬修改idm的弹窗
+||dev.rubaoo.com/TimeDiaryV2^$app=idm.internet.download.manager.plus
+! checkadblock
+||checkadblock.ru/banners^$domain=checkadblock.ru
+! RJNO1
+www.rjno1.com#%#var g_times=0;function myfun(){let el=document.querySelectorAll("[style*='width: '][style*='; height: '],.adsbygoogle");el.forEach(e=>e.remove());if(g_times>=20){window.clearInterval(timer)}g_times++}var timer=setInterval(myfun,500);myfun();
+! -------加强屏蔽End------- !
+
+! -------白名单Start------- !
+
+! 今日头条视频
+!@@||api*.toutiaoapi.com^$app=com.ss.android.article.news
+@@||api5-normal-lq.toutiaoapi.com^$app=com.ss.android.article.news
+! 微信
+@@||doc.weixin.qq.com^
+@@||wx.tenpay.com^
+
+! [淘宝]
+! // 关闭隐身模式，以便正常使用发票功能
+@@||invoice-ua.taobao.com/e-invoice/invoice-apply-online.html?source$stealth
+
+! CF的管理
+@@||dash.cloudflare.com^$domain=dash.cloudflare.com,important
+
+! AdGuard
+@@||local.adguard.org^
+! 图片
+@@||inews.gtimg.com^
+
+! 锁屏画报正常化
+@@||wallpaper.cdn.pandora.xiaomi.com^
+@@||package.wallpaper.cdn.pandora.xiaomi.com.lan^
+@@||w.pandora.xiaomi.com^
+
+! 新浪新闻热榜
+@@||gw.m.163.com^
+
+! 夸克
+@@||quark.sm.cn^
+@@||pan.quark.cn^
+
+! 百度百科
+@@||bkimg.cdn.bcebos.com^
+@@||imgstat.baidu.com^
+
+! 小米浏览器
+@@||mb.yidianzixun.com^
+@@||sug.browser.miui.com^
+
+! QQ
+@@||qun.qq.com^
+
+!
+@@||list-manage.com
+
+! Huawei 翻译
+@@||metrics1.data.hicloud.com^
+
+! Gmail邮箱
+@@||mail.google.com^,document
+
+! Edge新闻
+@@||www.msn.cn/spartan/mmx^
+
+! 淘宝图片(?
+@@||taobao.com$image
+
+! 银联
+@@||yyfweb.postar.cn^
+
+! 雨见浏览器
+@@||api.yjllq.com^
+
+! Adguard本地过滤
+@@||local.adguard.org^
+
+! Bilibili
+bilibili.com#@#.btn-ctnr
+@@||*bili*api.*^
+! YouKu
+@@||*.youku.com^$stealth
+@@||*.ali*.*^$stealth
+! Phone Youku
+@@||vali.cp*.ott.cibntv.net^$domain=m.youku.com,third-party
+
+! 皮皮虾评论区误杀
+@@||i.snssdk.com/bds^$app=com.sup.android.superb
+! DNS
+@@||dash.xns.one^
+！paste.in
+@@||paste.in^
+! --------白名单End-------- !
