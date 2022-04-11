@@ -12,12 +12,12 @@ on:
    type:
     - [Manual-Update]
 
-env:
-  SCKEY: ${{ secrets.SCKEY }}
-  PUSH_PUSH: ${{ secrets.PUSH_PUSH }}
-  GITHUBTOKEN: ${{ secrets.GITHUBTOKEN }}
-  TG_TOKEN: ${{ secrets.TG_TOKEN }}
-  CHAT_ID: ${{ secrets.CHAT_ID }}
+#env:
+  #SCKEY: ${{ secrets.SCKEY }}
+  #PUSH_PUSH: ${{ secrets.PUSH_PUSH }}
+  #GITHUBTOKEN: ${{ secrets.GITHUBTOKEN }}
+  #TG_TOKEN: ${{ secrets.TG_TOKEN }}
+  #CHAT_ID: ${{ secrets.CHAT_ID }}
 
   
 jobs:
@@ -54,8 +54,8 @@ jobs:
       - name: Git push assets to Github
         run: |
           git init
-          git config --local user.name "actions"
-          git config --local user.email "action@github.com"
+          git config --local user.name "hacamer"
+          git config --local user.email "hcamer145@gmail.com"
           git branch -m main
           git add --all
           git commit -m "Updated at $(TZ=UTC-8 date +'%Y-%m-%d %H:%M:%S')（北京时间）"
@@ -72,10 +72,10 @@ jobs:
           git commit -m "Updated at $(TZ=UTC-8 date +'%Y-%m-%d %H:%M:%S')（北京时间）"
           git remote add origin "https://${{ secrets.CODING_ACCOUNT }}:${{ secrets.CODING_PASSWORD }}@e.coding.net/cats-team/adguard/AdRules.git"
           git push -u -f origin --all
-      - name: Push Message
-        run: |
-          pip3 install requests
-          python3 ./script/pusher.py
-      - name: Manual-Update Other Repository
-        run: |
-          bash ./script/manual-update.sh
+#      - name: Push Message
+#        run: |
+#          pip3 install requests
+#          python3 ./script/pusher.py
+#      - name: Manual-Update Other Repository
+#        run: |
+#          bash ./script/manual-update.sh
