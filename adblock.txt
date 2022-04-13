@@ -1,12 +1,12 @@
 [Adblock Plus 2.0]
-! Checksum: frexFWBiPPhAIy8lTdUjzw
+! Checksum: pQcTfQKyRoA/xW4egSgfqQ
 ! Title: AdRules (For AdBlock)
 ! Homepage: https://github.com/Cats-Team/AdRules
 ! Powerd by CatsTeam
 ! Expires: 8 Hours
 ! Description: 该规则合并自EasyList、EasyListChina、AdGuard Chinese Filter、EdentwCustom、ClearUrl、乘风规则等，并补充了一些规则
-! Version: 2022-04-13 08:48:12（北京时间） 
-! Total count: 90595
+! Version: 2022-04-13 11:43:13（北京时间） 
+! Total count: 90597
 ###ADCENTER
 ###ADSLOT_1
 ###ADTOP
@@ -3249,6 +3249,7 @@
 ##.adscontainer
 ##.adsdiv
 ##.adsection
+##.adsenbox
 ##.adsens
 ##.adsense-336
 ##.adsense-ad
@@ -5998,7 +5999,6 @@
 ##A[href^="http://www.liveadexchanger.com/a/display.php"]
 ##A[href^="http://www.yourfilezone.com/play?lng="]
 ##A[href^="https://action.metaffiliation.com/trk.php?"]
-##A[onclick^="gtag"] > .add
 ##DFP-AD
 ##FBS-AD
 ##LEADERBOARD-AD
@@ -6690,6 +6690,7 @@
 ##a[onclick^="_czc."] > .add
 ##a[onclick^="_czc."] > .ads
 ##a[onclick^="_czc.push(['_trackEvent', '广告"]
+##a[onclick^="gtag"] > .add
 ##a[onclick^="javascript:pc_"] > img[src*=".alicdn.com"]
 ##a[onmousedown^="this.href='http://paid.outbrain.com/network/redir?"][target="_blank"]
 ##a[onmousedown^="this.href='https://paid.outbrain.com/network/redir?"][target="_blank"]
@@ -30589,6 +30590,10 @@ everyeye.it#$#.adv-top { margin-top: 4.2rem !important; }
 everyeye.it#@#.adv-top
 everythingrf.com,futbol24.com##.skyscrapper
 evget.com###popelevencenter
+eviemagazine.com##.css-1pm6hh5
+eviemagazine.com##.css-9n98hk
+eviemagazine.com##.css-ipk9pc
+eviemagazine.com##.css-re7z9l
 eviltranslator.xyz##+js(abort-current-script, document.createElement, adsbygoogle.js)
 evoload.io##+js(set-constant, bloaded, true)
 ewatchseries.to,onwatchseries.to##.freeEpisode
@@ -37307,7 +37312,7 @@ news.99k.tw##.entry-content > table[align="left"][style="width:360px"]
 news.99k.tw##iframe[src^="http://news.99k.tw/open/open"][src$=".php"]
 news.am##.banner_click
 news.am,nexter.org,viva.co.nz##.side-banner
-news.artnet.com#@#div[data-ad-targeting]
+news.artnet.com,worldsurfleague.com#@#div[data-ad-targeting]
 news.baidu.com###detail-HotScrollNews-wrapper
 news.baidu.com###favoriteTips
 news.baidu.com###women-picwall
@@ -37322,14 +37327,6 @@ news.hf365.com##.main-r > div:first-child
 news.ifeng.com##.right1
 news.lankasri.com##.ds-share-blurb > div.ds-blurb
 news.lankasri.com##.ds-share-blurb > div.ds-blurb + .sponsor
-news.ltn.com.tw##.list > li[id^="apxzone_"]
-news.ltn.com.tw##.list > li[id^="newest-native"]
-news.ltn.com.tw##.list > li[id^="newspaper-native"]
-news.ltn.com.tw##[data-desc="內廣"]
-news.ltn.com.tw##div[id^="compass-fit"]
-news.ltn.com.tw#$#.whitecon > .related[data-desc="相關新聞"] > li:nth-child(5) { margin-right: 0!important; margin-left: 20px!important; }
-news.ltn.com.tw#?#.whitecon > .related > li:has(> .ltn_ad)
-news.ltn.com.tw,ctwant.com,mobile01.com##div[id^="_popIn_recommend"]
 news.lyd.com.cn##table[cellspacing="5"]:nth-child(3)
 news.lyd.com.cn##td[width="300px"] > table[width="300"] > tbody > tr:nth-last-child(n+2)
 news.mydrivers.com##div[style="width:1000px;padding-top:16px;padding-bottom:12px;"]
@@ -43530,6 +43527,7 @@ worldtimebuddy.com###toprek
 worldtimebuddy.com##.block2
 worldve.com###fdkDiv
 worldve.com###img
+wormate.io###loa831pibur0w4gv
 wormate.io#?##game-cont > #results-view > div[id][style]:has(> .label:contains(/^Advertisement:$/))
 wormate.io#?#.line-center > .column-right:has(> div[id] > .label:contains(/^Advertisement:$/))
 woshipm.com##.article-bottomAd
@@ -48931,6 +48929,7 @@ zznews.cn##.ad:not([style])
 ||adrta.com^$third-party
 ||adrtx.net^
 ||adrunnr.com^
+||ads*-normal-zijieapi.com^
 ||ads*.depositfiles.com^
 ||ads*.depositfiles.org^
 ||ads*.dfiles.eu^
@@ -67602,6 +67601,7 @@ zznews.cn##.ad:not([style])
 ||lhesqk.karatov.com^
 ||lhewdj.fnac.pt^
 ||lhhlkj.yoursuperfoods.de^
+||lhj.asia^
 ||lhmmhobckftdcfx.top^
 ||lhs-3844b.com^
 ||lhxwnzht.cn^
@@ -73139,6 +73139,7 @@ zznews.cn##.ad:not([style])
 ||ozon.ru^$removeparam=advert
 ||ozongees.com^
 ||ozowis.ledger.com^
+||p*-ad-sign.byteimg.com^
 ||p-analytics.life^
 ||p-analytics.life^$third-party
 ||p-log.ykimg.com^
@@ -89976,6 +89977,7 @@ zznews.cn##.ad:not([style])
 ||zglww.net/jsnew/pfkf.js
 ||zgncpjyw.cn^
 ||zgnieka.cn^
+||zgnz020.mobi^
 ||zgqgig.skillbox.ru^
 ||zgrsq.cn^
 ||zgsxhx.com^
