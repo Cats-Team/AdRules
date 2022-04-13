@@ -183,6 +183,7 @@ cat allow-domains*.txt | sed '/^$/d' | grep -v '#' \
 
 cat allow-domains0.txt | sed '/^$/d' | grep -v "#" \
  |sed "s/^/@@||&/g" | sed "s/$/&^/g" | sort -n \
+ |grep -Fv "yximgs.com" \
  | uniq | awk '!a[$0]++' > pre-allow1.txt & #将允许域名转换为ABP规则
 
 cat allow-domains0.txt | sed '/^$/d' | grep -v "#" \
