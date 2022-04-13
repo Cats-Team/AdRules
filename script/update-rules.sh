@@ -224,7 +224,6 @@ cat full-adguard*.txt \
 
 cat .././mod/rules/*-rules.txt dns*.txt *easylist*.txt full-adg*.txt abp-hosts*.txt \
  | grep -E "^[(\@\@)|(\|\|)][^\/\^]+\^$" \
- | grep -Ev "([0-9]{1,3}.){3}[0-9]{1,3}" \
  | sort | uniq > ll.txt &
 wait
 
