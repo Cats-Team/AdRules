@@ -1,11 +1,11 @@
 [Adblock Plus 2.0]
-! Checksum: SogGI7bHF9TwhPZ8vwJ/SQ
+! Checksum: 2mdYQHtg0mBPOpqyAaIsSw
 ! Title: AdRules (For AdBlock)
 ! Homepage: https://github.com/Cats-Team/AdRules
 ! Powerd by CatsTeam
 ! Expires: 8 Hours
 ! Description: 该规则合并自EasyList、EasyListChina、AdGuard Chinese Filter、EdentwCustom、ClearUrl、乘风规则等，并补充了一些规则
-! Version: 2022-04-13 12:32:22（北京时间） 
+! Version: 2022-04-13 14:26:07（北京时间） 
 ! Total count: 90536
 ###ADCENTER
 ###ADSLOT_1
@@ -1835,6 +1835,7 @@
 ##.ADbox
 ##.Ad--awareness-bp
 ##.Ad--empty
+##.Ad--loading
 ##.Ad--sidebar
 ##.Ad-Advert_Container
 ##.Ad-Container
@@ -36047,9 +36048,6 @@ malaysiakini.com##div[style^="height:250px"]
 malaysiastock.biz###sideBar > div[class^="RightPanel_Rectangle"]
 malaysiastock.biz##+js(set-constant, canRunAds, true)
 malekal.com##.topad
-malimali2.com##div.leo-container:nth-child(4) > div:nth-child(5)
-malimali2.com##div.leo-container:nth-child(4) > div:nth-child(6)
-malimali2.com##div.leo-container:nth-child(4) > div:nth-child(7)
 maltadaily.mt##div[id^="malta-"]
 mamaslatinas.com##.top-bar-content
 mambaru###adblock-in-browser
@@ -38018,7 +38016,7 @@ pan.baidu.com##.phone-banner
 pan.baidu.com##.photo-banner
 pan.baidu.com##.upload-bar.global-clearfix
 pan.baidu.com#$#.frame-all { overflow-x:hidden }
-pan.baidu.com,www.bilibili.com##+js(aeld,ratechange)
+pan.baidu.com,v.qq.com,www.bilibili.com##+js(aeld,ratechange)
 pan.baidu.com,www.bilibili.com#%#//scriptlet('ubo-aeld.js', 'ratechange')
 pan666.cn##.footer > .containerNarrow
 panarmenian.net#@#.ad_body
@@ -48287,12 +48285,12 @@ zznews.cn##.ad:not([style])
 ||accedednews.com^
 ||accedenonre.club^
 ||accengage.net^$third-party
+||access*.tpns.tencent.com^
 ||access-analyze.org^$third-party
 ||access.acspubs.org^
-||access.pangolin-sdk-toutiao-b.com^
+||access.pangolin-sdk-toutiao-*.com^
 ||access.sunpower.com^
 ||access.toggle.qq.com^
-||access1.tpns.tencent.com^
 ||accessi.it^$third-party
 ||accessiblescopevisitor.com^
 ||accessintel.com^$third-party
@@ -50585,7 +50583,7 @@ zznews.cn##.ad:not([style])
 ||apglinks.net/static/script/jala-aes.js$third-party
 ||apglinks.net^
 ||aphycolourses.info^$third-party
-||api-access.pangolin-sdk-toutiao-b.com^
+||api-access.pangolin-sdk-toutiao-*.com^
 ||api-access.pangolin-sdk-toutiao.com^
 ||api-iam.intercom.io/messenger/web/metrics
 ||api-location-prd.pelcro.com^$domain=newsweek.com
@@ -61351,6 +61349,7 @@ zznews.cn##.ad:not([style])
 ||gde.ru/isapi/tracker.dll?
 ||gdeslon.ru^$third-party
 ||gdfc0563.com^
+||gdfp.gifshow.com^
 ||gdg.gardnerdenver.com^
 ||gdgy56.com^
 ||gdhyoa.cn^
@@ -66086,6 +66085,7 @@ zznews.cn##.ad:not([style])
 ||js.363lm.com^
 ||js.9136.com^
 ||js.92aliyun.com^
+||js.a.kspkg.com^
 ||js.adkrazy.com^$script,domain=javso.com
 ||js.bbdsdy.com^
 ||js.bcrealm.com^
@@ -68170,8 +68170,9 @@ zznews.cn##.ad:not([style])
 ||log*.ku6.com^
 ||log-*.previewnetworks.com^
 ||log-api.newrelic.com^
-||log-api.pangolin-sdk-toutiao-b.com^
+||log-api.pangolin-sdk-toutiao-*.com^
 ||log-api.pangolin-sdk-toutiao.com^
+||log-sdk.ksapisrv.com^
 ||log.51cto.com^
 ||log.adplex.co.kr^
 ||log.aimtell.com^
@@ -73091,6 +73092,7 @@ zznews.cn##.ad:not([style])
 ||ozowis.ledger.com^
 ||p*-ad-sign.byteimg.com^
 ||p*.adkwai.com^
+||p*.eckwai.com^
 ||p-analytics.life^
 ||p-analytics.life^$third-party
 ||p-log.ykimg.com^
@@ -76835,6 +76837,8 @@ zznews.cn##.ad:not([style])
 ||rztrkr.com^$third-party
 ||rzxlszy.vip^
 ||rzypgzojdan.com^
+||s*-fe-scm.pglstatp-toutiao.com^
+||s*a.pstatp.com^
 ||s-adzone.com^
 ||s-microsoft.com/mscc/$~stylesheet
 ||s-msn.com/portal/js/vendor/manto/
@@ -76948,12 +76952,10 @@ zznews.cn##.ad:not([style])
 ||s2blosh.com^
 ||s2d6.com^
 ||s2tu.com/images/*.gif
-||s3-fe-scm.pglstatp-toutiao.com^
 ||s3.amazonaws.com/dmas-public/sitemaji/vast.xml$domain=dailymotion.com
 ||s3.amazonaws.com/downloads.mailchimp.com/$script,domain=confection.io
 ||s3.amazonaws.com^$domain=oko.sh|itdmusic.site|linkrex.net|youtubemultidownloader.com|suprafiles.org|wizhdsports.is|playstream.club|xmovies.to|300mbfilms.co|fullypcgames.net|adpop.me|hdmovieswatchs.net|itdmusic.com|filescdn.com|katfile.com|nitroflare.com|salefiles.com|uploads.to|vidfile.net|cloudyfiles.co|tugafree.net|bluemediafiles.com|dropgalaxy.com
 ||s362693299.aon.com^
-||s3a.pstatp.com^
 ||s3s-main.net^$third-party
 ||s3t3d2y8.ackcdn.net^
 ||s3wfg.com/js/vortexloader.js
@@ -77889,12 +77891,11 @@ zznews.cn##.ad:not([style])
 ||seyfwl.interia.pl^
 ||seznam.cz/*/static/js/ssp.js
 ||seznam.cz/*/v2/vast?
+||sf*-be-pack.pglstatp-toutiao.com^
+||sf*-fe-tos.pglstatp-toutiao.com^
 ||sf-ifc.cn^
 ||sf-syn.com/conversion_outbound_tracker$subdocument,domain=sourceforge.net
-||sf1-be-pack.pglstatp-toutiao.com^
 ||sf14g.com^$third-party
-||sf3-be-pack.pglstatp-toutiao.com^
-||sf3-fe-tos.pglstatp-toutiao.com^
 ||sf3-ttcdn-tos.pstatp.com^
 ||sf6-be-pack.pglstatp-toutiao.com^
 ||sfceco.cn^
@@ -77903,7 +77904,6 @@ zznews.cn##.ad:not([style])
 ||sfg8mbh.cn^
 ||sfixretarum.com^
 ||sfk.t58b.com^
-||sfl-fe-tos.pglstatp-toutiao.com^
 ||sflywfcanq.com^
 ||sfp7.eco-conscient.com^
 ||sfsft.com/ckplayer/1config.js
@@ -85517,6 +85517,7 @@ zznews.cn##.ad:not([style])
 ||uzrating.com^$third-party
 ||uzxkuwalnjp.com^
 ||uzzf.com/skin/know/
+||v*-be-pack.pglstatp-toutiao.com^
 ||v-links.net^$third-party
 ||v-vlog.cn^
 ||v.acgshenshicha.cn^
@@ -85563,7 +85564,6 @@ zznews.cn##.ad:not([style])
 ||v2ex.assets.uxengine.net/assets/sidebar/$image
 ||v2pro.stbvip.net^
 ||v2rayssr.com/wp-content/plugins/eazy-
-||v3-be-pack.pglstatp-toutiao.com^
 ||v3.fstats.xyz^
 ||v3cdn.net^$third-party
 ||v4dwkcv.com/html/click/
