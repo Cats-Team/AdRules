@@ -1,10 +1,10 @@
 ! Title: AdRules Allowlist
-! Checksum: DgsruyLx9JmJutUOQN+3zQ
+! Checksum: n8uamC6CjZ5wHpKYjMNK+A
 ! Homepage: https://github.com/Cats-Team/AdRules
 ! Powerd by CatsTeam
 ! Expires: 8 Hours
-! Version: 2022-04-13 16:12:57（北京时间） 
-! Total count: 17892
+! Version: 2022-04-13 18:34:42（北京时间） 
+! Total count: 17897
 @@$app=com.x.addon.cast
 @@$csp=worker-src 'none',domain=uptostream.com
 @@$domain=avgle.com,webrtc,websocket
@@ -626,6 +626,7 @@
 @@|http://ie.microsoft.com/testdrive/Performance/FishBowl/Default.html|$document
 @@|http://r.i.ua/s?*&p*&l$image,domain=swordmaster.org
 @@|http://r.i.ua/s?*&p*&l$image,domain=swordmaster.org! CJX's Annoyance List
+@@|http://r.i.ua/s?*&p*&l$image,domain=swordmaster.orgets.js
 @@|https://$image,domain=socketloop.com
 @@|https://$image,script,third-party,domain=blockadblock.com
 @@|https://$image,third-party,domain=hackintosh.zone|hackintosh.computer
@@ -2166,6 +2167,7 @@
 @@||apc-pli.com/api/tracking/$~third-party,xmlhttprequest
 @@||aphim.co^$generichide
 @@||api*.shahid.net/proxy/$domain=shahid.mbc.net
+@@||api-*.cludo.com/api/$stealth
 @@||api-*.netflix.com/win/uwa/$stealth
 @@||api-*.spot.im/v*/broadcasts/broadcasts/sp_$xmlhttprequest,domain=bizpacreview.com
 @@||api-*.spot.im/v*/config/launcher/sp_*/vendor,init,conversation$domain=bizpacreview.com
@@ -6361,6 +6363,7 @@
 @@||forum.darksoftware.net^$generichide
 @@||forum.flacmania.ru/*ads*.*/
 @@||forum.flacmania.ru^$generichide
+@@||forum.javcdn.cc^$stealth,domain=javbus.com
 @@||forum.lesarnaques.com/advertisement.js
 @@||forum.miuiturkiye.net/konu/reklam.$~third-party,xmlhttprequest
 @@||forum.notebookreview.com/threads^
@@ -7764,6 +7767,7 @@
 @@||googletagmanager.com/gtm.js$domain=scotsman.com
 @@||googletagmanager.com/gtm.js$domain=se.pl
 @@||googletagmanager.com/gtm.js$domain=seattletimes.com
+@@||googletagmanager.com/gtm.js$domain=security-demo.extrahop.com
 @@||googletagmanager.com/gtm.js$domain=shieldsgazette.com
 @@||googletagmanager.com/gtm.js$domain=shockwave.com
 @@||googletagmanager.com/gtm.js$domain=shop.kyivstar.ua
@@ -11245,6 +11249,7 @@
 @@||ndtv.com/social/static/comment-share-icons.png
 @@||neads.io^$domain=neads.io
 @@||nebo.app/auth?$stealth
+@@||nebula.kuaishou.com^
 @@||neckermann.de/static-assets/*/*/cookieBanner.
 @@||neckermann.de/static-assets/*/static/*/cookieBanner.
 @@||nectar.com/lib/cookieBanner.js
