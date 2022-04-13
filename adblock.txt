@@ -1,12 +1,12 @@
 [Adblock Plus 2.0]
-! Checksum: bftO4+47RCNH/ydII0kFKQ
+! Checksum: sIxSox/XeuBNkkwaHrYPqg
 ! Title: AdRules (For AdBlock)
 ! Homepage: https://github.com/Cats-Team/AdRules
 ! Powerd by CatsTeam
 ! Expires: 8 Hours
 ! Description: 该规则合并自EasyList、EasyListChina、AdGuard Chinese Filter、EdentwCustom、ClearUrl、乘风规则等，并补充了一些规则
-! Version: 2022-04-13 21:14:48（北京时间） 
-! Total count: 90585
+! Version: 2022-04-13 22:16:50（北京时间） 
+! Total count: 90589
 ###ADCENTER
 ###ADSLOT_1
 ###ADTOP
@@ -18866,7 +18866,7 @@ $~xmlhttprequest,removeparam=ref_,domain=imdb.com|amazon.*|primevideo.com|shopbo
 4gamers.com.tw##img[alt="ads"]
 4gamers.com.tw##video[src^="https://img.4gamers.com.tw/ads-media/"]
 4gtv.tv,80s.ai,ft.com,ftchinese.com,ftchinese.com.sz-dns.net,kartinfo.me,long7.qq.com,reh.tw,typecho.wiki#@#.adsbox
-4kporn.xxx,cambro.tv,mangovideo.club#$#override-property-read flashvars.popunder_url null
+4kporn.xxx,cambro.tv,mangovideo.club#$#abort-current-inline-script crakPopInParams; abort-on-property-read onload
 4kporn.xxx,fpo.xxx##.footer-margin
 4kpornmovs.com,pornvideos4k.com##+js(abort-on-property-read, __ASG_VAST)
 4kpornvideos.tv,flashtranny.com,gaymovievids.com,gaypornarchive.com,gayporno.fm,igayporn.tv,machogaytube.com,onlydudes.tv,ts-tube.net,verygayboys.com,xgaytube.tv##.ae-player__itv
@@ -28043,6 +28043,7 @@ camarchive.tv##+js(set-constant, adsBlocked, falseFunc)
 camarchive.tv##+js(set-constant, canads, true)
 cambabe.me,camgirlbay.net##+js(abort-current-script, onload, onclick)
 cambridge.org##.topslot-container
+cambro.tv###kt_player > a[href][target="_blank"]
 cambro.tv##+js(abort-on-property-read, crakPopInParams)
 cambro.tv##+js(abort-on-property-read, onload)
 cambro.tv##+js(set-constant, Object.prototype.flashvars.popunder_url, '')
@@ -35591,6 +35592,7 @@ lowendtalk.com##iframe[height="70px"][width="258px"]
 lpg-forum.pl##+js(no-setTimeout-if, $('#overlay').fadeIn)
 lqz.cn###ad_index
 lr-club.com##a[href="https://adblockplus.org/ru/faq_basics#disable"]
+lrepacks.net#$#abort-current-inline-script document.createElement 'delete window'
 lrt.lt##.banner-block
 lshunter.net##[id^="player_event"]
 lshunter.net,lshunter-iframe.com##a[href^="/redirect_bet.php"]
@@ -40073,7 +40075,7 @@ shahrsakhtafzar.com##.flexbannergroup
 shaiba.kz#$#abort-current-inline-script $ 1xbet
 shameless.com##+js(abort-current-script, $LAB, /getexoloader/)
 shankejingling.com
-shanson320.ru,lrepacks.net#$#abort-current-inline-script document.createElement atob
+shanson320.ru#$#abort-current-inline-script document.createElement atob
 shanxivideo.net##.ad_panelAR
 shanxivideo.net##.ads-container
 shanxivideo.net##.banner
@@ -43397,6 +43399,7 @@ wikidiff.com##div[style^="width: 100%; min-height: 200px"]
 wikifeet.com##.dashad
 wikifeet.com#?#.dashboard > div[style^="float:"]:has(> div.dashad)
 wikihow.com###contribute_footer
+wikihow.com##.al_method
 win007.com##a[href^="http://www.edewin.com/"]
 win007.com##div[style="padding:6px 0; width:950px; height:45px"]
 win007.com##td[height="18"][bgcolor="#FFFFE8"]
@@ -61692,6 +61695,7 @@ zznews.cn##.ad:not([style])
 ||gjohvhf.cn^
 ||gjqhufkamcoc.com^
 ||gjqhufkamcoc.com^$third-party
+||gjr.ink^
 ||gjt.games95.com^
 ||gjt.pfjzzl.com^
 ||gjt.shanjewelry.com^
