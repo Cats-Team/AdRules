@@ -1,12 +1,12 @@
 [Adblock Plus 2.0]
-! Checksum: qE7aV0wY8qdr48yjYL/BeQ
+! Checksum: Xb6As6HmV3UAAufWf5BhCA
 ! Title: AdRules (For AdBlock)
 ! Homepage: https://github.com/Cats-Team/AdRules
 ! Powerd by CatsTeam
 ! Expires: 8 Hours
 ! Description: 该规则合并自EasyList、EasyListChina、AdGuard Chinese Filter、EdentwCustom、ClearUrl、乘风规则等，并补充了一些规则
-! Version: 2022-04-14 23:13:13（北京时间） 
-! Total count: 90549
+! Version: 2022-04-15 00:13:25（北京时间） 
+! Total count: 90551
 ###ADCENTER
 ###ADSLOT_1
 ###ADTOP
@@ -28297,7 +28297,6 @@ chexun.com##a[attr-outside-ad]
 chiasecongnghe.com##+js(set-constant, adBlockEnabled, false)
 chiasecongnghe.com#@#.adsBox
 chikiporn.com,pornq.com##.thumb--adv
-child(n+190):-abp-contains(/赌|娱|澳/)) > :nth-child(-n+195)
 chillicams.net,openload.casa,meucdn.vip,yandexcdn.com,hqq.to,hindipix.in,waaws.tk,hindipix.in,ventax.net,waaw1.tv,fullbeeg.com,waaw.tv,czxxx.org,newhost.me,videoxseries.xyz,scenelife.org,piratulhd.com,hqq.tv##+js(set-constant, adblockcheck, false)
 chillicams.net,waaw.to,openload.casa,meucdn.vip,yandexcdn.com,hqq.to,hindipix.in,waaws.tk,hindipix.in,ventax.net,waaw1.tv,fullbeeg.com,waaw.tv,czxxx.org,newhost.me,videoxseries.xyz,scenelife.org,piratulhd.com,hqq.tv##+js(set-constant, adBlockDetected, noopFunc)
 chillx.top###theotherads
@@ -32636,10 +32635,13 @@ hcbbs.com###portal_block_2652
 hcbbs.com##.a_cn_pb
 hcbbs.com##table[width="100%"][bordercolor="#CCCCCC"]
 hclips.com##.afs_ads + span
+hclips.com##.jwplayer > div[style="display:flex !important"] > div
 hclips.com##.suggestions
+hclips.com##.video-page-footer-banners
 hclips.com##.video-page__item
 hclips.com#$#abort-on-property-read adver
 hclips.com#$#abort-on-property-read btoa
+hclips.com#?#.wrapper ~ div:has(> div > div > span:matches-css-after(content: Advertisement))
 hclips.com#@#.adholder2
 hclips.com,hdzog.com,hotmovs.com,inporn.com,pornhits.com,porntop.com,senzuri.tube,thegay.com,thegay.tube,txxx.com,upornia.com,vjav.com,voyeurhit.com#$#abort-current-inline-script mz
 hclips.com,hdzog.com,sss.xxx#@#.adver
