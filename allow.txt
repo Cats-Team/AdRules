@@ -1,10 +1,10 @@
 ! Title: AdRules Allowlist
-! Checksum: 9739jUB8oWZk5tQ94XxnHg
+! Checksum: 89IAVNXmRCaSVAZ16u6KOA
 ! Homepage: https://github.com/Cats-Team/AdRules
 ! Powerd by CatsTeam
 ! Expires: 8 Hours
-! Version: 2022-04-14 09:10:45（北京时间） 
-! Total count: 17904
+! Version: 2022-04-14 15:03:01（北京时间） 
+! Total count: 17905
 @@$app=com.x.addon.cast
 @@$csp=worker-src 'none',domain=uptostream.com
 @@$domain=avgle.com,webrtc,websocket
@@ -455,7 +455,6 @@
 @@/scripts/adv.js$domain=securenetsystems.net
 @@/securepubads.$script,other,~third-party,domain=bicycling.com|menshealth.com|prevention.com|rodale.tv|rodalesorganiclife.com|rodalewellness.com|runnersworld.com|womenshealthmag.com
 @@/sensorsdata.$domain=36kr.com|binance.com|by56.com|canon.com.cn|chuanglan.com|imooc.com|modian.com|saicskoda.com.cn|shanbay.com|tianyancha.com
-@@/sensorsdata.$domain=36kr.com|binance.com|by56.com|canon.com.cn|imooc.com|modian.com|saicskoda.com.cn|shanbay.com|tianyancha.com
 @@/setCookie?$domain=ctrip.com|ctrip.com.hk|pinyin.cn
 @@/share-sprite-$domain=askubuntu.com|mathoverflow.net|serverfault.com|stackapps.com|stackexchange.com|stackoverflow.com|superuser.com
 @@/share/js/*$domain=yunpanjingling.com
@@ -627,6 +626,7 @@
 @@|http://ie.microsoft.com/testdrive/Performance/FishBowl/Default.html|$document
 @@|http://r.i.ua/s?*&p*&l$image,domain=swordmaster.org
 @@|http://r.i.ua/s?*&p*&l$image,domain=swordmaster.org! CJX's Annoyance List
+@@|http://r.i.ua/s?*&p*&l$image,domain=swordmaster.orgracker_
 @@|https://$image,domain=socketloop.com
 @@|https://$image,script,third-party,domain=blockadblock.com
 @@|https://$image,third-party,domain=hackintosh.zone|hackintosh.computer
@@ -12337,7 +12337,7 @@
 @@||pandora.com/images/public/devicead/$image
 @@||pandora.com/web-client-assets/ads.*.js
 @@||pandora.com/web-version/*/*.json
-@@||pandora.com/web-version/*/ads.json$1p
+@@||pandora.com/web-version/*/*.json$xhr,1p
 @@||pandora.com^$generichide
 @@||panel.falixnodes.net/auth/$xmlhttprequest,other
 @@||panel.flops.ru/js/member/evercookie_init.js
@@ -16716,6 +16716,7 @@
 @@||videoads.kakao.com/adserver/api/v*/vmap$domain=daumcdn.net|kakaotv.daum.net|play-tv.kakao.com|tv.kakao.com|media.daum.net|v.daum.net|entertain.daum.net|gallery.v.daum.net|namu.wiki
 @@||videobug.se/advertisement.js
 @@||videocdn-sbs.akamaized.net^
+@@||videocdn.click/reclama/ads.js$domain=canale.live
 @@||videocdn.click/reclama/ads.js$script,domain=hdsport.biz
 @@||videocore.tv/playlist.smil$document
 @@||videodistribution.com/js/ads.js
