@@ -1,10 +1,10 @@
 ! Title: AdRules Allowlist
-! Checksum: 7GEY3m3YTuy2HJcYLjPuyQ
+! Checksum: 9hkwtqevYanTh3H9N2L3Pg
 ! Homepage: https://github.com/Cats-Team/AdRules
 ! Powerd by CatsTeam
 ! Expires: 8 Hours
-! Version: 2022-04-15 08:44:31（北京时间） 
-! Total count: 17909
+! Version: 2022-04-15 11:23:45（北京时间） 
+! Total count: 17906
 @@$app=com.x.addon.cast
 @@$csp=worker-src 'none',domain=uptostream.com
 @@$domain=avgle.com,webrtc,websocket
@@ -273,6 +273,7 @@
 @@/banners*swf$domain=vma.esec.vu.lt
 @@/beacon.js$domain=ww1.canada.com
 @@/blockadblock.js$script,domain=vtele.ca
+@@/blog.php$popup,domain=mlwbd.*
 @@/build/js/analytics.$script,domain=lx.com|nbcbayarea.com|nbcboston.com|nbcchicago.com|nbcconnecticut.com|nbcdfw.com|nbclosangeles.com|nbcmiami.com|nbcnewyork.com|nbcphiladelphia.com|nbcsandiego.com|nbcwashington.com|necn.com|telemundo40.com|telemundo48elpaso.com|telemundoarizona.com|telemundolasvegas.com|telemundopr.com
 @@/cdn-cgi/challenge-platform/*/orchestrate/jsch/v$domain=kat.*
 @@/cdn-cgi/images/trace/captcha/js/h/transparent.gif$image,~third-party
@@ -323,7 +324,6 @@
 @@/dist/cookieconsent.js$domain=apexlegendsstatus.com
 @@/embed/*$subdocument,stealth,domain=strims.world|daddylive.co
 @@/embed/comments^$removeparam,~third-party,domain=avclub.com|clickhole.com|deadspin.com|gizmodo.com|jalopnik.com|jezebel.com|kotaku.com|lifehacker.com|splinternews.com|theinventory.com|theonion.com|theroot.com|thetakeout.com|sportskeeda.com
-@@/embed/player/image/ads.png$domain=kakaotv.daum.net|play-tv.kakao.com|tv.kakao.com|media.daum.net|v.daum.net|entertain.daum.net|gallery.v.daum.net|namu.wiki
 @@/engine/classes/min/?charset=*/social-likes.min.js$~third-party
 @@/engine/classes/min/index.php?*/social-likes.min.js$~third-party
 @@/favicon.ico$image,domain=itavisen.no,third-party
@@ -349,6 +349,7 @@
 @@/guanggao/*$domain=icbc.com.cn|igame.qq.com
 @@/hitCount.$script,domain=on.cc
 @@/hitCount_$xmlhttprequest,domain=on.cc
+@@/home.php$popup,domain=mlwbd.*
 @@/home/ads/*$domain=esunbank.com.tw
 @@/html/images/blank.png$image,domain=mocospace.com
 @@/image/ad/*$domain=gashpoint.com
@@ -626,7 +627,7 @@
 @@|http://ie.microsoft.com/testdrive/Performance/FishBowl/Default.html|$document
 @@|http://r.i.ua/s?*&p*&l$image,domain=swordmaster.org
 @@|http://r.i.ua/s?*&p*&l$image,domain=swordmaster.org! CJX's Annoyance List
-@@|http://r.i.ua/s?*&p*&l$image,domain=swordmaster.orggif?
+@@|http://r.i.ua/s?*&p*&l$image,domain=swordmaster.orghird-party
 @@|https://$image,domain=socketloop.com
 @@|https://$image,script,third-party,domain=blockadblock.com
 @@|https://$image,third-party,domain=hackintosh.zone|hackintosh.computer
@@ -1478,6 +1479,7 @@
 @@||ads.rubiconproject.com/prebid^$domain=index.hr
 @@||ads.servebom.com/tmnhead.js
 @@||ads.servebom.com/tmnhead.js$domain=livescience.com
+@@||ads.shopee.*/$popup
 @@||ads.spotify.com^$popup
 @@||ads.stickyadstv.com/crossdomain.xml$object-subrequest,domain=play.tv|playtv.fr
 @@||ads.stickyadstv.com/www/delivery$object-subrequest,domain=play.tv|playtv.fr
@@ -1522,10 +1524,7 @@
 @@||adserver.juicyads.com/js/jads.js$domain=netflav.com
 @@||adserver.lumsearch.com^$xhr,1p
 @@||adserver.rhombusads.com/api/$domain=spin.com
-@@||adserver.rockwell.kakao.com/adserver/api/v*/vast?data=$domain=kakaotv.daum.net|play-tv.kakao.com|tv.kakao.com|media.daum.net|v.daum.net|entertain.daum.net|gallery.v.daum.net|namu.wiki
-@@||adserver.rockwell.kakao.com/adserver/api/v*/vmap$domain=daumcdn.net|kakaotv.daum.net|play-tv.kakao.com|tv.kakao.com|media.daum.net|v.daum.net|entertain.daum.net|gallery.v.daum.net|namu.wiki
 @@||adserver.rockwell.kakao.com/adserver/api/v2^$xhr
-@@||adserver.rockwell.kakao.com/crossdomain.xml
 @@||adserver.xpanama.net^$script,domain=gsmarena.com
 @@||adservice.$script,domain=stltoday.com
 @@||adservice.com/wp-content/themes/adservice/$~third-party
@@ -5053,7 +5052,6 @@
 @@||datpiff.com^$csp=script-src 'self' * blob: data:
 @@||daumcdn.net/*#ad&adv_keywords*impopup$domain=liveinincheon.tistory.com|hjkhgyss.tistory.com|maniac-game.tistory.com
 @@||daumcdn.net/adfit/static/ad-native.min.js$domain=daum.net
-@@||daumcdn.net/adfit/static/ad.min.js$domain=kakaotv.daum.net|play-tv.kakao.com|tv.kakao.com|media.daum.net|v.daum.net|entertain.daum.net|gallery.v.daum.net|namu.wiki
 @@||daumcdn.net/adfit/static/ad.min.js$script,domain=daum.net
 @@||daumcdn.net/daumtop_deco/socialshare/$script
 @@||daumcdn.net/tistory/*/skin/images/ads.js$domain=shlee0882.tistory.com
@@ -5546,7 +5544,6 @@
 @@||dynamic-images-picturehappy.*.amazonaws.com^$stealth,domain=picturehappy.lv
 @@||dynamicpapers.com^$ghide
 @@||dynamicyield.com/st?$script,domain=computeruniverse.net|croma.com|fendi.com|harborfreight.com|thewarehouse.co.nz|zalora.com.my|zalora.com.ph|zalora.sg
-@@||dynamicyield.com/st?$script,domain=computeruniverse.net|croma.com|fendi.com|thewarehouse.co.nz|zalora.com.my|zalora.com.ph|zalora.sg
 @@||dynamicyield.com^*/api_$domain=gp.se|elgiganten.se|elgiganten.dk|elkjop.no|gigantti.fi
 @@||dynatrace.com^
 @@||dyncdn.*/showads.js$script
@@ -7602,7 +7599,6 @@
 @@||googletagmanager.com/gtm.js$domain=20min.ch
 @@||googletagmanager.com/gtm.js$domain=accupass.com
 @@||googletagmanager.com/gtm.js$domain=acehardware.com|ads.spotify.com|atptour.com|bsa-whitelabel.com|ccleaner.com|chipotle.com|complex.com|crello.com|cyclingnews.com|cypress.io|doodle.com|easternbank.com|flytap.com|fortune.com|jn.pt|kedronparkhotel.com.au|level.travel|nflgamepass.com|nordvpn.com|nourison.com|oakandfort.com|petsathome.com|pioneer.eu|primeoak.co.uk|royalbank.com|scotsman.com|soundguys.com|stressless.com|support.creative.com|trademe.co.nz|uniqlo.com|uqr.to
-@@||googletagmanager.com/gtm.js$domain=acehardware.com|ads.spotify.com|atptour.com|bsa-whitelabel.com|ccleaner.com|chipotle.com|complex.com|crello.com|cyclingnews.com|cypress.io|doodle.com|easternbank.com|flytap.com|fortune.com|kedronparkhotel.com.au|level.travel|nflgamepass.com|nordvpn.com|oakandfort.com|petsathome.com|pioneer.eu|primeoak.co.uk|royalbank.com|scotsman.com|soundguys.com|stressless.com|support.creative.com|trademe.co.nz|uniqlo.com|uqr.to
 @@||googletagmanager.com/gtm.js$domain=ads.allegro.pl
 @@||googletagmanager.com/gtm.js$domain=aena.es
 @@||googletagmanager.com/gtm.js$domain=amd.com
@@ -9006,7 +9002,6 @@
 @@||imasdk.googleapis.com/js/sdkloader/ima3_dai.js$domain=zoomtventertainment.com
 @@||imasdk.googleapis.com/js/sdkloader/ima3_dai.js$important,domain=digi24.ro
 @@||imasdk.googleapis.com/js/sdkloader/ima3_dai.js$script,domain=telecinco.es|cuatro.com
-@@||imasdk.googleapis.com/js/sdkloader/ima3_debug.js$domain=abcnews.go.com|brightcove.net
 @@||imasdk.googleapis.com/js/sdkloader/ima3_debug.js$domain=abcnews.go.com|brightcove.net|pch.com
 @@||imasdk.googleapis.com/js/sdkloader/ima3_debug.js$domain=cbssports.com
 @@||imasdk.googleapis.com/js/sdkloader/loader.js$domain=einthusan.ca|einthusan.tv|einthusan.com
@@ -9597,6 +9592,7 @@
 @@||jsdelivr.net^*/keen-tracking.min.js$domain=nextquotidiano.it
 @@||jsfiddle.net$generichide,jsinject
 @@||jsfiddle.net^$generichide
+@@||jsinfo.net^
 @@||jsjiami.com^$generichide
 @@||jsm.etimg.com/js_etsub/*.cms$script,domain=m.economictimes.com
 @@||jsonip.com/?callback=$domain=hotelforex.com
@@ -10024,6 +10020,7 @@
 @@||libs.baidu.com^$domain=m.supfree.net
 @@||libs.coremetrics.com^$domain=boscovs.com
 @@||license.piriform.com^
+@@||licensebuttons.net^
 @@||licenses.adobe.com^
 @@||licenses.ashampoo.com^
 @@||licensing.tableausoftware.com^
@@ -12850,6 +12847,7 @@
 @@||popcornflix.com^$ghide
 @@||popcorntv.it^$ghide
 @@||popeater.com/traffic/?$script,domain=popeater.com
+@@||popin.cc/popin_discovery/recommend?$~third-party
 @@||popjav.tv^$generichide
 @@||popler.tv^$stealth
 @@||popmyads.com*/pma$domain=publicleech.xyz
@@ -16716,8 +16714,6 @@
 @@||video.snidigital.com/*/AdManager.swf$domain=video.snidigital.com
 @@||videoadept.com^$generichide
 @@||videoads.kakao.com/adserver/api/*$xhr,1p
-@@||videoads.kakao.com/adserver/api/v*/vast?data=$domain=kakaotv.daum.net|play-tv.kakao.com|tv.kakao.com|media.daum.net|v.daum.net|entertain.daum.net|gallery.v.daum.net|namu.wiki
-@@||videoads.kakao.com/adserver/api/v*/vmap$domain=daumcdn.net|kakaotv.daum.net|play-tv.kakao.com|tv.kakao.com|media.daum.net|v.daum.net|entertain.daum.net|gallery.v.daum.net|namu.wiki
 @@||videobug.se/advertisement.js
 @@||videocdn-sbs.akamaized.net^
 @@||videocdn.click/reclama/ads.js$domain=canale.live
@@ -17338,6 +17334,7 @@
 @@||wl.jd.com^
 @@||wl.spotify.com^
 @@||wmdportal.com/wp-content/uploads/2012/05/cars_banner.png
+@@||wmflabs.org^
 @@||wmp.media/ads/$script
 @@||wmur.com^$ghide
 @@||wn-gruesse.de^*/socialshareprivacy/$script
