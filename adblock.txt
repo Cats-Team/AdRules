@@ -1,12 +1,12 @@
 [Adblock Plus 2.0]
-! Checksum: dtw8Prn3nTjFG0pkP3FrzA
+! Checksum: P6SrVnBRoePBcKIU0k64ng
 ! Title: AdRules (For AdBlock)
 ! Homepage: https://github.com/Cats-Team/AdRules
 ! Powerd by CatsTeam
 ! Expires: 8 Hours
 ! Description: 该规则合并自EasyList、EasyListChina、AdGuard Chinese Filter、EdentwCustom、ClearUrl、乘风规则等，并补充了一些规则
-! Version: 2022-04-15 20:40:14（北京时间） 
-! Total count: 90578
+! Version: 2022-04-16 00:12:43（北京时间） 
+! Total count: 90587
 ###ADCENTER
 ###ADSLOT_1
 ###ADTOP
@@ -9631,6 +9631,7 @@ $~xmlhttprequest,removeparam=ref_,domain=imdb.com|amazon.*|primevideo.com|shopbo
 .cn/a.gif?
 .cn/ads/
 .cn/b.gif?
+.cn/gg/*?x=$script,third-party
 .cn/jc.gif?
 .cn/js/ads/
 .cn/r.gif?
@@ -9734,6 +9735,7 @@ $~xmlhttprequest,removeparam=ref_,domain=imdb.com|amazon.*|primevideo.com|shopbo
 .com/ge/?s=$script,third-party
 .com/geo_ip
 .com/gg.js
+.com/gg/*?x=$script,third-party
 .com/headlink.js
 .com/hitlog?
 .com/hm/cdn/static/jq_*.js$third-party
@@ -19475,6 +19477,7 @@ $~xmlhttprequest,removeparam=ref_,domain=imdb.com|amazon.*|primevideo.com|shopbo
 :99/js/ads/
 ;type=eligibleimpression;
 ;type=pixel;
+="3rd-ad"] + div:last-child
 =160x600&
 =160x600,
 =300x250,
@@ -28518,6 +28521,7 @@ ckdzb.com##div[style="float:right;margin:10px 10px;clear:right;height:310px;widt
 ckk.ai##+js(window.open-defuser)
 ckxxbao.com##.weixin
 cl.wpio.xyz##.tpc_content > a[target="_blank"][onmouseover]
+claimfey.com,forexlap.com,courseforfree.net,dailyresearchplot.com,getintocourse.com,techspite.com,aceofhacking.com,sportnews.to,freesoft.id###custom_html-5
 claimfreecoins.io##div[id$="-adspace"]
 claimrbx.gg##+js(no-setTimeout-if, Adblocker Detected)
 claimtrx.club##+js(set-constant, show_ads, true)
@@ -31242,7 +31246,6 @@ forex-articles.com,try2link.com,world-trips.net,forex-gold.net,newforex.online,m
 forex-gold.net,forexmab.com,newforex.online##.demand-supply
 forexlap.com###close-fixedban
 forexlap.com##+js(no-fetch-if, pagead2.googlesyndication.com)
-forexlap.com,courseforfree.net,dailyresearchplot.com,getintocourse.com,techspite.com,aceofhacking.com,sportnews.to,freesoft.id###custom_html-5
 forexrev.pl###sidebar > #text-3
 forexrev.pl##.reklama-footer
 formula1.com##.f1-dfp-banner-wrapper
@@ -32407,6 +32410,8 @@ h5.17k.com#$#body { overflow: visible!important; }
 h5.17k.com#$#html { overflow: visible!important; }
 h5.adshell.net##+js(window.open-defuser)
 haaretz.co.il##+js(addEventListener-defuser, load, hblocked?returnTo)
+haaretz.co.il#$#hide-if-contains-and-matches-style /Labels/ section h2[class]
+haaretz.co.il#$#hide-if-contains-and-matches-style /Labels/ section h3[class]
 haaretz.co.il#@#div[class*="addBlocker"]
 haaretz.com##+js(addEventListener-defuser, load, hblocked?returnTo)
 haaretz.com##div[data-test="topStrip"]
@@ -35394,6 +35399,7 @@ likr.tw###avivid_waterfall_wp_product_area
 limaenvivo.com##IMG[title="close"]
 limetorrents.*#?##content > table.table3:has(> tbody > tr > th:contains(Sponsored))
 limetorrents.*#?##rightbar > div:has(> .head:contains(Advertisement))
+limetorrents.cyou,poscitech.click,mikaraw.com,daddylive.me,iguarras.com,iputitas.net,coinsurl.com,luckydice.net,coinsearns.com,easymp3converter.com,fastconv.com,akwam.*,dogemate.com,promo-visits.site##+js(abort-on-property-read, afScript)
 limetorrents.pro##a[href^="/leet/?"] > img[src^="/static/images/download"]
 limetorrents.pro##a[title*="An‌on‌ymous Download"]
 limetorrents.pro#?#.torrentinfo div + div:-abp-contains(Fast And Direct Download Safely And Anonymously)
@@ -38872,7 +38878,6 @@ portalspozywczy.pl#?#.left > .box-0:has(> .abc:only-child)
 portalspozywczy.pl#?#.post_ax > .one > .pageWidth:has(> .box-0 > .abc)
 portalspozywczy.pl#?#main > .one > .pageWidth:has(> .box-0 > .abc)
 portel.pl##+js(set-constant, blokowanko, false)
-poscitech.click,mikaraw.com,daddylive.me,iguarras.com,iputitas.net,coinsurl.com,luckydice.net,coinsearns.com,easymp3converter.com,fastconv.com,akwam.*,dogemate.com,promo-visits.site##+js(abort-on-property-read, afScript)
 positronx.io##div[class*="ad-cls-block"]
 post-gazette.com###benn-poll-iframe-container
 post-gazette.com##.pg-adwrapper-300x250
@@ -46332,6 +46337,7 @@ zznews.cn##.ad:not([style])
 ||517kp.com^
 ||517m.cn^
 ||5184.com/container/html/news_view_gg
+||518yi.com^
 ||519397.com^
 ||51ads.com^$third-party
 ||51bczx.com/images1/
@@ -54600,6 +54606,7 @@ zznews.cn##.ad:not([style])
 ||cl.canva.com^
 ||claiks.com^
 ||claimbits.net/trans3.png
+||claimfey.com/cryptonews/wp-content/uploads/bqanwcfp.js
 ||claimtrx.com/next.js
 ||clairedikio.club^
 ||clamcelery.com^
@@ -75334,6 +75341,7 @@ zznews.cn##.ad:not([style])
 ||qiaoenyl.xyz^
 ||qiaohong.ltd^
 ||qiaopiguniang.com^
+||qiaoxiaomiao.com^
 ||qibalmm.com^
 ||qibxdwe1.com^
 ||qichenx.com^
@@ -89363,6 +89371,7 @@ zznews.cn##.ad:not([style])
 ||yorkbbs.ca/crm/section/v1/get/list/open
 ||yosjob.cn^
 ||yottaa.com/rapid.min.js
+||yotwok.xyz^$all
 ||you6ka.cn^
 ||you85.net/ck2/
 ||youaima.com/rest/
