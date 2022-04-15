@@ -1,12 +1,12 @@
 [Adblock Plus 2.0]
-! Checksum: dVz2dogFK0IiGUOSM/Q0gQ
+! Checksum: dtw8Prn3nTjFG0pkP3FrzA
 ! Title: AdRules (For AdBlock)
 ! Homepage: https://github.com/Cats-Team/AdRules
 ! Powerd by CatsTeam
 ! Expires: 8 Hours
 ! Description: 该规则合并自EasyList、EasyListChina、AdGuard Chinese Filter、EdentwCustom、ClearUrl、乘风规则等，并补充了一些规则
-! Version: 2022-04-15 16:12:53（北京时间） 
-! Total count: 90557
+! Version: 2022-04-15 20:40:14（北京时间） 
+! Total count: 90578
 ###ADCENTER
 ###ADSLOT_1
 ###ADTOP
@@ -23282,9 +23282,6 @@ $~xmlhttprequest,removeparam=ref_,domain=imdb.com|amazon.*|primevideo.com|shopbo
 @@||newver.api.dedecms.com/index.php$subdocument
 @@||next.vuetifyjs.com^$content
 @@||nextcloud.com/remote.php/$~third-party,xmlhttprequest
-@@||nfhost.eu^$generichide
-@@||nfhost.me^$generichide
-@@||nfhost.xyz^$generichide
 @@||nfmovies.com/static/side.jpg$xmlhttprequest,domain=nfmovies.com
 @@||nhl.com/components/shared/omniture-tracking-scripts/newRelic.js$~third-party
 @@||niagotch.com^$generichide
@@ -26831,7 +26828,6 @@ autotrader.co.uk##.gpt-billboard
 av.movie##.adss-160x600
 av.movie##.pop-up-a
 av.movie##.video-banner
-av/emp/adverts.js
 av01.tv##+js(remove-attr, onclick, a[href^="/video/"][onclick^="setTimeout"])
 av01.tv##+js(remove-class, vjs-hidden, .vjs-control-bar)
 av01.tv##+js(window.open-defuser)
@@ -27744,6 +27740,7 @@ boatsandoutboards.co.uk#@#.ads-list
 bobvila.com##.bv-unit-wrapper
 bobvila.com##.unit-header-container
 boce.com##.adNewBox
+boce.com##.money_box
 boce.com##.page10Box1 > a[href^="http"]:not([href*="boce."])
 bodu365.co###iside
 bog.ac##.sidebar-url
@@ -28200,6 +28197,7 @@ cekresi.com##.pleasehideadblkuc.popio
 celeb.gate.cc##+js(abort-on-property-read, dataPopUnder)
 celeb.gate.cc##a[href*="//goo.gl/"]
 celebitchy.com#?##sidebar > .hotposts:contains(Advertisements)
+celebritynetworth.com##.trevda_cont
 cellmapper.net##+js(no-setTimeout-if, adsbygoogle)
 cellmapper.net#$##myAd { display: block !important; position: absolute !important; left: -3000px !important; height: 10px !important; }
 cenapaliw.pl#@#div[id^="div-gpt-ad"]
@@ -29155,6 +29153,9 @@ cutestat.com#?#.stat_details > div.marginBottom_10 > div.stat_half_left[-ext-has
 cutpaid.com##+js(window.open-defuser)
 cutscenes.net#?#.item > div[id^="ts_ad_native"]:upward(1)
 cutscenes.net#?#.item > iframe[src^="https://go."]:upward(1)
+cutt.net##+js(no-fetch-if, pagead2.googlesyndication.com)
+cutt.net#$#.adsbygoogle { display: block !important; position: absolute !important; left: -3000px !important; }
+cutt.net#@#.adsbygoogle
 cutw.in##+js(window.open-defuser)
 cw.com.tw##.cw__advertising
 cw.com.tw##.emailorder
@@ -32062,6 +32063,7 @@ gkstk.com##.layui-layer-shade
 gktoday.in#@##google-ads
 gktoday.in#@#.adsense
 gktoday.in#@#.sponsored
+glamourhits.org##+js(set-constant, click_r, true)
 gledaiseriali.net#$#abort-current-inline-script Math zfgloaded
 global.americanexpress.com##.text-align-center.pad-tb
 globalnews.ca##.c-flyers
@@ -33833,6 +33835,7 @@ investing.com##.dfpVideo
 investing.com##.generalOverlay
 investing.com##.largeBannerCloser
 investing.com##.midHeader
+investing.com##div[class^="AdBillboard_"]
 investing.com##div[class^="outbrain_outbrain-wrapper_"]
 investing.com#?#.wrapper div > div.OUTBRAIN:upward(1)
 investing.com,esportsearnings.com##div[class^="ad_"]
@@ -34826,6 +34829,7 @@ katmoviehd4.com##+js(window.open-defuser)
 kaztorka.org#$#abort-current-inline-script document.createElement Math.random
 kb.pl##.article-body > div[style="min-height: 300px;"]
 kb.pl##.banner-container
+kbb.com###contentFor_kbbAdsSimplifiedNativeAd
 kbb.com###kbbAdsMedRecShowcase
 kbb.com##div#kbbAdsMedRec
 kbb.com#@#.ad-med-rec
@@ -42809,6 +42813,7 @@ videowood.tv#@#.textAd
 videowood.tv#@#.text_ad
 videowood.tv#@#.text_ads
 videox24.com##+js(json-prune, MU_ads)
+vidhdthe.online##+js(abort-on-property-read, JSON.parse)
 vidia.tv##+js(abort-on-property-read, showpop)
 vidia.tv##+js(set-constant, cRAds, true)
 vidlii.com##+js(set-constant, adsbygoogle.loaded, true)
@@ -43342,6 +43347,8 @@ whathifi.com,smokingmeatforums.com,ecosia.org,myzyia.com,robotikforum.net,kinogo
 whathifi.com,smokingmeatforums.com,ecosia.org,myzyia.com,robotikforum.net,kinogoo.cc,boyfriendtv.com,newsnow.co.uk,espinof.com,deleted.io,sanalyer.com,goyabu.com,stol.it,ligainsider.de#@#.text_ad
 whathifi.com,smokingmeatforums.com,ecosia.org,myzyia.com,robotikforum.net,kinogoo.cc,boyfriendtv.com,newsnow.co.uk,espinof.com,deleted.io,sanalyer.com,goyabu.com,stol.it,ligainsider.de#@#.text_ads
 whatismybrowser.com##.fun
+whatismybrowser.com##.fun-info-footer
+whatismybrowser.com##.fun-inner
 whatismybrowser.com##a[href^="https://go.nordvpn.net/aff_c?"]
 whatismyipaddress.com##.fbx-player-wrapper
 whatismyipaddress.com##.fl-module-wipa-concerns
@@ -43566,6 +43573,9 @@ wpolityce.pl##.adunit:not(#widget_playlist)
 wpolityce.pl##.tile--ads
 wpolityce.pl##[class^="publication_"][class*="ad-"]
 wpolityce.pl#@#.adunit
+wprost.pl##.ad-aside
+wprost.pl##.page-homepage-billboard-1
+wprost.pl#$#body { overflow: auto !important; }
 wps.cn##.school
 wpworld.pl,windowsowo.pl#@##adBanner
 wrating.com
@@ -45316,6 +45326,7 @@ zznews.cn##.ad:not([style])
 ||11129.com/800X80
 ||111cn.net/gg_ad/
 ||111cn.net/js/downc*.js
+||111supjav.xyz^
 ||113.105.248.169^
 ||113.17.188.*.js
 ||1133.cc^$third-party
@@ -48746,6 +48757,7 @@ zznews.cn##.ad:not([style])
 ||adjb.5nd.com^
 ||adjoincomprise.com^
 ||adjust.com^$removeparam=adgroup
+||adjust.com^$script,third-party
 ||adjustmentmonarch.com^
 ||adk2x.com^$third-party
 ||adkaora.space^
@@ -48938,6 +48950,7 @@ zznews.cn##.ad:not([style])
 ||ads.priel.co.kr^$third-party
 ||ads.rd.linksynergy.com^
 ||ads.roku.com^
+||ads.service.kugou.com^
 ||ads.sohu.com^
 ||ads.sportradar.com^
 ||ads.superad.cc^
@@ -48987,6 +49000,7 @@ zznews.cn##.ad:not([style])
 ||adservice.
 ||adservice.google.com/adsid/integrator.js$xmlhttprequest,redirect=noop.js,domain=ctrlv.link
 ||adservicemedia.dk^
+||adserviceretry.kglink.cn^
 ||adserving.unibet.com^
 ||adservon.com^
 ||adservrs.com^
@@ -58080,6 +58094,7 @@ zznews.cn##.ad:not([style])
 ||dtiserv2.com^$third-party
 ||dtmpub.com^
 ||dtnpyvmqqvvgq.com^
+||dtoo1.space^
 ||dtpqhwk.cn^
 ||dtrcw.cc^
 ||dtrk.slimcdn.com^
@@ -60041,6 +60056,7 @@ zznews.cn##.ad:not([style])
 ||fanzhuang.net.cn^$third-party
 ||fapality.com/js/initsite.js
 ||fapality.com^$third-party
+||fapcat.com^
 ||faphouse.com/api/collector/
 ||faphouse.com^$subdocument,third-party
 ||fapoff.com/Webservices/jsParseLinks.aspx$script,third-party
@@ -67590,6 +67606,7 @@ zznews.cn##.ad:not([style])
 ||liadm.com^
 ||lianaiyx.com/d/js/cst/
 ||lianfuhuang.cn^
+||liangdun.xyz^
 ||liangjan.com/js/show_
 ||liangpinge.com^$third-party
 ||liangxiaoru.cn^
@@ -81911,6 +81928,7 @@ zznews.cn##.ad:not([style])
 ||sydswxx.com^
 ||syjjd.club^
 ||sykc.madeindesign.ch^
+||syks.xyz^
 ||sykty.com^
 ||sylnk.net/adblock-detector.htm$subdocument
 ||sylvia.cloud^
@@ -85742,6 +85760,7 @@ zznews.cn##.ad:not([style])
 ||verycleaner.cn^
 ||veryhuo.com/images/soft/js/download
 ||veryhuo.com/plus/js/
+||veryn1ce.com^
 ||verypopularwebsite.com^$third-party
 ||vespymedia.com^
 ||vessoupy.com^
@@ -88439,6 +88458,7 @@ zznews.cn##.ad:not([style])
 ||xinyuanstudio.com^
 ||xinyuanzszy.com^
 ||xiongdong.com^
+||xiongfengwang.com.cn^
 ||xiongyin.com^$third-party
 ||xiongzhangad.com^
 ||xiqqq.com^
@@ -89651,6 +89671,7 @@ zznews.cn##.ad:not([style])
 ||yxad.com/sg/
 ||yxad.com/yxad/
 ||yxbao.com/js/bt_
+||yxbyd.store^
 ||yxdd.com^$subdocument
 ||yxdm.*/js/ddetector.js
 ||yxdm.li/js/*_
