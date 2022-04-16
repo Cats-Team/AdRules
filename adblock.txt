@@ -1,12 +1,12 @@
 [Adblock Plus 2.0]
-! Checksum: oHDeWqqc2nlW0KUZru/3pw
+! Checksum: GAf5epvxlmNkjyZF2mxz+A
 ! Title: AdRules (For AdBlock)
 ! Homepage: https://github.com/Cats-Team/AdRules
 ! Powerd by CatsTeam
 ! Expires: 8 Hours
 ! Description: 该规则合并自EasyList、EasyListChina、AdGuard Chinese Filter、EdentwCustom、ClearUrl、乘风规则等，并补充了一些规则
-! Version: 2022-04-16 16:11:50（北京时间） 
-! Total count: 90534
+! Version: 2022-04-17 00:00:06（北京时间） 
+! Total count: 90547
 ###ADCENTER
 ###ADSLOT_1
 ###ADTOP
@@ -10919,7 +10919,6 @@ $~xmlhttprequest,removeparam=ref_,domain=imdb.com|amazon.*|primevideo.com|shopbo
 /ad1_
 /ad2.
 /ad2.$~xmlhttprequest,domain=~vereinslinie.de
-/ad24/*$~image
 /ad2_
 /ad3.
 /ad3.$domain=~ad3.eu|~vereinslinie.de
@@ -15326,7 +15325,6 @@ $~xmlhttprequest,removeparam=ref_,domain=imdb.com|amazon.*|primevideo.com|shopbo
 /pdpads.
 /pdst-events-prod-sink
 /peach-collector.min.js
-/peelad.
 /pepperjam.js
 /perf-beacon-
 /perf-vitals.
@@ -18578,6 +18576,8 @@ $~xmlhttprequest,removeparam=ref_,domain=imdb.com|amazon.*|primevideo.com|shopbo
 2cto.com##.adv980
 2cto.com##.adv980box
 2cto.com##div[style^="float:left;width:300px;"]
+2cycomic.com,yemancomic.com##body > a
+2cycomic.com,yemancomic.com##body > div > center
 2ddl.ms,thevideobee.to,dropapk.com,2ddl.vg#$#abort-on-property-write _pop
 2dfan.com,galge.fun###index_bg_box
 2dfan.com,galge.fun###popadv-container
@@ -19447,6 +19447,7 @@ $~xmlhttprequest,removeparam=ref_,domain=imdb.com|amazon.*|primevideo.com|shopbo
 =468x60&
 =728x90,
 =728x90/
+=AdCode_$script,third-party
 =AdCode_sjdb
 =Ad_ZPlusGoods&
 =BAIDU_SSP_define&
@@ -19904,7 +19905,7 @@ $~xmlhttprequest,removeparam=ref_,domain=imdb.com|amazon.*|primevideo.com|shopbo
 @@||2345.com/images/activity/20171111/open/j/close.png
 @@||2doc.nl^*/vpro-analytics/Analytics.js$xmlhttprequest
 @@||2mdn.net/instream/
-@@||2mdn.net/instream/html5/ima3.js$script,domain=earthtv.com|techrepublic.com|zdnet.com
+@@||2mdn.net/instream/html5/ima3.js$script,domain=cadenadial.com|earthtv.com|techrepublic.com|zdnet.com
 @@||2o-my.com^$generichide
 @@||2shorte.com^$generichide
 @@||2unlimited.info/js/adsense.js
@@ -20111,6 +20112,7 @@ $~xmlhttprequest,removeparam=ref_,domain=imdb.com|amazon.*|primevideo.com|shopbo
 @@||adcash.com/a/display.php$subdocument,domain=skiplimite.tv
 @@||adcash.com/ad/display.php$script,domain=italiatv.org
 @@||adcash.com/ban/$image,domain=italiatv.org
+@@||adcdn.holmesmind.com/adserver/Preset.js?z=6472$domain=bingfeng.tw
 @@||adcdn.pingan.com^
 @@||adconsole.ch/api/ws-businessclick/*/data.json$domain=finanzen.ch
 @@||addon.dismall.com/resource/*/ad
@@ -20141,10 +20143,10 @@ $~xmlhttprequest,removeparam=ref_,domain=imdb.com|amazon.*|primevideo.com|shopbo
 @@||adnxs.com^$image,subdocument,domain=bitzfree.com
 @@||adnz.co/dmp/publisher.js$domain=finanzen.ch
 @@||adnz.co/header.js?adTagId=$domain=finanzen.ch
-@@||adobedtm.com/*-source.min.js$script,domain=aarp.org|atresplayer.com|backcountry.com|bt.com|dollargeneral.com|kroger.com|personal.natwest.com|telus.com|verizon.com
+@@||adobedtm.com/*-source.min.js$script,domain=aarp.org|atresplayer.com|backcountry.com|bt.com|cadenaser.com|dollargeneral.com|kroger.com|personal.natwest.com|telus.com|verizon.com
 @@||adobedtm.com/*_source.min.js$script,domain=backcountry.com|kroger.com|telus.com
 @@||adobedtm.com/extensions/$script,domain=antena3.com|atresmedia.com|atresplayer.com|lasexta.com
-@@||adobedtm.com/extensions/$script,domain=apple.com|bravotv.com|foodnetwork.com|telus.com|verizon.com
+@@||adobedtm.com/extensions/$script,domain=apple.com|bravotv.com|cadenaser.com|foodnetwork.com|telus.com|verizon.com
 @@||adobedtm.com/launch-$script,xmlhttprequest
 @@||adobedtm.com^$script,domain=sonystyle.com.cn
 @@||adobedtm.com^*-libraryCode_source.min.js$script,domain=disneyplus.disney.co.jp
@@ -38633,6 +38635,9 @@ popporn.com,webphunu.net#@#.block-ad
 pops.tv#@##adsContainer
 pops.tv#@#.ad-placement
 popsci.com##div[class*="-prefill-container"]
+popsci.com,thedrive.com##.empire-below_content__desktop__articles-prefill-container
+popsci.com,thedrive.com##.empire-content__desktop__articles-prefill-container
+popsci.com,thedrive.com##.empire-header__desktop__article-prefill-container
 popularmechanics.com##.leaderboard-ad
 populistpress.com,thepatriotjournal.com,newser.com,canadafreepress.com,kresy.pl,thelibertydaily.com,writerscafe.org,populist.press,welovetrump.com,grammarist.com,protrumpnews.com,concomber.com,videogamesblogger.com,gamersheroes.com,letocard.fr,100percentfedup.com,thepalmierireport.com,beforeitsnews.com##+js(json-prune, *, ad_to_link)
 popuptest.com##+js(set-constant, StartFloat, noopFunc)
@@ -50235,6 +50240,7 @@ zznews.cn##.ad:not([style])
 ||analytics.newscred.com^
 ||analytics.nike.com^
 ||analytics.oceanengine.com^
+||analytics.okazii.ro^
 ||analytics.oneplus.cn^
 ||analytics.onlyonlinemarketing.com^
 ||analytics.ooyala.com^
@@ -53534,6 +53540,7 @@ zznews.cn##.ad:not([style])
 ||caikuu.com/ckimages/*_gg
 ||caikuu.com/ckimages/*_zg
 ||caipiao.163.com/$subdocument
+||caishenbaoyou.top^
 ||caishuitonghr.com^
 ||caiteesh.net^
 ||caiwuwang.ltd^
@@ -54069,6 +54076,7 @@ zznews.cn##.ad:not([style])
 ||ceai.xyz^
 ||cechi8.com/images/appdown.gif
 ||cechi8.com/js/cnzz
+||ceciliabeverly.com^
 ||ced-ns.sascdn.com/diff/js/smart.js
 ||ced.sascdn.com^$domain=spiegel.de
 ||cedexis.com^$third-party
@@ -60024,6 +60032,7 @@ zznews.cn##.ad:not([style])
 ||fast-thinking.co.uk^$third-party
 ||fast.appcues.com^$script,third-party
 ||fast.fonts.net/jsapi/core/mt.js
+||fast.wistia.net/assets/external/googleAds.js
 ||fast8.com/skin/default/images/63065.png
 ||fast8.com/skin/default/js/jquery.filetree
 ||fastadmin.net/uploads/store/aliyun
@@ -63310,6 +63319,7 @@ zznews.cn##.ad:not([style])
 ||hmstats.com^$third-party
 ||hmtoday.com^$third-party
 ||hmttoly.com^
+||hmwang.icu/skin/images/*.gif
 ||hmy.rongnuo.top^
 ||hmyangshengji.com^
 ||hn.sportsdream.top^
@@ -63529,6 +63539,7 @@ zznews.cn##.ad:not([style])
 ||howtoremoveadblock.com/js/adblock-detector.js$script
 ||hp.com^$removeparam=jumpid
 ||hpav.tv/a720.html
+||hpejlsb.com^
 ||hpi.de^$removeparam=tracking_id
 ||hpjav.tv/a720.html
 ||hpjhmgip.com^
@@ -69041,6 +69052,7 @@ zznews.cn##.ad:not([style])
 ||maps.googleapis.com/maps/api/js/QuotaService.RecordEvent^$removeparam
 ||maptrackpro.com/track/
 ||mapxiongan.cn^
+||maqiang520.online^
 ||maquiags.com^
 ||mar.vip.com^
 ||marateathe.cam^
@@ -75971,6 +75983,7 @@ zznews.cn##.ad:not([style])
 ||realitytvworld.com/images/pixel.gif
 ||realizerecess.com^$third-party
 ||realizevacation.com^$third-party
+||reallyfreegeoip.org^$third-party
 ||realm.hearst3pcc.com^
 ||realmedia.com^
 ||realmpallduns.com^

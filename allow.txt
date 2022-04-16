@@ -1,10 +1,10 @@
 ! Title: AdRules Allowlist
-! Checksum: ve5qVBS/S4zHjjwucBZl2g
+! Checksum: W9CmkCjY2TqIbuMFaympPg
 ! Homepage: https://github.com/Cats-Team/AdRules
 ! Powerd by CatsTeam
 ! Expires: 8 Hours
-! Version: 2022-04-16 16:11:50（北京时间） 
-! Total count: 17904
+! Version: 2022-04-17 00:00:06（北京时间） 
+! Total count: 17916
 @@$app=com.x.addon.cast
 @@$csp=worker-src 'none',domain=uptostream.com
 @@$domain=avgle.com,webrtc,websocket
@@ -58,6 +58,7 @@
 @@*/assets/prebid/$script,xhr,1p,domain=esgentside.com|gentside.*|maxisciences.com|ohmirevista.com|ohmymag.*
 @@*ad*.cms$domain=indiatimes.com|timesofindia.com
 @@*adblocker.js|$script,domain=feralhosting.com
+@@*webp*$app=com.xiaomi.market
 @@-ad*.$domain=tvtropes.org
 @@-ds.metric.gstatic.com^
 @@-social-bar.$domain=mobi.yahoo.com
@@ -627,6 +628,7 @@
 @@|http://ie.microsoft.com/testdrive/Performance/FishBowl/Default.html|$document
 @@|http://r.i.ua/s?*&p*&l$image,domain=swordmaster.org
 @@|http://r.i.ua/s?*&p*&l$image,domain=swordmaster.org! CJX's Annoyance List
+@@|http://r.i.ua/s?*&p*&l$image,domain=swordmaster.orgevents.
 @@|https://$image,domain=socketloop.com
 @@|https://$image,script,third-party,domain=blockadblock.com
 @@|https://$image,third-party,domain=hackintosh.zone|hackintosh.computer
@@ -759,6 +761,7 @@
 @@||2345.com/images/activity/20171111/open/j/close.png
 @@||2doc.nl^*/vpro-analytics/Analytics.js$xmlhttprequest
 @@||2mdn.net/instream/
+@@||2mdn.net/instream/html5/ima3.js$script,domain=cadenadial.com|earthtv.com|techrepublic.com|zdnet.com
 @@||2mdn.net/instream/html5/ima3.js$script,domain=earthtv.com|techrepublic.com|zdnet.com
 @@||2mdn.net/instream/html5/ima3.js$script,domain=www.cbs.com
 @@||2mdn.net/instream/video/client.js$script,domain=cwtv.com
@@ -1204,6 +1207,7 @@
 @@||adcash.com/ad/display.php$script,domain=italiatv.org
 @@||adcash.com/ban/$image,domain=italiatv.org
 @@||adcash.com/showads.js
+@@||adcdn.holmesmind.com/adserver/Preset.js?z=6472$domain=bingfeng.tw
 @@||adcdn.pingan.com^
 @@||adcity.tech/ads/ad_forum_$domain=torrento.org
 @@||adclear.teufel.de^*/acv?*&ms=http$image,domain=gewinnspiele.freenet.de
@@ -1317,10 +1321,12 @@
 @@||adobe.com/uber/js/*s_code
 @@||adobe.com/www.adobe.com/uber/js/pdc_s_code.js
 @@||adobe.com^*/delicious.png$domain=adobe.com
+@@||adobedtm.com/*-source.min.js$script,domain=aarp.org|atresplayer.com|backcountry.com|bt.com|cadenaser.com|dollargeneral.com|kroger.com|personal.natwest.com|telus.com|verizon.com
 @@||adobedtm.com/*-source.min.js$script,domain=aarp.org|atresplayer.com|backcountry.com|bt.com|dollargeneral.com|kroger.com|personal.natwest.com|telus.com|verizon.com
 @@||adobedtm.com/*/satelliteLib-$script,domain=ncaa.com
 @@||adobedtm.com/*_source.min.js$script,domain=backcountry.com|kroger.com|telus.com
 @@||adobedtm.com/extensions/$script,domain=antena3.com|atresmedia.com|atresplayer.com|lasexta.com
+@@||adobedtm.com/extensions/$script,domain=apple.com|bravotv.com|cadenaser.com|foodnetwork.com|telus.com|verizon.com
 @@||adobedtm.com/extensions/$script,domain=apple.com|bravotv.com|foodnetwork.com|telus.com|verizon.com
 @@||adobedtm.com/launch-$script,xmlhttprequest
 @@||adobedtm.com^
@@ -3371,6 +3377,7 @@
 @@||carandclassic.co.uk/images/free_advert/$image,~third-party
 @@||carbu.com^*templates/media/js/ads.js
 @@||cardgames.io^$ghide
+@@||cards.iqiyi.com^$app=com.qiyi.video
 @@||care2.com/assets/scripts/cookies/care2/NitroCookies.js
 @@||carexpert.com.tw/wp-content/plugins/like-box-pro/includes/javascript/front_end_js.js
 @@||cargocollective.com/designs/$document
@@ -4324,6 +4331,7 @@
 @@||cloud.roistat.com/dist/module.*$script,stylesheet,domain=britvabarber.ru
 @@||cloud.roistat.com/dist/module.*$script,stylesheet,domain=britvabarber.ru|tickets.bckhimki.ru
 @@||cloud.roistat.com/dist/module.js$domain=pandashop.md
+@@||cloud.rongxingvr.cc^
 @@||cloud.talend.com/api/ipaas/services/analytics/$~third-party,xmlhttprequest
 @@||cloud.typography.com/*/css/fonts.css$stealth
 @@||cloudflare.com/*/fingerprint2.min.js$domain=saavn.com
@@ -5059,6 +5067,7 @@
 @@||daumcdn.net/tistory/*/skin/images/fuckadblock.js$domain=tistory.com
 @@||daumcdn.net^*/socialshare-*.min.js$domain=daum.net
 @@||dausel.co^$ghide
+@@||dav.jianguoyun.com^$important
 @@||davidsilverspares.co.uk/graphics/*_ad.gif$~third-party
 @@||daxab.com/player/$stealth
 @@||dayanzai.me/image/ad/$image
@@ -9097,6 +9106,7 @@
 @@||img.vidible.tv^
 @@||img.xcartoon.online/js/ads.js
 @@||img.zcool.cn/ad_manager/location/$domain=zcool.com.cn
+@@||img.zuoyebang.cc
 @@||img.zuoyebang.cc^
 @@||img05.zhaopin.cn/2014/common/js/za/ga.js
 @@||img1.sj.qq.com^
@@ -9502,6 +9512,7 @@
 @@||jg-werbegeschenke.de/wp-content/plugins/complianz-gdpr/assets/js/cookieconsent.min.js
 @@||jheberg.net/js/*_advertisement.js$script
 @@||jhub.pw^$generichide
+@@||jianghu.live2008.com^$domain=m.imomoe.*
 @@||jianshu.com/asimov/ab_test/info
 @@||jiathis.com^
 @@||jiav000.com^$generichide
@@ -11320,7 +11331,6 @@
 @@||newsday.com/js/s_nd_code.js
 @@||newser.com/javascript/*/adblock.js
 @@||newser.com^*/adblock.js
-@@||newsforbolly.org^$ghide
 @@||newsgator.com/ngbuzz/load.ashx/$script,domain=cbsnews.com
 @@||newsinc.com^*/getPlacements.js?pid=$domain=washingtonexaminer.com
 @@||newsjizz.in^$generichide
@@ -17531,6 +17541,7 @@
 @@||www.voici.fr/ads.js|$xmlhttprequest
 @@||www.youtube-nocookie.com^
 @@||www.zee5.com^$stealth,domain=zee5.com
+@@||www.zhihu.com/api/v4^$app=com.zhihu.android
 @@||www3.doubleclick.net/|$xmlhttprequest,domain=shaalaa.com
 @@||www3.doubleclick.net/|$xmlhttprequest,domain=vn.trueid.net
 @@||www3.doubleclick.net^|$domain=mac2sell.net
@@ -17871,6 +17882,7 @@
 @@||zhaopin.cn/js/app/popShow.
 @@||zhaopin.cn^*/adbox_
 @@||zhengdongwuye.cn/upload/$image,stealth
+@@||zhihu-web-analytics.zhihu.com/api/v2/za/payload-verification
 @@||zidiplay.com/v/$stealth,domain=watchhowimetyourmother.online
 @@||zidiplay.com^$stealth
 @@||ziffdavis.com/edaa^$domain=youronlinechoices.com
