@@ -76,6 +76,7 @@ dns=(
   "https://raw.githubusercontent.com/hoshsadiq/adblock-nocoin-list/master/nocoin.txt"
   "https://raw.githubusercontent.com/DivineEngine/AdGuardFilter/master/filter.txt"
   "https://raw.githubusercontent.com/uniartisan/adblock_list/master/adblock_plus.txt"
+  "https://raw.githubusercontent.com/hacamer/AdRule/main/rules-admin.txt"
 )
 
 hosts=(
