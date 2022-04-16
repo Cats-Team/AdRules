@@ -100,6 +100,7 @@ hosts=(
   "https://raw.githubusercontent.com/hacamer/Adblist/master/filter/hosts/AdguardMobileSpyware.txt"
   "https://raw.githubusercontent.com/hacamer/Adblist/master/filter/hosts/AdguardMobileAds.txt"
 #"https://raw.githubusercontent.com/StevenBlack/hosts/master/alternates/social/hosts"
+  "https://raw.githubusercontent.com/hacamer/Adblist/master/filter/hosts/rules-hosts.txt"
 )
 
 ad_domains=(
