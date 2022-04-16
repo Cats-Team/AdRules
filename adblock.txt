@@ -1,12 +1,12 @@
 [Adblock Plus 2.0]
-! Checksum: fuEbCv8ciMfrvwCATi1cwA
+! Checksum: oHDeWqqc2nlW0KUZru/3pw
 ! Title: AdRules (For AdBlock)
 ! Homepage: https://github.com/Cats-Team/AdRules
 ! Powerd by CatsTeam
 ! Expires: 8 Hours
 ! Description: 该规则合并自EasyList、EasyListChina、AdGuard Chinese Filter、EdentwCustom、ClearUrl、乘风规则等，并补充了一些规则
-! Version: 2022-04-16 11:58:39（北京时间） 
-! Total count: 90525
+! Version: 2022-04-16 16:11:50（北京时间） 
+! Total count: 90534
 ###ADCENTER
 ###ADSLOT_1
 ###ADTOP
@@ -5394,6 +5394,7 @@
 ##.sponsorBlock
 ##.sponsorBox
 ##.sponsorFooter
+##.sponsorFooter-container
 ##.sponsorLink
 ##.sponsorPost
 ##.sponsorText
@@ -17496,6 +17497,7 @@ $~xmlhttprequest,removeparam=ref_,domain=imdb.com|amazon.*|primevideo.com|shopbo
 /web-analytics/*
 /web-api/log/*
 /web-js-telemetry-service/*
+/web-vitals-
 /web-vitals.
 /web-vitals/*
 /web.gif?*&referral_
@@ -35204,6 +35206,11 @@ leechpremium.link##+js(abort-current-script, document.getElementById, ').style.d
 leechpremium.link#$#body { overflow: visible!important; }
 leermanga.net,kmansin03.com,sxyprn.*,leechall.com,kantotflix.com,watchfreenet.com,javxxx.me,yifysubtitles.vip,536sdms.com,justcastingporn.com,justfamilyporn.com,simply-hentai.com,onlyfoot.net,javpornstreaming.com##+js(abort-current-script, document.createElement, __htas)
 leffatykki.com#@#.ad728x90
+legacy.com###display-right-1
+legacy.com###display-right-2
+legacy.com###display-right-inview-1
+legacy.com###display-right-inview-2
+legacy.com###display-top-1
 legacy.com###videoAdTarget
 legacy.com##div[class*="AdSlot__StandardAd-"]
 legacy.com,webopedia.com,visualcapitalist.com##div[data-advadstrackid]
@@ -42089,6 +42096,7 @@ tumblr.com##.Yc2Sp
 tumblr.com##.iab_sf
 tumblr.com##.njwip
 tumblr.com##.standalone-ad-container
+tumblr.com#?#.ge_yK:-abp-has(.hM19_)
 tumblr.com#?#div[style^="top:69px"]:has(h1:contains(/^Sponsor|Patrocinado|Gesponsert|Gesponsord|Спонсируется|広告/))
 tumblr.com#?#header[role="banner"] > div > a[href="/docs/en/relevantads"]:upward(3)
 tunefind.com##div[class^="AdSlot_"]
@@ -42412,9 +42420,7 @@ univisa.com.cn###popup
 unknowncheats.me##[href^="https://www.iwantcheats.net/"]
 unogs.com##[href^="/ad/"]
 unrar.flowsoft7.com##+js(set-constant, gadb, false)
-unsplash.com##.HjpWP
-unsplash.com##.eziW_.DjoTo
-unsplash.com##a[rel^="sponsored"]
+unsplash.com##.Z9B2b
 unsplash.com#?#div[data-affiliates-grid-container]:upward(1)
 unwire.hk###post-sidebar-ad
 uotan.cn###fuck-ads
@@ -75426,6 +75432,7 @@ zznews.cn##.ad:not([style])
 ||qnvod.net/qna/
 ||qo.asu05mm.cn^
 ||qo4nkz03dy.cn^
+||qoaaa.com^
 ||qocvicklgcgr.com^
 ||qoevjugu.com^
 ||qoijertneio.com^$third-party
@@ -82591,6 +82598,7 @@ zznews.cn##.ad:not([style])
 ||tentaculos.net^$third-party
 ||tenthsfrumpy.com^
 ||tequanma.com^
+||terabox.com/abdr?
 ||terabytemedia.com^$third-party
 ||teraes.hgreg.com^
 ||teralog.techhub.co.kr^
@@ -85024,6 +85032,7 @@ zznews.cn##.ad:not([style])
 ||ud860ec5.com^
 ||ud860ec7.com^
 ||udalmanresuit.com^
+||udbaa.com^
 ||udemy.com/api-2.0/visits/me/funnel-logs/
 ||udemy.com^$removeparam=btn
 ||udemy.com^$removeparam=kw
