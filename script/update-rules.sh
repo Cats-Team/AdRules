@@ -229,7 +229,7 @@ cat .././mod/rules/*-rules.txt dns*.txt dns10.txt *easylist*.txt full-adg*.txt a
  | sort | uniq > ll.txt &
 wait
 
-cat l*.txt pre-allow1.txt dns99* \
+cat l*.txt pre-allow1.txt dns99* dns10 \
  |grep -v '^!' \
  |sort -n |uniq > tmp1-dns1.txt & #处理DNS规则
 wait
