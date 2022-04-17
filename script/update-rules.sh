@@ -230,7 +230,7 @@ cat .././mod/rules/*-rules.txt dns*.txt *easylist*.txt full-adg*.txt abp-hosts*.
 wait
 
 cat l*.txt pre-allow1.txt dns99* \
- |grep -v '^!' | grep -E -v "^[\.||]+[com]+[\^]$" \
+ |grep -v '^!' \ #| grep -E -v "^[\.||]+[com]+[\^]$" \
  |grep -Ev "^\^" \
  |sort -n |uniq >> tmp1-dns1.txt & #处理DNS规则
 wait
