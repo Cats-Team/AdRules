@@ -1,7 +1,7 @@
 [Adblock Plus 2.0]
 ! Title: Some Rules
-! Version: 2022-04-17 08:44 
-! Last Update: 2022-04-17 08:44:37（北京时间） 
+! Version: 2022-04-17 09:45 
+! Last Update: 2022-04-17 09:45:14（北京时间） 
 ! Expires: 12 Hours
 ! Description: 移除一些烦人的元素
 !
@@ -17,7 +17,7 @@
 ||apm.zuoyebang.com/monitor_browser/collect
 ||*logtj.zuoyebang.cc^
 ||wenda.zuoyebang.com^
-@@||img.zuoyebang.cc
+@@||img.zuoyebang.cc^
 ||fmp-notice.zybang.com^
 ||n*.zuoyebang.cc/*vip*^
 ||apm.zuoyebang.com^
@@ -153,11 +153,10 @@ m.bilibili.com##.launch-app-btnm-nav-openapp
 bilibili.com##.clearfix.h5-download-bar.d-f-s
 
 !樱花动漫
-||ps.ssl.qhmsg.com^$important
+||ps.ssl.qhmsg.com^
 m.imomoe.la###mobile-index > a:nth-child(5)
-||app.51gogogou.com^$important,third-party
-||app.51gogogou.com^$important,match-case
-||hualigs.cn^$domain=m.imomoe.la,important
+||app.51gogogou.com^
+||hualigs.cn^
 ||ia.51.la^
 m.imomoe.la###mobile-index > a:nth-child
 ||cdn.u1.huluxia.com/g4/M03/*$domain=m.imomoe.la
@@ -169,10 +168,6 @@ m.imomoe.la##script:nth-child(9)
 m.imomoe.la##div.t2:nth-child(10)
 m.imomoe.la###mobile-index > a:nth-child(5)
 m.imomoe.*##[href^="http://51pp.tv"]
-||*.98765432100.site^$subdocument
-||*.site^$domain=m.imomoe.*,third-party
-||*.online^$domain=m.imomoe.live,third-party
-*/*.gif$domain=m.imomoe.live,third-party,match-case
 @@||jianghu.live2008.com^$domain=m.imomoe.*
 @@||cloud.rongxingvr.cc^
 
@@ -198,7 +193,7 @@ adcmove.com###\32 377029035902478992-10431 > div:first-child
 adcmove.com##div.fed-foot-info.fed-part-layout.fed-back-whits:nth-child(11) > div.fed-part-case > ins:last-child
 
 ! bkvip
-||ximg.meihu56.cn^$important
+||ximg.meihu56.cn^
 ||*.fghpro.xyz^
 
 ! anime1.me
@@ -230,7 +225,7 @@ zhihu.com#$#.Body--Mobile .ContentItem .RichContent--unescapable > .RichContent-
 zhihu.com#$?#.ContentItem > div.ModalWrap:has(> div > div.ModalExp-content > div.ModalWrap-content > div:contains(继续浏览内容)) { display: none!important; }
 #%#//scriptlet('set-constant', 'Document.prototype.interestCohort', 'undefined')
 $removeparam=utm_source
-||zz.bdstatic.com^$third-party
+||zz.bdstatic.com^
 ||zhihu.com/commercial_api/banners_
 zhihu.com##.css-1svfsgz-OpenInAppButton.OpenInAppButton
 
@@ -238,7 +233,7 @@ zhihu.com##.css-1svfsgz-OpenInAppButton.OpenInAppButton
 youku.com##.info-bottom_3C0mQ, .show_C8p0e
 
 ! 坚果云
-@@||dav.jianguoyun.com^$important
+@@||dav.jianguoyun.com^
 
 ! Cupfox
 cupfox.app##.client-download-bar.jsx-1859378793
@@ -275,12 +270,12 @@ cocomanhua.com#$#abort-on-property-read __cad.cpm_popunder; abort-on-property-re
 hdzone.org#$#abort-current-inline-script Math zfgloaded
 
 ！爱奇艺
-@@||cards.iqiyi.com^$app=com.qiyi.video
+@@||cards.iqiyi.com^
 ||doh.iqiyi.com^
 
 ！快对作业
-||c.kuaiduizuoye.com^$app=com.kuaiduizuoye.scan
-||adashbc.ut.taobao.com^$app=com.kuaiduizuoye.scan
+||c.kuaiduizuoye.com^
+||adashbc.ut.taobao.com^
 
 ！Pixiv
 m.pixivic.com##.setu-filter
@@ -397,13 +392,13 @@ xda-developers.com##div[class="purchad"]
 xda-developers.com###purch-parent-ad-container-id
 
 ! 信息统计
-||ulogs.umengcloud.com
-||adashbc.ut.taobao.com
+||ulogs.umengcloud.com^
+||adashbc.ut.taobao.com^
 ||zhihu-web-analytics.zhihu.com/api/v1/logs/batch
 
-||api.ad.xiaomi.com
+||api.ad.xiaomi.com^
 ||api.comm.miui.com/calendar/adcard/get
-||track.miui.com
+||track.miui.com^
 ||data.mistat.xiaomi.com/mistats
 
 ! bilibili
@@ -430,22 +425,22 @@ xda-developers.com###purch-parent-ad-container-id
 ! 知乎app google play版本
 ! adguard默认规则会拦搜索，取消拦截
 @@||www.zhihu.com/api/v4^$app=com.zhihu.android
-||android.bugly.qq.com
-||zhihu-web-analytics.zhihu.com
+||android.bugly.qq.com^
+||zhihu-web-analytics.zhihu.com^
 ||api.zhihu.com/ad-style-service/request
 ||api.zhihu.com/fringe/ad
-||mobads.baidu.com
-||mobads-logs.baidu.com
-||toblog.ctobsnssdk.com
+||mobads.baidu.com^
+||mobads-logs.baidu.com^
+||toblog.ctobsnssdk.com^
 ||pangolin.snssdk.com/api/ad
 ||api-access.pangolin-sdk-toutiao.com/api/ad
-||bds.snsskd.com
+||bds.snsskd.com^
 ||sf3-ttcdn-tos.pstatp.com/obj/ad-pattern
 ||sf3-fe-tos.pglstatp-toutiao.com/obj/ad-pattern
-||sdkconfig.voiceads.cn
-||sdk.voiceads.cn
-||img.voiceads.cn
-||sdk.e.qq.com
+||sdkconfig.voiceads.cn^
+||sdk.voiceads.cn^
+||img.voiceads.cn^
+||sdk.e.qq.com^
 ||118.89.204.198^
 ||119.29.29.29^
 ||api.zhihu.com/*vip_tab^
@@ -497,17 +492,15 @@ xda-developers.com###purch-parent-ad-container-id
 
 ! Miui 应用商店
 ||app.market.xiaomi.com/apm/toplist^
-@@*webp*$app=com.xiaomi.market
 ||app.market.xiaomi.com/apm/app^
 ||app.market.xiaomi.com/apm/necessary^
-||app.market.xiaomi.com/apm/search/guidepageV*?^
-||app.market.xiaomi.com/apm/floaticonV*?
+||app.market.xiaomi.com/apm/search/guidepageV*
+||app.market.xiaomi.com/apm/floaticonV*
 ||app.market.xiaomi.com/apm/usercomment^
 ||app.market.xiaomi.com/apm/updateinfo^
 ||app.market.xiaomi.com/apm/recommend^
 ||sf0.market.xiaomi.com/thumbnail^
 ||app.market.xiaomi.com/apm/zone^
-
 
 
 
