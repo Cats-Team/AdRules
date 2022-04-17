@@ -76,7 +76,7 @@ dns=(
   "https://raw.githubusercontent.com/hoshsadiq/adblock-nocoin-list/master/nocoin.txt"
   "https://raw.githubusercontent.com/DivineEngine/AdGuardFilter/master/filter.txt"
   "https://raw.githubusercontent.com/uniartisan/adblock_list/master/adblock_plus.txt"
-  "https://raw.githubusercontent.com/hacamer/AdRule/main/rules-admin.txt"
+  "https://raw.githubusercontent.com/hacamer/AdRule/main/dns.txt"
 )
 
 hosts=(
@@ -225,7 +225,7 @@ cat full-adguard*.txt \
 #cat ubo-full-adguard*.txt | grep -v '.!' | grep -v '^!' | grep -v '^# ' | grep -v '^# ' | grep -v '^\[' | grep -v '^\【' | sort -n | uniq | awk '!a[$0]++' > tmp-adguard-full-ubo.txt #处理AdGuard的规则
 
 cat .././mod/rules/*-rules.txt dns*.txt dns10.txt *easylist*.txt full-adg*.txt abp-hosts*.txt \
- | grep -E "^[(\@\@)|(\|\|)][^\/\^]+\^" \
+ | grep -E "^[(\@\@)|(\|\|)][^\/\^]+\^$" \
  | sort | uniq > ll.txt &
 wait
 
