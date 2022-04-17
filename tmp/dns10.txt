@@ -1,0 +1,514 @@
+[Adblock Plus 2.0]
+! Title: Some Rules
+! Version: 2022-04-17 08:44 
+! Last Update: 2022-04-17 08:44:37（北京时间） 
+! Expires: 12 Hours
+! Description: 移除一些烦人的元素
+!
+!
+! 网易云音乐log搜集
+||clientlog*.music.163.com^
+||*.music.163.com/api/clientlog^
+||httpdns.*.netease.com^
+||*.music.163.com/*/ad^
+
+! 作业帮
+||httpdns.zybang.com^
+||apm.zuoyebang.com/monitor_browser/collect
+||*logtj.zuoyebang.cc^
+||wenda.zuoyebang.com^
+@@||img.zuoyebang.cc
+||fmp-notice.zybang.com^
+||n*.zuoyebang.cc/*vip*^
+||apm.zuoyebang.com^
+||apivip.zybang.com^
+||zyb-vip.cdnjtzy.com^
+||syh.zybang.com^
+||apiugc.zybang.com^
+||apivip.zybang.com^
+||msg.zybang.com^
+||napi.zybang.com^
+||nps.zuoyebang.com^
+||sanxia.zybang.com^
+
+
+! Don't Copy
+! 百度Don't Copy
+baijiahao.baidu.com,m*.baidu.com,tieba.baidu.com#%#document.execCommand = {}
+baijiahao.baidu.com,m*.baidu.com,tieba.baidu.com#%#navigator.clipboard.writeText = {}
+baijiahao.baidu.com,m*.baidu.com,tieba.baidu.com#%#navigator.clipboard.write = {}
+baijiahao.baidu.com,m*.baidu.com,tieba.baidu.com#%#document.write = {}
+
+! 哔哩哔哩Don't Copy
+m.bilibili.com#%#document.execCommand = {}
+m.bilibili.com#%#navigator.clipboard.writeText = {}
+m.bilibili.com#%#navigator.clipboard.write = {}
+m.bilibili.com#%#document.write = {}
+
+! CSDN Don't Copy
+csdn.net#%#document.execCommand = {}
+csdn.net#%#navigator.clipboard.writeText = {}
+csdn.net#%#navigator.clipboard.write = {}
+csdn.net#%#document.write = {}
+
+! PushPush的广告和小程序打开
+pushplus.plus##div.container.py-3.text-center
+www.pushplus.plus##.img-fluid
+
+! 城通网盘净化
+ctfile.com##div.card-body.p-3
+ctfile.com##a.btn.btn-sm.btn-light.fs--1
+ctfile.com###main-content > div.container > div.card.bg-light:last-child > div:first-child
+ctfile.com##div.card.bg-light.mb-3
+ctfile.com###main-content > div.container > div.content:first-child > div.card-deck:nth-child(5) > div.card.mb-3.overflow-hidden:last-child > div:last-child
+ctfile.com##div.h-100.card
+
+! boce净华
+boce.com##div.main:nth-child(9) > div.bocead02.adBox01.adNewBox:nth-child(7) > div.ad_11:first-child
+boce.com##.bocead02, .ad_10, .adBox01, .adNewBox
+boce.com##div.main:nth-child(9) > div.mainMsg1.mainMsg3:first-child > div.mainMsg1c.vipBox0.on:nth-child(4) > p.mainMsg1d:last-child
+boce.com##div.main:nth-child(9) > div.mainMsg1.mainMsg3:first-child > div.mainMsg1c.vipBox0.on:nth-child(4)
+boce.com##header:nth-child(2) > div.login_menu.y.login_no:last-child > div.vipIcon:first-child
+boce.com##div.main:nth-child(9) > div.page10Box:nth-child(6) > a > img
+
+! MyFreeMP3的提示
+tool.liumingye.cn##div.text
+tool.liumingye.cn##div#pop-container
+
+! Petalsearch 移除广告与新闻
+petalsearch.com##.feed-cont
+www.petalsearch.com##.van-pull-refresh.refresh-cont
+www.petalsearch.com##.advertisement-effect.card-v2.sparkle-card
+
+! m.hexun.com
+m.hexun.com##.to-hot-ranking.layer-top
+m.hexun.com##.layer-bottom
+m.hexun.com###reeh8k728
+m.hexun.com##.hotButton
+m.hexun.com##.article-button
+m.hexun.com##.hide.about-read
+m.hexun.com##.modal-popup-openapp
+m.hexun.com##.diversionToWX
+m.hexun.com##.hide.informationnewsbox
+m.hexun.com###modal-popup-mask
+m.hexun.com##div[style="margin: 0px; position: relative; display: block; overflow: hidden; width: 100%; height: 60px; padding: 0px !important; line-height: 0 !important; z-index: 1 !important; border-radius: 0px !important;"]
+||hc.sogoubaidusm.cn/wap/n.js$domain=m.hexun.com
+||regtool.hexun.com/wapreg/checklogin.aspx$domain=m.hexun.com
+
+! Csdn
+blog.csdn.net##div.weixin-shadowbox.wap-shadowbox:nth-child(17)
+blog.csdn.net##span.feed-Sign-span:nth-child(19)
+blog.csdn.net###main > div.btn_open_app_prompt_div:nth-child(4)
+blog.csdn.net###wap_open_app_btn
+blog.csdn.net##div.app-shadowbox.wap-shadowbox:nth-child(15) > div.app-box > div.tip-massege:first-child
+blog.csdn.net##div.app-shadowbox.wap-shadowbox:nth-child(15) > div.app-box > div.tip-text:nth-child(2)
+blog.csdn.net##.csdn-redpack-container
+blog.csdn.net##.over-the-screen
+blog.csdn.net##.title-box > a[href*="download.csdn"]
+
+! 腾讯视频网页端
+m.v.qq.com##.at-app-banner
+m.v.qq.com##.btn_sharpness path
+m.v.qq.com##.swiper-wrapper.source_container
+m.v.qq.com##.mod_app_banner
+m.v.qq.com##.mod_privilege
+m.v.qq.com##.mod_game_rec.mod_box
+m.v.qq.com##.mod_multi_figures_h.mod_sideslip_h.mod_box
+m.v.qq.com##.figure_app
+m.v.qq.com##.js_open_app.btn_user_hd
+m.v.qq.com##.site-top__open-app
+m.v.qq.com##.player-mask__small-tips
+||mcgi.v.qq.com^
+
+! 爱奇艺网页端
+m.iqiyi.com###app > div:nth-child(2) > div:nth-child(3) > div.m-box:first-child > div:nth-child(2) > div.m-box-items.m-box-items-full:first-child > div.m-iqylink-guide > a.c-guide-img
+m.iqiyi.com###app > div:first-child > div.m-navigation > header.navigation-fixed.m-navigation-content > div.m-user:last-child > div:last-child > div > div.vue-portal-target > a.header-app.iqiyi-h5-empty
+m.iqiyi.com###comment > div.m-box-items.m-box-items-full > div > div:last-child > div.m-commentNew > div.m-iqylink-diversion:last-child > a > a.c-btn.c-btn-block
+m.iqiyi.com###app > div:first-child > section.mSiteHeader.m-header-customized.m-header-channelHome > div.mSiteHeader-wrap > div.site_header:first-child > div:last-child > div > div.iqiyi-h5-empty.header_app
+m.iqiyi.com###app > div:nth-child(2) > div:nth-child(3) > div.m-box:first-child > div:nth-child(2) > div.m-box-items.m-box-items-full:first-child > div.m-iqylink-guide > div.c-btn.c-btn-block
+m.iqiyi.com###app > div:nth-child(2) > div:nth-child(3) > div:nth-child(4) > a.m-suspend-banner.qibabu-banner
+m.iqiyi.com###app > div:nth-child(2) > div > div > div:nth-child(2) > div.m-box:first-child > div.m-box-items.m-box-items-full > section.ChannelHomeBanner_hbd_eiF93 > div > img.ChannelHomeBanner_HDVideo-img_1jtpo
+m.iqiyi.com##script:nth-child(8)
+m.iqiyi.com##iframe#open_app_iframe
+m.iqiyi.com##style:nth-child(9)
+m.iqiyi.com##div.m-iqyGuide-layer
+m.iqiyi.com###app > div:nth-child(2) > div > div > div:nth-child(2) > div.m-box:first-child
+m.iqiyi.com###app > div:first-child > div.m-header-only > header.m-header.header-fixed.m-header-customized > div.m-user:last-child > div:last-child > div
+m.iqiyi.com###app > div:first-child > section.mSiteHeader.m-header-customized.m-header-channelHome > div.mSiteHeader-wrap > div.site_header:first-child > div:last-child > div
+
+!哔哩哔哩
+m.bilibili.com##.home-float-openapp.launch-app-btn
+m.bilibili.com##.m-nav-openapp.launch-app-btn
+m.bilibili.com##.m-home-no-more
+m.bilibili.com##.visible-open-app-btn.m-video-main-launchapp.launch-app-btn > .m-video2-main-img
+m.bilibili.com##.weakened.open-app
+m.bilibili.com##.m-video2-float-openapp
+m.bilibili.com###relateRecomMore
+m.bilibili.com##.m-comment-openapp.launch-app-btn
+m.bilibili.com##.mplayer-control-btn-speed.mplayer-control-btn-callapp.mplayer-control-btn
+m.bilibili.com##.cover > .open-app
+m.bilibili.com##.mplayer-ending-panel-button
+m.bilibili.com##.launch-app-btnm-nav-openapp
+||dl.hdslb.com/mobile/latest/*$document,domain=dl.hdslb.com
+bilibili.com##.clearfix.h5-download-bar.d-f-s
+
+!樱花动漫
+||ps.ssl.qhmsg.com^$important
+m.imomoe.la###mobile-index > a:nth-child(5)
+||app.51gogogou.com^$important,third-party
+||app.51gogogou.com^$important,match-case
+||hualigs.cn^$domain=m.imomoe.la,important
+||ia.51.la^
+m.imomoe.la###mobile-index > a:nth-child
+||cdn.u1.huluxia.com/g4/M03/*$domain=m.imomoe.la
+||app.vankiv.com^
+m.imomoe.la##a:nth-child
+m.imomoe.la##script:nth-child(8)
+m.imomoe.la##div.pageLine
+m.imomoe.la##script:nth-child(9)
+m.imomoe.la##div.t2:nth-child(10)
+m.imomoe.la###mobile-index > a:nth-child(5)
+m.imomoe.*##[href^="http://51pp.tv"]
+||*.98765432100.site^$subdocument
+||*.site^$domain=m.imomoe.*,third-party
+||*.online^$domain=m.imomoe.live,third-party
+*/*.gif$domain=m.imomoe.live,third-party,match-case
+@@||jianghu.live2008.com^$domain=m.imomoe.*
+@@||cloud.rongxingvr.cc^
+
+!百度贴吧
+tieba.baidu.com##.img-open-app
+tieba.baidu.com##li.tb-share__item:nth-of-type(1)
+tieba.baidu.com##.navbar-left
+tieba.baidu.com##.nav-bar.w-row-justify-between.w-row-align-center.w-row
+tieba.baidu.com##.guide-btn
+||downapp.baidu.com/baidutieba/*$document,domain=downapp.baidu.com
+||*/c/s/newlog
+||tb*.bdstatic.com/tb/client/log*.js
+||cloud-log.yy.com^
+||pimlog.baidu.com^
+||c.tieba.baidu.com/c/s/newlog
+||c.tieba.baidu.com/c/f/forum/getAdInfo
+||pn.baidu.com/*ad^
+||httpdns.baidubce.com^
+
+! 杂七杂八
+adcmove.com##div.fed-foot-info.fed-part-layout.fed-back-whits:nth-child(9) > div.fed-part-case > ins:last-child > div:nth-child(2)
+adcmove.com###\32 377029035902478992-10431 > div:first-child
+adcmove.com##div.fed-foot-info.fed-part-layout.fed-back-whits:nth-child(11) > div.fed-part-case > ins:last-child
+
+! bkvip
+||ximg.meihu56.cn^$important
+||*.fghpro.xyz^
+
+! anime1.me
+anime1.me##.textwidget, .custom-html-widget
+anime1.me###ad-1
+anime1.me###rn_ad_native_svd0z
+anime1.me##.mn-related-container
+anime1.me###text-6
+anime1.me##.widget, .widget_text
+anime1.me###ad-1 > a > img
+anime1.me###ad-3 > a > img
+anime1.me###text-6 > div.textwidget > div.ad-4:first-child > a > img
+anime1.me###rn_ad_native_svd0z > div.mn-related-container
+
+! 知乎
+
+zhihu.com###root > div.App > div:nth-child(2) > header.Sticky.MobileAppHeader > div.MobileAppHeader-inner:first-child > div.MobileAppHeader-inner:last-child > div.MobileAppHeader-actions:last-child > a.MobileAppHeader-downloadLink:first-child
+zhihu.com###root > div.App > main.App-main:last-child > div > div.NotLoggedInTopstory > button.OpenInAppButton.OpenInApp.css-1t989fx-OpenInAppButton:nth-child(2)
+zhihu.com###root > div.App > main.App-main:last-child > div > div.NotLoggedInTopstory > div.Card.DownloadGuide:last-child > div.DownloadGuide-inner.DownloadGuide-normalInner > div.DownloadGuide--downloadButton:last-child > a
+zhihu.com###root > div.App > main.App-main:last-child > div > div.NotLoggedInTopstory > div.List:first-child > div.List-item.NotLoggedInTopstoryItem:last-child > div.Feed > div.ContentItem.AnswerItem > div.RichContent.is-collapsed:nth-child
+zhihu.com###root > div.App > main.App-main:last-child > div > div.Question-main:nth-child(12) > div.Card.AnswerCard:first-child > div.QuestionAnswer-content > div.ContentItem.AnswerItem > div.ModalWrap:nth-child(10) > div > div.ModalExp-content.ModalExp-modalShow:last-child
+zhihu.com###root > div.App > main.App-main:last-child > div > div.Question-main:nth-child(12) > div.Card.AnswerCard:first-child > div.QuestionAnswer-content > div.ContentItem.AnswerItem > div.ModalWrap:nth-child(10) > div
+zhihu.com###root > div.App > main.App-main:last-child > div > button.OpenInAppButton.OpenInApp.css-1t989fx-OpenInAppButton:last-child
+zhihu.com##.MRelateFeedAd
+||zhihu-web-analytics.zhihu.com/api/v*/logs^
+zhihu.com#%#//scriptlet('remove-attr', 'style', '.Body--Mobile .ContentItem .RichContent--unescapable > .RichContent-inner[style^="max-height:"]')
+###adsbox
+zhihu.com#$#.Body--Mobile .ContentItem .RichContent--unescapable > .RichContent-inner:not([style]) + button.ContentItem-expandButton { display: none !important; }
+zhihu.com#$?#.ContentItem > div.ModalWrap:has(> div > div.ModalExp-content > div.ModalWrap-content > div:contains(继续浏览内容)) { display: none!important; }
+#%#//scriptlet('set-constant', 'Document.prototype.interestCohort', 'undefined')
+$removeparam=utm_source
+||zz.bdstatic.com^$third-party
+||zhihu.com/commercial_api/banners_
+zhihu.com##.css-1svfsgz-OpenInAppButton.OpenInAppButton
+
+! Youku
+youku.com##.info-bottom_3C0mQ, .show_C8p0e
+
+! 坚果云
+@@||dav.jianguoyun.com^$important
+
+! Cupfox
+cupfox.app##.client-download-bar.jsx-1859378793
+cupfox.app##.head-promotion.jsx-1625518580
+cupfox.app##div.banner-box.jsx-3699602122
+cupfox.app##.client-download-button.jsx-1859378793
+!APP：中国移动 ver：6.7.6
+||app.10086.cn/*.gif
+!（过滤应用内gif动画）
+||clientaccess.10086.cn/biz-orange/DN/init/*
+!（过滤应用开屏广告）
+||clientaccess.10086.cn/biz-orange/DN/dropsAdver/*
+!（某些广告过滤）
+||clientaccess.10086.cn/biz-orange/DN/dropsAdverService/*
+!（某些广告过滤）
+||clientaccess.10086.cn/biz-orange/DN/clientUpdate/*
+!（拦截APP更新提示）
+
+! #CV-767
+ipv6.baidu.com,xueshu.baidu.com,www.baidu.com,www1.baidu.com#$#hide-if-contains 广告 .c-container &#039;.f13 &gt; .m&#039;; hide-if-contains 广告 #content_right&gt;[class] span[data-tuiguang]
+1111.baidu.com,bdimg.com,tieba.baidu.com,tieba.com#$#abort-current-inline-script _ top_pic
+
+! MISC
+torrentkitty.tv#$#abort-on-property-read _fupfgk;abort-on-property-read _nyjdy
+178.com,nga.cn#$#abort-on-property-write __LOAD_BBS_ADS_12
+cn.bing.com#$#hide-if-contains 360 #b_results&gt;li .b_adProvider
+2345.com#$#abort-current-inline-script setDefaultTheme
+ahri-hentai.com#$#abort-current-inline-script document.querySelectorAll popMagic
+
+! Popups & Popunders
+cocomanhua.com#$#abort-on-property-read __cad.cpm_popunder; abort-on-property-read __ad
+
+! #CV-667
+hdzone.org#$#abort-current-inline-script Math zfgloaded
+
+！爱奇艺
+@@||cards.iqiyi.com^$app=com.qiyi.video
+||doh.iqiyi.com^
+
+！快对作业
+||c.kuaiduizuoye.com^$app=com.kuaiduizuoye.scan
+||adashbc.ut.taobao.com^$app=com.kuaiduizuoye.scan
+
+！Pixiv
+m.pixivic.com##.setu-filter
+m.pixivic.com#$#div&gt;img[style*="opacity: 0;"] {opacity: 1  !important;}
+m.pixivic.com#$#div&gt;img[style*="filter: blur(20px);"] {filter:initial  !important;}
+m.pixivic.com#$#div&gt;img[style*="filter: blur(25px);"] {filter:initial  !important;}
+
+!微信
+||mp.weixin.qq.com/mp/advertisement
+||mp.weixin.qq.com/mp/getappmsgad
+||mp.weixin.qq.com/mp/ad_monitor
+||mp.weixin.qq.com/mp/ad_biz_info
+
+
+! 3dmgame.com
+3dmgame.com$$div[class="downl_btn azh"]
+3dmgame.com$$div[class="play_wrap"]
+3dmgame.com$$div[class="tuijian_wrap"]
+3dmgame.com$$a[href="https://m.3dmgame.com/yeyou/h5/"]
+3dmgame.com$$div[class="comm-title"]
+3dmgame.com$$div[class="sy-tuijian"]
+3dmgame.com###content>a
+
+!百度
+baidu.com##div[srcid = "app_mobile_simple"]
+baidu.com##div[class="blank-frame"]
+baidu.com##div[class="tab_news"]
+gss0.bdstatic.com/*/static/wiseindex/amd_modules/@baidu/invokebaidubox*.js
+baidu.com##.navs-bottom-bar
+baidu.com#$##bottom{background: #f8f8f8; height:500px !important}
+baidu.com##div[srcid="sigma_celebrity_rela"]
+baidu.com##div[srcid="34689"]
+baidu.com##div[class^="ec_r"]
+baidu.com##div[srcid="vid_pocket"]
+baidu.com##div[srcid="med_invoke_box"]
+baidu.com##div[class$="ad-result se-predestroy"]
+baidu.com##div[srcid="xcx_multi"]
+
+！百家号
+baidu.com#$#.mainContent{height: max-content !important}
+baidu.com##.packupButton
+baidu.com##.bottomMargin
+baidu.com##.outmargin
+baidu.com##.commentEmbed-backHomeBtn
+baidu.com###searchwordSdk
+
+! 百度知道
+zhidao.baidu.com###wgt-related-questions-new
+
+! 凤凰网
+ifeng.com$$div[class="download_box"]
+
+！IT之家
+ithome.com##.hot-app
+ithome.com##.open-app-a
+ithome.com##.down-app-box
+ithome.com##.open-app-banner
+ithome.com##.lapin
+ithome.com##.grade
+ithome.com$$a[class="brand-column-lapin"]
+ithome.com$$a[class="brand-column-quan"]
+ithome.com$$div[class="news-share"]
+
+！今日头条
+toutiao.com##a[class="download"]
+toutiao.com##div[class="unfold-field unfold-field-download"]
+toutiao.com#$#div:has(.article__header){height: max-content !important}
+toutiao.com##div[class="img-download-banner"]
+toutiao.com##div[class="open"]
+toutiao.com##div[class="recommendation-container"]
+toutiao.com##div[class="bottom-banner-container show-banner-undefined "]
+toutiao.com##.abs_l
+toutiao.com##div[class$="sdk-top-banner"]
+
+！新浪门户
+sina.cn##div[class="s_card_white_m j_native"]
+sina.cn##a[id="j_fixAppBtn"]
+sina.cn##section[id="midThreeAds"]
+sina.cn##div[class="unfold-box"]
+sina.cn#$#.main-body{height: max-content !important}
+sina.cn##div[class="m-client-call"]
+sina.cn##article[data-flag="APP专享"]
+sina.cn##a[data-app="news"]
+sina.cn##section[class="module-extend module-hot"]
+sina.cn##section[class^="s_card j_article_relevent"]
+sina.cn##section[class="module-recommend module-extend feed"]
+sina.cn##section[class="module-extend module-video"]
+sina.cn##div[class="voice2"]
+
+! 网易云音乐web
+music.163.com##div[class="topfr"]
+music.163.com##div[class="openapp"]
+music.163.com##div[class="u-ft landinfo"]
+
+! 游民星空
+gamersky.com##a[data-itemid="1094283"]
+gamersky.com##a[class="ymw-app-open"]
+gamersky.com#$#.gsAreaContext{height: max-content !important}
+gamersky.com##div[class="gsAreaContextOpen"]
+gamersky.com##div[id="gsTgWapConBdshareTop"]
+gamersky.com##section[class="ymw-rel-list"]
+gamersky.com##section[class="ymw-rel-mgame"]
+
+！ 游侠网
+ali213.net##div[class^="appdown"]
+ali213.net#$#.detail-content{height: max-content !important}
+ali213.net##.appjctj
+ali213.net##.detail-related-source
+ali213.net##.ali-comment-appdown
+ali213.net##div[class="unfold-field-download"]
+
+! xda
+xda-developers.com##div[class="purchad"]
+xda-developers.com###purch-parent-ad-container-id
+
+! 信息统计
+||ulogs.umengcloud.com
+||adashbc.ut.taobao.com
+||zhihu-web-analytics.zhihu.com/api/v1/logs/batch
+
+||api.ad.xiaomi.com
+||api.comm.miui.com/calendar/adcard/get
+||track.miui.com
+||data.mistat.xiaomi.com/mistats
+
+! bilibili
+! 去除开屏广告
+||app.bilibili.com/x/v2/splash/list
+! 去除推荐中的广告
+||app.bilibili.com/x/v2/feed/index$replace=/{"card_type":"cm_v2".*?"three_point_v2".*?}\,/ /
+! 免费换皮肤
+||club.bilibili.com/api/query.skin.list.do$replace=/"is_free":false/"is_free":true/
+! 精简界面的无用选项（底部tab栏游戏，右上角游戏，还有drawer的无用东西）
+! 去右上角游戏中心
+||app.bilibili.com/x/resource/show/tab$replace=/{"id":221.*?}\,//
+! 去会员购
+||app.bilibili.com/x/resource/show/tab$replace=/{"id":297.*?}\,//
+! 去除推荐当中banner上的广告
+||app.bilibili.com/x/v2/feed/index$replace=/{"id":0.*?"is_ad":true.*?"upzone_entrance_report_id".*?}\,/ /
+! 去除视频下的应用推广
+||app.bilibili.com/x/v2/view$replace=/{"pic".*?"stat".*?"new_card".*?}\,//
+! 去视频下方推广
+||app.bilibili.com/x/v2/view$replace=/{"title":.*?"is_ad":true.*?"trackid".*?}\,//
+! 去up推荐广告
+||app.bilibili.com/x/v2/view$replace=/{"request_id".*?"ad_info".*?}}}/{ }/
+
+! 知乎app google play版本
+! adguard默认规则会拦搜索，取消拦截
+@@||www.zhihu.com/api/v4^$app=com.zhihu.android
+||android.bugly.qq.com
+||zhihu-web-analytics.zhihu.com
+||api.zhihu.com/ad-style-service/request
+||api.zhihu.com/fringe/ad
+||mobads.baidu.com
+||mobads-logs.baidu.com
+||toblog.ctobsnssdk.com
+||pangolin.snssdk.com/api/ad
+||api-access.pangolin-sdk-toutiao.com/api/ad
+||bds.snsskd.com
+||sf3-ttcdn-tos.pstatp.com/obj/ad-pattern
+||sf3-fe-tos.pglstatp-toutiao.com/obj/ad-pattern
+||sdkconfig.voiceads.cn
+||sdk.voiceads.cn
+||img.voiceads.cn
+||sdk.e.qq.com
+||118.89.204.198^
+||119.29.29.29^
+||api.zhihu.com/*vip_tab^
+||api.zhihu.com/api/user/prod/user/info/collections/upload
+||api.zhihu.com/fringe/ad
+||api.zhihu.com/log_collect^
+||api.zhihu.com/usertask-core/action/read_content_duration_when_left
+||api.zhihu.com/usertask-core/action^
+||datahub.zhihu.com/collector^
+||lens.zhihu.com^
+||m-cloud.zhihu.com/api/personal^
+||open.kwaizt.com^
+||pic1.zhimg.com/check_health
+||vdn.vzuu.com^
+||vzuu.com^
+||www.zhihu.com/*/advisor_cards
+||www.zhihu.com/api/v4/members^
+||www.zhihu.com/api/v4/zvideo-collections/contents/included/collections?
+||www.zhihu.com/sc-profiler
+||zhihu.com/check_health
+
+!修改内容
+||api.zhihu.com/topstory/recommend$replace=/{"id":"AD.*?"type":"feed_advert".*?adjson.*?"ncontent".*?"ecpm".*?}}\,/ /
+!放过评论
+@@||zhihu-web-analytics.zhihu.com/api/v2/za/payload-verification
+!每个问题下的广告
+||api.zhihu.com/v4/questions/*/answers$replace=/"ad_info":{.*?}.*?"position".*?}\,/ /
+!关注tab
+||api.zhihu.com/moments/recommend$replace=/{"action_text".*?adjson.*?"feed_advert"}\,/ /
+!评论区广告
+||api.zhihu.com/answers/*/comments/featured-comment-ad
+! 去除直播烦人的小红点
+||api.zhihu.com/drama/living-info$replace=/true/false/
+
+! 微博国际版
+||api.weibo.com/2/proxy/sdk/statistic.json
+||adash.man.aliyuncs.com/man/api
+||googleadservices.com/pagead
+||sdk.e.qq.com/event
+||api.weibo.cn/2/friendships/create
+||api.weibo.cn/2/users/show_batch
+||sdkapp.mobile.sina.cn/interface/sdk/sdkad.php
+
+! miui主题壁纸
+!||api.zhuti.xiaomi.com/app/v9/uipages$replace=/{"title".*?"imageUrl":null.*?"canEncourage":false}\,/ /
+
+! miui浏览器
+||api.browser.miui.com/bsr/update/banners/v2
+
+! Miui 应用商店
+||app.market.xiaomi.com/apm/toplist^
+@@*webp*$app=com.xiaomi.market
+||app.market.xiaomi.com/apm/app^
+||app.market.xiaomi.com/apm/necessary^
+||app.market.xiaomi.com/apm/search/guidepageV*?^
+||app.market.xiaomi.com/apm/floaticonV*?
+||app.market.xiaomi.com/apm/usercomment^
+||app.market.xiaomi.com/apm/updateinfo^
+||app.market.xiaomi.com/apm/recommend^
+||sf0.market.xiaomi.com/thumbnail^
+||app.market.xiaomi.com/apm/zone^
+
+
+
+
+
