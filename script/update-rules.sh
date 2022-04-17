@@ -155,7 +155,7 @@ echo '规则下载完成'
 # 添加空格
 file="$(ls|sort -u)"
 for i in $file; do
-  echo -e '\n' >> $i &
+  echo -e '\n\n\n' >> $i &
 done
 wait
 # Pre Fix rules
