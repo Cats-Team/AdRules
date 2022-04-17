@@ -224,14 +224,14 @@ cat full-adguard*.txt \
 #cat ubo-adguard*.txt | grep -v '.!' | grep -v '^!' | grep -v '^# ' | grep -v '^# ' | grep -v '^\[' | grep -v '^\【' | sort -n | uniq | awk '!a[$0]++' > tmp-adguard-ubo.txt #处理AdGuard的规则
 #cat ubo-full-adguard*.txt | grep -v '.!' | grep -v '^!' | grep -v '^# ' | grep -v '^# ' | grep -v '^\[' | grep -v '^\【' | sort -n | uniq | awk '!a[$0]++' > tmp-adguard-full-ubo.txt #处理AdGuard的规则
 
-cat .././mod/rules/*-rules.txt dns*.txt *easylist*.txt full-adg*.txt abp-hosts*.txt \
+cat .././mod/rules/*-rules.txt dns*.txt dns10.txt *easylist*.txt full-adg*.txt abp-hosts*.txt \
  | grep -E "^[(\@\@)|(\|\|)][^\/\^]+\^$" \
  | sort | uniq > ll.txt &
 wait
 
 cat l*.txt pre-allow1.txt dns99* \
  |grep -v '^!' \
- |sort -n |uniq >> tmp1-dns1.txt & #处理DNS规则
+ |sort -n |uniq > tmp1-dns1.txt & #处理DNS规则
 wait
 cat tmp1-dns1.txt deadblock.txt deadblock.txt \
  | sort -n |uniq -u >tmp-dns.txt #去重过期域名
