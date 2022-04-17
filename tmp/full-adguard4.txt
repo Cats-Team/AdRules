@@ -1,8 +1,8 @@
-! Checksum: fl9Az0OMMeiuB2nEbbB4Zg
+! Checksum: bXXIsQVjoHoZQIZ5TBN/BQ
 ! Title: AdGuard Annoyances filter
 ! Description: Blocks irritating elements on web pages including cookie notices, third-party widgets and in-page pop-ups.
-! Version: 2.1.15.96
-! TimeUpdated: 2022-04-16T21:30:36+00:00
+! Version: 2.1.15.98
+! TimeUpdated: 2022-04-17T07:30:33+00:00
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -7318,6 +7318,7 @@ techadvisor.co.uk,forum.notebookreview.com,computerworld.com,skysports.com#$#bod
 !
 !
 !
+imobie.jp##.fixedbot
 fundacja.santander.pl##.awb-show
 m.censor.net###usage-notice-message
 merlion.com###policyBlockForFirstVisit
@@ -16262,6 +16263,9 @@ m.timesofindia.com,m-timesofindia-com.cdn.ampproject.org$$amp-consent
 !+ PLATFORM(windows, mac, android)
 @@||geolocation.onetrust.com/cookieconsentpub/*/geo/location
 !
+! https://github.com/easylist/easylist/commit/fe03c9dff5a94ec0b1bb61d653304779573e9692
+automoto.it#@##iubenda-cs-banner
+@@||iubenda.com^$script,xmlhttprequest,domain=automoto.it
 ! https://github.com/AdguardTeam/AdguardFilters/issues/115738
 spielaffe.de#$##pregamePlayButton { display: block !important; }
 ! https://github.com/AdguardTeam/AdguardFilters/issues/115461
@@ -20730,6 +20734,7 @@ theoryandpractice.ru##a[href^="https://form.typeform.com/"]
 ! Specific sites
 !######### Subscription popups add to subscriptions.txt #########
 !
+imobie.jp##.sideadv_wrapmc
 re-lifework.com##.bfb_textTextBtn
 heydouga.com###access-ranking-video
 av-kappa.com###bott0m0verlay
