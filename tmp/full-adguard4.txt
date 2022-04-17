@@ -1,8 +1,8 @@
-! Checksum: bXXIsQVjoHoZQIZ5TBN/BQ
+! Checksum: 3EqzR42p+D+dUsRNjjDa6Q
 ! Title: AdGuard Annoyances filter
 ! Description: Blocks irritating elements on web pages including cookie notices, third-party widgets and in-page pop-ups.
-! Version: 2.1.15.98
-! TimeUpdated: 2022-04-17T07:30:33+00:00
+! Version: 2.1.16.1
+! TimeUpdated: 2022-04-17T15:30:33+00:00
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -7318,6 +7318,8 @@ techadvisor.co.uk,forum.notebookreview.com,computerworld.com,skysports.com#$#bod
 !
 !
 !
+||googletagmanager.com/gtm.js$domain=advcash.com
+fuvest.br###idInformacaoCookie
 imobie.jp##.fixedbot
 fundacja.santander.pl##.awb-show
 m.censor.net###usage-notice-message
@@ -28050,6 +28052,8 @@ theguardian.com##.contributions__adblock
 ||contributions.guardianapis.com^
 !
 ryukyushimpo.jp##.topic-ticker_box-topics
+ranak.me##.go-price
+ranak.me##.news-feed__range > div.market
 cloud.mail.ru##.marketingPromo-banner
 videolan.org##.sponsors-carousel-wrapper
 rakuten-sec.co.jp##a[data-ratid="header-long-banner_ads_mobile"]
@@ -28918,6 +28922,7 @@ yenicaggazetesi.com.tr##a[href^="https://news.google.com/publications/"]
 pravda.com.ua##.block_post > div[style="margin-top: 25px;"]
 ukrinform.pl,ukrinform.jp,ukrinform.fr,ukrinform.de,ukrinform.es,ukrinform.net##div[data-name="int_hidden"]
 vnnews.ru##div[class^="telega_sub"]
+ranak.me##.youtube-list > div.line
 webcg.net##.mailmagazine-widget
 gooday.nikkei.co.jp##.gdy-side-sns
 onliner.by#?#.news-text > p[style]:has(> strong:contains(/Наш канал в|Падпісвайцеся/))
@@ -32877,6 +32882,8 @@ newsweek.com##iframe[src="http://sns.europe.newsweek.com/newsletter?popup=1"]
 !##############################
 !
 !
+! https://github.com/uBlockOrigin/uAssets/issues/12809
+dramaworldhd.co#%#//scriptlet("adjust-setInterval", "timeLeft", "", "0.02")
 ! https://github.com/AdguardTeam/AdguardFilters/issues/115213
 mazen-ve.com#%#//scriptlet("adjust-setInterval", "mdtimer", "", "0.02")
 ! https://github.com/AdguardTeam/AdguardFilters/issues/113960

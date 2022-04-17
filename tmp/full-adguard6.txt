@@ -1,8 +1,8 @@
-! Checksum: W8BAeUa3lNNzHMJy7hrsgg
+! Checksum: AOBcBmwtEXucBSy12uGTJQ
 ! Title: AdGuard Social Media filter
 ! Description: Filter for social media widgets such as 'Like' and 'Share' buttons and more.
-! Version: 2.0.59.89
-! TimeUpdated: 2022-04-15T17:03:02+00:00
+! Version: 2.0.59.91
+! TimeUpdated: 2022-04-17T15:31:22+00:00
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -10043,7 +10043,7 @@ designboom.com,livescience.com,pbtech.co.nz,peoplesworld.org,space.com##.fa-face
 ##.share-icons-wrap
 ~ultimateclassicrock.com,~screencrush.com,~technopoint.ru,~dns-shop.ru,~pinksluts.com,~businessinsider.com,~popcrush.com,~tasteofcountry.com,~disk.yandex.by,~disk.yandex.com,~disk.yandex.com.tr,~disk.yandex.kz,~disk.yandex.ru,~disk.yandex.ua##.share-link
 ~imgur.com,~thegameawards.com,~my.kaspersky.com##.share-links
-~amazon.it,~amazon.com,~amazon.de,~amazon.co.uk,~amazon.fr,~amazon.in,~amazon.es,~pan.baidu.com##.share-list
+~pan.baidu.com##.share-list
 ##.share-on-facebook
 ##.share-on-twitter
 ~grammarly.com,~youtube.com##.share-panel
@@ -11047,6 +11047,8 @@ neokur.com#$#.jquery-modal.blocker { display: none!important; }
 ! #Social locker#
 ! #End Social locker
 !
+! https://github.com/AdguardTeam/AdguardFilters/issues/115798
+amazon.*#@#.share-list
 ! https://github.com/AdguardTeam/AdguardFilters/issues/115170
 @@||platform.twitter.com/js/button.$domain=monsterhunter.com
 @@||platform.twitter.com/widgets/follow_button.$domain=monsterhunter.com

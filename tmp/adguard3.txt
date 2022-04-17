@@ -1,8 +1,8 @@
-! Checksum: hfvZUopa766mcussFWATbA
+! Checksum: qvhmROalLod5Ap1MewE+PA
 ! Title: AdGuard Tracking Protection filter (Optimized)
 ! Description: The most comprehensive list of various online counters and web analytics tools. Use this filter if you do not want your actions on the Internet to be tracked.
-! Version: 2.0.38.28
-! TimeUpdated: 2022-04-16T21:03:09+00:00
+! Version: 2.0.38.30
+! TimeUpdated: 2022-04-17T15:31:17+00:00
 ! Expires: 4 days (update frequency)
 #%#var AG_onLoad=function(func){if(document.readyState==="complete"||document.readyState==="interactive")func();else if(document.addEventListener)document.addEventListener("DOMContentLoaded",func);else if(document.attachEvent)document.attachEvent("DOMContentLoaded",func)};
 #%#var AG_removeElementById = function(id) { var element = document.getElementById(id); if (element && element.parentNode) { element.parentNode.removeChild(element); }};
@@ -125,6 +125,9 @@ journal-plaza.net#?#.rightside div.block.bnavi[-ext-has="h3.dtitle:contains(Сч
 ||ib.snssdk.com^
 ||xlog.snssdk.com^
 ||log.snssdk.com^
+||analytics.liveact.cri-mw.jp^
+||sdtagging.azureedge.net^
+||sd-tagging.azurefd.net^
 ||metrics.pico.tools^
 ||lndata.com^$third-party
 ||quietyellowday.com^$third-party
@@ -19390,7 +19393,6 @@ _analytics.js?
 .demandbase.*.js
 /zaius.gif?
 /common/tracking/webtrekk
-/greenoaks.gif?
 /uedata?
 /bbtstats/*
 /px.js?ch=
@@ -19642,7 +19644,8 @@ _tracking.php?b=
 ||nd.demdex.net/event?d_mid=$redirect=nooptext,important,domain=9now.com.au
 ||adc.nine.com.au/?token=$redirect=nooptext,important,domain=9now.com.au
 ||googleadservices.com/pagead/conversion_async.js$redirect=noopjs,domain=ffm.to,important
-/analytics.js$domain=bataryapil.com|journey.com.tr|freexcafe.com|rusvideos.tv|nakubani.ru|lun.com|songsara.net|partifabrik.com|newsmax.com|bolgehastanesi.com|ewtc.de
+/analytics.js$domain=freexcafe.com|rusvideos.tv|nakubani.ru|lun.com|songsara.net|newsmax.com|bolgehastanesi.com|ewtc.de
+||click.email.trendyol.com/open.aspx?$image
 ||msgrt.gamedistribution.com/collect^
 ||tiktokv.com/web/report?
 ||tiktok.com/whale/
