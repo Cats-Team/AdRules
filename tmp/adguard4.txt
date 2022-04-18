@@ -1,8 +1,8 @@
-! Checksum: TBOxKnjsSQSfDJWC1qIj5w
+! Checksum: 4ZiSwHsvCK09JfTRoWDv4w
 ! Title: AdGuard Chinese filter (Optimized)
 ! Description: EasyList China + AdGuard Chinese filter. Filter list that specifically removes ads on websites in Chinese language.
-! Version: 2.0.53.23
-! TimeUpdated: 2022-04-18T10:30:54+00:00
+! Version: 2.0.53.24
+! TimeUpdated: 2022-04-18T14:30:54+00:00
 ! Expires: 4 days (update frequency)
 #%#var AG_onLoad=function(func){if(document.readyState==="complete"||document.readyState==="interactive")func();else if(document.addEventListener)document.addEventListener("DOMContentLoaded",func);else if(document.attachEvent)document.attachEvent("DOMContentLoaded",func)};
 #%#var AG_removeElementById = function(id) { var element = document.getElementById(id); if (element && element.parentNode) { element.parentNode.removeChild(element); }};
@@ -1739,6 +1739,8 @@ jable.tv##a[href="http://uus52.com/"]
 jable.tv##.badge
 jable.tv##a[href*="?banner="]
 jable.tv##.uu-ads
+!+ PLATFORM(windows, mac, android)
+doubibackup.com##body div.guangg
 nfmovies.com##a[href][onclick^="openurl()"] img[src^="/static/"]
 !+ PLATFORM(windows, mac, android)
 ||nfmovies.com/static/side.jpg$image,redirect=nooptext,domain=nfmovies.com

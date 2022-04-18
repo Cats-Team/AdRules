@@ -1,8 +1,8 @@
 [Adblock Plus 1.1]
-! Checksum: 1Z3JyZhxEmLA3Af0Y8RGCQ
-! Version: 202204181105
+! Checksum: sfOWeIApPjb3NG0KeRmzTQ
+! Version: 202204181605
 ! Title: EasyPrivacy
-! Last modified: 18 Apr 2022 11:05 UTC
+! Last modified: 18 Apr 2022 16:05 UTC
 ! Expires: 1 days (update frequency)
 ! Homepage: https://easylist.to/
 ! Licence: https://easylist.to/pages/licence.html
@@ -850,6 +850,7 @@
 /astracker/*
 /async/stat|
 /asyncggtracking.
+/async~sentry-
 /at.gif?
 /atapixel.js
 /atatus.js
@@ -4986,6 +4987,7 @@
 /visitor.min.js
 /visitor/identity?
 /visitor_id.jsp
+/visitor_info?
 /VisitorAPI.js
 /visitorCookie.
 /visitorcountry.svc/*
@@ -12759,7 +12761,9 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 ||scribol.com/traffix/widget_tracker/
 ||script-api.kinja.com/script?
 ||scripts.psyma.com^
+||sd-tagging.azurefd.net^
 ||sdrive.skoda-auto.com^
+||sdtagging.azureedge.net^
 ||searchcompletion.com/BannerHandler.ashx
 ||secure.ed4.net/GSI/$third-party
 ||secure.ifbyphone.com^$third-party
@@ -26392,7 +26396,7 @@ $csp=child-src 'none'; frame-src *; worker-src 'none',domain=skyback.ru|szukajka
 @@||online-metrix.net/fp/tags.js$domain=donorschoose.org
 @@||online.tivo.com/assets/tve/common/js/vendor/jsnlog/$script,~third-party
 @@||onlinebanking.usbank.com/TUX/public/libs/adobe/appmeasurement.js$script,~third-party
-@@||optimizely.com/datafiles/$domain=talktalk.co.uk
+@@||optimizely.com/datafiles/$domain=nike.com|talktalk.co.uk
 @@||orginio.com/api/analytics/$~third-party,xmlhttprequest
 @@||oyster.com/wp-content/plugins/smartertravel-shared/assets/js/tracking.min.js$~third-party
 @@||pagure.io/static/issues_stats.js?
@@ -27171,7 +27175,8 @@ $csp=child-src 'none'; frame-src *; worker-src 'none',domain=skyback.ru|szukajka
 !
 !---------- Anti-Adblock ----------
 !
-@@|http://r.i.ua/s?*&p*&l$image,domain=swordmaster.orgscroll-events-
+@@|http://r.i.ua/s?*&p*&l$image,domain=swordmaster.orgga-script.
+/ga-scroll-events-
 /ga-scroll-events.
 /ga-se-async.js
 /ga-socialtracker.
@@ -30168,6 +30173,7 @@ $csp=child-src 'none'; frame-src *; worker-src 'none',domain=skyback.ru|szukajka
 /visitor.min.js
 /visitor/identity?
 /visitor_id.jsp
+/visitor_info?
 /VisitorAPI.js
 /visitorCookie.
 /visitorcountry.svc/*
@@ -37941,7 +37947,9 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 ||scribol.com/traffix/widget_tracker/
 ||script-api.kinja.com/script?
 ||scripts.psyma.com^
+||sd-tagging.azurefd.net^
 ||sdrive.skoda-auto.com^
+||sdtagging.azureedge.net^
 ||searchcompletion.com/BannerHandler.ashx
 ||secure.ed4.net/GSI/$third-party
 ||secure.ifbyphone.com^$third-party
@@ -51574,7 +51582,7 @@ $csp=child-src 'none'; frame-src *; worker-src 'none',domain=skyback.ru|szukajka
 @@||online-metrix.net/fp/tags.js$domain=donorschoose.org
 @@||online.tivo.com/assets/tve/common/js/vendor/jsnlog/$script,~third-party
 @@||onlinebanking.usbank.com/TUX/public/libs/adobe/appmeasurement.js$script,~third-party
-@@||optimizely.com/datafiles/$domain=talktalk.co.uk
+@@||optimizely.com/datafiles/$domain=nike.com|talktalk.co.uk
 @@||orginio.com/api/analytics/$~third-party,xmlhttprequest
 @@||oyster.com/wp-content/plugins/smartertravel-shared/assets/js/tracking.min.js$~third-party
 @@||pagure.io/static/issues_stats.js?

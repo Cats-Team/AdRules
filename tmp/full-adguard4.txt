@@ -1,8 +1,8 @@
-! Checksum: 4L+lLXqnRgz2bmx+vEGTGA
+! Checksum: c9gfBPkZ1MfpkDdRhF/ujw
 ! Title: AdGuard Annoyances filter
 ! Description: Blocks irritating elements on web pages including cookie notices, third-party widgets and in-page pop-ups.
-! Version: 2.1.16.11
-! TimeUpdated: 2022-04-18T09:30:35+00:00
+! Version: 2.1.16.15
+! TimeUpdated: 2022-04-18T15:30:43+00:00
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -7321,6 +7321,7 @@ techadvisor.co.uk,forum.notebookreview.com,computerworld.com,skysports.com#$#bod
 !
 !
 !
+||ccm.land24.de/app.js
 tameteo.com#$##gpdr { display: none !important; }
 tameteo.com#$#body { position: unset !important; }
 ||googletagmanager.com/gtm.js$domain=advcash.com
@@ -12294,7 +12295,7 @@ zrzutka.pl##.plicy
 find.com.tr###KVK_Cerez
 tvgids.nl###cmp-faktor-io-parent
 tvgids.nl###cmp-faktor-io
-ausbildung-schluesselregion.de,wetheunicorns.com##.privacy-overlay
+birkenstock.com,ausbildung-schluesselregion.de,wetheunicorns.com##.privacy-overlay
 tvnet.lv##.notification--cookie
 quora.com##.EUCookieBanner
 pornhub.com,veepee.fr,dyson.com.ru,dyson.de,fonedog.com##.cookiesBanner
@@ -18901,6 +18902,7 @@ early-riser.com#?#div[class] ~ h1[style]:contains(Newsletter) + p + div[class]
 ##head[prefix~="medium-com:"] ~ body .js-openInAppButton
 ##head[prefix~="medium-com:"] ~ body .js-postActionsBarContent > .js-readNextInteractions
 !
+benesse.jp##.bnr_flow-under-h2
 arteryex.biz###footer-widgets
 arteryex.biz##.elementor-popup-modal
 arteryex.biz##a[href="https://arteryex.biz/click-karte/"]
@@ -20741,6 +20743,8 @@ theoryandpractice.ru##a[href^="https://form.typeform.com/"]
 !
 acpa-main.org##.fixBtn
 tubefilter.com##.overlay
+qwertee.com###homepage-popup
+qwertee.com##.modal
 imobie.jp##.sideadv_wrapmc
 re-lifework.com##.bfb_textTextBtn
 heydouga.com###access-ranking-video
@@ -26256,6 +26260,7 @@ abendzeitung-muenchen.de###webpush-app
 /firebase.js$domain=novayagazeta.ru|comments.ua|kinosimka.net|ilan365.net|cnbcindonesia.com|haberzamani.net|oxy.cloud|allbasketball.org|auslogics.com|kartalyuvasi.com.tr|cnnindonesia.com|fbc.ua|astv.ru|pln-pskov.ru
 /firebase-messaging.js$domain=focus.ua|ukranews.com|comments.ua|coub.com|porno90.me|cnnamador.com|giallozafferano.it|wcostream.com|fptplay.vn|jooble.org|mobile01.com|myinstants.com|pdalife.ru|rg.ru|m.iguides.ru|donanimhaber.com|profile.ru|womanhit.ru|news.noteru.com|narodna-pravda.ua|newstm.in|sabah.com.tr|dreamstime.com|popbee.com|avtovzglyad.ru|allbasketball.org|tw.news.yahoo.com|takvim.com.tr|jn.pt|ria.ru|pars.host|calculator-online.net|operanewsapp.com|ahaber.com.tr|tamindir.com|concursosnobrasil.com.br|kompas.com|news.ebc.net.tw|recyclingtoday.com|homedecoratione.com|khersondaily.com|mirtesen.ru|womanhit.ru|belsat.eu|gearbest.com|op.gg|novayagazeta.ru|pocket-lint.com|turunculevye.com|bloomberght.com|stardima.com|aksam.com.tr|portamur.ru|fishki.net|ranking.goo.ne.jp|ohmymag.com|mgronline.com|semnasem.org|bluradio.com|carwale.com
 !
+||149.56.24.226/service-worker.js
 ||vz.ru/static/js/push.js
 ||fahrradmagazin.net/p/app.js
 ||careerindex.jp/templates/push_notification
@@ -28926,6 +28931,7 @@ turkuazgazetesi.net,yenialanya.com,mansetaydin.com,seskocaeli.com,kocaelibarisga
 !
 accordancebible.com#?#.flex-grow > div.bg-primary:has(> div.container div.newsletter-signup)
 earth.com##div[class^="NewsSubscribeLg_"]
+theverge.com##.l-sidebar-fixed > div[data-analytics-placement]
 afyonhaber.com##.googlenewsm-btn
 newsindiatimes.com##.spu-bg
 newsindiatimes.com##.spu-box

@@ -1,8 +1,8 @@
-! Checksum: xjMw+aFSZ6LXC+JoD8tpmA
+! Checksum: VM3st4hq0KxtSn8q1r1vCw
 ! Title: AdGuard Annoyances filter (Optimized)
 ! Description: Blocks irritating elements on web pages including cookie notices, third-party widgets and in-page pop-ups.
-! Version: 2.1.16.11
-! TimeUpdated: 2022-04-18T09:30:35+00:00
+! Version: 2.1.16.15
+! TimeUpdated: 2022-04-18T15:30:43+00:00
 ! Expires: 4 days (update frequency)
 #%#var AG_onLoad=function(func){if(document.readyState==="complete"||document.readyState==="interactive")func();else if(document.addEventListener)document.addEventListener("DOMContentLoaded",func);else if(document.attachEvent)document.attachEvent("DOMContentLoaded",func)};
 #%#var AG_removeElementById = function(id) { var element = document.getElementById(id); if (element && element.parentNode) { element.parentNode.removeChild(element); }};
@@ -3353,6 +3353,7 @@ ladbible.com,hitc.com,dualshockers.com,is.fi,7sur7.be,vtm.be,welt.de,gamingbible
 techadvisor.co.uk,forum.notebookreview.com,computerworld.com,skysports.com#$#body { overflow: visible !important; }
 /wrapperMessagingWithoutDetection.js$script,domain=lovelybooks.de|hannover.de|visit-hannover.com|wetteronline.de|autozeitung.de|sportbible.com|vox.de|essen-und-trinken.de|jameda.de|gutefrage.net|planetiphone.de|computerfrage.net|helpster.de|dpd.com|dpd.de|duden.de|sky.de|sky.com|cardscout.de|meineorte.com|tecchannel.de|itpro.co.uk|tvnow.at|tvnow.de|netdoktor.de|computerwoche.de|the-sun.com|thescottishsun.co.uk|thesun.co.uk|thesun.ie|handelsblatt.com|macwelt.de|lancashiretelegraph.co.uk|idealo.de|myhomebook.de|4players.de|n-page.de|planet3ds.de|planetds.de|planetgameboy.de|planetswitch.de|planetvita.de|playstationportable.de|portablegaming.de|denofgeek.com|classicfm.com|globalplayer.com|radio.pl|politico.eu|expertreviews.co.uk|radio.net|rtlplus.de|rtl-passion.de|geo-television.de|gruenderkueche.de|techstage.de|praxisvita.de|kn-online.de|nnn.de|geo.de|leserreisen.mz-web.de|kuechengoetter.de|cio.de|cio.com|tv14.de|nitro-tv.de|elektroauto-news.net|channelpartner.de|nowtv.it|macworld.com|radio.de|svz.de|axelspringer.com|businessinsider.es|sueddeutsche.de|livingathome.de|jetzt.de|leonberger-kreiszeitung.de|finanzfrage.net|frag-mutti.de|bestcheck.de|dexerto.com|techadvisor.com|stuff.tv|baby-und-familie.de|netmoms.de|testedich.de|toggo.de|senioren-ratgeber.de|autoexpress.co.uk|shz.de|prignitzer.de|meine.noz.de|mediaimpact.de|ad-alliance.de|studyflix.de|speed.io|computerhoy.com|liberation.fr|auto-motor-und-sport.de|mcnmotorcycleshow.com|familie.de|oekotest.de|csoonline.com|dailyresearchplot.com|menshealth.de|camping.info|badoo.com|eiu.com|stern.de|7sur7.be|flugrevue.de|playpilot.com
 ||cdn.privacy-mgmt.com^$important,domain=promipool.de|android-hilfe.de|wsj.com
+||ccm.land24.de/app.js
 tameteo.com#$##gpdr { display: none !important; }
 tameteo.com#$#body { position: unset !important; }
 ||googletagmanager.com/gtm.js$domain=advcash.com
@@ -6217,6 +6218,7 @@ rynekzdrowia.pl,horecatrends.pl,portalspozywczy.pl#$#.rodo { display: none !impo
 rynekzdrowia.pl,horecatrends.pl,portalspozywczy.pl#$#body.windowOpen { overflow: auto !important; }
 visionexpress.pl##body > div[style*="position: fixed;"][style*="z-index:"][style*="background-color"]:not([class]):not([id])
 find.com.tr###KVK_Cerez
+birkenstock.com,ausbildung-schluesselregion.de,wetheunicorns.com##.privacy-overlay
 pornhub.com,veepee.fr,dyson.com.ru,dyson.de,fonedog.com##.cookiesBanner
 coolmathgames.com###yourCookieChoices
 ||nanosystems.it/js/nanoGDPR.min.js
@@ -9148,6 +9150,7 @@ tagline.ru##.b-block--dashed
 ##amp-app-banner
 ###smartbanner.ios
 ###smartbanner.windows
+benesse.jp##.bnr_flow-under-h2
 arteryex.biz###footer-widgets
 arteryex.biz##.elementor-popup-modal
 arteryex.biz##a[href="https://arteryex.biz/click-karte/"]
@@ -10158,6 +10161,8 @@ theoryandpractice.ru##a[href^="https://form.typeform.com/"]
 !######### Subscription popups add to subscriptions.txt #########
 acpa-main.org##.fixBtn
 tubefilter.com##.overlay
+qwertee.com###homepage-popup
+qwertee.com##.modal
 imobie.jp##.sideadv_wrapmc
 re-lifework.com##.bfb_textTextBtn
 heydouga.com###access-ranking-video
@@ -12901,6 +12906,7 @@ abendzeitung-muenchen.de###webpush-app
 ||pushmaster.xyz^$third-party
 /firebase.js$domain=novayagazeta.ru|comments.ua|kinosimka.net|ilan365.net|cnbcindonesia.com|haberzamani.net|oxy.cloud|allbasketball.org|auslogics.com|kartalyuvasi.com.tr|cnnindonesia.com|fbc.ua|astv.ru|pln-pskov.ru
 /firebase-messaging.js$domain=focus.ua|ukranews.com|comments.ua|coub.com|porno90.me|cnnamador.com|giallozafferano.it|wcostream.com|fptplay.vn|jooble.org|mobile01.com|myinstants.com|pdalife.ru|rg.ru|m.iguides.ru|donanimhaber.com|profile.ru|womanhit.ru|news.noteru.com|narodna-pravda.ua|newstm.in|sabah.com.tr|dreamstime.com|popbee.com|avtovzglyad.ru|allbasketball.org|tw.news.yahoo.com|takvim.com.tr|jn.pt|ria.ru|pars.host|calculator-online.net|operanewsapp.com|ahaber.com.tr|tamindir.com|concursosnobrasil.com.br|kompas.com|news.ebc.net.tw|recyclingtoday.com|homedecoratione.com|khersondaily.com|mirtesen.ru|womanhit.ru|belsat.eu|gearbest.com|op.gg|novayagazeta.ru|pocket-lint.com|turunculevye.com|bloomberght.com|stardima.com|aksam.com.tr|portamur.ru|fishki.net|ranking.goo.ne.jp|ohmymag.com|mgronline.com|semnasem.org|bluradio.com|carwale.com
+||149.56.24.226/service-worker.js
 ||vz.ru/static/js/push.js
 ||fahrradmagazin.net/p/app.js
 ||careerindex.jp/templates/push_notification
@@ -14025,6 +14031,7 @@ turkuazgazetesi.net,yenialanya.com,mansetaydin.com,seskocaeli.com,kocaelibarisga
 ~copays.org,~nothing.tech,~mega-debrid.eu,~curvegames.com,~news.un.org,~norwichzen.org.uk,~dereferer.me###mc_embed_signup
 accordancebible.com#?#.flex-grow > div.bg-primary:has(> div.container div.newsletter-signup)
 earth.com##div[class^="NewsSubscribeLg_"]
+theverge.com##.l-sidebar-fixed > div[data-analytics-placement]
 afyonhaber.com##.googlenewsm-btn
 newsindiatimes.com##.spu-bg
 newsindiatimes.com##.spu-box
