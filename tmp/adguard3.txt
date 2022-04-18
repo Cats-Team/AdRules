@@ -1,8 +1,8 @@
-! Checksum: GgrNsnSbkpQZ/V7yD5qI3Q
+! Checksum: ffyVsL4tKwFqCXjn/scBhA
 ! Title: AdGuard Tracking Protection filter (Optimized)
 ! Description: The most comprehensive list of various online counters and web analytics tools. Use this filter if you do not want your actions on the Internet to be tracked.
-! Version: 2.0.38.31
-! TimeUpdated: 2022-04-17T16:31:17+00:00
+! Version: 2.0.38.33
+! TimeUpdated: 2022-04-18T06:31:18+00:00
 ! Expires: 4 days (update frequency)
 #%#var AG_onLoad=function(func){if(document.readyState==="complete"||document.readyState==="interactive")func();else if(document.addEventListener)document.addEventListener("DOMContentLoaded",func);else if(document.attachEvent)document.attachEvent("DOMContentLoaded",func)};
 #%#var AG_removeElementById = function(id) { var element = document.getElementById(id); if (element && element.parentNode) { element.parentNode.removeChild(element); }};
@@ -4831,6 +4831,7 @@ nethunt.com/api/v1/track/email/$image
 !+ NOT_PLATFORM(ios, ext_safari, ext_android_cb)
 ||tags.news.com.au^$~script
 ||telemetry.mozilla.org^
+||delog.afreecatv.com^
 ||ab.blogs.es^
 ||plausible.simplelogin.io^
 ||spade.twitch.tv^
@@ -19646,6 +19647,7 @@ _tracking.php?b=
 ||adc.nine.com.au/?token=$redirect=nooptext,important,domain=9now.com.au
 ||googleadservices.com/pagead/conversion_async.js$redirect=noopjs,domain=ffm.to,important
 /analytics.js$domain=freexcafe.com|rusvideos.tv|nakubani.ru|lun.com|songsara.net|newsmax.com|bolgehastanesi.com|ewtc.de
+||search-api.joongna.com/v*/ga/log|
 ||click.email.trendyol.com/open.aspx?$image
 ||msgrt.gamedistribution.com/collect^
 ||tiktokv.com/web/report?
@@ -19687,7 +19689,7 @@ chinatimes.com##.popin-recommend
 ||search.tmon.co.kr/api/direct/*/searchstatapi/api/search/count/click/
 ||cdn.adrise.tv/*/appboy.min.js
 ||cdn.adrise.tv/*/sentry/
-/^https:\/\/cdn\.jsdelivr\.net\/npm\/([a-z]|-){4,12}@latest\/dist\/script\.min\.js$/$domain=tgd.kr|loawa.com|ygosu.com|inven.co.kr|ppss.kr
+/^https:\/\/cdn\.jsdelivr\.net\/npm\/([a-z]|-){4,22}@latest\/dist\/script\.min\.js$/$domain=tgd.kr|loawa.com|ygosu.com|inven.co.kr|ppss.kr
 ||eiu.com/n/wp-content/plugins/eiu-google-tag-manager/assets/dist/js/eiu-google-tag-manager.min.js
 ||link.tv-asahi.co.jp/tver/cookiesync?
 ||dist.micres.cyberowl.jp/packs/link-tracker.js

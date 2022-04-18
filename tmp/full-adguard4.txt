@@ -1,8 +1,8 @@
-! Checksum: GdoLzWxvuzIvFvV5d1jd7A
+! Checksum: GStmH8j6EYKM3kXwPHhnCg
 ! Title: AdGuard Annoyances filter
 ! Description: Blocks irritating elements on web pages including cookie notices, third-party widgets and in-page pop-ups.
-! Version: 2.1.16.5
-! TimeUpdated: 2022-04-17T18:30:34+00:00
+! Version: 2.1.16.8
+! TimeUpdated: 2022-04-18T07:30:36+00:00
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -7971,7 +7971,7 @@ benchmark.unigine.com##.bottom-notice
 recantodasletras.com.br##.cookie-consent-dialog
 ||dictionary.university/*/cookiewarning/cookiewarning-nosql.js.php
 qmee.com##div[class^="prerender-"] > div[class^="Overlay-root-"].mobile-app-hidden
-aliexpress.ru##p[class*="PrivacyPolicyBanner"]
+aliexpress.ru##[class*="PrivacyPolicyBanner"]
 cian.ru##div[data-name="CookiesNotification"]
 2captcha.com##.app-level-notifications
 delfi.ee##div[class^="C-modal"]
@@ -20738,6 +20738,7 @@ theoryandpractice.ru##a[href^="https://form.typeform.com/"]
 ! Specific sites
 !######### Subscription popups add to subscriptions.txt #########
 !
+acpa-main.org##.fixBtn
 tubefilter.com##.overlay
 imobie.jp##.sideadv_wrapmc
 re-lifework.com##.bfb_textTextBtn
@@ -28921,7 +28922,14 @@ turkuazgazetesi.net,yenialanya.com,mansetaydin.com,seskocaeli.com,kocaelibarisga
 ##.widget_blog_subscription
 ~copays.org,~nothing.tech,~mega-debrid.eu,~curvegames.com,~news.un.org,~norwichzen.org.uk,~dereferer.me###mc_embed_signup
 !
+accordancebible.com#?#.flex-grow > div.bg-primary:has(> div.container div.newsletter-signup)
+earth.com##div[class^="NewsSubscribeLg_"]
+afyonhaber.com##.googlenewsm-btn
+newsindiatimes.com##.spu-bg
+newsindiatimes.com##.spu-box
+thetimes.co.uk###paywall-portal-sale-modal
 ||edugram.com/partnersforms/widget/?component=popupEmailForm
+polaroid.com##body .privy
 yenicaggazetesi.com.tr##a[href^="https://news.google.com/publications/"]
 pravda.com.ua##.block_post > div[style="margin-top: 25px;"]
 ukrinform.pl,ukrinform.jp,ukrinform.fr,ukrinform.de,ukrinform.es,ukrinform.net##div[data-name="int_hidden"]
