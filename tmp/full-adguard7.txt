@@ -1,8 +1,8 @@
-! Checksum: dqzZy3MuEH/J0m0CtLNXkQ
+! Checksum: R4AtPNtCuMS0xNmlStrpRg
 ! Title: AdGuard URL Tracking filter
 ! Description: Filter that enhances privacy by removing tracking parameters from URLs.
-! Version: 2.0.2.42
-! TimeUpdated: 2022-04-15T12:30:48+00:00
+! Version: 2.0.2.43
+! TimeUpdated: 2022-04-18T08:30:51+00:00
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -618,6 +618,11 @@ $removeparam=/^curator_clanid/,domain=steampowered.com|steamcommunity.com
 ||mp.weixin.qq.com^$removeparam=scene
 ||mp.weixin.qq.com^$removeparam=srcid
 ||mp.weixin.qq.com^$removeparam=nettype
+||mp.weixin.qq.com^$removeparam=WBAPIAnalysisOriUICodes
+||mp.weixin.qq.com^$removeparam=v_p
+||mp.weixin.qq.com^$removeparam=launchid
+||mp.weixin.qq.com^$removeparam=from
+||mp.weixin.qq.com^$removeparam=aid
 ! Prevent tracking when request is unblocked
 ||pixel.adsafeprotected.com/services/pub?$removeparam=slot
 ||pixel.adsafeprotected.com/services/pub?$removeparam=sessionId

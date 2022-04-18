@@ -1,8 +1,8 @@
-! Checksum: GStmH8j6EYKM3kXwPHhnCg
+! Checksum: 4L+lLXqnRgz2bmx+vEGTGA
 ! Title: AdGuard Annoyances filter
 ! Description: Blocks irritating elements on web pages including cookie notices, third-party widgets and in-page pop-ups.
-! Version: 2.1.16.8
-! TimeUpdated: 2022-04-18T07:30:36+00:00
+! Version: 2.1.16.11
+! TimeUpdated: 2022-04-18T09:30:35+00:00
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -6828,6 +6828,7 @@ cc-fan.tv,cn-fan.tv,fox-fan.tv,nf-fan.tv#$#.pub_300x250.pub_300x250m.pub_728x90.
 !######### General URL blocking rules ##################
 !#######################################################
 !
+###acceptCookiesBar
 /wp_content/plugins/gdpr_patron/*
 ||consent.nit.ro^$third-party
 /wp-content/plugins/dsgvo-tools-cookie-hinweis-datenschutz/*
@@ -7320,6 +7321,8 @@ techadvisor.co.uk,forum.notebookreview.com,computerworld.com,skysports.com#$#bod
 !
 !
 !
+tameteo.com#$##gpdr { display: none !important; }
+tameteo.com#$#body { position: unset !important; }
 ||googletagmanager.com/gtm.js$domain=advcash.com
 fuvest.br###idInformacaoCookie
 imobie.jp##.fixedbot
@@ -7391,7 +7394,6 @@ tommy.com#$##cookiesMessage { display: none !important; }
 tommy.com#$#.cookies-message { display: none !important; }
 tommy.com#$#html { overflow: auto !important; }
 tiktok.com##tiktok-cookie-banner
-tushy.empirestores.co###acceptCookiesBar
 lookandlearn.com##div[aria-describedby="cookies"]
 lookandlearn.com##.ui-widget-overlay
 funnelcockpit.com##.gdpr-cookie-notice-center-loaded::before
@@ -8761,7 +8763,6 @@ superlegalbrinquedos.com.br,pasch-net.de##.modal-cookies
 lcwaikiki.com##.cookie__policy__container
 lcwaikiki.com##.cookiealert.show
 liveworksheets.com###divcookieconsent
-lethalhardcore.com,jayspov.net###acceptCookiesBar
 audioboom.com#$#.modal-backdrop { display: none !important; }
 audioboom.com#$#div[id^="cookie-modal-"] { display: none !important; }
 audioboom.com#$#body { overflow: visible !important; padding-right: 0 !important; }
@@ -26255,6 +26256,7 @@ abendzeitung-muenchen.de###webpush-app
 /firebase.js$domain=novayagazeta.ru|comments.ua|kinosimka.net|ilan365.net|cnbcindonesia.com|haberzamani.net|oxy.cloud|allbasketball.org|auslogics.com|kartalyuvasi.com.tr|cnnindonesia.com|fbc.ua|astv.ru|pln-pskov.ru
 /firebase-messaging.js$domain=focus.ua|ukranews.com|comments.ua|coub.com|porno90.me|cnnamador.com|giallozafferano.it|wcostream.com|fptplay.vn|jooble.org|mobile01.com|myinstants.com|pdalife.ru|rg.ru|m.iguides.ru|donanimhaber.com|profile.ru|womanhit.ru|news.noteru.com|narodna-pravda.ua|newstm.in|sabah.com.tr|dreamstime.com|popbee.com|avtovzglyad.ru|allbasketball.org|tw.news.yahoo.com|takvim.com.tr|jn.pt|ria.ru|pars.host|calculator-online.net|operanewsapp.com|ahaber.com.tr|tamindir.com|concursosnobrasil.com.br|kompas.com|news.ebc.net.tw|recyclingtoday.com|homedecoratione.com|khersondaily.com|mirtesen.ru|womanhit.ru|belsat.eu|gearbest.com|op.gg|novayagazeta.ru|pocket-lint.com|turunculevye.com|bloomberght.com|stardima.com|aksam.com.tr|portamur.ru|fishki.net|ranking.goo.ne.jp|ohmymag.com|mgronline.com|semnasem.org|bluradio.com|carwale.com
 !
+||vz.ru/static/js/push.js
 ||fahrradmagazin.net/p/app.js
 ||careerindex.jp/templates/push_notification
 24nyt.dk##.tnp-leads-topbar-show
