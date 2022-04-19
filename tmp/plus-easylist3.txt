@@ -687,8 +687,10 @@ x1337x.eu##.mgbox
 @@||torrage.info/torrent.php$popup,domain=1337x.to
 
 ! https://github.com/uBlockOrigin/uAssets/issues/3142
+! https://github.com/uBlockOrigin/uAssets/issues/12845
 linkneverdie.net##+js(nostif, _0)
-linkneverdie.net##+js(acis, DetecAdBlockByLoadJsFile2)
+linkneverdie.net##+js(acis, DetecAdBlockByLoadJsFile3)
+||optad360.io^$script,redirect-rule=noopjs,domain=linkneverdie.net
 linkneverdie.net###adsqc
 linkneverdie.net##.quangcao
 ||bidtimize.com^
@@ -3221,6 +3223,7 @@ bigtitsxxxsex.com##.bano1
 ! https://github.com/uBlockOrigin/uAssets/issues/3768
 ||adn.porndig.com^
 ||videos.porndig.com/js/videojs.logobrand.js
+porndig.com##+js(set, Object.prototype.AdOverlay, noopFunc)
 porndig.com##+js(set, tkn_popunder, null)
 ||porndig.com/sw$script,1p
 
@@ -10237,7 +10240,9 @@ aniwatcher.com##.cjrm
 emurom.net##+js(nostif, antiadblock)
 
 ! https://github.com/uBlockOrigin/uAssets/issues/4399
+! https://www.reddit.com/r/uBlockOrigin/comments/u72fym/dailymotion_adblock_detected/
 ||s3.amazonaws.com/dmas-public/rubicon/bundle.js$script,domain=dailymotion.com
+ @@||dailymotion.com^$ghide 
 
 ! filmeserialeonline . org popups
 filmeserialeonline.org##+js(nowebrtc)

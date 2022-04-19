@@ -1,8 +1,8 @@
-! Checksum: i4c8allFUYcGww8hdeNsCA
+! Checksum: z+QFrbDsADbCyxI5GghHbA
 ! Title: AdGuard Mobile Ads filter (Optimized)
 ! Description: Filter for all known mobile ad networks. Useful for mobile devices.
-! Version: 2.0.28.75
-! TimeUpdated: 2022-04-18T18:30:17+00:00
+! Version: 2.0.28.77
+! TimeUpdated: 2022-04-19T15:30:21+00:00
 ! Expires: 4 days (update frequency)
 #%#var AG_onLoad=function(func){if(document.readyState==="complete"||document.readyState==="interactive")func();else if(document.addEventListener)document.addEventListener("DOMContentLoaded",func);else if(document.attachEvent)document.attachEvent("DOMContentLoaded",func)};
 #%#var AG_removeElementById = function(id) { var element = document.getElementById(id); if (element && element.parentNode) { element.parentNode.removeChild(element); }};
@@ -2458,7 +2458,6 @@ allabout.co.jp##.aa_box-1st-banner
 zeiri4.com##div[class^="adContainer"]
 24tv.ua##.adv-wrapper-in-news
 indianexpress.com##.ads-container
-standard.co.uk###stickyFooterRoot
 ||recipe.rakuten.co.jp/webinfo/sp/ads/
 recipe.rakuten.co.jp##.ads_recipe_middle_banner_pr
 recipe.rakuten.co.jp##p[style="color: rgb(160, 160, 160); font-size: 10px; text-align: center;"]
@@ -2972,7 +2971,6 @@ ryutsuu.biz##.bnr50
 ixbt.com##.br-mobile-pic
 anime.anidub.life##div[style*="width: 300px;  height: 300px;"]
 kanasoku.info##body > div[style^="width:320px; height:100px"]
-standard.co.uk###stickyFooterRoot
 pravda.com.ua##amp-embed[type="recreativ"]
 kutchkhabar.com##.advertise-horizontal-mobile
 ||smaero.jp/advimg/
@@ -3176,7 +3174,7 @@ znak.com##.SVKNative-Widget li[data-unit-type="promo"]
 pixnet.net##.in-read-ad
 fox-saying.com,pixnet.net##li[data-source^="ad_mobile_"]
 fanat1k.ru##iframe[width="100%"][height="90px"]
-independent.co.uk###stickyFooterRoot
+standard.co.uk,independent.co.uk###stickyFooterRoot
 independent.co.uk##amp-iframe[src^="https://fresh8.co/"]
 techspot.com##div[id^="insert-ad-"]
 techspot.com##div[data-ns="largerectangle"]
@@ -5083,6 +5081,7 @@ fplgameweek.com##mobile-sticky-ads
 ||graph.facebook.com^$app=com.quoord.tapatalkpro.activity
 ||graph.facebook.com^$app=com.teeonsoft.ztorrent
 ||app.adjust.com^$app=com.easybrain.nonogram|ru.pikabu.android|com.maroieqrwlk.unpin|com.touchtao.soccerkinggoogle|com.mobirix.zumaking2|com.mobirix.swipebrick2|com.mobirix.mahjongking2|com.mobirix.hit7.casino.slots|com.mobirix.gmm|com.mobirix.fishingchampionship|com.mobirix.airhockey|com.mobirix.abmon|com.mobirix.MultiplyWar
+@@||google-analytics.com^$app=jp.co.matsukiyo.app
 ||mradx.net^$app=easy.sudoku.puzzle.solver.free
 ||cdn.skt-asum.com^$app=com.skt.prod.dialer
 @@||s9.cnzz.com^$app=com.unionpay

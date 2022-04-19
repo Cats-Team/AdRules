@@ -6264,11 +6264,11 @@ brainly.*##+js(set, jsData.hasVideoMeteringUnlogEnabled, undefined)
 
 ! https://github.com/uBlockOrigin/uAssets/issues/12571
 ! enable context menu
-viewsb.com##+js(acis, console.clear, onload)
+viewsb.com##+js(acis, console.clear, "contextmenu")
 sbfast.com,sbflix.*##+js(acis, onload, contextmenu)
 
 ! https://dizipal213.com/film/the-bubble/ anti right click
-dizipal208.com,dizipal209.com,dizipal210.com,dizipal211.com,dizipal212.com,dizipal213.com,dizipal214.com,dizipal215.com,dizipal216.com,dizipal217.com,dizipal218.com,dizipal219.com,dizipal220.com,dizipal221.com,dizipal222.com,dizipal223.com,dizipal224.com,dizipal225.com,dizipal226.com,dizipal227.com,dizipal228.com,dizipal229.com,dizipal230.com,dizipal231.com,dizipal232.com,dizipal233.com,dizipal234.com,dizipal235.com,dizipal236.com,dizipal237.com,dizipal238.com,dizipal239.com,dizipal240.com,dizipal241.com,dizipal242.com,dizipal243.com,dizipal244.com,dizipal245.com,dizipal246.com,dizipal247.com,dizipal248.com,dizipal249.com,dizipal250.com##+js(acis, console.clear, onload)
+dizipal208.com,dizipal209.com,dizipal210.com,dizipal211.com,dizipal212.com,dizipal213.com,dizipal214.com,dizipal215.com,dizipal216.com,dizipal217.com,dizipal218.com,dizipal219.com,dizipal220.com,dizipal221.com,dizipal222.com,dizipal223.com,dizipal224.com,dizipal225.com,dizipal226.com,dizipal227.com,dizipal228.com,dizipal229.com,dizipal230.com,dizipal231.com,dizipal232.com,dizipal233.com,dizipal234.com,dizipal235.com,dizipal236.com,dizipal237.com,dizipal238.com,dizipal239.com,dizipal240.com,dizipal241.com,dizipal242.com,dizipal243.com,dizipal244.com,dizipal245.com,dizipal246.com,dizipal247.com,dizipal248.com,dizipal249.com,dizipal250.com##+js(acis, console.clear, "contextmenu")
 dizipal208.com,dizipal209.com,dizipal210.com,dizipal211.com,dizipal212.com,dizipal213.com,dizipal214.com,dizipal215.com,dizipal216.com,dizipal217.com,dizipal218.com,dizipal219.com,dizipal220.com,dizipal221.com,dizipal222.com,dizipal223.com,dizipal224.com,dizipal225.com,dizipal226.com,dizipal227.com,dizipal228.com,dizipal229.com,dizipal230.com,dizipal231.com,dizipal232.com,dizipal233.com,dizipal234.com,dizipal235.com,dizipal236.com,dizipal237.com,dizipal238.com,dizipal239.com,dizipal240.com,dizipal241.com,dizipal242.com,dizipal243.com,dizipal244.com,dizipal245.com,dizipal246.com,dizipal247.com,dizipal248.com,dizipal249.com,dizipal250.com##+js(acis, devtoolsDetector)
 
 ! https://github.com/uBlockOrigin/uAssets/issues/12612
@@ -6359,6 +6359,17 @@ timeshighereducation.com##+js(aost, Drupal.CTools.Modal.show, /(^(?!.*(injectedS
 repack-games.com##+js(acis, jQuery, contextmenu)
 repack-games.com##*:style(-webkit-touch-callout: default !important; -webkit-user-select: text !important; -moz-user-select: text !important; -ms-user-select: text !important; user-select: text !important;)
 
+! https://www.actvid.com/watch-movie/watch-the-batman-full-16076.8142442 anti devtools
+mzzcloud.life##+js(set, console.clear, undefined)
+
+! https://github.com/uBlockOrigin/uAssets/issues/12846 anti devtools
+/dev-console-detect.js$script,domain=closeload.com
+
+! https://github.com/AdguardTeam/AdguardFilters/issues/115974 anti devtools
+nsfwzone.xyz##+js(acis, console.clear, "contextmenu")
+
+! https://github.com/AdguardTeam/AdguardFilters/issues/115965 anti right click
+khangtm.tk##+js(acis, document.oncontextmenu)
 
 
 

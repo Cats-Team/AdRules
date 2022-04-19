@@ -1,8 +1,8 @@
-! Checksum: m/zKZnjFd5rJnRu6/JImVA
+! Checksum: sK3cjFaGZU3bU/9OOP/4kQ
 ! Title: AdGuard URL Tracking filter (Optimized)
 ! Description: Filter that enhances privacy by removing tracking parameters from URLs.
-! Version: 2.0.2.43
-! TimeUpdated: 2022-04-18T08:30:51+00:00
+! Version: 2.0.2.44
+! TimeUpdated: 2022-04-19T15:30:44+00:00
 ! Expires: 4 days (update frequency)
 $removeparam=adfrom
 $removeparam=nx_source
@@ -521,6 +521,16 @@ $removeparam=dclid
 ||search.bilibili.com^$removeparam=from_source
 ||weibo.*^$removeparam=weibo_id
 ||weibo.*^$removeparam=dt_dapp
+||www.iqiyi.com^$removeparam=vfrm
+||www.iqiyi.com^$removeparam=vfrmblk
+||www.iqiyi.com^$removeparam=vfrmrst
+||sohu.com^$removeparam=_f
+||sohu.com^$removeparam=_trans_
+||sohu.com^$removeparam=scm
+||sohu.com^$removeparam=spm
+||v.youku.com^$removeparam=ptag
+||v.youku.com^$removeparam=scm
+||v.youku.com^$removeparam=spm
 @@||data.amazon.*/api/marketplaces/*/cart/carts/retail/items$removeparam=ref
 @@||tix.axs.com^$removeparam
 @@/mediaserver/*$removeparam,domain=ramtrucks.com|chrysler.com|fiatusa.com|alfaromeousa.com|jeep.com|dodge.com
