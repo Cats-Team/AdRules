@@ -1,7 +1,7 @@
 [Adblock Plus 1.1]
-! Version: 202204181231
+! Version: 202204190021
 ! Title: EasyPrivacy
-! Last modified: 18 Apr 2022 12:31 UTC
+! Last modified: 19 Apr 2022 00:21 UTC
 ! Expires: 4 days (update frequency)
 ! Homepage: https://easylist.to/
 ! Licence: https://easylist.to/pages/licence.html
@@ -839,6 +839,7 @@
 /assets/analytics:
 /assets/beacons.js
 /assets/ga.js
+/assets/smarttag-$script
 /assets/tracking-
 /assets/uts/*
 /assign.gif?
@@ -2123,6 +2124,7 @@
 /geoLocationData/v1/*
 /geomap.js?
 /geov2.js
+/get-pro/*&fingerprint=
 /get-tracking-data
 /get?affid=$script
 /get_browser_info.
@@ -2618,6 +2620,7 @@
 /LastClick/js?
 /layer_log.php?p=
 /lbi_ga.
+/lc-sentry.
 /ldsimp_wf?
 /lead-tracking.
 /lead-tracking/*
@@ -4707,6 +4710,7 @@
 /trackjs6.
 /trackjs_
 /trackk-1.
+/tracklib.min.js
 /tracklog.
 /trackmerchant.js
 /trackmvisit?
@@ -4731,6 +4735,7 @@
 /trackstats|
 /tracksubprop.
 /trackTimings.gif?
+/trackui.min.js
 /trackuity.
 /TrackUser?callback=
 /trackv&tmp=
@@ -5781,6 +5786,7 @@ _mongo_stats/
 ! -----------------Third-party tracking domains-----------------!
 ! *** easylist:easyprivacy/easyprivacy_trackingservers.txt ***
 ! Non-flagged (Generic blocks)
+||2022welcome.com^
 ||520886.xyz^
 ||8672.site^
 ||a1webstrategy.com^
@@ -25223,6 +25229,8 @@ $csp=child-src 'none'; frame-src *; worker-src 'none',domain=skyback.ru|szukajka
 ||jscrambler.com^$script,domain=airfrance.fr
 ||k.kolplay.com^
 ||l.franceculture.fr^
+||lacentrale.fr/collect
+||lacentrale.fr/static/fragment-layout/tracking-
 ||lardennais.fr/sites/all/themes/enabootstrap/js/stat-callback.js
 ||ldlc.com/V4px/js/ldlcmachine.js
 ||lecho.be/fb2?
@@ -25238,6 +25246,7 @@ $csp=child-src 'none'; frame-src *; worker-src 'none',domain=skyback.ru|szukajka
 ||p.kolplay.com^
 ||p.pagesjaunes.fr^
 ||pixel.ionos.fr^
+||promoneuve.fr/stat/
 ||res.paruvendu.fr^
 ||shemsfm.net/ar/setStats/
 ||shemsfm.net/fr/setStats/

@@ -1,8 +1,8 @@
-! Checksum: kubuT1aPhE+d4hircmvFlg
+! Checksum: g+K76MjwCoXaXsB7reH1AA
 ! Title: AdGuard Tracking Protection filter
 ! Description: The most comprehensive list of various online counters and web analytics tools. Use this filter if you do not want your actions on the Internet to be tracked.
-! Version: 2.0.38.35
-! TimeUpdated: 2022-04-18T15:31:32+00:00
+! Version: 2.0.38.40
+! TimeUpdated: 2022-04-18T21:03:04+00:00
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -324,7 +324,9 @@ journal-plaza.net#?#.rightside div.block.bnavi[-ext-has="h3.dtitle:contains(Сч
 !||i.snssdk.com/log/*
 !||i.snssdk.com/slardar/sdk.js
 !
+||tn.flashb.id^
 ||ac.prism-world.jp.net^
+||analytics.octaglobal.com^
 ||analytics.liveact.cri-mw.jp^
 ||sdtagging.azureedge.net^
 ||sd-tagging.azurefd.net^
@@ -20684,6 +20686,10 @@ _tracking.php?b=
 !
 /analytics.js$domain=freexcafe.com|rusvideos.tv|nakubani.ru|lun.com|songsara.net|newsmax.com|bolgehastanesi.com|ewtc.de
 !
+.awstrack.me^$image
+/access.html$domain=2jigiri.net|pig109.net
+||apis.naver.com/livecloud/livecloud/quantum/p2p/*/client/stat
+||redditmedia.com/gtm?id=
 ||search-api.joongna.com/v*/ga/log|
 ||click.email.trendyol.com/open.aspx?$image
 ||msgrt.gamedistribution.com/collect^
@@ -24765,6 +24771,8 @@ $app=com.miui.analytics
 ! For platforms which do not support $redirect rules
 !
 !
+! https://github.com/AdguardTeam/AdguardFilters/issues/115765
+@@||nhkondemand.sc.omtrdc.net^$domain=nhk-ondemand.jp
 ! https://github.com/AdguardTeam/AdguardFilters/issues/115637
 @@||cdn.optimizely.com/datafiles/*.json/tag.js$domain=nike.com
 ! https://github.com/AdguardTeam/AdguardFilters/issues/115489

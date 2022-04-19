@@ -1,7 +1,7 @@
 [Adblock Plus 2.0]
-! Version: 202204181231
+! Version: 202204190021
 ! Title: Fanboy's Annoyance List
-! Last modified: 18 Apr 2022 12:31 UTC
+! Last modified: 19 Apr 2022 00:21 UTC
 ! Expires: 4 days (update frequency)
 ! License: http://creativecommons.org/licenses/by/3.0/
 ! Please report any unblocked content or problems by email or in our forums
@@ -1126,6 +1126,7 @@ _subscribers_newsletters/
 /assets/tumblr_
 /assets/twitter-$image
 /assets/twitter_
+/async/share/*
 /ayoshare.js
 /badge_twitter.
 /banner-social.
@@ -6393,6 +6394,7 @@ _vpcookieconsent/
 ###alert-prime-day-newsletter
 ###alertNewsletter
 ###aol-newsletter
+###app_newsletter
 ###appeal-newsletter
 ###archive-item-top-newsletter
 ###art-subscribe-unit-outer
@@ -6719,6 +6721,7 @@ _vpcookieconsent/
 ###newsletter-rail
 ###newsletter-reg
 ###newsletter-roadblock
+###newsletter-row
 ###newsletter-shortcode
 ###newsletter-side-widget
 ###newsletter-sidebar
@@ -12019,6 +12022,8 @@ m###teaser-newsletter
 ##.app-share-trigger
 ##.app_btn_share
 ##.app_share_icons
+##.app_share_mod
+##.app_share_nl
 ##.append_social_share
 ##.apps-social
 ##.aps-social-icon-wrapper
@@ -13019,6 +13024,7 @@ m###teaser-newsletter
 ##.color-stumbleupon
 ##.colorShareBtn
 ##.column-social
+##.com-footer-m-social-list
 ##.comedy_share
 ##.comedy_share_title
 ##.comment-share__buttons
@@ -14399,6 +14405,7 @@ m###teaser-newsletter
 ##.footer__soc_fb
 ##.footer__soc_li
 ##.footer__social
+##.footer__social-block
 ##.footer__social-channels
 ##.footer__social-icon
 ##.footer__social-items
@@ -15598,6 +15605,7 @@ m###teaser-newsletter
 ##.ione-widget-youtube_playlist
 ##.ioshare
 ##.ip-follow-us-popup
+##.ipsShareButton
 ##.ipsfocus_sFacebook
 ##.ipsfocus_sGoogle
 ##.ipsfocus_sTwitter
@@ -18118,6 +18126,7 @@ m###teaser-newsletter
 ##.share_to_box
 ##.share_toggle
 ##.share_toi
+##.share_tool
 ##.share_tool_24
 ##.share_tool_container
 ##.share_toolbox
@@ -20751,6 +20760,7 @@ m###teaser-newsletter
 ##.trb_sharelines
 ##.trb_socialize
 ##.trd-nav-social-container
+##.trending-bar__social-link
 ##.trending_head_share
 ##.trigger-share-list
 ##.triggerShare
@@ -21999,6 +22009,7 @@ m###teaser-newsletter
 ##a[uk-toggle="target: #share-social"]
 ##amp-social-share
 ##button[aria-label="Toggle social share buttons"]
+##button[data-share-url]
 ##button[data-title="Share on Facebook"]
 ##button[data-title="Share"]
 ##button[onclick^="Javascript:void(window.open('http://twitter.com/share?text="]
@@ -22264,6 +22275,7 @@ m###teaser-newsletter
 ###CCC_Cookies_wrapper
 ###CCM_popup
 ###CCPA-notification
+###CCPABanner
 ###CCPA_opt_out
 ###CCompliance
 ###CCookie
@@ -22531,6 +22543,7 @@ m###teaser-newsletter
 ###EPDirectiveInfo
 ###EP_cookiesPopup
 ###EUCOOK
+###EUComplianceNotification
 ###EUCookie
 ###EUCookie-Banner
 ###EUCookieBar
@@ -23248,6 +23261,7 @@ m###teaser-newsletter
 ###bettergdpr_cookie_banner
 ###bf-cookie-notice
 ###bfg-cookie-policy-banner
+###bg_cookie
 ###bg_cookies
 ###bgee_privacy_banner
 ###bgon-cookie-bar
@@ -23420,6 +23434,7 @@ m###teaser-newsletter
 ###callControll
 ###cap_PoliticaCookiesDiv
 ###capa-cookie
+###capa-cookies
 ###capaAceptaCookies
 ###capaAvisoCookie
 ###capaAvisoCookies
@@ -28510,6 +28525,7 @@ m###teaser-newsletter
 ###popup-coockie
 ###popup-cookie
 ###popup-cookie-block
+###popup-cookie-cnil
 ###popup-cookie-container
 ###popup-cookie-contenedor
 ###popup-cookie-policy
@@ -29079,6 +29095,7 @@ m###teaser-newsletter
 ###tbweb_cookies_footer
 ###tc-consent
 ###tc-privacy-wrapper
+###tc_cnil_popup
 ###tc_priv_CustomOverlay
 ###tc_privacy
 ###tc_privacy_bottom_fix
@@ -29767,6 +29784,7 @@ m###teaser-newsletter
 ##.Navbar-cookieCompliance
 ##.Navbar-toastContainer
 ##.NotificationCookies
+##.NovemediaCookiePolicyBox
 ##.O-CookieLaw
 ##.ObsCnilWarning
 ##.PPolicyDisclaimer
@@ -30855,6 +30873,7 @@ m###teaser-newsletter
 ##.cnil-banner-v2
 ##.cnil-block
 ##.cnil-cookie
+##.cnil-cookie-alert
 ##.cnil-cookies
 ##.cnil-message
 ##.cnil-panel
@@ -32520,6 +32539,7 @@ m###teaser-newsletter
 ##.cookiecheck
 ##.cookiecheck_banner-wrapper
 ##.cookieclose
+##.cookiecnil
 ##.cookieconsent
 ##.cookieconsent-backdrop
 ##.cookieconsent-banner
@@ -33069,10 +33089,12 @@ m###teaser-newsletter
 ##.cookies_consent
 ##.cookies_consent-show
 ##.cookies_consent_banner
+##.cookies_cont
 ##.cookies_container
 ##.cookies_content
 ##.cookies_cookie
 ##.cookies_ctas
+##.cookies_cuerpo
 ##.cookies_disclaimer
 ##.cookies_div
 ##.cookies_eu
@@ -33379,6 +33401,7 @@ m###teaser-newsletter
 ##.div-cookie
 ##.divAllowCookies
 ##.divContenitoreCookies
+##.divCookie
 ##.divCookieBanner
 ##.divCookieBar
 ##.divCookieDisclaimer
@@ -35289,6 +35312,7 @@ m###teaser-newsletter
 ##.ou-cookies-bar
 ##.outer-privacy-top-navigationBar
 ##.outerCookieBar
+##.ovcookie
 ##.overlay--cookie
 ##.overlay-cookie
 ##.overlay-cookie-block
@@ -35387,6 +35411,7 @@ m###teaser-newsletter
 ##.pi-cookie-message
 ##.pi-cookie-notice
 ##.pie_cookie
+##.pied_cnil
 ##.piwik-notice-container
 ##.pix-cookie-banner
 ##.pj-ui-cookie-banner
@@ -36847,6 +36872,8 @@ m###teaser-newsletter
 ##ytd-consent-bump-renderer
 ##ytd-mealbar-promo-renderer
 ##ytg-notification-footer
+! tarteaucitron
+###tarteaucitronRoot.tarteaucitronBeforeVisible
 ! cabinetdelacourse.com/lemoel-immobilier.com/vconsult-immobilier.com
 ##.theme1._1oph9f9._3hmsj._1xb7gam
 ! cookie-law-info-bar (not made generic to avoid overlays/disabled scrollbars)
@@ -38046,6 +38073,7 @@ m###teaser-newsletter
 ||conteudo.jsuol.com.br^*/ucopy.js$script,domain=uol.com.br
 ||cultofmac.com/e2ma.js
 ||d.yimg.com/ds/badge2.js
+||daftsex.com/js/app.$script
 ||dailymaverick.co.za/images/iabsa.png
 ||data.indianexpress.com/iframes/covid-19.html
 ||designtaxi.com/css/remodal.css
@@ -42252,7 +42280,7 @@ ziare.com##.modal__wp
 tokmanni.fi##.newsletter-modal
 aamuposti.fi,heinavedenlehti.fi,helsinginuutiset.fi,iisalmensanomat.fi,ita-savo.fi,itahame.fi,joutsenolehti.fi,juvanlehti.fi,kaakonkulma.fi,kangasniemenlehti.fi,keski-hame.fi,keski-uusimaa.fi,keskilaakso.fi,koillis-savo.fi,kouvolansanomat.fi,ksml.fi,kymensanomat.fi,lansi-savo.fi,lansi-uusimaa.fi,lansisaimaa.fi,lansivayla.fi,loviisansanomat.fi,luumaenlehti.fi,mantsalanuutiset.fi,mattijaliisa.fi,miilu.fi,pielavesi-keitele.fi,pitajalainen.fi,pitajanuutiset.fi,puruvesi.net,savonsanomat.fi,seinajoensanomat.fi,sipoonsanomat.fi,sisa-savolehti.fi,soisalonseutu.fi,tamperelainen.fi,uusimaa.fi,uutis-jousi.fi,vantaansanomat.fi,viikkosavo.fi##.note--promoted
 sindonews.com##.notif-box
-masrawy.com##.notification
+elconsolto.com,masrawy.com##.notification
 clarin.com##.notification-popup
 sport.ro##.notification-wrapper
 fanpage.it##.notifications-badge
@@ -43013,7 +43041,7 @@ buffalonews.com,consumerreports.org,marketwatch.com,oxforddictionaries.com,zdnet
 thepigskindoctors.com##.newsmail
 audioholics.com##.newssidebar
 themeditelegraph.com##.nl-article-box
-journaldesfemmes.fr,linternaute.com##.nl-box
+ccm.net,journaldesfemmes.fr,linternaute.com##.nl-box
 everydayhealth.com##.nl-container
 health.com##.nl-healthy
 babble.com##.nl-interstitial-box
@@ -43253,6 +43281,7 @@ stereogum.com##.subscribe-article
 digg.com##.subscribe-bar
 breakingnews.ie##.subscribe-box-articles
 albawaba.com,rt.com,sport360.com##.subscribe-btn
+howtogeek.com##.subscribe-button
 reviewgeek.com##.subscribe-button-direct-link
 middleeastmonitor.com##.subscribe-container
 todayonline.com##.subscribe-content
@@ -43419,6 +43448,7 @@ hothardware.com###Follow
 artistdirect.com###FollowBut
 zylab.com###Footercolumn3
 nytimes.com###Growl_optly
+c-sharpcorner.com###IconContainer
 digitalfirstmedia.com###LiIcon
 schuh.co.uk###Like
 pcb.cc###LnkBr2
@@ -44138,6 +44168,7 @@ kbs.co.kr##.func_menu
 fundable.com##.fundable-social-box
 upi.com##.g
 dailyzone.com,newseveryday.com##.g-b
+gametyrant.com##.gametyrantSocial
 gamersbook.com##.gb-follow-tools
 thethaiger.com##.getMore
 ghacks.net##.ghacks_share_widget
@@ -45085,8 +45116,9 @@ complex.com###eucn
 abetterrouteplanner.com###eula-div
 tartybikes.co.uk###eureg
 nickfinder.com###europe_cookies_siht
-eplan.at,eplan.ch,eplan.co.uk,eplan.de,eplan.es,eplan.hr###fancybox-overlay
-eplan.at,eplan.ch,eplan.co.uk,eplan.de,eplan.es,eplan.hr###fancybox-wrap
+brandvia.com###expander-header-teaser
+eplan.at,eplan.ch,eplan.co.uk,eplan.de,eplan.es,eplan.hr,optisweb.com###fancybox-overlay
+eplan.at,eplan.ch,eplan.co.uk,eplan.de,eplan.es,eplan.hr,optisweb.com###fancybox-wrap
 backpackerguide.nz###fbGroupMini
 cricbuzz.com###feedback-bar
 toffeeweb.com###fixedFooter
@@ -45242,6 +45274,7 @@ islamicfinder.org###privacy-modal
 govt.nz###privacy-notification
 telegraph.co.uk###privacy-settings-prompt
 dolarhoje.com###privacy-warning
+wordchumscheat.com,worddominationcheat.com###privacyUpdate
 cbronline.com###privacy_content
 online2pdf.com###privacy_msg
 dailyjigsawpuzzles.net###privacy_notification
@@ -45292,7 +45325,7 @@ fixedbyvonnie.com###tfade
 fixedbyvonnie.com###tlight
 gotokyo.org###tmp_local_bar
 guess.eu###toast
-kindredgroup.com,nelly.com,nlyman.com,telecomtv.com###toast-container
+bubblemaths.com,kindredgroup.com,nelly.com,nlyman.com,telecomtv.com###toast-container
 rapidssl.com,thawte.com###toolbar
 insights.nzherald.co.nz###top-banner-in-content
 artuk.org###top-notice
@@ -45556,7 +45589,7 @@ agenda.brussels,visit.brussels##.confirm
 acast.com,builds.gg,checkyourmath.com,codementor.io,grips-automation.com##.consent
 fancentro.com##.consent-message
 justwatch.com##.consent-notification
-htmlgames.com,printscreenshot.com##.consent-overlay
+2pdfconverter.com,changefaces.com,chartle.com,diagrameditor.com,fakechatapp.com,files2zip.com,glitterphoto.net,htmlgames.com,mapimage.com,mindmapeditor.com,phideo.com,photocollage.com,photoeditor.com,photoenlarger.com,photofilters.com,photoresizer.com,postermaker.com,printscreenshot.com,qrapp.com,stripbackground.com,toonytool.com,wordclouds.com,youtubetrimmer.com##.consent-overlay
 sportskeeda.com##.consent-pop-up
 themaven.net##.consent-ui
 xing.com##.consent_wrapper
@@ -46593,6 +46626,7 @@ boingtv.fr,coreight.com,editions-hatier.fr,igen.fr,macg.co,novaplanet.com###slid
 cnews.fr###smartbanner
 dealabs.com###softMessages-list
 groupon.fr###spotlight
+lamanchelibre.fr​###sticky_footer_article
 normaeditorial.com###styleDown
 ethias.be###tab_ck
 nwglobalvending.fr###toast
@@ -47798,6 +47832,7 @@ rtl.fr##.ld
 tameteo.com##.liCompartir
 lachainemeteo.com##.lien_soc
 viedemerde.fr##.likebox
+clubic.com##.list-footer-rs
 terresinovia.fr##.lksociaux
 lesnumeriques.com##.ln__m-shr
 marmiton.org##.m_content_recette_share
@@ -47817,7 +47852,7 @@ quebeccoupongratuit.com##.share-site
 rtl.fr##.shared-logo
 fracademic.com##.smm
 lepoint.fr##.snlinks
-20minutes.fr,africa1.com,buyindz.com,courrierinternational.com,europages.fr,europe1.fr,formulatv.com,gamergen.com,gmx.fr,grostracteurspassion.com,jeu.video,journaldugeek.com,korben.info,ladepeche.fr,leboncoin.fr,ledevoir.com,lemondeinformatique.fr,leseclaireuses.com,lorientlejour.com,medisite.fr,methodelafayfemme.fr,misk.tn,monacomatin.mc,petitfute.com,radioorient.com,renaultsport.com,rustica.fr,sudouest.fr##.social
+20minutes.fr,africa1.com,boursier.com,buyindz.com,courrierinternational.com,europages.fr,europe1.fr,formulatv.com,gamergen.com,gmx.fr,grostracteurspassion.com,jeu.video,journaldugeek.com,korben.info,ladepeche.fr,leboncoin.fr,ledevoir.com,lemondeinformatique.fr,leseclaireuses.com,lorientlejour.com,medisite.fr,methodelafayfemme.fr,misk.tn,monacomatin.mc,petitfute.com,radioorient.com,renaultsport.com,rustica.fr,sudouest.fr##.social
 ouest-france.fr##.socials
 fr.msn.com##.stbp-tbl
 telerama.fr##.t12-user-resoc
@@ -47843,6 +47878,7 @@ tunisie-radio.com###block-block-20
 tunisiatv.tn,watania1.tn###block-block-5
 qnbalahli.com###follow
 alforatnews.com###socialnetwork
+elmogaz.com##.SocialNetworks
 mc-doualiya.com##.actions
 androydi.com##.author-tw
 dzair-tube.online##.dzicon-bar
@@ -47859,11 +47895,12 @@ wesalhaq.tv##.ins
 zarfilm.space##.instabtn
 alfalstiniah.tv##.itemAsideInfo
 khutabaa.com##.kh_social_info
+elconsolto.com##.newsFeed
 hannibaltv.com.tn##.rs_bas
 maannews.net##.sc
 aljazeera.net,autoline-arabic.com,maannews.net##.share
 waraa-elahdath.com##.smedia
-akhbaralsabah.com,al-ain.com,al-akhbar.com,algerietelecom.dz,alkessa.com,almirbad.com,aqsatv.ps,ceroms.com,dzair-tube.com,egyrep.com,europages.ma,fakartany.com,felesteen.ps,fxnewstoday.ae,hamas.ps,hannibaltv.com.tn,midad.com,nessma.tv,raseef22.com,rotana.net,sbc.sa,tunisna.tv##.social
+akhbaralsabah.com,al-ain.com,al-akhbar.com,algerietelecom.dz,alkessa.com,almirbad.com,aqsatv.ps,ceroms.com,dzair-tube.com,egyrep.com,elconsolto.com,europages.ma,fakartany.com,felesteen.ps,fxnewstoday.ae,hamas.ps,hannibaltv.com.tn,midad.com,nessma.tv,raseef22.com,rotana.net,sbc.sa,tunisna.tv##.social
 midad.com##.social-app
 alahlionline.com##.social-network
 rt.com##.socials
@@ -48542,6 +48579,7 @@ netzwelt.de##.subscribeboard
 netzpolitik.org##.tnp-subscription
 pfister.ch##[class^="style__NewsletterPopupComponent"]
 ! French
+lamanchelibre.fr###articleFormNL
 hartziv.org###cr_embeded_form
 actu-environnement.com###footer_newsletter_content
 rennes-infos-autrement.fr###mailpoet_form-3
@@ -48561,6 +48599,7 @@ logitheque.com##.mailpoet_form
 fourchette-et-bikini.fr##.newsBloc
 cuisineetvinsdefrance.com,francetvinfo.fr,leparisien.fr,phonandroid.com,silicon.fr##.newsletter
 challenges.fr,lepoint.fr##.newsletter-form
+commentcamarche.net​##.nl-box
 capital.fr##.pmcInsert
 korben.info##.post-subscribe
 lopinion.fr##.quick-nl-form
@@ -50179,6 +50218,7 @@ multibonus.ru##.gAHLXB
 skoda-avto.ru##.gHUUHu
 ozon.ru##.i4
 kioskbt.ru##.info-massage
+stgau.ru##.inform
 friday.ru##.information
 aerobilet.ru##.is-fixed-box
 wwf.ru##.is-header-message-dock

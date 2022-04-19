@@ -1,8 +1,8 @@
-! Checksum: VM3st4hq0KxtSn8q1r1vCw
+! Checksum: 9iHRNTyNERLbjr4Sz3nA7w
 ! Title: AdGuard Annoyances filter (Optimized)
 ! Description: Blocks irritating elements on web pages including cookie notices, third-party widgets and in-page pop-ups.
-! Version: 2.1.16.15
-! TimeUpdated: 2022-04-18T15:30:43+00:00
+! Version: 2.1.16.20
+! TimeUpdated: 2022-04-18T22:30:33+00:00
 ! Expires: 4 days (update frequency)
 #%#var AG_onLoad=function(func){if(document.readyState==="complete"||document.readyState==="interactive")func();else if(document.addEventListener)document.addEventListener("DOMContentLoaded",func);else if(document.attachEvent)document.attachEvent("DOMContentLoaded",func)};
 #%#var AG_removeElementById = function(id) { var element = document.getElementById(id); if (element && element.parentNode) { element.parentNode.removeChild(element); }};
@@ -682,6 +682,7 @@ disk.yandex.az,disk.yandex.by,disk.yandex.co.il,disk.yandex.com,disk.yandex.com.
 tv.yandex.ru,tv.yandex.ua,tv.yandex.by,tv.yandex.kz##.teaser_hd
 tv.yandex.ru,tv.yandex.ua,tv.yandex.by,tv.yandex.kz##.recommended-ott
 mail.ru#?#.pulse-lenta div[class*="_"] > div > div[class*=" "]:has(> div[class] > a[href^="https://pulse.mail.ru/"][target="_blank"] > div[class] span[class]:contains(Промо))
+mail.ru##.amb_more-pulse
 go.mail.ru###goTopBn
 ok.ru###hook_Block_MallProductsPortletMain
 my.mail.ru##.b-column-right__block-sale
@@ -9150,6 +9151,7 @@ tagline.ru##.b-block--dashed
 ##amp-app-banner
 ###smartbanner.ios
 ###smartbanner.windows
+biquwo.com###content > div[style="padding:15px;"]
 benesse.jp##.bnr_flow-under-h2
 arteryex.biz###footer-widgets
 arteryex.biz##.elementor-popup-modal
@@ -14030,6 +14032,7 @@ turkuazgazetesi.net,yenialanya.com,mansetaydin.com,seskocaeli.com,kocaelibarisga
 ##.widget_blog_subscription
 ~copays.org,~nothing.tech,~mega-debrid.eu,~curvegames.com,~news.un.org,~norwichzen.org.uk,~dereferer.me###mc_embed_signup
 accordancebible.com#?#.flex-grow > div.bg-primary:has(> div.container div.newsletter-signup)
+try-it.jp##div[class^="register"]
 earth.com##div[class^="NewsSubscribeLg_"]
 theverge.com##.l-sidebar-fixed > div[data-analytics-placement]
 afyonhaber.com##.googlenewsm-btn
@@ -17296,6 +17299,8 @@ blog.livedoor.jp,duellinks.doorblog.jp,dragonquestwalk.blog.jp##.rss
 blog.livedoor.jp###main > div.column-inner > div.column-inner-2 > div[style="height:440px; overflow: auto; text-align:left; "]
 blog.livedoor.jp##.RSS04 + div[style^="width:720px;height:160px"]
 [$path=/\/(?:itsoku|news_aru)/]blog.livedoor.jp##.headline
+||static.zdassets.com/web_widget
+octamarkets.net##.support-cntrl
 ||apkmodhub.in/wp-content/plugins/chaty-pro/js/cht-front-script.min.js
 anacap.doorblog.jp##.blogroll-list-wrap
 anacap.doorblog.jp##.column-inner-2 > center > table[border="1"]:first-child
@@ -17624,7 +17629,6 @@ haberler.com#%#//scriptlet("abort-current-inline-script", "document.write", "wid
 apollo.pl##.thulium-chat-wrapper
 bosscast.net#?#body[marginwidth="0"][marginheight="0"] > div:first-child:only-of-type:not([class]):not([id]):has(> font[color="green"] > span:contains(| Chat Rules |))
 ||sumo.com^$third-party
-||rentalcars.com/partners/
 ||widgets.sprinkletxt.com^
 ||medya.ilan.gov.tr/widgets^$third-party
 ||carambo.la^$third-party
@@ -17735,6 +17739,7 @@ ukr.net###sinoptik_container
 ||gismeteo.*/getInformer/$third-party
 ||meteoprog.ua/*/weather/informer/$third-party
 subbota.ua##aside.sidebar > div[id^="custom_html-"]
+||aqours.today/img01/MP3/ZL.JPG
 proagro.com.ua#$#.td-outer-container { background-image: none !important; cursor: default !important; }
 proagro.com.ua#%#//scriptlet("abort-on-property-read", "wpsite_clickable_data")
 focus.ua##.js-cat-required
