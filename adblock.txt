@@ -1,12 +1,12 @@
 [Adblock Plus 2.0]
-! Checksum: TMm85cN3aJQdaT0kKABnNA
+! Checksum: dBSzUFzzpv+4IdG3lBKf1w
 ! Title: AdRules (For AdBlock)
 ! Homepage: https://github.com/Cats-Team/AdRules
 ! Powerd by CatsTeam
 ! Expires: 8 Hours
 ! Description: 该规则合并自EasyList、EasyListChina、AdGuard Chinese Filter、EdentwCustom、ClearUrl、乘风规则等，并补充了一些规则
-! Version: 2022-04-19 08:47:18（北京时间） 
-! Total count: 90586
+! Version: 2022-04-19 11:14:53（北京时间） 
+! Total count: 90608
 ###ADCENTER
 ###ADSLOT_1
 ###ADTOP
@@ -1168,6 +1168,7 @@
 ###extraAd
 ###featuread
 ###first-adframe
+###first-ads
 ###fixed-bottom-modal[style^="right:"][style$="px; display: block;"]
 ###fixedAd
 ###fixedAdContainer
@@ -2161,6 +2162,7 @@
 ##.ad-d
 ##.ad-description
 ##.ad-desktop
+##.ad-desktop-in-content
 ##.ad-desktop-only
 ##.ad-detail
 ##.ad-disclaimer
@@ -4949,6 +4951,7 @@
 ##.opt > a[target="_blank"] > img[src*=".360buyimg.com"]
 ##.optidigital-ad-center
 ##.orbui-post
+##.outBrainWrapper
 ##.outbrain-ad-units
 ##.outbrain-widget
 ##.outer-ad-container
@@ -5286,6 +5289,7 @@
 ##.serversidenativead
 ##.sgAd
 ##.sh-section-ad
+##.sharetable
 ##.sheknows-infuse-ad
 ##.show-desk-ad
 ##.showAd
@@ -5480,6 +5484,7 @@
 ##.stickyRailAd
 ##.sticky_ad_desktop_footer_center
 ##.stickyad
+##.stickyads
 ##.stky-ad-footer
 ##.store-ads
 ##.story-ad
@@ -5733,6 +5738,7 @@
 ##.vertbars
 ##.vertical-ad
 ##.vertical-ads
+##.vertical-trending-ads
 ##.verticalAd
 ##.verticalAdText
 ##.vertical_ad
@@ -5971,6 +5977,9 @@
 ##FBS-AD
 ##LEADERBOARD-AD
 ##[alt=' 腐乐漫 '],[alt=' 西瓜社 ']
+##[alt='52bl']
+##[alt='ACG里番']
+##[alt='西瓜社']
 ##[class*="__adspot-title-container"]
 ##[class*="__adv-block"]
 ##[class*="isboostSideSlideShow"]
@@ -6032,6 +6041,7 @@
 ##[href='https://www.100cup.com/'],[href^='https://beizidalu.com']
 ##[href='https://www.ivyelite.net/school-cooperation/']
 ##[href='https://www.kissyvape.com/']
+##[href='https://www.riqingxs.com/']
 ##[href='https://xiaoya358.com']
 ##[href='javascript:GoDb58649();']
 ##[href='javascript:GoTp();']
@@ -6925,7 +6935,7 @@ $image,third-party,domain=258zw.com
 $image,third-party,domain=lady1.top
 $ping,third-party
 $popup,third-party,domain=1337x.buzz|720pstream.tv|9anime.id​|adblockstreamtape.art|adblockstreamtape.fr|adblockstreamtape.site|animeworld.biz|apl100.me|apl102.me|apl96.me|assia2.com|assia4.com​|cloudvideo.tv|databasegdriveplayer.xyz|diampokusy.com|dir-proxy.net|dirproxy.info|dood.ws|dulu.to|embedsb.com|embedsito.com|fembed-hd.com|file-upload.com|freeplayervideo.com|geoip.redirect-ads.com|gogoanime.lol|haes.tech|highstream.tv|hubfiles.ws|hydrax.xyz|katfile.com|kissanime.lol|kokostream.net|livesports4u.xyz|livetv498.me|loader.to|mangovideo.pw|mixdrop.bz|mixdrop.ch|mixdrop.club|mixdrop.co|mixdrop.sx|mixdrop.to|mixdrops.xyz|myflixer.to|mystream.to|oneproxy.org|piracyproxy.biz|piraproxy.info|pixroute.com|play.hydracdn.network|playtube.ws|pouvideo.cc|projectfreetv2.com|proxyer.org|raes.tech|sbfast.com|sbplay2.com|sbplay2.xyz|scloud.online|stape.fun|stape.me|streamas.cloud|streambee.to|streamlare.com|streamon.to|streamta.pe|streamtape.com|streamtapeadblock.art|streamtapse.com|streamz.ws|streamzz.to|strtape.cloud|strtpe.link|supervideo.tv|suzihaza.com|theproxy.ws|trafficdepot.xyz|uploadfiles.pw|uprot.net|uproxy.best|uproxy.co|upstream.to|upvideo.to|userload.co|uwatchfree.fo|vidcloud9.com|videovard.sx|vidlox.me|viewsb.com|vivo.sx|voe.sx|vupload.com|watchsb.com|wiztube.xyz|youtubedownloader.sh|ytmp3.sh
-$popup,third-party,domain=76fengyun.com|88files.net|avsdown.com|downdv.com|downdvs.com|downhhh.com|imedown.info|jandown.com|mnks.jxedt.com|mimima.com|rmdown.com|soyunpan.com|youtubeto.com
+$popup,third-party,domain=76fengyun.com|88files.net|avsdown.com|downdv.com|downdvs.com|downhhh.com|imedown.info|jandown.com|mimima.com|mnks.jxedt.com|rmdown.com|soyunpan.com|youtubeto.com
 $popup,third-party,domain=cloudvideo.tv|highstream.tv|loader.to|mystream.to|play.hydracdn.network|playtube.ws|streamtape.com|strtape.cloud|supervideo.tv|upstream.to|vidcloud9.com|vidlox.me|vivo.sx|voe.sx|vupload.com,badfilter
 $popup,third-party,domain=dood.ws,badfilter
 $popup,third-party,domain=fembed-hd.com,badfilter
@@ -37963,6 +37973,7 @@ pandora.tv##.ad_big
 pansci.asia##body > section.hide-on-print.mt-5
 pansci.asia#$##firstSingle { padding: 0 !important; }
 pansci.asia#@#.ad-container
+pao.gr###section--sponsors
 paopaoche.net##.down_btn2.green
 papalah.com##+js(abort-on-property-read, adBlockDetected)
 papalah.com#%#//scriptlet("abort-on-property-read", "adBlockDetected")
@@ -38658,6 +38669,7 @@ pornfaia.com##.video-bnrz
 pornflixhd.com##+js(set-constant, dtGonza.playeradstime, -1)
 porngals4.com##.affl
 porngames.club,sexgames.xxx##+js(set-constant, starPop, 1)
+porngames.games##.bnr-side
 porngem.com##.a-d-v
 porngo.com##+js(abort-on-property-read, detectAdb)
 porngo.com##.video-side
@@ -44186,6 +44198,7 @@ yeeyi.com##.sd.pph > .mbm.hm
 yellowfaucet.ovh##+js(abort-on-property-read, _cpp)
 yelp.at,yelp.be,yelp.ca,yelp.ch,yelp.cl,yelp.co.jp,yelp.co.nz,yelp.co.uk,yelp.com,yelp.com.ar,yelp.com.au,yelp.com.br,yelp.com.hk,yelp.com.mx,yelp.com.ph,yelp.com.sg,yelp.com.tr,yelp.cz,yelp.de,yelp.dk,yelp.es,yelp.fi,yelp.fr,yelp.ie,yelp.it,yelp.my,yelp.nl,yelp.no,yelp.pl,yelp.pt,yelp.se##.ABP
 yelp.at,yelp.be,yelp.ca,yelp.ch,yelp.cl,yelp.co.jp,yelp.co.nz,yelp.co.uk,yelp.com,yelp.com.ar,yelp.com.au,yelp.com.br,yelp.com.hk,yelp.com.mx,yelp.com.ph,yelp.com.sg,yelp.com.tr,yelp.cz,yelp.de,yelp.dk,yelp.es,yelp.fi,yelp.fr,yelp.ie,yelp.it,yelp.my,yelp.nl,yelp.no,yelp.pl,yelp.pt,yelp.se#?#div[class^=" container_"]:-abp-has(a[href^="/adredir?"])
+yemancomic.com##div > center > strong > button[onclick^="window.location.href"]
 yepi.com##+js(set-constant, evitca_kcolbda, false)
 yepi.com#@##PreRollAd
 yeptube.com##.drt-spot-box
@@ -45660,6 +45673,7 @@ zznews.cn##.ad:not([style])
 ||2345cdn.net/js/index/activity/
 ||234fang.com/index.php?/ajax/get_adv/
 ||235123.net^$third-party
+||23532451.com^
 ||239300.net/template/*_mh_gg
 ||23aitt.com/zz/
 ||23dsf.top^
@@ -51685,6 +51699,7 @@ zznews.cn##.ad:not([style])
 ||bakbb.com^
 ||bakcgnxikkxw.com^
 ||bakercommunications.actonservice.com^
+||baking.ren^
 ||bakteso.ru^
 ||balancemailbox.com^
 ||baleiambwee.com^
@@ -62119,6 +62134,7 @@ zznews.cn##.ad:not([style])
 ||govtoutiao.cn^
 ||govxian.cn^
 ||govxinjiang.cn^
+||govxinjing.cn^
 ||govyunfu.cn^
 ||govzhejiang.cn^
 ||gowatchit.com/analytics.js
@@ -65682,6 +65698,7 @@ zznews.cn##.ad:not([style])
 ||jg0c.sfr.fr^
 ||jg1668.com^$third-party
 ||jg3i17759nd0nhh9q53zpy.com^
+||jg88.wang^
 ||jgchq.com^
 ||jgcq3003.com^
 ||jggqgavrqkudu.com^
@@ -74425,7 +74442,9 @@ zznews.cn##.ad:not([style])
 ||porn87.com/static/stream_ads/
 ||porncomix.info/images/an-temp/$stylesheet,script
 ||porndoe.com/views/footer/banners.html
+||porngames.games/banners/
 ||porngames.games/js/bioep.custom.js
+||porngames.games/sbbi/
 ||porngraph.com^$third-party
 ||pornhat.*/static/js/300x250.
 ||pornhits.com/magic/
@@ -76969,6 +76988,7 @@ zznews.cn##.ad:not([style])
 ||s28xvp.com^
 ||s2blosh.com^
 ||s2d6.com^
+||s2pro-ncode.com^
 ||s2tu.com/images/*.gif
 ||s3.amazonaws.com/dmas-public/sitemaji/vast.xml$domain=dailymotion.com
 ||s3.amazonaws.com/downloads.mailchimp.com/$script,domain=confection.io
@@ -84549,6 +84569,7 @@ zznews.cn##.ad:not([style])
 ||triver.jp^$third-party
 ||trjs.mediafin.be/loader/trmfn-loader.js
 ||trk-consulatu.com^
+||trk-imps.com^
 ||trk.absuite.com.br^
 ||trk.adbutter.net^
 ||trk.advancedmanufacturingminneapolis.com^
@@ -88677,6 +88698,7 @@ zznews.cn##.ad:not([style])
 ||xszysc.com^$third-party
 ||xt.persosa.com^
 ||xt2d.cn^
+||xtb.ink^
 ||xtdzkj.cn^
 ||xtgreat.com^$third-party
 ||xthizbdwgebzqf.com^
