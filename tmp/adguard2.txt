@@ -1,8 +1,8 @@
-! Checksum: c46609r4oJ3SMzfu926uvQ
+! Checksum: e0CqjDrCgbxIIWjWHwrSTg
 ! Title: AdGuard URL Tracking filter (Optimized)
 ! Description: Filter that enhances privacy by removing tracking parameters from URLs.
-! Version: 2.0.2.45
-! TimeUpdated: 2022-04-19T17:02:16+00:00
+! Version: 2.0.2.48
+! TimeUpdated: 2022-04-20T13:02:26+00:00
 ! Expires: 4 days (update frequency)
 $removeparam=adfrom
 $removeparam=nx_source
@@ -22,6 +22,9 @@ $removeparam=fb_comment_id
 $removeparam=fb_ref
 $removeparam=fb_source
 $removeparam=fbclid
+$removeparam=_clde
+$removeparam=_cldee
+$removeparam=wt_mc
 $removeparam=oprtrack
 $removeparam=xtor
 $removeparam=msclkid
@@ -96,6 +99,7 @@ $removeparam=oly_enc_id
 $removeparam=ebisAdID
 $removeparam=irgwc
 $removeparam=fbclid
+||rapidgator.net^$removeparam=Referer
 ||atlassian.net^$removeparam=atlOrigin
 ||so-net.ne.jp^$removeparam=SmRcid
 ||ameblo.jp^$removeparam=frm_id
@@ -521,9 +525,9 @@ $removeparam=dclid
 ||search.bilibili.com^$removeparam=from_source
 ||weibo.*^$removeparam=weibo_id
 ||weibo.*^$removeparam=dt_dapp
-||www.iqiyi.com^$removeparam=vfrm
-||www.iqiyi.com^$removeparam=vfrmblk
-||www.iqiyi.com^$removeparam=vfrmrst
+||iqiyi.com^$removeparam=vfrm
+||iqiyi.com^$removeparam=vfrmblk
+||iqiyi.com^$removeparam=vfrmrst
 ||sohu.com^$removeparam=_f
 ||sohu.com^$removeparam=_trans_
 ||sohu.com^$removeparam=scm
