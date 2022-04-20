@@ -3,7 +3,7 @@
 ! Description: Filter composed of several other filters (AdGuard Base filter, Social media filter, Tracking Protection filter, Mobile ads filter, EasyList, EasyPrivacy, etc) and simplified specifically to be better compatible with DNS-level ad blocking.
 ! Homepage: https://github.com/AdguardTeam/AdguardSDNSFilter
 ! License: https://github.com/AdguardTeam/AdguardSDNSFilter/blob/master/LICENSE
-! Last modified: 2022-04-20T00:03:02.281Z
+! Last modified: 2022-04-20T08:06:27.624Z
 !
 ! Compiled by @adguard/hostlist-compiler v1.0.12
 !
@@ -3203,6 +3203,7 @@ www.llllllllllll.net^
 ! Bad: ||legitwebsite.com^$third-party (should be in adservers.txt)
 !
 !
+||rontent.pomvideo.cc^
 ||ads.thetimes.co.uk^
 ||am.titsx.com^
 ||d119hs7863lat.cloudfront.net^
@@ -9807,6 +9808,7 @@ vkcdnservice.appspot.com^
 ||goajuzey.com^
 ||goalebim.com^
 ||goaleedeary.com^
+||goaserv.com^
 ||goasrv.com^
 ||goatassociateraces.com^
 ||gobiidinshore.com^
@@ -22553,6 +22555,8 @@ vkcdnservice.appspot.com^
 !||i.snssdk.com/log/*
 !||i.snssdk.com/slardar/sdk.js
 !
+||sitealyse.de^
+||simplewebanalysis.com^
 ||wait.re^
 ||tn.flashb.id^
 ||ac.prism-world.jp.net^
@@ -26920,6 +26924,7 @@ vkcdnservice.appspot.com^
 ! https://github.com/AdguardTeam/AdGuardSDNSFilter/issues/344
 ! Disabled in DNS filter
 !
+||ymprove.gmx.net^
 ||events.release.narrativ.com^
 ||delog.afreecatv.com^
 ||ab.blogs.es^
@@ -31502,7 +31507,6 @@ charlestownwyllie.oaklawnnonantum.com^
 ||redretarget.com^
 ||reshin.de^
 ||scw.systems^
-||sitealyse.de^
 ||stats.de^
 ||stetic.com^
 ||toplist100.org^
@@ -39510,6 +39514,7 @@ charlestownwyllie.oaklawnnonantum.com^
 ||netdjs.net^
 ||govlihu.cn^
 ||xdw9.top^
+||daisycontroversy.com^
 ||000123456789.site^
 ||0024aaaa.com^
 ||008844.cc^
@@ -42602,6 +42607,7 @@ charlestownwyllie.oaklawnnonantum.com^
 ||wzjs1.oss-accelerate.aliyuncs.com^
 ||mals.shop^
 ||2613.store^
+||xiaomianao666.top^
 ||000123456789.online^
 ||000123456789.space^
 ||01tn.cn^
@@ -46998,6 +47004,8 @@ charlestownwyllie.oaklawnnonantum.com^
 ! Source name: Exception rules
 ! Source: Filters/exceptions.txt
 !
+! https://github.com/AdguardTeam/AdGuardSDNSFilter/issues/937
+@@||oa.tr.line.me^|
 ! https://github.com/AdguardTeam/AdguardFilters/issues/115247
 @@||stash.roistat.com^|
 ! https://github.com/AdguardTeam/AdguardFilters/commit/84966d38a2f6d98e46df6998c6cacde1931e7bc1

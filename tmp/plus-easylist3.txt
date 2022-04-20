@@ -3085,9 +3085,14 @@ fetishshrine.com##.adv-aside
 
 ! https://github.com/uBlockOrigin/uAssets/issues/1133
 sleazyneasy.com##+js(aopr, decodeURI)
-sleazyneasy.com##.adv-aside
+sleazyneasy.com##+js(set, flashvars.adv_pre_vast, '')
+sleazyneasy.com##+js(set, flashvars.adv_pre_vast_alt, '')
+/contents/images-banners/*
 ||sleazyneasy.com/contents/other/player/*.mp4$media
+sleazyneasy.com##.adv-aside
 sleazyneasy.com##.im_block
+sleazyneasy.com##.pre-spots
+sleazyneasy.com##.spot
 
 ! https://github.com/uBlockOrigin/uAssets/issues/1131
 vikiporn.com##+js(aeld, getexoloader)
@@ -17401,10 +17406,14 @@ cheatermad.com##+js(nostif, offset)
 @@||cheatsquad.gg^$script,xhr,1p
 cheatsquad.gg##.tooltip::before
 cheatsquad.gg##.tooltip::after
+updown.link##+js(nano-stb, startDownload, 8000)
 ! https://github.com/uBlockOrigin/uAssets/issues/7273#issuecomment-966551769
 @@||work.ink^$ghide
 work.ink##.desc:upward([class*="adb"])
 *$frame,redirect-rule=noopframe,domain=work.ink
+! https://zodhacks.com/pet-simulator-x-saza-hub-easter/ timer
+work.ink##+js(nowoif, youtu)
+work.ink##+js(set, linkOpenTime, 10000)
 
 ! https://github.com/NanoMeow/QuickReports/issues/2645
 ||firefaucet.win/*.gif$image
@@ -19885,7 +19894,9 @@ proxoexploits.com##+js(acis, isChrome)
 @@||proxoexploits.com^$ghide
 
 ! https://github.com/AdguardTeam/AdguardFilters/issues/52499
+! https://github.com/AdguardTeam/AdguardFilters/issues/116034
 @@||easyexploits.com^$ghide
+easyexploits.com##+js(aopr, mm)
 
 ! https://github.com/NanoMeow/QuickReports/issues/3435
 saruch.co##+js(aopr, AaDetector)

@@ -1,9 +1,9 @@
 [uniartisan's Privacy List]
-! Version: 202204190214
+! Version: 202204200334
 ! Title:  uniartisan's Privacy List
 ! Expires: 1 days (update frequency)
 ! URL = https://github.com/uniartisan/adblock_list
-! Lenth = 41104
+! Lenth = 41118
 ###qoo-counter
 ###ramblerCounter
 ###top100counter
@@ -1023,7 +1023,8 @@ $xmlhttprequest,domain=auroravid.to|flashx.cc|nowvideo.sx|onlinevideoconverter.c
 /ZagUser.js
 /\.com\/[-_0-9a-zA-Z]{4,}\/[-\/_0-9a-zA-Z]{30,}$/$script,~third-party,domain=gu-global.com|uniqlo.com
 /\/(public|resources|static|assets)\/([a-f0-9]){28,31}$/$script,xmlhttprequest,~third-party
-/^https:\/\/cdn\.jsdelivr\.net\/npm\/([a-z]|-){4,22}@latest\/dist\/script\.min\.js$/$domain=tgd.kr|loawa.com|ygosu.com|inven.co.kr|ppss.kr
+/\/js\/[a-z]{3}\d\.js$/$script,~third-party,domain=eegg.fun
+/^https:\/\/cdn\.jsdelivr\.net\/npm\/([a-z]|-){4,22}@latest\/dist\/script\.min\.js$/$domain=tgd.kr|loawa.com|ygosu.com|inven.co.kr|ppss.kr|dailymagazine.co.kr|dailian.co.kr|socialvalue.kr|usjournal.kr|basketkorea.com|jumpball.co.kr|joynews24.com|inews24.com|hobbyen.co.kr|thespike.co.kr|siminilbo.co.kr|mdtoday.co.kr
 /^https?:\/\/(.+?\.)?hardware\.info\/js\/[a-z]{1,}\/[0-9]{4,}\.js/$domain=hardware.info
 /^https?:\/\/fdts\.ebay-kleinanzeigen\.de\/[a-z0-9]{13,18}\.js\?/$script,domain=ebay-kleinanzeigen.de
 /^https?:\/\/js.*\/t\/[0-9]{3}\/[0-9]{3}\/[a-z0-9]{7,8}\.js/$script,third-party
@@ -5433,7 +5434,7 @@ $xmlhttprequest,domain=auroravid.to|flashx.cc|nowvideo.sx|onlinevideoconverter.c
 /tracking.fanbridge.com/*
 /tracking.fcgi?
 /tracking.gif?
-/tracking.js$domain=schoener-wohnen.de
+/tracking.js$domain=schoener-wohnen.de|deichmann.com
 /tracking.js?async=
 /tracking.js?site_id=
 /tracking.jsp
@@ -7198,6 +7199,7 @@ $xmlhttprequest,domain=auroravid.to|flashx.cc|nowvideo.sx|onlinevideoconverter.c
 @@||google-analytics.com/analytics.js$domain=nova.cz
 @@||google-analytics.com/analytics.js$domain=novatv.bg
 @@||google-analytics.com/analytics.js$domain=ntvplus.tv
+@@||google-analytics.com/analytics.js$domain=okwave.jp
 @@||google-analytics.com/analytics.js$domain=onul-hoi.com
 @@||google-analytics.com/analytics.js$domain=outdoorchannel.com
 @@||google-analytics.com/analytics.js$domain=passnavi.evidus.com
@@ -9268,6 +9270,7 @@ znak.com##.relap
 ||199.116.177.156^$domain=~fc2.jp.ip
 ||199.19.203.46/js
 ||1a715b8q5m3j.www.logology.co^
+||1abzar.ir/abzar/tools/stat/
 ||1amehwchx31.bloxdhop.io^
 ||1bva.societegenerale.fr^
 ||1bw7etm93lf.www.woodbrass.com^
@@ -11600,6 +11603,7 @@ znak.com##.relap
 ||analytics-proxy.springboard.com^
 ||analytics-rhwg.rhcloud.com^
 ||analytics-rollout-*.amazonaws.com^$third-party
+||analytics-script.ad-shield.io^
 ||analytics-scripts.cablelabs.com^
 ||analytics-sdk.yle.fi^
 ||analytics-secure.dollargeneral.com^
@@ -12857,6 +12861,7 @@ znak.com##.relap
 ||automate.gixxy.com^
 ||automate.opex.com^
 ||automaticairplane.com^
+||automaticairplane.com^$third-party
 ||automaticflock.com^
 ||automaticflock.com^$third-party
 ||automaticside.com^$third-party
@@ -17921,6 +17926,7 @@ znak.com##.relap
 ||edgesuite.net^*/googleanalyt
 ||edgrmtracking.com^$third-party
 ||edigitalsurvey.com^$third-party
+||edisound.com/api/p/stats
 ||edkt.io^*/edgekit.min.js
 ||edm.mcw.com.au^
 ||edm.neoslife.com.au^
@@ -27681,6 +27687,7 @@ znak.com##.relap
 ||outreach.teex.info^
 ||outrigger-a.outrigger.com^
 ||outstandingincome.com^
+||outstandingincome.com^$third-party
 ||outstandingsnails.com^
 ||outstandingsnails.com^$third-party
 ||ouvjnb.westernbikeworks.com^
@@ -28240,6 +28247,7 @@ znak.com##.relap
 ||pingma.qq.com^
 ||pingmeter.com^$third-party
 ||pingomatic.com^$third-party
+||pingometer.com^$third-party
 ||pings.conviva.com^
 ||pings.vidpulse.com^
 ||pingtas.qq.com^
@@ -28311,6 +28319,7 @@ znak.com##.relap
 ||pixel.archivecaslytosk.onion^
 ||pixel.archiveiya74codqgiixo33q62qlrqtkgmcitqx5u2oeqnmn5bpcbiyd.onion^
 ||pixel.augsburger-allgemeine.de^
+||pixel.biano.ro^
 ||pixel.bild.de^
 ||pixel.blivenyc.com^
 ||pixel.bridge.dooca.store^
@@ -30114,6 +30123,7 @@ znak.com##.relap
 ||rztrkr.com^$third-party
 ||s-adobe.wacoal.jp^
 ||s-adobeanalytics.vice.com^
+||s-cdn.phonearena.com/js/ops/taina.js
 ||s-microsoft.com/mscc/$~stylesheet
 ||s-omniture.yell.com^
 ||s-onetag.com^
@@ -31178,7 +31188,7 @@ znak.com##.relap
 ||secureod.odfl.com^
 ||securepaths.com^$third-party
 ||secureprovide1.com/*=tracking$image
-||securepubads.g.doubleclick.net/tag/js/gpt.js$script,redirect=googletagservices-gpt,domain=~golf.com|~today.line.me
+||securepubads.g.doubleclick.net/tag/js/gpt.js$script,redirect=googletagservices-gpt,domain=~golf.com|~today.line.me|~phonearena.com
 ||secureserver.net/t/
 ||securestats.affarsvarlden.se^
 ||securestats.cafepress.com^
@@ -34461,6 +34471,7 @@ znak.com##.relap
 ||static.krone.at/wcm/donau/extern/anti_adblocker/check.js
 ||static.me.me/static/versions/js/external/google_analytics-*.js
 ||static.metro.co.uk/rta2/
+||static.narrativ.com/tags/narrativ-pub.
 ||static.olx.com.br/olx/js/lurker.min.js
 ||static.olx.pl/static/*/js/tracking/ninja.js$important,domain=olx.pl
 ||static.parsely.com^$domain=spiegel.de
@@ -39426,6 +39437,7 @@ znak.com##.relap
 ||waati.quechoisir.org^
 ||waggishpig.com^
 ||waggishpig.com^$third-party
+||wait.re^
 ||wakefulcook.com^
 ||wakefulcook.com^$third-party
 ||wal.co/cdn-perf.min.js
@@ -39856,6 +39868,7 @@ znak.com##.relap
 ||widgetbe.com^
 ||widgetbox.com/syndication/track/
 ||widgethost.com/pax/counter.js?
+||widgets.entireweb.com/pixel-track/
 ||widgets.pinterest.com/*/urls/count.json
 ||widgets.trustedshops.com^$third-party
 ||widgetserver.com/metrics/
@@ -39915,6 +39928,7 @@ znak.com##.relap
 ||wizaly.com^
 ||wizaly.com^$third-party
 ||wizcase.com/jssdk//track/
+||wjq.ma.tarnkappe.info^
 ||wkasiu.dantonehome.ru^
 ||wkclick.baidu.com^
 ||wkctj.baidu.com^
