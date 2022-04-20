@@ -1,8 +1,8 @@
-! Checksum: zc35wn3YrbpE9VXqhReC+g
+! Checksum: g0hMkvWC7Kd+XSiHt3jMgg
 ! Title: AdGuard Annoyances filter
 ! Description: Blocks irritating elements on web pages including cookie notices, third-party widgets and in-page pop-ups.
-! Version: 2.1.16.31
-! TimeUpdated: 2022-04-19T15:30:37+00:00
+! Version: 2.1.16.39
+! TimeUpdated: 2022-04-20T00:30:33+00:00
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -3052,8 +3052,8 @@ fosspost.org,portalvirtualreality.ru,pingvin.pro,bonobono.com,curbsideclassic.co
 ! infranken.de,merkur.de#@##ad-21
 !
 ! adregain.ru script
-unixhow.com,forums.rusmedserv.com,vsthouse.ru,primpogoda.ru,gitjournal.tech#%#//scriptlet("abort-on-property-write", "adregain_wall")
-forums.rusmedserv.com,vsthouse.ru,primpogoda.ru,gitjournal.tech#%#//scriptlet("abort-on-property-read", "ad_nodes")
+unixhow.com,vsthouse.ru,primpogoda.ru,gitjournal.tech#%#//scriptlet("abort-on-property-write", "adregain_wall")
+vsthouse.ru,primpogoda.ru,gitjournal.tech#%#//scriptlet("abort-on-property-read", "ad_nodes")
 !
 ! livejournal.com, razlozhi.ru
 ! LiveJournal blogs with separate domains
@@ -3862,7 +3862,7 @@ borderlands.com##div[ads-blocked="adsBlocked"]
 ||amazonaws.com/sp-sw-sdk-production^
 ||ddnk.advertur.ru/v1/s/loader.js$script,redirect=noopjs,domain=video.alexfilm.cc
 @@||gsurl.be/advertisement.js
-||tinypass.com^$domain=thechive.com|thelocal.de|independent.co.uk|scotsman.com|inquirer.com|pinknews.co.uk|insider.com|blick.ch|torontosun.com|montrealgazette.com
+||tinypass.com^$domain=thechive.com|independent.co.uk|scotsman.com|inquirer.com|pinknews.co.uk|insider.com|blick.ch|torontosun.com|montrealgazette.com
 ||buhgalter.com.ua/assets/templates/base/js/blocker.js
 coinhub.pw#?#body > center:contains(Turn off your adblocker)
 milehighreport.com##div[class^="adblock-whitelist-messaging"]
@@ -7328,6 +7328,8 @@ techadvisor.co.uk,forum.notebookreview.com,computerworld.com,skysports.com#$#bod
 !
 developer.ing.com#$#body { overflow: auto !important; }
 developer.ing.com#$#.global-overlays { display: none !important; }
+webtrack.dhlglobalmail.com#$#body { overflow: auto !important; }
+webtrack.dhlglobalmail.com#$#div[role="presentation"] { display: none !important; }
 deichmann.com##.cookie-consent-local
 teacheconomy.de#$#body { overflow: auto !important; }
 teacheconomy.de#$#.cookie-banner { display: none !important; }
@@ -13255,7 +13257,7 @@ dn.se##.gdpr-header-container
 meteoblue.com,ajinomoto.co.jp,wsj.com##.gdpr-message
 iqcode.com,brooksbrothers.com,ascm.org,verywellfit.com,2ememain.be,cyclegear.com,verywellhealth.com##.gdpr-notification
 moduscreate.com##.gdpr-show
-juksy.com,prothomalo.com,hikvision.com,norway.no,radiozu.ro##.gdpr-wrapper
+wps.com,juksy.com,prothomalo.com,hikvision.com,norway.no,radiozu.ro##.gdpr-wrapper
 skins.cash##.gdpr__container
 hubpages.com##.gdpr_popup_wrap
 divarese.com.tr,network.com.tr##.gizlilik-cookies
@@ -16279,6 +16281,8 @@ m.timesofindia.com,m-timesofindia-com.cdn.ampproject.org$$amp-consent
 !+ PLATFORM(windows, mac, android)
 @@||geolocation.onetrust.com/cookieconsentpub/*/geo/location
 !
+! https://github.com/AdguardTeam/AdguardFilters/issues/115984
+@@||limecrete.co.uk/wp-content/plugins/$stylesheet
 ! https://github.com/AdguardTeam/AdguardFilters/issues/115818
 teacheconomy.de#@#.cookie-banner:not(body):not(html)
 ! https://github.com/easylist/easylist/commit/fe03c9dff5a94ec0b1bb61d653304779573e9692
@@ -18914,9 +18918,12 @@ early-riser.com#?#div[class] ~ h1[style]:contains(Newsletter) + p + div[class]
 ##head[prefix~="medium-com:"] ~ body .js-openInAppButton
 ##head[prefix~="medium-com:"] ~ body .js-postActionsBarContent > .js-readNextInteractions
 !
+chiebukuro.yahoo.co.jp###app_bnr
+budzdorov.ru##.popup-metadata-popup__paranja
 selfmind.ai##.store-bannar-container
 bittorrent.com#?#.prodnews-container div[class^="col-"] > div.row:has(> div[class] a[id^="prodnews-go-adfree-"])
 biquwo.com###content > div[style="padding:15px;"]
+lehren.com##.tds-button > a[href^="https://onelink.to/lehren"]
 benesse.jp##.bnr_flow-under-h2
 arteryex.biz###footer-widgets
 arteryex.biz##.elementor-popup-modal
@@ -20756,8 +20763,15 @@ theoryandpractice.ru##a[href^="https://form.typeform.com/"]
 ! Specific sites
 !######### Subscription popups add to subscriptions.txt #########
 !
+researchgate.net##.lite-page-tooltip__content
+tumblr.com##.tmblr-iframe--follow-teaser
+okwave.jp##.following_buttons
+aljazeera.com##.container--red
+ecuabet.com###main-wrapper > app-menu-mobile > div[class]:not([id])
+livehindustan.com##.stry-slderbtm
 ||widgets.entireweb.com/pixel/
 acpa-main.org##.fixBtn
+shethepeople.tv##.whatsapp_logo_link
 odishatv.in#$#.fixed-article-slide-sec { position: static !important; }
 tubefilter.com##.overlay
 qwertee.com###homepage-popup
@@ -26277,6 +26291,7 @@ abendzeitung-muenchen.de###webpush-app
 /firebase.js$domain=novayagazeta.ru|comments.ua|kinosimka.net|ilan365.net|cnbcindonesia.com|haberzamani.net|oxy.cloud|allbasketball.org|auslogics.com|kartalyuvasi.com.tr|cnnindonesia.com|fbc.ua|astv.ru|pln-pskov.ru
 /firebase-messaging.js$domain=focus.ua|ukranews.com|comments.ua|coub.com|porno90.me|cnnamador.com|giallozafferano.it|wcostream.com|fptplay.vn|jooble.org|mobile01.com|myinstants.com|pdalife.ru|rg.ru|m.iguides.ru|donanimhaber.com|profile.ru|womanhit.ru|news.noteru.com|narodna-pravda.ua|newstm.in|sabah.com.tr|dreamstime.com|popbee.com|avtovzglyad.ru|allbasketball.org|tw.news.yahoo.com|takvim.com.tr|jn.pt|ria.ru|pars.host|calculator-online.net|operanewsapp.com|ahaber.com.tr|tamindir.com|concursosnobrasil.com.br|kompas.com|news.ebc.net.tw|recyclingtoday.com|homedecoratione.com|khersondaily.com|mirtesen.ru|womanhit.ru|belsat.eu|gearbest.com|op.gg|novayagazeta.ru|pocket-lint.com|turunculevye.com|bloomberght.com|stardima.com|aksam.com.tr|portamur.ru|fishki.net|ranking.goo.ne.jp|ohmymag.com|mgronline.com|semnasem.org|bluradio.com|carwale.com
 !
+indiatimes.com##.notification_popup
 ||149.56.24.226/service-worker.js
 ||vz.ru/static/js/push.js
 ||fahrradmagazin.net/p/app.js
@@ -28080,6 +28095,8 @@ theguardian.com##.contributions__adblock
 ||contributions.guardianapis.com^
 !
 tvnet.lv##.digipakett-branding-root-container
+ecuabet.com##div[name="asb-banners"]
+||ecuabet.com/banner-
 cyberpedia.su##center > div.transformer-form
 ryukyushimpo.jp##.topic-ticker_box-topics
 ranak.me##.go-price
@@ -28947,6 +28964,7 @@ turkuazgazetesi.net,yenialanya.com,mansetaydin.com,seskocaeli.com,kocaelibarisga
 ##.widget_blog_subscription
 ~copays.org,~nothing.tech,~mega-debrid.eu,~curvegames.com,~news.un.org,~norwichzen.org.uk,~dereferer.me###mc_embed_signup
 !
+thelocal.de##.ml-manual-widget-container
 cpp.libhunt.com##.text-strong-invite
 timeout.ru##.circle-wrapper
 timeout.ru#?#.ads > div.square:has(> a[title="Time Out в Viber"])
@@ -34664,6 +34682,12 @@ blog.livedoor.jp,duellinks.doorblog.jp,dragonquestwalk.blog.jp##.rss
 2ch-ero-report.blog.jp,chunisoku.com,eroitaiken.blog.jp,gurasen.com,moetataiken.com,nokuo.blog.jp,nius.doorblog.jp,pokemonunite.blog.jp,okanenews24.com,valorantchannel.livedoor.blog,vipperlog.com,vipstyle.tokyo,blue-archive.doorblog.jp,beikokukabu-etf-matome.com,pokemongo-kouryakumatome.net,doujin-rpgfan.com,nandemo-nadeshiko.blog.jp,samuraisoccer.doorblog.jp,gamehig.com,chomagireko.blog.jp,bybybicycle.blog.jp,animesoku.com,moemoeanime.blog.jp,buzzral.com,2ch-uwaki.com,2chmatome.bloggeek.jp,2monkeys.jp,5ch-echiechi.doorblog.jp,5chmatome.blogo.jp,aburatanisannogamematome.blog.jp,addchannel.net,aiteesokuhou.blog.jp,akb48rompen.com,audioon.blog.jp,azurlane.doorblog.jp,babymetaltimes.com,bb.doorblog.jp,blog-mougenda.com,blog.game084.com,bm.2chblog.jp,chikakb.ldblog.jp,chomangasokuho.blog.jp,curationewsharp.blog.jp,curioso.blog.jp,dareda.net,db-gohan.blog.jp,dechisoku.com,ebitsu.net,ekurere3.com,ekuzodeerhand.blog.jp,everydayissunday.livedoor.blog,fate-go-grandorder.blog.jp,fate-go.blog.jp,fate-gok.blog.jp,fate-grandorder-go.blog.jp,fate-kouryakumaster.blog.jp,fireembs.blog.jp,gacha.blog.jp,gamejksokuhou.com,gazoua2meru.livedoor.blog,geinoutopics-plus.blog.jp,gensen2ch.com,gunji.blog.jp,hanshintigers1.blog.jp,heart-net.xyz,heartlife-matome.com,hero-news.com,hiraganakeyaki.blog.jp,honsoku.com,hoshujapan.jp,hrocks6969.xyz,ideal2ch.livedoor.biz,internet-game-lounge.blog.jp,jiwachan.net,kasegeru.blog.jp,katasumisokuhou.blog.jp,kazokuchannel.doorblog.jp,kijoden.com,kijonikki.net,kijyotsubu.net,kininaruero7.blog.jp,kinpira-san.com,kokoyakyumatomesokuho.blog.jp,koumuin-matome.blog.jp,labradorsokuho.net,maki7.dreamlog.jp,mashlife.doorblog.jp,matmebae.net,matomelotte.com,matomemo-ch.net,mhsoken.blog.jp,mindhack2ch.com,mirishita.2chblog.jp,moe-vip.com,money-life.doorblog.jp,nanj-push.blog.jp,nanj-short.net,nanj-world.blog.jp,nanjchallenge.net,narisoku.blog.jp,newsweb.blog.jp,nizigami.com,onosakaemiri.blog.jp,oomonoyoutubersokuhou.blogo.jp,orufemorufenz.com,oumaga-times.com,pachinko-next.blog.jp,pachinkolist.com,paranormal-ch.com,pawawa.sokuho.org,pinap.blog.jp,pokemon-goh.doorblog.jp,rakukan.net,romeodensetsu.com,ronsoku.com,sematome.com,setouchi48g.ldblog.jp,shironeko-guild.blog.jp,shumi-nikki.xyz,skematomemon.com,sontaku.info,sutekinakijo.com,syurabarabanba.blog.jp,tachiyomitoday.com,taorun.xyz,timely.blog.jp,tsubamesoku.blog.jp,uwakich.com,virtualyoutuber-matome.blog.jp,visual-matome.com,vrtuber-news.com,vtuber-densoku.blog.jp,yabesoku.blog.jp,yofukasi-susume.xxxblog.jp,yurukuyaru.com,zetusoku.net##.rss-blogroll
 !
 !
+eegg.fun#?#.innerframe > div.whiteboard > div > div.indent > center > div[id^="rss_"]:upward(5)
+eegg.fun#?#.innerframe > div.whiteboard > div > div.indent > div.gcl[data-gcl-entity="sougo-rank"]:upward(4)
+eegg.fun#?#.innerframe > div.whiteboard > div > div.indent > div.gcl[data-gcl-entity="top-area-ad-bottom"]:upward(4)
+eegg.fun#?#.innerframe > div.whiteboard > div > div.indent > div[id^="rss_"]:upward(4)
+||eegg.fun/js/exfd*.js$script,~third-party
+||eegg.fun/js/sougo_list.js
 blog.livedoor.jp###main > div.column-inner > div.column-inner-2 > div[style="height:440px; overflow: auto; text-align:left; "]
 blog.livedoor.jp##.RSS04 + div[style^="width:720px;height:160px"]
 [$path=/\/(?:itsoku|news_aru)/]blog.livedoor.jp##.headline
@@ -35456,6 +35480,7 @@ subbota.ua##aside.sidebar > div[id^="custom_html-"]
 ! Donation widgets (which are really annoying only)
 !
 unian.net##.support-post
+||paywall.fewcents.co/static/js/paywall.js
 ||aqours.today/img01/MP3/ZL.JPG
 proagro.com.ua#$#.td-outer-container { background-image: none !important; cursor: default !important; }
 proagro.com.ua#%#//scriptlet("abort-on-property-read", "wpsite_clickable_data")

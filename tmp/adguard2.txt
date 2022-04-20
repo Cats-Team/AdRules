@@ -1,8 +1,8 @@
-! Checksum: sK3cjFaGZU3bU/9OOP/4kQ
+! Checksum: c46609r4oJ3SMzfu926uvQ
 ! Title: AdGuard URL Tracking filter (Optimized)
 ! Description: Filter that enhances privacy by removing tracking parameters from URLs.
-! Version: 2.0.2.44
-! TimeUpdated: 2022-04-19T15:30:44+00:00
+! Version: 2.0.2.45
+! TimeUpdated: 2022-04-19T17:02:16+00:00
 ! Expires: 4 days (update frequency)
 $removeparam=adfrom
 $removeparam=nx_source
@@ -22,6 +22,7 @@ $removeparam=fb_comment_id
 $removeparam=fb_ref
 $removeparam=fb_source
 $removeparam=fbclid
+$removeparam=oprtrack
 $removeparam=xtor
 $removeparam=msclkid
 $removeparam=utm_campaign
@@ -233,7 +234,6 @@ $removeparam=aid,domain=adguard-vpn.com|adguard-dns.com|adguard.com
 ||web.vstat.info$removeparam=guid
 ||web.vstat.info$removeparam=user_agent
 ||start.pm.by^$removeparam=adtag
-||mail.ru^$removeparam=oprtrack
 ||redhotpawn.com^$removeparam=cbqsid
 ||reddit.com^$removeparam=correlation_id
 ||reddit.com^$removeparam=ref_campaign

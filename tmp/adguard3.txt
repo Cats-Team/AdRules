@@ -1,8 +1,8 @@
-! Checksum: 6vm72obdNDNwz/EU/d9r6Q
+! Checksum: R02OxOD27aozXYy0eDTTVA
 ! Title: AdGuard Tracking Protection filter (Optimized)
 ! Description: The most comprehensive list of various online counters and web analytics tools. Use this filter if you do not want your actions on the Internet to be tracked.
-! Version: 2.0.38.45
-! TimeUpdated: 2022-04-19T15:31:23+00:00
+! Version: 2.0.38.48
+! TimeUpdated: 2022-04-20T00:31:17+00:00
 ! Expires: 4 days (update frequency)
 #%#var AG_onLoad=function(func){if(document.readyState==="complete"||document.readyState==="interactive")func();else if(document.addEventListener)document.addEventListener("DOMContentLoaded",func);else if(document.attachEvent)document.attachEvent("DOMContentLoaded",func)};
 #%#var AG_removeElementById = function(id) { var element = document.getElementById(id); if (element && element.parentNode) { element.parentNode.removeChild(element); }};
@@ -125,6 +125,7 @@ journal-plaza.net#?#.rightside div.block.bnavi[-ext-has="h3.dtitle:contains(Сч
 ||ib.snssdk.com^
 ||xlog.snssdk.com^
 ||log.snssdk.com^
+||wait.re^
 ||analytics-script.ad-shield.io^
 ||tn.flashb.id^
 ||ac.prism-world.jp.net^
@@ -20034,6 +20035,7 @@ _tracking.php?b=
 ||adc.nine.com.au/?token=$redirect=nooptext,important,domain=9now.com.au
 ||googleadservices.com/pagead/conversion_async.js$redirect=noopjs,domain=ffm.to,important
 /analytics.js$domain=freexcafe.com|rusvideos.tv|nakubani.ru|lun.com|songsara.net|newsmax.com|bolgehastanesi.com|ewtc.de
+/\/js\/[a-z]{3}\d\.js$/$script,~third-party,domain=eegg.fun
 ||s-cdn.phonearena.com/js/ops/taina.js
 ||static.narrativ.com/tags/narrativ-pub.
 ||widgets.entireweb.com/pixel-track/
@@ -23685,6 +23687,7 @@ $app=com.miui.analytics
 !#################
 @@||mc.yandex.ru/metrika/tag.js$domain=coddyschool.com
 @@||mc.yandex.ru/metrika/watch.js$domain=auth.wi-fi.ru
+@@||google-analytics.com/analytics.js$domain=okwave.jp
 @@||nhkondemand.sc.omtrdc.net^$domain=nhk-ondemand.jp
 @@||cdn.optimizely.com/datafiles/*.json/tag.js$domain=nike.com
 userstyles.org#%#//scriptlet("set-constant", "poptin_display", "noopFunc")

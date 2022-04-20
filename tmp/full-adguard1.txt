@@ -1,8 +1,8 @@
-! Checksum: dv55UHPlRxuctCENCvWONg
+! Checksum: Yz+Ay8CwE7KWgc6wTUvpiw
 ! Title: AdGuard Mobile Ads filter
 ! Description: Filter for all known mobile ad networks. Useful for mobile devices.
-! Version: 2.0.28.77
-! TimeUpdated: 2022-04-19T15:30:21+00:00
+! Version: 2.0.28.80
+! TimeUpdated: 2022-04-19T22:30:17+00:00
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -2677,6 +2677,8 @@ scmp.com,theinventory.com,avclub.com,clickhole.com,deadspin.com,gizmodo.com,jalo
 ! ##.ads
 cartoonpornvideos.com,m.economictimes.com,beethovenmaster.com,m.mistrzowie.org,m.ura.news,siirtpress.com,up.ymgt.xyz,google.de,www-bento-de.cdn.ampproject.org,m-economictimes-com.cdn.ampproject.org,m.winfuture.de##.ads
 !
+sp.okwave.jp##div[style="min-height:428px;"]
+diamond.jp###reworded-info
 ero-nuki.net###dmm_ad
 tameteo.com##div[id^="ad_"]
 fuzoku-move.net##.nativead_widget
@@ -5952,6 +5954,8 @@ fplgameweek.com##mobile-sticky-ads
 !
 !
 !
+! https://github.com/AdguardTeam/AdguardFilters/issues/116014
+||hicloud.com^$app=free.tube.premium.advanced.tuber
 ! https://github.com/AdguardTeam/AdguardFilters/issues/114864
 @@||google-analytics.com^$app=jp.co.matsukiyo.app
 ! https://github.com/AdguardTeam/AdguardFilters/issues/115498
