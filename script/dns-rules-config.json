@@ -1,0 +1,17 @@
+{
+    "name": "The DNS List",
+    "description": "Blocks ads, analytics, trackers, crypto-jacking & other such threats/nuisances. Addon lists are available to extend this list.",
+    "sources": [
+        {
+            "name": "AdBlock Full List",
+            "source": "tmp1-dns1.txt"
+            "type": "adblock"
+        },
+        {
+            "name": "AdRules DNS List",
+            "source": "tmp-adblock.txt"
+            "type": "adblock"
+        }
+    ],
+    "transformations": ["RemoveComments", "Deduplicate", "Compress", "RemoveModifiers", "Validate"]
+}
