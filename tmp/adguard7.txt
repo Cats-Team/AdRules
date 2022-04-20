@@ -1,8 +1,8 @@
-! Checksum: TfmB0Og3zOC53i3JNQEmLg
+! Checksum: V8hWKc2nyQpmBF0HVoG48w
 ! Title: AdGuard Social Media filter (Optimized)
 ! Description: Filter for social media widgets such as 'Like' and 'Share' buttons and more.
-! Version: 2.0.60.11
-! TimeUpdated: 2022-04-20T12:31:34+00:00
+! Version: 2.0.60.12
+! TimeUpdated: 2022-04-20T16:31:29+00:00
 ! Expires: 4 days (update frequency)
 #%#var AG_onLoad=function(func){if(document.readyState==="complete"||document.readyState==="interactive")func();else if(document.addEventListener)document.addEventListener("DOMContentLoaded",func);else if(document.attachEvent)document.attachEvent("DOMContentLoaded",func)};
 #%#var AG_removeElementById = function(id) { var element = document.getElementById(id); if (element && element.parentNode) { element.parentNode.removeChild(element); }};
@@ -6634,6 +6634,7 @@ catalogmineralov.ru#$#body { overflow: visible!important; }
 1track.ru#$#body { overflow: visible!important; }
 neokur.com#$#body { overflow: visible!important; }
 neokur.com#$#.jquery-modal.blocker { display: none!important; }
+taishu.jp#@#a[href^="https://twitter.com/intent/follow?"]
 comss.ru#@#a[href^="https://twitter.com/intent/follow?"]
 amazon.*#@#.share-list
 @@||platform.twitter.com/js/button.$domain=monsterhunter.com

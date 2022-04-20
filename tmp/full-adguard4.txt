@@ -1,8 +1,8 @@
-! Checksum: 9UZoP3WgmU6Le+cqsvZYJw
+! Checksum: Px3RU4Dz3Fw6JAQG9C6vSw
 ! Title: AdGuard Annoyances filter
 ! Description: Blocks irritating elements on web pages including cookie notices, third-party widgets and in-page pop-ups.
-! Version: 2.1.16.49
-! TimeUpdated: 2022-04-20T15:30:34+00:00
+! Version: 2.1.16.50
+! TimeUpdated: 2022-04-20T16:30:39+00:00
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -7326,6 +7326,7 @@ techadvisor.co.uk,forum.notebookreview.com,computerworld.com,skysports.com#$#bod
 !
 !
 !
+posthaus.com.br#?##root > div[class]:has(> div > div > [class] > a[href="/cp/politica-de-privacidade"])
 th-deg.de#$#body { overflow: visible!important; }
 th-deg.de#$#div[id^="CybotCookiebotDialog"] { display: none!important; }
 rohm.co.jp###showcookiealert
@@ -28975,6 +28976,8 @@ turkuazgazetesi.net,yenialanya.com,mansetaydin.com,seskocaeli.com,kocaelibarisga
 ##.widget_blog_subscription
 ~copays.org,~nothing.tech,~mega-debrid.eu,~curvegames.com,~news.un.org,~norwichzen.org.uk,~dereferer.me###mc_embed_signup
 !
+posthaus.com.br#?##root > div[offset="0"] > div[class]:has(> div[overflow="auto"] > div[class] > form div[name="newsEmail"])
+posthaus.com.br#?##root > div[offset="0"] > div[class]:has(> div[class] > form div[name="newsEmail"])
 phonearena.com##.content-subscription
 deccanherald.com##.opt_widget_main
 forbes.ru###feed-subscription
