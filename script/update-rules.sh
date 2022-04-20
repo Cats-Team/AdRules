@@ -234,7 +234,8 @@ cat l*.txt pre-allow1.txt dns99* dns10.txt \
  |sort -n |uniq > tmp1-dns1.txt & #处理DNS规则
 wait
 
-hostlist-compiler -c .././script/dns-rules-config.json -o dns-output.txt
+cp .././script/dns-rules-config.json ./
+hostlist-compiler -c dns-rules-config.json -o dns-output.txt
 
 cat dns-output.txt deadblock.txt deadblock.txt \
  | sort -n |uniq -u >tmp0-dns.txt #去重过期域名
