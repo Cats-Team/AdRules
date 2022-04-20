@@ -1,10 +1,10 @@
 ! Title: AdRules Allowlist
-! Checksum: M22MLsJrSwJA3buNUQ9jRA
+! Checksum: Mu0ioBrtgzmztcxcOUTeAA
 ! Homepage: https://github.com/Cats-Team/AdRules
 ! Powerd by CatsTeam
 ! Expires: 8 Hours
-! Version: 2022-04-21 00:50:00（北京时间） 
-! Total count: 17976
+! Version: 2022-04-21 06:48:44（北京时间） 
+! Total count: 18002
 @@$app=com.x.addon.cast
 @@$csp=worker-src 'none',domain=uptostream.com
 @@$domain=avgle.com,webrtc,websocket
@@ -629,7 +629,7 @@
 @@|http://ie.microsoft.com/testdrive/Performance/FishBowl/Default.html|$document
 @@|http://r.i.ua/s?*&p*&l$image,domain=swordmaster.org
 @@|http://r.i.ua/s?*&p*&l$image,domain=swordmaster.org! CJX's Annoyance List
-@@|http://r.i.ua/s?*&p*&l$image,domain=swordmaster.orgcal.js
+@@|http://r.i.ua/s?*&p*&l$image,domain=swordmaster.orgvs.gif?
 @@|https://$image,domain=socketloop.com
 @@|https://$image,script,third-party,domain=blockadblock.com
 @@|https://$image,third-party,domain=hackintosh.zone|hackintosh.computer
@@ -1411,9 +1411,11 @@
 @@||ads.aiir.net/rf/feed?callback=jQuery
 @@||ads.allegro.pl^$domain=ads.allegro.pl
 @@||ads.am^$domain=ads.am
+@@||ads.amazon^
 @@||ads.amazon^$popup
 @@||ads.api.24ur.si/adserver/banner/vast.php$domain=24ur.com
 @@||ads.api.24ur.si^$xhr,domain=24ur.com
+@@||ads.askgamblers.com^
 @@||ads.askgamblers.com^$popup
 @@||ads.ayads.co/ajs.php?zid=$domain=411mania.com
 @@||ads.bdcraft.net/js/interstitial.js$domain=ads.bdcraft.net
@@ -1456,7 +1458,9 @@
 @@||ads.google.com^$popup,domain=smallbusiness.withgoogle.com
 @@||ads.imprezzer.com/js/$script,domain=mgronline.com
 @@||ads.instacart.com/admin/$~third-party
+@@||ads.instacart.com^
 @@||ads.instacart.com^$popup
+@@||ads.kazakh-zerno.net^
 @@||ads.kazakh-zerno.net^$popup
 @@||ads.kbmax.com^$domain=adspipe.com
 @@||ads.korri.fr/index.js$domain=dogefaucet.com
@@ -1496,6 +1500,7 @@
 @@||ads.stickyadstv.com/www/delivery$object-subrequest,domain=play.tv|playtv.fr
 @@||ads.stickyadstv.com/www/delivery/swfIndex.php?$xmlhttprequest,domain=wakanim.tv
 @@||ads.stickyadstv.com^$xhr,domain=6play.fr
+@@||ads.taboola.com^
 @@||ads.taboola.com^$popup
 @@||ads.tdbank.com^
 @@||ads.themoneytizer.com/*/gen.js$domain=mylink.*|my1ink.*|myl1nk.*|myli3k.*
@@ -1598,16 +1603,20 @@
 @@||adultkino.org/ads/banner.jpg$image
 @@||adulttvlive.net/advertisement.js
 @@||adv.*.ch^$xmlhttprequest,other,script,domain=tio.ch
+@@||adv.asahi.com^
 @@||adv.asahi.com^$popup
 @@||adv.bebad.it/js/ads.js$domain=badtaste.it
 @@||adv.ccb.com^
+@@||adv.cr^
 @@||adv.cr^$popup
 @@||adv.fkadb.bid/ad_adv.js$domain=calciomercato.com
+@@||adv.gg^
 @@||adv.gg^$popup
 @@||adv.gpm-digital.com/*now.ru$object-subrequest,domain=rutube.ru
 @@||adv.gpm-digital.com/crossdomain.xml$object-subrequest,domain=carambatv.ru
 @@||adv.gpm-digital.com/crossdomain.xml$object-subrequest,domain=rutube.ru
 @@||adv.svo.aero/wifi_svo/*$domain=svo.aero
+@@||adv.welaika.com^
 @@||adv.welaika.com^$popup
 @@||adv.wp.pl/RM/Box/c/b/inline/inline-o2_gaf.js$domain=o2.pl
 @@||adv.wp.pl/RM/Box/c/b/inline/inline-o2_pudelek_pl.js$domain=pudelek.pl
@@ -4766,6 +4775,7 @@
 @@||courier-js.dallasnews.com^$script,1p
 @@||courseclub.net^$generichide
 @@||coursehero.com/min/?f=*/social_share_tracking.js$domain=coursehero.com
+@@||courseware-marketplace.com^
 @@||courseware-marketplace.com^$document
 @@||coveritlive.com/templates/coveritlive/images/twitter_$~third-party
 @@||cowcotland.com/scripjs.php
@@ -5189,6 +5199,7 @@
 @@||dev.visualwebsiteoptimizer.com/j.php
 @@||dev.visualwebsiteoptimizer.com/v.gif$domain=watch.impress.co.jp
 @@||dev.visualwebsiteoptimizer.com^$script,domain=internetorder.dominos.jp
+@@||developer.softonic.com^
 @@||developer.softonic.com^$document
 @@||developer.tomtom.com/sites/all/modules/contrib/eu_cookie_compliance/js/jquery.cookie-*.min.js
 @@||developers.google.com/ad-manager/$~third-party
@@ -6689,6 +6700,7 @@
 @@||gamer-cds.cdn.hinet.net/vod/gamer/*.m3u8^$domain=ani.gamer.com.tw
 @@||gamer-cds.cdn.hinet.net/vod/gamer/*.ts^$domain=ani.gamer.com.tw
 @@||gamerch.com/s3-assets/library/js/fingerprint2.min.js
+@@||gamerch.com/s3-assets/library/js/fingerprint2.min.js?$script,~third-party
 @@||gamerotic.com^$ghide
 @@||gamersboard.com.br^$ghide
 @@||gamersgate.com/js/cookieconsent.js$script,~third-party
@@ -10198,6 +10210,7 @@
 @@||livew.l.qq.com/livemsg?pf=H5&ad$domain=m.v.qq.com
 @@||livew.l.qq.com/livemsg?ty=web&ad_type=$domain=v.qq.com
 @@||livew.l.qq.com^$important
+@@||lk-subscr.tricolor.tv^
 @@||lk-subscr.tricolor.tv^$document
 @@||ll-media.tmz.com/*-300x250.
 @@||lloydstsb.com/it/xslt/touchclarity/omtr_tc.js
@@ -10930,6 +10943,7 @@
 @@||mmm.dk^$elemhide
 @@||mmo-champion.com^*/adsense.js
 @@||mmovie.it/wp-content/plugins/clean-selection/assets/js/advertisement.min.js
+@@||mms.vtext.com^
 @@||mms.vtext.com^$document
 @@||mmstat.com/eg.js$domain=1688.com|taobao.com|tmall.com|tudou.com|youku.com
 @@||mmstat.com^
@@ -11405,6 +11419,7 @@
 @@||nibbits.com^$ghide
 @@||nice.fr/bundles/manacc/librairies/cookiecuttr/$~third-party
 @@||nicematin.com/assets/*/ads.js$script
+@@||nid.naver.com^
 @@||nid.naver.com^$document
 @@||nihasi.ru/upload/resize_cache/*/300_250_$image,~third-party
 @@||nihongo.alc.co.jp/theme/Japanese/img/home/nf/us.gif$image,~third-party
@@ -12710,11 +12725,15 @@
 @@||play.google.com/log?format=json$domain=news.google.com
 @@||play.google.com/store/apps/$document
 @@||play.history.com^$ghide
+@@||play.hydracdn.network^
 @@||play.hydracdn.network^$popup
 @@||play.kisscartoon.ac/player.php?
 @@||play.ludigames.com^*/pc_share_$image
 @@||play.nova.bg/prebid-ads.js
 @@||play.nova.bg^$1p,script
+@@||play.tv3.ee/static/scripts/adroot/dfp.min.js
+@@||play.tv3.ee/static/scripts/adroot/facebook.net/fbevents.js
+@@||play.tv3.ee/static/scripts/adroot/imasdk.googleapis.com/js/sdkloader/ima3.js
 @@||play.tv3.lt/ad/banner/*.ad.json$domain=play.tv3.lt
 @@||play.tv3.lt/static/scripts/ima3.js
 @@||play.vidyard.com^$stealth
@@ -12951,6 +12970,7 @@
 @@||port.hu^$ghide
 @@||portal.aae.at^*/cookieconsent.js$script,~third-party
 @@||portal.autotrader.co.uk/advert/$~third-party
+@@||portal.azure.com/*/resource/subscriptions/$stealth
 @@||portal.mail.ru^$stealth
 @@||portal.newdaycards.com^$extension
 @@||portal.pixelfederation.com/*/login.php^$document
@@ -13192,6 +13212,7 @@
 @@||publicwww.com/ad/paypro_success.html
 @@||publicwww.com^$generichide
 @@||publiekeomroep.nl/data/script/cconsent$domain=vpro.nl
+@@||publisher.adservice.com^
 @@||publisher.adservice.com^$document
 @@||publisher.adservice.com^$domain=publisher.adservice.com
 @@||publisher.adservice.com^$generichide
@@ -13828,6 +13849,7 @@
 @@||s3.amazonaws.com/assets.sidearmsports.com/plugins/detector.min.js?$domain=bigten.org|greenbayphoenix.com|umterps.com
 @@||s3.amazonaws.com/khachack/*.js$script,domain=ndtv.com
 @@||s3.amazonaws.com^
+@@||s3.amazonaws.com^$stealth,domain=informationisbeautiful.net
 @@||s3.amazonaws.com^$xmlhttprequest,domain=travis-ci.org
 @@||s7.addthis.com/icons/official-addthis-angularjs/current/dist/official-addthis-angularjs.min.js$domain=senac.br
 @@||s7.addthis.com/static/r07/$script,stylesheet,domain=majorgeeks.com
@@ -14418,6 +14440,7 @@
 @@||sfirmware.com^$ghide
 @@||sfl.ink^$generichide
 @@||sftcdn.net/statics/ads.min.js$domain=softonic.com
+@@||sgcpanel.com^
 @@||sgcpanel.com^$document
 @@||sgxnifty.org/wp-content/themes/default/js/adblocker.js
 @@||sh.st$generichide
@@ -15343,6 +15366,7 @@
 @@||streameast.*/*.$~third-party,script,other,subdocument
 @@||streameast.*^$generichide
 @@||streameast.live/wp-banners.js
+@@||streamhunter.top^
 @@||streamhunter.top^$popup
 @@||streaming-foot.me/js/adblock.js$script
 @@||streamingcommunity.*/*$xmlhttprequest,~third-party
@@ -15478,6 +15502,7 @@
 @@||symbolab.com^$ghide
 @@||sync.disk.yandex.net^
 @@||sync.everhelper.me^$stealth
+@@||sync.maxthon.com
 @@||sync.maxthon.com$document
 @@||sync.opera.com/api/sync/$stealth
 @@||syndication.exoclick.com/ads-iframe-display.php$subdocument,domain=mobilevids.org
@@ -17202,6 +17227,7 @@
 @@||weatherx.co.in^$generichide
 @@||web-ads.pulse.weatherbug.net/api/ads/targeting/v*/parameters?$domain=weatherbug.com
 @@||web-capture.net/ads.js
+@@||web.any.do^
 @@||web.any.do^$document
 @@||web.archive.org/*_/http$removeparam
 @@||web.archive.org^$generichide

@@ -1,7 +1,7 @@
 [Adblock Plus 1.1]
-! Version: 202204201639
+! Version: 202204202236
 ! Title: EasyPrivacy
-! Last modified: 20 Apr 2022 16:39 UTC
+! Last modified: 20 Apr 2022 22:36 UTC
 ! Expires: 4 days (update frequency)
 ! Homepage: https://easylist.to/
 ! Licence: https://easylist.to/pages/licence.html
@@ -11381,6 +11381,7 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 ||analytics.strangeloopnetworks.com^
 ||analytics.superstructure.ai^
 ||analytics.supplyframe.com^
+||analytics.test.cheggnet.com^
 ||analytics.themarketiq.com^
 ||analytics.threedeepmarketing.com^
 ||analytics.tiktok.com^
@@ -14151,6 +14152,7 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 ! Japanese
 ||199.116.177.156^$domain=~fc2.jp.ip
 ||a.o2u.jp^
+||ac.prism-world.jp.net^
 ||ad-beacon-v01.uliza.jp^
 ||ad.daum.net^
 ||affiliate.rakuten.co.jp^$script
@@ -14486,6 +14488,7 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 ||sal.isanook.com^
 ||stat.matichon.co.th^
 ! Turkish
+||hulyagedikci.com/vhit.php?
 ||st.tmgrup.com.tr^
 ||statistics.daktilo.com^
 ||tracking.venturify.at^
@@ -14504,6 +14507,7 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 ! -----------------Individual tracking systems-----------------!
 ! *** easylist:easyprivacy/easyprivacy_specific.txt ***
 ||1337x.to/ip3.php
+||40svintageporn.com/hit
 ||4hds.com/js/camstats.js
 ||a-reporting.nytimes.com^
 ||a.electerious.com^
@@ -14678,6 +14682,7 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 ||codecademy.com/analytics/
 ||codecguide.com/stats.js
 ||collect.alipay.com^
+||collect.f5.com^
 ||collector-px0py5pczn.octopart.com^
 ||collector.cint.com^
 ||collector.githubapp.com^
@@ -26923,6 +26928,7 @@ $csp=child-src 'none'; frame-src *; worker-src 'none',domain=skyback.ru|szukajka
 @@||fast.appcues.com^$script,domain=initial.inc
 @@||flipdesk.jp/wp/wp-content/themes/flipdesk/images/analytics3.png$image
 @@||game-tsutaya.tsite.jp/pc/common/scripts/analytics/s_code_ggame.js
+@@||gamerch.com/s3-assets/library/js/fingerprint2.min.js?$script,~third-party
 @@||get.s-onetag.com/*/tag.min.js$domain=zakzak.co.jp
 @@||google-analytics.com/analytics.js$domain=cmoa.jp
 @@||googleadservices.com/pagead/conversion_async.js$script,domain=jp.square-enix.com
