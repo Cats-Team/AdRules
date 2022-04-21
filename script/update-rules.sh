@@ -225,10 +225,9 @@ cat full-adguard*.txt \
 #cat ubo-full-adguard*.txt | grep -v '.!' | grep -v '^!' | grep -v '^# ' | grep -v '^# ' | grep -v '^\[' | grep -v '^\【' | sort -n | uniq | awk '!a[$0]++' > tmp-adguard-full-ubo.txt #处理AdGuard的规则
 
 cat .././mod/rules/*-rules.txt dns*.txt dns10.txt *easylist*.txt full-adg*.txt abp-hosts*.txt \
-# | grep -E "^[(\@\@)|(\|\|)][^\/\^]+\^$" \
  | sort | uniq > ll.txt &
 wait
-
+# | grep -E "^[(\@\@)|(\|\|)][^\/\^]+\^$" \
 cat l*.txt pre-allow1.txt dns99* dns10.txt \
  |grep -v '^!' \
  |sort -n |uniq > tmp1-dns1.txt & #处理DNS规则
