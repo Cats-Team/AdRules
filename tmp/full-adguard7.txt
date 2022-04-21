@@ -1,0 +1,843 @@
+! Checksum: 0PqUSTKrivQFKgv2e85p7A
+! Title: AdGuard URL Tracking filter
+! Description: Filter that enhances privacy by removing tracking parameters from URLs.
+! Version: 2.0.2.48
+! TimeUpdated: 2022-04-20T13:02:26+00:00
+! Expires: 4 days (update frequency)
+! Homepage: https://github.com/AdguardTeam/AdGuardFilters
+! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
+!
+!---------------------------------------------------------------------------!
+!-------------- General tracking parameters list  ----------------------------------!
+!---------------------------------------------------------------------------!
+!
+! This section contains the list of generic `$removeparam` rules that are applied on every website.
+! You should only put here known parameters that are used on many websites.
+! IMPORTANT: add a comment that explains where this parameter comes from (what tracking company is using it).
+! Ideally, supply a link to the document that explains how this parameter is used.
+!
+! Good: $removeparam=utm_id
+! Bad:  $removeparam=utm_id,domain=example.org (for instance, should be in specific.txt)
+!
+!
+$removeparam=adfrom
+$removeparam=nx_source
+$removeparam=_zucks_suid
+$removeparam=cmpid
+$removeparam=asgtbndr
+$removeparam=guccounter
+$removeparam=guce_referrer
+$removeparam=guce_referrer_sig
+$removeparam=_openstat
+$removeparam=action_object_map
+$removeparam=action_ref_map
+$removeparam=action_type_map
+$removeparam=fb_action_ids
+$removeparam=fb_action_types
+$removeparam=fb_comment_id
+$removeparam=fb_ref
+$removeparam=fb_source
+$removeparam=fbclid
+! https://github.com/DandelionSprout/adfilt/discussions/163#discussioncomment-2597385
+$removeparam=_clde
+$removeparam=_cldee
+! URL Campaign Mapper
+! https://documentation.mapp.com/latest/en/url-campaign-mapper-19109338.html
+$removeparam=wt_mc
+! https://github.com/AdguardTeam/AdguardFilters/issues/100448
+! https://github.com/AdguardTeam/AdguardFilters/issues/115746
+$removeparam=oprtrack
+! Campaign link tracking
+! https://developers.atinternet-solutions.com/as2-tagging-en/javascript-en/campaigns-javascript-en/marketing-campaigns-javascript-en/#direct-method_5
+$removeparam=xtor
+! Microsoft Click ID
+! https://help.ads.microsoft.com/apex/index/3/en/60000
+$removeparam=msclkid
+! UTM
+$removeparam=utm_campaign
+$removeparam=utm_channel
+$removeparam=utm_cid
+$removeparam=utm_content
+$removeparam=utm_id
+$removeparam=utm_medium
+$removeparam=utm_name
+$removeparam=utm_place
+$removeparam=utm_pubreferrer
+$removeparam=utm_reader
+$removeparam=utm_referrer
+$removeparam=utm_serial
+$removeparam=utm_social
+$removeparam=utm_social-type
+$removeparam=utm_source
+$removeparam=utm_swu
+$removeparam=utm_term
+$removeparam=utm_keyword
+$removeparam=utm_userid
+$removeparam=utm_viz_id
+$removeparam=utm_product
+$removeparam=utm_campaignid
+$removeparam=utm_ad
+$removeparam=utm_brand
+$removeparam=utm_emcid
+$removeparam=utm_emmid
+$removeparam=utm_umguk
+! Google ads/analytics
+$removeparam=gbraid
+$removeparam=wbraid
+$removeparam=gclsrc
+$removeparam=gclid
+$removeparam=yclid
+! DPG Media analytics
+! Used on Dutch sites
+$removeparam=dpg_source
+$removeparam=dpg_campaign
+$removeparam=dpg_medium
+$removeparam=dpg_content
+! AdmitAd tracking
+$removeparam=admitad_uid
+! adjust.com tracking
+$removeparam=gps_adid
+$removeparam=unicorn_click_id
+$removeparam=adjust_creative
+$removeparam=adjust_tracker_limit
+$removeparam=adjust_tracker
+$removeparam=adjust_adgroup
+$removeparam=adjust_campaign
+! https://github.com/AdguardTeam/AdguardFilters/issues/89869
+! email subscriptions tracking
+$removeparam=bsft_clkid
+$removeparam=bsft_eid
+$removeparam=bsft_mid
+$removeparam=bsft_uid
+$removeparam=bsft_aaid
+$removeparam=bsft_ek
+! Matomo/Piwik
+$removeparam=mtm_campaign
+$removeparam=mtm_cid
+$removeparam=mtm_content
+$removeparam=mtm_group
+$removeparam=mtm_keyword
+$removeparam=mtm_medium
+$removeparam=mtm_placement
+$removeparam=mtm_source
+$removeparam=pk_campaign
+$removeparam=pk_medium
+$removeparam=pk_source
+! Branch.io ( https://stackoverflow.com/questions/37882810/what-is-meaning-of-branch-match-id )
+$removeparam=_branch_match_id
+! Valuecommerce ( https://help.valuecommerce.ne.jp/mer/dl/ITP2.0_for_iTAG.pdf )
+$removeparam=vc_lpp
+! https://github.com/brave/brave-browser/issues/17507
+$removeparam=ml_subscriber
+$removeparam=ml_subscriber_hash
+! https://github.com/brave/brave-browser/issues/17451
+$removeparam=rb_clickid
+! https://github.com/brave/brave-browser/issues/13644
+$removeparam=oly_anon_id
+$removeparam=oly_enc_id
+! AD EBiS
+$removeparam=ebisAdID
+! https://github.com/AdguardTeam/AdguardFilters/issues/108478
+$removeparam=irgwc
+! Facebook analytics
+$removeparam=fbclid
+!---------------------------------------------------------------------------!
+!-------------- Specific web sites ---------------------------------------------!
+!---------------------------------------------------------------------------!
+!
+! This section contains the list of domain-specific rules that remove URL tracking parameters. Rules have to contain only a single modifier: `removeparam`.
+! In some cases, it's allowed to add content type and `$domain` modifiers.
+!
+! Good: ||example.org^$removeparam=cx
+! Bad: ||example.org^$xmlhttprequest,redirect=noopvast-3.0 (for instance, should be in specific.txt)
+!
+!
+! https://github.com/AdguardTeam/AdguardFilters/issues/115977
+||rapidgator.net^$removeparam=Referer
+! https://developer.atlassian.com/developer-guide/client-identification/
+||atlassian.net^$removeparam=atlOrigin
+! https://www.so-net.ne.jp/access/hikari/minico/ad/?SmRcid=snt_snt_top_gate
+||so-net.ne.jp^$removeparam=SmRcid
+! https://github.com/AdguardTeam/AdguardFilters/issues/113231#issuecomment-1091899519
+||ameblo.jp^$removeparam=frm_id
+! popin.cc widgets
+||popin.cc/popin_discovery/$script,removeparam=info
+||popin.cc/popin_discovery/$script,removeparam=uid
+! cancanlah.com
+||cancanlah.com^$removeparam=click_id
+! https://github.com/AdguardTeam/AdguardFilters/issues/114505
+||api.cxense.com/public/widget/data?json=$script,removeparam=usi
+||api.cxense.com/public/widget/data?json=$script,removeparam=widgetId
+! https://github.com/AdguardTeam/AdguardFilters/issues/114561
+||lp.sophos.com^$removeparam=elqTrackId
+! https://github.com/AdguardTeam/AdguardFilters/issues/114206
+||player.theplatform.com^$removeparam=playeranalytics
+||player.theplatform.com^$removeparam=targetedlink
+! https://github.com/AdguardTeam/AdguardFilters/issues/113305
+||gearbest.com^$removeparam=lkid
+||gearbest.com^$removeparam=cid
+! https://github.com/AdguardTeam/AdguardFilters/issues/113639
+||zalando.$removeparam=wmc
+||zalando.$removeparam=/^cd\d+/
+||zalando.$removeparam=wt_cd
+||zalando.$removeparam=tm_hem
+! https://github.com/AdguardTeam/AdguardFilters/issues/113567
+||iguru.gr^$removeparam=_unique_id
+||iguru.gr^$removeparam=feed_id
+! https://github.com/AdguardTeam/AdguardFilters/issues/112404
+||quora.com/qemail/tc?$removeparam=al_imp
+||quora.com/qemail/tc?$removeparam=uid
+! https://github.com/AdguardTeam/AdguardFilters/issues/113386
+||humblebundle.com^$removeparam=hmb_medium
+||humblebundle.com^$removeparam=hmb_campaign
+||humblebundle.com^$removeparam=hmb_source
+||humblebundle.com^$removeparam=mcID
+||humblebundle.com^$removeparam=linkID
+! https://github.com/AdguardTeam/AdguardFilters/issues/113137
+||netkeiba.com^$removeparam=rf
+! Firefox extensions intall/update tracking
+||services.addons.mozilla.org^$removeparam=telemetry-client-id
+||versioncheck.addons.mozilla.org^$xmlhttprequest,removeparam=appID
+! Firefox download installer tracking
+! https://www.comss.ru/page.php?id=10300
+||download.mozilla.org^$removeparam=attribution_sig
+||download.mozilla.org^$removeparam=attribution_code
+! https://github.com/DandelionSprout/adfilt/discussions/163#discussioncomment-2381922
+||nextgov.com^$removeparam=oref
+||defenseone.com^$removeparam=oref
+! https://github.com/AdguardTeam/AdguardFilters/issues/111997
+||ozon.ru^$removeparam=asb2
+! https://github.com/AdguardTeam/AdguardFilters/issues/112692
+||wizcase.com/?$removeparam=pageview_id
+||wizcase.com/?$removeparam=clickout_id
+||wizcase.com/?$removeparam=vid
+||microsoft.msafflnk.net^$removeparam=sharedid
+||microsoft.msafflnk.net^$removeparam=/^subid/
+||ojrq.net/p/$removeparam=cid
+||click.linksynergy.com/fs-bin/click?id=$removeparam=u1
+||click.linksynergy.com/fs-bin/click?id=$removeparam=u2
+! https://github.com/AdguardTeam/AdguardFilters/issues/112776
+||open.spotify.com^$removeparam=si
+! https://forum.adguard.com/index.php?threads/47148/
+||go.mysku.ru^$removeparam=~r
+! https://github.com/AdguardTeam/AdguardFilters/issues/112128
+||apple.com^$removeparam=ct
+||apple.com^$removeparam=pt
+! https://github.com/AdguardTeam/AdguardFilters/issues/112345
+$removeparam=ActionID,domain=otto.de|ottoversand.at
+$removeparam=AffiliateID,domain=otto.de|ottoversand.at
+$removeparam=campid,domain=otto.de|ottoversand.at
+! https://github.com/AdguardTeam/AdguardFilters/pull/112096
+||search.naver.com/p/crd/rd$removeparam=i
+||search.naver.com/p/crd/rd$removeparam=px
+||search.naver.com/p/crd/rd$removeparam=py
+||search.naver.com/p/crd/rd$removeparam=sx
+||search.naver.com/p/crd/rd$removeparam=sy
+||search.naver.com/p/crd/rd$removeparam=p
+||search.naver.com/p/crd/rd$removeparam=s
+||search.naver.com/p/crd/rd$removeparam=time
+! https://github.com/AdguardTeam/AdguardFilters/issues/110942
+||buzzfeednews.com^$removeparam=ref
+! https://github.com/AdguardTeam/AdguardFilters/issues/110758
+||goodreads.com^$removeparam=ref
+! https://github.com/AdguardTeam/AdguardFilters/issues/105140
+||journal.tinkoff.ru$removeparam=mindbox-click-id
+! https://github.com/AdguardTeam/AdguardFilters/issues/110462
+||coconala.com^$removeparam=ref
+||coconala.com^$removeparam=ref_kind
+||coconala.com^$removeparam=ref_no
+! https://github.com/AdguardTeam/AdguardFilters/issues/109153
+$domain=atlanticcouncil.org|digikey.com,removeparam=/^mkt_tok/
+! https://github.com/DandelionSprout/adfilt/discussions/163#discussioncomment-2155728
+||xkcd.com^$removeparam=trk
+! https://github.com/AdguardTeam/AdguardFilters/issues/109834
+||video.laxd.com^$removeparam=ref
+! https://support.mozilla.org/pl/questions/1364964#answer-1475794
+||msn.com^$removeparam=pc
+! https://github.com/AdguardTeam/AdguardFilters/issues/108915#issuecomment-1031525591
+! https://github.com/AdguardTeam/AdguardFilters/issues/109244
+||approach.yahoo.co.jp^$removeparam=code
+! Taobao
+||taobao.com^$removeparam=scm
+||taobao.com^$removeparam=pvid
+||taobao.com^$removeparam=utparam
+! Aliexpress
+||aliexpress.$removeparam=spm
+||aliexpress.$removeparam=scm
+||aliexpress.$removeparam=scm_id
+||aliexpress.$removeparam=scm-url
+||aliexpress.$removeparam=utparam
+||aliexpress.$removeparam=aff_fcid
+||aliexpress.$removeparam=terminal_id
+||aliexpress.$removeparam=aff_trace_key
+||aliexpress.$removeparam=aff_fsk
+||aliexpress.$removeparam=pvid
+||aliexpress.$removeparam=dp
+||aliexpress.$removeparam=sk
+! https://github.com/AdguardTeam/AdguardFilters/issues/108478
+||agoda.com^$removeparam=tag
+! https://github.com/AdguardTeam/AdguardFilters/issues/106186
+||editor.flixier.com^$removeparam=/fx_(source|medium|campaign)/
+! https://github.com/AdguardTeam/AdguardFilters/issues/108860
+||github.com/signup$removeparam=source
+||github.com/signup$removeparam=/^ref_/
+! https://github.com/DandelionSprout/adfilt/discussions/163#discussioncomment-2052109
+||tradingview.com^$removeparam=source
+! https://github.com/AdguardTeam/AdguardFilters/issues/107988
+||api.cxense.com^$removeparam=/^cx_/
+||api.cxense.com^$removeparam=/^pickup_list_click/
+! Rakuten sites self-promo links
+$removeparam=l-id,domain=nikki.ne.jp|rakuten.co.jp|rebates.jp
+||rakuten.co.jp^$removeparam=scid
+! https://github.com/AdguardTeam/AdguardFilters/issues/107266
+||azby.fmworld.net/cgi-bin/common/rd.cgi?$removeparam=affitest
+! https://github.com/AdguardTeam/AdguardFilters/issues/107199
+||azby.fmworld.net^$removeparam=mc_pc
+! https://toku.yahoo.co.jp/ytop202111/entry?fr=weather_right_column
+||toku.yahoo.co.jp^$removeparam=fr
+! https://github.com/AdguardTeam/AdguardFilters/issues/106436
+! https://github.com/AdguardTeam/AdguardFilters/issues/106435
+! https://github.com/AdguardTeam/AdguardFilters/issues/106434
+! https://github.com/AdguardTeam/AdguardFilters/issues/106432
+||nikkei.com^$removeparam=i_cid
+||nikkei.com^$removeparam=n_cid
+||nikkeibp.co.jp^$removeparam=i_cid
+! https://github.com/AdguardTeam/AdguardFilters/issues/104716
+||cyberlink.com^$removeparam=affid
+! https://github.com/AdguardTeam/AdguardFilters/issues/106316
+||zestradar.com^$removeparam=adclid
+! https://github.com/AdguardTeam/AdguardFilters/issues/104773
+||hit.gemius.pl/hitredir$removeparam=id
+||hit.gemius.pl/hitredir$removeparam=extra
+! adorama.com
+||adorama.com^$removeparam=obem
+||adorama.com^$removeparam=bc_pid
+! https://github.com/AdguardTeam/AdguardFilters/commit/920d973db052ded91b48fbb8c7ca3fe2fdeda237
+||adjust.com^$removeparam=adgroup
+! https://github.com/DandelionSprout/adfilt/discussions/163#discussioncomment-1909327
+||tiktok.com^$removeparam=share_app_id
+||tiktok.com^$removeparam=share_author_id
+||tiktok.com^$removeparam=tt_from
+! https://github.com/DandelionSprout/adfilt/discussions/163#discussioncomment-1899731
+||reddit.app.link^$removeparam=adblock
+||reddit.app.link^$removeparam=compact_view
+||reddit.app.link^$removeparam=dnt
+||reddit.app.link^$removeparam=geoip_country
+||reddit.app.link^$removeparam=referrer_domain
+||reddit.app.link^$removeparam=referrer_url
+! https://github.com/AdguardTeam/AdguardFilters/issues/105183
+||dmkt-sp.jp^$removeparam=impressionId
+! www.dmm.co.jp trackparam
+||dmm.co.jp^$removeparam=dmmref
+||dmm.co.jp^$removeparam=i3_ord
+||dmm.co.jp^$removeparam=i3_ref
+! https://github.com/AdguardTeam/AdguardFilters/issues/105143
+||imdb.com^$removeparam=ref_
+! https://github.com/AdguardTeam/AdguardFilters/issues/104987
+||livedoor.biz^$removeparam=ref
+! reddit.com - email tracking
+||reddit.com^$removeparam=_branch_referrer
+||reddit.com^$removeparam=post_fullname
+! adjust.com tracking
+||adj.st^$removeparam=CollectionId
+||adj.st^$removeparam=adjust_deeplink
+! Alexa extension tracking
+||data.alexa.com/data/$xmlhttprequest,removeparam=/cdt|ref/
+! https://forum.adguard.com/index.php?threads/46096/
+||comodo.com^$removeparam=track
+||comodo.com^$removeparam=af
+! https://github.com/AdguardTeam/AdguardFilters/pull/104464
+||link.coupang.com^$removeparam=lptag
+! https://github.com/AdguardTeam/AdguardFilters/issues/101790
+||wuzhuiso.com^$removeparam=src
+! https://github.com/AdguardTeam/AdguardFilters/pull/103989
+||nordvpn.com^$removeparam=data1
+! https://github.com/AdguardTeam/AdguardFilters/issues/100580
+||upgrad.com^$removeparam=UTM_MEDIUM
+! https://github.com/uBlockOrigin/uAssets/issues/10867
+||adweek.com^$removeparam=traffic_source
+! AdGuard
+$removeparam=aid,domain=adguard-vpn.com|adguard-dns.com|adguard.com
+! https://github.com/AdguardTeam/AdguardFilters/pull/102144
+||kitbag.com^$removeparam=_ref
+||kitbag.com^$removeparam=ab
+! vstat extension tracking
+||web.vstat.info$removeparam=guid
+||web.vstat.info$removeparam=user_agent
+! https://github.com/AdguardTeam/AdguardFilters/issues/101590
+||start.pm.by^$removeparam=adtag
+! https://github.com/AdguardTeam/AdguardFilters/issues/100613
+||redhotpawn.com^$removeparam=cbqsid
+! https://github.com/AdguardTeam/AdguardFilters/issues/94662
+||reddit.com^$removeparam=correlation_id
+||reddit.com^$removeparam=ref_campaign
+||reddit.com^$removeparam=ref_source
+||reddit.com^$removeparam=ref
+! https://github.com/AdguardTeam/AdguardFilters/issues/99645
+||trendyol.com^$removeparam=tyutm_source
+||trendyol.com^$removeparam=tyutm_medium
+||trendyol.com^$removeparam=tyutm_campaign
+! https://github.com/AdguardTeam/AdguardFilters/pull/100181
+||cc.loginfra.com/cc$removeparam=a
+||cc.loginfra.com/cc$removeparam=bw
+||cc.loginfra.com/cc$removeparam=px
+||cc.loginfra.com/cc$removeparam=py
+||cc.loginfra.com/cc$removeparam=sx
+||cc.loginfra.com/cc$removeparam=sy
+||cc.loginfra.com/cc$removeparam=nsc
+! https://github.com/AdguardTeam/AdguardFilters/issues/99345
+||mein.onlinekonto.de^$removeparam=ref
+! https://github.com/Yuki2718/adblock/issues/39
+||dengekionline.com^$removeparam=osusume_banner
+! https://github.com/AdguardTeam/AdguardFilters/pull/99938
+! for more info - https://www.biaodianfu.com/spm.html
+$removeparam=spm,domain=aliyun.com|sohu.com
+||aliyun.com^$removeparam=scm
+$removeparam=dt_dapp,domain=douban.com|163.com
+||douban.com^$removeparam=dt_platform
+! https://github.com/AdguardTeam/AdguardFilters/issues/98659
+||listelerim.hepsiburada.com^$removeparam=af_ad
+||listelerim.hepsiburada.com^$removeparam=af_adset
+||listelerim.hepsiburada.com^$removeparam=af_force_deeplink
+||listelerim.hepsiburada.com^$removeparam=pid
+||listelerim.hepsiburada.com^$removeparam=c
+||listelerim.hepsiburada.com^$removeparam=is_retargeting
+||listelerim.hepsiburada.com^$removeparam=shortlink
+! Google Play source tracking
+||play.google.com/store/$removeparam=pcampaignid
+! http://www.cyber-ad01.cc/0155/?ip=0155&id=L206
+||cyber-ad01.cc^$removeparam=ip
+! https://d-markets.net/markets/p/r?_loc=101928001&_article=1503722&_link=1449535&_lurl=http%3A%2F%2Fwww.cityheaven.net%2Faichi%2FA2302%2FA230201%2Ffujiko-ogaki_i%2Fnews%2FnewsId-1449535/?ref=myheaven
+||d-markets.net^$removeparam=ref
+! https://github.com/AdguardTeam/AdguardFilters/pull/111386
+! Coupang.com - An electronic commerce service of S. Korea.
+||coupang.com/*/products/$removeparam=q
+||coupang.com/*/products/$removeparam=searchId
+||coupang.com^$removeparam=wRef
+||coupang.com^$removeparam=traceid
+||coupang.com^$removeparam=wTime
+||coupang.com^$removeparam=wPcid
+! https://github.com/AdguardTeam/AdguardFilters/issues/97108#issuecomment-942178734
+||weidian.com^$removeparam=/distributorid|wfr|ifr|share_relation/
+! https://github.com/AdguardTeam/AdguardFilters/issues/97935
+||jasonsavard.com^$removeparam=/cUrl|ref/
+! https://www.expressvpn.com/tfk?a_aid=tf, https://vpnarea.com/front/member/signup?a_aid=torrentgalaxy
+$removeparam=a_aid,domain=expressvpn.com|vpnarea.com
+! https://github.com/AdguardTeam/AdguardFilters/issues/97742
+||hog.*^$removeparam=ad
+! https://github.com/AdguardTeam/AdguardFilters/pull/95024
+! lcs.naver.com - It is used on Naver Corp's platform
+||lcs.naver.com/m?u=$removeparam=os
+||lcs.naver.com/m?u=$removeparam=ln
+||lcs.naver.com/m?u=$removeparam=sr
+||lcs.naver.com/m?u=$removeparam=bw
+||lcs.naver.com/m?u=$removeparam=bh
+||lcs.naver.com/m?u=$removeparam=ls
+||lcs.naver.com/m?u=$removeparam=navigationStart
+||lcs.naver.com/m?u=$removeparam=requestStart
+||lcs.naver.com/m?u=$removeparam=responseStart
+||lcs.naver.com/m?u=$removeparam=responseEnd
+||lcs.naver.com/m?u=$removeparam=domLoading
+||lcs.naver.com/m?u=$removeparam=domInteractive
+||lcs.naver.com/m?u=$removeparam=domContentLoadedEventStart
+||lcs.naver.com/m?u=$removeparam=domContentLoadedEventEnd
+||lcs.naver.com/m?u=$removeparam=domComplete
+||lcs.naver.com/m?u=$removeparam=loadEventStart
+||lcs.naver.com/m?u=$removeparam=loadEventEnd
+||lcs.naver.com/m?u=$removeparam=pid
+||lcs.naver.com/m?u=$removeparam=ts
+! https://github.com/AdguardTeam/AdguardFilters/issues/95525
+||edx.org^$removeparam=source
+! https://github.com/AdguardTeam/AdguardFilters/issues/95523
+||infoq.com^$removeparam=/topicPageSponsorship|^itm_/
+! https://github.com/AdguardTeam/AdguardFilters/issues/94797
+||coupondunia.in^$removeparam=itm_source
+! https://github.com/AdguardTeam/AdguardFilters/issues/94722
+||adshares.net^$removeparam=cid
+! https://github.com/AdguardTeam/AdguardFilters/issues/94664
+||get.adobe.com^$removeparam=browser_type
+||get.adobe.com^$removeparam=browser_dist
+! https://github.com/AdguardTeam/AdguardFilters/issues/94669
+||get.adobe.com^$removeparam=type
+||get.adobe.com^$removeparam=workflow
+||get.adobe.com^$removeparam=promoid
+||get.adobe.com^$removeparam=TRILIBIS_EMULATOR_UA
+! https://github.com/AdguardTeam/AdguardFilters/issues/95058
+||ups.xplosion.de/ctx?event_id=$removeparam
+! https://github.com/AdguardTeam/AdguardFilters/issues/93452
+||app.5-delivery.ru^$removeparam=c
+||app.5-delivery.ru^$removeparam=pid
+! https://github.com/AdguardTeam/AdguardFilters/issues/94414
+||voyeur-house.tv^$removeparam=clickid
+! https://github.com/AdguardTeam/AdguardFilters/issues/94768
+||cht.com.tw^$removeparam=Source
+||cht.com.tw^$removeparam=Identifier
+! aufast.co - affiliate(ads) links tracking
+||aufast.co^$removeparam=/^utm_/
+||aufast.co^$removeparam=clickid
+! iqbroker.com - affiliate(ads) links tracking
+||iqbroker.com^$removeparam=afftrack
+||iqbroker.com^$removeparam=clickid
+||iqbroker.com^$removeparam=aff_model
+! https://github.com/AdguardTeam/AdguardFilters/issues/93072
+! https://github.com/AdguardTeam/AdguardFilters/issues/92383
+! ads_params - it contains information on a which website video iframe is embedded
+||dailymotion.com/embed/video/*?ads_params=*&origin=$removeparam=ads_params
+||dailymotion.com/embed/video/*?ads_params=*&origin=$removeparam=origin
+! https://github.com/AdguardTeam/AdguardFilters/pull/91540
+||wired.co.uk^$removeparam=mbid
+! https://github.com/AdguardTeam/AdguardFilters/issues/91233
+||wikihow.com^$removeparam=?utm_source
+! kohls.com - counter
+||kohls.com^$removeparam=CID
+! instagram.com - share tracking
+||instagram.com^$removeparam=ig_rid
+||instagram.com^$removeparam=igshid
+! euronews.com - email subscription tracking
+||euronews.com^$removeparam=_ope
+! https://github.com/AdguardTeam/AdguardFilters/issues/90028
+$removeparam=/^curator_clanid/,domain=steampowered.com|steamcommunity.com
+! https://github.com/AdguardTeam/AdguardFilters/issues/89768
+||mediamarkt.com.tr^$removeparam=rbtc
+! https://github.com/AdguardTeam/AdguardFilters/issues/90055
+||t.myvisualiq.net^$removeparam=~red
+! https://github.com/AdguardTeam/AdguardFilters/issues/89556
+||uspoloassn.com^$removeparam=ref
+||arcelik.com.tr^$removeparam=ref
+! https://github.com/AdguardTeam/AdguardFilters/issues/88784
+||express.de^$removeparam=cb
+||ksta.de^$removeparam=cb
+! https://github.com/AdguardTeam/AdguardFilters/issues/88502
+||linkedin.com/authwall?$removeparam=trkInfo
+||linkedin.com/authwall?$removeparam=originalReferer
+! https://github.com/AdguardTeam/AdguardFilters/issues/110477
+||linkedin.com^$removeparam=/^trk/
+! https://github.com/AdguardTeam/AdguardFilters/issues/69722
+||digikey.com^$removeparam=/^utm_cid/
+!
+! NicoNico (nicovideo.jp)
+||nicovideo.jp^$removeparam=cmnhd_ref
+||nicovideo.jp^$removeparam=ref
+! Naver (naver.com) - tracking parameter
+! https://github.com/AdguardTeam/AdguardFilters/pull/89838
+||search.naver.com/search.naver$removeparam=tqi
+||cc.naver.com/cc?a$removeparam=bw
+||cc.naver.com/cc?a$removeparam=px
+||cc.naver.com/cc?a$removeparam=py
+||cc.naver.com/cc?a$removeparam=sx
+||cc.naver.com/cc?a$removeparam=sy
+! Yandex
+! may be merged in regex rule over time
+||yandex.*/news/$removeparam=from
+||yandex.*/news/$removeparam=persistent_id
+||yandex.*/sport/$removeparam=persistent_id
+||yandex.*/news/$removeparam=msid
+||yandex.*/sport/$removeparam=msid
+||yandex.*/news/$removeparam=mlid
+||yandex.*/sport/$removeparam=mlid
+||yandex.*/news/$removeparam=stid
+||yandex.*/sport/$removeparam=stid
+||yandex.*/images/$removeparam=source-serpid
+! https://github.com/AdguardTeam/AdguardFilters/issues/88606
+||www.yandex.$removeparam=clid
+://yandex.$removeparam=clid
+://yandex.$removeparam=source
+! Baidu search - statictics
+||www.baidu.com^$removeparam=rsv_pq
+||www.baidu.com^$removeparam=rsv_t
+! https://github.com/AdguardTeam/CoreLibs/issues/1464
+! Probably a bug
+! bitrec.com recommendations widget
+||cod.bitrec.com/topocentras-services/js/recs?$removeparam=visitorId
+||cod.bitrec.com/topocentras-services/js/recs?$removeparam=externalVisitorId
+||cod.bitrec.com/topocentras-services/js/recs?$removeparam=r
+! https://github.com/AdguardTeam/AdguardFilters/issues/89345
+||play.google.*^$removeparam=referrer
+! Google Search
+! https://github.com/AdguardTeam/CoreLibs/issues/1464
+! Probably a bug
+!
+! eBay tracking parameters
+||www.ebay.$removeparam=_trkparms
+||www.ebay.$removeparam=_trksid
+||www.ebay.$removeparam=amdata
+||www.ebay.$removeparam=mkrid
+||www.ebay.$removeparam=campid
+! Amazon tracking IDs found on several subpages
+! Disabled rules:
+! https://github.com/AdguardTeam/AdguardFilters/issues/88627
+! ||amazon.*$removeparam=ref_
+! ||amazon.*$removeparam=ie
+! https://github.com/AdguardTeam/AdguardFilters/issues/89163
+! ||amazon.*/message-us$removeparam=origRef
+!
+! ||amazon.*$removeparam=sr - breaks automatic jump to review details
+! ||amazon.*$removeparam=s - breaks URLs which includes it to sort
+! https://github.com/AdguardTeam/AdguardFilters/issues/110571 - disable rule if issue happens again: broke adding article to basket when viewing all offers
+||amazon.*$removeparam=ref
+!
+||amazon.*$removeparam=ascsubtag
+||amazon.*$removeparam=c
+||amazon.*$removeparam=camp
+||amazon.*$removeparam=creative
+||amazon.*$removeparam=creativeASIN
+||amazon.*$removeparam=dchild
+||amazon.*$removeparam=field-lbr_brands_browse-bin
+||amazon.*$removeparam=initialIssue
+||amazon.*$removeparam=ingress
+||amazon.*$removeparam=pd_rd_i
+||amazon.*$removeparam=pd_rd_r
+||amazon.*$removeparam=pd_rd_w
+||amazon.*$removeparam=pd_rd_wg
+||amazon.*$removeparam=pf_rd_i
+||amazon.*$removeparam=pf_rd_m
+||amazon.*$removeparam=pf_rd_p
+||amazon.*$removeparam=pf_rd_r
+||amazon.*$removeparam=pf_rd_s
+||amazon.*$removeparam=pf_rd_t
+||amazon.*$removeparam=pf_rd_w
+||amazon.*$removeparam=plattr
+||amazon.*$removeparam=qid
+||amazon.*$removeparam=rdc
+||amazon.*$removeparam=refRID
+||amazon.*$removeparam=smid
+||amazon.*$removeparam=tag
+||amazon.*$removeparam=ts_id
+||amazon.*$removeparam=visitId
+||amazon.*$removeparam=vtr
+||amazon.*/aa$removeparam=bitCampaignCode
+||amazon.*/dp/$removeparam=tag
+||amazon.*/hz/contact-us/csp$removeparam=/entries/
+||amazon.*/hz/contact-us/csp$removeparam=/Version/
+||amazon.*/hz/contact-us/csp$removeparam=from
+||amazon.*/hz/contact-us/csp$removeparam=source
+||amazon.*/message-us$removeparam=muClientName
+! https://github.com/AdguardTeam/AdguardFilters/issues/83138
+||app.mi.com/download/*?id=$removeparam=ref
+||app.mi.com/download/*?id=$removeparam=nonce
+||app.mi.com/download/*?id=$removeparam=appClientId
+||app.mi.com/download/*?id=$removeparam=appSignature
+! https://github.com/AdguardTeam/AdguardFilters/issues/83136
+||mp.weixin.qq.com^$removeparam=chksm
+||mp.weixin.qq.com^$removeparam=key
+||mp.weixin.qq.com^$removeparam=uin
+||mp.weixin.qq.com^$removeparam=devicetype
+||mp.weixin.qq.com^$removeparam=exportkey
+||mp.weixin.qq.com^$removeparam=mpshare
+||mp.weixin.qq.com^$removeparam=scene
+||mp.weixin.qq.com^$removeparam=srcid
+||mp.weixin.qq.com^$removeparam=nettype
+||mp.weixin.qq.com^$removeparam=WBAPIAnalysisOriUICodes
+||mp.weixin.qq.com^$removeparam=v_p
+||mp.weixin.qq.com^$removeparam=launchid
+||mp.weixin.qq.com^$removeparam=from
+||mp.weixin.qq.com^$removeparam=aid
+! Prevent tracking when request is unblocked
+||pixel.adsafeprotected.com/services/pub?$removeparam=slot
+||pixel.adsafeprotected.com/services/pub?$removeparam=sessionId
+||pixel.adsafeprotected.com/services/pub?$removeparam=anId
+||pixel.adsafeprotected.com/services/pub?$removeparam=wr
+||pixel.adsafeprotected.com/services/pub?$removeparam=sr
+||pixel.adsafeprotected.com/services/pub?$removeparam=url
+! Ads tracking
+||cam4.com^$removeparam=act
+||cam4.com^$removeparam=suid
+||cam4.com^$removeparam=showSignupPopup
+! Tracks source site
+||bbc.com^$removeparam=ocid
+||office.com^$removeparam=ocid
+! Embedded tweets
+||twitter.com^$removeparam=ref_src
+||twitter.com^$removeparam=ref_url
+!
+||zerkalo.io^$removeparam=tg
+||zerkalo.io^$removeparam=vk
+!
+||microsoft.com^$removeparam=tduid
+||microsoft.com^$removeparam=irclickid
+||microsoft.com^$removeparam=ranEAID
+||microsoft.com^$removeparam=ranSiteID
+||microsoft.com^$removeparam=ocid
+$removeparam=epi,domain=microsoft.com|xbox.com
+!
+! https://github.com/AdguardTeam/AdguardFilters/issues/88163
+||nbcume.sc.omtrdc.net/id?d_visid_ver=$removeparam=/mcorgid|mid|ts/,domain=nbcdfw.com
+!
+! https://developers.google.com/analytics/devguides/collection/protocol/v1/parameters
+$removeparam=dclid
+!
+||trendyol.com^$removeparam=_ga
+||trendyol.com^$removeparam=utm_subaff
+!
+||duda.co^$removeparam=irclickid
+||marktjagd.de^$removeparam=client
+||kaspersky.com^$removeparam=icid
+||coursera.org^$removeparam=siteID
+||mag2.com^$removeparam=trflg
+||dailymail.co.uk^$removeparam=ito
+||hepsiburada.com^$removeparam=wt_af
+||mioga.de^$removeparam=pl
+||mioga.de^$removeparam=idealoid
+||ejoker.de^$removeparam=sPartner
+||ejoker.de^$removeparam=idealoid
+||gmx.*/logoutlounge$removeparam=p
+||web.de/logoutlounge$removeparam=p
+||gmx.*^$removeparam=mc
+||web.de^$removeparam=mc
+||lotto.gmx.*^$removeparam=partnerId
+||lotto.gmx.*^$removeparam=advertisementId
+||lotto.web.de^$removeparam=partnerId
+||lotto.web.de^$removeparam=advertisementId
+||shopping.gmx.*^$removeparam=origin
+||shopping.web.de^$removeparam=origin
+||ad.doubleclick.net/ddm/trackclk/$removeparam=/^dc_trk_/
+||alza.de/*.htm$removeparam=kampan
+||cosse.de^$removeparam=referer
+||idealo.de/*.html$removeparam=offerKey
+||idealo.de/*.html$removeparam=offerListId
+||marketing.net.idealo-partner.com^$removeparam=smc2
+||marketing.net.idealo-partner.com^$removeparam=smc5
+||media01.eu/set.aspx$removeparam=trackid
+||netgames.de^$removeparam=refID
+||www.alternate.de^$removeparam=partner
+||www.galaxus.de^$removeparam=pcscpId
+||marketing.net.idealo-partner.com^$removeparam=amc
+||www.lidl.de^$removeparam=msktc
+||www.pricezilla.de^$removeparam=bid
+!
+||boomstore.de*.html$removeparam=campaign
+||www.alternate.de^$removeparam=campaign
+!
+||cosse.de^$removeparam=sPartner
+||www.technikdirekt.de^$removeparam=sPartner
+||www.hitseller.de^$removeparam=sPartner
+!
+||galaxus.de^$removeparam=idealoid
+||www.technikdirekt.de^$removeparam=idealoid
+||netgames.de^$removeparam=idealoid
+||www.alternate.de^$removeparam=idealoid
+||www.electronic4you.de^$removeparam=idealoid
+||www.hitseller.de^$removeparam=idealoid
+!
+||www.hitseller.de^$removeparam=etcc_cmp
+||marketing.net.idealo-partner.com^$removeparam=etcc_cmp
+!
+||www.hitseller.de^$removeparam=etcc_med
+||marketing.net.idealo-partner.com^$removeparam=etcc_med
+!
+||www.hitseller.de^$removeparam=etcc_produkt
+||marketing.net.idealo-partner.com^$removeparam=etcc_produkt
+!
+||visit.digidip.net^$removeparam=/^(ppref|ref|pid)=/
+||ad.admitad.com^$removeparam=/^subid/
+||mvideo.ru^$removeparam=/^(_requestid|reff)=/
+||nytimes.com^$removeparam=impression_id
+!
+||websearch.rakuten.co.jp/Web?$removeparam=ref
+||rakuten.co.jp^*&trflg=$removeparam=trflg
+||search.yahoo.co.jp^$removeparam=fr
+! Daraz & Shop (Samesite)
+||daraz.*$removeparam=/spm=|scm=|from=|keyori=|sugg=|search=|mp=|c=|^abtest|^abbucket|pos=|themeID=|algArgs=|clickTrackInfo=|acm=|item_id=|version=|up_id=|pvid=/
+! Bilibili
+||bilibili.com^$removeparam=from
+||bilibili.com^$removeparam=seid
+||bilibili.com^$removeparam=share_source
+||bilibili.com^$removeparam=spm_id_from
+||bilibili.com^$removeparam=from_spm_id
+||bilibili.com^$removeparam=share_medium
+||bilibili.com^$removeparam=share_plat
+||bilibili.com^$removeparam=share_session_id
+||bilibili.com^$removeparam=share_source
+||bilibili.com^$removeparam=share_tag
+||bilibili.com^$removeparam=timestamp
+||bilibili.com^$removeparam=unique_k
+||search.bilibili.com^$removeparam=from_source
+! Weibo
+||weibo.*^$removeparam=weibo_id
+||weibo.*^$removeparam=dt_dapp
+! Iqiyi
+||iqiyi.com^$removeparam=vfrm
+||iqiyi.com^$removeparam=vfrmblk
+||iqiyi.com^$removeparam=vfrmrst
+! Sohu
+||sohu.com^$removeparam=_f
+||sohu.com^$removeparam=_trans_
+||sohu.com^$removeparam=scm
+||sohu.com^$removeparam=spm
+! Youku
+||v.youku.com^$removeparam=ptag
+||v.youku.com^$removeparam=scm
+||v.youku.com^$removeparam=spm
+!
+!---------------------------------------------------------------------------!
+!-------------- Whitelist ------------------------------------------------------!
+!---------------------------------------------------------------------------!
+!
+! This section contains the list of rules that fix incorrect blocking. Rules should be domain-specific and only the `removeparam` modifier is allowed.
+!
+! Good: @@||example.org^$removeparam=cx
+! Bad:  @@||example.org^$stealth (should be in AdGuard Base - whitelist_stealth.txt)
+!
+!
+! TEMPORARY
+! https://github.com/AdguardTeam/tsurlfilter/issues/24
+!
+! https://github.com/AdguardTeam/AdguardFilters/issues/110571
+@@||data.amazon.*/api/marketplaces/*/cart/carts/retail/items$removeparam=ref
+! https://github.com/ClearURLs/Rules/issues/30
+@@||tix.axs.com^$removeparam
+! https://github.com/AdguardTeam/AdguardFilters/issues/105313
+! https://github.com/AdguardTeam/AdguardFilters/issues/103723
+! https://github.com/AdguardTeam/AdguardFilters/issues/103211
+! TODO: it can be removed after the release of the extension 4.0
+@@/mediaserver/*$removeparam,domain=ramtrucks.com|chrysler.com|fiatusa.com|alfaromeousa.com|jeep.com|dodge.com
+! https://github.com/AdguardTeam/AdguardFilters/issues/100190
+! TODO: it can be removed after the release of the extension 4.0
+@@||dkbs.sabio.de/sabio/services/$removeparam
+! https://github.com/AdguardTeam/AdguardFilters/issues/100285
+@@||sendgb.com/*/?utm_source=$removeparam=utm_source
+! https://github.com/AdguardTeam/AdguardFilters/issues/96952
+@@||img*.nga$removeparam=cmpid
+! https://github.com/AdguardTeam/AdguardFilters/issues/95837#issuecomment-944914999
+! it can be removed after the release of the extension 4.0
+!
+! https://github.com/DandelionSprout/adfilt/discussions/163#discussioncomment-1683830
+@@||mywot.com/*/confirmNewEmail/$removeparam
+! https://github.com/AdguardTeam/AdguardFilters/issues/96900
+@@||plex.tv/api/v*/users/*?utm_source=$removeparam=utm_source,domain=watch.plex.tv
+! https://github.com/AdguardTeam/AdguardFilters/issues/96746
+@@/embed/comments^$removeparam,~third-party,domain=avclub.com|clickhole.com|deadspin.com|gizmodo.com|jalopnik.com|jezebel.com|kotaku.com|lifehacker.com|splinternews.com|theinventory.com|theonion.com|theroot.com|thetakeout.com|sportskeeda.com
+! https://github.com/AdguardTeam/AdguardFilters/issues/89618#issuecomment-897100189
+@@||urldefense.com^$removeparam
+! https://github.com/AdguardTeam/AdguardFilters/issues/86251
+@@||cdn.privatehost.com/videos*/$removeparam
+! https://github.com/AdguardTeam/AdguardFilters/issues/85797
+@@||rightnowtech.com/engagement/api/consumer/nvidia/*/requestEngagement?pool=$removeparam
+! https://github.com/AdguardTeam/AdguardFilters/issues/85388
+@@||insurancexblog.blogspot.com/?utm_source=$removeparam=utm_source
+! https://github.com/AdguardTeam/AdguardFilters/issues/85160
+@@||gizmodo.com/embed/comments/$removeparam
+! fix redirect: http://turkdebrid.site/api1/?page=create&ads=zshort.io
+@@||toptechtalk.xyz/?utm_source=$removeparam=utm_source
+! kotaku.com - "See all replies" button broken
+@@||kotaku.com/embed/comments$removeparam
+! https://github.com/AdguardTeam/AdguardFilters/issues/78392
+@@||lanacion.com.ar/*module$removeparam=utm_source
+! https://github.com/AdguardTeam/AdguardFilters/issues/69031 [Stealth Mode - Strip URLs from tracking parameters]
+@@||t.send.vt.edu/r/?id=$removeparam=utm_source
+@@||t.send.vt.edu/r/?id=$removeparam=utm_medium
+@@||t.send.vt.edu/r/?id=$removeparam=utm_campaign
+! https://github.com/AdguardTeam/AdguardFilters/issues/52925
+@@||fakt.pl/*&srcc=ucs$removeparam
+@@||przegladsportowy.pl/*&srcc=ucs$removeparam
+@@||auto-swiat.pl/*&srcc=ucs$removeparam
+@@||komputerswiat.pl/*&srcc=ucs$removeparam
+@@||noizz.pl/*&srcc=ucs$removeparam
+@@||plejada.pl/*&srcc=ucs$removeparam
+@@||medonet.pl/*&srcc=ucs$removeparam
+@@||businessinsider.com.pl/*&srcc=ucs$removeparam
+! https://github.com/AdguardTeam/AdguardFilters/issues/63522
+@@||onet.pl/?utm_source=$removeparam
+
+
+
