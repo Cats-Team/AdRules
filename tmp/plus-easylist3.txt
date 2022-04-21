@@ -1053,13 +1053,12 @@ shink.me##+js(aopw, Fingerprint2)
 shink.me##+js(popads.net)
 
 ! kissasian .sh, .li, .sk
+! https://www.reddit.com/r/uBlockOrigin/comments/u8f1c6/blocked_video/
 kissasian.*##+js(aeld, /^(?:click|mousedown)$/, _0x)
+kissasian.*##+js(aopr, mm)
 kissasian.*,kissorg.net##+js(nostif, (), 45000)
 kissasian.*##+js(set, check_adblock, true)
 @@||kissasian.*^$ghide
-!#if !env_mobile
-kissasian.*,kisscenter.net,kissorg.net##[src^="/Ads/"]:xpath(..)
-!#endif
 kissasian.*,kisscenter.net,kissorg.net##.ksAds
 kissasian.*,kisscenter.net,kissorg.net##[id*="ScriptRoot"]
 kissasian.*,kisscenter.net,kissorg.net###videoAd
@@ -11806,7 +11805,7 @@ lookmovie.*##.notifyjs-corner
 lookmovie.*##.nord-vpn.home-banner
 lookmovie.*###single.dtsingle > .content > center > a[href] > img
 lookmovie.*###single.dtsingle > .content > .sheader > .poster > .extra > center > a[href] > img
-*$script,3p,denyallow=cloudcdn.monster|cloudflare.com|cloudflare.net|google.com|googleapis.com|gstatic.com|hcaptcha.com|jsdelivr.net|lookmovie.io|nflxext.com|statically.io|staticallydns.com,domain=lookmovie.*
+*$script,3p,denyallow=cloudcdn.monster|cloudflare.com|cloudflare.net|google.com|googleapis.com|gstatic.com|hcaptcha.com|jsdelivr.net|lookmovie.io|nflxext.com|statically.io|staticallydns.com|sharethis.com,domain=lookmovie.*
 lookmovie.*##+js(aopr, mm)
 ||simplewebanalysis.com^
 ! https://github.com/uBlockOrigin/uAssets/issues/12152
@@ -17392,7 +17391,6 @@ hexupload.net##+js(acis, JSON.parse, break;case $.)
 hexupload.net##+js(aopw, _pop)
 hexupload.net##+js(aopw, Fingerprint2)
 hexupload.net##+js(nowoif)
-*$script,3p,denyallow=bootstrapcdn.com|cloudflare.com|cloudflare.net|google.com|gstatic.com|hwcdn.net|jsdelivr.net|tawk.to|zencdn.net,domain=hexupload.net
 
 ! popups https://animetak .net/
 animetak.*##+js(acis, JSON.parse, break;case $.)
