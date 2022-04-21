@@ -1,8 +1,8 @@
-! Checksum: OTRUQYf2K8tRM49iz0fc6Q
+! Checksum: 0+kmi/BUiLDt5PpokwebaQ
 ! Title: AdGuard Mobile Ads filter (Optimized)
 ! Description: Filter for all known mobile ad networks. Useful for mobile devices.
-! Version: 2.0.28.84
-! TimeUpdated: 2022-04-21T08:30:19+00:00
+! Version: 2.0.28.85
+! TimeUpdated: 2022-04-21T15:30:23+00:00
 ! Expires: 4 days (update frequency)
 #%#var AG_onLoad=function(func){if(document.readyState==="complete"||document.readyState==="interactive")func();else if(document.addEventListener)document.addEventListener("DOMContentLoaded",func);else if(document.attachEvent)document.attachEvent("DOMContentLoaded",func)};
 #%#var AG_removeElementById = function(id) { var element = document.getElementById(id); if (element && element.parentNode) { element.parentNode.removeChild(element); }};
@@ -1109,6 +1109,7 @@ blogdoiphone.com#@#.header-ad
 blogdoiphone.com#@#.custom-ad
 westseattleblog.com#@#.custom-ad
 westseattleblog.com#@#.header-ad
+duplichecker.com#?#.data_inbox > div[style]:has(> div > span > ._ap_apex_ad)
 grapee.jp#?#aside > div[class^="mod-ads-area"]:upward(1)
 ameblo.jp#?#article > div[class^="_"]:last-child > header[class^="_"] + div:not([class]) > div.skin-bd-color[class^="_"]:first-child:has(> div[class^="_"]:only-child)
 iphone-mania.jp##.related:contains(PR)

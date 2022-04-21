@@ -1,8 +1,8 @@
-! Checksum: L2LGdM99+YC9M2LaR6nIFg
+! Checksum: QeirjJmbuRj59WIrckcUSQ
 ! Title: AdGuard Tracking Protection filter
 ! Description: The most comprehensive list of various online counters and web analytics tools. Use this filter if you do not want your actions on the Internet to be tracked.
-! Version: 2.0.38.57
-! TimeUpdated: 2022-04-21T13:03:09+00:00
+! Version: 2.0.38.59
+! TimeUpdated: 2022-04-21T14:31:32+00:00
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -324,6 +324,9 @@ journal-plaza.net#?#.rightside div.block.bnavi[-ext-has="h3.dtitle:contains(Сч
 !||i.snssdk.com/log/*
 !||i.snssdk.com/slardar/sdk.js
 !
+||sdk.51.la^$third-party
+||adtriba.com^$third-party
+||acuityplatform.com^$third-party
 ||cyberanalytics.nl^
 ||analytics.test.cheggnet.com^
 ||03c844c9-d265-4006-a39d-400e6cb40bb7.xyz^
@@ -20697,6 +20700,8 @@ _tracking.php?b=
 !
 /analytics.js$domain=freexcafe.com|rusvideos.tv|nakubani.ru|lun.com|songsara.net|newsmax.com|bolgehastanesi.com|ewtc.de
 !
+||twitter.com/1.1/jot/client_event.json
+||cdn.attn.tv/*/dtag.js
 ||google.*/maps/*/log
 /\/js\/[a-z]{3}\d\.js$/$script,~third-party,domain=eegg.fun
 ||s-cdn.phonearena.com/js/ops/taina.js

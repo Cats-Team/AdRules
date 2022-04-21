@@ -1,8 +1,8 @@
-! Checksum: Yjs0BCE0KyrRQEQXE2K7FA
+! Checksum: 44/oga+4HCLWCYsSJoQrIQ
 ! Title: AdGuard Base filter (Optimized)
 ! Description: EasyList + AdGuard English filter. This filter is necessary for quality ad blocking.
-! Version: 2.2.27.14
-! TimeUpdated: 2022-04-21T13:03:03+00:00
+! Version: 2.2.27.16
+! TimeUpdated: 2022-04-21T15:31:19+00:00
 ! Expires: 4 days (update frequency)
 #%#var AG_onLoad=function(func){if(document.readyState==="complete"||document.readyState==="interactive")func();else if(document.addEventListener)document.addEventListener("DOMContentLoaded",func);else if(document.attachEvent)document.attachEvent("DOMContentLoaded",func)};
 #%#var AG_removeElementById = function(id) { var element = document.getElementById(id); if (element && element.parentNode) { element.parentNode.removeChild(element); }};
@@ -1436,6 +1436,8 @@ smallseotools.com#@#.adsbygoogle
 ||smallseotools.com/ads.png$image,redirect=1x1-transparent.gif,important
 @@||smallseotools.com/imgs/ads/love_you_son.jpg
 @@||smallseotools.com/images/Popup2.png
+||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$xmlhttprequest,redirect=googlesyndication-adsbygoogle,important,domain=educationat.xyz
+@@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$domain=educationat.xyz
 mmastreams-100.tv,mlbstreams100.com,boxingstreams100.com,nbastreams-100.tv#%#//scriptlet('prevent-fetch', 'doubleclick.net')
 @@||www3.doubleclick.net^|$domain=mmastreams-100.tv|mlbstreams100.com|boxingstreams100.com|nbastreams-100.tv
 bestjavporn.com#@#.ad-placement
@@ -2441,6 +2443,7 @@ duplichecker.com##.dpn
 duplichecker.com#%#//scriptlet("abort-current-inline-script", "jQuery", "pagead2.googlesyndication.com")
 duplichecker.com#%#//scriptlet("abort-current-inline-script", "$", "pagead2.googlesyndication.com")
 duplichecker.com#%#//scriptlet("prevent-setInterval", "isAdBlockActive")
+||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$domain=duplichecker.com
 kiktu.com#%#//scriptlet("abort-current-inline-script", "jQuery", "ai_adb")
 malaysiastock.biz#%#//scriptlet("set-constant", "canRunAds", "true")
 @@||chompers.io/ads.js
@@ -3703,6 +3706,7 @@ wolframclient.net#@#.adsbygoogle
 @@||ad.admitad.com/3rd-party/advert.js
 @@||ad.admitad.com/3rd-party/*/cookie/?f=CookieChecker.remoteTest
 bigbrothercanada.ca#%#//scriptlet('set-constant', 'video_player_config.players.0.adblock', 'false')
+duplichecker.com#?#.main-content > div > div > div:has( > .adsbygoogle)
 wallpaperwaifu.com#?#.blog-items > .post-item.site__col:has(> .ads-between-post)
 menshealth.com#?#section > div[class]:has(> .ad-container)
 oscobo.com#?##results-list > .result:has(> a > .cite > .ba)
@@ -9552,7 +9556,7 @@ brainly.com,brainly.com.br,brainly.co.id,brainly.in,brainly.ph,brainly.pl,brainl
 scratch247.info,azsoft.*,downfile.site##div.display ~ h2.text-center
 scratch247.info,azsoft.*,downfile.site##div.display ~ p
 downphanmem.com,scratch247.info,azsoft.*,downfile.site,expertvn.com###adb_detected ~ div.text-content
-mojobb.com,rlsbb.ru,536sdms.com,freecoursesites.net,javhoho.com###text-5
+alitajran.com,mojobb.com,rlsbb.ru,536sdms.com,freecoursesites.net,javhoho.com###text-5
 videojav.com,titshub.com,bigwank.com,fapguru.com,pornpapa.com##.underplayer_banner
 xgroovy.com,xxxshake.com,jizzberry.com##.in.is_desktop
 ||jizzberry.com/static/js/initsite.min.js
@@ -11467,7 +11471,7 @@ forums.overclockers.co.uk###Offer
 raymond.cc##.sidebar > ul > #text-13
 raymond.cc##.sidebar > ul > #text-14
 bclikeqt.com,dailyporn.club,freefeds.com,teleriumtv.com,fclcc.com,deportealdia.live,techgeek.digital,sharer.pw,za.gl,fcc.lc,xozilla.com,analdin.com,telerium.club,live-golf.stream,sportsbay.org,fc.lc,box-live.stream,mp4upload.com,bro.adca.st,underhentai.net###overlay
-oncam.me,gsmarena.com,aosmark.com,rat.xxx,camwhores.biz,4tube.com,porngun.net,eteenporn.com,bobs-tube.com,camwhores.tv,sexboomcams.com,pornformance.com,vivud.com##.adv
+gsmarena.com,aosmark.com,rat.xxx,camwhores.biz,4tube.com,porngun.net,eteenporn.com,bobs-tube.com,camwhores.tv,sexboomcams.com,pornformance.com,vivud.com##.adv
 prnt.sc##.grundik-div
 newser.com##.RightRailAds
 proporn.com##.refill[style="width:100%;padding-top: 15px;"]
@@ -13209,6 +13213,8 @@ implbits.com#@#.banner_container
 @@||clickserve.dartsearch.net/link/click?*&gclid=$stealth
 @@||adidas.pl/*&gclid=$stealth
 !#########################################
+@@||fofoquei.com/*/*.m3u8$stealth
+@@||embeds.filmezando.net/player/$stealth
 @@||player.uauflix.online^$stealth
 @@||uauplayer.com/player^$stealth
 @@||mundodebolso.me^$stealth
@@ -19588,6 +19594,7 @@ _800x100.
 ##.mdot_inline_ad_styles
 ##.me-rtm
 ##.media-network-ad
+##.media-viewer__ads-container
 ##.medium-rectangle-ad
 ##.mediumRectangleAd
 ##.mega-ad
@@ -28057,7 +28064,7 @@ imagebam.com###aad-header-1
 imagebam.com###aad-header-2
 imagebam.com###aad-header-3
 informer.com###ad0
-boards.net,mtaeta.info,pimpandhost.com,timeanddate.com,wordreference.com###ad1
+boards.net,mtaeta.info,notbanksyforum.com,pimpandhost.com,timeanddate.com,wordreference.com###ad1
 moomoo.io###adCard
 musescore.com###ad_cs_12219747_728_90
 3g2upl4pq6kufc4m.onion,audioreview.com,carlow-nationalist.ie,cellmapper.net,craigclassifiedads.com,dekhobd.com,duckduckgo.com,g.doubleclick.net,irannewsdaily.com,kildare-nationalist.ie,laois-nationalist.ie,lorempixel.com,photographyreview.com,quiz4fun.com,roscommonherald.ie,waterford-news.ie###ads
@@ -29110,6 +29117,8 @@ rarbg.to,rarbgaccess.org,rarbgmirror.com,rarbgmirror.org,rarbgproxy.com,rarbgpro
 flaticon.com##a[href^="//www.flaticon.com/edge/redirect?"]
 limetorrents.pro##a[href^="/leet/?"] > img[src^="/static/images/download"]
 lightreading.com##a[href^="/lg_redirect.asp?piddl_lgid_docid="]
+notbanksyforum.com##a[href^="http://l-13.org/"]
+notbanksyforum.com##a[href^="http://www.ebay.co.uk/usr/heartresearchuk_shop/"]
 msn.com##a[href^="https://amzn.to/"]
 qwant.com##a[href^="https://api.taboola.com/"]
 etherscan.io##a[href^="https://goto.etherscan.com/"]
