@@ -1,8 +1,8 @@
-! Checksum: cwAgHSaFvi0f/mqLarJIHQ
+! Checksum: ibrU0fn+AtgirB+jnVGIXg
 ! Title: AdGuard Social Media filter
 ! Description: Filter for social media widgets such as 'Like' and 'Share' buttons and more.
-! Version: 2.0.60.15
-! TimeUpdated: 2022-04-21T06:31:26+00:00
+! Version: 2.0.60.17
+! TimeUpdated: 2022-04-21T13:03:14+00:00
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -1460,6 +1460,7 @@ ukrinform.*,natgeo.nikkeibp.co.jp,life.pravda.com.ua,inuhiro-anime.com,murabito-
 !
 flatout.com.br##.share_video
 bolshoibelarus.by##div[class^="s2s_"]
+nli-research.co.jp##.sns_btn_area
 mapfan.com##mf-share-button
 makerstown.cookpad.com##div[data-react-class="Share/ShareButton"]
 allnightnippon.com##.news_detail_sns
@@ -4410,8 +4411,6 @@ kresy24.pl###wkomimg
 animekayo.com##.widget_bs-likebox
 5-tv.ru##.twitterTimelineInSidebar
 5-tv.ru##div[class="floatRight marginTopQuartBase"]
-kp.ru,kp.by,kp.kg,kp.kz,kp.md##div[class^="styled__ThumbsUpWrap-"]
-kp.ru,kp.by,kp.kg,kp.kz,kp.md##div[class^="styled__ShareBar"]
 kp.ru,kp.by,kp.kg,kp.kz,kp.md##button[class*="styled__ShareButton-"]
 ouest-france.fr##.partage
 ouest-france.fr##.pastilles

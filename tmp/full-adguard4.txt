@@ -1,8 +1,8 @@
-! Checksum: MI1L/1R1Ipbh0oGAv7OAog
+! Checksum: kjQn28/vJqra3WW3dHkfew
 ! Title: AdGuard Annoyances filter
 ! Description: Blocks irritating elements on web pages including cookie notices, third-party widgets and in-page pop-ups.
-! Version: 2.1.16.55
-! TimeUpdated: 2022-04-21T07:30:34+00:00
+! Version: 2.1.16.61
+! TimeUpdated: 2022-04-21T13:02:21+00:00
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -3710,7 +3710,6 @@ yourhowto.net#$#.advert { height: 301px !important; position: absolute !importan
 @@||bloximages.*.vip.townnews.com/*/libraries/flex/components/ads/resources/scripts/tnt.ads.advert
 @@||a.omappapi.com/app/js/ads.js
 ||sp.desmoinesregister.com^
-kompravda.eu,kp.ru,kp.by,kp.kg,kp.kz,kp.md###popapIsBlockedAd
 boomlive.in###ad_blocker_detect_dialog
 stalkerportaal.ru##.adblock
 ucoin.net#%#//scriptlet("set-constant", "window.canRunAds", "true")
@@ -7327,12 +7326,14 @@ techadvisor.co.uk,forum.notebookreview.com,computerworld.com,skysports.com#$#bod
 !
 !
 !
+szpital.wroc.pl##.cookies-msg-wrapper
 ceair.com##.cookie-tip-container
 bolshoibelarus.by###Mod368
 posthaus.com.br#?##root > div[class]:has(> div > div > [class] > a[href="/cp/politica-de-privacidade"])
 th-deg.de#$#body { overflow: visible!important; }
 th-deg.de#$#div[id^="CybotCookiebotDialog"] { display: none!important; }
 rohm.co.jp###showcookiealert
+mobonline.com.br##body .x-lgpd-popup.is--active
 developer.ing.com#$#body { overflow: auto !important; }
 developer.ing.com#$#.global-overlays { display: none !important; }
 webtrack.dhlglobalmail.com#$#body { overflow: auto !important; }
@@ -15333,6 +15334,7 @@ privacy.lecker.de#%#AG_onLoad(function(){if(!document.cookie.includes("euconsent
 privacy.madame.de#%#AG_onLoad(function(){if(!document.cookie.includes("euconsent-v2")){var g=new MutationObserver(function(){setTimeout(function(){var b=document.querySelector('button.no-children[path="\[0,2,1\]"]');b&&b.click();},300);setTimeout(function(){var c=document.querySelector('div[title="Berechtigte Interessen"]'); c&&c.click();},300);setTimeout(function(){var d=document.querySelectorAll('label[aria-checked="true"] > .off'); d.forEach(function(d){d.click();});},800); var f=document.querySelector('button.no-children[path="\[0,3,0\]"]'); setTimeout(function(){f&&f.click();},1000);});g.observe(document,{childList:!0,subtree:!0});setTimeout(function(){g.disconnect()},3E4)}});
 consent.ladbible.com,consent.gamingbible.co.uk,consent.unilad.co.uk#%#AG_onLoad(function(){if(window.location.href.includes("consentUUID")){var g=new MutationObserver(function(){var b=document.querySelector('button[title*="Accept" i]');b&&(g.disconnect(),b.click())});g.observe(document,{childList:!0,subtree:!0});setTimeout(function(){g.disconnect()},1E4)}});
 !
+mantel.com#%#//scriptlet('set-cookie', 'tracking_cookie', '0')
 amd-moebel.de#%#//scriptlet('set-cookie', 'cookies_mandatory', 'true')
 sklepyabc.pl#%#//scriptlet('set-cookie', 'viewed_cookie_policy', '1')
 ftx.com#%#//scriptlet('set-local-storage-item', 'rejectAllCookies', 'true')
@@ -18929,6 +18931,7 @@ early-riser.com#?#div[class] ~ h1[style]:contains(Newsletter) + p + div[class]
 ##head[prefix~="medium-com:"] ~ body .js-postActionsBarContent > .js-readNextInteractions
 !
 chiebukuro.yahoo.co.jp###app_bnr
+translate.google.*##div[class][jsname] > div[class] > c-wiz > div[class][jsname][style^="transform: matrix("]
 budzdorov.ru##.popup-metadata-popup__paranja
 selfmind.ai##.store-bannar-container
 bittorrent.com#?#.prodnews-container div[class^="col-"] > div.row:has(> div[class] a[id^="prodnews-go-adfree-"])
@@ -20773,6 +20776,12 @@ theoryandpractice.ru##a[href^="https://form.typeform.com/"]
 ! Specific sites
 !######### Subscription popups add to subscriptions.txt #########
 !
+kildosklinika.lt###footer-bottom
+kildosklinika.lt##.fix-right-menu
+messari.io##.jss2
+2kmovie.cc#$#body.modal-open { overflow: auto !important; }
+2kmovie.cc#$##modalshare { display: none !important; }
+2kmovie.cc#$#.modal-backdrop { display: none !important; }
 bolshoibelarus.by###popup__toggle
 dropbox.com##.top-notification-bar-container
 deccanherald.com##.dynamic_articles
@@ -28982,12 +28991,14 @@ turkuazgazetesi.net,yenialanya.com,mansetaydin.com,seskocaeli.com,kocaelibarisga
 ##.widget_blog_subscription
 ~copays.org,~nothing.tech,~mega-debrid.eu,~curvegames.com,~news.un.org,~norwichzen.org.uk,~dereferer.me###mc_embed_signup
 !
+cerave.ru##.sticky-subscribe
 flatout.com.br##.gg-crowdfunding-subscribe
 ||popup-static.unisender.com/service/loader.js
 posthaus.com.br#?##root > div[offset="0"] > div[class]:has(> div[overflow="auto"] > div[class] > form div[name="newsEmail"])
 posthaus.com.br#?##root > div[offset="0"] > div[class]:has(> div[class] > form div[name="newsEmail"])
 phonearena.com##.content-subscription
 deccanherald.com##.opt_widget_main
+nli-research.co.jp##.mail_maga
 shoestock.com.br,zattini.com.br##.home-gamma__newsletter
 forbes.ru###feed-subscription
 timeout.ru#?#div[data-stk-css="stkLNQgn"]
@@ -31273,7 +31284,6 @@ remarkable.com#?#main > div[style] > article[class^="business-module"]:has(> div
 jv.ru##.signupnewsletter
 androidgreek.com##.sidebar-container > #custom_html-19
 iz.ru##.news-google
-kp.ru,kp.by,kp.kg,kp.kz,kp.md##div[class*="styled__Subscribe-"]
 allconnect.com##div[data-preamp="footer-email-capture"]
 i-m-i.ru#?#div[type="article"] ~ div[class]:has(> div > div > form:contains(Подписаться))
 pult.ru##div[id^="subscription"]
@@ -33083,8 +33093,8 @@ apkadmin.com#$##countdown { display: none !important; }
 ! https://github.com/AdguardTeam/AdguardFilters/issues/107736
 rezence.com#%#//scriptlet("adjust-setInterval", "counter", "2000", "0.02")
 makemoneywithurl.com#%#//scriptlet("set-constant", "timeSec", "0")
-! https://github.com/AdguardTeam/AdguardFilters/issues/107600
-premiumebooks.xyz#%#//scriptlet("adjust-setTimeout", "st2", "", "0.02")
+! https://github.com/AdguardTeam/AdguardFilters/issues/116173
+premiumebooks.*#%#//scriptlet("adjust-setTimeout", "st2", "", "0.02")
 ! https://github.com/AdguardTeam/AdguardFilters/issues/105262
 samfirms.com#%#//scriptlet("adjust-setTimeout", "startTimer", "*", "0.02")
 samfirms.com#%#//scriptlet("adjust-setInterval", "downloadLinkButton", "*", "0.02")
