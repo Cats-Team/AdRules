@@ -234,8 +234,8 @@ cat l*.txt pre-allow1.txt dns99* dns10.txt \
 wait
 
 cp .././script/dns-rules-config.json ./
-hostlist-compiler -c dns-rules-config.json -o dns-output.txt 1>/dev/null 2>&1
-wait
+hostlist-compiler -c dns-rules-config.json -o dns-output.txt
+
 cat dns-output.txt deadblock.txt deadblock.txt \
  | sort -n |uniq -u >tmp0-dns.txt #去重过期域名
 
@@ -245,8 +245,8 @@ cat tmp0-dns.txt l.txt dns10.txt dns99* \
 cat .././mod/rules/*-rules.txt base-src-hosts.txt \
  | sed '/^$/d' |grep -E "^([0-9].*)|^((\|\|)[^\/\^]+\^$)" \
  |sed 's/||/0.0.0.0 /' | sed 's/\^//' \
- | sort -n | uniq > tmp1-hosts1.txt & #处理Hosts规则
-wait
+ | sort -n | uniq > tmp1-hosts1.txt  #处理Hosts规则
+
 cat tmp1-hosts1.txt pre-hostsallow.txt pre-hostsallow.txt deadhosts.txt deadhosts.txt\
  | sort -n |uniq -u >tmp-hosts.txt #去重允许域名
 
@@ -255,8 +255,8 @@ cat tmp-hosts.txt \
  | sort -n | uniq > tmp-ad-domains.txt & #处理广告域名
 
 cat .././mod/rules/* *.txt | grep '^@' \
- | sort -n | uniq > tmp-allow.txt & #允许清单处理
-wait
+ | sort -n | uniq > tmp-allow.txt 
+
 
 echo 规则合并完成
 # Move to Pre Filter
