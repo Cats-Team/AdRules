@@ -1,6 +1,6 @@
 <div align="center">
 <h1 align="center">AdRules<br>一个强力去广告的规则</h1>
-<!--
+<!-->
 <img src="https://img.shields.io/github/stars/Cats-Team/AdRules?color=yellow">
 <img src="https://img.shields.io/github/forks/Cats-Team/AdRules?color=orange">
 <img src="https://img.shields.io/github/issues/Cats-Team/AdRules?color=green">
@@ -11,7 +11,7 @@
 <img src="https://img.shields.io/github/license/Cats-Team/AdRules?color=bule">
 <img src="https://img.shields.io/github/languages/code-size/Cats-Team/AdRules?color=blueviolet">
 <img alt="GitHub Workflow Status" src="https://img.shields.io/github/workflow/status/cats-team/adrules/update%20rules">
--->  
+<!-->  
 <br>
   
 
