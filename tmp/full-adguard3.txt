@@ -1,8 +1,8 @@
-! Checksum: 39ZOSBz7lAA42j9hUZwr/w
+! Checksum: xZ/b/X+Nj20HIDWmElDkRg
 ! Title: AdGuard Chinese filter
 ! Description: EasyList China + AdGuard Chinese filter. Filter list that specifically removes ads on websites in Chinese language.
-! Version: 2.0.53.45
-! TimeUpdated: 2022-04-22T10:30:53+00:00
+! Version: 2.0.53.49
+! TimeUpdated: 2022-04-22T15:30:54+00:00
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -419,6 +419,10 @@ rjno1.com#%#//scriptlet('prevent-setTimeout', '/_show\(".+?"\); ?\}/')
 rjno1.com#%#//scriptlet("set-constant", "google_global_correlator", "1")
 rjno1.com#%#//scriptlet("prevent-addEventListener", "error", "event.target.tagName")
 rjno1.com#%#(function(){window.addEventListener("load",function(){window.google_image_requests=[];})})();
+||c0.ifengimg.com/iis/iis_$script,redirect=noopjs,important,domain=rjno1.com
+@@||c0.ifengimg.com/iis/iis_$domain=rjno1.com
+||rjno1.com/wp-content/themes/moban/moban-js/show_ads.js$script,redirect=noopjs,important,domain=rjno1.com
+@@||rjno1.com/wp-content/themes/moban/moban-js/show_ads.js$domain=rjno1.com
 !+ NOT_PLATFORM(ios, ext_android_cb)
 ||jspassport.ssl.qhimg.com^$script,redirect=noopjs,domain=rjno1.com
 @@||googletagmanager.com/gtag/js$script,domain=rjno1.com
@@ -1078,6 +1082,8 @@ ipv6.baidu.com,www.baidu.com,www1.baidu.com,xueshu.baidu.com###content_left > .r
 !
 !
 !
+hk01.com##div[data-id="lazyload-placeholder"]
+hk01.com##div[class^="lg\:min-h-[250px] hidden lg:flex lg:items-center"]
 ||bnextmedia.s3.hicloud.net.tw/dp_cp/cp_prebid
 ||bnextmedia.s3.hicloud.net.tw/dp_cp/mt_programmatic_ad.js
 moneynet.com.tw##.ads-fixed-bottom
@@ -3989,6 +3995,8 @@ ubmcmm.baidustatic.com
 ##img[onclick*="/ayx700.com/"]
 ##img[onclick*="/c7.net/"]
 .8ox.cn
+||seinse27.com^
+||iknight.xyz^
 ||lm553.com^
 ||23617710.com^
 ||00-gov.cn^
@@ -11627,7 +11635,13 @@ hxsame.hexun.com$domain=~quote.hexun.com
 ||zzsky.cn/images/a_d_
 ||zzz4.com/JS_AD/
 ||zzzyk.com/js/
+||0554xx.cn/gg2.js
 szxx.com.cn###A0
+iduba.com###topBanner
+iduba.com###J_sideFooter
+iduba.com##.fav_box
+iduba.com##.left_slidebar_con
+molure.cn##.adplan
 szxx.com.cn###A1
 szxx.com.cn###A2
 gpcxw.com###AA2
@@ -16421,6 +16435,7 @@ stock87.com##a[href^="http"]:not([href*="stock87."]) > img[src*="uploadfiles/ima
 107cine.com##a[href^="http://107cine.com/ads/"]
 hepuwang.com##a[href^="http://ad."]
 m.nownews.com##a[href^="http://ad1.nownews.com"]
+mydrivers.com##a[href^="http://click.aliyun.com/"]
 wenxuecity.com##a[href^="http://bbs.wenxuecity.com/bbs/advpost/"]
 big5.china.com.cn##a[href^="http://big5.china.com.cn/gate/big5/"]:not([href*="/science."])
 chinaz.com,cnbeta.com,oschina.net##a[href^="http://click.aliyun.com/"]
@@ -19540,6 +19555,7 @@ $script,subdocument,third-party,websocket,xmlhttprequest,domain=00ksw.com|01zww.
 @@||pstatp.com/cdn/*/jquery/$script,domain=bxwx11.com
 @@||zmtt.net^$script,domain=luoqiuzw.com
 !#Novels ads union
+||lajidewanyi.top^
 ||rinc.ink^
 ||qdbh.store^
 ||wubocheng.top^

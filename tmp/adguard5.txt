@@ -1,8 +1,8 @@
-! Checksum: o32V8T1tR9phvR7tn7wAvg
+! Checksum: fmvGhysKSTJb+9uCGeNBAA
 ! Title: AdGuard Annoyances filter (Optimized)
 ! Description: Blocks irritating elements on web pages including cookie notices, third-party widgets and in-page pop-ups.
-! Version: 2.1.16.74
-! TimeUpdated: 2022-04-22T10:30:33+00:00
+! Version: 2.1.16.78
+! TimeUpdated: 2022-04-22T15:30:33+00:00
 ! Expires: 4 days (update frequency)
 #%#var AG_onLoad=function(func){if(document.readyState==="complete"||document.readyState==="interactive")func();else if(document.addEventListener)document.addEventListener("DOMContentLoaded",func);else if(document.attachEvent)document.attachEvent("DOMContentLoaded",func)};
 #%#var AG_removeElementById = function(id) { var element = document.getElementById(id); if (element && element.parentNode) { element.parentNode.removeChild(element); }};
@@ -5266,7 +5266,7 @@ kruidvat.nl#$##onetrust-consent-sdk { display: none !important; }
 kruidvat.nl#$#body { overflow: auto !important; }
 funktionelles.de,futspo.de###cookie-jar
 falixnodes.net#$#body { overflow: auto !important; }
-download-manager.online##.cookie-bottom
+pegem.net,download-manager.online##.cookie-bottom
 cifraclub.com##.toastCookiePolicy
 tamashii.jp,metacritic.com##.ot-sdk-show-settings
 change.org#$#body { overflow: auto !important; }
@@ -6968,6 +6968,7 @@ landrover.com.br,landrover.com.tr,landrover.hu##.NotificationBar.generalNotifica
 forum.digitalfernsehen.de,freewebsitetemplates.com##.PanelScroller.Notices
 i.ua##.alarm
 virusscan.jotti.org##.alert-dismissable
+karelia.news,015.by,0312.ua,032.ua,0332.ua,0342.ua,0352.ua,0362.ua,0372.ua,0382.ua,0412.ua,04141.com.ua,0432.ua,04563.com.ua,04597.com.ua,04598.com.ua,0462.ua,0472.ua,048.ua,04868.com.ua,0512.com.ua,05136.com.ua,05161.com.ua,0522.ua,0532.ua,05366.com.ua,0542.ua,05447.com.ua,0552.ua,056.ua,0564.ua,0566.com.ua,0569.com.ua,057.ua,061.ua,06153.com.ua,0619.com.ua,0623.com.ua,06236.com.ua,06237.com.ua,06239.com.ua,06242.ua,06252.com.ua,06267.com.ua,06272.com.ua,06274.com.ua,06277.com.ua,0629.com.ua,0642.ua,06452.com.ua,1rnd.ru,3652.ru,3654.ru,3849.com.ua,44.ua,4594.com.ua,5692.com.ua,62.ua,6262.com.ua,6264.com.ua,65.media,7232.kz,8422city.ru,8692.ru,anapa.life,angarsk38.ru,bazhopol.ru,city41.ru,citydomodedovo.ru,go01.ru,go212.by,go26.ru,go31.ru,go61.ru,godublin.info,golondon.info,gorod3466.ru,gorodarmavir.ru,gorodpushkin.ru,inaktau.kz,inalmaty.kz,inastana.kz,inatyrau.kz,infolyubertsy.ru,inform69.ru##.alert-info
 visitnorway.com##.alert-wrapper-cookie
 gallica.bnf.fr##.alerte_cookie
 soundcloud.com##.announcements > div.sc-list-nostyle
@@ -9920,6 +9921,8 @@ mobile.reuters.com#$##nonEditBannerContainer { display: none !important; }
 svyaznoy.ru#%#//scriptlet('remove-class', 'android-banner-on-page')
 ebay.*###gh-appBanner
 !+ NOT_OPTIMIZED
+cookpad.com##.app_promotion
+!+ NOT_OPTIMIZED
 rtrp.jp##.btnApp
 !+ NOT_OPTIMIZED
 clubdam.com##.bnr-app
@@ -10204,6 +10207,7 @@ smallpdf.com##body > div#app > div[class]:has(> div > div > img[alt="Chrome"])
 ||form.typeform.com^$domain=theoryandpractice.ru
 theoryandpractice.ru##a[href^="https://form.typeform.com/"]
 !######### Subscription popups add to subscriptions.txt #########
+cookpad.com##aside[id$="_modal"][data-key]
 koinbox.net###app-widget
 prachatai.com##.support-pay
 imdb.com##.media-viewer > div[data-testid="media-viewer__touch-handler"]
@@ -10280,7 +10284,6 @@ magazine.tabelog.com##.tm-floating-banner
 managertoday.com.tw##.mtaa
 niusnews.com##.fixed-footer-ad
 cookpad.com##.js_bookmark
-news.cookpad.com##.ext_spring2022_spweb_lead-show_modal
 blog.livedoor.com##body[data-page="top"] > a[href="https://blog.livedoor.com/tag/"]
 xhamster.com##.vpn-geo-picker-container
 feebee.com.tw###event_flybee_float
@@ -10345,7 +10348,7 @@ qobuz.com##.modal-backdrop
 noklapja.hu#$#.blurry { filter: none !important; }
 noklapja.hu#$#.m-fbPopup { display: none !important; }
 nikkei.com,news.mynavi.jp###pianoj_ribbon
-44.ua,056.ua,032.ua,04868.com.ua,karelia.news,5692.com.ua,0629.com.ua,01.kg,0154.by,0472.ua,048.ua,0512.com.ua,0522.ua,0532.ua,0552.ua,056.ua,0564.ua,061.ua,06153.com.ua,0642.ua,62.ua,7152.kz,7232.kz,city04.kz,go152.by,go232.by,inaktau.kz,inalmaty.kz,inastana.kz,inatyrau.kz,inkaragandy.kz,inshymkent.kz,kaskelenec.kz,oshto.kg,qapshagai-city.kz,uralskcity.kz##.push-panel
+01.kg,0154.by,0312.ua,032.ua,0332.ua,0342.ua,0352.ua,0362.ua,0372.ua,0382.ua,0412.ua,04141.com.ua,0432.ua,04563.com.ua,04597.com.ua,04598.com.ua,0462.ua,0472.ua,048.ua,04868.com.ua,0512.com.ua,05136.com.ua,0522.ua,0532.ua,05366.com.ua,0542.ua,05447.com.ua,0552.ua,056.ua,0564.ua,0566.com.ua,0569.com.ua,057.ua,061.ua,06153.com.ua,0619.com.ua,0623.com.ua,06236.com.ua,06237.com.ua,06239.com.ua,06242.ua,06252.com.ua,06267.com.ua,06272.com.ua,06274.com.ua,06277.com.ua,0629.com.ua,0642.ua,06452.com.ua,1rnd.ru,3652.ru,3654.ru,3849.com.ua,44.ua,4594.com.ua,5692.com.ua,62.ua,6262.com.ua,6264.com.ua,65.media,7152.kz,7232.kz,8422city.ru,8692.ru,city04.kz,city41.ru,citydomodedovo.ru,go152.by,go212.by,go232.by,go31.ru,go61.ru,go7812.ru,gorod3466.ru,gorodpushkin.ru,inaktau.kz,inalmaty.kz,inastana.kz,inatyrau.kz,inkaragandy.kz,inshymkent.kz,karelia.news,kaskelenec.kz,oshto.kg,qapshagai-city.kz,uralskcity.kz##.push-panel
 video.laxd.com##.noLoginSticker
 slack.com###slack_101_jp_banner
 appuals.com##.wp-timed-p
@@ -13619,6 +13622,7 @@ www.tf1.fr##div[class^="MaxBanner_container_"]
 theguardian.com##.contributions__adblock
 ||contributions.guardianapis.com^
 blognone.com###above_comments
+full-count.jp##.s-entry-ads
 financialsense.com##.pane-bundle-promo
 ||crio.do/blog/assets/images/crio-offerings
 bookwalker.jp##.ad-new-member
