@@ -1,12 +1,12 @@
 [Adblock Plus 2.0]
-! Checksum: fUhdIDWUuhjeZplEu81C/Q
+! Checksum: mRjyyM2IpZJN2o9AS20e8w
 ! Title: AdRules (For AdBlock)
 ! Homepage: https://github.com/Cats-Team/AdRules
 ! Powerd by CatsTeam
 ! Expires: 8 Hours
 ! Description: 该规则合并自EasyList、EasyListChina、AdGuard Chinese Filter、EdentwCustom、ClearUrl、乘风规则等，并补充了一些规则
-! Version: 2022-04-22 16:28:57（北京时间） 
-! Total count: 90668
+! Version: 2022-04-22 19:40:40（北京时间） 
+! Total count: 90669
 ###ADCENTER
 ###ADSLOT_1
 ###ADTOP
@@ -23333,6 +23333,7 @@ $~xmlhttprequest,removeparam=ref_,domain=imdb.com|amazon.*|primevideo.com|shopbo
 @@||oiihk.com^$generichide
 @@||oisd.nl^$generichide
 @@||ojogo.pt/common/scripts/ads.js$script
+@@||okccdn.com/builds/desktop/js/tracking_center.$script,domain=okcupid.com
 @@||okteve.com/*&*=*&*&_=$xmlhttprequest,~third-party
 @@||olarila.com/*.png#
 @@||olarila.com^$generichide
@@ -38049,7 +38050,6 @@ parkiet.com##.addAdvertContainer
 parkiet.com##.advertOuter
 parlamentnilisty.cz##+js(set-constant, AdTrack, emptyObj)
 parlamentnilisty.cz##.aoad
-party
 pasazer.com##+js(no-setTimeout-if, _checker())
 passgen.icu##+js(window.open-defuser)
 passiontimes.hk##.rectAd680
@@ -57526,6 +57526,7 @@ zznews.cn##.ad:not([style])
 ||displayvertising.com^
 ||displink.com^$third-party
 ||disploot.com^
+||dispute.wang^
 ||disqus.com/api/ping
 ||disqus.com/api/ping?$domain=autobild.de
 ||disqus.com/event.js?$script

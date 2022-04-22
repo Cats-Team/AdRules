@@ -1,8 +1,8 @@
-! Checksum: u28NZvglciilFUrU8AybjA
+! Checksum: /Eai7/bMPxd8vgedQ/Jb/A
 ! Title: AdGuard Base filter (Optimized)
 ! Description: EasyList + AdGuard English filter. This filter is necessary for quality ad blocking.
-! Version: 2.2.27.25
-! TimeUpdated: 2022-04-22T06:31:17+00:00
+! Version: 2.2.27.26
+! TimeUpdated: 2022-04-22T11:31:36+00:00
 ! Expires: 4 days (update frequency)
 #%#var AG_onLoad=function(func){if(document.readyState==="complete"||document.readyState==="interactive")func();else if(document.addEventListener)document.addEventListener("DOMContentLoaded",func);else if(document.attachEvent)document.attachEvent("DOMContentLoaded",func)};
 #%#var AG_removeElementById = function(id) { var element = document.getElementById(id); if (element && element.parentNode) { element.parentNode.removeChild(element); }};
@@ -15,6 +15,7 @@
 #%#var AG_abortOnPropertyRead=function(a,b){var c=Math.random().toString(36).substr(2,8);AG_defineProperty(a,{beforeGet:function(){b&&console.warn("AdGuard aborted property read: "+a);throw new ReferenceError(c);}});var d=window.onerror;window.onerror=function(e){if("string"===typeof e&&-1!==e.indexOf(c))return b&&console.warn("AdGuard has caught window.onerror: "+a),!0;if(d instanceof Function)return d.apply(this,arguments)}};
 #%#var AG_abortInlineScript=function(g,b,c){var d=function(){if("currentScript"in document)return document.currentScript;var a=document.getElementsByTagName("script");return a[a.length-1]},e=Math.random().toString(36).substr(2,8),h=d();AG_defineProperty(b,{beforeGet:function(){var a=d();if(a instanceof HTMLScriptElement&&a!==h&&""===a.src&&g.test(a.textContent))throw c&&console.warn("AdGuard aborted execution of an inline script"),new ReferenceError(e);}});var f=window.onerror;window.onerror=function(a){if("string"===typeof a&&-1!==a.indexOf(e))return c&&console.warn("AdGuard has caught window.onerror: "+b),!0;if(f instanceof Function)return f.apply(this,arguments)}};
 #%#var AG_setConstant=function(e,a){if("undefined"===a)a=void 0;else if("false"===a)a=!1;else if("true"===a)a=!0;else if("noopFunc"===a)a=function(){};else if("trueFunc"===a)a=function(){return!0};else if("falseFunc"===a)a=function(){return!1};else if(/^\d+$/.test(a)){if(a=parseFloat(a),isNaN(a)||32767<Math.abs(a))return}else return;var b=!1;AG_defineProperty(e,{get:function(){return a},set:function(c){if(b)var d=!0;else void 0!==c&&void 0!==a&&typeof c!==typeof a&&(b=!0),d=b;d&&(a=c)}})};
+||behootpokeys.com^
 ||mjyxblhdgmdnumq.com^
 ||mbmrwxdwq.com^
 ||u7z5fgj3k9c0vkah2v8zj1zj7v6gkm2f8zjc9j2vk6o9p2zks3a6sjc2mj6h.me^
@@ -6487,7 +6488,7 @@ imgrock.info,dir50.net,thevideo.me,voodaith7e.com,imgrock.net,imgoutlet.com,doyk
 shemaleporn.xxx,lizardporn.com,downace.com,javstyle.com,yts.ag,qwertty.net,imgsin.com#%#Object.defineProperty(window, 'puShown', { get: function() { return true; } });
 123pandamovie.me,adultvideoz.net,mangovideo.pw,cartoonporno.xxx,69games.xxx,mirrorace.com,xxxhost.me,4fuckr.com#%#Object.defineProperty(window, 'initPu', { get: function() { return; } });
 yukfilmizle.com,safirfilmizle1.com,filese.me,mylink.vc#%#//scriptlet("abort-on-property-read", "initPu")
-elil.cc,balfilmizlet.com,filmseyretizlet.com,altyazilifilm.*,milfzr.com,movies07.live,adly.fun,dizirun.co,hotscopes.*,hentaianimedownloads.com,indiatoday.tech,erotikfilmsitesi.com,mobileflasherbd.com,eroticpub.com,boobsrealm.com,myli3k.com,kickass.ws,naughtymachinima.com,mangovideo.club,22pixx.xyz,xxxparodyhd.net,torrentproject.cc,pandamovies.me,porcore.com,dbupload.co,fileru.me,mangoporn.net,pornkino.cc,watchpornfree.info,imguur.pictures,xxxmoviestream.xyz,mangoporn.co,kickass.vc,pandavideo.pw,freshscat.com,playpornfree.xyz,kickass.love,desiupload.in,xopenload.me,streamporn.pw#%#//scriptlet("set-constant", "puShown", "true")
+masterplayer.*,elil.cc,balfilmizlet.com,filmseyretizlet.com,altyazilifilm.*,milfzr.com,movies07.live,adly.fun,dizirun.co,hotscopes.*,hentaianimedownloads.com,indiatoday.tech,erotikfilmsitesi.com,mobileflasherbd.com,eroticpub.com,boobsrealm.com,myli3k.com,kickass.ws,naughtymachinima.com,mangovideo.club,22pixx.xyz,xxxparodyhd.net,torrentproject.cc,pandamovies.me,porcore.com,dbupload.co,fileru.me,mangoporn.net,pornkino.cc,watchpornfree.info,imguur.pictures,xxxmoviestream.xyz,mangoporn.co,kickass.vc,pandavideo.pw,freshscat.com,playpornfree.xyz,kickass.love,desiupload.in,xopenload.me,streamporn.pw#%#//scriptlet("set-constant", "puShown", "true")
 westmanga.info#%#//scriptlet("set-constant", "puShown1", "true")
 mirrorcreator.com,fullmatchesandshows.com,tinypic.com,tube8.com,youporn.*,pornhub.com,pornhub.org,pornhub.net,pornhubthbh7ap3u.onion#%#Object.defineProperty(window, 'UAParser', { get: function() { return function() { }; } });
 pornone.com,vporn.com#%#//scriptlet("abort-on-property-read", "UAParser")
@@ -9237,7 +9238,7 @@ shemalez.com,voyeurhit.com##.afs_ads + [class] > div[style=""]
 ||porntube.com/external/
 ||porntube.com/nativeexternal/
 winaero.com##.gadadsense
-komikcast.com,milfnut.com##body ~ iframe[style*="width:"][style*="z-index:"][style*="position:"]:not([src])
+manga18fx.com,komikcast.com,milfnut.com##body ~ iframe[style*="width:"][style*="z-index:"][style*="position:"]:not([src])
 ||milfnut.net/js/jquery/*/jquery-*.min.js?v=
 ||xxxdl.net/nothing.aspx?
 how2shout.com,homeworklib.com##.vi-sticky-ad
@@ -13153,6 +13154,7 @@ implbits.com#@#.banner_container
 @@||clickserve.dartsearch.net/link/click?*&gclid=$stealth
 @@||adidas.pl/*&gclid=$stealth
 !#########################################
+@@||cdn*-player.com^$stealth
 @@||mundotec.pro^$stealth
 @@||conheceresaber.space^$stealth
 @@||api.apple-mapkit.com^$stealth
@@ -17876,7 +17878,6 @@ _800x100.
 ##.adace-slot-wrapper
 ##.adarea
 ##.adbadge
-##.adban
 ##.adbanner
 ##.adbar
 ##.adblock__banner
@@ -18901,6 +18902,7 @@ _800x100.
 ##.container-bottom-ad
 ##.container-first-ads
 ##.container-lower-ad
+##.container__ad
 ##.container_ad
 ##.container_publicidad
 ##.content--right-ads
@@ -20797,6 +20799,7 @@ _800x100.
 ##.BeOpWidget
 ##a[href^="https://affiliate.rusvpn.com/click.php?"]
 ##a[href^="https://billing.purevpn.com/aff.php"] > img
+##a[href^="https://fastestvpn.com/lifetime-special-deal?a_aid="]
 ##a[href^="https://get.surfshark.net/aff_c?"][href*="&aff_id="] > img
 ##a[href^="https://go.nordvpn.net/aff"] > img
 ##a[href^="https://torguard.net/aff.php"] > img
@@ -23499,7 +23502,6 @@ tf2r.com#@#.adverts
 ||interstitial-07.com^
 ||intnotif.club^
 ||inurneddoggish.com^
-||investnewsbrazil.com^
 ||invisedspill.com^
 ||inwlempmjkqp.com^
 ||ioadserve.com^
@@ -25110,7 +25112,6 @@ tf2r.com#@#.adverts
 ||rebel.ai^
 ||reblownwinare.website^
 ||recdirectgo.biz^
-||receitasefinancas.com^
 ||recentrecentturf.com^
 ||reckinbuttiten.pro^
 ||recommerdal.club^
@@ -26836,6 +26837,7 @@ tf2r.com#@#.adverts
 ||insurads.com^$third-party
 ||intergi.com^$third-party
 ||interworksmedia.co.kr^$third-party
+||investnewsbrazil.com^$third-party
 ||ip-adress.com^$third-party
 ||ipromote.com^$third-party
 ||jango.com^$third-party
@@ -26935,6 +26937,7 @@ tf2r.com#@#.adverts
 ||realbig.media^$third-party
 ||realclick.co.kr^$third-party
 ||realssp.co.kr^$third-party
+||receitasefinancas.com^$third-party
 ||redintelligence.net^$third-party
 ||redventures.io^$third-party
 ||republer.com^$third-party
@@ -29086,6 +29089,7 @@ mydramalist.com##div[class^="spnsr"]
 kijiji.ca##div[class^="sponsored-"]
 geoguessr.com##div[class^=result-layout_right__]
 viator.com##div[data-action-page-properties="featured_placements_on_list_page"]
+unsplash.com##div[data-ad="true"]
 ecosia.org##div[data-test-id="mainline-result-ad"]
 qwant.com##div[data-testid="productAdsMicrosoft.container"]
 qwant.com##div[data-testid^="snippet"]
