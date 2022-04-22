@@ -1,5 +1,5 @@
 ! Title: ➗ Actually Legitimate URL Shortener Tool
-! Version: 21April2022v1
+! Version: 22April2022v1
 ! Expires: 1 day
 ! Description: In a world dominated by bit.ly, adf.ly, and several thousand other malware cover-up tools, this list reduces the length of URLs in a much more legitimate and transparent manner. Essentially, it automatically removes unnecessary $/& values from the URLs, making them easier to copy from the URL bar and pasting elsewhere as links. Enjoy.
 ! Homepage: https://github.com/DandelionSprout/adfilt/discussions/163
@@ -73,7 +73,7 @@ $removeparam=tt_medium
 $removeparam=scid
 
 ! https://salming.com/sv-se/produkter/p/1099805-0416/salming-oval-fusion?trackID=79064280 (27/11/2020)
-$removeparam=trackID
+$document,removeparam=trackID
 
 ! https://productkeys.dk/produkt/pokemon-lets-go-pikachu/?dTribesID=9OIiIkbuCBtHQnvUeuU6ZD05WpuicLKP%7Cadtribes%7C11543 (27/11/2020)
 $removeparam=dTribesID
@@ -584,7 +584,7 @@ $removeparam=bcpid
 $removeparam=bctid
 
 ! https://www.chegg.com/textbooks/psychology-10th-edition-9781305498204-1305498208?trackid=680b4fc9118c&strackid=a2b7fd66a78c
-$removeparam=trackid
+$document,removeparam=trackid
 $removeparam=strackid
 
 ! http://www.3balls.com/?usource=lc&lctid=1184062&lcid=1630749503_3_0991310
