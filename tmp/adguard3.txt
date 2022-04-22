@@ -1,8 +1,8 @@
-! Checksum: IMfir6hQpGncaWevN35jvw
+! Checksum: OzCNLTkyNTFwnxcDAyiStw
 ! Title: AdGuard Tracking Protection filter (Optimized)
 ! Description: The most comprehensive list of various online counters and web analytics tools. Use this filter if you do not want your actions on the Internet to be tracked.
-! Version: 2.0.38.60
-! TimeUpdated: 2022-04-21T19:31:17+00:00
+! Version: 2.0.38.61
+! TimeUpdated: 2022-04-22T07:31:18+00:00
 ! Expires: 4 days (update frequency)
 #%#var AG_onLoad=function(func){if(document.readyState==="complete"||document.readyState==="interactive")func();else if(document.addEventListener)document.addEventListener("DOMContentLoaded",func);else if(document.attachEvent)document.attachEvent("DOMContentLoaded",func)};
 #%#var AG_removeElementById = function(id) { var element = document.getElementById(id); if (element && element.parentNode) { element.parentNode.removeChild(element); }};
@@ -22837,6 +22837,8 @@ $cookie=kampyleUserSessionsCount
 $cookie=kampyleUserSession
 $cookie=kampyleSessionPageCounter
 $cookie=kampyle_userid
+$cookie=guest_id_ads
+$cookie=guest_id_marketing
 ||t.co^$cookie=muc_ads
 $cookie=external_referer
 ||yahoo.com^$cookie=APIDTS

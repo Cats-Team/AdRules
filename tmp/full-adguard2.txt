@@ -1,8 +1,8 @@
-! Checksum: fIOc4kK/bcLLeLzI9CUPqQ
+! Checksum: Zh2n2FG9c+r/yLVGQTKmVw
 ! Title: AdGuard Tracking Protection filter
 ! Description: The most comprehensive list of various online counters and web analytics tools. Use this filter if you do not want your actions on the Internet to be tracked.
-! Version: 2.0.38.60
-! TimeUpdated: 2022-04-21T19:31:17+00:00
+! Version: 2.0.38.61
+! TimeUpdated: 2022-04-22T07:31:18+00:00
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -23585,6 +23585,9 @@ $cookie=kampyleSessionPageCounter
 $cookie=kampyle_userid
 !
 ! twitter.com
+! https://cdn.cms-twdigitalassets.com/content/dam/help-twitter/rules-and-policies/cookie-description-lists/cookie-description-list-en.pdf
+$cookie=guest_id_ads
+$cookie=guest_id_marketing
 ! Collects data of user behaviour and interaction in order to advertisements
 ||t.co^$cookie=muc_ads
 ! Collects anonymous data related to the user’s visits to the website(number of visits, average time spent on the website and which pages have been loaded)

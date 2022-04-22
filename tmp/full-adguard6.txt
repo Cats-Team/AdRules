@@ -1,8 +1,8 @@
-! Checksum: LitzCJt5ZNN+vJYCJsavBA
+! Checksum: CN3yvv1zK53hxIv/Bkp4dw
 ! Title: AdGuard Social Media filter
 ! Description: Filter for social media widgets such as 'Like' and 'Share' buttons and more.
-! Version: 2.0.60.19
-! TimeUpdated: 2022-04-21T16:31:27+00:00
+! Version: 2.0.60.20
+! TimeUpdated: 2022-04-22T07:31:23+00:00
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -356,6 +356,7 @@ lj_bookmarklet
 ! Good: example.org#?#main > div.row:has(> div.ad)
 ! Bad: example.org##main > div.ad (should be in specific.txt)
 !
+blognone.com#?#.region-rightbottom-sidebar > div.block:has(> div.content > div.fb-page)
 sn-jp.com#?#main > p:has(> span > strong:contains(SNSでシェア))
 icotto.jp#?#.c-floating__list > li:has(> span[data-click-area="footer_share"])
 informburo.kz#?#footer > div:has(> h4:contains(Поделиться:))
