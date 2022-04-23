@@ -189,7 +189,7 @@
 ! CSP filters
 ! Canadian
 ! Causes false positives in .jp region
-! Checksum: 4oscSNM8ksLqGIr36dMEsw
+! Checksum: QgpoSBhTGKTCUhuLiyPTkQ
 ! Chinese
 ! Chrome bug (Endless loading causing site to crash https://forums.lanik.us/viewtopic.php?f=64&t=25152)
 ! Cloudflare fingerprinting
@@ -297,7 +297,7 @@
 ! Japanese
 ! Kinja-related sites
 ! Korean
-! Last modified: 2022-04-23 07:33 UTC
+! Last modified: 2022-04-23 11:33 UTC
 ! Latvian
 ! Legal stuff (T&C's).
 ! Licence: https://easylist.to/pages/licence.html
@@ -414,7 +414,7 @@
 ! Various International sites
 ! Various philips regions 
 ! Various uk Football splashes
-! Version: 202204230733
+! Version: 202204231133
 ! Vietnamese
 ! Warnings
 ! Washington Times
@@ -6363,6 +6363,7 @@
 ###artist-ad-container
 ###aruba_cookie_privacy_popup
 ###as-cookie-cutter
+###as-cookie-policy-bar
 ###as-share-window
 ###as24-magazine-rightcol-adtag-1
 ###as_facebook_mem_likebox_widgets
@@ -15906,6 +15907,7 @@
 ###my-adsMAST
 ###my-adsMAST-iframe
 ###my-adsMON
+###my-agile-privacy-notification-area
 ###my-cookie__consent
 ###my-cookies-alert
 ###my-medium-rectangle-ad-1-container
@@ -31793,6 +31795,7 @@
 ##.cc-dialog-wrapper
 ##.cc-dialog[aria-label="cookie-consent"]
 ##.cc-fixed-bottom
+##.cc-fullscreen-bg
 ##.cc-individual-cookie-settings
 ##.cc-individual-cookie-settings-overlay
 ##.cc-message-bottom
@@ -36509,6 +36512,8 @@
 ##.f-ad
 ##.f-c-subscribe
 ##.f-cookie-banner
+##.f-cookie-consent
+##.f-cookie-consent-bottom
 ##.f-data-policy
 ##.f-eu-cookies
 ##.f-footer__btn_up
@@ -75177,6 +75182,7 @@ $xmlhttprequest,domain=auroravid.to|flashx.cc|nowvideo.sx|onlinevideoconverter.c
 @@/analyticsmediator.$script,domain=mysortimo.be|mysortimo.co.uk|mysortimo.com|mysortimo.com.au|mysortimo.de|mysortimo.dk|mysortimo.es|mysortimo.fr|mysortimo.no|mysortimo.se|repco.co.nz|repco.com.au
 @@/angular-facebook.js
 @@/assets/advertisement-$script
+@@/assets/cookiebanner.$domain=homify.ae|homify.ca|homify.cl|homify.co.id|homify.co.kr|homify.co.th|homify.co.uk|homify.co.za|homify.com|homify.com.ar|homify.com.br|homify.com.co|homify.com.eg|homify.com.mx|homify.com.my|homify.com.tr|homify.com.ve|homify.de|homify.es|homify.fr|homify.hk|homify.in|homify.it|homify.jp|homify.nl|homify.pe|homify.pk|homify.pl|homify.pt|homify.ru|homify.sa|homify.sg|homify.tw|homify.ua|homify.vn
 @@/banner/ad/*$image,domain=achaloto.com
 @@/build/js/analytics.$script,domain=lx.com|nbcbayarea.com|nbcboston.com|nbcchicago.com|nbcconnecticut.com|nbcdfw.com|nbclosangeles.com|nbcmiami.com|nbcnewyork.com|nbcphiladelphia.com|nbcsandiego.com|nbcwashington.com|necn.com|telemundo40.com|telemundo48elpaso.com|telemundoarizona.com|telemundolasvegas.com|telemundopr.com
 @@/cdn-cgi/images/trace/captcha/js/h/transparent.gif$image,~third-party
@@ -81170,6 +81176,8 @@ autocarindia.com###castrol-ad-sec
 autocarindia.com##.follow-google-news-p
 autocarindia.com##.skin-link
 autocarindia.com,india.com,sassymamahk.com##.news-letter
+autodily-pema.cz##.modalBackdrop
+autodily-pema.cz##.modalWindow
 autoevolution.com###prajiturele
 autoevolution.com##.modeladmid
 autoevolution.com,softpedia.com###bottombubble
@@ -82138,9 +82146,9 @@ britannica.com##.bc-article-inline-dialogue
 britannica.com##.md-reading-list-arrows
 britishairways.com#@##ensModalWrapper[role]
 britishairways.com#@##ensNotifyBanner
-britishairways.com#@#.cookie-banner:not(body):not(html)
 britishairways.com#@#.ensNotifyBanner
 britishairways.com,d-power-modellbau.com,modellbau-metz.com,wentronic.com,wentronic.pl#@#.cookie-modal
+britishairways.com,homify.ae,homify.ca,homify.cl,homify.co.id,homify.co.kr,homify.co.th,homify.co.uk,homify.co.za,homify.com,homify.com.ar,homify.com.br,homify.com.co,homify.com.eg,homify.com.mx,homify.com.my,homify.com.tr,homify.com.ve,homify.de,homify.es,homify.fr,homify.hk,homify.in,homify.it,homify.jp,homify.nl,homify.pe,homify.pk,homify.pl,homify.pt,homify.ru,homify.sa,homify.sg,homify.tw,homify.ua,homify.vn#@#.cookie-banner:not(body):not(html)
 britishland.com###auto-top-link
 britsabroad.com##.bannerBox
 brmangas.com##.closebf
@@ -87078,6 +87086,7 @@ hometheater.com###sub_pop
 hometogo.de##.posf.react-onclickoutside
 hometogo.fr##.react-onclickoutside
 homey.com.tr,vikingtemizlik.com.tr##.privacy
+homify.ae,homify.ca,homify.cl,homify.co.id,homify.co.kr,homify.co.th,homify.co.uk,homify.co.za,homify.com,homify.com.ar,homify.com.br,homify.com.co,homify.com.eg,homify.com.mx,homify.com.my,homify.com.tr,homify.com.ve,homify.de,homify.es,homify.fr,homify.hk,homify.in,homify.it,homify.jp,homify.nl,homify.pe,homify.pk,homify.pl,homify.pt,homify.ru,homify.sa,homify.sg,homify.tw,homify.ua,homify.vn#@##cookie-banner
 homo.xxx##.footer.spot
 homo.xxx##.spot.column
 honda.com.br##.info-notification
@@ -92227,6 +92236,7 @@ pss.sk##.cb-overlay
 pstc.ca###contactme_tabc
 psu.edu##.btn-link
 psu.edu##.mailinglist-form
+pswgames.com##.ng-trigger.ng-tns-c35-0
 psychcentral.com###at_rd
 psychcentral.com###at_su
 psychcentral.com##.no-hash
@@ -94268,6 +94278,7 @@ swarajyamag.com##[class*="page-top-adv-wrapper"]
 swarajyamag.com##[class^="banner-ad-"]
 swarajyamag.com##[class^="blank-m__story-social"]
 swatchseries.to##tr.download_link_sponsored
+sweatco.in##.Root__CookieBanner-sc-43qs68-1
 sweepstakesfanatics.com,thinksimplenow.com##.footer-optin
 sweetcombecottages.co.uk##.MuiPaper-elevation0.MuiAlert-standardInfo
 sweeterlifeclub.com###itro_opaco

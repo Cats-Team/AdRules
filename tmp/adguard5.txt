@@ -1,10 +1,10 @@
 
-! Checksum: iGfAIYLgSdqSUKIV2PRP/g
+! Checksum: pJ8mubOMJk59mDmoOm4IiA
 ! Description: Blocks irritating elements on web pages including cookie notices, third-party widgets and in-page pop-ups.
 ! Expires: 4 days (update frequency)
-! TimeUpdated: 2022-04-23T06:30:33+00:00
+! TimeUpdated: 2022-04-23T08:30:34+00:00
 ! Title: AdGuard Annoyances filter (Optimized)
-! Version: 2.1.16.85
+! Version: 2.1.16.86
 !### 3rd-party assistants, etc #########################
 !### HINTS are at the end of file
 !### Weather, money exchange, 3rd-party feedbacks, #####
@@ -14881,6 +14881,7 @@ twitch.tv#%#if (typeof localStorage != 'undefined' && localStorage.setItem) { lo
 twitchquotes.com##.ad-parent
 twitter.com#%#document.cookie="eu_cn=1; path=/;";
 twitter.com#?##layers > div[class] > div[class]:has(> div[class] div[role="button"] > div[dir="auto"] > span > span:contains(ookie))
+twitter.com#?#section[aria-labelledby][role="region"] > div[aria-label] > div[style] > div[style^="transform: translate"] article[data-testid="tweet"]:has(> div[class] > div[class] > div[class] a[href^="/i/topics"][dir="auto"])
 twitter3e4tixl4xyajtrzo62zg5vztmjuricljdp2c5kshju4avyoid.onion,twitter.com#$?#div[data-testid="sheetDialog"] div[role="button"]:not([data-testid]) + div[role="button"]:not([data-testid]):upward(div[role="group"]) { display: none !important; }
 twitter3e4tixl4xyajtrzo62zg5vztmjuricljdp2c5kshju4avyoid.onion,twitter.com#$?#html { overflow: auto !important; padding-right: 0 !important; }
 twitter3e4tixl4xyajtrzo62zg5vztmjuricljdp2c5kshju4avyoid.onion,twitter.com#?##layers > div[class] > div[class] > div[class] > div[class]:has(> div[class] > div[class] > div[class] > div[class] > div[class] > a[href="/login"])
