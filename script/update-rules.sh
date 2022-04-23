@@ -125,6 +125,8 @@ clash=(
    "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/BanEasyList.list"
    "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/BanEasyListChina.list"
    "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/BanEasyPrivacy.list"
+   "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Advertising/Advertising_Classical.yaml"
+   "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Privacy/Privacy_Classical.yaml"
 )
 
 for i in "${!easylist[@]}" "${!easylist_plus[@]}" "${!adguard_full[@]}" "${!adguard[@]}" "${!adguard_full_ubo[@]}" "${!adguard_ubo[@]}" "${!allow[@]}" "${!hosts[@]}" "${!dns[@]}" "${!ad_domains[@]}"  "${!allow_domains[@]}" "${!dead_hosts[@]}" "${!clash[@]}"
@@ -148,9 +150,6 @@ wait
 
 curl --connect-timeout 60 -s -o - https://raw.githubusercontent.com/CipherOps/AdGuardBlocklists/main/REGEX.txt \
  | grep -Fv "/^ad([sxv]?[0-9]*|system)[_.-]([^.[:space:]]+\.){1,}|[_.-]ad([sxv]?[0-9]*|system)[_.-]/" > dns998.txt &
-
-curl -s -o - https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Advertising/Advertising_Classical.yaml \
- | grep -F "DOMAIN" | sed 's/.*DO.*\,//g' | sed "s/^/||&/g" |sed "s/$/&^/g" >dns988.txt
 wait
 echo '规则下载完成'
 
@@ -163,7 +162,7 @@ wait
 # Pre Fix rules
 echo '处理规则中...'
 cat clash* \
- | grep -F 'DOMAIN-SUFFIX,' | sed 's/DOMAIN-SUFFIX,/127.0.0.1 /g' > hosts999.txt &
+ | grep -F 'DOMAIN' | sed 's/DOMAIN*,/127.0.0.1 /g' > hosts999.txt &
 
 
 cat hosts*.txt | sort -n| grep -v -E "^((#.*)|(\s*))$" \
