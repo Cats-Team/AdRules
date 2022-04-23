@@ -1,8 +1,8 @@
-! Checksum: U2PeHUe8hGcahFBLmcAH8g
+! Checksum: wsEMy9IeZYYLuH+zhFXUqg
 ! Title: AdGuard Tracking Protection filter (Optimized)
 ! Description: The most comprehensive list of various online counters and web analytics tools. Use this filter if you do not want your actions on the Internet to be tracked.
-! Version: 2.0.38.63
-! TimeUpdated: 2022-04-22T14:31:33+00:00
+! Version: 2.0.38.65
+! TimeUpdated: 2022-04-22T19:31:19+00:00
 ! Expires: 4 days (update frequency)
 #%#var AG_onLoad=function(func){if(document.readyState==="complete"||document.readyState==="interactive")func();else if(document.addEventListener)document.addEventListener("DOMContentLoaded",func);else if(document.attachEvent)document.attachEvent("DOMContentLoaded",func)};
 #%#var AG_removeElementById = function(id) { var element = document.getElementById(id); if (element && element.parentNode) { element.parentNode.removeChild(element); }};
@@ -19649,6 +19649,7 @@ charlestownwyllie.oaklawnnonantum.com^
 ||plausible.io/js/p.js
 ||plausible.io/api/event
 /umami.js
+/cdn-cgi/challenge-platform/h/g/beacon/*$xmlhttprequest,~third-party
 /?p=%2F*&h=https%3A%2F%2F*&r=&sid=*&qs=*&cid=$image,~third-party
 /video.counters.2.js?
 /w.gif?
@@ -20043,6 +20044,7 @@ _tracking.php?b=
 ||adc.nine.com.au/?token=$redirect=nooptext,important,domain=9now.com.au
 ||googleadservices.com/pagead/conversion_async.js$redirect=noopjs,domain=ffm.to,important
 /analytics.js$domain=freexcafe.com|rusvideos.tv|nakubani.ru|lun.com|songsara.net|newsmax.com|bolgehastanesi.com|ewtc.de
+||bo.kodflix.com/statsclick.php
 ||twitter.com/1.1/jot/client_event.json
 ||cdn.attn.tv/*/dtag.js
 ||google.*/maps/*/log

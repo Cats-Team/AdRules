@@ -1,8 +1,8 @@
-! Checksum: wDdKcBLvgTgb2R88Id14Eg
+! Checksum: L35zlkYl4/l/XJWol1oAIA
 ! Title: AdGuard Social Media filter
 ! Description: Filter for social media widgets such as 'Like' and 'Share' buttons and more.
-! Version: 2.0.60.24
-! TimeUpdated: 2022-04-22T16:31:22+00:00
+! Version: 2.0.60.26
+! TimeUpdated: 2022-04-22T20:31:22+00:00
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -356,6 +356,7 @@ lj_bookmarklet
 ! Good: example.org#?#main > div.row:has(> div.ad)
 ! Bad: example.org##main > div.ad (should be in specific.txt)
 !
+timesnownews.com#?#div[class^="ArticleShow-tnn__sticky"] > div[class*="ArticleShow-border"]:has(> p:contains(Share This Article))
 pegem.net#?#.banner-policy > .policy4:has(> .social-member)
 blognone.com#?#.region-rightbottom-sidebar > div.block:has(> div.content > div.fb-page)
 sn-jp.com#?#main > p:has(> span > strong:contains(SNSでシェア))
@@ -1463,6 +1464,7 @@ ukrinform.*,natgeo.nikkeibp.co.jp,life.pravda.com.ua,inuhiro-anime.com,murabito-
 appsfullversion.com##.gridmini-share-buttons
 hk01.com##.lcs-share-button
 kp.ru,kp.by,kp.kg,kp.kz,kp.md##div[data-gtm="share"]
+yargiyayinevi.com###product-buttons
 flatout.com.br##.share_video
 bolshoibelarus.by##div[class^="s2s_"]
 nli-research.co.jp##.sns_btn_area

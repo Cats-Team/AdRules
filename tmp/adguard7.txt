@@ -1,8 +1,8 @@
-! Checksum: d7YTnUn9akoRFUKBxghfCA
+! Checksum: WmD7bTKRRij3LQgow2Yzfw
 ! Title: AdGuard Social Media filter (Optimized)
 ! Description: Filter for social media widgets such as 'Like' and 'Share' buttons and more.
-! Version: 2.0.60.24
-! TimeUpdated: 2022-04-22T16:31:22+00:00
+! Version: 2.0.60.26
+! TimeUpdated: 2022-04-22T20:31:22+00:00
 ! Expires: 4 days (update frequency)
 #%#var AG_onLoad=function(func){if(document.readyState==="complete"||document.readyState==="interactive")func();else if(document.addEventListener)document.addEventListener("DOMContentLoaded",func);else if(document.attachEvent)document.attachEvent("DOMContentLoaded",func)};
 #%#var AG_removeElementById = function(id) { var element = document.getElementById(id); if (element && element.parentNode) { element.parentNode.removeChild(element); }};
@@ -241,6 +241,7 @@ images/livejournal
 /image2006/default/naver.gif^
 /image2006/default/Twitter.gif^
 /image2006/default/yozm.gif^
+timesnownews.com#?#div[class^="ArticleShow-tnn__sticky"] > div[class*="ArticleShow-border"]:has(> p:contains(Share This Article))
 pegem.net#?#.banner-policy > .policy4:has(> .social-member)
 blognone.com#?#.region-rightbottom-sidebar > div.block:has(> div.content > div.fb-page)
 sn-jp.com#?#main > p:has(> span > strong:contains(SNSでシェア))
@@ -811,6 +812,7 @@ ukrinform.*,natgeo.nikkeibp.co.jp,life.pravda.com.ua,inuhiro-anime.com,murabito-
 appsfullversion.com##.gridmini-share-buttons
 hk01.com##.lcs-share-button
 kp.ru,kp.by,kp.kg,kp.kz,kp.md##div[data-gtm="share"]
+yargiyayinevi.com###product-buttons
 flatout.com.br##.share_video
 bolshoibelarus.by##div[class^="s2s_"]
 nli-research.co.jp##.sns_btn_area
