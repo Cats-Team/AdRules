@@ -470,6 +470,7 @@
 ! https://github.com/AdguardTeam/AdguardFilters/issues/115648
 ! https://github.com/AdguardTeam/AdguardFilters/issues/115682
 ! https://github.com/AdguardTeam/AdguardFilters/issues/116034
+! https://github.com/AdguardTeam/AdguardFilters/issues/116307
 ! https://github.com/AdguardTeam/AdguardFilters/issues/26600
 ! https://github.com/AdguardTeam/AdguardFilters/issues/26605
 ! https://github.com/AdguardTeam/AdguardFilters/issues/26709
@@ -5080,6 +5081,8 @@ $script,domain=zdnet.fr,3p
 /code/native.js?h=
 /code/script/back.php|
 /contents/images-banners/*
+/css/*$frame,domain=assia.tv|assia4.com
+/css/jquerymin$script,domain=assia.tv|assia4.com
 /download11.png$image
 /eva.gif$domain=erotichdworld.com|guruofporn.com|jesseporn.xyz|jumboporn.xyz|kendralist.com
 /faloo.js$script,1p,domain=4tube.com|fux.com|pornerbros.com|porntube.com
@@ -7620,9 +7623,9 @@ asianxxxvideo.net##+js(aopw, ExoLoader)
 asianxxxvideo.net##.a_all
 asianxxxvideo.net##.play
 asmwall.com##+js(aopr, adblock)
-assia.tv##+js(nowoif)
-assia.tv##+js(set, ClickUnder, noopFunc)
-assia.tv##[class*="ban"]
+assia.tv,assia4.com##+js(nowoif)
+assia.tv,assia4.com##+js(set, ClickUnder, noopFunc)
+assia.tv,assia4.com##[class*="ban"]
 asssex-hd.com##+js(aopr, Aloader.serve)
 asssex-hd.com##+js(noeval)
 asus-zenfone.com##+js(nowoif)
@@ -13890,6 +13893,7 @@ tnaflix.com###vidPlayer span:has-text(Advertisement)
 tnaflix.com###zoneInPlayer
 tnaflix.com##+js(aeld, getexoloader)
 tnaflix.com##+js(aopr, ads.pop_url)
+toads.net^$3p
 todopolicia.com##+js(nostif, show)
 todovieneok.*##+js(aeld, load, nextFunction)
 toledoblade.com##+js(aopr, __cmpGdprAppliesGlobally)
@@ -15282,7 +15286,6 @@ zwergenstadt.com##+js(aeld, load, onload)
 ||assets.moat.com/*/ad$image,redirect=2x2.png,1p
 ||assetshuluimcom-a.akamaihd.net/*.mp3$media,redirect=noopmp3-0.1s,domain=hulu.com
 ||assetshuluimcom-a.akamaihd.net/prerolls/$media,3p
-||assia.tv/css/$frame,1p
 ||aterroppop.com^
 ||atom-ds.com^$3p
 ||au.ign.com^$inline-script
