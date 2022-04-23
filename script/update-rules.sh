@@ -226,7 +226,7 @@ cat full-adguard*.txt \
 
 cat .././mod/rules/*-rules.txt dns*.txt dns10.txt *easylist*.txt full-adg*.txt abp-hosts*.txt \
  | grep -E "^(^\*.*|^-.*|^\/.*|^\..*|^:.*|^@|^\|.*)" \
- | grep -Ev "^(\|.*$.*)" \
+ | grep -Ev "^((\|.*\$.*)|(\|.*/+.*))" \
  | sort | uniq| awk '!a[$0]++' > ll.txt &
 wait
 # | grep -E "^[(\@\@)|(\|\|)][^\/\^]+\^$" \
