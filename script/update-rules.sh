@@ -239,7 +239,7 @@ hostlist-compiler -c dns-rules-config.json -o dns-output.txt
 cat dns-output.txt deadblock.txt deadblock.txt \
  | sort -n |uniq -u >tmp0-dns.txt #去重过期域名
 
-cat tmp0-dns.txt l.txt dns10.txt dns99* \
+cat tmp0-dns.txt l.txt dns99* \
  | grep -v '^!' |sort -n |uniq >tmp-dns.txt
 #wait
 cat .././mod/rules/*-rules.txt base-src-hosts.txt \
