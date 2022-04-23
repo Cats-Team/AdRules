@@ -1,1200 +1,629 @@
-! Title: uBlock filters – Badware risks
-! Description: For sites documented to put users at risk of installing adware/crapware etc.
-!              The purpose is to at least ensure a user is warned of the risks ahead.
-! Expires: 4 days
-! Last modified: %timestamp%
-! Licence: https://github.com/uBlockOrigin/uAssets/blob/master/LICENSE
-! Homepage: https://github.com/uBlockOrigin/uAssets
+
 !
+!              The purpose is to at least ensure a user is warned of the risks ahead.
+!     via https://twitter.com/SwiftOnSecurity/status/631972601460494336
+! 2011-08-22: https://www.extremetech.com/computing/93504-download-com-wraps-downloads-in-bloatware-lies-about-motivations
+! 2011-12-05: https://seclists.org/nmap-announce/2011/5
+! 2012-02-17: http://neosting.net/logiciels/01net-et-softonic-ajoutent-aussi-un-installeur-publicitaire.html (Dead page)
+! 2012-06-17: https://www.malekal.com/01net-pc-optimizer-pour-ne-pas-optimiser-son-pc/
+! 2012-06-27: https://insecure.org/news/download-com-fiasco.html
+! 2012-10-30: https://www.lesnumeriques.com/appli-logiciel/telecharger-depuis-01net-nuit-gravement-a-sante-pc-n26763.html
+! 2012-10-31: https://www.journaldunet.com/solutions/dsi/des-malwares-sur-telecharger-com-01net-1012.shtml
+! 2013-03-25: https://www.malekal.com/pctutotuto4pc-association-avec-01net/
+! 2013-12-10: https://blog.whitehatsec.com/why-com-com-should-scare-you/
+! 2014-10-22: https://assiste.com/01Net.html
+! 2015-01-11: https://www.howtogeek.com/198622/heres-what-happens-when-you-install-the-top-10-download.com-apps/
+! 2015-01-21: https://www.howtogeek.com/207692/yes-every-freeware-download-site-is-serving-crapware-heres-the-proof/
+! 2015-03-11: https://blog.emsisoft.com/en/12678/mind-the-pup-top-download-portals-to-avoid/
+! 2015-08-12: https://isc.sans.edu/diary/.COM.COM+Used+For+Malicious+Typo+Squatting/20019
+! Badware
+! Description: For sites documented to put users at risk of installing adware/crapware etc.
+! Each entry has to be well enough sourced, see:
+! Expires: 4 days
+! Fake cloudflare screen
 ! GitHub issues: https://github.com/uBlockOrigin/uAssets/issues
 ! GitHub pull requests: https://github.com/uBlockOrigin/uAssets/pulls
-!
-! Each entry has to be well enough sourced, see:
-! https://github.com/gorhill/uBlock/wiki/Badware-risks
-
-! Using request of type `document` will cause the whole site to be blocked through
-! strict blocking, yet the site will render properly if a user still decide to
-! go ahead.
-
-! 2014-10-22: https://assiste.com/01Net.html
-! 2013-03-25: https://www.malekal.com/pctutotuto4pc-association-avec-01net/
-! 2012-10-31: https://www.journaldunet.com/solutions/dsi/des-malwares-sur-telecharger-com-01net-1012.shtml
-! 2012-10-30: https://www.lesnumeriques.com/appli-logiciel/telecharger-depuis-01net-nuit-gravement-a-sante-pc-n26763.html
-! 2012-06-17: https://www.malekal.com/01net-pc-optimizer-pour-ne-pas-optimiser-son-pc/
-! 2012-02-17: http://neosting.net/logiciels/01net-et-softonic-ajoutent-aussi-un-installeur-publicitaire.html (Dead page)
-||01net.com/telecharger/$doc
-
-! 2015-03-11: https://blog.emsisoft.com/en/12678/mind-the-pup-top-download-portals-to-avoid/
-! 2015-01-21: https://www.howtogeek.com/207692/yes-every-freeware-download-site-is-serving-crapware-heres-the-proof/
-! 2015-01-11: https://www.howtogeek.com/198622/heres-what-happens-when-you-install-the-top-10-download.com-apps/
-! 2012-06-27: https://insecure.org/news/download-com-fiasco.html
-! 2011-12-05: https://seclists.org/nmap-announce/2011/5
-! 2011-08-22: https://www.extremetech.com/computing/93504-download-com-wraps-downloads-in-bloatware-lies-about-motivations
-! https://github.com/uBlockOrigin/uAssets/issues/926
-! ||download.cnet.com^$doc
-
-! 2015-08-12: https://isc.sans.edu/diary/.COM.COM+Used+For+Malicious+Typo+Squatting/20019
-!     via https://twitter.com/SwiftOnSecurity/status/631972601460494336
-! 2013-12-10: https://blog.whitehatsec.com/why-com-com-should-scare-you/
-||com.com^$doc
-
-! https://github.com/uBlockOrigin/uAssets/issues/79
-||flexytalk.net^
-||quickdomainfwd.com^
-
-! https://github.com/uBlockOrigin/uAssets/issues/1547
-||vlc.de^$doc
-
-! https://github.com/uBlockOrigin/uAssets/issues/1738
-||audacity.de^$doc
-
-! https://github.com/uBlockOrigin/uAssets/issues/1853
-||havenworks.com^$doc
-
-! https://github.com/gorhill/uBlock/wiki/Badware-risks#ublockorg
-||ublock.org^$doc
-
-! https://github.com/uBlockOrigin/uAssets/issues/3060
-! https://www.bleepingcomputer.com/news/security/fake-websites-for-keepass-7zip-audacity-others-found-pushing-adware/
-! https://www.virustotal.com/#/file/a5616985e92ca7c1df3b132d2da2ef33c64f38ba2dca40445017037473d7d014/detection
-! https://twitter.com/certbund/status/1127864403276091393
-||7zip.es^$doc
-||7zip.fr^$doc
-||7zip.it^$doc
-||adblock.fr^$doc
-||aresgalaxy.es^$doc
-||audacity.es^$doc
-||audacity.fr^$doc
-||audacity.it^$doc
-||audacity.pl^$doc
-||azureus.es^$doc
-||bittorrent.es^$doc
-||bleachbit.com^$doc
-||blender3d.es^$doc
-||blender3d.fr^$doc
-||bluestacksdownloads.com^$doc
-||calibre.it^$doc
-||celestia.es^$doc
-||celestia.fr^$doc
-||clonezilla.es^$doc
-||clonezilla.fr^$doc
-||clonezilla.it^$doc
-||cyberduck.de^$doc
-||cyberduck.es^$doc
-||cyberduck.fr^$doc
-||cyberduck.it^$doc
-||filezilla.es^$doc
-||filezilla.fr^$doc
-||filezilla.it^$doc
-||filezilla.net^$doc
-||filezilla.pl^$doc
-||filezilla.pt^$doc
-||freefilesync.com^$doc
-||freerapid.fr^$doc
-||garagebandforpc.org^$doc
-||gimp.es^$doc
-||gparted.fr^$doc
-||gparted.it^$doc
-||greenshot.fr^$doc
-||greenshot.org^$doc
-||handbrake.es^$doc
-||handbrake.it^$doc
-||inkscape.es^$doc
-||inkscape.fr^$doc
-||inkscape.it^$doc
-||izarc.fr^$doc
-||jdownloader.fr^$doc
-||keepass.com^$doc
-||keepass.de^$doc
-||keepass.es^$doc
-||keepass.fr^$doc
-||keepass.it^$doc
-||keepassxc.com^$doc
-||notepad2.com^$doc
-||open-office.fr^$doc
-||paintnet.es^$doc
-||paintnet.fr^$doc
-||paintnet.it^$doc
-||pdfcreator.pt^$doc
-||pdfsam.com^$doc
-||peazip.com^$doc
-||qbittorrent.com^$doc
-||scribus.fr^$doc
-||scribus.it^$doc
-||senuti.org^$doc
-||sharex.es^$doc
-||smplayer.org^$doc
-||songbird.es^$doc
-||stellarium.es^$doc
-||stellarium.fr^$doc
-||telecharger-openoffice.fr^$doc
-||thunderbird.es^$doc
-||truecrypt.es^$doc
-||truecrypt.fr^$doc
-||truecrypt.it^$doc
-||truecrypt.pl^$doc
-||unetbootin.net^$doc
-||unetbootin.org^$doc
-||utorrent.it^$doc
-||virtualbox.es^$doc
-||virtualbox.pl^$doc
-
-! https://github.com/uBlockOrigin/uAssets/issues/3730
-! https://blog.sucuri.net/2018/10/malicious-redirects-from-newsharecounts-com-tweet-counter.html
-||newsharecounts.s3-us-west-2.amazonaws.com/nsc.js$script
-
-! https://github.com/uBlockOrigin/uAssets/issues/4014
-! https://www.virustotal.com/#/url/ac1fe407af0592489e7ef1ff2a62e381f05be08311e010fc4a5736b94b08d070/detection
-! https://www.scumware.org/report/104.27.174.25.html
-
-! https://github.com/uBlockOrigin/uAssets/issues/4137
-||governiamo.com^$doc
-
-! https://github.com/uBlockOrigin/uAssets/issues/4201
-||googlo.co^$doc
-||yahoo-news.co^$doc
-! https://github.com/uBlockOrigin/uAssets/issues/4201#issuecomment-458340273
-||browsergames2018.com^$doc
-||chairgaubsy.com^$doc
-||epailseptox.com^$doc
-||hentaiplaytime.com^$doc
-||lameterthenhep.info^$doc
-||notification-time.com^$doc
-||viewmypdf.com^$doc
-
-! https://github.com/uBlockOrigin/uAssets/issues/4236
-||dnbard.com^$doc
-
-! https://github.com/uBlockOrigin/uAssets/issues/4656
-||bitcoinqrcodegenerator.win^$doc
-
-! com-guest.info badware
-||com-guest.info^$doc
-
-! foxload.com badware
-||foxload.com^$doc
-
-! aksia.co badware
-! Ref: https://www.bleepingcomputer.com/news/security/phisher-announces-more-attacks-against-hedge-funds-and-financial-firms/
-||aksia.co^$doc
-
+! Homepage: https://github.com/uBlockOrigin/uAssets
+! Lapsed domains that once hosted adblock lists, several of whom are now used for bad purposes
+! Last modified: %timestamp%
+! Licence: https://github.com/uBlockOrigin/uAssets/blob/master/LICENSE
 ! ReImagePlus links
-! https://github.com/uBlockOrigin/uAssets/issues/5136
+! Ref: https://blog.malwarebytes.com/detections/pup-optional-spyhunter/
 ! Ref: https://forums.malwarebytes.com/topic/194200-removal-instructions-for-reimage-repair/
-! https://windowsreport.com/extend-windows-laptop-battery-life/
-windowsreport.com##.code-block
+! Ref: https://www.bleepingcomputer.com/news/security/phisher-announces-more-attacks-against-hedge-funds-and-financial-firms/
+! SpyHunter links
+! Title: uBlock filters – Badware risks
+! Typosquatting: redirects to scam sites
+! Using request of type `document` will cause the whole site to be blocked through
+! aksia.co badware
+! com-guest.info badware
+! e.g. https://serviceshebdfgdtryueieiodlodlpdlkjgnfhfjfudh.azurewebsites.net/chrmz8/index.html
+! e.g. https://to3s.biz/?p=gi4tgnjwgu5gi3bpgy2tmmy
+! fake dating/prize sites
+! fake domain
+! fake flash
+! fake software updaters /redirections
+! foxload.com badware
+! fraud => https://forums.lanik.us/viewtopic.php?f=90&t=45586
+! go ahead.
+! hacked and abused for redirect
+! hentaimx => badware
 ! https://appuals.com/fix-error-0x800701e3-on-windows-7-8-1-10/
+! https://arstechnica.com/information-technology/2019/08/google-play-app-with-100-million-downloads-executed-secret-payloads/
+! https://bbs.kafan.cn/thread-2170747-1-1.html – malicious script
+! https://bbs.kafan.cn/thread-2217785-1-1.html
+! https://bbs.kafan.cn/thread-2220230-1-1.html
+! https://bbs.kafan.cn/thread-2221419-1-1.html
+! https://bbs.kafan.cn/thread-2221500-1-1.html
+! https://bbs.kafan.cn/thread-2221781-1-1.html
+! https://bbs.kafan.cn/thread-2221903-1-1.html
+! https://bbs.kafan.cn/thread-2222478-1-1.html
+! https://blog.netlab.360.com/pinkbot
+! https://blog.sucuri.net/2018/08/massive-wordpress-redirect-campaign-targets-vulnerable-tagdiv-themes-and-ultimate-member-plugins.html
+! https://blog.sucuri.net/2018/10/malicious-redirects-from-newsharecounts-com-tweet-counter.html
+! https://forums.lanik.us/viewtopic.php?f=62&p=149407#p149406
+! https://github.com/AdguardTeam/AdguardFilters/issues/109902
+! https://github.com/AdguardTeam/AdguardFilters/issues/114312
+! https://github.com/AdguardTeam/AdguardFilters/issues/115960
+! https://github.com/AdguardTeam/AdguardFilters/issues/68588
+! https://github.com/AdguardTeam/AdguardFilters/issues/69036
+! https://github.com/AdguardTeam/AdguardFilters/issues/84632
+! https://github.com/AdguardTeam/AdguardFilters/issues/84633
+! https://github.com/AdguardTeam/AdguardFilters/issues/84634
+! https://github.com/AdguardTeam/AdguardFilters/issues/84638
+! https://github.com/AdguardTeam/AdguardFilters/issues/84639
+! https://github.com/AdguardTeam/AdguardFilters/issues/84640
+! https://github.com/AdguardTeam/AdguardFilters/issues/91680
+! https://github.com/AdguardTeam/AdguardFilters/issues/92466
+! https://github.com/DandelionSprout/adfilt/issues/267
+! https://github.com/DandelionSprout/adfilt/issues/63#issuecomment-940500664
+! https://github.com/NanoMeow/QuickReports/issues/2522
+! https://github.com/NanoMeow/QuickReports/issues/2577
+! https://github.com/NanoMeow/QuickReports/issues/2772
+! https://github.com/NanoMeow/QuickReports/issues/2813
+! https://github.com/NanoMeow/QuickReports/issues/3205
+! https://github.com/NanoMeow/QuickReports/issues/3299
+! https://github.com/NanoMeow/QuickReports/issues/3300
+! https://github.com/NanoMeow/QuickReports/issues/965#issuecomment-485274387
+! https://github.com/gorhill/uBlock/wiki/Badware-risks
+! https://github.com/gorhill/uBlock/wiki/Badware-risks#ublockorg
+! https://github.com/iam-py-test/investigations/blob/main/2021/11/25/1.md
+! https://github.com/uBlockOrigin/uAssets/commit/5832dfebb4021c639b90c2973946ff7638c2290f#commitcomment-57642161
+! https://github.com/uBlockOrigin/uAssets/commit/df17084b4815e87d420e8adf19bf4959e828e6e5#commitcomment-66510549
+! https://github.com/uBlockOrigin/uAssets/issues/10075
+! https://github.com/uBlockOrigin/uAssets/issues/10086
+! https://github.com/uBlockOrigin/uAssets/issues/10116
+! https://github.com/uBlockOrigin/uAssets/issues/10171
+! https://github.com/uBlockOrigin/uAssets/issues/10181
+! https://github.com/uBlockOrigin/uAssets/issues/10442
+! https://github.com/uBlockOrigin/uAssets/issues/10536
+! https://github.com/uBlockOrigin/uAssets/issues/11157
+! https://github.com/uBlockOrigin/uAssets/issues/11269
+! https://github.com/uBlockOrigin/uAssets/issues/11310
+! https://github.com/uBlockOrigin/uAssets/issues/11394
+! https://github.com/uBlockOrigin/uAssets/issues/11407
+! https://github.com/uBlockOrigin/uAssets/issues/11434
+! https://github.com/uBlockOrigin/uAssets/issues/12117
+! https://github.com/uBlockOrigin/uAssets/issues/12130
+! https://github.com/uBlockOrigin/uAssets/issues/12194
+! https://github.com/uBlockOrigin/uAssets/issues/1547
+! https://github.com/uBlockOrigin/uAssets/issues/1738
+! https://github.com/uBlockOrigin/uAssets/issues/1853
+! https://github.com/uBlockOrigin/uAssets/issues/3060
+! https://github.com/uBlockOrigin/uAssets/issues/3730
+! https://github.com/uBlockOrigin/uAssets/issues/4014
+! https://github.com/uBlockOrigin/uAssets/issues/4137
+! https://github.com/uBlockOrigin/uAssets/issues/4201
+! https://github.com/uBlockOrigin/uAssets/issues/4201#issuecomment-458340273
+! https://github.com/uBlockOrigin/uAssets/issues/4236
+! https://github.com/uBlockOrigin/uAssets/issues/4656
+! https://github.com/uBlockOrigin/uAssets/issues/4862#issuecomment-486941006
+! https://github.com/uBlockOrigin/uAssets/issues/5136
+! https://github.com/uBlockOrigin/uAssets/issues/5305#issuecomment-484341498
+! https://github.com/uBlockOrigin/uAssets/issues/5305#issuecomment-484754393
+! https://github.com/uBlockOrigin/uAssets/issues/5307
+! https://github.com/uBlockOrigin/uAssets/issues/5409
+! https://github.com/uBlockOrigin/uAssets/issues/5442
+! https://github.com/uBlockOrigin/uAssets/issues/5489#issuecomment-488207423
+! https://github.com/uBlockOrigin/uAssets/issues/5605#issuecomment-1060013521
+! https://github.com/uBlockOrigin/uAssets/issues/5805
+! https://github.com/uBlockOrigin/uAssets/issues/6342
+! https://github.com/uBlockOrigin/uAssets/issues/6381
+! https://github.com/uBlockOrigin/uAssets/issues/6452
+! https://github.com/uBlockOrigin/uAssets/issues/6544#issuecomment-586763083
+! https://github.com/uBlockOrigin/uAssets/issues/79
+! https://github.com/uBlockOrigin/uAssets/issues/8378
+! https://github.com/uBlockOrigin/uAssets/issues/8466
+! https://github.com/uBlockOrigin/uAssets/issues/8630
+! https://github.com/uBlockOrigin/uAssets/issues/8630#issuecomment-803722231
+! https://github.com/uBlockOrigin/uAssets/issues/8630#issuecomment-810957825
+! https://github.com/uBlockOrigin/uAssets/issues/8869
+! https://github.com/uBlockOrigin/uAssets/issues/9045
+! https://github.com/uBlockOrigin/uAssets/issues/9105
+! https://github.com/uBlockOrigin/uAssets/issues/926
+! https://github.com/uBlockOrigin/uAssets/issues/9344
+! https://github.com/uBlockOrigin/uAssets/issues/9355
+! https://github.com/uBlockOrigin/uAssets/issues/9400
+! https://github.com/uBlockOrigin/uAssets/issues/9641
+! https://github.com/uBlockOrigin/uAssets/issues/9785
+! https://github.com/uBlockOrigin/uAssets/issues/9840
+! https://github.com/uBlockOrigin/uAssets/issues/9848
+! https://github.com/uBlockOrigin/uAssets/issues/9933
+! https://github.com/uBlockOrigin/uAssets/issues/9955
+! https://github.com/uBlockOrigin/uAssets/pull/10017
+! https://github.com/uBlockOrigin/uAssets/pull/10142
+! https://github.com/uBlockOrigin/uAssets/pull/10163
+! https://github.com/uBlockOrigin/uAssets/pull/10503
+! https://github.com/uBlockOrigin/uAssets/pull/10599
+! https://github.com/uBlockOrigin/uAssets/pull/10620
+! https://github.com/uBlockOrigin/uAssets/pull/10774
+! https://github.com/uBlockOrigin/uAssets/pull/10997
+! https://github.com/uBlockOrigin/uAssets/pull/11041
+! https://github.com/uBlockOrigin/uAssets/pull/6757
+! https://github.com/uBlockOrigin/uAssets/pull/9656
+! https://howtoremove.guide/redirector-gvt1-com-virus-malware-chrome-removal/
+! https://howtoremove.guide/redirector-gvt1-com-virus-malware-chrome-removal/ (German version only)
+! https://transparencyreport.google.com/safe-browsing/search?url=https:%2F%2Fonpharmvermen.com%2F
+! https://twitter.com/Ta190a/status/1496761374495567873
+! https://twitter.com/certbund/status/1127864403276091393
+! https://ugetfix.com/ask/how-to-fix-windows-store-error-0x8000ffff/
+! https://windowsloop.com/network-adapters-shortcut/
+! https://windowsreport.com/extend-windows-laptop-battery-life/
+! https://www.2-spyware.com/remove-redirector-gvt1-com.html
+! https://www.bleepingcomputer.com/news/security/fake-websites-for-keepass-7zip-audacity-others-found-pushing-adware/
+! https://www.huorong.cn/info/1526627586130.html
+! https://www.huorong.cn/info/1531309921141.html
+! https://www.huorong.cn/info/1577158839403.html
+! https://www.huorong.cn/info/1598957552515.html
+! https://www.huorong.cn/info/1617368984641.html
+! https://www.huorong.cn/info/1618397948649.html
+! https://www.huorong.cn/info/1627034201698.html
+! https://www.hybrid-analysis.com/sample/3ad8f4dc6a021e82d25247c266d89d20d981f7187413405f0b2e35d984bd60cb
+! https://www.joesandbox.com/analysis/300638/0/html
+! https://www.majorgeeks.com/files/details/patch_my_pc.html
+! https://www.reddit.com/r/uBlockOrigin/comments/pu9ffh/blacklist_the_following_url_in_badware_risks_or/
+! https://www.scumware.org/report/104.27.174.25.html
+! https://www.thewindowsclub.com/fix-windows-update-error-0xc1900130-on-windows-10
+! https://www.virustotal.com/#/file/a5616985e92ca7c1df3b132d2da2ef33c64f38ba2dca40445017037473d7d014/detection
+! https://www.virustotal.com/#/url/ac1fe407af0592489e7ef1ff2a62e381f05be08311e010fc4a5736b94b08d070/detection
+! https://www.virustotal.com/gui/url/6a4daf9dfa58864522ae7972ab042cf4bab17a48321b96d1952bd384210adcd2
+! https://www.wordfence.com/blog/2019/08/malicious-wordpress-redirect-campaign-attacking-several-plugins/
+! malicious ip
+! phishing /malicious
+! push notification scam
+! redirect from egy best
+! redirecting domains / fraud
+! redirects
+! royaljapan02.z23.web.core.windows.net
+! scam
+! some badware testing around
+! strict blocking, yet the site will render properly if a user still decide to
+! switching to malware
+! thepiratebay3 .com bad
+! ||download.cnet.com^$doc
+! ||driverfix.com^$doc
+! ||zhuangjizhuli.com^$all
+! ||zhuangjizhuli.net^$all
+&adspot_id=*&cost=0.$doc
+&atc=adterra&ad_id=$doc
+&td=redirect4u.com$all
+*/bouncy.php?*&inPopUp=$all
+*/redirect?feed=$frame
+*/zcvisitor/*?campaignid$doc
+.com/c/*?s1=$doc,domain=com
+.html?cep=*&cost=0.$doc
+.net/c/*?s1=$doc,domain=net
+.systems/signup?ad_domain=$doc,popup
+.top/vpnupdate/*/index.html$doc
+.xyz/?u=*&o=$doc,domain=xyz
+.xyz/v1/redirect?cid=$doc
+/?%7B%7Bip%7D%7D*&clickId=$doc
+/?act=*&epcVIP=$doc
+/?btd=*token$all
+/?camp=*&cost=0.$doc
+/?clck=*&sid=$doc
+/?ip=*&uclickhash=$doc
+/?wm=*&t=onclick|$doc
+/?{BV_SRCID}&$doc
+/^http:\/\/[a-z]{10}\.duckdns/$doc,domain=duckdns.org
+/^https:\/\/(?:www\d\.)?[-a-z]{6,9}\.(?:com|info|net|org)\/(?=[-_a-zA-Z]{0,42}\d)(?=[-_0-9a-z]{0,42}[A-Z])[-_0-9a-zA-Z]{43}/\?cid=[-_0-9a-zA-Z]{24,36}&sid=[_0-9a-f]{1,32}$/$doc,match-case,domain=com|info|net|org
+/^https:\/\/[0-9a-z]{3,}\.[-a-z]{10,}\.top\/[a-z]{8}\/\?(?:cid=[0-9a-z]+&)?u=[0-9a-z]+&/$doc,domain=top
+/^https:\/\/[0-9a-z]{3,}\.[-a-z]{10,}\.top\/[a-z]{8}\/\?utm_campaign=\w{40,}&t=/$doc,domain=top
+/^https:\/\/[a-z]{2,3}\d\.biz\/go\/[0-9a-z]{15,18}$/$doc,domain=biz
+/^https:\/\/feedbackip\d{2}\.pw/$doc,domain=pw
+/^https:\/\/serch\d{2}\.biz\/\?p=/$doc,domain=biz
+/^https:\/\/to\ds\.biz\/\?p=/$doc,domain=biz
+/^https?:\/\/((?!www)[a-z]{3,}\.)?[-0-9a-z]{6,}\.(?:com|fun|guru|life|online|pw|site|space|top|us|xyz)\/(?:[a-z]{6,8}\/)?\/?\?o=[0-9a-z]{7}&u=[0-9a-z]{7}/$doc,frame,match-case,domain=com|fun|guru|life|online|pw|site|space|top|us|xyz
+/^https?:\/\/((?!www)[a-z]{3,}\.)?[-0-9a-z]{6,}\.(?:com|fun|guru|life|online|pw|site|space|top|us|xyz)\/(?:[a-z]{6,8}\/)?\/?\?u=[0-9a-z]{7}&o=[0-9a-z]{7}/$doc,frame,match-case,domain=com|fun|guru|life|online|pw|site|space|top|us|xyz
+/aff.php?*&_cbUrl=$doc
+/apop/redirect/zone/*$doc
+/bdv_rd.dbm?ownid=$doc
+/click.php?data=$doc
+/click.php?key=*&cost=$doc
+/click?a=*&aff_click_id=$doc
+/expired/unprotected_win/?track=$doc
+/fg/tds/ae?tds_campaign=$doc
+/go.php?url=*&uclick=$doc
+/index.php?lpkey=*&uclick=$doc
+/index555.php?sub=*&tel=&utm_source=$doc
+/jump?id=*&_tgUrl=$doc
+/ll/click.php?key=$doc
+/pop-click?sid=*&data=$doc
+/prize/luckyus-ad/*$doc
+/redirect2/?a=$doc
+/site/redirectpage?ca=link&sid=$doc
+/smartlink/?a=$doc
+/tds/ae?tdsId=*&clickid=$doc
+/track/click.php?c=*&zoneid=$doc
+/werrx01/?$doc
+/winXos/?$doc
+/zcredirect?visitid=*&iframeDetected=false|$doc
+2-spyware.com,novirus.uk,faravirus.ro,uirusu.jp,virusi.hr,wubingdu.cn,avirus.hu,ioys.gr,odstranitvirus.cz,tanpavirus.web.id,utanvirus.se,virukset.fi,losvirus.es,virusler.info.tr,semvirus.pt,lesvirus.fr,senzavirus.it,dieviren.de,viruset.no,usunwirusa.pl,zondervirus.nl,bedynet.ru,virusai.lt,virusi.bg,viirused.ee,udenvirus.dk##.attention-button-wrap:has-text(Reimage)
+2-spyware.com,novirus.uk,faravirus.ro,uirusu.jp,virusi.hr,wubingdu.cn,avirus.hu,ioys.gr,odstranitvirus.cz,tanpavirus.web.id,utanvirus.se,virukset.fi,losvirus.es,virusler.info.tr,semvirus.pt,lesvirus.fr,senzavirus.it,dieviren.de,viruset.no,usunwirusa.pl,zondervirus.nl,bedynet.ru,virusai.lt,virusi.bg,viirused.ee,udenvirus.dk##.automatic_removal_list
+2-spyware.com,novirus.uk,faravirus.ro,uirusu.jp,virusi.hr,wubingdu.cn,avirus.hu,ioys.gr,odstranitvirus.cz,tanpavirus.web.id,utanvirus.se,virukset.fi,losvirus.es,virusler.info.tr,semvirus.pt,lesvirus.fr,senzavirus.it,dieviren.de,viruset.no,usunwirusa.pl,zondervirus.nl,bedynet.ru,virusai.lt,virusi.bg,viirused.ee,udenvirus.dk##.automatic_removal_list_w > .ar_block_description
+2-spyware.com,novirus.uk,faravirus.ro,uirusu.jp,virusi.hr,wubingdu.cn,avirus.hu,ioys.gr,odstranitvirus.cz,tanpavirus.web.id,utanvirus.se,virukset.fi,losvirus.es,virusler.info.tr,semvirus.pt,lesvirus.fr,senzavirus.it,dieviren.de,viruset.no,usunwirusa.pl,zondervirus.nl,bedynet.ru,virusai.lt,virusi.bg,viirused.ee,udenvirus.dk##.js-download_button_offer
+2-spyware.com,novirus.uk,faravirus.ro,uirusu.jp,virusi.hr,wubingdu.cn,avirus.hu,ioys.gr,odstranitvirus.cz,tanpavirus.web.id,utanvirus.se,virukset.fi,losvirus.es,virusler.info.tr,semvirus.pt,lesvirus.fr,senzavirus.it,dieviren.de,viruset.no,usunwirusa.pl,zondervirus.nl,bedynet.ru,virusai.lt,virusi.bg,viirused.ee,udenvirus.dk##.nfc-bottom-right:has-text(Reimage)
+2-spyware.com,novirus.uk,faravirus.ro,uirusu.jp,virusi.hr,wubingdu.cn,avirus.hu,ioys.gr,odstranitvirus.cz,tanpavirus.web.id,utanvirus.se,virukset.fi,losvirus.es,virusler.info.tr,semvirus.pt,lesvirus.fr,senzavirus.it,dieviren.de,viruset.no,usunwirusa.pl,zondervirus.nl,bedynet.ru,virusai.lt,virusi.bg,viirused.ee,udenvirus.dk##.primary_download
+2-spyware.com,novirus.uk,faravirus.ro,uirusu.jp,virusi.hr,wubingdu.cn,avirus.hu,ioys.gr,odstranitvirus.cz,tanpavirus.web.id,utanvirus.se,virukset.fi,losvirus.es,virusler.info.tr,semvirus.pt,lesvirus.fr,senzavirus.it,dieviren.de,viruset.no,usunwirusa.pl,zondervirus.nl,bedynet.ru,virusai.lt,virusi.bg,viirused.ee,udenvirus.dk##.quick-download-button-placeholder
+2-spyware.com,novirus.uk,faravirus.ro,uirusu.jp,virusi.hr,wubingdu.cn,avirus.hu,ioys.gr,odstranitvirus.cz,tanpavirus.web.id,utanvirus.se,virukset.fi,losvirus.es,virusler.info.tr,semvirus.pt,lesvirus.fr,senzavirus.it,dieviren.de,viruset.no,usunwirusa.pl,zondervirus.nl,bedynet.ru,virusai.lt,virusi.bg,viirused.ee,udenvirus.dk##.quick-download-button-text
+2-spyware.com,novirus.uk,faravirus.ro,uirusu.jp,virusi.hr,wubingdu.cn,avirus.hu,ioys.gr,odstranitvirus.cz,tanpavirus.web.id,utanvirus.se,virukset.fi,losvirus.es,virusler.info.tr,semvirus.pt,lesvirus.fr,senzavirus.it,dieviren.de,viruset.no,usunwirusa.pl,zondervirus.nl,bedynet.ru,virusai.lt,virusi.bg,viirused.ee,udenvirus.dk##.sidebar_download_inner > :not(.voting-box):not(.colorbg-grey)
+2-spyware.com,novirus.uk,faravirus.ro,uirusu.jp,virusi.hr,wubingdu.cn,avirus.hu,ioys.gr,odstranitvirus.cz,tanpavirus.web.id,utanvirus.se,virukset.fi,losvirus.es,virusler.info.tr,semvirus.pt,lesvirus.fr,senzavirus.it,dieviren.de,viruset.no,usunwirusa.pl,zondervirus.nl,bedynet.ru,virusai.lt,virusi.bg,viirused.ee,udenvirus.dk##.ui-content > .win
+2-spyware.com,novirus.uk,faravirus.ro,uirusu.jp,virusi.hr,wubingdu.cn,avirus.hu,ioys.gr,odstranitvirus.cz,tanpavirus.web.id,utanvirus.se,virukset.fi,losvirus.es,virusler.info.tr,semvirus.pt,lesvirus.fr,senzavirus.it,dieviren.de,viruset.no,usunwirusa.pl,zondervirus.nl,bedynet.ru,virusai.lt,virusi.bg,viirused.ee,udenvirus.dk##a:has-text(Reimage)
+2-spyware.com,novirus.uk,faravirus.ro,uirusu.jp,virusi.hr,wubingdu.cn,avirus.hu,ioys.gr,odstranitvirus.cz,tanpavirus.web.id,utanvirus.se,virukset.fi,losvirus.es,virusler.info.tr,semvirus.pt,lesvirus.fr,senzavirus.it,dieviren.de,viruset.no,usunwirusa.pl,zondervirus.nl,bedynet.ru,virusai.lt,virusi.bg,viirused.ee,udenvirus.dk##a:has-text(SpyHunter)
+2-spyware.com,novirus.uk,faravirus.ro,uirusu.jp,virusi.hr,wubingdu.cn,avirus.hu,ioys.gr,odstranitvirus.cz,tanpavirus.web.id,utanvirus.se,virukset.fi,losvirus.es,virusler.info.tr,semvirus.pt,lesvirus.fr,senzavirus.it,dieviren.de,viruset.no,usunwirusa.pl,zondervirus.nl,bedynet.ru,virusai.lt,virusi.bg,viirused.ee,udenvirus.dk##th:has-text(/^Detection$/)
+2-spyware.com,novirus.uk,faravirus.ro,uirusu.jp,virusi.hr,wubingdu.cn,avirus.hu,ioys.gr,odstranitvirus.cz,tanpavirus.web.id,utanvirus.se,virukset.fi,losvirus.es,virusler.info.tr,semvirus.pt,lesvirus.fr,senzavirus.it,dieviren.de,viruset.no,usunwirusa.pl,zondervirus.nl,bedynet.ru,virusai.lt,virusi.bg,viirused.ee,udenvirus.dk##th:has-text(/^Detection$/) + td
+?bid=0.*&search_referrer_domain=$doc
+?zoneid=*&cost=0.$doc
+^phone=050-$doc
 appuals.com##.appua-reimage-top
 appuals.com##.info.box
-! https://ugetfix.com/ask/how-to-fix-windows-store-error-0x8000ffff/
+howtoremove.guide###alt_content_main_div > p:has-text(SpyHunter)
+howtoremove.guide###gray_de
+howtoremove.guide###solution_v2_de
+howtoremove.guide##.entry-content > div:has-text(Special Offer)
+howtoremove.guide##div[style^="border:2px"]
+majorgeeks.com##b:has(a[target^="reimage"])
+okashimag.com,tech4yougadgets.com##+js(aopr, Notification)
+okashimag.com,tech4yougadgets.com##^meta[http-equiv="refresh"]
+okashimag.com,tech4yougadgets.com##^script[src^="data:text/javascript;base64,"]
 pcseguro.es,sauguspc.lt,sichernpc.de,ugetfix.com,wyleczpc.pl##.download_button_info_texts
 pcseguro.es,sauguspc.lt,sichernpc.de,ugetfix.com,wyleczpc.pl##.js-download_button_additional_links
 pcseguro.es,sauguspc.lt,sichernpc.de,ugetfix.com,wyleczpc.pl##.primary_download
 pcseguro.es,sauguspc.lt,sichernpc.de,ugetfix.com,wyleczpc.pl##.sidebar_download_inner
 pcseguro.es,sauguspc.lt,sichernpc.de,ugetfix.com,wyleczpc.pl##div.attention-button-box-green
-! https://www.thewindowsclub.com/fix-windows-update-error-0xc1900130-on-windows-10
-thewindowsclub.com##.entry-content > div > strong:has-text(find & fix Windows error)
-! https://www.majorgeeks.com/files/details/patch_my_pc.html
-majorgeeks.com##b:has(a[target^="reimage"])
-||majorgeeks.com/images/icons/red_icon_18x17px.png$image
-! https://www.2-spyware.com/remove-redirector-gvt1-com.html
-2-spyware.com,novirus.uk,faravirus.ro,uirusu.jp,virusi.hr,wubingdu.cn,avirus.hu,ioys.gr,odstranitvirus.cz,tanpavirus.web.id,utanvirus.se,virukset.fi,losvirus.es,virusler.info.tr,semvirus.pt,lesvirus.fr,senzavirus.it,dieviren.de,viruset.no,usunwirusa.pl,zondervirus.nl,bedynet.ru,virusai.lt,virusi.bg,viirused.ee,udenvirus.dk##.attention-button-wrap:has-text(Reimage)
-2-spyware.com,novirus.uk,faravirus.ro,uirusu.jp,virusi.hr,wubingdu.cn,avirus.hu,ioys.gr,odstranitvirus.cz,tanpavirus.web.id,utanvirus.se,virukset.fi,losvirus.es,virusler.info.tr,semvirus.pt,lesvirus.fr,senzavirus.it,dieviren.de,viruset.no,usunwirusa.pl,zondervirus.nl,bedynet.ru,virusai.lt,virusi.bg,viirused.ee,udenvirus.dk##.ui-content > .win
-2-spyware.com,novirus.uk,faravirus.ro,uirusu.jp,virusi.hr,wubingdu.cn,avirus.hu,ioys.gr,odstranitvirus.cz,tanpavirus.web.id,utanvirus.se,virukset.fi,losvirus.es,virusler.info.tr,semvirus.pt,lesvirus.fr,senzavirus.it,dieviren.de,viruset.no,usunwirusa.pl,zondervirus.nl,bedynet.ru,virusai.lt,virusi.bg,viirused.ee,udenvirus.dk##.sidebar_download_inner > :not(.voting-box):not(.colorbg-grey)
-2-spyware.com,novirus.uk,faravirus.ro,uirusu.jp,virusi.hr,wubingdu.cn,avirus.hu,ioys.gr,odstranitvirus.cz,tanpavirus.web.id,utanvirus.se,virukset.fi,losvirus.es,virusler.info.tr,semvirus.pt,lesvirus.fr,senzavirus.it,dieviren.de,viruset.no,usunwirusa.pl,zondervirus.nl,bedynet.ru,virusai.lt,virusi.bg,viirused.ee,udenvirus.dk##th:has-text(/^Detection$/)
-2-spyware.com,novirus.uk,faravirus.ro,uirusu.jp,virusi.hr,wubingdu.cn,avirus.hu,ioys.gr,odstranitvirus.cz,tanpavirus.web.id,utanvirus.se,virukset.fi,losvirus.es,virusler.info.tr,semvirus.pt,lesvirus.fr,senzavirus.it,dieviren.de,viruset.no,usunwirusa.pl,zondervirus.nl,bedynet.ru,virusai.lt,virusi.bg,viirused.ee,udenvirus.dk##th:has-text(/^Detection$/) + td
-2-spyware.com,novirus.uk,faravirus.ro,uirusu.jp,virusi.hr,wubingdu.cn,avirus.hu,ioys.gr,odstranitvirus.cz,tanpavirus.web.id,utanvirus.se,virukset.fi,losvirus.es,virusler.info.tr,semvirus.pt,lesvirus.fr,senzavirus.it,dieviren.de,viruset.no,usunwirusa.pl,zondervirus.nl,bedynet.ru,virusai.lt,virusi.bg,viirused.ee,udenvirus.dk##.js-download_button_offer
-2-spyware.com,novirus.uk,faravirus.ro,uirusu.jp,virusi.hr,wubingdu.cn,avirus.hu,ioys.gr,odstranitvirus.cz,tanpavirus.web.id,utanvirus.se,virukset.fi,losvirus.es,virusler.info.tr,semvirus.pt,lesvirus.fr,senzavirus.it,dieviren.de,viruset.no,usunwirusa.pl,zondervirus.nl,bedynet.ru,virusai.lt,virusi.bg,viirused.ee,udenvirus.dk##.primary_download
-2-spyware.com,novirus.uk,faravirus.ro,uirusu.jp,virusi.hr,wubingdu.cn,avirus.hu,ioys.gr,odstranitvirus.cz,tanpavirus.web.id,utanvirus.se,virukset.fi,losvirus.es,virusler.info.tr,semvirus.pt,lesvirus.fr,senzavirus.it,dieviren.de,viruset.no,usunwirusa.pl,zondervirus.nl,bedynet.ru,virusai.lt,virusi.bg,viirused.ee,udenvirus.dk##.automatic_removal_list
-2-spyware.com,novirus.uk,faravirus.ro,uirusu.jp,virusi.hr,wubingdu.cn,avirus.hu,ioys.gr,odstranitvirus.cz,tanpavirus.web.id,utanvirus.se,virukset.fi,losvirus.es,virusler.info.tr,semvirus.pt,lesvirus.fr,senzavirus.it,dieviren.de,viruset.no,usunwirusa.pl,zondervirus.nl,bedynet.ru,virusai.lt,virusi.bg,viirused.ee,udenvirus.dk##.quick-download-button-placeholder
-2-spyware.com,novirus.uk,faravirus.ro,uirusu.jp,virusi.hr,wubingdu.cn,avirus.hu,ioys.gr,odstranitvirus.cz,tanpavirus.web.id,utanvirus.se,virukset.fi,losvirus.es,virusler.info.tr,semvirus.pt,lesvirus.fr,senzavirus.it,dieviren.de,viruset.no,usunwirusa.pl,zondervirus.nl,bedynet.ru,virusai.lt,virusi.bg,viirused.ee,udenvirus.dk##.nfc-bottom-right:has-text(Reimage)
-2-spyware.com,novirus.uk,faravirus.ro,uirusu.jp,virusi.hr,wubingdu.cn,avirus.hu,ioys.gr,odstranitvirus.cz,tanpavirus.web.id,utanvirus.se,virukset.fi,losvirus.es,virusler.info.tr,semvirus.pt,lesvirus.fr,senzavirus.it,dieviren.de,viruset.no,usunwirusa.pl,zondervirus.nl,bedynet.ru,virusai.lt,virusi.bg,viirused.ee,udenvirus.dk##a:has-text(Reimage)
-2-spyware.com,novirus.uk,faravirus.ro,uirusu.jp,virusi.hr,wubingdu.cn,avirus.hu,ioys.gr,odstranitvirus.cz,tanpavirus.web.id,utanvirus.se,virukset.fi,losvirus.es,virusler.info.tr,semvirus.pt,lesvirus.fr,senzavirus.it,dieviren.de,viruset.no,usunwirusa.pl,zondervirus.nl,bedynet.ru,virusai.lt,virusi.bg,viirused.ee,udenvirus.dk##.quick-download-button-text
-! https://windowsloop.com/network-adapters-shortcut/
-||reimageplus.com^$doc
-
-! Lapsed domains that once hosted adblock lists, several of whom are now used for bad purposes
-! https://github.com/uBlockOrigin/uAssets/issues/5307
-||gjtech.net^$doc
-||securemecca.com^$doc
-||fredfiber.no^$doc
-! https://github.com/uBlockOrigin/uAssets/pull/6757
-||1hos.cf^$doc
-
-! Badware
-||kuhoot.it^$doc
-||getawesome6.com^$doc
-||findthebestoffer.com^$doc
-||rołex.com^$doc
-||get.mysecurify.com^$doc
-||topreadtoday.com^$doc
-
-! https://github.com/uBlockOrigin/uAssets/issues/5305#issuecomment-484341498
-||icecreamsmax.com^
-
-! Fake cloudflare screen
-! https://github.com/uBlockOrigin/uAssets/issues/5305#issuecomment-484754393
-! https://github.com/uBlockOrigin/uAssets/issues/5489#issuecomment-488207423
-||gmboxx.com^
-||mr.media-bucket.com^
-
-! https://github.com/NanoMeow/QuickReports/issues/965#issuecomment-485274387
-||pl.allsports4free.club^
-||pl.allsports4u.club^
-
-! https://github.com/uBlockOrigin/uAssets/issues/5409
-||discount.s3blog.org^
-||s3blog.org^$3p
-||dataprovider.biz^
-
-! https://github.com/uBlockOrigin/uAssets/issues/5442
-||tplinkextender.net^
-
-! https://github.com/uBlockOrigin/uAssets/issues/4862#issuecomment-486941006
-||upload4earn.org^$doc
-
-! switching to malware
-||ahzahg6ohb.com^$doc
-||ay8ou8ohth.com^$doc
-
-! https://github.com/uBlockOrigin/uAssets/issues/5805
-||newsfile.club^$doc
-||blackawardago.com^$doc
-||clickpush.biz^$doc
-
-! https://forums.lanik.us/viewtopic.php?f=62&p=149407#p149406
-||buzzadnetwork.com^$all
-
-! https://arstechnica.com/information-technology/2019/08/google-play-app-with-100-million-downloads-executed-secret-payloads/
-||abcdserver.com^$all
-
-! https://github.com/uBlockOrigin/uAssets/issues/6342
-||redsittalvetoft.pro^
-
-! https://github.com/uBlockOrigin/uAssets/issues/6381
-||americanoverlook.com^
-||americanreviewer.com^
-||anonnews.co^
-||channel-7-news.com^
-||embols.com^
-||endingthefed.com^
-||goneleft.com^
-||nephef.com^
-||newsbreakshere.com^
-||rilenews.com^
-||thecontroversialfiles.net^
-||voxtribune.com^
-
-! https://blog.sucuri.net/2018/08/massive-wordpress-redirect-campaign-targets-vulnerable-tagdiv-themes-and-ultimate-member-plugins.html
-||checkisreal.com^
-||mysecurify.com^
-
-! https://www.wordfence.com/blog/2019/08/malicious-wordpress-redirect-campaign-attacking-several-plugins/
-||developsincelock.com^
-||gabriellalovecats.com^
-||greatinstagrampage.com^
-||jackielovedogs.com^
-||tomorrowwillbehotmaybe.com^
-||wiilberedmodels.com^
-
-! https://github.com/uBlockOrigin/uAssets/issues/6452
-||apple.com-*.live^
-
-! some badware testing around
-||cobalten.com^$all
-
-! redirect from egy best
-||stremanp.com^$all
-
-! redirects
-||nextyourcontent.com^$all
-||notification-centar.com^$all
-||geniusdexchange.com^$all
-||securecloud-smart.com^$all
-||doctopdftech.com^$all
-||palundrus.com^$all
-||giftdomain.site^$all
-||best2019-games-web4.com^$all
-||install.convertmyvid.com^$all
-||check-best-prizes-here.*^$all
-||track-enable.com^$all
-||searchdimension.com^$all
-||adturtle.biz^
-||beqbox.com^
-||weefy.me^
-||bblck.me^$all
-
-! SpyHunter links
-! Ref: https://blog.malwarebytes.com/detections/pup-optional-spyhunter/
-! https://howtoremove.guide/redirector-gvt1-com-virus-malware-chrome-removal/
-howtoremove.guide##div[style^="border:2px"]
-howtoremove.guide##.entry-content > div:has-text(Special Offer)
-! https://howtoremove.guide/redirector-gvt1-com-virus-malware-chrome-removal/ (German version only)
-howtoremove.guide###solution_v2_de
-howtoremove.guide###alt_content_main_div > p:has-text(SpyHunter)
-howtoremove.guide###gray_de
-! https://www.2-spyware.com/remove-redirector-gvt1-com.html
-2-spyware.com,novirus.uk,faravirus.ro,uirusu.jp,virusi.hr,wubingdu.cn,avirus.hu,ioys.gr,odstranitvirus.cz,tanpavirus.web.id,utanvirus.se,virukset.fi,losvirus.es,virusler.info.tr,semvirus.pt,lesvirus.fr,senzavirus.it,dieviren.de,viruset.no,usunwirusa.pl,zondervirus.nl,bedynet.ru,virusai.lt,virusi.bg,viirused.ee,udenvirus.dk##.automatic_removal_list_w > .ar_block_description
-2-spyware.com,novirus.uk,faravirus.ro,uirusu.jp,virusi.hr,wubingdu.cn,avirus.hu,ioys.gr,odstranitvirus.cz,tanpavirus.web.id,utanvirus.se,virukset.fi,losvirus.es,virusler.info.tr,semvirus.pt,lesvirus.fr,senzavirus.it,dieviren.de,viruset.no,usunwirusa.pl,zondervirus.nl,bedynet.ru,virusai.lt,virusi.bg,viirused.ee,udenvirus.dk##a:has-text(SpyHunter)
-
-! https://github.com/NanoMeow/QuickReports/issues/2522
-||browser-update.*.top^
-
-! https://github.com/uBlockOrigin/uAssets/pull/6757
-||tncrun.net^$all
-
-! https://github.com/NanoMeow/QuickReports/issues/2772
-||d3125zvx5yi5sj.cloudfront.net^$all
-
-! https://github.com/NanoMeow/QuickReports/issues/2813
-||mp3hub.com^$doc
-
-! thepiratebay3 .com bad
 thepiratebay3.com^$all
-
-! hentaimx => badware
-||hentaimx.com^$all
-
-! https://github.com/uBlockOrigin/uAssets/issues/6544#issuecomment-586763083
-||procdnvids.net^
-||prostream.to^
-||storageplay.net^
-
-! https://github.com/NanoMeow/QuickReports/issues/2577
-||gamerspad.net^$csp=child-src
-||comparetvs.net^$csp=child-src
-||find-me-now.com^$3p
-||clickenhanced.com^$3p
-||marketenhanced.com^$3p
-||mybestclick.net^$3p
-*/redirect?feed=$frame
-
-! https://github.com/NanoMeow/QuickReports/issues/3205
-||verified-extensions.com^
-
-! https://github.com/NanoMeow/QuickReports/issues/3299
-! https://github.com/NanoMeow/QuickReports/issues/3300
-||smsiak.pl^$doc
-||smsy24.pl^$doc
-
-! redirecting domains / fraud
-||code24promo.com^$all
-||programma-di-fidelizzazione.top^$all
-||prizesworldcenter.com^$all
-||video-adblock.com^$all
-||vid-adblocker.com^$all
-||multiadblock.com^$all
-||popsads.link^$all
-||rsafrwd.com^$all
-||adverdirect.com^$all
-||euphe-gun.com^$all
-||shoppingsurveysonline.com^$all
-/?btd=*token$all
-||bestwinexperience.com^$all
-||triumphantplace.com^$all
-||traffic-go.com^$all
-||wignewsee.club^$all
-||bainushe.com^$all
-||streamssitesearch.com^$all
-||trackertrak.com^$all
-||acceder.gratis^$all
-||catbeardx.com^$all
-||newsinform.net^$all
-||vfgrse.com^$all
-||wdeliv.net^$all
-&td=redirect4u.com$all
-||bestprizeday.life^$all
-||watch-video.net^$all
-||findmedia.biz^$all
-||polimer.xyz^$all
-||bingstyle.com^$all
-||zctrack.com^$all
-||redirekted.com^$all
-||get19dragos.club^$all
-||best-prizes-house.life^$all
-||ptookaih.net^$all
-||blockskipad.com^$all
-||adpopblocker.com^$all
-||newsurprizeforyou.com^$all
-||oldharper.xyz^$all
-||teenyreligious.com^$all
-||goto2021.top^$all
-||redirectsstm.click^$all
-||horried.pro^$all
-||psixoglika.pro^$all
-||investing-fund.com^$all
-||protected-clicker.com^$all
-||investing-bank.com^$all
-||invest-digest.com^$all
-||personal-safety-update.com^$all
-||premiumbros.com^$all
-||turibius-hra.com^$all
-||trafficjunction.com^$all
-||arclk.net^$all
-||clkepd.com^$all
-||btnativenav.com^$all
-||1111sale.us^$all
-||getoiu.com^$all
-||cyneheard-fau.com^$all
-||litance-viestside.icu^$all
-||omgtnc.com^$all
-||bector-blotance.xyz^$all
-||firmis-min.com^$all
-||news-central.org^
-||revercecaptcha.com^$all
-||acc.pp.ua^$all
-||bestoffer21.info^$all
-||express-news.me^$all
-||n01.biz^$all
-||n06.biz^$all
-||storage-for-mobileapps.life^$all
-||tourism-services.online^$all
-||um-bredirect.com^$all
-||terlaby.com^$all
-||aff2021.com^$all
-||glugruptixo.com^$all
-||datfuture.com^$all
-||thesilkradiance.com^$all
-||superlpini.click^$all
-||seedbreakgoal.live^$all
-||yourdatefortune.com^$all
-||claspedtwelve.com^$all
-||glbltraffic.com^$all
+thewindowsclub.com##.entry-content > div > strong:has-text(find & fix Windows error)
+windowsreport.com##.code-block
+||01net.com/telecharger/$doc
 ||0redirc.com^$all
-||rsafrwdr.com^$all
-||sexyladydesire.xyz^$all
-||expmediadirect1.com^
-||zbysdw.com^$all
-||zhdzkj.com^$all
-||inspirationhistorical.com^$all
-||maroohost.online^$all
-||rollmeout.xyz^$all
-||rouonixon.com^$all
-||amigosdetuciudad.com^$all
-||no1-casino.com^$all
-||bb-delivery.icu^$all
-||incorphishor.com^$all
-||phygical-questall.icu^$all
-||praterage-colled.com^$all
-||wwtracking.net^$all
-||ft2025.top^$all
-||womeniovers.net^$all
-||yougames.fun^$all
-||antig-hra.com^$all
-||chestuwygli.com^$all
-||fictiongroin.com^$all
-||grandcasinobell.com^$all
-||sendyou123.com^$all
-||searching-place.com^$all
-||top2-personal-loans-credits.com^$all
-||goaffmy.com^$all
-||pwrtds.com^$all
-||trackbyfast.com^$all
-||trfrc.com^$all
-||1ts11.top^$all
-||dating.hdxvideos.ru^$all
 ||0rg.link^$all
+||10crack.com^$doc
+||1111sale.us^$all
+||134.122.122.217^$all
 ||15dfjkbvdf.club^$all
-||1payxperxinst1.com^$all
-||admntrk.com^$all
-||bnmu.xyz^$all
-||cngcpy.com^$all
-||cpmstatsart.com^$frame
-||diabasewoodhouse.xyz^$all
-||elevisions.biz^$all
-||eneverals.biz^$all
-||extragifis.site^$all
-||harzfriends.de^$all
-||holofiber.xyz^$all
-||ichaichat.xyz^$all
-||jobrave.live^$all
-||moviesboys.com/*.shtml$doc
-||name0fbestway.com^$all
-||netund.com^$all
-||onetouch7.info^$all
-||sex-is-here.com/*.shtml$doc
-||sexall.net/*.shtml$doc
-||upshroomishtor.com^$all
-||urtyert.com^$all
-||youotube.com^$all
-||glosslogics.com^$all
-||hexenbesen-gerst.de^$all
-||quellaplentyresolute.com^$all
-||hsrvu.com^$all
-||il119.com^$all
-||adserveryo.xyz^$all
-||adtr1.com^$all
-||axdsz.pro^$all
-||employeebabyman.xyz^$all
-||surfacesbusinesss.xyz^$all
-||worldbeyondleft.xyz^$all
-||click2click.xyz^$all
-||datingapp.live^$all
-||dracenic-gravinyl.icu^$all
-||ktfckd.com^$all
-||retargetcore.com^$all
-.com/c/*?s1=$doc,domain=com
-.net/c/*?s1=$doc,domain=net
-/aff.php?*&_cbUrl=$doc
-/fg/tds/ae?tds_campaign=$doc
-/site/redirectpage?ca=link&sid=$doc
-/tds/ae?tdsId=*&clickid=$doc
-||adating.link^$all
-||arthyadtracker.info^$all
-||arthyredir.com^$all
-||aslnk.link^$all
-||benaughty.com^$all
-||searchdatestoday.com^$all
-||robin201.xyz^$all
-||1redirb.com^
-||amata-syb.com^$all
-||coleryujgdq345678hfdh.xyz^$all
-/track/click.php?c=*&zoneid=$doc
-||o-uccino.top^$all
-||fattykettleinexpedient.com^$all
-/?wm=*&t=onclick|$doc
-||bnewsblite.me^$all
-||capultytrese.xyz^$all
-||ckre.net^$all
-||doprinplupr.com^$all
-||gotohouse2.cc^$all
-||trackadsonline.top^$all
-||matchrile.com^$all
-||nyalacornily.cam^$all
-||adalgard-wol.com^$all
-||b38.info^$all
-||chintsressels.com^$all
-||gopagefast.ru^$all
-||letmessagenow.com^$all
-||x-soft.club^$all
-||vun.fyi^$all
-||vur.fyi^$all
-||apilond.com^$all
-||tracklyfast.com^$all
-||ytbgamer.space^$all
-||postsupport.net^$all
-||continue-site.website^$all
-||atzekromchan.com^$all
-||pupok.link^$all
-||adserveryo2.xyz^$all
-||ntvpevnts.com^$all
-||google-yandex.info^$all
-||aditserve.com^$all
-||onclickclear.com^$all
-/bdv_rd.dbm?ownid=$doc
-?bid=0.*&search_referrer_domain=$doc
-||btpnav.com^$all
-||capitaloneshooping.com^$all
-||capttalone360.com^$all
-||datesritual.com^$all
-||magnus-beo.com^$all
-||veysag.com^$all
-||fecebook.com^$all
-||festinus.xyz^$all
-||newssocial.org^$all
-||secureleadsforever.com^$all
-||welcomejohncena.pro^$all
-||techgadgetsy.com^$all
-||sexualg.host^$all
-||wadiryphi.pro^$all
-/apop/redirect/zone/*$doc
-! hacked and abused for redirect
-okashimag.com,tech4yougadgets.com##^meta[http-equiv="refresh"]
-okashimag.com,tech4yougadgets.com##^script[src^="data:text/javascript;base64,"]
-okashimag.com,tech4yougadgets.com##+js(aopr, Notification)
-||ads.sophiapoole.com^
-||adstellar.icu^
-||aleks-avto-rnd.ru^$all
-||ouhastay.net^
-||trk.setting-nervous-steady-noted.xyz^$all
-||tube911.com^$all
-||ationpeci.one^$document,popup
-||bestlifeoffer20.com^$all
-||adlogists.com^
-||clicks.affstrack.com^
-||movementsspentlist.com^
-||track.date-secure.com^
-||tribalcellular.com^
-||weledying-jessed.com^$all
-?zoneid=*&cost=0.$doc
-||check-update-today.com^$all
-/zcredirect?visitid=*&iframeDetected=false|$doc
-*/zcvisitor/*?campaignid$doc
-||tweitter.com^$all
-||games4you.site^$all
-||mqdownload.com^$all
-||spacedrain.site^$all
-||vviotaer.space^$all
-/pop-click?sid=*&data=$doc
-/click?a=*&aff_click_id=$doc
-||9-girls.ru^$all
-||adserver7.sbs^$all
-||pergames.fun^$all
-||stils-top.space^$all
-||actgames.site^$all
-||adserver5.sbs^$all
-||trwl1.com^$all
-||clixwells.com^$all
-||shinearmor.space^$all
-||wxhiojortldjyegtkx.bid^$all
-||pushmeup.art^$all
-||pushub.net^$all
-/redirect2/?a=$doc
-&atc=adterra&ad_id=$doc
-||adserver*/?sdomain=$doc,popup
-||aleppo.su^$all
-||couponex.space^$all
-||bismuni.com^$all
-||date4sex.pro^$all
-/click.php?data=$doc
-&adspot_id=*&cost=0.$doc
-||game-hacks.online^$all
-||s4f.net^$all
-||onlyfreetoonporn.com^$all
-||tilda.gb.net^$all
-||eval.ly^$all
-||cleardexchange.com^$all
-||duellosheliced.com^$all
-||shahidmosalsalat.co^$all
-||mokedirect.xyz^$all
-||srvpcn.com^$all
-||distributeclick.site^$all
-||tobmyfile.info^$all
-||lone1y.com^$all
-||tr1net.com^$all
-||homuradu.com^$all
-||usdownload.widost.com^$all
-||fast-date.site^$all
-||23.109.87.14^$all
-||redirectto.fun^$all
-||sopertyvalua.com^$all
-
-||hyperwage.com^$all
-||ricavato.com^
-||bitcoingenerator.me^$all
-||bqyvip.cn^$all
-||privatewinners.com^$all
-! fraud => https://forums.lanik.us/viewtopic.php?f=90&t=45586
-||raidrush.info^$all
-||descargarjuegospc.net^
-||411medias.com^$all
-||zedplays.com^$all
-||japan1-06.xyz^$all
-||cpa-optimizer.online^$all
-||special-update.online^$all
-||success-news.net^$all
-||downloads2020.com^$all
-||downloads2021.com^$all
-||aloha-news.net^$all
-||bookgr8.com^$all
-||kakstitotako.com^$all
-||internetspeedtracker.com^$all
-||hd-xxxclassic.club^$all
-||safety-system.club^$all
-||system-update-new-2021.com^$all
-||m7c4d5r7.stackpathcdn.com^$all
-||updat-members.life^$all
-||japan1-05.xyz^$all
-||serch03.biz^$all
-||ne02.biz^$all
-||gapscult.com^$all
-||worldactualstories.com^$all
-||allhugenewz.com^$all
-||fdgdfgdf.space^$all
-||1wat.ru^$all
-||coinforcoin.site^$all
-||download-app.net^$all
-||lib2.biz^$all
-||myactualblog.com^$all
-||ne03.biz^$all
-||ne04.biz^$all
-||pu4.biz^$all
-||ro4.biz^$all
-||techevolution.work^$all
-||happydays05.site^$all
-||happydays06.site^$all
-||hotlady4you.com^$all
-||privatesinglesmeet.com^$all
-||readytosinglesmeet.com^$all
-||sexplayground.net^$all
-||wishuiuck.net^$all
-||womeniover.com^$all
-||cleanphonefast.com^$all
-||fastphonebooster.com^$all
-||offers.flogboat.com^$all
-||reimageplusminus.me^$all
-||flashymass.com^$all
-||luckywinner-web1.com^$all
-||ne12.biz^$all
-||girlssohorny.net^$all
-||traffichub01.online^$all
-||theshoparound.com^$all
-||asstok.com^$all
-||microsupportjp.xyz^$all
-||loverfuck.com^$all
-||profi-para.com^$all
-||bedcity-lake.top^$all
-||onlineplus.click^$all
-||dirtyteenagers.com^$all
-||adulttdates.com^$all
-||ardeminggiftcred.ml^$all
-||jashautchord.com^$all
-! royaljapan02.z23.web.core.windows.net
-||royaljapan02.*^$all
-||coinblog.site^$all
-||lucky4wins.club^$all
-||serch10.biz^$all
-||systemupdatix.club^$all
-^phone=050-$doc
-||lackystars.com^$all
-||improveprivacy.me^$all
-||localchick-here.com^$all
-||trafempire.com^$all
-||findlovernow.com^$all
-||lover-date.com^$all
-||okay-dating.com^$all
-||downloadmobile.info^$all
-||datingdeserving.com^$all
-||mylocalhookup1.com^$all
-||topmatch4you.com^$all
-||goads.pro^$all
-||iamnaughty.com^$all
-||iwantu.com^$all
-||myhotdates.com^$all
-||onenightfriend.com^$doc
-||buddygays.com^$all
-||iover4u.net^$all
-||localsnapsext.com^$all
-||lovemateforyou.com^$all
-||shewantsumuch.com^$all
-||teens2fcuk.net^$all
-||whatabouthotladies.com^$all
-||womenforyou.net^$all
-/index555.php?sub=*&tel=&utm_source=$doc
-||be-104.xyz^$all
-||be-105.xyz^$all
-||findmydating.com^$all
-||heartmedia.biz^$all
-||beta-news.org^$all
-||clk.rtpdn*.com^$doc,popup
-/click.php?key=*&cost=$doc
-||dreamone.online^$all
-||totaltopposts.com^$all
-/?%7B%7Bip%7D%7D*&clickId=$doc
-||djin.site^$all
-||windows-scan.com^$all
-||ourhypewords.com^$all
-||antivirus.landerhd.com^$all
-||findyour-realsex2.com^$all
-||slowerwave.cyou^$all
-||deltasec300gt.fun^$all
-||loveiswaiting.net^$all
-||world-news-filter.info^$all
-||peliculas3.me^$all
-||instahookupxxx.com^$all
-||rapidantivirus.com^$all
-||securesystemguide.com^$all
-||to6s.biz^$all
-||antivirus-prot.com^$all
-||amazing-date4u.com^$all
-||localhookupclub1.com^$all
-||sweetgirls.date^$all
-||captcha-smart.top^$all
-||fast-travel.org^$all
-||typiccor.com^$all
-||wholedailyfeed.com^$all
-! e.g. https://serviceshebdfgdtryueieiodlodlpdlkjgnfhfjfudh.azurewebsites.net/chrmz8/index.html
-||azurewebsites.net/chrmz8/index.html$doc
-/?clck=*&sid=$doc
-||love7date.info^$all
-||bestsecretflirt.com^$all
-||toplov.com^$all
-||new-lady-for-your.com^$all
-||disturbative-descriptively-undeflectability.xyz^$all
-.xyz/?u=*&o=$doc,domain=xyz
-.xyz/v1/redirect?cid=$doc
-||downlosaly.info^$all
-/go.php?url=*&uclick=$doc
-||best-sexy-partner1.com^$all
-||1firstofall1.com^$all
-||gegenhartz.de^$all
-||marootrack.co^$all
-/?{BV_SRCID}&$doc
 ||161.35.4.84^$doc
-||brainychoose-captcha.top^$all
-||bitcoinevolutionsite.club^$doc
-||besty-deals.com^$all
-||beta-one.net^$all
-||kokotrokot.com^$all
-||clean-protection.xyz^$all
-||security-scanner.xyz^$all
-/werrx01/?$doc
-||maxy-tax.com^$all
-/jump?id=*&_tgUrl=$doc
-||ether-give21.net^$all
-||shib-inu.cc^$all
-||application-best-mine-installs.cyou^$all
-||webapplicationminefree.cyou^$all
-||eudoxia-myr.com^$all
-||revpu.sh^$all
-||adblockextension.online^$all
-||sexual-partner2.com^$all
-||ultimate-detection.com^$all
-||helpmight.online^$all
-||listen-heres.com^$all
-||frafinomoney01.fun^$all
-/smartlink/?a=$doc
-||date.sexpartnercommunity.com/landing/*$doc
-/ll/click.php?key=$doc
-||maxhacks.pro^$all
-||update-global.com^$all
-.html?cep=*&cost=0.$doc
-||becilobun.com^$all
-/?ip=*&uclickhash=$doc
-||brownsite.click^$all
-||phoneapplicationlabs.top^$all
-/winXos/?$doc
+||1980s.click^$doc
+||1firstofall1.com^$all
+||1hos.cf^$doc
+||1payxperxinst1.com^$all
+||1perpersqe1.com^$all
+||1redirb.com^
+||1redirc.com^$all
+||1stposition.xyz^$doc
+||1ts11.top^$all
+||1wat.ru^$all
+||23.109.87.14^$all
+||2345.eyunsou.com^$all
+||365crack.com^$doc
+||37.1.209.213^$all
+||3black.info^
+||411medias.com^$all
+||4howcrack.com^$doc
 ||4qdx69gg2d.com^$all
-||fortcheats.fun^$all
-||downloadonlyfree.com^$all
-||super-ladies-now.life^$all
-||unogames.site^$all
-||mfilecloud.com/d2twaHh5Ym5jb3p1X2ZCVmVk$doc
-||onetaphack.one^$all
-||cheaterboss.com^$all
-||shopsales2022.com^$all
-||facebookteens.com^$all
-||best-chicks-here.life^$all
-||cat02tuzik.online^$all
-||dating-herenow3.com^$all
-||dating-space.top^$all
-||conditioning1.space^$all
-||wholewowblog.com^$all
-||cumshots.com^$all
-||datingfornaughties.com^$all
-||multiflings.com^$all
-||newlove.life^$all
-||real-women-online.com^$all
-/?camp=*&cost=0.$doc
-||datedats2.com^$all
-||tuzik09cat.site^$all
-||monglitch.monster^$all
-||appfile.cc^$all
-||d13nu0oomnx5ti.cloudfront.net^
-||m-afee.com^$all
-||quickdates1.com^$all
-||lovesingle.xyz^$all
-||foxon.biz^$all
-||getmackeepersoftpro.xyz^$all
-||tigerpush.net^$all
-/expired/unprotected_win/?track=$doc
-||familysimulators.com^$all
-||pushnott.com^$all
-||instaflrt.com^$all
-||singlesgetmatched.com^$all
-||feelmyfile.info^$all
-||dougale.com^$all
-||bestmods.fun^$all
-||adblockfast.com^$all
-||fashionshub.club^$all
-||xeoliders.com^$all
-||bookofsex.com^$all
-||webcams-chat.com^$all
-||mydirtytinders.com^$all
-/index.php?lpkey=*&uclick=$doc
-||fuckmore.com^$all
-||dotchaudou.com^$all
-||windows-secureit.com^$all
-||specialadves.com^$all
-||greentopperer.online^$all
-||bluetopper.online^$all
-||famousletterss.fun^$all
-||classicpartnerships.com^$all
-||legendarytable.com^$all
-||traffmax-redirect.com^$all
-! https://github.com/AdguardTeam/AdguardFilters/issues/114312
-/prize/luckyus-ad/*$doc
-||mauptaub.com^$all
-||see-what-is-trending.com^$all
-||bhtsfs.com^$all
-||news-abcd.cc^$all
-||owlfolk.com^$all
-||onlyfreelesbianporn.com^$all
-||family-simulators.com^$all
-||your-dates-tonight.com^$all
-
-! https://github.com/AdguardTeam/AdguardFilters/issues/68588
-! https://github.com/uBlockOrigin/uAssets/issues/8869
-/^https:\/\/[0-9a-z]{3,}\.[-a-z]{10,}\.top\/[a-z]{8}\/\?(?:cid=[0-9a-z]+&)?u=[0-9a-z]+&/$doc,domain=top
-/^https:\/\/[0-9a-z]{3,}\.[-a-z]{10,}\.top\/[a-z]{8}\/\?utm_campaign=\w{40,}&t=/$doc,domain=top
-/^https:\/\/[a-z]{2,3}\d\.biz\/go\/[0-9a-z]{15,18}$/$doc,domain=biz
-! https://github.com/uBlockOrigin/uAssets/issues/10116
-/^https:\/\/feedbackip\d{2}\.pw/$doc,domain=pw
-||protecttimeknew.live^$doc
-||ifetirw.xyz^$doc
-! e.g. https://to3s.biz/?p=gi4tgnjwgu5gi3bpgy2tmmy
-/^https:\/\/to\ds\.biz\/\?p=/$doc,domain=biz
-! fake dating/prize sites
-/^https?:\/\/((?!www)[a-z]{3,}\.)?[-0-9a-z]{6,}\.(?:com|fun|guru|life|online|pw|site|space|top|us|xyz)\/(?:[a-z]{6,8}\/)?\/?\?u=[0-9a-z]{7}&o=[0-9a-z]{7}/$doc,frame,match-case,domain=com|fun|guru|life|online|pw|site|space|top|us|xyz
-! https://github.com/uBlockOrigin/uAssets/commit/df17084b4815e87d420e8adf19bf4959e828e6e5#commitcomment-66510549
-/^https?:\/\/((?!www)[a-z]{3,}\.)?[-0-9a-z]{6,}\.(?:com|fun|guru|life|online|pw|site|space|top|us|xyz)\/(?:[a-z]{6,8}\/)?\/?\?o=[0-9a-z]{7}&u=[0-9a-z]{7}/$doc,frame,match-case,domain=com|fun|guru|life|online|pw|site|space|top|us|xyz
-! push notification scam
-/^https:\/\/(?:www\d\.)?[-a-z]{6,9}\.(?:com|info|net|org)\/(?=[-_a-zA-Z]{0,42}\d)(?=[-_0-9a-z]{0,42}[A-Z])[-_0-9a-zA-Z]{43}/\?cid=[-_0-9a-zA-Z]{24,36}&sid=[_0-9a-f]{1,32}$/$doc,match-case,domain=com|info|net|org
-
-! https://github.com/uBlockOrigin/uAssets/issues/8378
-||ogtrk.net^
-||gameglitcher.com^
-
-! https://www.joesandbox.com/analysis/300638/0/html
-||antivirus-protection.me^$all
-
-! https://www.hybrid-analysis.com/sample/3ad8f4dc6a021e82d25247c266d89d20d981f7187413405f0b2e35d984bd60cb
-||secureconv-dl.com^$all
-
-! https://github.com/uBlockOrigin/uAssets/issues/8466
+||60255.xyz^$all
+||7zip.es^$doc
+||7zip.fr^$doc
+||7zip.it^$doc
+||88btbtt.com^$all
+||9-girls.ru^$all
 ||91.241.60.117^$all
 ||91.241.60.119^$all
-
-! https://github.com/uBlockOrigin/uAssets/issues/8630
-||newfind.cloudns.cl^$all
-||sevenonex.space^$all
-||suzamense.com^$all
-||walhalagame.fun^$doc
-||gamepower.site^$all
-||mfilecloud.com^$all
-||xsharenode.com^$all
-||blowfood.website^$all
-||xovilumium.space^$all
-||downloadset2you.com^$all
-||galaxy-swaper.site^$all
-! https://github.com/uBlockOrigin/uAssets/issues/8630#issuecomment-803722231
-||app-inject.com^$doc
-! https://github.com/uBlockOrigin/uAssets/issues/8630#issuecomment-810957825
-||tophacks.pro^$doc
-
-! https://github.com/AdguardTeam/AdguardFilters/issues/69036
-.systems/signup?ad_domain=$doc,popup
-
-! fake software updaters /redirections
-||1perpersqe1.com^$all
-||3black.info^
+||9to5crack.com^$doc
+||a1475.com^$all
+||a2zp30.net^$doc
+||abbaspc.net^$doc
+||abcdserver.com^$all
+||acc.pp.ua^$all
+||acceder.gratis^$all
 ||acrisialithic.cam^
-||alfaiztech.com^
-||atnpx.com^
-||bestoffer2021.info^
-||best-winplace.life^$all
-||bloodunpar.ml^$all
-||checkup08.biz^
-||getvottak.com^
-||herdcowhas.icu^
-||home-prize-winner-ma3d.live^
-||hsmvem.com^
-||illuminatelocks.com^
-||mfroute.com^
-||miserve-chanics.com^
-||mobileoffers-5-r-download.com^
-||ndsborous.biz^
-||omefukmend.xyz^$all
-||ournewsafte.biz^
-||ponk.pro^
-||protocolgroupgroups.com^
-||rhopalium-convolve-mozettas.xyz^
-||service-indemonstrably-spadger-renting.xyz^
-||sex-and-flirt.com^
-||stuiop.com^
-||survey2you.bid^
-||track-149uew.link^
-||tratbc.com^
-||update-incentives-rutidosis-pretenceless.xyz^
-||update-phone-today.com^
-||webpushcloud.top^
-||workerz1.com^
-||xpayperinstx2.com^
-||znews-live.com^
-||zoneforyourprize.life^
-||zvideo-live.com^
-||arthyredir2.com^$all
-||adserveryo3.xyz^$all
-
-! https://github.com/uBlockOrigin/uAssets/issues/9045
-||securitydefender.xyz^$all
-||yourprotectorshield.com^$all
-||greenpalmbn1.click^$all
-||greenpalmbn2.click^$all
-||promarker.club^$all
-
-! https://github.com/uBlockOrigin/uAssets/issues/9105
-||kuminaluna.xyz^$all
-||maslootok.xyz^$all
-||mandljigeografija.xyz^$all
-||sladicagora.xyz^$all
-||zajtrkhisa.xyz^$all
-
-! https://github.com/AdguardTeam/AdguardFilters/issues/84632
-! https://github.com/AdguardTeam/AdguardFilters/issues/84633
-||my-hookup-clubs1.com^$all
-! https://github.com/AdguardTeam/AdguardFilters/issues/84634
-! https://github.com/AdguardTeam/AdguardFilters/issues/84639
-||60255.xyz^$all
-||localsexfinderxxx4.com^$all
-! https://github.com/AdguardTeam/AdguardFilters/issues/84638
-||sinder8.com^$all
-! https://github.com/AdguardTeam/AdguardFilters/issues/84640
-||bigosext69.com^$all
-
-! https://github.com/uBlockOrigin/uAssets/issues/9344
-||captcharesolving-universe.com^$all
-
-! https://github.com/uBlockOrigin/uAssets/issues/9355
-||totalav.com^$doc
-
-! scam
-||trfcbooost.com^$all
-||turboadblocker.com^$all
-||mysearchflow.com^$all
+||actgames.site^$all
+||activationkey.org^$doc
+||activationkeys.co^$doc
+||activatorpros.com^$doc
+||activators4windows.com^$doc
+||activatorwin.com^$doc
+||adalgard-wol.com^$all
+||adating.link^$all
+||adblock.fr^$doc
+||adblockextension.online^$all
+||adblockfast.com^$all
+||aditserve.com^$all
+||adlogists.com^
+||admntrk.com^$all
+||adpopblocker.com^$all
+||ads.sophiapoole.com^
 ||adsbtc.org^$all
-||youtuba.com^$all
-||polyhymnia-mar.com^$all
-||trktrk.club^$all
-||virpropcnow.xyz^$all
-
-! https://github.com/uBlockOrigin/uAssets/issues/9400
-||corona-virus-map.com^$all
-
-! Typosquatting: redirects to scam sites
-||bestbut.com^$all
-
-! https://www.huorong.cn/info/1531309921141.html
-||kuaizip.com^$all
-
-! https://www.huorong.cn/info/1618397948649.html
-! ||zhuangjizhuli.com^$all
-! ||zhuangjizhuli.net^$all
-
-! https://github.com/uBlockOrigin/uAssets/issues/9641
-||helooworld.us^$all
-
-! https://www.huorong.cn/info/1627034201698.html
-! https://bbs.kafan.cn/thread-2217785-1-1.html
-||win.zjwhr.top^$all
-||win.xzhyl.top^$all
-
-! https://github.com/uBlockOrigin/uAssets/pull/9656
-||geekotg.com^$all
-||qq789.com.cn^$all
-! https://www.huorong.cn/info/1526627586130.html
-||xiaobaixitong.com^$all
-! https://www.huorong.cn/info/1577158839403.html
-||daque.cn^$all
-! https://www.huorong.cn/info/1598957552515.html
-||dabaicai.com^$all
-
-! https://www.huorong.cn/info/1617368984641.html
-||qqfzn.com^$all
-
-! https://github.com/uBlockOrigin/uAssets/issues/9785
-||lubuntu.net^$doc
-
-! https://github.com/AdguardTeam/AdguardFilters/issues/91680
-||domenckiberaktivworldtpz.tk^$doc
-
-! https://github.com/AdguardTeam/AdguardFilters/issues/92466
-/^https:\/\/serch\d{2}\.biz\/\?p=/$doc,domain=biz
-
-! https://github.com/uBlockOrigin/uAssets/issues/9840
-! ||driverfix.com^$doc
-
-! https://github.com/uBlockOrigin/uAssets/issues/9848
-||gghacks.com^$all
-||rewardsgiantusa.com^$doc
-||promotionsonlineusa.com^$doc
-||displayoptoffers.com^$doc
-||sweepstakesalerts.com^$doc
-||qualityhealth.com^$doc
-||consumerproductsusa.com^$doc
-||get-cracked.com^$all
-||tinyurl.com/gp84uz2$doc
-||mediafiire.com^$doc
-||onlinepromotionsusa.com^$doc
-
-! https://github.com/uBlockOrigin/uAssets/issues/9933
-||greenadblocker.com^$doc
-||limafoxtrot.online^$doc
-
-! https://github.com/uBlockOrigin/uAssets/issues/9955
-||filepapa.com^$doc
-||serialkey89.com^$doc
-||goharpc.com^$doc
-||free4pc.org^$doc
-
-! https://github.com/uBlockOrigin/uAssets/pull/10017
-||flash.cn^$all
-! fake flash
-||flashplayer-cn.com^$all
-
-! https://www.reddit.com/r/uBlockOrigin/comments/pu9ffh/blacklist_the_following_url_in_badware_risks_or/
-||hypixelskyblock.net^$doc
-
-! https://github.com/uBlockOrigin/uAssets/issues/10075
-||lady-datings-here.com^$doc
-||your-dreams-girls2.com^$doc
-||profit-worlds2u.life^$doc
-||yourbest-dating33.life^$doc
-||bestdatinglocal1.com^$doc
-||sexcontact-store1.com^$doc
-||superdatenow3.com^$doc
-||findlocalgirlnow.com^$doc
-||vip-lady-dreams.com^$doc
-||getviplocals1.com^$doc
-||global-dates-here.com^$doc
-||new-lady-here12.com^$doc
-||topgirls-here.com^$doc
-||hook-ups-here2.com^$doc
-||topgirls-here1.com^$doc
-
-! https://github.com/uBlockOrigin/uAssets/issues/10086
-||b-time.site^$doc
-
-! https://github.com/uBlockOrigin/uAssets/issues/10116
-||hentai-tube.me^$doc
-
-! https://github.com/uBlockOrigin/uAssets/pull/10142
-||skyblockmods.com^$doc
-
-! https://github.com/uBlockOrigin/uAssets/commit/5832dfebb4021c639b90c2973946ff7638c2290f#commitcomment-57642161
-||foxmods.xyz^$doc
-
-! https://github.com/uBlockOrigin/uAssets/pull/10163
-||hypixel.run^$all
-
-! phishing /malicious
-||gesas.it^$doc
-||techinnsrl.com^$doc
-||studiogiamberardino.it^$doc
-||eniedu.com^$doc
-||gamletaarnhuset.no^$doc
-||possessedcrackinghart.com^$all
-
-! https://github.com/uBlockOrigin/uAssets/issues/10171
-||discordrgift.com^$doc
-
-! https://github.com/DandelionSprout/adfilt/issues/63#issuecomment-940500664
-||aselink.guru^$all
-
-! https://github.com/uBlockOrigin/uAssets/issues/10181
-||nbryb.com^$all
-||onemacusa.com^$all
-||realnetnews.com^$all
-||rogueleader.org^$all
-||suggestive.com/deals/?cid=$doc
-
-! https://blog.netlab.360.com/pinkbot
-||cnc.pinklander.com^$all
-
-! https://github.com/uBlockOrigin/uAssets/issues/10442
-||discordapp.cam^$all
-||discordap.$all
+||adserver*/?sdomain=$doc,popup
+||adserver5.sbs^$all
+||adserver7.sbs^$all
+||adserveryo.xyz^$all
+||adserveryo2.xyz^$all
+||adserveryo3.xyz^$all
+||adstellar.icu^
+||adtr1.com^$all
+||adturtle.biz^
+||adulttdates.com^$all
+||adverdirect.com^$all
+||aff2021.com^$all
+||ahzahg6ohb.com^$doc
 ||airdrop-discord.ru^$all
+||aksia.co^$doc
+||aleks-avto-rnd.ru^$all
+||aleppo.su^$all
+||alfaiztech.com^
+||alicracks.com^$doc
+||allcracks.org^$doc
+||allhugenewz.com^$all
+||allpcsoftcrack.co^$doc
+||allsoftwarekeys.com^$doc
+||aloha-news.net^$all
+||amata-syb.com^$all
+||amazing-date4u.com^$all
+||americanoverlook.com^
+||americanreviewer.com^
+||amigosdetuciudad.com^$all
+||anonnews.co^
+||antig-hra.com^$all
+||antivirus-prot.com^$all
+||antivirus-protection.me^$all
+||antivirus.landerhd.com^$all
+||apilond.com^$all
+||app-inject.com^$doc
+||appfile.cc^$all
+||apple.com-*.live^
+||application-best-mine-installs.cyou^$all
+||arclk.net^$all
+||ardeminggiftcred.ml^$all
+||aresgalaxy.es^$doc
+||arthyadtracker.info^$all
+||arthyredir.com^$all
+||arthyredir2.com^$all
+||aselink.guru^$all
+||aslnk.link^$all
+||asstok.com^$all
+||ationpeci.one^$document,popup
+||atnpx.com^
+||atzekromchan.com^$all
+||audacity.de^$doc
+||audacity.es^$doc
+||audacity.fr^$doc
+||audacity.it^$doc
+||audacity.pl^$doc
+||autocracking.com^$doc
+||axdsz.pro^$all
+||ay8ou8ohth.com^$doc
+||ayeshapc.com^$doc
+||azureus.es^$doc
+||azurewebsites.net/chrmz8/index.html$doc
+||b-time.site^$doc
+||b38.info^$all
+||bainushe.com^$all
+||bb-delivery.icu^$all
+||bblck.me^$all
+||be-104.xyz^$all
+||be-105.xyz^$all
+||becilobun.com^$all
+||bector-blotance.xyz^$all
+||bedcity-lake.top^$all
+||beganfieldspeed.top^
+||benaughty.com^$all
+||beqbox.com^
+||best-chicks-here.life^$all
+||best-prizes-house.life^$all
+||best-sexy-partner1.com^$all
+||best-winplace.life^$all
+||best2019-games-web4.com^$all
+||bestbut.com^$all
+||bestdatinglocal1.com^$doc
+||bestlifeoffer20.com^$all
+||bestmods.fun^$all
+||bestoffer2021.info^
+||bestoffer21.info^$all
+||bestprizeday.life^$all
+||bestsecretflirt.com^$all
+||bestwinexperience.com^$all
+||besty-deals.com^$all
+||beta-news.org^$all
+||beta-one.net^$all
+||bhtsfs.com^$all
+||bicfic.com^$doc
+||bigosext69.com^$all
+||bingstyle.com^$all
+||bismuni.com^$all
+||bitcoinevolutionsite.club^$doc
+||bitcoingenerator.me^$all
+||bitcoinqrcodegenerator.win^$doc
+||bittorrent.es^$doc
+||blackawardago.com^$doc
+||bleachbit.com^$doc
+||blender3d.es^$doc
+||blender3d.fr^$doc
+||blockskipad.com^$all
+||bloodunpar.ml^$all
+||blowfood.website^$all
+||bluestacksdownloads.com^$doc
+||bluetopper.online^$all
+||bnewsblite.me^$all
+||bnmu.xyz^$all
+||bookgr8.com^$all
+||bookofsex.com^$all
+||boxcracked.com^$doc
+||bqyvip.cn^$all
+||brainychoose-captcha.top^$all
+||brownsite.click^$all
+||browser-update.*.top^
+||browsergames2018.com^$doc
+||btnativenav.com^$all
+||btpnav.com^$all
+||buddygays.com^$all
+||bulletcracks.com^$doc
+||buzzadnetwork.com^$all
+||bypassapp.com^$doc
+||c2orcv7zjn5y.top^$all
+||calibre.it^$doc
+||capitaloneshooping.com^$all
+||captcha-smart.top^$all
+||captcharesolving-universe.com^$all
+||capttalone360.com^$all
+||capultytrese.xyz^$all
+||cat02tuzik.online^$all
+||catbeardx.com^$all
+||cdn.discordapp.com/attachments/916391647955279943/*^$all
+||celestia.es^$doc
+||celestia.fr^$doc
+||chairgaubsy.com^$doc
+||channel-7-news.com^
+||chcracked.com^$doc
+||cheaterboss.com^$all
+||check-best-prizes-here.*^$all
+||check-update-today.com^$all
+||checkisreal.com^
+||checkup08.biz^
+||chestuwygli.com^$all
+||chintsressels.com^$all
+||ckre.net^$all
+||claspedtwelve.com^$all
+||classicpartnerships.com^$all
+||classpharmenado.com^$doc
+||clean-protection.xyz^$all
+||cleanphonefast.com^$all
+||cleardexchange.com^$all
+||clevercracks.com^$doc
+||click2click.xyz^$all
+||clickenhanced.com^$3p
+||clickpush.biz^$doc
+||clicks.affstrack.com^
+||clixwells.com^$all
+||clk.rtpdn*.com^$doc,popup
+||clkepd.com^$all
+||clonezilla.es^$doc
+||clonezilla.fr^$doc
+||clonezilla.it^$doc
+||cnc.pinklander.com^$all
+||cngcpy.com^$all
+||cobalten.com^$all
+||code24promo.com^$all
+||coinblog.site^$all
+||coinforcoin.site^$all
+||coleryujgdq345678hfdh.xyz^$all
+||com-guest.info^$doc
+||com-nitro.$all
+||com.com^$doc
+||comparetvs.net^$csp=child-src
+||conditioning1.space^$all
+||consumerproductsusa.com^$doc
+||continue-site.website^$all
+||corecrack.com^$doc
+||corona-virus-map.com^$all
+||couponex.space^$all
+||cpa-optimizer.online^$all
+||cpmstatsart.com^$frame
+||cracka2zsoft.com^$doc
+||crackdev.com^$doc
+||crackdj.com^$doc
+||crackdownload.org^$doc
+||crackedmacapps.com^$doc
+||crackedmod.com^$doc
+||crackedpc.org^$doc
+||crackedpcs.com^$doc
+||crackedroot.com^$doc
+||crackedsoftpc.com^$doc
+||crackedversion.com^$doc
+||crackfix.net^$doc
+||crackfullkey.net^$doc
+||crackfullpro.com^$doc
+||crackfury.com^$doc
+||crackgrid.com^$doc
+||crackhomes.com^$doc
+||crackintopc.com^$doc
+||crackkey4u.com^$doc
+||crackkeymac.com^$doc
+||crackkits.com^$doc
+||crackknow.com^$doc
+||cracklabel.com^$doc
+||cracklie.net^$doc
+||cracknew.org^$doc
+||crackpcsoft.net^$doc
+||crackpro.org^$doc
+||crackproduct.com^$doc
+||crackproductkey.com^$doc
+||crackpropc.com^$doc
+||cracksdat.com^$doc
+||crackserialkey.co^$doc
+||crackshere.com^$doc
+||crackshome.org^$doc
+||cracksmad.com^$doc
+||cracksmain.com^$doc
+||cracksoftware.org^$doc
+||cracksoftwareguru.com^$doc
+||cracksoftwaress.com^$doc
+||cracksole.com^$doc
+||cracksoon.com^$doc
+||crackspro.co^$doc
+||cracksray.com^$doc
+||crackswall.com^$doc
+||cracksway.com^$doc
+||cracktel.com^$doc
+||crackthere.com^$doc
+||cracktopc.com^$doc
+||cracktube.net^$doc
+||crackvip.com^$doc
+||crackwatch.org^$doc
+||crackwinz.com^$doc
+||crackzoo.net^$doc
+||cracxpro.com^$doc
+||cumshots.com^$all
+||cyberduck.de^$doc
+||cyberduck.es^$doc
+||cyberduck.fr^$doc
+||cyberduck.it^$doc
+||cyberspc.com^$doc
+||cyneheard-fau.com^$all
+||d13nu0oomnx5ti.cloudfront.net^
+||d3125zvx5yi5sj.cloudfront.net^$all
+||dabaicai.com^$all
+||daque.cn^$all
+||dataprovider.biz^
+||date.sexpartnercommunity.com/landing/*$doc
+||date4sex.pro^$all
+||datedats2.com^$all
+||datesritual.com^$all
+||datfuture.com^$all
+||dating-herenow3.com^$all
+||dating-space.top^$all
+||dating.hdxvideos.ru^$all
+||datingapp.live^$all
+||datingdeserving.com^$all
+||datingfornaughties.com^$all
+||deltasec300gt.fun^$all
+||demnan.com^
+||descargarjuegospc.net^
+||developsincelock.com^
+||diabasewoodhouse.xyz^$all
+||dirtyteenagers.com^$all
+||discocrd-nitro.$all
+||discorcd-nitro.$all
+||discorclnitro.$all
 ||discord*.gift^$all,domain=~discord.gift
 ||discord*.gifts^$all,domain=~discord.gifts
 ||discord-app.net^$all
@@ -1204,353 +633,795 @@ okashimag.com,tech4yougadgets.com##+js(aopr, Notification)
 ||discord-nitros.$all
 ||discord-spooky.$all
 ||discord.foundation^$all
+||discordap.$all
+||discordapp.cam^$all
 ||discordgift.$all,domain=~discordgift.site
 ||discordnitro-steam.$all
 ||discordnitro.space^$all
+||discordrgift.com^$doc
 ||discordxgift.$all
 ||discordxnitro.$all
+||discorx.gift^$all
+||discount.s3blog.org^
+||discqrdapp.com^$all
+||discrodnitro.$all
+||disordgift.$all
+||displayoptoffers.com^$doc
+||distributeclick.site^$all
+||disturbative-descriptively-undeflectability.xyz^$all
+||djin.site^$all
 ||dlscord*.$all
 ||dlscrod*.$all
+||dnbard.com^$doc
+||doctopdftech.com^$all
+||domenckiberaktivworldtpz.tk^$doc
+||doprinplupr.com^$all
+||dotchaudou.com^$all
+||dougale.com^$all
+||download-app.net^$all
+||download4mac.com^$doc
+||downloadcracker.com^$doc
+||downloadmobile.info^$all
+||downloadonlyfree.com^$all
+||downloadpc.net^$doc
+||downloads2020.com^$all
+||downloads2021.com^$all
+||downloadset2you.com^$all
+||downlosaly.info^$all
+||dracenic-gravinyl.icu^$all
+||dreamone.online^$all
+||duellosheliced.com^$all
+||elevisions.biz^$all
+||embols.com^
+||employeebabyman.xyz^$all
+||endingthefed.com^
+||eneverals.biz^$all
+||eniedu.com^$doc
+||epailseptox.com^$doc
+||ether-give21.net^$all
+||eudoxia-myr.com^$all
+||euphe-gun.com^$all
+||eval.ly^$all
+||everypdnsharmacy.com^$doc
+||excrack.com^$doc
+||explorecrack.com^$doc
+||expmediadirect1.com^
+||express-news.me^$all
+||extragifis.site^$all
+||facebookteens.com^$all
+||family-simulators.com^$all
+||family24rx.com^$doc
+||familysimulators.com^$all
+||famousletterss.fun^$all
+||fashionshub.club^$all
+||fast-date.site^$all
+||fast-travel.org^$all
+||fasterfiles.net^$all
+||fastphonebooster.com^$all
+||fattykettleinexpedient.com^$all
+||fdgdfgdf.space^$all
+||fecebook.com^$all
+||feelmyfile.info^$all
+||festinus.xyz^$all
+||fictiongroin.com^$all
+||filecrk.com^$doc
+||fileisready.com^$doc
+||filepapa.com^$doc
+||fileserialkey.com^$doc
+||filezilla.es^$doc
+||filezilla.fr^$doc
+||filezilla.it^$doc
+||filezilla.net^$doc
+||filezilla.pl^$doc
+||filezilla.pt^$doc
+||finalcracked.com^$doc
+||find-me-now.com^$3p
+||findlocalgirlnow.com^$doc
+||findlovernow.com^$all
+||findmedia.biz^$all
+||findmydating.com^$all
+||findthebestoffer.com^$doc
+||findyour-realsex2.com^$all
+||firmis-min.com^$all
+||flash.cn^$all
+||flashplayer-cn.com^$all
+||flashymass.com^$all
+||flexytalk.net^
+||flstudiocrack.org^$doc
+||fortcheats.fun^$all
+||foxload.com^$doc
+||foxmods.xyz^$doc
+||foxon.biz^$all
+||frafinomoney01.fun^$all
+||fredfiber.no^$doc
 ||free-discordnitro.$all
+||free4pc.org^$doc
+||freeactivationkeys.org^$doc
+||freeappstorepc.com^$doc
+||freecrack4u.com^$doc
+||freecrackdownload.com^$doc
 ||freediscordnitro.$all
+||freedownloadfiles.org^$all
+||freefilesync.com^$doc
+||freeprosoftz.com^$doc
+||freerapid.fr^$doc
+||ft2025.top^$all
+||fuckmore.com^$all
+||fullactivationkey.com^$doc
+||fullcrackedpc.com^$doc
+||fulptube.org^$all
+||funnow45.xyz^$doc
+||gabriellalovecats.com^
+||galaxy-swaper.site^$all
+||game-hacks.online^$all
+||gameglitcher.com^
+||gamepower.site^$all
+||gamerspad.net^$csp=child-src
+||games4you.site^$all
+||gamletaarnhuset.no^$doc
+||gapscult.com^$all
+||garagebandforpc.org^$doc
+||geekotg.com^$all
+||gegenhartz.de^$all
+||geniusdexchange.com^$all
+||genuineactivator.com^$doc
+||genuineserials.com^$doc
+||gesas.it^$doc
+||get-cracked.com^$all
+||get.mysecurify.com^$doc
+||get19dragos.club^$all
+||get4pcs.com^$doc
+||getawesome6.com^$doc
+||getmackeepersoftpro.xyz^$all
+||getoiu.com^$all
+||getpcsofts.net^$doc
+||getprocrack.co^$doc
+||getproductkey.co^$doc
+||getviplocals1.com^$doc
+||getvottak.com^
+||gghacks.com^$all
 ||gift-discord.$all
+||giftdomain.site^$all
 ||giftsdiscord.$all
 ||giiveaway-discord.$all
-||steam-discords.$all
-||disordgift.$all
-||com-nitro.$all
-||discocrd-nitro.$all
-||discorcd-nitro.$all
-||discorclnitro.$all
-||discrodnitro.$all
+||gimp.es^$doc
+||girlssohorny.net^$all
+||gjtech.net^$doc
+||glbltraffic.com^$all
+||global-dates-here.com^$doc
+||glosslogics.com^$all
+||glugruptixo.com^$all
+||gmboxx.com^
+||goads.pro^$all
+||goaffmy.com^$all
+||goharpc.com^$doc
+||goneleft.com^
+||google-yandex.info^$all
+||googlo.co^$doc
+||gopagefast.ru^$all
+||goto2021.top^$all
+||gotohouse2.cc^$all
+||governiamo.com^$doc
+||gparted.fr^$doc
+||gparted.it^$doc
+||grandcasinobell.com^$all
+||greatinstagrampage.com^
+||greenadblocker.com^$doc
+||greencracks.com^$doc
+||greenpalmbn1.click^$all
+||greenpalmbn2.click^$all
+||greenshot.fr^$doc
+||greenshot.org^$doc
+||greentopperer.online^$all
+||handbrake.es^$doc
+||handbrake.it^$doc
+||happydays05.site^$all
+||happydays06.site^$all
+||happypharmproduct.com^$doc
+||harzfriends.de^$all
+||havenworks.com^$doc
+||hd-xxxclassic.club^$all
+||heartmedia.biz^$all
+||helooworld.us^$all
+||helpmight.online^$all
+||helppharmlead.com^$doc
+||hentai-tube.me^$doc
+||hentaimx.com^$all
+||hentaiplaytime.com^$doc
+||herdcowhas.icu^
+||hexenbesen-gerst.de^$all
+||hit4crack.com^$doc
+||hitcracker.com^$doc
+||hitproversion.com^$doc
+||hmzapc.com^$doc
+||holofiber.xyz^$all
+||home-prize-winner-ma3d.live^
+||homuradu.com^$all
+||hook-ups-here2.com^$doc
+||horried.pro^$all
+||hotlady4you.com^$all
+||hsmvem.com^
+||hsrvu.com^$all
+||hyperwage.com^$all
+||hypixel.run^$all
+||hypixelskyblock.net^$doc
+||i7ece0xrg4nx.com^$all
+||iamactivator.com^$doc
+||iamnaughty.com^$all
+||icecreamsmax.com^
+||ichaichat.xyz^$all
+||idmfullcrack.info^$doc
+||idmfullversion.com^$doc
+||idmpatched.com^$doc
+||ifetirw.xyz^$doc
+||ikcrack.com^$doc
+||il119.com^$all
+||illuminatelocks.com^
+||improveprivacy.me^$all
+||incorphishor.com^$all
+||inkscape.es^$doc
+||inkscape.fr^$doc
+||inkscape.it^$doc
+||inspirationhistorical.com^$all
+||instaflrt.com^$all
+||instahookupxxx.com^$all
+||install.convertmyvid.com^$all
+||installcracks.com^$doc
+||internetspeedtracker.com^$all
+||invest-digest.com^$all
+||investing-bank.com^$all
+||investing-fund.com^$all
+||iover4u.net^$all
+||iwantu.com^$all
+||izarc.fr^$doc
+||jackielovedogs.com^
+||japan1-05.xyz^$all
+||japan1-06.xyz^$all
+||jashautchord.com^$all
+||jdownloader.fr^$doc
+||jinshanduba.org.cn^$all
+||jobrave.live^$all
+||kakstitotako.com^$all
+||kalicrack.com^$doc
+||karancrack.com^$doc
+||keepass.com^$doc
+||keepass.de^$doc
+||keepass.es^$doc
+||keepass.fr^$doc
+||keepass.it^$doc
+||keepassxc.com^$doc
+||keygenfile.net^$doc
+||keygenpc.com^$doc
+||keygenwin.com^$doc
+||keysfull.net^$doc
+||keystool.com^$doc
+||kokotrokot.com^$all
+||ktfckd.com^$all
+||kuaizip.com^$all
+||kuhoot.it^$doc
+||kuminaluna.xyz^$all
+||lackystars.com^$all
+||lady-datings-here.com^$doc
+||lameterthenhep.info^$doc
+||legendarytable.com^$all
+||letmessagenow.com^$all
+||lib2.biz^$all
+||licensecrack.net^$doc
+||licensekey4u.co^$doc
+||licensekeysfree.com^$doc
+||licensekeyup.com^$doc
+||limafoxtrot.online^$doc
+||listen-heres.com^$all
+||litance-viestside.icu^$all
+||localchick-here.com^$all
+||localhookupclub1.com^$all
+||localsexfinderxxx4.com^$all
+||localsnapsext.com^$all
+||lone1y.com^$all
+||love7date.info^$all
+||loveiswaiting.net^$all
+||lovemateforyou.com^$all
+||lover-date.com^$all
+||loverfuck.com^$all
+||lovesingle.xyz^$all
+||lubuntu.net^$doc
+||lucky4wins.club^$all
+||luckywinner-web1.com^$all
+||m-afee.com^$all
+||m7c4d5r7.stackpathcdn.com^$all
+||macwinsofts.com^$doc
+||magnus-beo.com^$all
+||mahcrack.com^$doc
+||majorgeeks.com/images/icons/red_icon_18x17px.png$image
+||maliksofts.com^$doc
+||mandljigeografija.xyz^$all
+||marketenhanced.com^$3p
+||maroohost.online^$all
+||marootrack.co^$all
+||maslootok.xyz^$all
+||masterkreatif.net^$doc
+||matchrile.com^$all
+||mauptaub.com^$all
+||maxhacks.pro^$all
+||maxy-tax.com^$all
+||mcdupe.com^$all
+||mcdupe.xyz^$doc
+||mediafiire.com^$doc
+||mediafire.com/file/pj9jdm7iznc4d51/tekhacksnet_multi_loader.rar^$doc
+||mfilecloud.com/d2twaHh5Ym5jb3p1X2ZCVmVk$doc
+||mfilecloud.com^$all
+||mfroute.com^
+||miancrack.com^$doc
+||microsupportjp.xyz^$all
+||miraclecrack.com^$doc
+||miserve-chanics.com^
+||mjcracks.co^$doc
+||mobileoffers-5-r-download.com^
+||mobisoft.info^$doc
+||mokedirect.xyz^$all
+||monglitch.monster^$all
+||movementsspentlist.com^
+||moviesboys.com/*.shtml$doc
+||mp3hub.com^$doc
+||mqdownload.com^$all
+||mr.media-bucket.com^
+||multiadblock.com^$all
+||multiflings.com^$all
+||musmentportal.com^$all
+||my-hookup-clubs1.com^$all
+||myactualblog.com^$all
+||mybestclick.net^$3p
+||mycrackfree.com^$doc
+||mydirtytinders.com^$all
+||myhotdates.com^$all
+||mylocalhookup1.com^$all
+||mysearchflow.com^$all
+||mysecurify.com^
+||n01.biz^$all
+||n06.biz^$all
+||name0fbestway.com^$all
+||naqeebicrack.com^$doc
+||nbryb.com^$all
+||nbvfh.xyz^$doc
+||ndsborous.biz^
+||ne02.biz^$all
+||ne03.biz^$all
+||ne04.biz^$all
+||ne12.biz^$all
+||nephef.com^
+||netund.com^$all
+||new-lady-for-your.com^$all
+||new-lady-here12.com^$doc
+||newcrack.info^$doc
+||newfind.cloudns.cl^$all
+||newlove.life^$all
+||newproductkey.com^$doc
+||news-abcd.cc^$all
+||news-central.org^
+||newsbreakshere.com^
+||newsfile.club^$doc
+||newsharecounts.s3-us-west-2.amazonaws.com/nsc.js$script
+||newsinform.net^$all
+||newssocial.org^$all
+||newsurprizeforyou.com^$all
+||nextyourcontent.com^$all
 ||nitro*.gift^$all
 ||nitro*.gifts^$all
-||steamcommunity-nitro.$all
-||steamgiftnitro.$all
-
-! https://github.com/DandelionSprout/adfilt/issues/267
-||tekhacks.net^$all
-||mediafire.com/file/pj9jdm7iznc4d51/tekhacksnet_multi_loader.rar^$doc
-
-! https://github.com/uBlockOrigin/uAssets/pull/10503
-||freedownloadfiles.org^$all
-
-! https://github.com/uBlockOrigin/uAssets/issues/10536
-||tw-goldenwinner-57.com^$doc
-
-! https://github.com/iam-py-test/investigations/blob/main/2021/11/25/1.md
-! https://github.com/uBlockOrigin/uAssets/pull/10599
-||fasterfiles.net^$all
-||steamkeygiveaway.net^$all
-||yunosurveys.com^$all
-
-! https://github.com/uBlockOrigin/uAssets/pull/10620
-||mcdupe.com^$all
-||shadyclient.net^$all
-
-! https://github.com/uBlockOrigin/uAssets/pull/10774
-! https://bbs.kafan.cn/thread-2222478-1-1.html
-||a1475.com^$all
-! https://bbs.kafan.cn/thread-2221903-1-1.html
-||twitter.anlytisc.com^$all
-! https://bbs.kafan.cn/thread-2221781-1-1.html
-||shibatokenclaim.net^$all
-! https://bbs.kafan.cn/thread-2220230-1-1.html
-||ts-group.com^$all
-! https://bbs.kafan.cn/thread-2221419-1-1.html
-||2345.eyunsou.com^$all
-! https://bbs.kafan.cn/thread-2221500-1-1.html
-||88btbtt.com^$all
-||musmentportal.com^$all
-
-! malicious ip
-||37.1.209.213^$all
-
-! https://github.com/uBlockOrigin/uAssets/pull/10997
-! fake domain
-||jinshanduba.org.cn^$all
-! https://bbs.kafan.cn/thread-2170747-1-1.html – malicious script
-||phpstat.cntcm.com.cn/phpstat/count/abceffgh/abceffgh.js^$script
-
-! https://github.com/uBlockOrigin/uAssets/pull/11041
-||sites.google.com/view/hypixeldupemethod/*^$doc
-||mcdupe.xyz^$doc
-||cdn.discordapp.com/attachments/916391647955279943/*^$all
-
-! https://github.com/uBlockOrigin/uAssets/issues/11157
-||sideload.net^$doc
-||stc.tools^$doc
-||stcverify.com^$doc
-||1980s.click^$doc
-
-! https://github.com/uBlockOrigin/uAssets/issues/11269
-||discqrdapp.com^$all
-
-! https://github.com/uBlockOrigin/uAssets/issues/11310
-||warezcrack.net^$doc
-||procrackerz.org^$doc
-||freeprosoftz.com^$doc
-||pccrackbox.com^$doc
-||365crack.com^$doc
-||pclicensekeys.com^$doc
-||cracklabel.com^$doc
-||keystool.com^$doc
-||pcwarezbox.com^$doc
-||installcracks.com^$doc
-||10crack.com^$doc
-||licensekey4u.co^$doc
-||reallcrack.com^$doc
-||hit4crack.com^$doc
-||crackproductkey.com^$doc
-||profullversion.com^$doc
-||vcracks.com^$doc
-||keysfull.net^$doc
-||naqeebicrack.com^$doc
-||allcracks.org^$doc
-||crackswall.com^$doc
-||crackthere.com^$doc
-||crackpcsoft.net^$doc
-||a2zp30.net^$doc
-||crackserialkey.co^$doc
-||keygenfile.net^$doc
-||alicracks.com^$doc
-||maliksofts.com^$doc
-||proappcrack.com^$doc
-||flstudiocrack.org^$doc
-||scracked.com^$doc
-||crackpropc.com^$doc
-||crackwinz.com^$doc
-||cyberspc.com^$doc
-||crackedpcs.com^$doc
-||softzcrack.com^$doc
-||ayeshapc.com^$doc
-||crackshome.org^$doc
-||crackintopc.com^$doc
-||crackzoo.net^$doc
-||crackhomes.com^$doc
-||zslicensekey.com^$doc
-||cracksmad.com^$doc
-||iamactivator.com^$doc
-||crackproduct.com^$doc
-||excrack.com^$doc
-||mahcrack.com^$doc
-||get4pcs.com^$doc
-||genuineactivator.com^$doc
-||keygenwin.com^$doc
-||thiscrack.com^$doc
-||crackedroot.com^$doc
-||crackspro.co^$doc
-||topcracked.com^$doc
-||mycrackfree.com^$doc
-||cracksoftwareguru.com^$doc
-||crackfullpro.com^$doc
-||starcrack.net^$doc
-||procrackpc.com^$doc
-||crackknow.com^$doc
-||cracxpro.com^$doc
-||crackpro.org^$doc
-||4howcrack.com^$doc
-||crackshere.com^$doc
-||crackdj.com^$doc
-||procrackpc.com^$doc
-||cracksray.com^$doc
-||crackkits.com^$doc
-||trycracksoftware.com^$doc
-||fullcrackedpc.com^$doc
-||cracktopc.com^$doc
-||crackkey4u.com^$doc
-||cyberspc.com^$doc
-||rootcracks.org^$doc
-||getproductkey.co^$doc
-||idmfullcrack.info^$doc
-||fileserialkey.com^$doc
-||licensekeyup.com^$doc
-||thecrackbox.com^$doc
-||rootcracks.co^$doc
-||proactivationkey.com^$doc
-||cracksway.com^$doc
-||clevercracks.com^$doc
-||shahzifpc.com^$doc
-||idmpatched.com^$doc
-||getprocrack.co^$doc
-||allpcsoftcrack.co^$doc
-||autocracking.com^$doc
-||macwinsofts.com^$doc
-||productkeyfree.org^$doc
-||crackwatch.org^$doc
-||chcracked.com^$doc
-||cracksdat.com^$doc
-||patchcracks.com^$doc
-||activationkeys.co^$doc
-||serialsofts.com^$doc
-||piratpc.com^$doc
-||bulletcracks.com^$doc
-||prosoftlink.com^$doc
-||cracksole.com^$doc
-||finalcracked.com^$doc
-||activatorpros.com^$doc
+||no1-casino.com^$all
+||notepad2.com^$doc
+||notification-centar.com^$all
+||notification-time.com^$doc
+||ntvpevnts.com^$all
+||nutrientassumptionclaims.com^$all
+||nyalacornily.cam^$all
+||o-uccino.top^$all
+||offers.flogboat.com^$all
+||ogtrk.net^
+||okay-dating.com^$all
+||okproductkey.com^$doc
+||oldharper.xyz^$all
+||omefukmend.xyz^$all
+||omgtnc.com^$all
+||onclickclear.com^$all
+||onemacusa.com^$all
+||onenightfriend.com^$doc
+||onetaphack.one^$all
+||onetouch7.info^$all
+||onhax.io^$doc
+||onlineplus.click^$all
+||onlinepromotionsusa.com^$doc
+||onlyfreelesbianporn.com^$all
+||onlyfreetoonporn.com^$all
+||onpharmvermen.com^$doc
+||open-office.fr^$doc
 ||organiccrack.com^$doc
-||zscracked.com^$doc
-||miraclecrack.com^$doc
-||allsoftwarekeys.com^$doc
-||genuineserials.com^$doc
-||softwar2crack.com^$doc
-||xforce-cracks.com^$doc
+||origincrack.com^$doc
+||ouhastay.net^
+||ourhypewords.com^$all
+||ournewsafte.biz^
+||owlfolk.com^$all
+||paintnet.es^$doc
+||paintnet.fr^$doc
+||paintnet.it^$doc
+||palundrus.com^$all
+||patchcracks.com^$doc
+||patchlinks.com^$doc
+||pcactivationkey.co^$doc
+||pccrackbox.com^$doc
+||pcfullcrack.org^$doc
+||pclicensekeys.com^$doc
+||pcwarezbox.com^$doc
+||pdfcreator.pt^$doc
+||pdfsam.com^$doc
+||peazip.com^$doc
+||peliculas3.me^$all
+||pergames.fun^$all
+||personal-safety-update.com^$all
+||phoneapplicationlabs.top^$all
+||phpstat.cntcm.com.cn/phpstat/count/abceffgh/abceffgh.js^$script
+||phygical-questall.icu^$all
+||piktag.net^$all
+||piratesfile.com^$doc
+||piratpc.com^$doc
+||pl.allsports4free.club^
+||pl.allsports4u.club^
+||polimer.xyz^$all
+||polyhymnia-mar.com^$all
+||ponk.pro^
+||popsads.link^$all
+||possessedcrackinghart.com^$all
+||postsupport.net^$all
+||praterage-colled.com^$all
+||premiumbros.com^$all
+||premiumfullversion.com^$doc
+||privatesinglesmeet.com^$all
+||privatewinners.com^$all
+||prizesworldcenter.com^$all
+||proactivationkey.com^$doc
+||proapkcrack.com^$doc
+||proappcrack.com^$doc
+||procdnvids.net^
+||procrackerz.com^$doc
+||procrackerz.org^$doc
+||procrackhere.com^$doc
+||procrackkey.co^$doc
+||procrackpc.com^$doc
 ||procracks.net^$doc
 ||productkeyforfree.com^$doc
-||crackgrid.com^$doc
-||licensekeysfree.com^$doc
-||crackedmod.com^$doc
-||crackvip.com^$doc
-||crackedpc.org^$doc
-||activatorwin.com^$doc
-||whitecracked.com^$doc
-||softwarance.com^$doc
-||kalicrack.com^$doc
-||pcactivationkey.co^$doc
-||bypassapp.com^$doc
-||ziapc.org^$doc
-||zgamespc.com^$doc
-||cracksoon.com^$doc
-||boxcracked.com^$doc
-||procrackkey.co^$doc
-||activationkey.org^$doc
-||mjcracks.co^$doc
-||newproductkey.com^$doc
+||productkeyfree.org^$doc
+||profi-para.com^$all
+||profit-worlds2u.life^$doc
+||profullversion.com^$doc
+||programma-di-fidelizzazione.top^$all
+||promarker.club^$all
+||promotionsonlineusa.com^$doc
+||prosoftlink.com^$doc
+||prostream.to^
+||protected-clicker.com^$all
+||protecttimeknew.live^$doc
+||protocolgroupgroups.com^
 ||protoolscrack.net^$doc
-||download4mac.com^$doc
+||psixoglika.pro^$all
+||ptookaih.net^$all
+||pu4.biz^$all
+||pupok.link^$all
+||pushmeup.art^$all
+||pushnott.com^$all
+||pushub.net^$all
+||pwrtds.com^$all
+||qbittorrent.com^$doc
+||qq789.com.cn^$all
+||qqfzn.com^$all
+||qualityhealth.com^$doc
+||quellaplentyresolute.com^$all
+||quickdates1.com^$all
+||quickdomainfwd.com^
+||raidrush.info^$all
+||rapidantivirus.com^$all
+||rbngdm.com^$all
+||readytosinglesmeet.com^$all
+||real-women-online.com^$all
+||reallcrack.com^$doc
+||reallpccrack.com^$doc
+||realnetnews.com^$all
+||redirectsstm.click^$all
+||redirectto.fun^$all
+||redirekted.com^$all
+||redsittalvetoft.pro^
+||reimageplus.com^$doc
+||reimageplusminus.me^$all
+||retargetcore.com^$all
+||revercecaptcha.com^$all
+||revpu.sh^$all
+||rewardsgiantusa.com^$doc
+||rhopalium-convolve-mozettas.xyz^
+||ricavato.com^
+||rilenews.com^
+||ro4.biz^$all
+||robin201.xyz^$all
+||rogueleader.org^$all
+||rollmeout.xyz^$all
+||rootcracks.co^$doc
+||rootcracks.org^$doc
+||rootscrack.com^$doc
+||rouonixon.com^$all
+||royaljapan02.*^$all
+||rołex.com^$doc
+||rsafrwd.com^$all
+||rsafrwdr.com^$all
+||s3blog.org^$3p
+||s4f.net^$all
+||safety-system.club^$all
+||sale24-pills.com^$doc
+||scracked.com^$doc
+||scribus.fr^$doc
+||scribus.it^$doc
+||searchdatestoday.com^$all
+||searchdimension.com^$all
+||searching-place.com^$all
+||securecloud-smart.com^$all
+||secureconv-dl.com^$all
+||secureleadsforever.com^$all
+||securemecca.com^$doc
+||securesystemguide.com^$all
+||security-scanner.xyz^$all
+||securitydefender.xyz^$all
+||see-what-is-trending.com^$all
+||seedbreakgoal.live^$all
+||sendyou123.com^$all
+||senuti.org^$doc
+||serch03.biz^$all
+||serch10.biz^$all
+||serialkey.info^$doc
+||serialkey89.com^$doc
 ||serialkeypatch.org^$doc
 ||serialkeysfree.org^$doc
-||crackdev.com^$doc
-||piratesfile.com^$doc
-||wazusoft.com^$doc
-||getpcsofts.net^$doc
-||freeactivationkeys.org^$doc
-||patchlinks.com^$doc
-||rootscrack.com^$doc
-||cracktel.com^$doc
-||explorecrack.com^$doc
-||windowcrack.com^$doc
-||crackedsoftpc.com^$doc
-||idmfullversion.com^$doc
-||softtware.net^$doc
-||cracklie.net^$doc
-||softsnew.com^$doc
-||activators4windows.com^$doc
-||crackfury.com^$doc
-||proapkcrack.com^$doc
-||up4crack.com^$doc
-||filecrk.com^$doc
-||crackkeymac.com^$doc
-||okproductkey.com^$doc
-||cracksmain.com^$doc
-||softscracked.com^$doc
-||freeappstorepc.com^$doc
-||reallpccrack.com^$doc
-||cracknew.org^$doc
-||cracksoftwaress.com^$doc
-||win-crack.com^$doc
-||licensecrack.net^$doc
-||vstpatch.net^$doc
-||newcrack.info^$doc
-||topkeygen.com^$doc
-||vsthomes.com^$doc
-||mobisoft.info^$doc
-||crackfullkey.net^$doc
-||torrentfilefree.com^$doc
-||hitcracker.com^$doc
-||fullactivationkey.com^$doc
-||profullversion.com^$doc
-||vw5y4tegh.xyz^$doc
-||nbvfh.xyz^$doc
-||1stposition.xyz^$doc
-||premiumfullversion.com^$doc
-||fileisready.com^$doc
-||hmzapc.com^$doc
-||9to5crack.com^$doc
-||vstserial.com^$doc
-||greencracks.com^$doc
-||procrackerz.com^$doc
-||crackfix.net^$doc
-||zcracked.com^$doc
-||cracksoftware.org^$doc
-||downloadpc.net^$doc
-||pcfullcrack.org^$doc
-||serialkey.info^$doc
-||keygenpc.com^$doc
-||up4pc.com^$doc
-||hitproversion.com^$doc
-||cracktube.net^$doc
-||funnow45.xyz^$doc
-||abbaspc.net^$doc
-||bicfic.com^$doc
-||freecrackdownload.com^$doc
-||cracka2zsoft.com^$doc
-||crackdownload.org^$doc
-||miancrack.com^$doc
-||softserialskey.com^$doc
-||134.122.122.217^$all
-/?act=*&epcVIP=$doc
-||masterkreatif.net^$doc
-||ikcrack.com^$doc
-||corecrack.com^$doc
-||downloadcracker.com^$doc
-||windowsactivator.info^$doc
-||onhax.io^$doc
-||karancrack.com^$doc
-||origincrack.com^$doc
-||usecracked.com^$doc
-||crackedversion.com^$doc
-||freecrack4u.com^$doc
-||procrackhere.com^$doc
-||crackedmacapps.com^$doc
-
-! https://github.com/uBlockOrigin/uAssets/issues/11394
-||theannoyingsite.com^$all
-
-! https://github.com/uBlockOrigin/uAssets/issues/11407
-||rbngdm.com^$all
-
-! https://github.com/uBlockOrigin/uAssets/issues/11434
-||discorx.gift^$all
-
-! https://github.com/AdguardTeam/AdguardFilters/issues/109902
-||c2orcv7zjn5y.top^$all
-.top/vpnupdate/*/index.html$doc
-
-! https://github.com/uBlockOrigin/uAssets/issues/5605#issuecomment-1060013521
+||serialsofts.com^$doc
+||service-indemonstrably-spadger-renting.xyz^
+||sevenonex.space^$all
+||sex-and-flirt.com^
+||sex-is-here.com/*.shtml$doc
+||sexall.net/*.shtml$doc
+||sexcontact-store1.com^$doc
+||sexplayground.net^$all
+||sexual-partner2.com^$all
+||sexualg.host^$all
+||sexyladydesire.xyz^$all
+||shadyclient.net^$all
+||shahidmosalsalat.co^$all
+||shahzifpc.com^$doc
+||sharex.es^$doc
+||shewantsumuch.com^$all
+||shib-inu.cc^$all
+||shibatokenclaim.net^$all
+||shinearmor.space^$all
+||shoppingsurveysonline.com^$all
+||shopsales2022.com^$all
+||sideload.net^$doc
+||sinder8.com^$all
+||singlesgetmatched.com^$all
+||sites.google.com/view/hypixeldupemethod/*^$doc
+||skyblockmods.com^$doc
+||sladicagora.xyz^$all
+||slowerwave.cyou^$all
 ||smartklick.biz^$all
-||piktag.net^$all
-
-! https://github.com/uBlockOrigin/uAssets/issues/12117
+||smplayer.org^$doc
+||smsiak.pl^$doc
+||smsy24.pl^$doc
+||softscracked.com^$doc
+||softserialskey.com^$doc
+||softsnew.com^$doc
+||softtware.net^$doc
+||softwar2crack.com^$doc
+||softwarance.com^$doc
+||softzcrack.com^$doc
+||songbird.es^$doc
+||sopertyvalua.com^$all
+||spacedrain.site^$all
+||special-update.online^$all
+||specialadves.com^$all
+||srvpcn.com^$all
+||starcrack.net^$doc
+||stc.tools^$doc
+||stcverify.com^$doc
+||steam-discords.$all
+||steamcommunity-nitro.$all
+||steamgiftnitro.$all
+||steamkeygiveaway.net^$all
+||stellarium.es^$doc
+||stellarium.fr^$doc
+||stils-top.space^$all
+||storage-for-mobileapps.life^$all
+||storageplay.net^
+||streamssitesearch.com^$all
+||stremanp.com^$all
+||studiogiamberardino.it^$doc
+||stuiop.com^
+||success-news.net^$all
+||suggestive.com/deals/?cid=$doc
+||super-ladies-now.life^$all
+||superdatenow3.com^$doc
+||superlpini.click^$all
+||surfacesbusinesss.xyz^$all
+||survey2you.bid^
+||suzamense.com^$all
+||sweepstakesalerts.com^$doc
+||sweetgirls.date^$all
+||system-update-new-2021.com^$all
+||systemupdatix.club^$all
+||techevolution.work^$all
+||techgadgetsy.com^$all
+||techinnsrl.com^$doc
+||teens2fcuk.net^$all
+||teenyreligious.com^$all
+||tekhacks.net^$all
+||telecharger-openoffice.fr^$doc
+||terlaby.com^$all
+||theannoyingsite.com^$all
+||thecontroversialfiles.net^
+||thecrackbox.com^$doc
+||theshoparound.com^$all
+||thesilkradiance.com^$all
+||thiscrack.com^$doc
+||thunderbird.es^$doc
+||tigerpush.net^$all
+||tilda.gb.net^$all
+||tinyurl.com/gp84uz2$doc
+||tncrun.net^$all
+||to6s.biz^$all
+||tobmyfile.info^$all
+||tomorrowwillbehotmaybe.com^
+||top2-personal-loans-credits.com^$all
+||topcracked.com^$doc
+||topgirls-here.com^$doc
+||topgirls-here1.com^$doc
+||tophacks.pro^$doc
+||topkeygen.com^$doc
+||toplov.com^$all
+||topmatch4you.com^$all
+||topreadtoday.com^$doc
+||torrentfilefree.com^$doc
+||totalav.com^$doc
+||totaltopposts.com^$all
+||tourism-services.online^$all
+||tplinkextender.net^
+||tr1net.com^$all
+||track-149uew.link^
+||track-enable.com^$all
+||track.date-secure.com^
+||trackadsonline.top^$all
+||trackbyfast.com^$all
+||trackertrak.com^$all
+||tracklyfast.com^$all
+||trafempire.com^$all
+||traffic-go.com^$all
+||traffichub01.online^$all
+||trafficjunction.com^$all
+||traffmax-redirect.com^$all
+||tratbc.com^
+||trfcbooost.com^$all
+||trfrc.com^$all
+||tribalcellular.com^
+||triumphantplace.com^$all
+||trk.setting-nervous-steady-noted.xyz^$all
+||trktrk.club^$all
+||truecrypt.es^$doc
+||truecrypt.fr^$doc
+||truecrypt.it^$doc
+||truecrypt.pl^$doc
+||trwl1.com^$all
+||trycracksoftware.com^$doc
+||ts-group.com^$all
+||tube911.com^$all
+||turboadblocker.com^$all
+||turibius-hra.com^$all
+||tuzik09cat.site^$all
+||tw-goldenwinner-57.com^$doc
+||tweitter.com^$all
+||twitter.anlytisc.com^$all
+||typiccor.com^$all
+||ublock.org^$doc
+||ultimate-detection.com^$all
+||um-bredirect.com^$all
+||unetbootin.net^$doc
+||unetbootin.org^$doc
+||unogames.site^$all
+||up4crack.com^$doc
+||up4pc.com^$doc
+||updat-members.life^$all
+||update-global.com^$all
+||update-incentives-rutidosis-pretenceless.xyz^
+||update-phone-today.com^
+||upload4earn.org^$doc
+||upshroomishtor.com^$all
+||urtyert.com^$all
+||usdownload.widost.com^$all
+||usecracked.com^$doc
+||utorrent.it^$doc
+||vcracks.com^$doc
+||verified-extensions.com^
+||veysag.com^$all
+||vfgrse.com^$all
+||vid-adblocker.com^$all
+||video-adblock.com^$all
+||viewmypdf.com^$doc
+||vip-lady-dreams.com^$doc
+||virpropcnow.xyz^$all
+||virtualbox.es^$doc
+||virtualbox.pl^$doc
+||vlc.de^$doc
+||voxtribune.com^
+||vsthomes.com^$doc
+||vstpatch.net^$doc
+||vstserial.com^$doc
+||vun.fyi^$all
+||vur.fyi^$all
+||vviotaer.space^$all
+||vw5y4tegh.xyz^$doc
+||wadiryphi.pro^$all
+||walhalagame.fun^$doc
+||warezcrack.net^$doc
+||watch-video.net^$all
+||wazusoft.com^$doc
+||wdeliv.net^$all
+||webapplicationminefree.cyou^$all
+||webcams-chat.com^$all
+||webpushcloud.top^
+||weefy.me^
+||welcomejohncena.pro^$all
+||weledying-jessed.com^$all
+||whatabouthotladies.com^$all
+||whitecracked.com^$doc
+||wholedailyfeed.com^$all
+||wholewowblog.com^$all
+||wignewsee.club^$all
+||wiilberedmodels.com^
+||win-crack.com^$doc
+||win.xzhyl.top^$all
+||win.zjwhr.top^$all
+||windowcrack.com^$doc
+||windows-scan.com^$all
+||windows-secureit.com^$all
+||windowsactivator.info^$doc
+||wishuiuck.net^$all
+||womenforyou.net^$all
+||womeniover.com^$all
+||womeniovers.net^$all
+||workerz1.com^
+||world-news-filter.info^$all
+||worldactualstories.com^$all
+||worldbeyondleft.xyz^$all
+||wwtracking.net^$all
+||wxhiojortldjyegtkx.bid^$all
+||x-soft.club^$all
+||xeoliders.com^$all
+||xforce-cracks.com^$doc
+||xiaobaixitong.com^$all
+||xovilumium.space^$all
+||xpayperinstx2.com^
+||xsharenode.com^$all
+||yahoo-news.co^$doc
+||yougames.fun^$all
+||youotube.com^$all
+||your-dates-tonight.com^$all
+||your-dreams-girls2.com^$doc
+||yourbest-dating33.life^$doc
+||yourdatefortune.com^$all
+||yourprotectorshield.com^$all
+||youtuba.com^$all
+||ytbgamer.space^$all
+||yunosurveys.com^$all
+||zajtrkhisa.xyz^$all
+||zbysdw.com^$all
+||zcracked.com^$doc
+||zctrack.com^$all
+||zedplays.com^$all
+||zgamespc.com^$doc
+||zhdzkj.com^$all
+||ziapc.org^$doc
+||znews-live.com^
+||zoneforyourprize.life^
 ||zoosk.online^$all
-
-! https://github.com/uBlockOrigin/uAssets/issues/12130
-||beganfieldspeed.top^
-
-! https://github.com/uBlockOrigin/uAssets/issues/12194
-||fulptube.org^$all
-
-||i7ece0xrg4nx.com^$all
-*/bouncy.php?*&inPopUp=$all
-||demnan.com^
-||1redirc.com^$all
-||nutrientassumptionclaims.com^$all
-
-! https://twitter.com/Ta190a/status/1496761374495567873
-/^http:\/\/[a-z]{10}\.duckdns/$doc,domain=duckdns.org
-
-! https://github.com/AdguardTeam/AdguardFilters/issues/115960
-! https://www.virustotal.com/gui/url/6a4daf9dfa58864522ae7972ab042cf4bab17a48321b96d1952bd384210adcd2
-! https://transparencyreport.google.com/safe-browsing/search?url=https:%2F%2Fonpharmvermen.com%2F
-||classpharmenado.com^$doc
-||everypdnsharmacy.com^$doc
-||family24rx.com^$doc
-||happypharmproduct.com^$doc
-||helppharmlead.com^$doc
-||onpharmvermen.com^$doc
-||sale24-pills.com^$doc
-
-
-
-
+||zscracked.com^$doc
+||zslicensekey.com^$doc
+||zvideo-live.com^
