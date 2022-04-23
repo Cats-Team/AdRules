@@ -226,7 +226,7 @@ cat full-adguard*.txt \
 
 cat .././mod/rules/*-rules.txt dns*.txt dns10.txt *easylist*.txt full-adg*.txt abp-hosts*.txt \
  | grep -E "(^\*.*|^-.*|^\/.*|^\..*|^:.*|^[a-z])|([(\@\@)|(\|\|)][^\/\^]+\^)" \
- | grep -Fv "\$|\#" \
+ | grep -v ".\$|.#" \
  | sort | uniq| awk '!a[$0]++' > ll.txt 
 python .././script/rule.py
 
