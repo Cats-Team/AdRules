@@ -5,14 +5,16 @@
         {
             "name": "DNS List",
             "source": "tmp1-dns1.txt",
-            "type": "adblock"
+            "type": "adblock",
+            "transformations": ["RemoveModifiers", "Validate"]
         },
         {
             "name": "AdRules List",
             "source": "tmp-adblock+adguard.txt",
-            "type": "adblock"
+            "type": "adblock",
+            "transformations": ["RemoveModifiers", "Validate"]
         }
     ],
     "exclusions_sources": ["https://raw.githubusercontent.com/AdguardTeam/AdGuardSDNSFilter/master/Filters/exclusions.txt"],
-    "transformations": ["RemoveComments", "Compress", "RemoveModifiers", "Deduplicate"]
+    "transformations": ["Compress", "Deduplicate"]
 }
