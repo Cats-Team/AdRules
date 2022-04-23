@@ -4303,6 +4303,7 @@
 ! mangovideo's sites
 ! marketmovers.it anti adb
 ! megalink.pro anti adb
+! megaup.net##[src]:not([alt]):style(width: 10.2% !important)
 ! mejortorrent.com popups
 ! metager .org ads on search
 ! meteocloud . it anti adb
@@ -4723,6 +4724,7 @@ $script,domain=zdnet.fr,3p
 *$script,3p,denyallow=anicdn.net|animesonline.cz|bootstrapcdn.com|cloudflare.com|cloudflare.net|disqus.com|fastly.net|fastlylb.net|fontawesome.com|google.com|googleapis.com|gstatic.com|hscoscdn30.net|hwcdn.net|jquery.com|jsdelivr.net|jwpcdn.com|jwplayer.com|recaptcha.net,domain=anitube.*
 *$script,3p,denyallow=anmedm.com|cloudflare.net|cloudfront.net|disqus.com|disquscdn.com|facebook.net|fastlylb.net|fbcdn.net|google.com,domain=masteranime.es
 *$script,3p,denyallow=b-cdn.net|disqus.com|jsdelivr.net|jwpcdn.com|fastly.net|fastlylb.net|jquery.com|hetrixtools.com|hwcdn.net|recaptcha.net|cloudflare.com|cloudflare.net|google.com|googleapis.com|gstatic.com|twimg.com|twitter.com,domain=animekaizoku.com
+*$script,3p,denyallow=blazingcdn.net|cdntrex.com|fastly.net|google.com|googleapis.com|gstatic.com|h-cdn.com|stackpathcdn.com,domain=porntrex.com
 *$script,3p,denyallow=blogger.com|cloudflare.com|cloudflare.net|disqus.com|facebook.net|fastly.net|fastlylb.net|fbcdn.net|google.com|googleapis.com|gstatic.com|hwcdn.net|jquery.com|jsdelivr.net|jwpcdn.com|recaptcha.net,domain=moviespapa.*
 *$script,3p,denyallow=bootstrapcdn.com|bunnycdn.ru|cdn77.org|cloudflare.com|cloudflare.net|cloudfront.net|disqus.com|disquscdn.com|facebook.com|facebook.net|fastly.net|fastlylb.net|fbcdn.net|gogocdn.net|google.com|googleapis.com|gstatic.com|hcaptcha.com|hwcdn.net|instagram.com|jquery.com|jsdelivr.net|jwpcdn.com|jwpsrv.com|plyr.io|twimg.com|twitter.com|recaptcha.net|wp.com,domain=gogoanime.*
 *$script,3p,denyallow=bootstrapcdn.com|cloudflare.com|cloudflare.net|cookieinfoscript.com|fastly.net|fastlylb.net|google.com|googleapis.com|gstatic.com|hcaptcha.com|hwcdn.net|jquery.com|recaptcha.net,domain=sharemods.com
@@ -4739,7 +4741,6 @@ $script,domain=zdnet.fr,3p
 *$script,3p,denyallow=cdn77.org|cloudflare.net|googleapis.com|jsdelivr.net,domain=luscious.net
 *$script,3p,denyallow=cdn77.org|google.com|gstatic.com|pingit.im|recaptcha.net|smartsuppcdn.com|smartsuppchat.com,domain=pingit.*|pngit.live|~pingit.com|~pingit.me
 *$script,3p,denyallow=cdnfinder.xyz,domain=cdnfinder.xyz|javtrust.com
-*$script,3p,denyallow=cdntrex.com|fastly.net|google.com|googleapis.com|gstatic.com|h-cdn.com|stackpathcdn.com,domain=porntrex.com
 *$script,3p,denyallow=chatango.com,domain=compucalitv.com
 *$script,3p,denyallow=chatango.com|cloudfront.net|cloudflare.com|cloudflare.net|disqus.com|disquscdn.com|dmca.com|facebook.net|fastly.net|fastlylb.net|fbcdn.net|firebaseio.com|googleapis.com|gstatic.com|jsdelivr.net|optimole.com|statically.io|stackpathdns.com,domain=sektekomik.com
 *$script,3p,denyallow=clickfam.com|cloudflare.com|google.com|gstatic.com|recaptcha.net,domain=clk.ink
@@ -5082,7 +5083,7 @@ $script,domain=zdnet.fr,3p
 /code/script/back.php|
 /contents/images-banners/*
 /css/*$frame,domain=assia.tv|assia4.com
-/css/jquerymin$script,domain=assia.tv|assia4.com
+/css/jquerymin*$script,1p,domain=assia.tv|assia4.com
 /download11.png$image
 /eva.gif$domain=erotichdworld.com|guruofporn.com|jesseporn.xyz|jumboporn.xyz|kendralist.com
 /faloo.js$script,1p,domain=4tube.com|fux.com|pornerbros.com|porntube.com
@@ -10306,6 +10307,8 @@ iir.ai##+js(aopr, app_vars.force_disable_adblock)
 iir.ai##+js(aopr, open)
 iir.ai##+js(aopw, Fingerprint2)
 iir.ai##+js(set, blurred, false)
+iir.ai##.box-main > a[href][target]
+iir.ai##form > a[href][target]
 iiv.pl##+js(aopr, miner)
 ikaza.net##+js(aopr, showAds)
 ilinks.in##+js(acis, JSON.parse, break;case $.)
@@ -11229,6 +11232,7 @@ masihbelajar.com##+js(aopr, DHAntiAdBlocker)
 masihbelajar.com##+js(noeval-if, fab)
 masihbelajar.com##+js(nostif, appendChild)
 masteranime.es##+js(set, check_adblock, true)
+masterplayer.xyz##+js(aeld, click, popundr)
 mathebibel.de###banner-bottom
 matzoo.pl##+js(nostif, adblock, 7000)
 mavanimes.co##+js(aopr, AaDetector)
@@ -11299,7 +11303,8 @@ megatube.xxx##+js(aopr, BetterJsPop)
 megaup.net##+js(acis, Math, break;case)
 megaup.net##+js(nano-sib, display())
 megaup.net##+js(ra, href|target, a[href^="https://tm-offers.gamingadult.com/"])
-megaup.net##[src]:not([alt]):style(width: 10.2% !important)
+megaup.net##.metaRedirectWrapperBottomAds:style(transform: translateY(3000px) !important)
+megaup.net##.metaRedirectWrapperBottomAds:upward(body):style(overflow: hidden !important)
 megaurl.*##+js(aopr, app_vars.force_disable_adblock)
 megaurl.*##[id*="ScriptRoot"]
 megaurl.*##a[href^="//"]
@@ -13909,8 +13914,7 @@ toolss.net##.adsbygoogle
 toolss.net##.sidebar_adds
 toolss.net##div[id^="wpsafe-wait"]
 topeuropix.*##+js(aeld, , _0x)
-topflix.*##+js(acis, Math, XMLHttpRequest)
-topflix.*##+js(acis, String.fromCharCode, XMLHttpRequest)
+topflix.*##+js(acis, parseInt, break;case $.)
 topflix.*##+js(aopr, console.clear)
 topflix.*##+js(nowoif)
 topito.com##+js(aopr, document.bridCanRunAds)
@@ -15572,6 +15576,7 @@ zwergenstadt.com##+js(aeld, load, onload)
 ||fc.lc/*.html$frame,1p
 ||fc.lc/sw.js$script,1p
 ||fc.lc^$3p,script
+||fc.lc^$frame,domain=bclikeqt.com
 ||fcc.lc/sw.js$script,1p
 ||fclcc.com/sw.js$script,1p
 ||feet9.com/*.gif$image
@@ -16179,6 +16184,7 @@ zwergenstadt.com##+js(aeld, load, onload)
 ||rencontres-coquines.jacquieetmichel.net^
 ||reoxclick.com^$3p
 ||rephartertonelin.info^
+||resumeconcurrence.com^
 ||resumersvo.fun^
 ||retdaz.fun^$all
 ||reviewinmarketing.com^$3p
