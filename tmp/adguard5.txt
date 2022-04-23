@@ -1,10 +1,10 @@
 
-! Checksum: RkLcSCfbRAIzYxwmP3EQSA
+! Checksum: iGfAIYLgSdqSUKIV2PRP/g
 ! Description: Blocks irritating elements on web pages including cookie notices, third-party widgets and in-page pop-ups.
 ! Expires: 4 days (update frequency)
-! TimeUpdated: 2022-04-23T03:30:35+00:00
+! TimeUpdated: 2022-04-23T06:30:33+00:00
 ! Title: AdGuard Annoyances filter (Optimized)
-! Version: 2.1.16.84
+! Version: 2.1.16.85
 !### 3rd-party assistants, etc #########################
 !### HINTS are at the end of file
 !### Weather, money exchange, 3rd-party feedbacks, #####
@@ -3510,6 +3510,9 @@ bittorrent.com,utorrent.com##.consent-banner-container
 biz.moneyforward.com##.advads-effect.is-sticky
 biz.ne.jp###lean_overlay
 biz.ne.jp###modal-info-banner
+biz.nuro.jp#$#.is-fixed { overflow: auto !important; }
+biz.nuro.jp#$#.m-modal { display: none !important; }
+biz.nuro.jp#$#.m-modal-bg { display: none !important; }
 bizhint.jp###jsi-signup-modal
 bizhint.net##.subscribe-popup
 bizmates.jp##.p-magazine

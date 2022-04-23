@@ -37,7 +37,7 @@
 ! Bad: ||legitwebsite.com^$third-party (should be in adservers.txt)
 ! Based on AG_defineProperty (https://github.com/AdguardTeam/deep-override)
 ! By advanced we mean the following rule types: CSS, scriptlets, HTML filtering (`$$` marker), JS.
-! Checksum: Wnk9/PeU44c+4IHjN0QkGQ
+! Checksum: qFa6Xy9YxBvvPZzVZKcrTQ
 ! Description: EasyList China + AdGuard Chinese filter. Filter list that specifically removes ads on websites in Chinese language.
 ! Examples:
 ! Examples: AG_removeCookie('/REGEX/') or AG_removeCookie('part of the cookie name')
@@ -79,9 +79,9 @@
 ! This section contains the list of rules that fix incorrect blocking. Rules must be domain-specific.
 ! This section contains the list of the content replacement rules that block ads. Rules must be domain-specific.
 ! This section contains the list of third-party advertising networks domains.
-! TimeUpdated: 2022-04-23T01:30:53+00:00
+! TimeUpdated: 2022-04-23T07:30:52+00:00
 ! Title: AdGuard Chinese filter
-! Version: 2.0.53.50
+! Version: 2.0.53.51
 ! cocomanga.com,cocomanga.com CNAME breakage
 ! do not hide popup, because product selector will not work
 ! e66mobi ads
@@ -12832,6 +12832,7 @@ zznews.cn##.ad:not([style])
 ||aoyou4.top^
 ||aoyuegc.cn^
 ||ap72el.com^
+||apeng.club^
 ||api.557400.com^
 ||api.abcxs.org^
 ||api.bilibili.com/x/ad/
@@ -20560,6 +20561,7 @@ zznews.cn##.ad:not([style])
 ||scjcgj.top^
 ||sconline.com.tw/top/coolpc_
 ||scqajt.cn^
+||scqiuchang.com^
 ||script-bd.baixing.net^
 ||scriptcc.cc^
 ||scswuliu.com^
@@ -21565,6 +21567,7 @@ zznews.cn##.ad:not([style])
 ||tmbbs.com/data/attachment/portal/*.swf
 ||tmea116.oss-cn-beijing.aliyuncs.com^
 ||tmioe.com/img/att/boom.jpg
+||tmnz.top^
 ||tmov.asia^
 ||tmrmixer.cn^
 ||tn34lkn.com^
@@ -23441,6 +23444,7 @@ zznews.cn##.ad:not([style])
 ||youpukeji.cn^
 ||youquba.net/js/
 ||youqunjx.com^$third-party
+||youre123.com^
 ||yousee.com^
 ||youshouge513.cn^
 ||youth.cn/hezuo/index.js

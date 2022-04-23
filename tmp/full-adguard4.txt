@@ -156,7 +156,7 @@
 ! Chat widget on the main page
 ! Chat widgets
 ! Check, if these sites work fine with scriptlet: mail.rambler.ru, kino.rambler.ru, weather.rambler.ru, comments.rambler.ru, kassa.rambler.ru, horoscopes.rambler.ru
-! Checksum: eTP5BcTeJ3AMGjAQTp0epA
+! Checksum: WhzDOWOEu6nlYS4VIehSaQ
 ! Chrome banner in MS Edge
 ! Chrome browser suggest
 ! Climate info below articles
@@ -312,7 +312,7 @@
 ! This section contains the list of rules that block website push notifications ("subscribe to the news" kind of notifications).
 ! This section contains the list of rules that fix incorrect blocking of cookie notifications by generic rules. Rules should be domain-specific.
 ! This section contains the list of the rules against annoyances that are not falling under existing categories. Rules should be domain-specific.
-! TimeUpdated: 2022-04-23T03:30:35+00:00
+! TimeUpdated: 2022-04-23T06:30:33+00:00
 ! Title: AdGuard Annoyances filter
 ! To be discussed
 ! Turkish digital magazines
@@ -320,7 +320,7 @@
 ! Unhide for Android CB if top padding cannot be removed
 ! Using just "._gdpr-notify-header" will cause that part of the content will be hidden on a mobile website
 ! Vacancy widgets
-! Version: 2.1.16.84
+! Version: 2.1.16.85
 ! Video recommendations
 ! Voting widget
 ! Website is broken if "display: none" is used - ##div[class*="ConsentBannerstyles_"]
@@ -9873,6 +9873,9 @@ biz.moneyforward.com##.advads-background
 biz.moneyforward.com##.advads-effect.is-sticky
 biz.ne.jp###lean_overlay
 biz.ne.jp###modal-info-banner
+biz.nuro.jp#$#.is-fixed { overflow: auto !important; }
+biz.nuro.jp#$#.m-modal { display: none !important; }
+biz.nuro.jp#$#.m-modal-bg { display: none !important; }
 bizhint.jp###jsi-signup-modal
 bizhint.net##.subscribe-popup
 bizimyaka.com##.block-fan
