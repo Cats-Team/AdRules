@@ -37,7 +37,7 @@
 ! Bad: ||legitwebsite.com^$third-party (should be in adservers.txt)
 ! Based on AG_defineProperty (https://github.com/AdguardTeam/deep-override)
 ! By advanced we mean the following rule types: CSS, scriptlets, HTML filtering (`$$` marker), JS.
-! Checksum: qKYFwoGP+BeUePVtRha56Q
+! Checksum: +mL8xsB27dcEPBYXijihkA
 ! Description: EasyList China + AdGuard Chinese filter. Filter list that specifically removes ads on websites in Chinese language.
 ! Examples:
 ! Examples: AG_removeCookie('/REGEX/') or AG_removeCookie('part of the cookie name')
@@ -79,14 +79,15 @@
 ! This section contains the list of rules that fix incorrect blocking. Rules must be domain-specific.
 ! This section contains the list of the content replacement rules that block ads. Rules must be domain-specific.
 ! This section contains the list of third-party advertising networks domains.
-! TimeUpdated: 2022-04-24T05:30:54+00:00
+! TimeUpdated: 2022-04-24T12:30:54+00:00
 ! Title: AdGuard Chinese filter
-! Version: 2.0.53.57
+! Version: 2.0.53.61
 ! cocomanga.com,cocomanga.com CNAME breakage
 ! do not hide popup, because product selector will not work
 ! e66mobi ads
 ! fix infinite call
 ! frequently changed domain
+! gamersglobal.de - broken main page
 ! hotpress.info anti adblock
 ! https://c.acgshenshicha.cn/ConTypEv8IJtv-1_click940878MoBile.3921hm_1(com?1614788172719
 ! https://forum.adguard.com/index.php?threads/forum-gamer-com-tw.20470/
@@ -6508,6 +6509,7 @@ gamer.com.tw,papalah.com,pili.com.tw#@#.text-ads
 gamer.com.tw,papalah.com,pili.com.tw#@#.textAd
 gamer.com.tw,papalah.com,pili.com.tw#@#.text_ad
 gamer.com.tw,papalah.com,pili.com.tw#@#.text_ads
+gamersglobal.de#@#.gg-box
 gamersky.com##.dl_url:nth-child(4)
 gamersky.com##.ngg_down
 games.qq.com##.dc-kf_list
@@ -17898,6 +17900,7 @@ zznews.cn##.ad:not([style])
 ||kguke.com^
 ||kgvjcsp.cn^
 ||khgj.cn^$third-party
+||khlgdkxien.com^
 ||khphkum.cn^
 ||khrg04h.cn^
 ||khrtac.xiangha.com^
@@ -18125,6 +18128,7 @@ zznews.cn##.ad:not([style])
 ||lapwlbz.cn^
 ||lauvlku.cn^
 ||law-lib.com/wstyle/images/gffirm.jpg
+||lawful.wang^
 ||lawtv.com.cn/jd_ceshi.html
 ||lawtv.com.cn/skin/newplayer/ads_dianshi.php
 ||lawtv.com.cn/skin/stop.swf
@@ -23180,6 +23184,7 @@ zznews.cn##.ad:not([style])
 ||ybtianxi.com^
 ||yc58.com/tencent
 ||yccz.net/xml/
+||ycdywl.com^
 ||ycgy8888.com^
 ||ychbgss.cn^
 ||ychml.com^

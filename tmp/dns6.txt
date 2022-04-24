@@ -189,7 +189,7 @@
 ! CSP filters
 ! Canadian
 ! Causes false positives in .jp region
-! Checksum: ze7c1g4tFABA8Tr+PeWAWw
+! Checksum: INfeSVa9pIsdTySKluOsOA
 ! Chinese
 ! Chrome bug (Endless loading causing site to crash https://forums.lanik.us/viewtopic.php?f=64&t=25152)
 ! Cloudflare fingerprinting
@@ -297,7 +297,7 @@
 ! Japanese
 ! Kinja-related sites
 ! Korean
-! Last modified: 2022-04-24 07:33 UTC
+! Last modified: 2022-04-24 15:33 UTC
 ! Latvian
 ! Legal stuff (T&C's).
 ! Licence: https://easylist.to/pages/licence.html
@@ -414,7 +414,7 @@
 ! Various International sites
 ! Various philips regions 
 ! Various uk Football splashes
-! Version: 202204240733
+! Version: 202204241533
 ! Vietnamese
 ! Warnings
 ! Washington Times
@@ -16894,6 +16894,7 @@
 ###pnl-cookies-warning
 ###pnlADS
 ###pnlApproveCookiesUsage
+###pnlCookie
 ###pnlCookieBanner
 ###pnlCookieBar
 ###pnlCookieFooter
@@ -34572,6 +34573,7 @@
 ##.cookies-consent-popup
 ##.cookies-consent-wrapper
 ##.cookies-container
+##.cookies-container-uk
 ##.cookies-content
 ##.cookies-conteudo
 ##.cookies-control
@@ -37691,6 +37693,7 @@
 ##.footer-newsletter-social
 ##.footer-newsletter-wrapper
 ##.footer-newsletters
+##.footer-notification--cookie-policy
 ##.footer-pin
 ##.footer-pinterest-icon
 ##.footer-primary__social-media-wrapper
@@ -41805,6 +41808,7 @@
 ##.kue-cookie-notification
 ##.kuki-js
 ##.kukiwrapx
+##.kvk-footer-body
 ##.kvk-footer-warning
 ##.kvk-onay
 ##.kvkk-bottom
@@ -44708,6 +44712,7 @@
 ##.notification.cookies:not(body):not(html)
 ##.notification.show-cookie
 ##.notificationBar[data-notification-cookiepolicy]
+##.notificationPanel--cookieBar
 ##.notification[data-cookie-name*="AcceptCookies"]
 ##.notification[data-notification="accept-cookies"]
 ##.notification[data-notification="coockieConsent"]
@@ -56865,6 +56870,7 @@
 ##app-cookie-popup
 ##app-cookie-rules
 ##app-cookie-warning
+##app-cookies
 ##app-cookies-banner
 ##app-cookies-consent
 ##app-cookies-policy
@@ -76286,7 +76292,7 @@ $xmlhttprequest,domain=auroravid.to|flashx.cc|nowvideo.sx|onlinevideoconverter.c
 @@||dominos.com^*/assets/build/js/modules/dpz.tealium.js$script
 @@||dontbubble.us/images/google-$~third-party
 @@||donttrack.us/images/google-$image,~third-party
-@@||doodcdn.co^$domain=dood.so
+@@||doodcdn.co^$domain=dood.la|dood.so|dood.to|dood.watch|dood.ws
 @@||doridro.net^$generichide
 @@||doubleclick.net/clk;$popup,domain=3g.co.uk|4g.co.uk|hotukdeals.com|jobamatic.com|play.google.com|santander.co.uk|techrepublic.com
 @@||doubleclick.net/ddm/$image,domain=aetv.com|fyi.tv|history.com|mylifetime.com
@@ -80049,7 +80055,7 @@ acast.com,builds.gg,checkyourmath.com,codementor.io,grips-automation.com##.conse
 accenture.com###optanon-minimize-wrapper
 accessoires-asus.com###retourHaut
 accobrands.com##.Promotional-corner
-accor.com,arkadium.com,askubuntu.com,bankofhope.com,calendly.com,consequence.net,cp.com,gesund24.at,getyourguide.com,huawei.com,informa.com,logitech.com,logitechg.com,mastercard.us,mathoverflow.net,maximintegrated.com,msn.com,paramountplus.com,redbull.com,refinitiv.com,serverfault.com,slack.com,soundcloud.com,sparknotes.com,stackexchange.com,stackoverflow.com,subway.com,suomi24.fi,superuser.com,thecloroxcompany.com,validity.com,vishay.com,wetter.at,wirkochen.at,xn--sterreich-z7a.at###onetrust-consent-sdk
+accor.com,arkadium.com,askubuntu.com,bankofhope.com,calendly.com,consequence.net,cp.com,generali.sk,generaliceska.cz,gesund24.at,getyourguide.com,huawei.com,informa.com,logitech.com,logitechg.com,mastercard.us,mathoverflow.net,maximintegrated.com,msn.com,paramountplus.com,redbull.com,refinitiv.com,serverfault.com,slack.com,soundcloud.com,sparknotes.com,stackexchange.com,stackoverflow.com,subway.com,suomi24.fi,superuser.com,thecloroxcompany.com,validity.com,vishay.com,wetter.at,wirkochen.at,xn--sterreich-z7a.at###onetrust-consent-sdk
 account.asus.com#@#.social-btn-group
 account.here.com,calvinklein.at,calvinklein.be,calvinklein.bg,calvinklein.ch,calvinklein.co.uk,calvinklein.com,calvinklein.cz,calvinklein.de,calvinklein.dk,calvinklein.ee,calvinklein.es,calvinklein.fi,calvinklein.fr,calvinklein.hr,calvinklein.hu,calvinklein.ie,calvinklein.it,calvinklein.lt,calvinklein.lu,calvinklein.lv,calvinklein.nl,calvinklein.pl,calvinklein.pt,calvinklein.ru,calvinklein.se,calvinklein.si,calvinklein.sk,ieatfoodtours.co.uk,londraculturale.it,onceinrome.com,shop.forster.at,uktv.co.uk,weliketuscany.it,zorgzaam010.nl#@#.cookie-notice
 account.samsung.com##.ng-trigger.action-bar
@@ -80409,7 +80415,7 @@ alcatraz.ai##.CookiesModal--modal--1TYG0
 alcoholics-anonymous.org.uk,cryps.info,imagefu.com###cook
 alde.se###cc--main
 aldeparty.eu,biodiv.be,bitmoji.com,clementoni.com,decisiondeskhq.com,greybox.com,liveradio.ie,snp.org,volksbuehne.berlin###disclaimer
-aldi-sued.de,bindergroesswang.at,buchbinder-sale.de,fischer-garten.de,galaflorgmbh.de,htb-wenzlow.de##.modal
+aldi-sued.de,bindergroesswang.at,buchbinder-sale.de,fischer-garten.de,galaflorgmbh.de,generali.at,htb-wenzlow.de##.modal
 aldi-sued.de,buchbinder-sale.de,dedriefonteinen.be,djshop.de,ebxan.ch,eubos.de,fc-carlzeiss-jena.de,felix1.de,houthandel-loose.be,htb-wenzlow.de,lignoshop.de,mainz05.de,prostata-hilfe-deutschland.de,theodorkoernerfonds.at##.modal-backdrop
 aldi.it###c-modal
 aldi.it,eosc-eu.cloud.garr.it,feralpisalo.it,meteo.fvg.it,osmer.fvg.it##.modal-backdrop
@@ -80989,6 +80995,7 @@ archived.moe##.cc_banner
 archiwa.gov.pl###message_box
 archiwumalle.pl,basketzone.pl,getem.pl,kosmetykizameryki.pl###polityka
 arctest.fi,megateh.eu###cookies
+ardanta.nl###notification-bar
 ardmediathek.de##.mt-player_bookmarks
 arearenting.it,athenaresort.com###acconsento-click
 areatour.pl,dacter.pl,uni-tech.pl###topbar
@@ -81827,6 +81834,7 @@ bing.com,thehunt.com,throng.co.nz###banner
 bingplaces.com###pagination_Arrow
 binnews.com,iheart.com##.component-pushdown
 binnews.com,iheart.com##.component-recommendation
+bintercanarias.com,boggi.com,infowine.com,mympchain.com,portwell.com.tw,wescobroadcast.com##.ui-widget-overlay
 bio-rad.com##.ui-dialog
 biografieonline.it###ss-floating-bar
 biografieonline.it,meglio.it##.section-footer-nl
@@ -82048,7 +82056,6 @@ bodyandsoul.com.au,wmagazine.com##.article-nav
 boehringer-ingelheim.pt###it-eprivacy-root
 boerenbusiness.nl##.aanmelden
 bofrost.it##.iziModal-overlay
-boggi.com,infowine.com,mympchain.com,portwell.com.tw,wescobroadcast.com##.ui-widget-overlay
 boingboing.net###sidebarsticky
 boingboing.net##.separator
 boingboing.net#@#.twitter-share-button
@@ -83607,6 +83614,7 @@ cyberterminators.co##.wpInsertInPostAd
 cyclemiles.co.uk###messages-cont
 cyprus-mail.com,tricri.org##.printfriendly
 czarymary.pl,drukowalnia.pl##.ek-bar
+czc.cz###ccp-popup
 d-power-modellbau.com,modellbau-metz.com#@#.cookie-notice
 d-power-modellbau.com,modellbau-metz.com,mustijamirri.fi#@##cookieform
 d-power-modellbau.com,modellbau-metz.com,steinmetz-baldauf.de#@##cookie-modal:not(html):not(body)
@@ -84848,7 +84856,7 @@ epolisbari.com#@##COOKIEmodal
 epolisbari.com#@##accept_cookie
 epolisbari.com#@##cookieModal
 epolisbari.com#@#.cookie-text
-epolisbari.com,schwaebisch-hall.de,telecomitalia.it#@#.cookie-text
+epolisbari.com,schwaebisch-hall.de,stadtwerke-weilburg.de,telecomitalia.it#@#.cookie-text
 eporner.com###btasd
 eporner.com###deskadmiddle
 eporner.com###footsocbuttons
@@ -86194,6 +86202,7 @@ gellerreport.com##.pamelageller_join
 gematsu.com##div[style="margin: 15px 0 0; padding: 10px 10px 5px;"]
 gemppi.org##div[style^="visibility: visible; position: absolute;"]
 gen14.com###topofpage
+generali.hr##.cd-module
 generatorkodowkreskowych.pl###cn
 genesis.com##.privacy-dialog
 genetico.pl##.abcd
@@ -87085,7 +87094,7 @@ hillsford.co.uk###topCustomUrls
 hillwig.de##.ui-corner-all.ui-dialog
 hilzingen.de##.datenschutz
 himountain.pl,opteam.pl,orszak.org,pwr.edu.pl###info_c_box
-himovies.to,home-barista.com,onetransistor.eu,shtfplan.com,washingtontimes.com##a[onclick]
+himovies.to,home-barista.com,shtfplan.com,washingtontimes.com##a[onclick]
 himovies.to,musichq.net##[href="https://zoro.to"]
 hindustantimes.com##.affilaite-widget
 hindustantimes.com##.openAppButton
@@ -89366,6 +89375,7 @@ markem-imaje.it###cd_wrapper
 marketerplus.pl##.bar--bottom
 marketing-interactive.com###smallSubBox
 marketplace.org##.social-bottom
+marketscreener.com##.bas
 marketwatch.com###dockingbar
 marketwatch.com###hat_tab_mw
 marketwatch.com##.container--sponsored
@@ -91247,6 +91257,7 @@ oneplus.net##.sec-follow
 oneplus.net#@#.ico-facebook
 onet.pl##.social-container
 onet.pl#@#.cmp-app_gdpr
+onetransistor.eu##a[onclick][target="_blank"]
 onlife.co.il##div[style="height:264px; background-color:white;width: 300px; float: left;margin-bottom:0px;"]
 online-stopwatch.com##.OSAd_full
 online-xxxmovies.com##.middle-spots
@@ -91988,6 +91999,7 @@ polymerclaylatvia.com###privacy-pop-up
 pomponik.pl#@#.article-social-buttons
 pons.com###pons-ad-leaderboard__container
 pooletown.co.uk##[href^="http://redirect.viglink.com"]
+pooletown.co.uk##a[href^="https://www.easyfundraising.org.uk"]
 poolsupplies.com###ps-email-signup
 poool-staging.fr##.fade-in-enter-done
 poool.fr##.Xj54sYVCrpQ88itWMgaP
@@ -94101,6 +94113,7 @@ stackoverflow.com##.js-sidebar-zone
 stadiumastro.com##.Ads
 stadt-bremerhaven.de##div[style="background: #f8f8f8; padding:20px;margin:0 0 10px -20px;width: 593px;"]
 stadtwerke-herne.de###vinegar-bottle
+stadtwerke-weilburg.de#@##cookiehinweis
 staircase.pl#@#.adwords
 stakingrewards.com###asset-calculator-banner
 stakingrewards.com##div[class^="assetFilters_desktop-banner_"]
@@ -94663,6 +94676,7 @@ tekno.kompas.com##.kcm
 tekno.kompas.com##.native-wrap
 telcel.com##.up_button
 telea1.it###cooky_content
+teleboy.ch##.grid-col-content-leaderboard
 telecinco.es,eltiempohoy.es###cookiesAlert
 telecinco.es,eltiempohoy.es##div[class^="article__shared_bar"]
 telecine.com.br##div[data-testid="banner"]
@@ -121564,6 +121578,7 @@ zylom.com##.floor_wrapper
 ||mg4s1.com^
 ||mg4s1.com^$popup
 ||mgbfxr.formongde.com^
+||mgbid.net^
 ||mgbivj.hintaopas.fi^
 ||mgcash.com^
 ||mgcashgate.com^

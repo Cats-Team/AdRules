@@ -2065,8 +2065,6 @@
 ! https://github.com/uBlockOrigin/uAssets/issues/1804
 ! https://github.com/uBlockOrigin/uAssets/issues/1805
 ! https://github.com/uBlockOrigin/uAssets/issues/1807
-! https://github.com/uBlockOrigin/uAssets/issues/1809
-! https://github.com/uBlockOrigin/uAssets/issues/1809#issuecomment-466825920
 ! https://github.com/uBlockOrigin/uAssets/issues/1814
 ! https://github.com/uBlockOrigin/uAssets/issues/1816
 ! https://github.com/uBlockOrigin/uAssets/issues/1823
@@ -3641,7 +3639,6 @@
 ! https://github.com/uBlockOrigin/uAssets/issues/6570
 ! https://github.com/uBlockOrigin/uAssets/issues/6571
 ! https://github.com/uBlockOrigin/uAssets/issues/6572
-! https://github.com/uBlockOrigin/uAssets/issues/6574
 ! https://github.com/uBlockOrigin/uAssets/issues/6575
 ! https://github.com/uBlockOrigin/uAssets/issues/6577
 ! https://github.com/uBlockOrigin/uAssets/issues/6584
@@ -5051,11 +5048,13 @@ $script,domain=zdnet.fr,3p
 /^https?:\/\/[a-z]{6,14}\.info\/[ac][-\.\/_A-Za-z][DHW][-\.\/_A-Za-z][59VZ][-\.\/_A-Za-z][6wyz][-\.\/_A-Za-z][-\/_0-9a-zA-Z][-\.\/_A-Za-z][-\/_0-9a-zA-Z]{22,162}$/$script,3p,match-case
 /^https?:\/\/[a-z]{6,14}\.pro\/[ac][-\.\/_A-Za-z][DHW][-\.\/_A-Za-z][59VZ][-\.\/_A-Za-z][6wyz][-\.\/_A-Za-z][-\/_0-9a-zA-Z][-\.\/_A-Za-z][-\/_0-9a-zA-Z]{22,162}$/$script,3p,match-case
 /^https?:\/\/[a-z]{6,14}\.xyz/[ac][-\.\/_A-Za-z][DHW][-\.\/_A-Za-z][59VZ][-\.\/_A-Za-z][6wyz][-\.\/_A-Za-z][-\/_0-9a-zA-Z][-\.\/_A-Za-z][-\/_0-9a-zA-Z]{22,162}$/$script,3p,match-case
+/^https?:\/\/[a-z]{8,15}\.top(?:\/[0-9a-z]{1,9}){1,4}$/$xhr,3p,match-case
 /^https?:\/\/[a-z]{8,15}\.top(\/(?:\d{1,5}|0NaN|articles?|browse|index|movie|news|pages?|static|view|web|wiki)){1,4}(?:\.html|\/)$/$frame,3p,match-case
 /^https?:\/\/[a-z]{8,15}\.top\/(?:ajax|articles|config|custom|data|menu|resources|validators)(?:\.json)?$/$xhr,3p
 /^https?:\/\/[a-z]{8,15}\.top\/[-a-z]{4,}\.css\?aHR0c[\/0-9a-zA-Z]{41,}=?=?$/$css,3p,match-case
 /^https?:\/\/[a-z]{8,15}\.top\/[a-z]{4,}\.json$/$xhr,3p,match-case
 /^https?:\/\/[a-z]{8,15}\.top\/[a-z]{4,}\.png\?aHR0c[\/0-9a-zA-Z]{41,}=?=?$/$image,3p,match-case
+/^https?:\/\/[a-z]{8,15}\.xyz(?:\/[0-9a-z]{1,9}){1,4}$/$xhr,3p,match-case
 /^https?:\/\/[a-z]{8,15}\.xyz(\/(?:\d{1,5}|0NaN|articles?|browse|index|movie|news|pages?|static|view|web|wiki)){1,4}(?:\.html|\/)$/$frame,3p,match-case
 /^https?:\/\/[a-z]{8,15}\.xyz\/(?:ajax|articles|config|custom|data|menu|resources|validators)(?:\.json)?$/$xhr,3p
 /^https?:\/\/[a-z]{8,15}\.xyz\/[-a-z]{4,}\.css\?aHR0c[\/0-9a-zA-Z]{41,}=?=?$/$css,3p,match-case
@@ -6896,7 +6895,6 @@ $script,domain=zdnet.fr,3p
 @@||teledyski.info^$ghide
 @@||telepisodes.org^$ghide
 @@||telerium.*^$ghide
-@@||tellycolors.me^$ghide
 @@||templateshub.net^$ghide
 @@||textmechanic.com^$ghide
 @@||tf1.fr^$ghide
@@ -7822,7 +7820,7 @@ berliner-kurier.de,berliner-zeitung.de##.dm_ad-container
 bersamatekno.com##+js(nostif, _0x)
 best4hack.blogspot.com##+js(acis, Math, zfgloaded)
 best4hack.blogspot.com##+js(acis, atob, decodeURI)
-bestarticles.me,tellycolors.me##.adsbygoogle
+bestarticles.me##.adsbygoogle
 bestfunnyjokes4u.com,cheatsheet.com,clashdaily.com,craigjames.com,designbump.com,grammarist.com,madworldnews.com,reviveusa.com,sonsoflibertymedia.com,thedesigninspiration.com,themattwalshblog.com,videogamesblogger.com##.adsbygoogle
 bestfunnyjokes4u.com,cheatsheet.com,clashdaily.com,craigjames.com,designbump.com,grammarist.com,madworldnews.com,reviveusa.com,sonsoflibertymedia.com,thedesigninspiration.com,themattwalshblog.com,videogamesblogger.com##[id*="box-ad"]
 bestgore.com##.ai_widget:has-text(Log In)
@@ -9034,8 +9032,6 @@ erpsoftwarelink.blogspot.com##+js(aeld, load, 2000)
 eslfast.com##+js(nostif, warning, 100)
 esportstales.com##+js(aopr, googletag)
 esradio.libertaddigital.com###mega-atf
-estrenos10.com##+js(nosiif, disable_ads, 15000)
-estrenos10.com##+js(nowoif)
 etkisizeleman.com##+js(nostif, nextFunction, 250)
 etonline.com##+js(aopr, _sp_._networkListenerData)
 etonline.com##+js(set, canRunAds, true)
@@ -12900,7 +12896,6 @@ rule34hentai.net##[href^="https://syndication.dynsrvtbg.com/splash.php"]
 rule34hentai.net##section[id$="left"] > .blockbody > script[type]:upward(2)
 rule34hentai.net##section[id$="main"] > .blockbody > .adsbyexoclick:upward(2)
 rushtime.in##.adsbygoogle
-rutube.ru##+js(json-prune, cuepoints)
 rysafe.blogspot.com##+js(nostif, nextFunction, 250)
 s.sseluxx.com##+js(aopr, app_vars.force_disable_adblock)
 s.sseluxx.com##+js(nano-sib)
@@ -15312,7 +15307,6 @@ zwergenstadt.com##+js(aeld, load, onload)
 ||be-well.es^
 ||beach-trk.com^$3p
 ||beeg.surf/blood.asp?
-||beigeiros.pw^
 ||beinsports.com/*/adbw/
 ||beliefindefinite.com^
 ||bepaabqwg.com^
@@ -16168,9 +16162,7 @@ zwergenstadt.com##+js(aeld, load, onload)
 ||qik.cc^$3p
 ||qoaaa.com^$3p
 ||quartzifiassiez.site^
-||r.mail.ru/$popup,domain=estrenos10.com
 ||rasius.pro^
-||raterst.pro^$3p
 ||rathether.info^
 ||rawgit.com/fahimraza/FK/master/ad-unblocker.js^$script
 ||rchamrevolu.xyz^

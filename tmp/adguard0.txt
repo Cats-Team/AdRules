@@ -1,10 +1,10 @@
 
-! Checksum: v+8EBLdkSEHJxK41CSDyXw
+! Checksum: 2HtkGwLECwnAkg8Bjxdtaw
 ! Description: EasyList + AdGuard English filter. This filter is necessary for quality ad blocking.
 ! Expires: 4 days (update frequency)
-! TimeUpdated: 2022-04-24T06:31:13+00:00
+! TimeUpdated: 2022-04-24T13:31:14+00:00
 ! Title: AdGuard Base filter (Optimized)
-! Version: 2.2.27.45
+! Version: 2.2.27.48
 !### HINTS are at the end of file
 !### Temporary ###
 !############### TEMPORARY ###############
@@ -8278,7 +8278,7 @@ $websocket,domain=pornhub.com|pornhubthbh7ap3u.onion|redtube.com|redtube.com.br|
 @@||dogemate.com/banner/*.gif$~third-party
 @@||dood.watch/pass_md5/
 @@||dood.watch^$subdocument
-@@||doodcdn.co^$domain=dood.so
+@@||doodcdn.co^$domain=dood.la|dood.so|dood.to|dood.watch|dood.ws
 @@||doodcdn.com/ads/ad.js
 @@||doodstream.com^$font,image,script,stylesheet,xmlhttprequest,other,domain=dood.to|dood.watch
 @@||dopedgeeks.com^$generichide
@@ -14160,7 +14160,7 @@ hightech.web.id#%#//scriptlet("abort-current-inline-script", "document.getElemen
 hightech.web.id$$script[tag-content="adback_configuration"][min-length="100000"][max-length="360000"]
 hihbt.com#%#//scriptlet("abort-current-inline-script", "window.open")
 hihbt.com#%#window.open = function() { };
-himovies.to,home-barista.com,onetransistor.eu,shtfplan.com,washingtontimes.com##a[onclick]
+himovies.to,home-barista.com,shtfplan.com,washingtontimes.com##a[onclick]
 himovies.to,musichq.net##[href="https://zoro.to"]
 hinative.com#@#.banner_header
 hindi.business-standard.com#%#//scriptlet("abort-current-inline-script", "document.addEventListener", "displayMessage:")
@@ -15623,6 +15623,7 @@ marcpapeghin.com#@#a[href^="https://www.sheetmusicplus.com/"][href*="?aff_id="]
 marinetechnologynews.com,maritimeprofessional.com,maritimepropulsion.com,mumbrella.com.au,petapixel.com,rapidtvnews.com,telesurtv.net,travelpulse.com##.banners
 mariogames.be#@##adsContainer
 marketplace.zoom.us#@#.oas-container
+marketscreener.com##.bas
 marketscreener.com##.hPubRight2
 marketscreener.com,zonebourse.com##div[style="width: 100%;"] > #zppMiddle2
 marketwatch.com##.container--sponsored
@@ -16620,6 +16621,7 @@ onet.pl##aside[class^="CenterAd_container"]
 onet.pl##div[class^="AdPlaceholder_"]
 onet.pl#$#.insertedSlot { display: none !important; }
 onet.pl,medonet.pl,komputerswiat.pl###onet-ad-flat-belkagorna
+onetransistor.eu##a[onclick][target="_blank"]
 oneurls.org#%#//scriptlet("abort-on-property-read", "popunder")
 onionplay.*#%#//scriptlet("remove-attr", "href", "a[href]#clickfakeplayer")
 onionplay.net#%#Object.defineProperty(window, 'scds', { value: 0 });
@@ -17139,6 +17141,7 @@ pomvideo.cc,powvldeo.net###oly
 pons.com###pons-ad-leaderboard__container
 ponselharian.com#%#//scriptlet('prevent-window-open')
 pooletown.co.uk##[href^="http://redirect.viglink.com"]
+pooletown.co.uk##a[href^="https://www.easyfundraising.org.uk"]
 poong.tv$$div[id="ad_overlay"]
 pop-music.ir#@#.ads-top
 popcorntv.it#%#Object.defineProperties(window,{wantedPreroll:{value:0},adstarted:{value:5},waterfallIndex:{value:11}});
@@ -18746,6 +18749,7 @@ tei.ai,movies123.pk,fullywatchonline.com,desiupload.co,dlsharefile.com,minilinks
 tei.ai,tii.ai#%#//scriptlet("json-prune", "rot_url pop_type")
 tei.ai,tii.ai#%#//scriptlet("prevent-window-open")
 tel-no.com,pdfforge.org##.adsense
+teleboy.ch##.grid-col-content-leaderboard
 telecharger-youtube-mp3.com#%#//scriptlet('remove-attr', 'onclick|href', 'a[href][onclick^="setTimeout(function(){ window.open("][onclick*="clksite.com"]')
 telegramchannels.me###btm-pr
 telegraph.co.uk##.commercial-unit
@@ -23429,6 +23433,7 @@ zzcartoon.com#%#Object.defineProperty(window, 'prPopunder', { get: function() { 
 ||eabids.com^
 ||eabids.com^$popup
 ||eacdn.com^
+||eadwhiwax.com^
 ||eagerlyshuggy.com^
 ||ealeo.com^
 ||earlapspur.com^
@@ -25556,6 +25561,7 @@ zzcartoon.com#%#Object.defineProperty(window, 'prPopunder', { get: function() { 
 ||mfueffpe.com^
 ||mg4s1.com^
 ||mg4s1.com^$popup
+||mgbid.net^
 ||mgid.com/mghtml/framehtml/$important
 ||mgid.com^$third-party
 ||mgygdeofh.com^
