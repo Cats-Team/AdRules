@@ -6,6 +6,7 @@
 ! TEMPORARY until https://github.com/AdguardTeam/AdguardBrowserExtension/issues/631 is resolved
 ! This section contains the list of rules that fix incorrect blocking. Rules must be domain-specific.
 ! cocomanga.com,cocomanga.com CNAME breakage
+! gamersglobal.de - broken main page
 ! https://forum.adguard.com/index.php?threads/forum-gamer-com-tw.20470/
 ! https://github.com/AdguardTeam/AdguardFilters/issues/102171
 ! https://github.com/AdguardTeam/AdguardFilters/issues/105329
@@ -149,6 +150,7 @@ ettoday.net#@#.iframe-ad
 ettoday.net#@#AMP-AD
 ettoday.net#@#amp-ad
 fuzhou.baixing.com#@#.ad-title
+gamersglobal.de#@#.gg-box
 ipv6.baidu.com,m.baidu.com,www.baidu.com,www1.baidu.com,xueshu.baidu.com#@##results > div[class]:not(.result):not(.result-op):not(.sp-rslt-bar):not(.s-group-result)
 mcc.xunliandata.com#@#.ad_wrap
 new.qq.com#@##TopAd

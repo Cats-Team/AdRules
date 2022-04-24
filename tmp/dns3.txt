@@ -25,7 +25,8 @@
 ! *** easylist:easylist_adult/adult_adservers_popup.txt ***
 ! *** easylist:easylist_adult/adult_allowlist.txt ***
 ! *** easylist:easylist_adult/adult_allowlist_popup.txt ***
-! *** easylist:easylist_adult/adult_allowlist_popup.txt ***||yenlm.com^
+! *** easylist:easylist_adult/adult_allowlist_popup.txt ***##.small_ads
+! *** easylist:easylist_adult/adult_allowlist_popup.txt ***lm553.com^
 ! *** easylist:easylist_adult/adult_specific_block.txt ***
 ! *** easylist:easylist_adult/adult_specific_block_popup.txt ***
 ! *** easylist:easylist_adult/adult_specific_hide.txt ***
@@ -50,7 +51,7 @@
 ! Buff sites
 ! CSP Yavli
 ! CSP filters
-! Checksum: DuUXlPHPkcBWZXzxl4FE8A
+! Checksum: bHEFT0/U8KBcmHj/H7Om/Q
 ! Chinese supplement for the EasyList filters
 ! Commonly used popup scripts on movie/tv streaming sites
 ! Contains domain names
@@ -84,7 +85,7 @@
 ! In advert promo
 ! In video div
 ! In-page video advertising.
-! Last modified: 24 Apr 2022 01:35 UTC
+! Last modified: 24 Apr 2022 08:15 UTC
 ! Licence: https://easylist.to/pages/licence.html
 ! License: https://easylist-downloads.adblockplus.org/COPYING
 ! Magnify transparient advert on video
@@ -124,7 +125,7 @@
 ! Used with many websites to generate multiple popups
 ! VK.ru/.com
 ! VPN Affiliate Banners
-! Version: 202204240135
+! Version: 202204240815
 ! Washington Times
 ! Webcompat Generichide fixes (Avoid any potential filters being applied to non-ad domains)
 ! Webcompat fixes (Avoid any potential filters being applied to non-ad domains)
@@ -15414,6 +15415,7 @@
 ##.adword1
 ##.adwordListings
 ##.adwords
+##.adwords-containead_bgskin
 ##.adwords-container
 ##.adwordsHeader
 ##.adwords_in_content
@@ -17917,6 +17919,7 @@
 ##.fr_ad_loading
 ##.frame_adv
 ##.framead
+##.free-start-ads-block
 ##.freedownload_ads
 ##.freegame_bottomad
 ##.freestar-ad-sidebar-container
@@ -19323,6 +19326,7 @@
 ##.l-header-advertising
 ##.l-region--ad
 ##.l-section--ad
+##.l.com/go/*/banner.php
 ##.l300x250ad
 ##.l_ad_sub
 ##.label-ad
@@ -34396,7 +34400,7 @@ $websocket,domain=pornhub.com|pornhubthbh7ap3u.onion|redtube.com|redtube.com.br|
 @@_300_250.$domain=nanrenwo.net
 @@_370x270.$domain=bairuitool-cn.aliyun-hk03.hicheng.net
 @@_ads_cpc_$domain=90lover.cn
-@@_cpa_adview_$domain=52xkdy.com
+@@_adview_cpc_$domain=52xkdy.com
 @@_cpc_cpm_$domain=saraba1st.com|ygo-sem.cn|youranshare.com
 @@u-ads.adap.tv*youku.$domain=youku.com
 @@||012.tw^$script,domain=apk.tw
@@ -34974,6 +34978,7 @@ $websocket,domain=pornhub.com|pornhubthbh7ap3u.onion|redtube.com|redtube.com.br|
 @@||dnspod.cn/static/common/js/analytics.js
 @@||doc110.com^*/ad.css?$stylesheet
 @@||docs.woopt.com/wgact/$image,~third-party,xmlhttprequest
+@@||doodcdn.co^$domain=dood.so
 @@||douban.com/popup/login?
 @@||doubibackup.com^$generichide
 @@||doubleclick.net/clk;$popup,domain=3g.co.uk|4g.co.uk|hotukdeals.com|jobamatic.com|play.google.com|santander.co.uk|techrepublic.com
@@ -35789,6 +35794,7 @@ $websocket,domain=pornhub.com|pornhubthbh7ap3u.onion|redtube.com|redtube.com.br|
 @@||tlc.com^$generichide
 @@||tmall.com/add?
 @@||tmall.com/go/*/banner.php
+@@||tmallpaper
 @@||ton.twimg.com^$domain=ads.twitter.com|analytics.twitter.com
 @@||toolfk.com/tools/js/share/js/jquery.share.min.js
 @@||torrindex.net^$image,script,stylesheet,domain=thepiratebay.org
@@ -37015,6 +37021,7 @@ amgreatness.com###ag-lead
 amgreatness.com##.bg-gray-200.mx-auto
 amgreatness.com##.mb-10.mx-auto
 amgreatness.com##div[id^="ag-front-"]
+amoyshare.com##.game-poster
 ana-white.com###block-views-block-sponsors-block-1
 analpornpix.com##[src^="https://analpornpix.com/t/153"]
 analpornpix.com##a[href^="/go/"]
@@ -38790,6 +38797,7 @@ ditu.so.com##.label-ads
 ditu.so.com##a[class^="index-bcItem"]
 ditu.so.com##a[href^="https://e.so.com/"]
 ditu.so.com##div[class^="index-adflag-"] + a
+div[id^="media-"]
 divcss5.com##div[style*="width:336px;height:280px;"]
 dixyporn.com##.bottom_spot
 diyifanwen.com###ArtTl
@@ -39614,6 +39622,7 @@ forums.anandtech.com,forums.tomsguide.com,forums.tomshardware.com,forums.whathif
 forums.digitalspy.com,marketwatch.com#@#.has-ad
 forums.minecraftforge.net,nextdoor.com##.promo-container
 forums.overclockers.ru#@#div[id^="yandex_ad"]
+forums.pcsx2.net##div[onclick^="MyAdvertisements."]
 forums.somethingawful.com###notregistered
 forums.somethingawful.com##.oma_pal
 forums.tomsguide.com###video_ad
@@ -39928,6 +39937,7 @@ geoguessr.com##.start__display-ad
 geoguessr.com##div[class^=result-layout_right__]
 german-way.com,power987.co.za,qsaltlake.com,tfetimes.com##img[height="250"]
 getdroidtips.com##.code-block-15
+getdroidtips.com,journeybytes.com,thebeaverton.com,thisisanfield.com,unfinishedman.com##.ai-viewport-1
 getdroidtips.com,patriotfetch.com,thisisanfield.com##.code-block-13
 getdroidtips.com,thegayuk.com,wisden.com##.code-block-4
 getdroidtips.com,welovetrump.com,wisden.com##.code-block-8
@@ -41408,7 +41418,6 @@ jokerlu.com,jokerlu1.com##a[onclick^="_czc."]
 jokersupdates.com##.container_contentrightspan
 jokes2go.com###skyscraperDiv
 journeybytes.com,techpp.com##.ai-attributes
-journeybytes.com,thebeaverton.com,thisisanfield.com,unfinishedman.com##.ai-viewport-1
 jpfans.com,jpseek.com##table[cellspacing="1"][cellpadding="6"]
 jpost.com##.divConnatix
 jpost.com##.line-left-side-before-and-after-container
@@ -42052,6 +42061,7 @@ mdisk.me##.robot
 mdisk.me##.spdownloader-ad
 mdisk.me##.taka-gif-con
 mediabiasfactcheck.com##div[id^="media-"]
+mediabiasfactcheck.com##r
 mediacoderhq.com##.gg1
 mediacomcable.com##.sidebar_sponsored
 mediacorp.sg###right_banner_placeholder
@@ -44780,6 +44790,8 @@ tropica.cn##.bm.a_c1
 tropica.cn##.wp1.a_t
 troyhunt.com#?#.sidebar-featured:-abp-has(a[href^="https://pluralsight.pxf.io/"])
 truck1.eu##.c-banners
+trueachievements.com##.lb_holder
+trueachievements.com##.nn_player_w
 trueachievements.com,truesteamachievements.com,truetrophies.com###nn_bfa_wrapper
 trustedreviews.com##.keystone-single-widget
 trustnet.com#@#.ads_right
@@ -61838,6 +61850,7 @@ zznews.cn##.ad:not([style])
 ||hnsykly.cn^
 ||hnthink.vip^
 ||hntiantai.cn^
+||hntk.top^
 ||hntymg.com^
 ||hnwjlhg.cn^
 ||hnxahz.com^
@@ -64016,6 +64029,7 @@ zznews.cn##.ad:not([style])
 ||jmuaoupnykie.com^
 ||jmulab.cn^
 ||jmvdzlkf.com^
+||jmvxdkguyv.com^
 ||jmxpgmmbbnvfxr.xyz^
 ||jmydm.com/jspage/ftt.js
 ||jn1biifafz.cn^
@@ -65533,6 +65547,7 @@ zznews.cn##.ad:not([style])
 ||lgmi.com/tjyf200x207.asp
 ||lgmi.com/windows/*-Advert.
 ||lgmi.com^*_gg
+||lgpihaml.com^
 ||lgpumcja.com^
 ||lgse.com^
 ||lgsmartad.com^
@@ -73709,6 +73724,7 @@ zznews.cn##.ad:not([style])
 ||se8u.cc/statics/images/*.gif
 ||seabedchita.com^
 ||seaboblit.com^
+||seainan333.com^
 ||sealine.youku.com/yk/html?
 ||seamankidding.com^
 ||seamchristmas.com^

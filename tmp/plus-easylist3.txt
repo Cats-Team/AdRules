@@ -4776,7 +4776,6 @@ $script,domain=zdnet.fr,3p
 *$script,3p,denyallow=cloudflare.com|google.com|gstatic.com|recaptcha.net,domain=tmearn.*
 *$script,3p,denyallow=cloudflare.net|cloudfront.net|disqus.com|disquscdn.com|facebook.com|facebook.net|fastlylb.net|fbcdn.net|google.com|googleapis.com|gstatic.com|hwcdn.net|jquery.com|sharethis.com|unpkg.com|watchcartoonsonline.info|kisscartoon.info,domain=kiss-anime.*
 *$script,3p,denyallow=cloudflare.net|cloudfront.net|disqus.com|disquscdn.com|fastlylb.net,domain=vermangasporno.com
-*$script,3p,denyallow=cloudflare.net|consensu.org|google.com|gstatic.com|hcaptcha.com|jsdelivr.net|solvemedia.com,domain=shorterall.com
 *$script,3p,denyallow=cloudflare.net|fastly.net|google.com|googleapis.com|gstatic.com|jwpcdn.com|jsdelivr.net|eastream.net|youtube.com|ytimg.com,domain=vidfast.co
 *$script,3p,denyallow=cloudflare.net|fastly.net|jsdelivr.net|jwpcdn.com|zencdn.net,domain=wstream.video
 *$script,3p,denyallow=cloudflare.net|fontawesome.com|googleapis.com|hwcdn.net|jquery.com,domain=atomixhq.*|pctfenix.*
@@ -10691,6 +10690,7 @@ kimcartoon.*###subcontent > div:has(.adsbyvli)
 kimcartoon.*##+js(acis, $, adbWarn)
 kimcartoon.*##+js(aopw, Fingerprint2)
 kimcartoon.*##.adsbyvli:upward(div[style^="width: 300px; height: 250px"])
+kimcartoon.*##iframe[src^="/Ads/"]:upward(div[style^="width: 300px; height: 250px"])
 kimcartoon.*,kisscenter.net###ads-top-wrap
 kimchi.tv###player-advertising
 kiminime.com##+js(acis, document.querySelectorAll, popMagic)
@@ -12936,6 +12936,7 @@ saruch.co##+js(nowebrtc)
 sarugbymag.co.za##+js(aopr, showAds)
 sataniabatch.blogspot.com##+js(nofab)
 satcesc.com##+js(nostif, css_class)
+satoshi-win.xyz,shorterall.com##+js(acis, parseInt, break;case $.)
 savealoonie.com##+js(aopr, mdp_deblocker)
 savelinks.*##+js(aopr, LieDetector)
 savemedia.*##+js(nowoif)
@@ -13161,7 +13162,6 @@ shorten.*##+js(aopr, parcelRequire)
 shorten.*##+js(aopw, _pop)
 shorten.*##+js(nowoif)
 shortens.co,tinylink.*##+js(aopr, app_vars.force_disable_adblock)
-shorterall.com##+js(acis, JSON.parse, break;case $.)
 shorterall.com##+js(aopr, app_vars.force_disable_adblock)
 shorterall.com##+js(aopr, disableButtonTimer)
 shorterall.com##+js(aopr, open)
@@ -15861,6 +15861,7 @@ zwergenstadt.com##+js(aeld, load, onload)
 ||kataprius.com^
 ||katestube.com/contents/other/player/*.mp4$media,1p
 ||kidnepishlient.pro^$3p
+||kimcartoon.*/Ads/$frame
 ||kimsacka.net^
 ||kiolim.com^
 ||kipoutch.net^$3p
