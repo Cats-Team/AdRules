@@ -61,7 +61,7 @@
 ! Booking app
 ! Breaks Yahoo Finance app on iOS https://github.com/AdguardTeam/AdguardFilters/issues/63354
 ! By advanced we mean the following rule types: CSS, scriptlets, HTML filtering (`$$` marker), JS.
-! Checksum: 5uoo03KPWsA1IekXt/9fwA
+! Checksum: ybg7gGLtLRfxOQpl0B8TjQ
 ! Common names
 ! Context ads(must be excluded in useful ads)
 ! Criteo mobile ads
@@ -152,10 +152,10 @@
 ! This section contains the list of the base rules that block ads in mobile apps. Rules should be specific.
 ! This section contains the list of the content replacement rules that block ads on mobile devices. Rules must be domain-specific.
 ! This section contains the list of third-party advertising networks domains for mobile devices.
-! TimeUpdated: 2022-04-22T18:30:21+00:00
+! TimeUpdated: 2022-04-23T18:30:17+00:00
 ! Tinder (analytics)
 ! Title: AdGuard Mobile Ads filter
-! Version: 2.0.28.89
+! Version: 2.0.28.90
 ! Viber
 ! Viber[App] - the problem with the stickers store
 ! WPS Office
@@ -2678,9 +2678,11 @@ m.bild.de#?#.txt > .element[-ext-has=">.tsr-info > h3:contains(Auch Interessant)
 m.blogtruyen.com##.container > .qc-inner
 m.blogtruyen.com##center > a[href][target="_blank"] > img
 m.bloomberght.com##.zone-area
+m.bravotube.net###BTm-Native-Big
+m.bravotube.net###block-ffb
 m.bravotube.net##.banner-bottom
 m.bravotube.net##.goldttl
-m.bravotube.net##.wrapper > .good
+m.bravotube.net##.good
 m.brigitte.de##.flying-carpet-element > .flying-carpet-element__ad-label
 m.brigitte.de##.flying-carpet-element > amp-fx-flying-carpet.i-amphtml-element[style="height: 300px;"]
 m.bulbapedia.bulbagarden.net##a[href="http://playiconoclasts.com/"]

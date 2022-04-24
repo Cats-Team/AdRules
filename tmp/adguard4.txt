@@ -1,10 +1,10 @@
 
-! Checksum: Tt4DQIdMRqv8yrsVoqBVow
+! Checksum: 3A2A69ZVRh6a0HLX22OuSQ
 ! Description: EasyList China + AdGuard Chinese filter. Filter list that specifically removes ads on websites in Chinese language.
 ! Expires: 4 days (update frequency)
-! TimeUpdated: 2022-04-23T09:02:42+00:00
+! TimeUpdated: 2022-04-24T00:30:52+00:00
 ! Title: AdGuard Chinese filter (Optimized)
-! Version: 2.0.53.52
+! Version: 2.0.53.54
 !#0
 !#17ce.com
 !#18comic.org
@@ -5090,7 +5090,7 @@ chinaz.com##.plate-layout
 chinaz.com##.red[href*=".wsisp.net/"]
 chinaz.com##.titright
 chinaz.com##.txtAdBox
-chinaz.com,cnbeta.com,oschina.net##a[href^="http://click.aliyun.com/"]
+chinaz.com,cnbeta.com,mydrivers.com,oschina.net##a[href^="http://click.aliyun.com/"]
 chinaz.com,gw54.com,ofweek.com,xgw5.com,yawin.cn##.adtext
 chinese.engadget.com###module-engadget-deeplink-top-ad
 chinese.engadget.com##.spotim-recirculation div[data-spotim-row] > div[data-spotim-slot-size="300x250"]
@@ -5648,11 +5648,12 @@ duba.com##a[w="topad"]
 duba.com#$#.fav_box_wrap { visibility: hidden; height: 60px!important; }
 duba.com#?#.newslist  > .news_ctm_wrap:has(> .ctm_ad)
 duba.com#@#.fav_box
+duba.com,iduba.com,newduba.cn###J_sideFooter
+duba.com,iduba.com,newduba.cn##.left_slidebar_con
+duba.com,iduba.com,newduba.cn,uu114.cn##.fav_box
 duba.com,newduba.cn###J_FloorWave
 duba.com,newduba.cn###J_FloorWrap
-duba.com,newduba.cn###J_sideFooter
 duba.com,newduba.cn##.img[href^="https://s.click.taobao.com/"]
-duba.com,newduba.cn##.left_slidebar_con
 duba.com,newduba.cn##.pro_r_t
 duba.com,newduba.cn##.s11_store_box
 duba.com,newduba.cn##.search_promotion
@@ -5661,7 +5662,6 @@ duba.com,newduba.cn##.side_taobao
 duba.com,newduba.cn##.tmall_bg15
 duba.com,newduba.cn##.top_ad_tmall
 duba.com,newduba.cn##a[href*=".zhhainiao.com/"]
-duba.com,newduba.cn,uu114.cn##.fav_box
 duba.com,uu114.cn###redbagRain
 duba.com,uu114.cn##.adfixed
 duba.com,uu114.cn##.hotTitle
@@ -6730,10 +6730,7 @@ idanmu.ee##aside > div[class="widget "]
 idanmu.ee##div[class^="g "]
 idreamx.com#?##threadlisttableid > tbody:not([id]):has(> tr > td > a[target="_blank"])
 idreamx.com#?##threadlisttableid > tbody:not([id]):has(> tr > td > ins.adsbygoogle)
-iduba.com###J_sideFooter
 iduba.com###topBanner
-iduba.com##.fav_box
-iduba.com##.left_slidebar_con
 ieforex.com##.header > .left
 ifeng.com###CA_left
 ifeng.com###CA_right
@@ -7927,7 +7924,6 @@ mydrivers.com##.news_xg + style + div
 mydrivers.com##.taobao_tab
 mydrivers.com##.zcdf ~ div[style]
 mydrivers.com##a[href*=".ashx?to="]
-mydrivers.com##a[href^="http://click.aliyun.com/"]
 mydrivers.com##a[style][href*=".jd.com/"]
 mydrivers.com##div[id$="_tab"] > ul > li:first-child
 mydrivers.com##div[style*="/ad/"]
@@ -10771,6 +10767,7 @@ zznews.cn##.ad:not([style])
 ||23sc.cn/andy/
 ||23taoke.xyz^
 ||23uuw3.com^
+||23wm.cc^
 ||241hs.com/js/jquery.js
 ||2481e.com^$popup
 ||24cmm.com:8888/js
@@ -11349,6 +11346,7 @@ zznews.cn##.ad:not([style])
 ||64ma.com/tv/images/web.png
 ||64si.com^
 ||652696.com^
+||65432.shop^
 ||65daishua.cn^
 ||65tgh.com^
 ||65zjp.cn^
@@ -22390,6 +22388,7 @@ zznews.cn##.ad:not([style])
 ||xiancn.com^*/adv_content/
 ||xiandafood.cn^
 ||xiangai365.com/ad_js/
+||xianggou.club^
 ||xianggouwu.vip^
 ||xiangkantv.cn^
 ||xianglong360.cn^
