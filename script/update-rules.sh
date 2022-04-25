@@ -163,7 +163,7 @@ wait
 echo '处理规则中...'
 cat clash* \
  | grep -F 'DOMAIN' | sed 's/.*DOMAIN.*\,//g' |sed "s/^/||&/g" |sed "s/$/&^/g"> dns9999.txt 
-cat dns9999.txt| sed 's/\|\|//g' | sed 's/\^\,//g' >hosts9999.txt
+
 
 cat hosts*.txt | sort -n| grep -v -E "^((#.*)|(\s*))$" \
  | grep -v -E "^[0-9f\.:]+\s+(ip6\-)|(localhost|local|loopback)$" \
@@ -245,7 +245,8 @@ cat dns-output.txt deadblock.txt deadblock.txt \
 cat tmp0-dns.txt l.txt dns99* \
  | grep -v '^!' |sort -n |uniq >tmp-dns.txt
 #wait
-cat .././mod/rules/*-rules.txt base-src-hosts.txt \
+cat dns9999.txt| sed 's/\|\|//g' | sed 's/\^\,//g' >hosts9999.txt
+cat .././mod/rules/*-rules.txt base-src-hosts.txt hosts99*.txt \
  | sed '/^$/d' |grep -E "^([0-9].*)|^((\|\|)[^\/\^]+\^$)" \
  |sed 's/||/0.0.0.0 /' | sed 's/\^//' \
  | sort -n | uniq > tmp1-hosts1.txt  #处理Hosts规则
