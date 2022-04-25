@@ -56,7 +56,7 @@
 ! Based on AG_defineProperty (https://github.com/AdguardTeam/deep-override)
 ! Blocked icons for social logging
 ! By advanced we mean the following rule types: CSS, scriptlets, HTML filtering (`$$` marker), JS.
-! Checksum: FWMGZnGrxXmObmtrjAw/Gg
+! Checksum: KxpF+Kl2W9ZE0N9toexrFA
 ! Common names
 ! Description: Filter for social media widgets such as 'Like' and 'Share' buttons and more.
 ! Do not block facebook embedded video
@@ -99,11 +99,11 @@
 ! This section contains the list of social blocking rules that fall under "advanced" category.
 ! This section contains the list of the rules for common trackers/buttons.
 ! This section contains the list of the rules that block in page social popups.
-! TimeUpdated: 2022-04-25T13:03:10+00:00
+! TimeUpdated: 2022-04-25T14:31:33+00:00
 ! Title: AdGuard Social Media filter
 ! Unblock minificated scripts library
 ! Unhide links to a websites in different languages
-! Version: 2.0.60.31
+! Version: 2.0.60.32
 ! Yandex.Balaboba
 ! Yandex.Disk
 ! Yandex.Forms
@@ -9595,6 +9595,7 @@ timesofindia.indiatimes.com##div[data-socialtray] > div[class] > span[class]:not
 timesofindia.indiatimes.com##span[data-ga$="atf_share"]
 timeticket.jp##.item-separate-share
 timeturk.com##.detayy a[href="javascript:;"][onclick^="window.open("][onclick*="'paylas'"]
+timeturk.com##.share-space
 timeweb.com##.cm-share-bottom
 timgate.it##.cdi-social-container
 tinypulse.com##.row-fluid > div.left-sidebar

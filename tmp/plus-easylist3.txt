@@ -7560,8 +7560,10 @@ apps2app.com##+js(rc, hidden, button)
 apps2app.com##.adsbygoogle:style(width:1px!important;height:1px!important;min-width:1px!important;min-height:1px)
 apps2app.com##button:style(display: inline-block !important)
 appstore-discounts.com##+js(acis, document.getElementById, undefined)
+appvn.com###info:style(display: block !important)
 appvn.com##+js(acis, JSON.parse, break;case $.)
 appvn.com##.ads
+appvn.com##.downloadtitle
 apritos.com,bsierad.com,diminimalis.com,downloadbatch.com,downloadtanku.com,eksporimpor.com,jadijuara.com,kicaunews.com,now21.online,palapanews.com,ridvanmau.com,teknohot.com,unduh31.net##+js(aopw, adBlockDetected)
 apurogol.net###fakeplayer
 apurogol.net##+js(aopw, smrtSB)
@@ -8244,7 +8246,7 @@ chyoa.com##.chyoa-adzone
 chyoa.com##.chyoa-banner
 ciberdvd.*##+js(aopw, smrtSB)
 ciberdvd.*##+js(nowoif)
-cima4u.*##+js(acis, JSON.parse, break;case $.)
+cima4u.*##+js(acis, parseInt, break;case $.)
 cine.to##+js(aeld, , 0x)
 cine24.online###publicidad-video
 cine24.online##+js(nowoif)
@@ -10021,9 +10023,11 @@ hclips.com##+js(acis, document.getElementById, popunder)
 hclips.com##+js(aopr, ExoLoader)
 hclips.com##.adv-box-holder
 hclips.com##.content > div > .wrapper + div[class]:not(.wrapper)
-hclips.com##.jwplayer > .afs_ads + span[class]
+hclips.com##.jwplayer > div[style="display:flex !important"] > div
+hclips.com##.underplayer > div[class]:not([class*="_"]) > div[class]
 hclips.com##.video-page__content > .right
 hclips.com##.video-page__item
+hclips.com##.wrapper + .partners-wrap + div[class]
 hclips.com##[class^="pl_"]
 hclips.com##iframe[src="javascript:false"]
 hd-analporn.com##+js(aopr, Aloader.serve)
@@ -10314,7 +10318,7 @@ iir.ai##.box-main > a[href][target]
 iir.ai##form > a[href][target]
 iiv.pl##+js(aopr, miner)
 ikaza.net##+js(aopr, showAds)
-ilinks.in##+js(acis, JSON.parse, break;case $.)
+ilinks.in##+js(acis, parseInt, break;case $.)
 ilinks.in##+js(aopr, app_vars.force_disable_adblock)
 ilinks.in##+js(set, blurred, false)
 illicoporno.com##+js(set, is_adblocked, false)
@@ -10701,8 +10705,8 @@ kicker.de,myspass.de,spielaffe.de,tele5.de##+js(golem.de)
 kimcartoon.*###subcontent > div:has(.adsbyvli)
 kimcartoon.*##+js(acis, $, adbWarn)
 kimcartoon.*##+js(aopw, Fingerprint2)
-kimcartoon.*##.adsbyvli:upward(div[style^="width: 300px; height: 250px"])
-kimcartoon.*##iframe[src^="/Ads/"]:upward(div[style^="width: 300px; height: 250px"])
+kimcartoon.*##.kcAds1
+kimcartoon.*##div[style*="width: 300px; height: 250px"]
 kimcartoon.*,kisscenter.net###ads-top-wrap
 kimchi.tv###player-advertising
 kiminime.com##+js(acis, document.querySelectorAll, popMagic)
@@ -12632,9 +12636,11 @@ primewire.*##.ico.close
 primewire.*##:xpath(//*[contains(text(),"Sponsored")]):upward(2)
 primewire.*##[href="/user/profile/premium-membership"][target="_blank"]
 primewire.*##^script:has-text(break;case $.)
+privatehomeclips.com##.content > div > .wrapper + div[class]:not(.wrapper)
 privatehomeclips.com##.footer-banners
-privatehomeclips.com##.jwplayer > .afs_ads + span[class]
+privatehomeclips.com##.jwplayer > div[style="display:flex !important"] > div
 privatehomeclips.com##.partners-wrap
+privatehomeclips.com##.underplayer > div[class]:not([class*="_"]) > div[class]
 privatehomeclips.com##.video-page__content > .right
 privatehomeclips.com##.video-page__item
 privateindianmovies.com##+js(aopr, document.dispatchEvent)
@@ -13831,6 +13837,7 @@ thelayoff.com##.epp-bf
 themanual.com##.dtads-slot
 thememypc.net##+js(acis, JSON.parse, break;case $.)
 thememypc.net##+js(aopr, Abd_Detector)
+thememypc.net##+js(nano-sib, counter, 2000)
 thememypc.net##.adsbygoogle
 themeslide.com##+js(nano-sib, countdown, 2000)
 themeslide.com##+js(nano-stb)
@@ -14250,7 +14257,7 @@ uploadrar.*##[href="https://getpczone.*"]
 uploadrar.*##a[href^="https://r3adyt0download.com/"]
 upornia.*##.aa_label + div:not([class])
 upornia.*##.app-banners
-upornia.*##.jwplayer > .afs_ads + div[style="display:flex !important"]
+upornia.*##.jwplayer > div[style="display:flex !important"] > div
 upornia.*##.video-ad-videos + div.aa_label
 upornia.*##.video-content > div[class] > div.text > a[href="#"]:upward(2)
 upornia.*##.video-slider
@@ -16514,6 +16521,7 @@ zwergenstadt.com##+js(aeld, load, onload)
 ||xvideo.party/shop.aspx?
 ||xxlargepop.com/apu.php$script,redirect=noopjs
 ||xxxwebdlxxx.org^$csp=script-src 'self' data:
+||xxxwebdlxxx.org^$image,domain=imgdawgknuttz.com
 ||xyqgpupnkdmmib.top^
 ||y96q29a1fo.com^
 ||yacurlik.com^$3p
