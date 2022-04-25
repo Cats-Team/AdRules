@@ -56,7 +56,7 @@
 ! Based on AG_defineProperty (https://github.com/AdguardTeam/deep-override)
 ! Blocked icons for social logging
 ! By advanced we mean the following rule types: CSS, scriptlets, HTML filtering (`$$` marker), JS.
-! Checksum: F0Nekire5iWgWAt5rVpRpQ
+! Checksum: EO/wWcpmc+x7ygJ668gCsg
 ! Common names
 ! Description: Filter for social media widgets such as 'Like' and 'Share' buttons and more.
 ! Do not block facebook embedded video
@@ -99,11 +99,11 @@
 ! This section contains the list of social blocking rules that fall under "advanced" category.
 ! This section contains the list of the rules for common trackers/buttons.
 ! This section contains the list of the rules that block in page social popups.
-! TimeUpdated: 2022-04-25T10:31:28+00:00
+! TimeUpdated: 2022-04-25T11:31:24+00:00
 ! Title: AdGuard Social Media filter
 ! Unblock minificated scripts library
 ! Unhide links to a websites in different languages
-! Version: 2.0.60.28
+! Version: 2.0.60.29
 ! Yandex.Balaboba
 ! Yandex.Disk
 ! Yandex.Forms
@@ -1162,6 +1162,7 @@
 ##.widget_as_facebook_mem_likebox
 ##.widget_bimber_widget_facebook_page
 ##.widget_socialwidget
+##.widget_wptelegram_widget_ajax_widget
 ##.woo_share_buttons
 ##.wp-share
 ##.wpd-comment-share
@@ -10872,6 +10873,7 @@ zvuki.ru##iframe[title^="fb:like"]
 ||cumhuriyet.com.tr/image/share_facebook.gif
 ||d.line-scdn.net/r/web/social-plugin/js/thirdparty/loader.min.js$domain=~weleda.jp
 ||d5k6iufjynyu8.cloudfront.net/script/button.js
+||databaseitalia.it/wptelegram/widget/
 ||demotywatory.pl/res/img/layout/share-stylowi.gif
 ||designchemical.com/blog/wp-content/themes/dc2011/dcssb/css/social.css
 ||destekdukkan.com/images/sosyal.png

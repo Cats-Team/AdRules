@@ -1,10 +1,10 @@
 
-! Checksum: y8MbVuUUejwm23sa6t3s1g
+! Checksum: Gdhu0W4eQ0mSIQNCMqyy8g
 ! Description: Filter for social media widgets such as 'Like' and 'Share' buttons and more.
 ! Expires: 4 days (update frequency)
-! TimeUpdated: 2022-04-25T10:31:28+00:00
+! TimeUpdated: 2022-04-25T11:31:24+00:00
 ! Title: AdGuard Social Media filter (Optimized)
-! Version: 2.0.60.28
+! Version: 2.0.60.29
 !+ NOT_OPTIMIZED
 !+ NOT_PLATFORM(ios, ext_android_cb)
 !+ PLATFORM(android)
@@ -582,6 +582,7 @@
 ##.widget_as_facebook_mem_likebox
 ##.widget_bimber_widget_facebook_page
 ##.widget_socialwidget
+##.widget_wptelegram_widget_ajax_widget
 ##.woo_share_buttons
 ##.wp-share
 ##.wpd-comment-share
@@ -6315,6 +6316,7 @@ zvuki.ru##iframe[title^="fb:like"]
 ||connect.ok.ru/dk?st.cmd=WidgetShare$domain=gazeta.ua
 ||cp.news.search.daum.net/api/publish.json^
 ||d.line-scdn.net/r/web/social-plugin/js/thirdparty/loader.min.js$domain=~weleda.jp
+||databaseitalia.it/wptelegram/widget/
 ||demotywatory.pl/res/img/layout/share-stylowi.gif
 ||developers.band.us/js/share/band-button.js^$third-party
 ||developers.rambler.ru/likes*/widget.js
