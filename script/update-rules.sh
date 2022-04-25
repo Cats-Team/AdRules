@@ -162,7 +162,7 @@ wait
 # Pre Fix rules
 echo '处理规则中...'
 cat clash* \
- | grep -F 'DOMAIN' | sed 's/.*DOMAIN.*\,//g' | sed 's/\+\./|/g' |sed "s/^/|&/g" |sed "s/$/&^/g"> dns9999.txt 
+ | grep -F 'DOMAIN' | sed 's/.*DOMAIN.*\,//g' | sed 's/\+\./\|/g' |sed "s/^/|&/g" |sed "s/$/&^/g"> dns9999.txt 
 
 
 cat hosts*.txt | sort -n| grep -v -E "^((#.*)|(\s*))$" \
@@ -175,7 +175,7 @@ cat base-src-hosts.txt | grep -Ev '#|\$|@|!|/|\\|\*'\
  | grep -v -E "^((#.*)|(\s*))$" \
  | grep -v -E "^[0-9f\.:]+\s+(ip6\-)|(localhost|loopback)$" \
  | sed 's/127.0.0.1 //' | sed 's/0.0.0.0 //' \
- | sed "s/^/|&/g" |sed "s/$/&^/g"| sed '/^$/d' \
+ | sed "s/^/||&/g" |sed "s/$/&^/g"| sed '/^$/d' \
  | grep -v '^#' \
  | sort -n | uniq | awk '!a[$0]++' \
  | grep -E "^((\|\|)\S+\^)" > abp-hosts.txt & #Hosts规则转ABP规则
