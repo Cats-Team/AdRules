@@ -245,7 +245,7 @@ cat dns-output.txt deadblock.txt deadblock.txt \
 cat tmp0-dns.txt l.txt dns99* \
  | grep -v '^!' |sort -n |uniq >tmp-dns.txt
 #wait
-cat dns9999.txt| sed 's/\|\|//g' | sed 's/\^\,//g' >hosts9999.txt
+cat dns9999.txt| sed 's/\|\|/0.0.0.0 /g' | sed 's/\^\,//g' >hosts9999.txt
 cat .././mod/rules/*-rules.txt base-src-hosts.txt hosts99*.txt \
  | sed '/^$/d' |grep -E "^([0-9].*)|^((\|\|)[^\/\^]+\^$)" \
  |sed 's/||/0.0.0.0 /' | sed 's/\^//' \
