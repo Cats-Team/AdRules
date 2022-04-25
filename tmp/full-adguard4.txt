@@ -156,7 +156,7 @@
 ! Chat widget on the main page
 ! Chat widgets
 ! Check, if these sites work fine with scriptlet: mail.rambler.ru, kino.rambler.ru, weather.rambler.ru, comments.rambler.ru, kassa.rambler.ru, horoscopes.rambler.ru
-! Checksum: Jom2NfvbMyTAhtiE4EfGQA
+! Checksum: ufJcqzP8n/8+tc6udKGK+w
 ! Chrome banner in MS Edge
 ! Chrome browser suggest
 ! Climate info below articles
@@ -312,7 +312,7 @@
 ! This section contains the list of rules that block website push notifications ("subscribe to the news" kind of notifications).
 ! This section contains the list of rules that fix incorrect blocking of cookie notifications by generic rules. Rules should be domain-specific.
 ! This section contains the list of the rules against annoyances that are not falling under existing categories. Rules should be domain-specific.
-! TimeUpdated: 2022-04-25T14:30:40+00:00
+! TimeUpdated: 2022-04-25T15:30:33+00:00
 ! Title: AdGuard Annoyances filter
 ! To be discussed
 ! Turkish digital magazines
@@ -320,7 +320,7 @@
 ! Unhide for Android CB if top padding cannot be removed
 ! Using just "._gdpr-notify-header" will cause that part of the content will be hidden on a mobile website
 ! Vacancy widgets
-! Version: 2.1.16.98
+! Version: 2.1.16.99
 ! Video recommendations
 ! Voting widget
 ! Website is broken if "display: none" is used - ##div[class*="ConsentBannerstyles_"]
@@ -8016,7 +8016,7 @@ alibaba.com##.GDPR-cookies-notice-wrap
 alibaba.com##div[campaignid][style*="width: 100%; box-sizing: border-box;"][style*="position: relative; height:"]
 alibaba.com#?#div[data-content="abox-ProductNormalList"] > div.J-offer-wrapper:has(> div > i.search-ad-icon)
 alibabacloud.com##.btn-survey
-aliexpress.com###gdpr-new-container
+aliexpress.*###gdpr-new-container
 aliexpress.com###gdpr-section
 aliexpress.com###mobile-download
 aliexpress.com##.aliexpress-notice
@@ -8026,8 +8026,9 @@ aliexpress.ru###ae-ru-privacy-banner
 aliexpress.ru##.styles_wrapper__3isR2
 aliexpress.ru##[class*="PrivacyPolicyBanner"]
 aliexpress.ru##div[class^="InfoBanner_InfoBanner__container__"]
-aliexpress.ru#$#body { overflow: visible!important; }
-aliexpress.ru#$#div[class^="ali-kit_Dialog__"] { display: none!important; }
+aliexpress.ru#$#body { overflow: auto!important; padding-right: 0!important;}
+aliexpress.ru#$#body[data-spm="home"] div[class*="AuthContextWidget_UserAgreementModal__"] { display: none!important; }
+aliexpress.ru#$#body[data-spm="home"] div[class^="ali-kit_Dialog__background"] { display: none!important; }
 aliexpress.ru#?#div[class^="ali-kit_Col__col__"][style="margin:0 20px 0 0;flex:0 0 218px"] div[class^="wrap ali-kit_Container__primary__"][style*=" 0 20px 0;padding:15px"]:has(div[class^="InfoBanner_InfoBanner__container__"])
 alimar.com.tr###terms-and-conditions
 alimentation-sante.net##body > [id^="spu-"]
@@ -8310,6 +8311,7 @@ androidauthority.com##.andro-newsletter-signup
 androidauthority.com##.gcap-shown
 androidauthority.com##div[class*="-sidebar"] div[id^="aa_subscribe-"]
 androidauthority.com##div[data-nc="nc-newsletter"]
+androidauthority.com#$?#main div[class="-N"] > div[class="-ok"]:has(> a[href="https://www.androidauthority.com/newsletters/"]) { visibility: hidden !important; }
 androidauthority.com#%#//scriptlet('remove-class', 'has-dealbar')
 androidauthority.com#?#.post-sidebar > div:has(> div[data-nc="nc-ad"])
 androidcanavari.net,lostiempos.com,nazya.com,firstthings.com###cboxOverlay
@@ -18046,6 +18048,7 @@ javhiv.com##.block-body > .block.announcement
 javhoho.com##center > a[href="https://javhoho.com/subscription-plan/"]
 javsubtitle.co#%#Object.defineProperty(document, 'oncontextmenu', { get: function() { return; } }); Object.defineProperty(document, 'ondragstart', { get: function() { return; } }); Object.defineProperty(document, 'onkeydown', { get: function() { return; } }); Object.defineProperty(document, 'onselectstart', { get: function() { return; } }); Object.defineProperty(document, 'onmousedown', { get: function() { return; } }); Object.defineProperty(document, 'onclick', { get: function() { return; } }); Object.defineProperty(window, 'disableSelection', { get: function() { return; } }); Object.defineProperty(window, 'disable_copy', { get: function() { return; } }); Object.defineProperty(window, 'disableEnterKey', { get: function() { return; } }); Object.defineProperty(window, 'disable_copy_ie', { get: function() { return; } });
 javtasty.com##.table > .block-chat
+javtiful.com##.wrapper > div.container > div.alert-danger
 javur.com###alertAdblock
 jaybirdsport.com###subscribeDrawer.slideUp
 jaybirdsport.com##.cGDPR_Notice_Community
@@ -19278,6 +19281,7 @@ leroymerlin.ru##uc-cbf-facing-buttons-menu
 leroymerlin.ru##uc-cookie-notification
 leroymerlin.ru#%#//scriptlet('set-cookie', 'daysToHide', '14')
 leroyseafood.com##.js-cookie-root
+lesbian8.com##div[id$="-im-container"]
 lesechos.fr##a[aria-label="Je m'abonne"]
 lesfrontaliers.lu##iframe[src^="https://app.mailjet.com/"]
 lesmobiles.com##.popin-cnil
@@ -31979,6 +31983,7 @@ zara.com##.layout-footer-newsletter
 zara.com##.native-app-banner
 zarahome.com##itx-newsletter-advice > .nl-advice-container
 zargan.com###app-menu
+zarplata-es.com##.adb-def
 zaycev.fm##div[class^="soft-promo"]
 zaycev.net###__next > div[class^="Popupstyled__"]
 zcdnz.blogspot.com###HTML4 > div > div
@@ -33315,6 +33320,7 @@ zzz.com.ua##body > div[style="text-align:center;font-size:11px;font-family:arial
 ||kamostudiogroup.com/gdpr/gdprscript.js
 ||karsolay.com/js/fcm-web-push.js
 ||karuna4u.com^$third-party
+||kasikornbank.com/SiteCollectionDocuments/js/LiveChat.js
 ||katcr.co$replace=/onclick=\"javascript:return confirm\(\'Confirm your download\.\'\)\"//
 ||kattepush.com^$third-party
 ||kerchenovias.com^$third-party

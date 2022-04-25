@@ -1,10 +1,10 @@
 
-! Checksum: 40DJCfv4wwRe3Nhbd7VuIA
+! Checksum: 1nB9LhKBxbuLACN2SFO8fg
 ! Description: Blocks irritating elements on web pages including cookie notices, third-party widgets and in-page pop-ups.
 ! Expires: 4 days (update frequency)
-! TimeUpdated: 2022-04-25T14:30:40+00:00
+! TimeUpdated: 2022-04-25T15:30:33+00:00
 ! Title: AdGuard Annoyances filter (Optimized)
-! Version: 2.1.16.98
+! Version: 2.1.16.99
 !### 3rd-party assistants, etc #########################
 !### HINTS are at the end of file
 !### Weather, money exchange, 3rd-party feedbacks, #####
@@ -2426,7 +2426,7 @@ algonquincollege.com###accn-cookie-notice
 algonquincollege.com###fancybox-container-1
 alibaba.com#?#div[data-content="abox-ProductNormalList"] > div.J-offer-wrapper:has(> div > i.search-ad-icon)
 alibabacloud.com##.btn-survey
-aliexpress.com###gdpr-new-container
+aliexpress.*###gdpr-new-container
 aliexpress.com###gdpr-section
 aliexpress.com###mobile-download
 aliexpress.com##.aliexpress-notice
@@ -2436,8 +2436,9 @@ aliexpress.ru###ae-ru-privacy-banner
 aliexpress.ru##.styles_wrapper__3isR2
 aliexpress.ru##[class*="PrivacyPolicyBanner"]
 aliexpress.ru##div[class^="InfoBanner_InfoBanner__container__"]
-aliexpress.ru#$#body { overflow: visible!important; }
-aliexpress.ru#$#div[class^="ali-kit_Dialog__"] { display: none!important; }
+aliexpress.ru#$#body { overflow: auto!important; padding-right: 0!important;}
+aliexpress.ru#$#body[data-spm="home"] div[class*="AuthContextWidget_UserAgreementModal__"] { display: none!important; }
+aliexpress.ru#$#body[data-spm="home"] div[class^="ali-kit_Dialog__background"] { display: none!important; }
 aliexpress.ru#?#div[class^="ali-kit_Col__col__"][style="margin:0 20px 0 0;flex:0 0 218px"] div[class^="wrap ali-kit_Container__primary__"][style*=" 0 20px 0;padding:15px"]:has(div[class^="InfoBanner_InfoBanner__container__"])
 alis.to##.area-article-registration-footer
 alison.com#$?##sale { remove: true; }
@@ -2592,6 +2593,7 @@ androeed.ru##.atelegram
 android-apk.org#%#//scriptlet("adjust-setInterval", "time", "", "0.02")
 androidacy.com#%#//scriptlet('prevent-addEventListener', 'load', 'function(e)')
 androidacy.com#%#//scriptlet('prevent-fetch', '/googlesyndication\.com|doubleclick\.net|ads\.facebook\.com/')
+androidauthority.com#$?#main div[class="-N"] > div[class="-ok"]:has(> a[href="https://www.androidauthority.com/newsletters/"]) { visibility: hidden !important; }
 androidauthority.com#%#//scriptlet('remove-class', 'has-dealbar')
 androidcanavari.net,lostiempos.com,nazya.com,firstthings.com###cboxOverlay
 androidforums.com##.af_notices
@@ -8180,6 +8182,7 @@ javarevisited.blogspot.com#?#.sidebar > div.widget > div.widget-content > form.g
 javhd.com##.jcookie
 javhoho.com##center > a[href="https://javhoho.com/subscription-plan/"]
 javsubtitle.co#%#Object.defineProperty(document, 'oncontextmenu', { get: function() { return; } }); Object.defineProperty(document, 'ondragstart', { get: function() { return; } }); Object.defineProperty(document, 'onkeydown', { get: function() { return; } }); Object.defineProperty(document, 'onselectstart', { get: function() { return; } }); Object.defineProperty(document, 'onmousedown', { get: function() { return; } }); Object.defineProperty(document, 'onclick', { get: function() { return; } }); Object.defineProperty(window, 'disableSelection', { get: function() { return; } }); Object.defineProperty(window, 'disable_copy', { get: function() { return; } }); Object.defineProperty(window, 'disableEnterKey', { get: function() { return; } }); Object.defineProperty(window, 'disable_copy_ie', { get: function() { return; } });
+javtiful.com##.wrapper > div.container > div.alert-danger
 jb.com.br,m.zara.com,godmode-trader.de###cookies-container
 jbbs.shitaraba.net###staff_info
 jbl.com##.mail-form
@@ -8385,6 +8388,7 @@ kartalhaber.com##div[style^="position:fixed; left:0; right:0; bottom:0; backgrou
 kartalyuvasi.com.tr##.cookieBnr
 kartotekaonline.pl##body > .ui-pnotify[style^="width: 300px; opacity:"]
 kashi-mo.com##.l-footer > a.wimax_bnr
+kasikornbank.com###ex-app
 kaspersky.*##.notification-bar
 kaspersky.*##.promo-card
 kaspersky.*##div[class^="RepositoryArticle_articleContent"] p ~ a[href^="https://www.kaspersky.ru/total-security?"]
@@ -8876,6 +8880,7 @@ lernstudio-barbarossa.de#?#section > div#modalBackdrop:has(> div#modalContent > 
 leroymerlin.ru##uc-cbf-facing-buttons-menu
 leroymerlin.ru##uc-cookie-notification
 leroymerlin.ru#%#//scriptlet('set-cookie', 'daysToHide', '14')
+lesbian8.com##div[id$="-im-container"]
 letgo.com##div[class^="CookieAdvicestyles"]
 letoile.ru##.b-section_subscription
 letoile.ru#$#body { overflow: visible!important; }
@@ -16207,6 +16212,7 @@ zara.com##.layout-footer-newsletter
 zara.com##.native-app-banner
 zarahome.com##itx-newsletter-advice > .nl-advice-container
 zargan.com###app-menu
+zarplata-es.com##.adb-def
 zaycev.fm##div[class^="soft-promo"]
 zdf.de##.x-cookies
 zdf.de#$#.smartbanner { display: none !important; }
@@ -16957,6 +16963,7 @@ zweitausendeins.de,meyer-gartenbedarf.de#%#//scriptlet('set-cookie', 'amcookie_a
 ||kabelscheune.de/out/kabelscheune/src/js/mws-cookie-solution.min.js
 ||kakaku.com/script/itemview/RdmReviewAd.js
 ||karuna4u.com^$third-party
+||kasikornbank.com/SiteCollectionDocuments/js/LiveChat.js
 ||katcr.co$replace=/onclick=\"javascript:return confirm\(\'Confirm your download\.\'\)\"//
 ||kattepush.com^$third-party
 ||kerchenovias.com^$third-party
