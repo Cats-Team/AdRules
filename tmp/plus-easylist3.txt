@@ -5017,8 +5017,8 @@ $script,domain=zdnet.fr,3p
 .com/nativeexternal/$frame,1p
 .top/event|$xhr,3p
 .xyz/event|$xhr,3p
-/(?:com|net)\/[-a-z]{3,10}\.html$/$frame,1p,domain=imgadult.com|imgdrive.net|imgtaxi.com|imgwallet.com
 /(?:com|net)\/[0-9a-f]{12}\.js$/$script,1p,domain=imgadult.com|imgdrive.net|imgtaxi.com|imgwallet.com
+/(?:com|net)\/[a-z-]{3,10}\.html$/$frame,1p,domain=imgadult.com|imgdrive.net|imgtaxi.com|imgwallet.com
 /(?:com|porn|tube|xxx)\/[a-z]{8,12}\/[a-z]{8,12}\.js$/$script,1p,domain=555.porn|hclips.com|hdzog.com|hotmovs.com|imzog.com|inporn.com|javdaddy.com|porn555.com|pornforrelax.com|porngo.tube|pornj.com|pornl.com|pornq.com|porntop.com|privatehomeclips.com|puporn.com|see.xxx|senzuri.tube|shemalez.com|sss.xxx|thegay.*|tubepornclassic.com|tuberel.com|txxx.com|txxxporn.tube|upornia.*|vjav.*|voyeurhit.com|vxxx.com
 /1clkn/*$script
 /1clkn/*$xhr,domain=doramasmp4.com
@@ -10347,6 +10347,8 @@ imgadult.com,imgdrive.net,imgtaxi.com,imgwallet.com##+js(aopw, cticodes)
 imgadult.com,imgdrive.net,imgtaxi.com,imgwallet.com##+js(aopw, imgadbpops)
 imgadult.com,imgdrive.net,imgtaxi.com,imgwallet.com##+js(nano-stb, redirect, 4000)
 imgadult.com,imgdrive.net,imgtaxi.com,imgwallet.com##.blink
+imgadult.com,imgdrive.net,imgtaxi.com,imgwallet.com##.sidebar > div:first-of-type
+imgadult.com,imgdrive.net,imgtaxi.com,imgwallet.com##.sidebar > h3:first-child
 imgadult.com,imgdrive.net,imgwallet.com##.bottom_abs
 imgadult.com,imgdrive.net,imgwallet.com##.centered
 imgalor.xyz,imgirx.xyz,imgjut.buzz,imgkaka.xyz,imgkane.buzz,imgkia.*,imgklx.xyz,imgkoka.buzz,imgkuiw.xyz,imglina.xyz,imgtoyou.icu,imgtrw.buzz,imgveni.xyz,imgweika.buzz,imgwex.buzz##+js(aopr, console.clear)
@@ -10879,8 +10881,16 @@ lewat.club##[height="60"]
 lewat.club##[href="https://newponsel.com/"]
 lewat.club##[href="https://www.bisnisnya.com/"]
 lewat.club##[href^="https://manjur.id/search.php"]
+lewdzone.com###ad_vid
 lewdzone.com##+js(aopr, decodeURI)
+lewdzone.com##+js(nano-sib, circle_animation)
+lewdzone.com##+js(nano-stb, CountBack, 990)
+lewdzone.com##.Leaderboard
 lewdzone.com##.ad_overlay, .ad, [href^="https://theporndude.com"]
+lewdzone.com##.affiliate-block
+lewdzone.com##.alzd
+lewdzone.com##.item.widget_text
+lewdzone.com##.site-margin > .container-block .item.widget_text:upward(1)
 lfspro.net##+js(nostif, offsetHeight)
 lg-firmwares.com##+js(nano-sib)
 lg-firmwares.com##.cc-window, .buy_on_amazon, .post-ads
@@ -15897,6 +15907,7 @@ zwergenstadt.com##+js(aeld, load, onload)
 ||leojmp.com^
 ||letaikay.net^
 ||letmejerk.com/*.php$script,1p
+||lewdzone.com/wp-content/themes/lz/assets/affiliate/$image
 ||lexozfldkklgvc.com^$3p
 ||ligatus.com/*/angular-tag-https.js$script,redirect=ligatus.com/*/angular-tag.js
 ||ligatus.com/*/angular-tag.js$script,redirect=ligatus.com/*/angular-tag.js

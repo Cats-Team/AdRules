@@ -1,10 +1,10 @@
 
-! Checksum: v5cNQeU/CqZ8HMesx6LxMw
+! Checksum: hRNejk2SNRnyY2GxLhAMsA
 ! Description: Blocks irritating elements on web pages including cookie notices, third-party widgets and in-page pop-ups.
 ! Expires: 4 days (update frequency)
-! TimeUpdated: 2022-04-25T11:30:35+00:00
+! TimeUpdated: 2022-04-25T13:30:33+00:00
 ! Title: AdGuard Annoyances filter (Optimized)
-! Version: 2.1.16.94
+! Version: 2.1.16.97
 !### 3rd-party assistants, etc #########################
 !### HINTS are at the end of file
 !### Weather, money exchange, 3rd-party feedbacks, #####
@@ -3656,6 +3656,7 @@ bmi-online.pl##.cookies__info
 bmu.edu.in##.form-sec_popup
 bmu.edu.in##.form_common
 bmu.edu.in##.sticky > li:has(> p.subs)
+bmuv.de,umwelt-im-unterricht.de,bmu.de###bmu-cookie-disclaimer
 bmvg.de,bundeswehr.de##.c-privacy-protection-banner
 bmwgroup.com,bmwbkk.de,mini.*,bmwgroup.jobs,bmw-m.com,mini.com.tr,bmw-abudhabi.com,bmw-albania.com,bmw.tm.dz,bmw.co.ao,bmw.com.ar,bmw.am,bmw.com.au,bmw.at,bmw.az,bmw-bahrain.com,bmw.com.bd,bmw.by,bmw.be,bmw.com.bo,bmw.ba,bmw.com.br,bmw.com.bn,bmw.bg,bmw.com.kh,bmw.ca,bmw.cl,bmw.com.cn,bmw.com.co,bmw.co.cr,bmw.hr,bmw.com.cy,bmw.cz,bmw.dk,bmw.com.do,bmw-dubai.com,bmw.com.ec,bmw-eg.com,bmw.com.sv,bmw.ee,bmw.fi,bmw.fr,bmw.com.ge,bmw.de,bmw-ghana.com,bmw.gr,bmw-antilles.fr,akguam.com,bmw.com.gt,bmw.hn,bmw.hu,bmw.is,bmw.in,bmw.co.id,bmw-iraq.com,bmw.ie,bmw.co.il,bmw.it,bmwjamaica.com,bmw.co.jp,bmw-jordan.com,bmw.kz,bmw.co.kr,bmw-kuwait.com,bmw-lao.la,bmw.lv,bmw-lebanon.com,bmw.ly,bmw.lt,bmw.lu,bmw.com.mk,bmw.com.my,bmw.com.mt,bmw.mu,bmw.com.mx,bmw-me.com,bmw.md,bmw.ma,bmwmyanmar.com,bmw.nl,bmw.nc,bmw.co.nz,bmw-nigeria.com,bmw.no,bmw-oman.com,bmw-pakistan.com,bmw.com.pa,bmw.com.py,bmw.com.pe,bmw.com.ph,bmw.pl,bmw.pt,bmw-qatar.com,bmw.ro,bmw.ru,bmw.re,bmw-saudiarabia.com,bmw.sn,bmw.rs,bmw.com.sg,bmw.sk,bmw.si,bmw.co.za,bmw.es,bmw.lk,bmw.se,bmw.ch,bmw.co.th,bmw.tt,bmw-tunisia.com,bmw.com.tr,bmwusa.com,bmw.ua,bmw.co.uk,bmw.com.uy,bmw.vn,bmw-yemen.com,bmw.com##epaas-consent-drawer-shell
 bndestem.nl#%#AG_onLoad(function() { if (document.cookie.indexOf('nl_cookiewall_version') == -1) { document.cookie = "nl_cookiewall_version=4"; location.reload(); } });
@@ -4469,6 +4470,7 @@ colnect.com###cookies_consent
 colorlib.com###conversions-box
 coloros.com###use_cookies
 coloros.com##.privacyTips
+columbia.com.tr##.MuiCollapse-entered
 columbia.edu###cu-privacy-notice
 combi.de#$#.modal--cookie-notice { display: none !important; }
 combi.de#$#body { overflow: auto !important; }
@@ -6747,6 +6749,7 @@ genesisowners.com#%#var _st = window.setTimeout; window.setTimeout = function(a,
 genius.com##.android_banner
 genius.com##.apple_music_player_container
 genius.com##apple-music-player
+genius.com##div[class^="AppleMusicPlayer__"]
 geniusinteractive.org,jardima.com,farklifarkli.com##.g1-slideup-newsletter
 geniusinteractive.org,olumhaberi.com##.g1-newsletter
 geniusmarketing.me##.advEvent
@@ -9490,8 +9493,11 @@ marca.com##.banda_suscripcion
 marca.com##.suscripciones-noticias
 marcandangel.com###ck_modal
 marcandangel.com###custom_html-8
+marianne.net###modal-newsletter
+marianne.net##.overlay--cover-all
 marianne.net##.tc-subscription-bar
 marianne.net#%#//scriptlet('set-cookie', 'mrn_nl_abo', '1')
+marianne.net,programme-television.org###tc-newsletter-banner
 marinetraffic.com##.top-banner
 marinetraffic.com##div.hidden-print
 marinetraffic.com##div[style="position: relative; width: 100%; margin-top: 15px; margin-bottom: 15px; height: 90px;"]
@@ -11866,7 +11872,6 @@ programiz.com##.cover__form
 programiz.com##.get-app-link
 programiz.com,thecap.com.br##.mauticform_wrapper
 programme-television.org###subcribeNewsletter
-programme-television.org###tc-newsletter-banner
 progrit-media.jp##a[id^="clickfooter1"]
 promax.com,viaccess-orca.com##.widget-type-blog_subscribe
 promkod.ru##.cookies-mass
@@ -12499,6 +12504,7 @@ routerchart.com,droidchart.com###cw
 routledge.com###cconsent-pop
 royaleapi.com##.adblock_message
 royalpets.com.br##.footer__terms
+rp-online.de#%#(function(){if(!document.cookie.includes("eupubconsent-v2")){var c=new MutationObserver(function(){var a=document.querySelector(".park-consent-layer__content-wrapper #consentAccept");a&&"function"==typeof acceptAndContinue&&(c.disconnect(),a.click())});c.observe(document,{childList:!0,subtree:!0}),setTimeout(function(){c.disconnect()},1E4)}})();
 rp.pl,parkiet.com#%#//scriptlet('set-cookie', '__gm_tcfconsent_v2', '1')
 rp.pl,szukajka.tv###rodo-popup
 rp5.ru,rp5.ua,rp5.by,rp5.kz,rp5.co.uk,rp5.md,~m.rp5.ru,~m.rp5.ua,~m.rp5.by,~m.rp5.kz,~m.rp5.co.uk,~m.rp5.md#%#//scriptlet("set-constant", "Object.prototype.cABNoCheck", "undefined")
@@ -13986,6 +13992,9 @@ tehnografi.com##.gdpr-widget
 tei.ai#%#AG_onLoad(function(){try{var b=document.querySelector('form[method="POST"] > input[name="token"]');if(b){var a=b.value;if(a.includes("aHR0c")){var c=atob(a.substring(a.indexOf("aHR0c")));location.assign(c)}}}catch(d){}});
 teilauto.net,cityflitzer.de#%#(function() { try { if ("undefined" != typeof localStorage) { localStorage.setItem("tatracking", "on") } } catch (ex) {} })();
 teknikhukuk.com,gizibu.com,slidety.com##.g1-slideup-newsletter
+teknoblog.com#$#.wpb_wrapper { min-height: unset!important; }
+teknoblog.com#?#.wpb_wrapper > div.tdm_block:has(> div.td-block-width > div.td-block-row > div.tdm-col > div.tds-button > a[href="https://goo.gl/TKXKuq"])
+teknoblog.com#?#a[href^="https://news.google.com/publications/"] > img
 teknoseyir.com#$#.modal-backdrop { display: none!important; }
 teknoseyir.com#$#body { overflow: visible!important; }
 teknowebim.com,op.gg,cameralabs.org##a[href^="https://play.google.com/store/apps/details?id="]
@@ -15362,7 +15371,7 @@ volia.com#$#div[class="product.component__wrapperWithApp"] { margin-top: 0px!imp
 volksbank-thueringen-mitte.de#@#.cookie-consent:not(body):not(html)
 volksbankeg.de#@#.cookie-consent:not(body):not(html)
 volksfreund.de##.park-floating-bell
-volksfreund.de,rp-online.de#%#AG_onLoad(function(){if(!document.cookie.includes("eupubconsent-v2")){var a=new MutationObserver(function(){var b=document.querySelector(".park-consent-layer__content-wrapper #consentAccept"),c;b&&"object"===typeof Optanon&&"function"===typeof(null==(c=Optanon)?void 0:c.AllowAll)&&(a.disconnect(),b.click())});a.observe(document,{childList:!0,subtree:!0});setTimeout(function(){a.disconnect()},1E4)}});
+volksfreund.de#%#AG_onLoad(function(){if(!document.cookie.includes("eupubconsent-v2")){var a=new MutationObserver(function(){var b=document.querySelector(".park-consent-layer__content-wrapper #consentAccept"),c;b&&"object"===typeof Optanon&&"function"===typeof(null==(c=Optanon)?void 0:c.AllowAll)&&(a.disconnect(),b.click())});a.observe(document,{childList:!0,subtree:!0});setTimeout(function(){a.disconnect()},1E4)}});
 volkskrant.nl#%#AG_onLoad(function() { setTimeout(function() {if(document.getElementsByClassName("modal-overlay")[0].isvisible = true){document.getElementsByClassName("button button--accept")[0].click();}}, 300); });
 volkskrant.nl,trouw.nl#%#AG_onLoad(function() { if (document.cookie.indexOf('nl_cookiewall_version') == -1) { document.cookie = "nl_cookiewall_version=1"; location.reload(); } });
 volkswagen-karriere.de,vw.com,vw.com.hk,vw.com.mx,vw.ca,volkswagen.*###cookiemgmt
@@ -15690,6 +15699,8 @@ which.co.uk##div[data-which-id="eprivacy-banner"]
 whisky.fr###popin-optin
 whisky.fr##.footer-sticky
 whitebit.com###__layout > div > main + div.ui-kit.is-dark
+whoer.net##.popup-counter-deal__wrapper
+whoer.net##.sticky-action
 wholicab.com#@##adContent
 widerspruch.org#@##cookie-law-info-bar
 wieland-electric.com##wieland-cookie-banner

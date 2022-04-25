@@ -156,7 +156,7 @@
 ! Chat widget on the main page
 ! Chat widgets
 ! Check, if these sites work fine with scriptlet: mail.rambler.ru, kino.rambler.ru, weather.rambler.ru, comments.rambler.ru, kassa.rambler.ru, horoscopes.rambler.ru
-! Checksum: X3fxZmAf6QqsgnrRvcbeHw
+! Checksum: PSV9j4sOBJ/IRv7BuSLerQ
 ! Chrome banner in MS Edge
 ! Chrome browser suggest
 ! Climate info below articles
@@ -312,7 +312,7 @@
 ! This section contains the list of rules that block website push notifications ("subscribe to the news" kind of notifications).
 ! This section contains the list of rules that fix incorrect blocking of cookie notifications by generic rules. Rules should be domain-specific.
 ! This section contains the list of the rules against annoyances that are not falling under existing categories. Rules should be domain-specific.
-! TimeUpdated: 2022-04-25T11:30:35+00:00
+! TimeUpdated: 2022-04-25T13:30:33+00:00
 ! Title: AdGuard Annoyances filter
 ! To be discussed
 ! Turkish digital magazines
@@ -320,7 +320,7 @@
 ! Unhide for Android CB if top padding cannot be removed
 ! Using just "._gdpr-notify-header" will cause that part of the content will be hidden on a mobile website
 ! Vacancy widgets
-! Version: 2.1.16.94
+! Version: 2.1.16.97
 ! Video recommendations
 ! Voting widget
 ! Website is broken if "display: none" is used - ##div[class*="ConsentBannerstyles_"]
@@ -1094,6 +1094,7 @@
 ! https://github.com/AdguardTeam/AdguardFilters/issues/116391
 ! https://github.com/AdguardTeam/AdguardFilters/issues/11642
 ! https://github.com/AdguardTeam/AdguardFilters/issues/116476
+! https://github.com/AdguardTeam/AdguardFilters/issues/116495
 ! https://github.com/AdguardTeam/AdguardFilters/issues/11757
 ! https://github.com/AdguardTeam/AdguardFilters/issues/11944
 ! https://github.com/AdguardTeam/AdguardFilters/issues/11972
@@ -10151,6 +10152,7 @@ bmi-online.pl##.cookies__info
 bmu.edu.in##.form-sec_popup
 bmu.edu.in##.form_common
 bmu.edu.in##.sticky > li:has(> p.subs)
+bmuv.de,umwelt-im-unterricht.de,bmu.de###bmu-cookie-disclaimer
 bmvg.de,bundeswehr.de##.c-privacy-protection-banner
 bmw-connecteddrive.de##cookie-drawer-container
 bmw.com.tr##.ds2-cookiedisclaimer
@@ -11509,6 +11511,7 @@ coloros.com###use_cookies
 coloros.com##.privacyTips
 colta.ru##.main_aside > p[style^="background-color:"]
 colta.ru#?##right > p:contains(/Подписывайтесь|Рассылка/)
+columbia.com.tr##.MuiCollapse-entered
 columbia.edu###cu-privacy-notice
 columbiaspectator.com##.pb-f-article-specdaily-side
 com-magazin.de##w-div[role$="dialog"]
@@ -15594,6 +15597,7 @@ genickbruch.com##body > div[align="center"] > div[style^="width:99%;"][style*="p
 genius.com##.android_banner
 genius.com##.apple_music_player_container
 genius.com##apple-music-player
+genius.com##div[class^="AppleMusicPlayer__"]
 geniusinteractive.org,jardima.com,farklifarkli.com##.g1-slideup-newsletter
 geniusinteractive.org,olumhaberi.com##.g1-newsletter
 geniuskitchen.com##.gk-promo-card
@@ -20420,8 +20424,11 @@ marca.com##.suscripciones-noticias
 marcandangel.com###ck_modal
 marcandangel.com###ck_overlay
 marcandangel.com###custom_html-8
+marianne.net###modal-newsletter
+marianne.net##.overlay--cover-all
 marianne.net##.tc-subscription-bar
 marianne.net#%#//scriptlet('set-cookie', 'mrn_nl_abo', '1')
+marianne.net,programme-television.org###tc-newsletter-banner
 marieclaire.ru##.article-subscribe
 marinetraffic.com##.top-banner
 marinetraffic.com##div.hidden-print
@@ -24537,7 +24544,6 @@ programiz.com##.cover__form
 programiz.com##.get-app-link
 programiz.com,thecap.com.br##.mauticform_wrapper
 programme-television.org###subcribeNewsletter
-programme-television.org###tc-newsletter-banner
 programme-tv.net,capital.fr,geo.fr##.pmc-newsletter
 programmist1s.ru###profbuh_overlay
 programmist1s.ru##.profbuh_register_wrap
@@ -25601,6 +25607,7 @@ royalpets.com.br##.footer__terms
 rozetka.com.ua##.lang-switcher-popup
 rp-online.de##a[href^="/whatsapp"]
 rp-online.de##a[href^="/whatsapp"] + p
+rp-online.de#%#(function(){if(!document.cookie.includes("eupubconsent-v2")){var c=new MutationObserver(function(){var a=document.querySelector(".park-consent-layer__content-wrapper #consentAccept");a&&"function"==typeof acceptAndContinue&&(c.disconnect(),a.click())});c.observe(document,{childList:!0,subtree:!0}),setTimeout(function(){c.disconnect()},1E4)}})();
 rp-online.de#?#.park-article-content > .park-embed-html[-ext-has='a[href*="whatsapp"] > img']
 rp.pl###sidebar-tv.-invisible .linear-tv__iframe[style$="max-width: 200px;"]
 rp.pl###subscription-bar-top
@@ -28187,6 +28194,9 @@ teknikhukuk.com,gizibu.com,slidety.com##.g1-slideup-newsletter
 teknikhukuk.com,mbk-news.appspot.com##.g1-newsletter
 teknobaze.com##.penci-rlt-popup
 teknoblog.com##a[href="https://www.patreon.com/teknoblog"] > img[src$="/teknoblog-patreon-300-250@2x.jpg"]
+teknoblog.com#$#.wpb_wrapper { min-height: unset!important; }
+teknoblog.com#?#.wpb_wrapper > div.tdm_block:has(> div.td-block-width > div.td-block-row > div.tdm-col > div.tds-button > a[href="https://goo.gl/TKXKuq"])
+teknoblog.com#?#a[href^="https://news.google.com/publications/"] > img
 teknolojihabercim.com##div[style^="width: auto; height: auto; padding:10px;"]
 teknosa.com###cookiescript_injectedone
 teknoseyir.com#$#.modal-backdrop { display: none!important; }
@@ -29866,7 +29876,6 @@ ulule.com#?##react-ulule-header > div[class^="sc-"]:has( > p > span > a[href="ht
 ulyanovskcity.ru###popup_contact
 umcutrecht.nl#%#//scriptlet('set-local-storage-item', 'consent', '1')
 umcutrecht.nl#@##cookieConsent
-umwelt-im-unterricht.de,bmu.de###bmu-cookie-disclaimer
 unacademy.com##.MuiTooltip-popper
 unacademy.com##div[class^="layout__TTUWidget-"]
 unbound.com###js-cookies
@@ -30566,7 +30575,7 @@ volia.com#$#div[class="product.component__wrapperWithApp"] { margin-top: 0px!imp
 volksbank-thueringen-mitte.de#@#.cookie-consent:not(body):not(html)
 volksbankeg.de#@#.cookie-consent:not(body):not(html)
 volksfreund.de##.park-floating-bell
-volksfreund.de,rp-online.de#%#AG_onLoad(function(){if(!document.cookie.includes("eupubconsent-v2")){var a=new MutationObserver(function(){var b=document.querySelector(".park-consent-layer__content-wrapper #consentAccept"),c;b&&"object"===typeof Optanon&&"function"===typeof(null==(c=Optanon)?void 0:c.AllowAll)&&(a.disconnect(),b.click())});a.observe(document,{childList:!0,subtree:!0});setTimeout(function(){a.disconnect()},1E4)}});
+volksfreund.de#%#AG_onLoad(function(){if(!document.cookie.includes("eupubconsent-v2")){var a=new MutationObserver(function(){var b=document.querySelector(".park-consent-layer__content-wrapper #consentAccept"),c;b&&"object"===typeof Optanon&&"function"===typeof(null==(c=Optanon)?void 0:c.AllowAll)&&(a.disconnect(),b.click())});a.observe(document,{childList:!0,subtree:!0});setTimeout(function(){a.disconnect()},1E4)}});
 volkskrant.nl#%#AG_onLoad(function() { setTimeout(function() {if(document.getElementsByClassName("modal-overlay")[0].isvisible = true){document.getElementsByClassName("button button--accept")[0].click();}}, 300); });
 volkskrant.nl,trouw.nl#%#AG_onLoad(function() { if (document.cookie.indexOf('nl_cookiewall_version') == -1) { document.cookie = "nl_cookiewall_version=1"; location.reload(); } });
 volkswagen-classic-parts.de##.dataProtection
@@ -31114,6 +31123,8 @@ whispersinthecorridors.com#$#body { overflow: visible!important; }
 whitebit.com###__layout > div > main + div.ui-kit.is-dark
 whittard.co.uk###cookie-policy-dialog
 whoer.net##.app-popup
+whoer.net##.popup-counter-deal__wrapper
+whoer.net##.sticky-action
 wholicab.com#@##adContent
 whowhatwear.co.uk###gdpr-consent-form
 whowhatwear.co.uk##.subscribe_tag
