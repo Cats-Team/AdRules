@@ -56,7 +56,7 @@
 ! Based on AG_defineProperty (https://github.com/AdguardTeam/deep-override)
 ! Blocked icons for social logging
 ! By advanced we mean the following rule types: CSS, scriptlets, HTML filtering (`$$` marker), JS.
-! Checksum: L35zlkYl4/l/XJWol1oAIA
+! Checksum: F0Nekire5iWgWAt5rVpRpQ
 ! Common names
 ! Description: Filter for social media widgets such as 'Like' and 'Share' buttons and more.
 ! Do not block facebook embedded video
@@ -99,11 +99,11 @@
 ! This section contains the list of social blocking rules that fall under "advanced" category.
 ! This section contains the list of the rules for common trackers/buttons.
 ! This section contains the list of the rules that block in page social popups.
-! TimeUpdated: 2022-04-22T20:31:22+00:00
+! TimeUpdated: 2022-04-25T10:31:28+00:00
 ! Title: AdGuard Social Media filter
 ! Unblock minificated scripts library
 ! Unhide links to a websites in different languages
-! Version: 2.0.60.26
+! Version: 2.0.60.28
 ! Yandex.Balaboba
 ! Yandex.Disk
 ! Yandex.Forms
@@ -3304,6 +3304,7 @@ desired.de##.socials-block > a[class^="fa-btn-"]
 deskmodder.de##.handschriftzeile > .arteilen_ > .arteilen
 deskmodder.de##.handschriftzeile > .arteilen_ > .arteilen + .pfeil
 desktopsolution.org###wp_social_popup_and_get_traffic
+desktopsolution.org##.pum
 desmoinesregister.com##.asset-inline-share-tools
 desmoinesregister.com##.asset-inline-share-tools-bottom
 desmoinesregister.com##.site-nav-social-item
@@ -7012,6 +7013,7 @@ nepisirsem.com##a[class^="a2a_button_"] > .sharediv
 neredekal.com##.share-trigger
 nerolac.com#?#.blog-details-social > ul.clearfix > li:not(:has(> a.js-bookmark))
 nesine.com##.share-video
+netflixcehennemi.com,twicomi.com,diziking.vip,dizipal.pro,cnbctv18.com,ksl.com##.social
 netgazete.com##.sm-social
 nethaber.com.tr##.shrrt
 nethistory.su###memoize_popup
@@ -9914,7 +9916,6 @@ tweaktown.com##div[class^="sharedesktop"]
 twgreatdaily.com#$#.body.modal-open { overflow: visible!important; }
 twgreatdaily.com#$#.modal-backdrop.fade { display: none!important; }
 twgreatdaily.com#$#div[aria-labelledby="mySmallModalLabel"] { display: none!important; }
-twicomi.com,diziking.vip,dizipal.pro,cnbctv18.com,ksl.com##.social
 twicomi.com,gap.co.jp,beautyhack.ru,rlsnet.ru,culture.pl,transfermarkt.de,pclab.pl,yeniakit.com.tr,calciomercato.it,ikinciyeni.com,outlookindia.com,dailymail.co.uk##.social-links
 twinfinite.net###mvp-nav-soc-bar
 twisted-wonderland.aniplex.co.jp,magicalmirai.com##.share_title
@@ -10131,6 +10132,7 @@ vervemagazine.in##.meta--footer
 vesma.today,rachidscience.com,gazetevatan.com##.share2
 vesti-ua.net###fb-share-button
 vesti.ua###googleNewsButtonClickForMaks
+vesti.ua##.singleSocSetiBlock
 vestifinance.ru#?#div:has(> div[id^="vk_groups"])
 vestikavkaza.ru##.si
 vestikavkaza.ru##.wraptip
@@ -11156,6 +11158,7 @@ zvuki.ru##iframe[title^="fb:like"]
 ||x.pluso.ru^$third-party
 ||xcom.me/wp-content/plugins/popup-maker/
 ||xing-share.com^$third-party
+||xn--r1a.website^$third-party
 ||yandex.st/share/share.js$domain=~24auto.ru|~calculatewater.ru|~novoeradio.by|~pikucha.ru|~realty.dmir.ru|~transport.mos.ru|~yandex.com|~yandex.ru|~yandex.ua
 ||yandex.st/share/static/b-share-icon.png
 ||yastatic.net/*/share.js$third-party,domain=~globus.ru|~readovka.news|~possiblegroup.ru|~prcl.ru|~kinopoisk.ru|~alexey-osipov.ru|~avtodispetcher.ru|~fanserials.tv|~yandex.by|~yandex.kz|~yandex.ru|~yandex.ua|~gorod.gov.spb.ru|~sostav.ru|~recyclemap.ru|~106i9fm.ru|~radiorecord.ru|~radioc.ru|~100i6fm.ru|~99-1.ru|~alfafm.ru|~echoekb.ru|~echovolgograd.ru|~jamfm.ru|~olimpfm.ru|~radio-megapolis.ru|~sputnik107.ru|~sputnikfm.ru|~globalaffairs.ru
