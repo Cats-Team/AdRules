@@ -37,7 +37,7 @@
 ! Bad: ||legitwebsite.com^$third-party (should be in adservers.txt)
 ! Based on AG_defineProperty (https://github.com/AdguardTeam/deep-override)
 ! By advanced we mean the following rule types: CSS, scriptlets, HTML filtering (`$$` marker), JS.
-! Checksum: 84oYskverELsVp5x3VpI0w
+! Checksum: c5VcgHuh3wRHG98NnJvSVQ
 ! Description: EasyList China + AdGuard Chinese filter. Filter list that specifically removes ads on websites in Chinese language.
 ! Examples:
 ! Examples: AG_removeCookie('/REGEX/') or AG_removeCookie('part of the cookie name')
@@ -79,9 +79,9 @@
 ! This section contains the list of rules that fix incorrect blocking. Rules must be domain-specific.
 ! This section contains the list of the content replacement rules that block ads. Rules must be domain-specific.
 ! This section contains the list of third-party advertising networks domains.
-! TimeUpdated: 2022-04-25T00:30:53+00:00
+! TimeUpdated: 2022-04-25T07:30:54+00:00
 ! Title: AdGuard Chinese filter
-! Version: 2.0.53.62
+! Version: 2.0.53.65
 ! cocomanga.com,cocomanga.com CNAME breakage
 ! do not hide popup, because product selector will not work
 ! e66mobi ads
@@ -1710,6 +1710,7 @@ $websocket,domain=5nj.com|cechi8.com
 .tw/s.php?id=$script,third-party
 .us/js/ads/
 .vip/ads/
+.vip/gg/
 .vip/js/ads/
 .vip/style/vue.js?v=
 .vip/vs.php?id=$script,third-party
@@ -17407,6 +17408,7 @@ zznews.cn##.ad:not([style])
 ||jinhaitun888.xyz^
 ||jinhonghao.cn^
 ||jinhua.com.cn/ad_pic/
+||jinkege.com^
 ||jinks.top^
 ||jinlianchengwhcm.cn^
 ||jinlubaojie.cn^
@@ -18468,6 +18470,7 @@ zznews.cn##.ad:not([style])
 ||lpjgr.top^
 ||lppwnue.cn^
 ||lpsgc.cn^
+||lpw80d.online^
 ||lpwx.xyz^
 ||lqjince.com^
 ||lqmohun.com^$third-party
@@ -19947,6 +19950,7 @@ zznews.cn##.ad:not([style])
 ||qdwght.com^
 ||qdxrhg.com^$third-party
 ||qdyazc.com^
+||qdydwlkj3.top^
 ||qdzyspjx.com^
 ||qewoysy.cn^
 ||qfcdgy.cn^
@@ -20319,6 +20323,7 @@ zznews.cn##.ad:not([style])
 ||redshu.com/js/www/jquerygg.js
 ||reendian.cn^
 ||rekanw.com^$third-party
+||relating.wang^
 ||reliancevalve.com^
 ||remehealth.net^
 ||remehealth.net^$third-party

@@ -61,7 +61,7 @@
 ! Booking app
 ! Breaks Yahoo Finance app on iOS https://github.com/AdguardTeam/AdguardFilters/issues/63354
 ! By advanced we mean the following rule types: CSS, scriptlets, HTML filtering (`$$` marker), JS.
-! Checksum: 9AujSh8O/t+L/lNqXbaW9A
+! Checksum: 4mJbvBDHZ2tyHtg2YgOWuQ
 ! Common names
 ! Context ads(must be excluded in useful ads)
 ! Criteo mobile ads
@@ -152,10 +152,10 @@
 ! This section contains the list of the base rules that block ads in mobile apps. Rules should be specific.
 ! This section contains the list of the content replacement rules that block ads on mobile devices. Rules must be domain-specific.
 ! This section contains the list of third-party advertising networks domains for mobile devices.
-! TimeUpdated: 2022-04-24T17:30:18+00:00
+! TimeUpdated: 2022-04-25T06:30:23+00:00
 ! Tinder (analytics)
 ! Title: AdGuard Mobile Ads filter
-! Version: 2.0.28.91
+! Version: 2.0.28.92
 ! Viber
 ! Viber[App] - the problem with the stickers store
 ! WPS Office
@@ -1991,8 +1991,8 @@ evrimagaci.org##.eaads-mobile
 express.co.uk###mobile_floating_test
 express.co.uk##.ampad
 expressen.se##body div.bam-ad-slot[data-slot-name]
-extratipp.com##.id-Story > .id-RatioPlaceholder[style*="calc"]
 extratipp.com##.id-StoryElement-adWrapper
+extratipp.com,fr.de,kreiszeitung.de,hna.de,tz.de,merkur.de##.wv_story_el_insertedAd
 extremetube.com##.bottomAdWrapper
 extremetube.com##.tj-add-text[style="color:#FFF; text-align:center;"]
 ezgif.com###hdr
@@ -2549,7 +2549,6 @@ kp.ru##.jebTor
 kp.ru##div[class^="styled__LentaWrapper-"]
 kp.ru$$amp-fx-flying-carpet
 krayot.com###front_trandiv
-kreiszeitung.de,hna.de,tz.de,merkur.de##.wv_story_el_insertedAd
 kt.wowkorea.jp##div[style="padding:30px 0px; text-align:center;"]
 kuchi-lab.com###common-cta-sp
 kupidonia.ru###mobile-offer-bottom

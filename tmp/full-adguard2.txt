@@ -86,7 +86,7 @@
 ! Canvas LMS tracking
 ! Changing theme button is broken when gtm.js is blocked
 ! Chartbeat - https://help.chartbeat.com/hc/en-us/articles/360044659014-Chartbeat-Cookies
-! Checksum: cbgX9gjTy63O49JqeIOT+A
+! Checksum: IqxG4tttSNpxM76UgVbYaA
 ! Chinese
 ! Cirrus Inisght
 ! Clickaine : api.clickaine.com disguised trackers
@@ -392,7 +392,7 @@
 ! This section contains the list of tracking networks domains, which are hosted on non advertising sites as subdomains.
 ! TikTok
 ! Tiktok app
-! TimeUpdated: 2022-04-24T17:02:59+00:00
+! TimeUpdated: 2022-04-25T07:31:17+00:00
 ! TinyLetter
 ! Title: AdGuard Tracking Protection filter
 ! ToutApp
@@ -453,7 +453,7 @@
 ! Used to track visitors on multiple websites, in order to present relevant advertisement based on the visitor's preferences.
 ! Used to uniquely identify a visit by you to this website
 ! VK Pixel tracking
-! Version: 2.0.38.68
+! Version: 2.0.38.70
 ! Visitor ID to correlate sessions
 ! Visual Website Optimizer
 ! Vodafone app - error when viewing detail
@@ -2100,7 +2100,7 @@ $cookie=yTrackVisit
 /\.com\/[-_0-9a-zA-Z]{4,}\/[-\/_0-9a-zA-Z]{30,}$/$script,~third-party,domain=gu-global.com|uniqlo.com
 /\/(public|resources|static|assets)\/([a-f0-9]){28,31}$/$script,xmlhttprequest,~third-party
 /\/js\/[a-z]{3}\d\.js$/$script,~third-party,domain=eegg.fun
-/^https:\/\/cdn\.jsdelivr\.net\/npm\/([a-z]|-){4,22}@latest\/dist\/script\.min\.js$/$domain=tgd.kr|loawa.com|ygosu.com|inven.co.kr|ppss.kr|dailymagazine.co.kr|dailian.co.kr|socialvalue.kr|usjournal.kr|basketkorea.com|jumpball.co.kr|joynews24.com|inews24.com|hobbyen.co.kr|thespike.co.kr|siminilbo.co.kr|mdtoday.co.kr|clien.net|ujeil.com|starnnews.com|sportsw.kr|enewstoday.co.kr|readersnews.com
+/^https:\/\/cdn\.jsdelivr\.net\/npm\/([a-z]|-){4,22}@latest\/dist\/script\.min\.js$/$domain=tgd.kr|loawa.com|ygosu.com|inven.co.kr|ppss.kr|dailymagazine.co.kr|dailian.co.kr|socialvalue.kr|usjournal.kr|basketkorea.com|jumpball.co.kr|joynews24.com|inews24.com|hobbyen.co.kr|thespike.co.kr|siminilbo.co.kr|mdtoday.co.kr|clien.net|ujeil.com|starnnews.com|sportsw.kr|enewstoday.co.kr|readersnews.com|algumon.com
 /_CPiX/art
 /__Analytics-Start?url=
 /__ssobj/core.js
@@ -2218,6 +2218,8 @@ $cookie=yTrackVisit
 /counter?$domain=amazon.com|amazon.de|amazon.it|amazon.com.tr
 /counter?id=
 /cp2.gif?
+/css/analytics.js$domain=assia.*|assia4.com
+/css/stat.js$domain=assia.*|assia4.com
 /diffuser.js
 /dooanalytics/*$script
 /duracelltomi-google-tag-manager/*$script
@@ -4416,7 +4418,7 @@ nnmclub.ro,nnm-club.t0r.xyz,nnm-club-me.appspot.com,nnm-club.lib,nnm-club.me,nnm
 notonthehighstreet.com#%#//scriptlet('set-constant', 'window.DD_RUM.init', 'noopFunc')
 novate.ru#?##right > div.bordered:has(> script:contains(relap))
 novate.ru#?##right > h2:contains(Рекомендуем)
-ntp.msn.com#%#AG_defineProperty("navigator.getBattery",{value:function(){return Promise.resolve()}});
+ntp.msn.com#%#AG_defineProperty("navigator.getBattery",{value:function(){return Promise.resolve({addEventListener:EventTarget.prototype.addEventListener.bind(window),removeEventListener:EventTarget.prototype.removeEventListener.bind(window),dispatchEvent:EventTarget.prototype.dispatchEvent.bind(window),charging:!0})}});
 ntp.msn.com#@%#navigator.getBattery = undefined;
 nytimes.com#%#//scriptlet("set-constant", "Navigator.prototype.joinParakeetInterestGroup", "noopFunc")
 oceans-nadia.com##.gtm-bnr-rensai
@@ -7108,8 +7110,6 @@ znak.com##.relap
 ||assets1.vanz.vero.co.nz^
 ||assets1.vero.co.nz^
 ||assets1.vero.com.au^
-||assia.tv/css/analytics.js
-||assia.tv/css/stat.js
 ||assiatv.com/css/stat.js
 ||assistancetrack.changehealthcare.com^
 ||association.locktonaffinity.net^
@@ -18480,6 +18480,7 @@ znak.com##.relap
 ||repeatsweater.com^$third-party
 ||repixel.co^$third-party
 ||replaceroute.com^$third-party
+||repo.adbc.io:8081/repository/QTracker/
 ||report*.appmetrica.webvisor.com^
 ||report-ps.meettech.net^
 ||report.*.qq.com^
