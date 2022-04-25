@@ -162,7 +162,7 @@ wait
 # Pre Fix rules
 echo '处理规则中...'
 cat clash* \
- | grep -F 'DOMAIN' | sed 's/.*DOMAIN.*\,//g' | sed 's/\+\./\|/g' |sed "s/^/|&/g" |sed "s/$/&^/g"> dns9999.txt 
+ | grep -F 'DOMAIN' | sed 's/.*DOMAIN.*\,//g' |sed "s/^/||&/g" |sed "s/$/&^/g"> dns9999.txt 
 
 
 cat hosts*.txt | sort -n| grep -v -E "^((#.*)|(\s*))$" \
