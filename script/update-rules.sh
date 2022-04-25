@@ -163,7 +163,7 @@ wait
 echo '处理规则中...'
 cat clash* \
  | grep -F 'DOMAIN' | sed 's/.*DOMAIN.*\,//g' |sed "s/^/||&/g" |sed "s/$/&^/g"> dns9999.txt 
-
+cat dns9999.txt| sed 's/\|\|//g' | sed 's/\^\,//g' >hosts9999.txt
 
 cat hosts*.txt | sort -n| grep -v -E "^((#.*)|(\s*))$" \
  | grep -v -E "^[0-9f\.:]+\s+(ip6\-)|(localhost|local|loopback)$" \
