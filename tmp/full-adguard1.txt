@@ -61,7 +61,7 @@
 ! Booking app
 ! Breaks Yahoo Finance app on iOS https://github.com/AdguardTeam/AdguardFilters/issues/63354
 ! By advanced we mean the following rule types: CSS, scriptlets, HTML filtering (`$$` marker), JS.
-! Checksum: ybg7gGLtLRfxOQpl0B8TjQ
+! Checksum: 9AujSh8O/t+L/lNqXbaW9A
 ! Common names
 ! Context ads(must be excluded in useful ads)
 ! Criteo mobile ads
@@ -152,10 +152,10 @@
 ! This section contains the list of the base rules that block ads in mobile apps. Rules should be specific.
 ! This section contains the list of the content replacement rules that block ads on mobile devices. Rules must be domain-specific.
 ! This section contains the list of third-party advertising networks domains for mobile devices.
-! TimeUpdated: 2022-04-23T18:30:17+00:00
+! TimeUpdated: 2022-04-24T17:30:18+00:00
 ! Tinder (analytics)
 ! Title: AdGuard Mobile Ads filter
-! Version: 2.0.28.90
+! Version: 2.0.28.91
 ! Viber
 ! Viber[App] - the problem with the stickers store
 ! WPS Office
@@ -3890,6 +3890,7 @@ skysports.com##div[data-format="floated-mpu"]
 slovoidilo.ua#%#//scriptlet('remove-class', 'branding', 'body')
 smart-flash.jp##iframe[src^="https://smart-flash.jp/wp-content/themes/original/embed/FoneH"]
 smt.docomo.ne.jp###WrpAd
+soccer.yahoo.co.jp##.sc-modAd
 softportal.com##.cardPageDescMain > div[style*="float:left;"][style*="max-width:100%;"]
 solarmoviesc.org##.content > center > a > img
 sondakika.com##.add_masthead
@@ -3945,6 +3946,8 @@ sports-ndtv-com.cdn.ampproject.org,www-ndtv-com.cdn.ampproject.org##.add-section
 sports.ndtv.com##.add_top-wrp
 sports.ru##iframe[src^="http://www.sports.ru/desktop/special"]
 sports.ru,manager-magazin.de,amp.macwelt.de,amp.fitforfun.de,tomsguide.com,nordbayern.de,dallasnews.com,kansascity.com,futurezone.de,fr.de,spox.com,ran.de,stern.de,ruhr24.de,golem.de,berliner-zeitung.de,news.de,abendzeitung-muenchen.de,inside-digital.de,boerse.de,emtb-news.de,caravaning.de,areadvd.de,familie.de,derwesten.de,finanzen.net,o2.pl,onet.pl,whathifi.com,amp.n-tv.de,dni.ru,independent.co.uk,komputerswiat.pl,dobreprogramy.pl,amp.pcwelt.de,tomshardware.com,techbook.de,forbes.com,auto-swiat.pl,dialog.ua,mobile.reuters.com,spiegel.de,amp.welt.de,forum.xda-developers.com,sueddeutsche.de,amp.usatoday.com,m.gadgets.ndtv.com##amp-ad
+sports.yahoo.co.jp###ad-smon
+sports.yahoo.co.jp###ydn-nm
 sportskeeda.com##.ad-declare-explicit-parallax
 sportskeeda.com##.mobile-ad-negative-space
 sportskeeda.com##.sticky-container
