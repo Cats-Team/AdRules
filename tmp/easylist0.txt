@@ -41,10 +41,11 @@
 ! Temp fix for Facebook - https://github.com/DandelionSprout/adfilt/issues/473
 ! This extra parameter appears when opening news from widgets in Windows 11.
 ! Title: ➗ Actually Legitimate URL Shortener Tool
-! Version: 23April2022v1
+! Version: 26April2022v2
 ! http://blog.sina.com.cn/s/blog_635c86d50102zvmo.html?tj=1 (4/1/2022)
 ! http://edu.sina.com.cn/y/bbs/2005/1020/1017979.html?presentid=webnews (14/02/2022)
 ! http://m.aliexpress.com/item/32475192128.html?aff_click_id=2c7754c8f1174236b64f3b364bfd24a3-1470106049987-05070-eub6yrrBy
+! http://no.grupper.hotels.com/GroupForm.cfm?locale=no_NO&intlid=OTHER+%3A%3A+header_main_section&kw=header
 ! http://pixel.everesttech.net/1325/cq?ev_sid=3&ev_ln%E2%80%8B=bankrate+com&ev_crx=277142460%E2%80%8B08&ev_mt=p&ev_n=g&ev_ltx=&ev_pl=&ev_pos=1t1&ev_dvc=c&ev_dvm=&url=http://www.example.com
 ! http://tubepalm.com/es/videos/swing-out-sister-sub-esp.html?asgtbndr=1
 ! http://usfinf.net/-89906OKEM/1NV6?rndad=3155871133-1637879802
@@ -130,6 +131,7 @@
 ! https://es.aliexpress.com/item/4000672272353.html?pvid=c4cdc770-f05a-4b7b-8a50-d8b81efff6c9&_t=gps-id:pcDetailBottomMoreThisSeller,scm-url:1007.13339.169870.0,pvid:c4cdc770-f05a-4b7b-8a50-d8b81efff6c9,tpp_buckets:668%230%23131923%230_668%23808%234094%23200_668%23888%233325%231_668%232846%238113%23646_668%232717%237558%23188_668%231000022185%231000066059%230_668%233468%2315617%23897
 ! https://es.aliexpress.com/item/4001349152860.html?gps-id=5547572&scm_id=1007.19201.130907.0&scm=1007.19201.130907.0&scm-url=1007.19201.130907.0
 ! https://fernerjacobsen.no/?epi=STS-SHP--FernerJacobsen-Logo%7Cxid%3Afr1624121412114eah
+! https://fi.hotels.com/ho134443/?wapa6=&sub_publisher=5350479&sub_site=100415378&sub_ad=13951578
 ! https://finance.sina.com.cn/stock/?sudaref=graph.qq.com&display=0&retcode=0 (03/02/2022)
 ! https://flipsy.com/sell/iPhone-8?awid=04580
 ! https://fortune.com/2021/03/11/amazon-fresh-retail-stores-vacant-plan/?queryly=related_article
@@ -592,6 +594,7 @@
 ! https://www.ebay.com/sch/i.html?_from=R40&_nkw=Born+Pretty&_sacat=0&_pgn=5&rt=nc (27/11/2020)
 ! https://www.ebay.com/sch/i.html?_from=R40&_nkw=Ugreen&_blrs=spell_auto_correct (27/11/2020)
 ! https://www.ebay.es/itm/313545659728?rpp_cid=61a98c608d080d0465e9035f&siteid=186
+! https://www.ebookers.com/lp/deals/sun-and-beach?rfrr=editorial.Sun_&%20beach.click
 ! https://www.electrodepot.fr/ecouteurs-apple-airpods-2-boitier-de-charge.html?LGWCODE=17449%3B96175%3B2865 (28/11/2020)
 ! https://www.elfcosmetics.com/?rmtsref=LinkShare
 ! https://www.elgiganten.dk/product/lyd-hi-fi/hovedtelefoner/WH1000XM3B/sony-tradlose-around-ear-hovedtelefoner-wh-1000xm3-sort?scid=Pricecomparison8084162610 (27/11/2020)
@@ -1019,6 +1022,7 @@ $removeparam=/^wickedplacement=/i
 $removeparam=/^wickedsource=/i
 $removeparam=/^wtm_/
 $removeparam=/^zero_/,domain=facebook.*|facebookwkhpilnemxj7asaniu7vnjjbiltxjqhye3mhbshg7kx5tfyd.onion|messenger.com
+$removeparam=/affcid/i
 $removeparam=/traffic_source=Connatix/i
 $removeparam=2p_affiliate_id
 $removeparam=2p_click_token
@@ -1063,7 +1067,7 @@ $removeparam=MID
 $removeparam=MT_ID,domain=ebay.*
 $removeparam=Medium,domain=facebook.com|facebookwkhpilnemxj7asaniu7vnjjbiltxjqhye3mhbshg7kx5tfyd.onion|messenger.com
 $removeparam=Osocial
-$removeparam=PID,domain=1800getlens.com|ae.com|allmodern.com|applevacations.com|ashford.com|autoanything.com|autodesk.com|bedbathandbeyond.com|booksamillion.com|boscovs.com|buschgardens.com|cheapcaribbean.com|chicos.com|choicehotels.com|ecampus.com|expedia.com|express.com|factoryoutletstore.com|farmandfleet.com|hammacher.com|intuit.com|jockey.com|kennethcole.com|landsend.com|lenovo.com|lens.com|mcafee.com|monoprice.com|overstock.com|perfumania.com|samsung.com|sears.com|sierra.com|soma.com|staples.com|teleflora.com|ulta.com|verizon.com|virginatlantic.com|vistaprint.com|walgreens.com|wayfair.com|whitehouseblackmarket.com|wwe.com|yahoo.com|zchocolat.com|hawaiianairlines.com|dermstore.com
+$removeparam=PID,domain=1800getlens.com|ae.com|allmodern.com|applevacations.com|ashford.com|autoanything.com|autodesk.com|bedbathandbeyond.com|booksamillion.com|boscovs.com|buschgardens.com|cheapcaribbean.com|chicos.com|choicehotels.com|ecampus.com|expedia.com|express.com|factoryoutletstore.com|farmandfleet.com|hammacher.com|intuit.com|jockey.com|kennethcole.com|landsend.com|lenovo.com|lens.com|mcafee.com|overstock.com|perfumania.com|samsung.com|sears.com|sierra.com|soma.com|staples.com|teleflora.com|ulta.com|verizon.com|virginatlantic.com|vistaprint.com|walgreens.com|wayfair.com|whitehouseblackmarket.com|wwe.com|yahoo.com|zchocolat.com|hawaiianairlines.com|dermstore.com
 $removeparam=PostType,domain=gamespot.com|cnet.*
 $removeparam=PublisherSID,domain=gucci.com
 $removeparam=Publisher_Name,domain=shudders.com|virginatlantic.com
@@ -1201,7 +1205,6 @@ $removeparam=aff_network
 $removeparam=aff_platform
 $removeparam=aff_trace_key
 $removeparam=affc
-$removeparam=affcid
 $removeparam=affcode
 $removeparam=affi_id
 $removeparam=affil
@@ -1552,6 +1555,7 @@ $removeparam=int_medium
 $removeparam=int_source
 $removeparam=intcid,domain=cbsnews.com
 $removeparam=intcmp
+$removeparam=intlid,domain=hotels.com
 $removeparam=ir_cid
 $removeparam=iradid
 $removeparam=iradtype
@@ -1584,6 +1588,7 @@ $removeparam=keyword,domain=bindright.com|lendgo.com
 $removeparam=keyword,domain=reddit.app.link
 $removeparam=ko_click_id
 $removeparam=kpartnerid
+$removeparam=kw,domain=hotels.com
 $removeparam=l,domain=change.org
 $removeparam=lId,domain=apple.com|youtube.com
 $removeparam=language,domain=reddit.app.link
@@ -1819,6 +1824,7 @@ $removeparam=ret,domain=shein.com
 $removeparam=retailAttributionToken
 $removeparam=returnFromLogin,domain=amazon.com
 $removeparam=rffrid
+$removeparam=rfrr,domain=ebookers.*
 $removeparam=rfsn
 $removeparam=rid,domain=giphy.com
 $removeparam=rlsatarget
@@ -1911,7 +1917,10 @@ $removeparam=sub2,domain=~go.dgdp.net
 $removeparam=sub3
 $removeparam=sub4
 $removeparam=sub5
+$removeparam=sub_ad,domain=hotels.com
 $removeparam=sub_aff_id
+$removeparam=sub_publisher,domain=hotels.com
+$removeparam=sub_site,domain=hotels.com
 $removeparam=subacctid
 $removeparam=subacctname
 $removeparam=subid,domain=webmasterplan.com|admitad.com|mintmobile.com|secretlab.*
@@ -2010,6 +2019,7 @@ $removeparam=visit_id,domain=bilibili.com|google.*
 $removeparam=vndid,domain=paramountplus.com|cbs.com
 $removeparam=w,domain=files.wordpress.com|store.playstation.com|s-microsoft.com|store-images.microsoft.com
 $removeparam=waad
+$removeparam=wapa6,domain=hotels.com
 $removeparam=wbraid
 $removeparam=wdorigin
 $removeparam=web,domain=microcenter.com|tomtop.com

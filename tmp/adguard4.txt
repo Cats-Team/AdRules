@@ -1,10 +1,10 @@
 
-! Checksum: 941lsFqy6CvSxP/dnal9gQ
+! Checksum: 4cQHLSTpKrjfyc8PshcKgg
 ! Description: EasyList China + AdGuard Chinese filter. Filter list that specifically removes ads on websites in Chinese language.
 ! Expires: 4 days (update frequency)
-! TimeUpdated: 2022-04-26T05:02:34+00:00
+! TimeUpdated: 2022-04-26T14:30:54+00:00
 ! Title: AdGuard Chinese filter (Optimized)
-! Version: 2.0.53.70
+! Version: 2.0.53.75
 !#0
 !#17ce.com
 !#18comic.org
@@ -285,6 +285,7 @@
 ###rip[href*=".taobao.com"]
 ###search > a[href="/top1.html"]
 ###sitefocus.focus
+###slide3 > a[href^="/goto.php?url="]
 ###snActive-wrap
 ###sponsorAdDiv2
 ###swtleft[style^="position:fixed;"]
@@ -847,6 +848,7 @@
 ##a[href*=".wensixuetang.com/"]
 ##a[href*=".wjLkj.com/"]
 ##a[href*=".woyicanyin.com"]
+##a[href*=".wpwpquse.cn/"]
 ##a[href*=".wuyichunqiu.com/"]
 ##a[href*=".xinghuolm.top"]
 ##a[href*=".xingxingdm.com:"]
@@ -3809,6 +3811,7 @@ $websocket,domain=5nj.com|cechi8.com
 @@||kfcclub.com.tw/web/*/ad
 @@||kfcorder.com.tw/web/Script/Analytics.js
 @@||kfcorder.com.tw^*/Advert
+@@||killcovid2021.com/*/*.mp4
 @@||kissjav.com^$generichide
 @@||kk665403.pixnet.net^$generichide
 @@||kukuplay.com/upload/*.*.swf
@@ -11104,6 +11107,7 @@ zznews.cn##.ad:not([style])
 ||511.la^*.gif$domain=meiju11.com
 ||5118.com/g/
 ||512ms.com/webggwhtml/
+||516624.com^
 ||51688.cc/ya/
 ||516qq.cn/theme/dd/
 ||517kp.com^
@@ -11652,7 +11656,6 @@ zznews.cn##.ad:not([style])
 ||91lmgg.com^$third-party
 ||91nrtt.com/vod/
 ||91p20.space/fans/
-||91p52.com/movie.mp4
 ||91rb.net/fc/
 ||91rb.net/js/gg.js
 ||91say.cc^$third-party
@@ -11953,6 +11956,7 @@ zznews.cn##.ad:not([style])
 ||abczxw.com/skin/bbb/pc/js/bd.js
 ||abdd*.com/js/abc/
 ||abds.pingpingw.com^
+||aberr.cn^
 ||abhabh.club^
 ||abi.run^
 ||abiaobai.cn^$third-party
@@ -12200,6 +12204,7 @@ zznews.cn##.ad:not([style])
 ||aijiamao.top^
 ||aijielang.cn^
 ||aikan6.com^
+||ailehui9149.com^
 ||ailezhai.cn^
 ||aili.com^$third-party
 ||ailiby.cn^
@@ -13651,6 +13656,7 @@ zznews.cn##.ad:not([style])
 ||chenqi.vip^
 ||chenqinghui.xyz^
 ||chenvq.cn^
+||chenwang.top^
 ||chenyanjiao.cn^
 ||chenyaxin.xyz^
 ||chexiw.com^
@@ -14994,6 +15000,7 @@ zznews.cn##.ad:not([style])
 ||faloo.com/ou/site/
 ||family-joy.com^
 ||familydoctor.com.cn/c/a/000/ggw_
+||famorlymal.com^
 ||fanchuangyi.xyz^
 ||fang.com/house/ajaxrequest/adverTlGet.
 ||fang99.com^*/advjs/
@@ -15767,6 +15774,7 @@ zznews.cn##.ad:not([style])
 ||h501.cn^$third-party
 ||h6295.com^$popup
 ||h728.cn^
+||habkjav.cn^
 ||habyc.com^
 ||hackhome.com/js/*top.js
 ||hackhome.com/js/bhref.js
@@ -17575,6 +17583,7 @@ zznews.cn##.ad:not([style])
 ||kiiqnnx.cn^
 ||kikinote.net/iframe
 ||kilin.xyz^
+||killcovid2021.com/*.mp4
 ||kingkongapp.com^*/web/adv/list?
 ||kingpolo.com.cn^
 ||kingsnug.cn/Uploads/vod/2019-05-25/5ce964f0c66e0.jpg
@@ -18461,6 +18470,7 @@ zznews.cn##.ad:not([style])
 ||meiyuedu.vip^
 ||meizhou.cn/comm/mygg/
 ||meizhou.com/images/topbanner
+||memeaisese.com^
 ||mendoc.cn^
 ||meng.360zuowen.com^
 ||mengbli.com^
@@ -19335,6 +19345,7 @@ zznews.cn##.ad:not([style])
 ||penxiangge.com^
 ||people.com.cn/adv/
 ||people.com.cn/img/gjt/
+||perfect999.site^
 ||perlmaven.com/img/*0x2
 ||perlmaven.com/img/sticker-you.jpg
 ||petsfairy.com^
@@ -19488,6 +19499,7 @@ zznews.cn##.ad:not([style])
 ||poyang.com^
 ||pp9kk.com^
 ||ppee.xyz^
+||ppj338.cn^
 ||ppshk.com^*banner/
 ||ppsj.com.cn/images/ppsj300.gif
 ||ppt100.site^
@@ -19631,6 +19643,7 @@ zznews.cn##.ad:not([style])
 ||qhimg.com/static/*/common/seed.js
 ||qhimg.com^$domain=1024pm.com|hero3g.com
 ||qhimgs1.com/t029762bc960d5104ef.jpg
+||qhlmb.com^
 ||qhmsg.com^$domain=1024pm.com
 ||qhnews.com/tupian/
 ||qhres.com/static/*/common/seed.js

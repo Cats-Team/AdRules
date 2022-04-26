@@ -189,7 +189,7 @@
 ! CSP filters
 ! Canadian
 ! Causes false positives in .jp region
-! Checksum: 5n6qe4UhCtQjCDtYIbFkww
+! Checksum: pyiRrTFiTVQ+U2Ve1BJquA
 ! Chinese
 ! Chrome bug (Endless loading causing site to crash https://forums.lanik.us/viewtopic.php?f=64&t=25152)
 ! Cloudflare fingerprinting
@@ -297,7 +297,7 @@
 ! Japanese
 ! Kinja-related sites
 ! Korean
-! Last modified: 2022-04-26 07:33 UTC
+! Last modified: 2022-04-26 15:33 UTC
 ! Latvian
 ! Legal stuff (T&C's).
 ! Licence: https://easylist.to/pages/licence.html
@@ -414,7 +414,7 @@
 ! Various International sites
 ! Various philips regions 
 ! Various uk Football splashes
-! Version: 202204260733
+! Version: 202204261533
 ! Vietnamese
 ! Warnings
 ! Washington Times
@@ -6933,6 +6933,8 @@
 ###block-ad_cube-1
 ###block-adsense-0
 ###block-adsense-2
+###block-adsense-banner-article-bottom
+###block-adsense-banner-channel-bottom
 ###block-adsense_managed-0
 ###block-adtech-middle1_300x250
 ###block-adtech-middle2_300x250
@@ -7060,6 +7062,7 @@
 ###block-nett-cookies-message
 ###block-neweurope-vertical-social
 ###block-newsletter:not(html):not(body)
+###block-newsletteraside
 ###block-newsletterregistrationquick
 ###block-notifications-cookie
 ###block-nst-googledfp-site-takeover
@@ -30707,6 +30710,7 @@
 ##.bottom-ad-zone
 ##.bottom-ad2
 ##.bottom-ads
+##.bottom-ads-container
 ##.bottom-ads-sticky
 ##.bottom-ads-wrapper
 ##.bottom-ads728
@@ -75028,7 +75032,7 @@ $xmlhttprequest,domain=auroravid.to|flashx.cc|nowvideo.sx|onlinevideoconverter.c
 ://adcl.$domain=~adcl.co.nz|~adcl.com|~adcl.screenconnect.com
 ://adn.*/zone/$popup
 ://adn.*/zone/$subdocument
-://ads.$domain=~ads.ac.uk|~ads.adstream.com.ro|~ads.allegro.pl|~ads.am|~ads.amazon|~ads.apple.com|~ads.atmosphere.copernicus.eu|~ads.bigbom.com|~ads.bikepump.com|~ads.brave.com|~ads.buscaempresas.co|~ads.colombiaonline.com|~ads.comeon.com|~ads.cvut.cz|~ads.dollartree.com|~ads.elcarado.com|~ads.gambinoslot.com|~ads.google.com|~ads.gurkerl.at|~ads.harvard.edu|~ads.instacart.com|~ads.jiosaavn.com|~ads.kazakh-zerno.net|~ads.kifli.hu|~ads.knuspr.de|~ads.lapalingo.com|~ads.listonic.com|~ads.lordlucky.com|~ads.magalu.com|~ads.microsoft.com|~ads.midwayusa.com|~ads.mobilebet.com|~ads.msstate.edu|~ads.mst.dk|~ads.nc|~ads.nimses.com|~ads.nipr.ac.jp|~ads.odesbuild.com|~ads.olx.pl|~ads.pinterest.com|~ads.quasaraffiliates.com|~ads.red|~ads.rohlik.cz|~ads.route.cc|~ads.safi-gmbh.ch|~ads.shopee.cn|~ads.shopee.co.th|~ads.shopee.com.br|~ads.shopee.com.mx|~ads.shopee.com.my|~ads.shopee.kr|~ads.shopee.ph|~ads.shopee.pl|~ads.shopee.sg|~ads.shopee.tw|~ads.shopee.vn|~ads.sk|~ads.snapchat.com|~ads.socialtheater.com|~ads.spotify.com|~ads.taboola.com|~ads.tiktok.com|~ads.toplayaffiliates.com|~ads.viksaffiliates.com|~ads.watson.ch|~ads.xtribeapp.com|~ads.yahoosmallbusiness.com|~badassembly.com|~caravansforsale.co.uk|~fusac.fr|~memo2.nl|~reempresa.org|~satmetrix.com|~seriouswheels.com
+://ads.$domain=~ads.ac.uk|~ads.adstream.com.ro|~ads.allegro.pl|~ads.am|~ads.amazon|~ads.apple.com|~ads.atmosphere.copernicus.eu|~ads.bigbom.com|~ads.bikepump.com|~ads.brave.com|~ads.buscaempresas.co|~ads.colombiaonline.com|~ads.comeon.com|~ads.cs.washington.edu|~ads.cvut.cz|~ads.dollartree.com|~ads.elcarado.com|~ads.gambinoslot.com|~ads.google.com|~ads.gurkerl.at|~ads.harvard.edu|~ads.instacart.com|~ads.jiosaavn.com|~ads.kazakh-zerno.net|~ads.kifli.hu|~ads.knuspr.de|~ads.lapalingo.com|~ads.listonic.com|~ads.lordlucky.com|~ads.magalu.com|~ads.microsoft.com|~ads.midwayusa.com|~ads.mobilebet.com|~ads.msstate.edu|~ads.mst.dk|~ads.nc|~ads.nimses.com|~ads.nipr.ac.jp|~ads.odesbuild.com|~ads.olx.pl|~ads.pinterest.com|~ads.quasaraffiliates.com|~ads.red|~ads.rohlik.cz|~ads.route.cc|~ads.safi-gmbh.ch|~ads.shopee.cn|~ads.shopee.co.th|~ads.shopee.com.br|~ads.shopee.com.mx|~ads.shopee.com.my|~ads.shopee.kr|~ads.shopee.ph|~ads.shopee.pl|~ads.shopee.sg|~ads.shopee.tw|~ads.shopee.vn|~ads.sk|~ads.snapchat.com|~ads.socialtheater.com|~ads.spotify.com|~ads.taboola.com|~ads.tiktok.com|~ads.toplayaffiliates.com|~ads.viksaffiliates.com|~ads.watson.ch|~ads.xtribeapp.com|~ads.yahoosmallbusiness.com|~badassembly.com|~caravansforsale.co.uk|~fusac.fr|~memo2.nl|~reempresa.org|~satmetrix.com|~seriouswheels.com
 ://ads.$popup
 ://ads2.
 ://adv.$domain=~adv.asahi.com|~adv.bet|~adv.cincsys.com|~adv.co.it|~adv.cpa-api.ru|~adv.cryptonetlabs.it|~adv.derfunke.at|~adv.design|~adv.digimatix.ru|~adv.ec|~adv.ee|~adv.gg|~adv.michaelgat.com|~adv.msk.ru|~adv.neosystem.co.uk|~adv.rest|~adv.ru|~adv.tools|~adv.trinet.ru|~adv.ua|~adv.vg|~adv.vn.ua|~adv.works|~adv.yomiuri.co.jp|~advids.co|~erti.se|~escreverdireito.com|~farapp.com|~forex-tv-online.com|~pracuj.pl|~r7.com|~typeform.com|~welaika.com
@@ -75529,6 +75533,7 @@ $xmlhttprequest,domain=auroravid.to|flashx.cc|nowvideo.sx|onlinevideoconverter.c
 @@||ads.askgamblers.com^$popup
 @@||ads.bumq.com/ad_show*.js$script
 @@||ads.com^$popup
+@@||ads.cs.washington.edu^$popup
 @@||ads.cxadserving.com^$subdocument,domain=geektime.co.il
 @@||ads.dollartree.com/SneakPeek/$~third-party
 @@||ads.emarketer.com/redirect.spark?$popup,domain=emarketer.com
@@ -75975,6 +75980,7 @@ $xmlhttprequest,domain=auroravid.to|flashx.cc|nowvideo.sx|onlinevideoconverter.c
 @@||c.amazon-adsystem.com/aax2/apstag.js$script,domain=businessinsider.com
 @@||c.evidon.com/sitenotice/evidon-sitenotice-tag.js$script,domain=crunchyroll.com|southpark.de|southparkstudios.nu
 @@||c.paypal.com/da/r/fb.js$script
+@@||c.webtrends-optimize.com/acs/$script,domain=tvlicensing.co.uk
 @@||c1.popads.net/pop.js$script,domain=vidlox.tv
 @@||c5n.com^*/angulartics-google-analytics.min.js
 @@||caf.fr^*/smarttag.js$script,~third-party
@@ -77623,6 +77629,7 @@ $xmlhttprequest,domain=auroravid.to|flashx.cc|nowvideo.sx|onlinevideoconverter.c
 @@||orgyxxxhub.com^*/showads.js
 @@||origin.com/views/socialmedia.html$xmlhttprequest,domain=origin.com
 @@||ostroh.info/wp-content/plugins/wp-rocket/min/?*/easy-social-share-buttons.min.js$script,~third-party
+@@||ots.webtrends-optimize.com/$xmlhttprequest,domain=tvlicensing.co.uk
 @@||ouest-france.fr^*/adblock.js
 @@||ourweigh.in/public/assets/img/icons/social/$image
 @@||outbrain.com/nanoWidget/3rd/comScore/comScore.htm$domain=telegraph.co.uk|theinsider.com
@@ -78699,6 +78706,7 @@ $xmlhttprequest,domain=auroravid.to|flashx.cc|nowvideo.sx|onlinevideoconverter.c
 @@||webcenter.tiscali.it/distribuzione/_script/audience_science.js$domain=mail.tiscali.it
 @@||webmd.com/dtmcms/live/webmd/*/video-ad.js$script,~third-party
 @@||webpush.jp/js/browserpushv3.js$domain=zakzak.co.jp
+@@||webtrends.com/js/webtrends.min.js$script,domain=tvlicensing.co.uk
 @@||weightwatchers.com/optimizelyjs/$script,~third-party
 @@||wenxuecity.com/data/newscount/$image,domain=wenxuecity.com
 @@||weser-kurier.de/stellen/riot-utils/joined.js?*/socialshareprivacy/
@@ -80112,7 +80120,7 @@ acast.com,builds.gg,checkyourmath.com,codementor.io,grips-automation.com##.conse
 accenture.com###optanon-minimize-wrapper
 accessoires-asus.com###retourHaut
 accobrands.com##.Promotional-corner
-accor.com,arkadium.com,askubuntu.com,bankofhope.com,calendly.com,consequence.net,cp.com,generali.sk,generaliceska.cz,gesund24.at,getyourguide.com,huawei.com,informa.com,krunker.io,logitech.com,logitechg.com,mastercard.us,mathoverflow.net,maximintegrated.com,msn.com,paramountplus.com,redbull.com,refinitiv.com,serverfault.com,slack.com,soundcloud.com,sparknotes.com,stackexchange.com,stackoverflow.com,subway.com,suomi24.fi,superuser.com,thecloroxcompany.com,validity.com,vishay.com,wetter.at,wirkochen.at,xn--sterreich-z7a.at###onetrust-consent-sdk
+accor.com,arkadium.com,askubuntu.com,bankofhope.com,calendly.com,consequence.net,cp.com,generali.sk,generaliceska.cz,gesund24.at,getyourguide.com,huawei.com,informa.com,krunker.io,logitech.com,logitechg.com,mastercard.us,mathoverflow.net,maximintegrated.com,mesaboogie.com,msn.com,paramountplus.com,redbull.com,refinitiv.com,serverfault.com,slack.com,soundcloud.com,sparknotes.com,stackexchange.com,stackoverflow.com,subway.com,suomi24.fi,superuser.com,thecloroxcompany.com,validity.com,vishay.com,wetter.at,wirkochen.at,xn--sterreich-z7a.at###onetrust-consent-sdk
 account.asus.com#@#.social-btn-group
 account.here.com,calvinklein.at,calvinklein.be,calvinklein.bg,calvinklein.ch,calvinklein.co.uk,calvinklein.com,calvinklein.cz,calvinklein.de,calvinklein.dk,calvinklein.ee,calvinklein.es,calvinklein.fi,calvinklein.fr,calvinklein.hr,calvinklein.hu,calvinklein.ie,calvinklein.it,calvinklein.lt,calvinklein.lu,calvinklein.lv,calvinklein.nl,calvinklein.pl,calvinklein.pt,calvinklein.ru,calvinklein.se,calvinklein.si,calvinklein.sk,ieatfoodtours.co.uk,londraculturale.it,onceinrome.com,shop.forster.at,uktv.co.uk,weliketuscany.it,zorgzaam010.nl#@#.cookie-notice
 account.samsung.com##.ng-trigger.action-bar
@@ -80393,8 +80401,8 @@ airlinecheckins.com##.layout-row
 airliners.net##.site_sliver
 airliquide.com##.js-scroll-down
 airlive.net##.ml-form-embedWrapper
-airnewzealand.eu,aluminiosbrinas.com,arlingtoncemetery.mil,arthrex.com,axminster.co.uk,cfdbetting.com,ctbrand.store,daf.be,daf.co.uk,daf.com,daf.fr,daf.global,daf.nl,daf.ru,daf.se,daftrucks.de,daftrucks.dk,daftrucks.it,daftrucks.pl,daftrucks.sk,digiwallet.com,easy-menu.io,epiphone.com,ferratum.co.uk,fiveguys.co.uk,flaine.com,flipsnack.com,gibson.com,globalfamilydoctor.com,hyperoptic.com,interactivebrokers.co.uk,interactivebrokers.com.au,interactivebrokers.ie,kon-boot.com,lam.co.mz,mapquest.co.uk,medtronic.com,missprint.co.uk,primaresearch.org,pristupy.com,promptamcs.com,qv.co.nz,riddle.com,spectranet.com.ng,whatismymovie.com##.modal-backdrop
-airnewzealand.eu,digiwallet.com,fabricadepremios.com,mapquest.co.uk,przekroj.pl,qv.co.nz,rentacarmaramures.com,spectranet.com.ng,thelittleboxoffice.com,vaillant-group.com,vinaralia.com##.modal
+airnewzealand.eu,aluminiosbrinas.com,arlingtoncemetery.mil,arthrex.com,axminster.co.uk,cfdbetting.com,ctbrand.store,daf.be,daf.co.uk,daf.com,daf.fr,daf.global,daf.nl,daf.ru,daf.se,daftrucks.de,daftrucks.dk,daftrucks.it,daftrucks.pl,daftrucks.sk,digiwallet.com,easy-menu.io,epiphone.com,ferratum.co.uk,fiveguys.co.uk,flaine.com,flipsnack.com,gibson.com,globalfamilydoctor.com,hyperoptic.com,interactivebrokers.co.uk,interactivebrokers.com.au,interactivebrokers.ie,kon-boot.com,lam.co.mz,maestroelectronics.com,mapquest.co.uk,medtronic.com,missprint.co.uk,primaresearch.org,pristupy.com,promptamcs.com,qv.co.nz,riddle.com,spectranet.com.ng,whatismymovie.com##.modal-backdrop
+airnewzealand.eu,digiwallet.com,epiphone.com,fabricadepremios.com,gibson.com,maestroelectronics.com,mapquest.co.uk,przekroj.pl,qv.co.nz,rentacarmaramures.com,spectranet.com.ng,thelittleboxoffice.com,vaillant-group.com,vinaralia.com##.modal
 airotel.gr###cookie
 airplaydirect.com#@##header_ad
 airplaydirect.com,economicconfidential.com,newzimbabwe.com,opednews.com,roadtester.com.au,runechat.com,tfetimes.com,therainbowtimesmass.com##img[height="90"]
@@ -80424,7 +80432,7 @@ akasha.org##.parts__Wrapper-sc-1svfu23-0
 akcneletaky.sk###infoCoo
 akeebabackup.com,displays.agneovo.com,imunify360.com,luxos.com,v-tac.eu##.activebar-container
 akeshofsslott.se,hesselbyslott.se,kitchentime.se,lastberget.com,meetingselection.se,nasbyslott.se,olisen.se,rosersbergsslott.se,skytteholm.se,trosastadshotell.se,ulfsundaslott.se##.cookie
-akhbaralsabah.com,al-ain.com,al-akhbar.com,algerietelecom.dz,alkessa.com,almirbad.com,aqsatv.ps,ceroms.com,dzair-tube.com,egyrep.com,elconsolto.com,europages.ma,fakartany.com,felesteen.ps,fxnewstoday.ae,hamas.ps,hannibaltv.com.tn,midad.com,nessma.tv,raseef22.com,rotana.net,sbc.sa,tunisna.tv##.social
+akhbaralsabah.com,al-ain.com,al-akhbar.com,albawabhnews.com,algerietelecom.dz,alkessa.com,almirbad.com,aqsatv.ps,ceroms.com,dzair-tube.com,egyrep.com,elconsolto.com,europages.ma,fakartany.com,felesteen.ps,fxnewstoday.ae,hamas.ps,hannibaltv.com.tn,midad.com,nessma.tv,raseef22.com,rotana.net,sbc.sa,tunisna.tv##.social
 akinator.com,belgafiles.com,dakine.com,linkedin.com,way2sms.com#@#.share-box
 aklinizikesfedin.com,bancobpm.it,channelnewsasia.com,ew.com,indiatimes.com,letyshops.com,msn.com,people.com,southernliving.com,steptohealth.com,tele2.ru,wiemy.to#@#.scroll-up:not(body):not(html)
 aksam.com.tr,star.com.tr##.bottom-0.fixed
@@ -80443,7 +80451,7 @@ al-sharq.com##.n-letter
 al-watan.com##.w-Wrapper
 al.com,cleveland.com,gulflive.com,lehighvalleylive.com,masslive.com,mlive.com,newyorkupstate.com,nj.com,oregonlive.com,pennlive.com,silive.com,syracuse.com###below-toprail
 al.com,cleveland.com,lehighvalleylive.com,masslive.com,mlive.com,newyorkupstate.com,oregonlive.com,pennlive.com,silive.com,syracuse.com##.revenue-display
-alahlionline.com##.social-network
+alahlionline.com,elkhabar.com##.social-network
 alahome.hu,bestsellers.hu,bevachip.hu,cct.hu,dermashop.hu,firstshop.hu,focuscamera.hu,gyorgyteabolt.hu,joautok.hu,karatekyokushin.hu,kiwipress.hu,onlineszerszam.hu,szerszamoutlet.hu,union.hu,vigszinhaz.hu##.cookie
 alarabiya.net###teaser
 alarabiya.net##.advt + .panel
@@ -80458,6 +80466,7 @@ alarabiya.net,aurecongroup.com,boomlive.in,caltex.co.za,drivesouth.co.nz,gasolin
 alarabiya.net,businesstimes.com.sg,commondreams.org,economist.com,foxnews.com,techly.com.au,thefiscaltimes.com##.newsletter-form
 alarabiya.net,digminecraft.com,find-dvd.co.uk,ft.com,heathrowexpress.com,holition.com,mapcarta.com,nperf.com,techonthenet.com###consent
 alaraby.co.uk##.readMoreStickyArea
+alaraby.co.uk,fbi.gov##.sticky-footer
 alasatakunta.fi,lapuansanomat.fi##div[style="position: fixed; bottom: 0px; left: 0px; right: 0px; display: flex; justify-content: center; z-index: 100000; transition: transform 200ms ease 0s;"]
 alaskahighwaynews.ca,bowenislandundercurrent.com,burnabynow.com,coastreporter.net,dawsoncreekmirror.ca,delta-optimist.com,moosejawtoday.com,newwestrecord.ca,nsnews.com,piquenewsmagazine.com,princegeorgecitizen.com,prpeak.com,richmond-news.com,squamishchief.com,tricitynews.com##.item-sponsored
 alaskahighwaynews.ca,bowenislandundercurrent.com,burnabynow.com,coastreporter.net,dawsoncreekmirror.ca,delta-optimist.com,moosejawtoday.com,newwestrecord.ca,nsnews.com,piquenewsmagazine.com,princegeorgecitizen.com,prpeak.com,richmond-news.com,squamishchief.com,tricitynews.com,vancouverisawesome.com##.sc
@@ -85361,7 +85370,6 @@ favbrowser.com,iphoneincanada.ca###related
 faz.net##.js-sharebuttons
 faz.net#@#.js-sharebuttons
 fbi.gov##.castle-nextprev
-fbi.gov##.sticky-footer
 fboomporn.com,rgatorporn.com,xcafe.com###upper
 fcbarcelona.dk#@##article_ad
 federacja-konsumentow.org.pl###cu_bar
@@ -91899,6 +91907,7 @@ pinterest.com,thekitchn.com#@#a[href^="http://pinterest.com/pin/create/button/"]
 pipeflare.io##.section-promo-banner
 pipeline.de##.bookspalte
 piqd.de##.js-flash_message-container
+piraproxy.info,unblockedstreaming.net###lbxUR99472
 pirateiro.com##._br9is
 pirolam.pl##body > div[style*="100%"]
 pissedconsumer.com##.nav-bottom
@@ -93507,6 +93516,8 @@ semiconductor-today.com###topheaderimage
 semiconductor-today.com##.searchmidbox
 semiconductor-today.com##[href="https://www.appliedenergysystems.com/stakes/"]
 send.firefox.com#@#.sharePage
+sendgb.com###cookie_disabled
+sendgb.com##.bounceInLeft
 seniorenportal.de##.custom-topbutton
 senmanga.com##.box300x250
 senmanga.com##.box480x90
@@ -103900,8 +103911,8 @@ zylom.com##.floor_wrapper
 ||billypub.com^
 ||bilsyndication.com^
 ||bimathyphy.com^
-||bimbim.com^
 ||bimbim.com^$popup
+||bimbim.com^$third-party
 ||bimlocal.com^
 ||bin-layer.de^$third-party
 ||bin-layer.ru^
@@ -109238,6 +109249,7 @@ zylom.com##.floor_wrapper
 ||diplomadosagedream.com^
 ||diplomahawaii.com^$third-party
 ||diptaich.com^
+||diqkldlh.com^
 ||dircont3.com^$third-party
 ||direct-events-collector.spot.im^
 ||direct.colfondos.co^
@@ -112250,6 +112262,7 @@ zylom.com##.floor_wrapper
 ||feastie.com/badges/$third-party
 ||feastoffortuna.com^
 ||feastoffortuna.com^$popup
+||featassuage.com^
 ||featbooksterile.com^
 ||feathr.co^$third-party
 ||feature.fm^$third-party
@@ -114049,6 +114062,7 @@ zylom.com##.floor_wrapper
 ||globel.co.uk^$third-party
 ||globereflecting.com^
 ||globes.co.il/shared/s.ashx?
+||globeshyso.com^
 ||globetrackr.com^$third-party
 ||globo.com/geo?
 ||globsads.com^$third-party
@@ -119101,6 +119115,7 @@ zylom.com##.floor_wrapper
 ||libstat.com^$third-party
 ||licantrum.com^
 ||licdn.com/*.gif?rnd=
+||licencerings.com^
 ||licensebuttons.net^$image,third-party
 ||licensing.bitmovin.com/impression
 ||licensinginsights.ascap.com^
@@ -124384,6 +124399,7 @@ zylom.com##.floor_wrapper
 ||onnnxftprfvm.xyz^
 ||onolinclosesr.club^
 ||onoztg.ultimate-guitar.com^
+||onpluslean.com^
 ||onsafelink.com^$script,third-party
 ||onsandam.biz^
 ||onsandam.biz^$popup
@@ -124639,6 +124655,7 @@ zylom.com##.floor_wrapper
 ||osmondards.pro^
 ||osnqmw.shooos.cz^
 ||ospreymedialp.com^$third-party
+||osseasougan.com^
 ||osskanger.com^
 ||osspalkiaom.com^
 ||ossshucklean.com^
@@ -125833,6 +125850,8 @@ zylom.com##.floor_wrapper
 ||piquantprice.com^
 ||piquantstove.com^
 ||piquperkin.com^
+||piraproxy.info/&^$popup
+||piraproxy.info/hkz2^$popup
 ||pirateiro.com^$csp=script-src 'self' 'unsafe-inline' https://hcaptcha.com *.hcaptcha.com
 ||piratepx.com^$third-party
 ||pirogad.tophosting101.com^
@@ -135860,6 +135879,7 @@ zylom.com##.floor_wrapper
 ||thodowaro.com^
 ||thofandew.com^
 ||thogrypufe.pro^
+||tholected.com^
 ||thomageothe.club^
 ||thomasnet.com/javascript/dcs_
 ||thomastorch.com^
@@ -138411,6 +138431,8 @@ zylom.com##.floor_wrapper
 ||unbecominghall.com^$third-party
 ||unblestrustic.com^
 ||unblockedapi.com^$popup
+||unblockedstreaming.net/&^$popup
+||unblockedstreaming.net/hkz^$popup
 ||unblockia.com^$third-party
 ||unblog.fr/cu.js
 ||unbodypestis.com^
@@ -139511,6 +139533,7 @@ zylom.com##.floor_wrapper
 ||volomedia.com^$third-party
 ||volthamfondue.com^
 ||voltskegscurate.com^
+||volumeearthquakedozen.com^
 ||volument.com^$third-party
 ||voluumtracker.com^
 ||voluumtrk.com^
@@ -139599,6 +139622,7 @@ zylom.com##.floor_wrapper
 ||vroom.be^*/stats.js?
 ||vroom.be^*/stats.php?
 ||vrptgslcxm.com^
+||vrqsvrnjrhdmek.com^
 ||vrsshsdaa.com^
 ||vrstage.com^$third-party
 ||vrtzads.com^

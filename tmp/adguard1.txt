@@ -1,10 +1,10 @@
 
-! Checksum: JKiRiMIgDJdhJ4Y6tT+MqQ
+! Checksum: UN1Be9KK2QmAHm+s+6Zhrw
 ! Description: Filter for all known mobile ad networks. Useful for mobile devices.
 ! Expires: 4 days (update frequency)
-! TimeUpdated: 2022-04-25T20:30:17+00:00
+! TimeUpdated: 2022-04-26T15:30:23+00:00
 ! Title: AdGuard Mobile Ads filter (Optimized)
-! Version: 2.0.28.93
+! Version: 2.0.28.96
 !### TEMPORARY ###
 !#################
 !+ NOT_OPTIMIZED
@@ -22,6 +22,7 @@
 ##amp-embed[type="outbrain"]
 ##amp-embed[type="smi2"]
 ##amp-iframe[src^="https://ad.mediawayss.com/"]
+##amp-iframe[src^="https://html.redtram.com/"]
 ##amp-iframe[src^="https://widgets.outbrain.com"]
 ##amp-sticky-ad
 ##iframe[width="320"][height="50"]
@@ -3155,6 +3156,7 @@ tripnote.jp###button-booking
 trustedreviews.com###dfpIdtop
 trustedreviews.com##.ebay-deals-container
 trustedreviews.com##.ipc-advert
+tsargrad.tv##.article__content + div.article__footer ~ div.article__footer
 tsdm39.net##.wap_doze
 tsn.ua#?#body > aside[class="l-sheet l-sheet__gap"]:has(> div > amp-ad)
 tsn.ua#?#body > aside[class="l-sheet l-sheet__gap"]:has(> div > amp-iframe)
@@ -3218,7 +3220,6 @@ unian.net##.tabs-with-flex > div#tab1 + div#tabpanel1
 unian.net##.tabs-with-flex > div#tabpanel1
 unian.net#?#.article div[data-ad]:upward(1)
 unian.net#?#.article-column > div.read-also:contains(Новости партнеров)
-unian.net,tsn.ua,glavred.info,odnaminyta.com,112.ua##amp-iframe[src^="https://html.redtram.com/"]
 unian.net,unian.ua##.bnr-block
 unian.net,unian.ua##div[style^="height:390px;"][style*="clear:both;"]
 unian.net,unian.ua##iframe[src^="/content/lentainform-"]
@@ -3816,8 +3817,6 @@ zybang.com##.qb-wgt_float-banner
 ||allot.twotwotwoone.com/soma.cfg$replace=/ads\.app\.today=true/ads.app.today=false/
 ||altitude-arena.com^
 ||alxanosoft.com/rk/$redirect=nooptext
-||alxd.addlv.smt.docomo.ne.jp^
-||alxm.addlv.smt.docomo.ne.jp^
 ||am15.net^
 ||amazon-adsystem.com/widgets/$important,domain=dqname.jp
 ||amazon-adsystem.com^
