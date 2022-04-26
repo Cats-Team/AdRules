@@ -1,5 +1,5 @@
 
-! Checksum: uJhSwaZweZ4qLr+GDNFbzw
+! Checksum: fwaX0faod6u3QGx+Ib7OTg
 ! Description: Filter for social media widgets such as 'Like' and 'Share' buttons and more.
 ! Expires: 4 days (update frequency)
 ! TimeUpdated: 2022-04-25T22:31:20+00:00
@@ -32,7 +32,6 @@
 ###dd_ajax_float
 ###ebayShare_1
 ###f_social
-###facebook-index
 ###facebookShare
 ###facebook_like
 ###facebook_soc_button
@@ -875,6 +874,8 @@
 @@||addthis.com/js/300/addthis_widget.js$domain=avgle.com
 @@||addthiscdn.com^$domain=addthis.com
 @@||apotheken-umschau.de$content
+@@||assets.pinterest.com/js/pinit.js$domain=freundin.de
+@@||assets.pinterest.com/js/pinit_main.js$domain=freundin.de
 @@||buttons-config.sharethis.com/js^$domain=haberkibris.com
 @@||connect.facebook.net/en_US/sdk.js$domain=agar.io
 @@||connect.mail.ru/proxy?resource=getLoginStatus$domain=fotostrana.ru
@@ -1020,7 +1021,6 @@ akittv.com.tr##.module-social .facebook
 akittv.com.tr##.module-social .twitter
 akittv.com.tr##.pull-right > .social
 akormatik.com##.container > .social
-aks.ua##.prod-content-share
 aksam.com.tr##.gallery-social
 aksam.com.tr##.share-title ~ li
 aktuality.sk##a[href^="https://www.facebook.com/sharer.php"]
@@ -1678,7 +1678,6 @@ cima-club.*##.label-reactions
 cinema.dinamalar.com#?##selContentright > div[align="center"]:has(> div > div.sharethis-inline-share-buttons)
 cinemacafe.net##.social-font
 cinematoday.jp##.ct-snsbar-holder
-cinerack.jp##.hd_share
 cinra.net##.p-article__share
 citaty.net##button[data-quote-share-action]
 citigroup.com###social_share_nav
@@ -1757,6 +1756,7 @@ computerhoy.com##.block-social-share-links
 computerologia.ru#?#.widget-area > div[class] > aside.widget:has(> div.textwidget > div[id="vk_groups"])
 computerperformance.co.uk##.googlep
 computerperformance.co.uk,gazetemanset.com,haberdesondurum.com##.google
+computerworld.com.au##.art-share > li:not(.print_li):not(.email_li)
 computerworld.hu#?#.field_global_rightside > .box-html:has(h3:contains(Kövessen Facebookon))
 comss.ru##.toplogo > span
 comss.ru##span[data-target="share-review"]
@@ -1950,7 +1950,6 @@ designboom.com,livescience.com,pbtech.co.nz,peoplesworld.org,space.com##.fa-face
 designmodo.com##.author-box > .share
 designoptimal.com##aside#text-17
 desktopsolution.org##.pum
-deti.fm##.podcasts__share-wrap
 deti.mail.ru#?#div.flex > div.flex__item > div.tooltip:has( > div.tooltip__wrapper > button.button > span.button__inner:contains(Поделиться))
 detstrana.ru##.tell_friends
 detstrana.ru##.with_share
@@ -2278,7 +2277,6 @@ eurosport.fr##[class*="ShareIcons"]
 eurosport.ru##.ShareIcons
 eurosport.ru##.ShareIcons__title
 eurotransport.de##.v-A_-article__socialmedia
-eva.ru##.news-social > .pull-left
 evamagazin.hu##.articleFacebookShare
 evaveda.com##a[href^="https://vkontakte.ru/share.php"]
 evernote.com##.social-overlay-open
@@ -2709,7 +2707,6 @@ goodreads.com##.shareModuleBar
 goodyfeed.com##.td-post-sharing-visible
 google.*###wp-tabs-container div.hide-focus-ring[role="button"][aria-label]
 google.*##.kp-wholepage div[role="button"][jscontroller="Wct42"][aria-label] > span > span
-google.*##.section-social-share-container
 google.*##div[class$="-content"] div[jstcache] + div[class$="-share"]
 google.com##div[role="heading"] + div[class] > div[class] > span[data-is-tooltip-wrapper] > button[jsaction^="click"]
 google.com##kno-share-button
@@ -2936,6 +2933,7 @@ httpstatus.io#?#.navbar-item:has(span:contains(Share))
 hubpages.com###social_share_widget > a[class]
 huffingtonpost.fr##aside[id^="highlight-share_"]
 hukukihaber.net##.pull-right > a[onclick^="shareFacebook"]
+hundund.de##.socialmediaicons
 hurhaber.com##.detayy > img[onclick^="window.open("][onclick*="paylas"]
 hurriyet.com.tr###socialMediaShare
 hurriyet.com.tr##.bs-sticky-item > .bs-social-box-wrapper
@@ -2943,6 +2941,7 @@ hurriyet.com.tr##li[data-hj-share]
 hurriyet.com.tr#@#.social-line
 hurriyetdailynews.com##.content-info > .social-links
 hurriyetdailynews.com##.photo-gallery-social-links
+hypeandstuff.com,cryptohamster.org##.s_stk
 hyperwiki.jp,frag-mutti.de,atwiki.jp,netdoktor.de###share-button
 i-w-t.org###articleBody div.post-img > span.img-soc
 ibb.co###tabbed-content-group .panel-networks
@@ -3237,6 +3236,7 @@ kaku.reader.bz,pixnet.net,flyblog.cc,maxfoodfun.com##.bookmark
 kakuyomu.jp###workShare
 kamigame.jp##.share-base
 kamihiro-anime.com##.fv-news__twitter
+kamisama-day.jp##.nav_share
 kamuy-anime.com##.sociallist
 kamuy-anime.com##.twitterSection
 kamyonum.com.tr#?#table > tbody > tr:has(> td[bgcolor] font[color]:contains(FACEBOOK))
@@ -4259,7 +4259,6 @@ odessa.online##.post__footer-share
 odia.ig.com.br##.share > ul.flex > li > a[class]:not(.comment):not(.bookmarks)
 odishatv.in##.article-share-btn
 odishatv.in##.share-social-media-add
-odnaminyta.com##.ss-shr
 odnaminyta.com$$div[class="ss-ic"]
 odnaminyta.com$$div[class="ss-shr"]
 oemdtc.com,yeniisfikirleri.net##.sumome-share-client-wrapper
@@ -4967,7 +4966,6 @@ sefon.pro,khl.ru,uptodown.com##.b_share
 seireigensouki.com,moriarty-anime.com,pokemon.co.jp,familyminded.com,workandmoney.com,you.regettingold.com,robots.net,cnews.ru,konkret24.tvn24.pl,dailyprogress.com,webtekno.com##.share-container
 sejda.com##ul.social-list
 sektekomik.com#?##sidebar > .section:has(> .easy-facebook-like-box_box)
-sektorharita.com###footer
 sekurak.pl##.single_share
 selgros.pl###fbslider
 semanticscholar.org##.icon-share-facebook
@@ -5693,7 +5691,6 @@ trt.net.tr###fbLikeSendtwitter_menu
 trthaber.com##.trtFbShare
 trud.com###item-social-share
 trueachievements.com##a[onclick^="oShare.Go("]
-trustpilot.com##.brand-share-button-wrapper
 try-it.jp##.C--ahaArea
 trybotics.com#?#.MuiCardActions-root > button:contains(Share)
 tse.jus.br###compartilhar-conteudo
@@ -5903,7 +5900,6 @@ video.unext.jp##button[data-ucn="videoTitleDetail-stage-share"]
 videogameschronicle.com##.vgc-socialshare
 videograbber.net,screenshot.net,airmore.com,apowersoft.com,showmore.com##.counted-share-vertical
 videomarket.jp##.c-buttonList > li.c-middleButton:not([class*="c-middleButton_favorite"])
-videovegas.ru#?##sidebar > .blocks > .block:contains(Социальные кнопки)
 vidmore.com,passfab.ru,cooking.nytimes.com,kapook.com,myvideo.az##.share-group
 viettimes.vn##div[class^="social"] > a[class^="button"]:not([class^="button-copy"]):not([class^="button-textsize"])
 village-v.co.jp##.inner__column__heading--fourth

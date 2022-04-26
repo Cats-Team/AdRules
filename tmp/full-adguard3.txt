@@ -37,7 +37,7 @@
 ! Bad: ||legitwebsite.com^$third-party (should be in adservers.txt)
 ! Based on AG_defineProperty (https://github.com/AdguardTeam/deep-override)
 ! By advanced we mean the following rule types: CSS, scriptlets, HTML filtering (`$$` marker), JS.
-! Checksum: M14CmoC07OV+PA4/JJ0N4w
+! Checksum: IcmIpTntVOh69ts3Cd7cnQ
 ! Description: EasyList China + AdGuard Chinese filter. Filter list that specifically removes ads on websites in Chinese language.
 ! Examples:
 ! Examples: AG_removeCookie('/REGEX/') or AG_removeCookie('part of the cookie name')
@@ -79,9 +79,9 @@
 ! This section contains the list of rules that fix incorrect blocking. Rules must be domain-specific.
 ! This section contains the list of the content replacement rules that block ads. Rules must be domain-specific.
 ! This section contains the list of third-party advertising networks domains.
-! TimeUpdated: 2022-04-26T01:02:30+00:00
+! TimeUpdated: 2022-04-26T05:02:34+00:00
 ! Title: AdGuard Chinese filter
-! Version: 2.0.53.69
+! Version: 2.0.53.70
 ! cocomanga.com,cocomanga.com CNAME breakage
 ! do not hide popup, because product selector will not work
 ! e66mobi ads
@@ -8280,6 +8280,7 @@ mydrivers.com##.taobao_tab
 mydrivers.com##.zcdf ~ div[style]
 mydrivers.com##a[href*=".ashx?to="]
 mydrivers.com##a[href*=".jd.com/"]
+mydrivers.com##a[href*="/zt.ashx"]
 mydrivers.com##div[id$="_tab"] > ul > li:first-child
 mydrivers.com##div[style*="/ad/"]
 mydrivers.com##div[style="width:728px;height:90px; margin: auto; padding-top: 5px;"]
@@ -18160,6 +18161,7 @@ zznews.cn##.ad:not([style])
 ||ld0766.com/*20*a/
 ||ldb.cc/js/top.js
 ||lddpgn.cn^
+||ldks.cc/static/js/common.
 ||ldogre.top^
 ||ldsage.top^
 ||le123.cn^$third-party

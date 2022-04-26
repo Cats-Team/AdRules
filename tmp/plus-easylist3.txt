@@ -471,6 +471,7 @@
 ! https://github.com/AdguardTeam/AdguardFilters/issues/116034
 ! https://github.com/AdguardTeam/AdguardFilters/issues/116307
 ! https://github.com/AdguardTeam/AdguardFilters/issues/116391
+! https://github.com/AdguardTeam/AdguardFilters/issues/116483
 ! https://github.com/AdguardTeam/AdguardFilters/issues/26600
 ! https://github.com/AdguardTeam/AdguardFilters/issues/26605
 ! https://github.com/AdguardTeam/AdguardFilters/issues/26709
@@ -3985,6 +3986,7 @@
 ! https://github.com/uBlockOrigin/uAssets/pull/10286
 ! https://github.com/uBlockOrigin/uAssets/pull/1248
 ! https://github.com/uBlockOrigin/uAssets/pull/12748
+! https://github.com/uBlockOrigin/uAssets/pull/12960
 ! https://github.com/uBlockOrigin/uAssets/pull/1506
 ! https://github.com/uBlockOrigin/uAssets/pull/1507
 ! https://github.com/uBlockOrigin/uAssets/pull/1623
@@ -5029,7 +5031,7 @@ $script,domain=zdnet.fr,3p
 /\.com\/[_0-9a-zA-Z]+\.jpg$/$image,1p,domain=hottystop.com
 /\.icu(\/[a-z]{2,4}){2}\.js$/$script,1p,domain=federleqa.icu|imgyear.icu|opalekr.icu|rtkenale.icu
 /\.net(\/[a-z]{2,4}){2}\.js$/$script,1p,domain=pixsera.net
-/\/[0-9a-f]{12}\.js$/$script,1p,domain=camwhores.*
+/\/[0-9a-f]{12}\.js$/$script,1p,domain=camvideos.org|camwhores.*
 /\/[0-9a-z]{5,9}\.js(\?[a-z]{3})?$/$script,domain=dewimg.*|imgtown.*|imgviu.*|mazpic.*|outletpic.*|picrok.*
 /\/[A-Z]\/[-0-9a-z]{5,}\.com\/(?:[0-9a-f]{2}\/){3}[0-9a-f]{32}\.js$/$script,1p,match-case
 /\/[a-z]{4,}\/(?!holly7)[a-z]{3,6}\d\.\d\.\d{1,2}\.[0-9a-f]{32}\.js$/$script,1p,domain=555.porn|hclips.com|hdzog.com|hotmovs.com|imzog.com|javdaddy.com|porn555.com|pornforrelax.com|porngo.tube|pornj.com|pornl.com|pornq.com|porntop.com|privatehomeclips.com|puporn.com|see.xxx|shemalez.com|sss.xxx|thegay.*|tubepornclassic.com|tuberel.com|txxx.com|txxxporn.tube|upornia.*|voyeurhit.com|vxxx.com
@@ -7715,8 +7717,8 @@ azarplus.com###overbox3
 azarplus.com##.public-banner-3
 azarplus.com##.td-all-devices > [href][target="_blank"]
 azlink.xyz##+js(nano-sib)
-azmath.info,azsoft.*,downfile.site,downphanmem.com,expertvn.com,scratch247.info,trangchu.news##+js(acis, document.getElementById, style.display)
-azmath.info,downfile.site,downphanmem.com,trangchu.news##+js(nano-stb, "#proceed", 9000)
+azmath.info,azsoft.*,downfile.site,downphanmem.com,expertvn.com,memangbau.com,scratch247.info,trangchu.news##+js(acis, document.getElementById, style.display)
+azmath.info,downfile.site,downphanmem.com,memangbau.com,trangchu.news##+js(nano-stb, "#proceed", 9000)
 azsoft.*,downfile.site##div.display ~ h2.text-center
 azsoft.*,downfile.site##div.display ~ p
 azsoft.*,scratch247.info##+js(nosiif, visibility, 1000)
@@ -8124,6 +8126,7 @@ camseek.tv##div[style$="height: 240px; background: white"]
 camsexvideo.net##.list-spots
 camslib.com,camwhores.*,camwhorestv.*##+js(acis, onload)
 camvideos.tv##.thumbs-items
+camwhores.*##+js(set, flashvars.adv_pre_vast, '')
 camwhores.*##+js(set, flashvars.protect_block, '')
 camwhores.*,camwhorestv.*###list_videos_friends
 camwhores.*,camwhorestv.*##+js(aeld, , Pop)
@@ -10320,7 +10323,7 @@ ilprimatonazionale.it##+js(set, td_ad_background_click_link, undefined)
 ilprimatonazionale.it##body:style(background-image: none !important;)
 ilprimatonazionale.it#@#.td-ad-background-link
 ilpuntotecnico.com##[style^="text-align:center; height:"][style$="px;"]
-imagefap.com##+js(acis, $, open)
+imagefap.com##+js(acis, $, popCookie)
 imagefap.com##+js(aeld, click, [native code])
 imagefap.com##+js(aopr, Buu.serve)
 imagefap.com##iframe[src="about:blank"]
@@ -11341,6 +11344,8 @@ mejortorrent.*,mejortorrento.*,mejortorrents.*,mejortorrents1.*,mejortorrentt.*#
 mejortorrent.*,mejortorrento.*,mejortorrents.*,mejortorrents1.*,mejortorrentt.*##+js(nowebrtc)
 mejortorrento.*,mejortorrents.*,mejortorrents1.*,mejortorrentt.*##iframe[src^="publi"]
 mel.fm##+js(nofab)
+memangbau.com,trangchu.news##+js(ra, onclick, button, stay)
+memangbau.com,trangchu.news##+js(ra, onclick, input)
 memecenter.com##a[href$=".png"]
 memexcomputer.it##.adsbygoogle
 menantisenja.com##+js(set, adblock, 1)
@@ -13089,7 +13094,7 @@ sexvid.*,hdtube.porn###fltd-inner
 sexvid.*,hdtube.porn##+js(acis, document.write, iframe)
 sexvid.*,hdtube.porn##+js(aopr, ExoLoader)
 sexwebvideo.*##+js(aeld, , _blank)
-sexwebvideo.*##+js(set, flashvars.popunder_url, undefined)
+sexwebvideo.*##+js(set, flashvars.popunder_url, '')
 sexwebvideo.*##.spot-vertical-wrap
 sexy-youtubers.com##+js(aopr, document.dispatchEvent)
 sexybabes.club##+js(acis, loadTool, popping)
@@ -16164,6 +16169,7 @@ zwergenstadt.com##+js(aeld, load, onload)
 ||protovid.com/preroll/$media,redirect=noopmp3-0.1s,domain=filmix.co
 ||proviralhost.com^$3p
 ||psaiceex.net^
+||ptwmemd.com^
 ||ptywajofa.pro^
 ||pubads.g.doubleclick.net/gampad/ads$xhr,redirect=nooptext,domain=imasdk.googleapis.com
 ||publicidadpro.com^$3p

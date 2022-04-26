@@ -230,6 +230,7 @@
 ! https://github.com/AdguardTeam/AdguardFilters/issues/114557
 ! https://github.com/AdguardTeam/AdguardFilters/issues/115965 anti right click
 ! https://github.com/AdguardTeam/AdguardFilters/issues/115974 anti devtools
+! https://github.com/AdguardTeam/AdguardFilters/issues/116504
 ! https://github.com/AdguardTeam/AdguardFilters/issues/41965#issuecomment-539653929
 ! https://github.com/AdguardTeam/AdguardFilters/issues/42495#issuecomment-574761083
 ! https://github.com/AdguardTeam/AdguardFilters/issues/49311
@@ -1389,6 +1390,7 @@
 ! https://reddit.com/r/uBlockOrigin/comments/dzzxp1
 ! https://reddit.com/r/uBlockOrigin/comments/ea6rv3
 ! https://sekai-kabuka.com/ right click
+! https://tecmundo.net/verify/?HUuun2= anti right click
 ! https://thedraftnetwork.com/articles/david-montgomery-injury-bears-severity-depth anti adb annoyance
 ! https://thememypc.net/macos-transformation-pack/ anti right click
 ! https://tinyurl.com/y9mv9crw anti devtools
@@ -2525,8 +2527,8 @@ dotesports.com##+js(aopr, googletag)
 doujindesu.info##*:style(-webkit-touch-callout: default !important; -webkit-user-select: text !important; -moz-user-select: text !important; -ms-user-select: text !important; user-select: text !important;)
 doujindesu.info##+js(acis, disableSelection, reEnable)
 doujindesu.info##+js(aopw, document.oncontextmenu)
-downfile.site,trangchu.news##+js(acis, document.addEventListener, onkeydown)
-downfile.site,trangchu.news##+js(ra, oncontextmenu, body)
+downfile.site,memangbau.com,trangchu.news##+js(acis, document.addEventListener, onkeydown)
+downfile.site,memangbau.com,trangchu.news##+js(ra, oncontextmenu, body)
 download.ipeenk.com##*:style(-webkit-touch-callout: default !important; -webkit-user-select: text !important; -moz-user-select: text !important; -ms-user-select: text !important; user-select: text !important;)
 download.ipeenk.com##+js(acis, document.oncontextmenu)
 download.mokeedev.com##+js(acis, document.createElement, admiral)
@@ -3848,6 +3850,11 @@ randomstory.org##+js(aopw, disableSelection)
 raqmedia.com##body:style(-webkit-touch-callout: default !important; -webkit-user-select: text !important; -moz-user-select: text !important; -ms-user-select: text !important; user-select: text !important;)
 ratebeer.com##[class^="AdBlockDetector"]
 raven-mythic.com##+js(aopw, $adframe)
+rawneix.in##*:style(-webkit-touch-callout: default !important; -webkit-user-select: text !important; -moz-user-select: text !important; -ms-user-select: text !important; user-select: text !important;)
+rawneix.in##+js(acis, disableEnterKey)
+rawneix.in##+js(acis, document.getElementsByTagName, 'unselectable')
+rawneix.in##+js(acis, document.ondragstart)
+rawneix.in##body:style(cursor: auto !important)
 rdsong.com##+js(ra, oncontextmenu|ondragstart|onselectstart, body)
 readcomiconline.to##+js(set, alb, false)
 readlightnovel.org##.chapter-content3:style(-webkit-touch-callout: default !important; -webkit-user-select: text !important; -moz-user-select: text !important; -ms-user-select: text !important; user-select: text !important;)
@@ -4116,6 +4123,7 @@ techtrickseo.com##+js(aopw, disableSelection)
 techtrickseo.com##+js(aopw, disable_copy)
 techtrickseo.com##.unselectable:style(-webkit-touch-callout: default !important; -webkit-user-select: text !important; -moz-user-select: text !important; -ms-user-select: text !important; user-select: text !important;)
 techus.website##+js(nostif, ai_)
+tecmundo.net##+js(aopr, alert)
 tecnotutoshd.net##+js(acis, disableselect, reEnable)
 tecnotutoshd.net##+js(aopw, document.oncontextmenu)
 tekloggers.com##+js(ra, oncontextmenu|onkeydown|onmousedown)

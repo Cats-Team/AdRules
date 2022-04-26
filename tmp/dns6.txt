@@ -189,7 +189,7 @@
 ! CSP filters
 ! Canadian
 ! Causes false positives in .jp region
-! Checksum: OhrTz6hOE1T0Y4/s7CKQbQ
+! Checksum: 5n6qe4UhCtQjCDtYIbFkww
 ! Chinese
 ! Chrome bug (Endless loading causing site to crash https://forums.lanik.us/viewtopic.php?f=64&t=25152)
 ! Cloudflare fingerprinting
@@ -297,7 +297,7 @@
 ! Japanese
 ! Kinja-related sites
 ! Korean
-! Last modified: 2022-04-26 01:33 UTC
+! Last modified: 2022-04-26 07:33 UTC
 ! Latvian
 ! Legal stuff (T&C's).
 ! Licence: https://easylist.to/pages/licence.html
@@ -414,7 +414,7 @@
 ! Various International sites
 ! Various philips regions 
 ! Various uk Football splashes
-! Version: 202204260133
+! Version: 202204260733
 ! Vietnamese
 ! Warnings
 ! Washington Times
@@ -14603,6 +14603,7 @@
 ###jm-back-top
 ###jmCookieMessage
 ###jmp-ad-buttons
+###jms-popup-slider
 ###job_ads_container
 ###jobs-ad
 ###jobsAdBox
@@ -62474,7 +62475,7 @@ $xmlhttprequest,domain=auroravid.to|flashx.cc|nowvideo.sx|onlinevideoconverter.c
 /adtoniq-
 /adtoniq-messenger-$script,~third-party
 /adtonomy.
-/adtool/*
+/adtool/*$domain=~github.com
 /adtools/*$domain=~github.com
 /adtools2.
 /adtooltip/*
@@ -63301,7 +63302,9 @@ $xmlhttprequest,domain=auroravid.to|flashx.cc|nowvideo.sx|onlinevideoconverter.c
 /api/log?
 /api/lt/ref?
 /api/metrics$other
+/api/pageactivity
 /api/pageview?
+/api/pagevisits
 /api/ping?$~xmlhttprequest
 /api/pixel?
 /api/stat?
@@ -78025,6 +78028,7 @@ $xmlhttprequest,domain=auroravid.to|flashx.cc|nowvideo.sx|onlinevideoconverter.c
 @@||secondhandsongs.com/art/icons/youtube.png
 @@||secure.logmein.com/scripts/Tracking/$script,domain=logme.in|logmein.com
 @@||secure.oneallcdn.com/img/api/socialize/gui/close_cross.png
+@@||securegames.iwin.com/data/gtm.json$~third-party,xmlhttprequest
 @@||securemetrics.apple.com/b/ss/$image
 @@||securenetsystems.net/advertising/ad_campaign_get.cfm?$xmlhttprequest
 @@||securepubads.g.doubleclick.net/gampad/ads$domain=geektime.co.il
@@ -80108,7 +80112,7 @@ acast.com,builds.gg,checkyourmath.com,codementor.io,grips-automation.com##.conse
 accenture.com###optanon-minimize-wrapper
 accessoires-asus.com###retourHaut
 accobrands.com##.Promotional-corner
-accor.com,arkadium.com,askubuntu.com,bankofhope.com,calendly.com,consequence.net,cp.com,generali.sk,generaliceska.cz,gesund24.at,getyourguide.com,huawei.com,informa.com,logitech.com,logitechg.com,mastercard.us,mathoverflow.net,maximintegrated.com,msn.com,paramountplus.com,redbull.com,refinitiv.com,serverfault.com,slack.com,soundcloud.com,sparknotes.com,stackexchange.com,stackoverflow.com,subway.com,suomi24.fi,superuser.com,thecloroxcompany.com,validity.com,vishay.com,wetter.at,wirkochen.at,xn--sterreich-z7a.at###onetrust-consent-sdk
+accor.com,arkadium.com,askubuntu.com,bankofhope.com,calendly.com,consequence.net,cp.com,generali.sk,generaliceska.cz,gesund24.at,getyourguide.com,huawei.com,informa.com,krunker.io,logitech.com,logitechg.com,mastercard.us,mathoverflow.net,maximintegrated.com,msn.com,paramountplus.com,redbull.com,refinitiv.com,serverfault.com,slack.com,soundcloud.com,sparknotes.com,stackexchange.com,stackoverflow.com,subway.com,suomi24.fi,superuser.com,thecloroxcompany.com,validity.com,vishay.com,wetter.at,wirkochen.at,xn--sterreich-z7a.at###onetrust-consent-sdk
 account.asus.com#@#.social-btn-group
 account.here.com,calvinklein.at,calvinklein.be,calvinklein.bg,calvinklein.ch,calvinklein.co.uk,calvinklein.com,calvinklein.cz,calvinklein.de,calvinklein.dk,calvinklein.ee,calvinklein.es,calvinklein.fi,calvinklein.fr,calvinklein.hr,calvinklein.hu,calvinklein.ie,calvinklein.it,calvinklein.lt,calvinklein.lu,calvinklein.lv,calvinklein.nl,calvinklein.pl,calvinklein.pt,calvinklein.ru,calvinklein.se,calvinklein.si,calvinklein.sk,ieatfoodtours.co.uk,londraculturale.it,onceinrome.com,shop.forster.at,uktv.co.uk,weliketuscany.it,zorgzaam010.nl#@#.cookie-notice
 account.samsung.com##.ng-trigger.action-bar
@@ -111605,6 +111609,7 @@ zylom.com##.floor_wrapper
 ||events.turbosquid.com^
 ||events.whisk.com^
 ||events.yourcx.io^
+||eventstream.dodopizza.com^
 ||eventtracker.videostrip.com^$third-party
 ||eveonline.com/redir.asp$third-party
 ||everalwerf.xyz^
@@ -114025,7 +114030,7 @@ zylom.com##.floor_wrapper
 ||global.mgr.consensu.org^$third-party
 ||global.ssl.fastly.net/native/
 ||global.ssl.fastly.net^$domain=usatoday.com
-||global.ssl.fastly.net^$script,domain=10play.com.au|allmodern.com|argos.co.uk|birchlane.com|courier-journal.com|courierpress.com|desertsun.com|detroitnews.com|eddiebauer.com|freep.com|glassesusa.com|greenbaypressgazette.com|indystar.com|jsonline.com|kurtgeiger.com|legacy.com|lenovo.com|lohud.com|lowes.com|naplesnews.com|news-journalonline.com|northjersey.com|perigold.com|quickship.com|quikshiptoner.com|radiotimes.com|sainsburys.co.uk|sanuk.com|sheboyganpress.com|tallahassee.com|theadvertiser.com|thisweek.com|ugg.com|usatoday.com|wayfair.co.uk|wayfair.com|wwe.com
+||global.ssl.fastly.net^$script,domain=10play.com.au|allmodern.com|argos.co.uk|basspro.com|birchlane.com|courier-journal.com|courierpress.com|desertsun.com|detroitnews.com|eddiebauer.com|freep.com|glassesusa.com|greenbaypressgazette.com|indystar.com|jsonline.com|kurtgeiger.com|legacy.com|lenovo.com|lohud.com|lowes.com|naplesnews.com|news-journalonline.com|northjersey.com|perigold.com|quickship.com|quikshiptoner.com|radiotimes.com|sainsburys.co.uk|sanuk.com|sheboyganpress.com|tallahassee.com|theadvertiser.com|thisweek.com|ugg.com|usatoday.com|wayfair.co.uk|wayfair.com|wwe.com
 ||globaladmedia.com^
 ||globaladmedia.net^
 ||globaladsales.com^
@@ -128652,6 +128657,7 @@ zylom.com##.floor_wrapper
 ||reportionbreedy.pro^
 ||reports-api.sqreen.io^
 ||reports.pagesuite-professional.co.uk^
+||reports.sdiapi.com^
 ||reportsk.web.sdo.com^
 ||reportsnakefill.com^
 ||reposault-locket.icu^$popup

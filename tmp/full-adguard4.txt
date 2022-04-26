@@ -155,7 +155,7 @@
 ! Chat widget on the main page
 ! Chat widgets
 ! Check, if these sites work fine with scriptlet: mail.rambler.ru, kino.rambler.ru, weather.rambler.ru, comments.rambler.ru, kassa.rambler.ru, horoscopes.rambler.ru
-! Checksum: SUatmsr3dSgM/qaEelM53A
+! Checksum: IlYGlYOyelcgLVO9Ezf36A
 ! Chrome banner in MS Edge
 ! Chrome browser suggest
 ! Climate info below articles
@@ -313,7 +313,7 @@
 ! This section contains the list of rules that block website push notifications ("subscribe to the news" kind of notifications).
 ! This section contains the list of rules that fix incorrect blocking of cookie notifications by generic rules. Rules should be domain-specific.
 ! This section contains the list of the rules against annoyances that are not falling under existing categories. Rules should be domain-specific.
-! TimeUpdated: 2022-04-25T22:30:32+00:00
+! TimeUpdated: 2022-04-26T07:30:36+00:00
 ! Title: AdGuard Annoyances filter
 ! To be discussed
 ! Turkish digital magazines
@@ -321,7 +321,7 @@
 ! Unhide for Android CB if top padding cannot be removed
 ! Using just "._gdpr-notify-header" will cause that part of the content will be hidden on a mobile website
 ! Vacancy widgets
-! Version: 2.1.17.4
+! Version: 2.1.17.6
 ! Video recommendations
 ! Voting widget
 ! Website is broken if "display: none" is used - ##div[class*="ConsentBannerstyles_"]
@@ -1097,6 +1097,7 @@
 ! https://github.com/AdguardTeam/AdguardFilters/issues/11642
 ! https://github.com/AdguardTeam/AdguardFilters/issues/116476
 ! https://github.com/AdguardTeam/AdguardFilters/issues/116495
+! https://github.com/AdguardTeam/AdguardFilters/issues/116523
 ! https://github.com/AdguardTeam/AdguardFilters/issues/11757
 ! https://github.com/AdguardTeam/AdguardFilters/issues/11944
 ! https://github.com/AdguardTeam/AdguardFilters/issues/11972
@@ -5771,6 +5772,7 @@ $xmlhttprequest,redirect-rule=nooptext,domain=aternos.org
 /wp-content/plugins/beautiful-and-responsive-cookie-consent/public/cookieNSCconsent.min.js$domain=weltexporte.de
 /wp-content/plugins/chimpmatepro/*
 /wp-content/plugins/click-to-chat-for-whatsapp/new/inc/assets/js/app.js$domain=balkangunlugu.com.tr
+/wp-content/plugins/content-copy-protection-disable-right-click/assets/*
 /wp-content/plugins/creame-whatsapp-me/public/js/joinchat.
 /wp-content/plugins/deadblocker/*
 /wp-content/plugins/dfm-notifications/*$domain=mercurynews.com|marinij.com
@@ -11156,8 +11158,6 @@ chita.ru##.popup-message-container
 chocolatey.org###cookieNoticeAlert
 chocolatey.org#%#//scriptlet('set-cookie', 'chocolatey_hide_packages_disclaimer', 'true')
 choice.npr.org#%#AG_onLoad(function() { setTimeout(function() { document.getElementById("accept").click(); }, 300); });
-choiceappstore.xyz,educationat.xyz,pn.cgchotbox.com,worldappsstore.xyz,tudaydeals.com,toolss.net,7apple.net,gifans.com,iptvjournal.com,kienthucrangmieng.com,coin-free.com,moddingzone.in,insurance-space.xyz,games.blog-forall.com,techydino.net,rajsayt.xyz,jaunpurmusic.info,blognews.in,informaxonline.com,gaminplay.com,noithatmyphu.vn,dulichkhanhhoa.net,paidappstore.xyz,therootdroid.com#%#AG_onLoad(function(){try{var a=document.querySelector('form > input[name="newwpsafelink"]');if(a){var b,c=null==(b=JSON.parse(atob(a.value)))?void 0:b.linkr;if(c){var d=JSON.parse(atob(c.split("?safelink_redirect=")[1]));location.assign(decodeURIComponent(null==d?void 0:d.safelink))}}}catch(e){}});
-choiceappstore.xyz,pn.cgchotbox.com,worldappsstore.xyz,gifans.com,iptvjournal.com,kienthucrangmieng.com,coin-free.com,moddingzone.in,insurance-space.xyz,blognews.in,noithatmyphu.vn,dulichkhanhhoa.net,therootdroid.com#%#//scriptlet("adjust-setInterval", "wpsafe-", "*", "0.02")
 choiz.me##.socialblock
 chojna24.pl###paperify-pro-cookie-ify
 chojnow.pl#%#//scriptlet("abort-current-inline-script", "document.cookie", "rodoConfirm")
@@ -12915,6 +12915,7 @@ down.mdiaload.com##a.btn-dow[href^="https://down.mdiaload.com/download"][href$="
 down.mdiaload.com#?#.download-option-btn > button > a[href^="https://down.mdiaload.com/download"][href$=".html"]:upward(2)
 downdetector.in,downdetector.com##.app-promo-card
 downdetector.ru##.container[style="display: block;"]
+downfile.site,memangbau.com,trangchu.news#%#//scriptlet("adjust-setTimeout", "#proceed", "*", "0.02")
 downflixs.com##.entry-content h3[style^="text-align:"]:not(:last-child)
 downforme.org##body > #cc
 download.cnet.com##form.SignUp
@@ -13755,6 +13756,7 @@ erecipe.woman.excite.co.jp##.appdl_container
 erecipe.woman.excite.co.jp##.headerWebToApp
 erecipe.woman.excite.co.jp##a[onclick*="Appbanner_footer"]
 ereyon.com.tr##.banner-top-notification-master
+erfahrungen.com#%#//scriptlet("prevent-setTimeout", "adsbygoogle")
 ergo-impulse.de#%#//scriptlet("remove-class", "borlabs-position-fix", "body")
 ergonbike.com###tracking-modal
 ericsson.com##div.open[data-showafter]
@@ -15404,6 +15406,8 @@ gamingforecast.com#%#//scriptlet("adjust-setInterval", "Link()", "", "0.02")
 gamingforecast.com,apps2app.com##.demo-float
 gamingonlinux.com#%#//scriptlet('set-cookie-reload', 'gol_youtube_consent', '1')
 gaminplay.com#%#//scriptlet("adjust-setInterval", "wpsafe-", "1500", "0.02")
+gaminplay.com,choiceappstore.xyz,educationat.xyz,pn.cgchotbox.com,worldappsstore.xyz,tudaydeals.com,toolss.net,7apple.net,gifans.com,iptvjournal.com,kienthucrangmieng.com,coin-free.com,moddingzone.in,insurance-space.xyz,games.blog-forall.com,techydino.net,rajsayt.xyz,jaunpurmusic.info,blognews.in,informaxonline.com,gaminplay.com,noithatmyphu.vn,dulichkhanhhoa.net,paidappstore.xyz,therootdroid.com#%#AG_onLoad(function(){try{var a=document.querySelector('form > input[name="newwpsafelink"]');if(a){var b,c=null==(b=JSON.parse(atob(a.value)))?void 0:b.linkr;if(c){var d=JSON.parse(atob(c.split("?safelink_redirect=")[1]));location.assign(decodeURIComponent(null==d?void 0:d.safelink))}}}catch(e){}});
+gaminplay.com,choiceappstore.xyz,pn.cgchotbox.com,worldappsstore.xyz,gifans.com,iptvjournal.com,kienthucrangmieng.com,coin-free.com,moddingzone.in,insurance-space.xyz,blognews.in,noithatmyphu.vn,dulichkhanhhoa.net,therootdroid.com#%#//scriptlet("adjust-setInterval", "wpsafe-", "*", "0.02")
 gamme.com.tw##.app_link
 gamme.com.tw##.line_Promotion
 gamme.com.tw##.m_line_Promotion
@@ -17418,6 +17422,7 @@ industrystock.de###cookieInfoOverlay
 indy100.com#%#AG_onLoad(function(){if(!document.cookie.includes("euconsent-v2")){var b=new MutationObserver(function(){var a=document.querySelector('button[mode="secondary"]');a&&a.click();a=document.querySelectorAll('.qc-cmp2-footer-links > button[mode="link"]');a[1]&&a[1].click();setTimeout(function(){var c=document.querySelectorAll('button[mode="secondary"]');c[1]&&c[1].click()},1E3);(a=document.querySelector('.qc-cmp2-footer > button[mode="primary"]'))&&(b.disconnect(),a.click())});b.observe(document,{childList:!0, subtree:!0});setTimeout(function(){b.disconnect()},1E4)}});
 indystar.com##.gnt_m_nls
 inebrya.it###pett_cookie_banner
+inenglishwithlove.com##div[class^="sqs-cookie-banner-"]
 inews.co.uk###piano-inline-footer
 inews.co.uk##.inews__email-signup
 inews.co.uk##div[data-project="mol-fe-cmp"] > div[class^="tooltip"]
@@ -21151,7 +21156,10 @@ miraeassetmf.co.in##.mangeingCookies
 mirfactov.com#?#.wp-block-quote:has(> p > a[href="https://t.me/MirFactov"])
 mirfactov.com,howtogeek.com##.email-subscribe
 mirkorma.ru##div[class^="section-subscribe"]
+mirkrasok.ru##.button_popup_discount_baner
 mirkrasok.ru##.module_messages_cookies
+mirkrasok.ru#$#.fancybox-overlay { display: none !important; }
+mirkrasok.ru#?#.fancybox-wrap:has(> div.popup div.jsp_buttons > div#good)
 mirnov.ru##a[href^="https://t.me/"] > img
 mironline.ru##.footer-personal-data__wrapper
 mirror.co.uk###bottom-article-prompt
@@ -28197,6 +28205,7 @@ tecmint.com##.dgd_stb_box
 tecmint.com##.top-bar
 tecmint.com##a[href^="https://newsletter.tecmint.com/subscription?"] > img
 tecmundo.com.br###js-widget-thebrief
+tecmundo.net#%#//scriptlet("adjust-setInterval", "updatePercentage", "100", "0.02")
 tecnomusic-evolution.com#$##pum-8891 { display: none !important; }
 tecnomusic-evolution.com#$#html { overflow: auto !important; }
 tecnomusic-evolution.com#$#html.pum-open body > #page[aria-hidden] { padding-right: 0 !important; }
@@ -29287,7 +29296,6 @@ trakt.tv,boardgamegeek.com###cc--main
 trakyahaberleri.com#?##page_right > .right_block[-ext-has='.socialRightBlock']
 trancepodcasts.com##.cp-overlay
 trancepodcasts.com##.cp-social-media
-trangchu.news#%#//scriptlet("adjust-setTimeout", "#proceed", "*", "0.02")
 transcend-info.com###legal_notice
 transfermarkt.de##.newsletter-anzeige
 transip.nl##.one-alert--cookie

@@ -33,7 +33,7 @@
 ! CPU abuse
 ! CSP Mining
 ! Causes false positives in .jp region
-! Checksum: Oi9S17msIvjfYoofTwLPFg
+! Checksum: TaaqZPUQdvBpPo9ec0W/Pg
 ! Chinese
 ! Chrome bug (Endless loading causing site to crash https://forums.lanik.us/viewtopic.php?f=64&t=25152)
 ! Cloudflare fingerprinting
@@ -91,7 +91,7 @@
 ! Italian
 ! Japanese
 ! Korean
-! Last modified: 26 Apr 2022 01:45 UTC
+! Last modified: 26 Apr 2022 08:16 UTC
 ! Latvian
 ! Licence: https://easylist.to/pages/licence.html
 ! Lithuanian
@@ -138,7 +138,7 @@
 ! Ukrainian
 ! Ukranian
 ! Used as a clickthrough
-! Version: 202204260146
+! Version: 202204260816
 ! Vietnamese
 ! Wetter.com
 ! Woxikon.de
@@ -1497,7 +1497,9 @@ $xmlhttprequest,domain=auroravid.to|flashx.cc|nowvideo.sx|onlinevideoconverter.c
 /api/log?
 /api/lt/ref?
 /api/metrics$other
+/api/pageactivity
 /api/pageview?
+/api/pagevisits
 /api/ping?$~xmlhttprequest
 /api/pixel?
 /api/stat?
@@ -5994,7 +5996,6 @@ $xmlhttprequest,domain=auroravid.to|flashx.cc|nowvideo.sx|onlinevideoconverter.c
 @@/webtracking/*$domain=pasts.lv
 @@/yozons-lib/core.js$script,~third-party,domain=bellinghamherald.com|bnd.com|bradenton.com|centredaily.com|charlotteobserver.com|elnuevoherald.com|fresnobee.com|heraldonline.com|heraldsun.com|idahostatesman.com|islandpacket.com|kansas.com|kansascity.com|kentucky.com|ledger-enquirer.com|macon.com|mcclatchydc.com|mercedsunstar.com|miamiherald.com|modbee.com|myrtlebeachonline.com|newsobserver.com|sacbee.com|sanluisobispo.com|star-telegram.com|sunherald.com|thenewstribune.com|theolympian.com|thestate.com|tri-cityherald.com
 @@|http://r.i.ua/s?*&p*&l$image,domain=swordmaster.org
-@@|http://r.i.ua/s?*&p*&l$image,domain=swordmaster.orgtriton.companyegg.com^
 @@||1001trackstats.com/api/$xmlhttprequest,domain=songstats.com
 @@||10086.cn/framework/modules/sdc.js$script,~third-party
 @@||1gr.cz/js/dtm/cache/satelliteLib-$domain=idnes.cz
@@ -6714,6 +6715,7 @@ $xmlhttprequest,domain=auroravid.to|flashx.cc|nowvideo.sx|onlinevideoconverter.c
 @@||script.ownpage.fr/v1/ownpage.js?$script,domain=lci.fr
 @@||sealserver.trustwave.com/seal.js$domain=zoom.us
 @@||secure.logmein.com/scripts/Tracking/$script,domain=logme.in|logmein.com
+@@||securegames.iwin.com/data/gtm.json$~third-party,xmlhttprequest
 @@||securemetrics.apple.com/b/ss/$image
 @@||segundamano.mx^*/tealium.js
 @@||sephora.com/js/ufe/isomorphic/thirdparty/fp.min.js$script,~third-party
@@ -12793,6 +12795,7 @@ medicalxpress.com,techxplore.com##.embed-responsive-trendmd
 ||events.turbosquid.com^
 ||events.whisk.com^
 ||events.yourcx.io^
+||eventstream.dodopizza.com^
 ||eventtracker.videostrip.com^$third-party
 ||eveonline.com/redir.asp$third-party
 ||everestjs.net^$third-party
@@ -13650,7 +13653,7 @@ medicalxpress.com,techxplore.com##.embed-responsive-trendmd
 ||global-media.de^*/track/ai.img
 ||global.canon/00cmn/js/*/analytics-
 ||global.ssl.fastly.net/native/
-||global.ssl.fastly.net^$script,domain=10play.com.au|allmodern.com|argos.co.uk|birchlane.com|courier-journal.com|courierpress.com|desertsun.com|detroitnews.com|eddiebauer.com|freep.com|glassesusa.com|greenbaypressgazette.com|indystar.com|jsonline.com|kurtgeiger.com|legacy.com|lenovo.com|lohud.com|lowes.com|naplesnews.com|news-journalonline.com|northjersey.com|perigold.com|quickship.com|quikshiptoner.com|radiotimes.com|sainsburys.co.uk|sanuk.com|sheboyganpress.com|tallahassee.com|theadvertiser.com|thisweek.com|ugg.com|usatoday.com|wayfair.co.uk|wayfair.com|wwe.com
+||global.ssl.fastly.net^$script,domain=10play.com.au|allmodern.com|argos.co.uk|basspro.com|birchlane.com|courier-journal.com|courierpress.com|desertsun.com|detroitnews.com|eddiebauer.com|freep.com|glassesusa.com|greenbaypressgazette.com|indystar.com|jsonline.com|kurtgeiger.com|legacy.com|lenovo.com|lohud.com|lowes.com|naplesnews.com|news-journalonline.com|northjersey.com|perigold.com|quickship.com|quikshiptoner.com|radiotimes.com|sainsburys.co.uk|sanuk.com|sheboyganpress.com|tallahassee.com|theadvertiser.com|thisweek.com|ugg.com|usatoday.com|wayfair.co.uk|wayfair.com|wwe.com
 ||globalbanking.wolterskluwer.com^
 ||globalcommunications.sc.com^
 ||globalmed.actonservice.com^
@@ -19580,6 +19583,7 @@ medicalxpress.com,techxplore.com##.embed-responsive-trendmd
 ||reporting.singlefeed.com^
 ||reports-api.sqreen.io^
 ||reports.pagesuite-professional.co.uk^
+||reports.sdiapi.com^
 ||reportsk.web.sdo.com^
 ||representativeray.com^
 ||reprocautious.com^$third-party
