@@ -56,7 +56,7 @@
 ! Based on AG_defineProperty (https://github.com/AdguardTeam/deep-override)
 ! Blocked icons for social logging
 ! By advanced we mean the following rule types: CSS, scriptlets, HTML filtering (`$$` marker), JS.
-! Checksum: KxpF+Kl2W9ZE0N9toexrFA
+! Checksum: 8PEYBYfkIinz8PesGYvXLA
 ! Common names
 ! Description: Filter for social media widgets such as 'Like' and 'Share' buttons and more.
 ! Do not block facebook embedded video
@@ -99,11 +99,11 @@
 ! This section contains the list of social blocking rules that fall under "advanced" category.
 ! This section contains the list of the rules for common trackers/buttons.
 ! This section contains the list of the rules that block in page social popups.
-! TimeUpdated: 2022-04-25T14:31:33+00:00
+! TimeUpdated: 2022-04-25T22:31:20+00:00
 ! Title: AdGuard Social Media filter
 ! Unblock minificated scripts library
 ! Unhide links to a websites in different languages
-! Version: 2.0.60.32
+! Version: 2.0.60.36
 ! Yandex.Balaboba
 ! Yandex.Disk
 ! Yandex.Forms
@@ -3418,6 +3418,8 @@ dlh.net#@#.fb-like
 dloady.com##div[data-widget-definition="share_page"]
 dlsite.com##.link_share
 dmarket.docomo.ne.jp##.footer_snslink
+dmarket.docomo.ne.jp,sagatv.co.jp,news-postseven.com##.sns-block
+dmarket.docomo.ne.jp,tabiyomi.yomiuri-ryokou.co.jp,znak.com,askmen.com##.shareBlock
 dmitripavlutin.com#?#article > div > div > div:has(> h4:contains(Please share))
 dmm.co.jp##.d-sns-button
 dmm.co.jp##.p-box-productInfo__detail__sns
@@ -3927,6 +3929,7 @@ fanpage.it##.fp_share__actions > button.fp_button
 fantacalcio.it##.vshare
 fantasticfilm.ru###block_right > div.block + noindex
 fantia.jp###post-footer > div.well-overlay-white:last-child
+fantia.jp#?#.list-group > div.list-group-item:has(> div.share-btns)
 farpost.ru##.share-button-link
 fashionwaltz.com##.sidebar_frm
 fashionwaltz.com#?#.pull-left > div.widget:has(> div.textwidget > div.fb-page)
@@ -4927,6 +4930,7 @@ hindustantimes.com##.social_share_box
 hindustantimes.com##a[data-action="share/whatsapp/share"]
 hindustantimes.com,vesti.ua,vesti-ukr.com,rainews.it##.shareArticle
 hipertextual.com##a[onclick^="shareButton("]
+hiroba.dpoint.docomo.ne.jp##.c-site-footer-share
 hiroba.dqx.jp##.social_btnArea
 histmag.org#?##article > div.css-nil > div:contains(Śledź nas!)
 histmag.org#?##article > div.css-nil > div:contains(Śledź nas!) + div.shorts
@@ -5767,7 +5771,6 @@ konsument.at##.social_share_privacy_area > li.facebook
 konsument.at##.social_share_privacy_area > li.twitter
 kontrakty.ua#?##sideRight > div.shadow:has(> h6:contains(Мы в соцсетях))
 koolinar.ru##a[data-social]
-koravidstream.com#$?#.rmp-sharing { remove: true; }
 koreanz.tv##a[onclick^="apms_sns"]
 korkusuz.com.tr##button[onclick^="showShareDialog"]
 korrespondent.net#?#.col__sidebar > div[class="unit-rubric"]:has(> div > h3 > span:contains(Корреспондент.net в cоцсетях))
@@ -6021,7 +6024,6 @@ live.nicovideo.jp##button[class^="___social-sharing-button"]
 liveagent.com###share-sidebar > strong.BlogPost__share-sidebar__title
 liveagent.com##.BlogPost__share
 livecareer.com##.social-icons-bar
-livedoor.com##.socialBtn
 livehindustan.com##.artcl-shre
 livehindustan.com##.shre-innr
 livehindustan.com##.socialShare-btn
@@ -6816,6 +6818,7 @@ mtv.ru##.like__share
 mtv.ru##.nb-footer__share
 mtvuutiset.fi##.gs-bar
 muchohentai.com#?##sidebar > div.widget:has(> div.textwidget a.twitter-timeline)
+muehlacker-tagblatt.de##.StoryShowShare > ul
 mufgamericas.com##.block--socialsharelinks
 muitomanga.com##.sharesection
 multicanais.*,unidosok.com##.vlog-share-single
@@ -8445,7 +8448,6 @@ safe.cnews.ru##.header-brand-logo
 safety.olx.ua#@#.share-panel
 safezone.cc##a[aria-label="Поделиться"]
 safezone.cc#?#.resourceBody-sidebar > div.resourceSidebarGroup:contains(Поделиться ресурсом)
-sagatv.co.jp,news-postseven.com##.sns-block
 sagligabiradim.com##.widget-social
 saglikaktuel.com##.base_middle .bookmark-container
 saglikaktuel.com##.share-buttons-24
@@ -9163,6 +9165,7 @@ sxyprn.net##.sharing_toolbox
 syl.ru##.share_img
 symantec.com##.action-links
 symantec.com##[data-share-config="controller.shareConfig"]
+syokuraku-web.com,livedoor.com,vippers.jp,yahoo.co.jp##.socialBtn
 syracuse.com##.sharebar-beta
 syri.net##.whatsapp-link
 sys-team-admin.ru##img[src="/images/reposti.jpg"]
@@ -9181,7 +9184,6 @@ t-online.de#$#.TsocBar-button { float:none!important; }
 t24.com.tr,tproger.ru,millionacres.com,lolhehehe.com##.share-story
 t3n.de##.c-social.-buttons
 t3n.de##.socialIconsList
-tabiyomi.yomiuri-ryokou.co.jp,znak.com,askmen.com##.shareBlock
 tablet-apps.ru,hi-news.ru,appleinsider.ru###ShareButton
 tabletowo.pl###mob-bot-share
 tabletsesmartphones.org##.compartilhe-post > a[onclick^="return abrirPopup"]
@@ -10201,7 +10203,6 @@ vinnytsianews.com##.row > aside.widget-area > aside.widget_fbw_id
 vioyun.com#?##sidebar > .widget_text[-ext-has="span:contains(Facebook)"]
 vip-jikkyo.net,kobayangame.xyz,vrc.wiki,4g63evo.net,shinoyon.com,win-tab.net,otakaranet.com,pokemongo-get.com,genda-yousuke.com,naoki440.info,npolaris.net,pasokatu.com,toolmania.info,gamegaz.com,nobitaka.com,mutyun.com,9ketsuki.info##.sns-buttons
 vipbox.nu#?#.hidden-md > .panel[-ext-has='span.st_facebook']
-vippers.jp##.socialBtn
 viprow.me#?#.container > .row > .col-12.text-center > .btn-danger:contains(Sharing is Caring)
 viprow.net##.btn-danger
 viprow.net##.likely_visible
@@ -10625,7 +10626,6 @@ ya.ru##.b-ya-share
 yablor.ru##.minishare
 yadi.sk##.ns-view-sliderShare
 yafud.pl###fbBOX
-yahoo.co.jp##.socialBtn
 yahoo.co.jp##.yjnSnsBtn
 yahoo.co.jp,nhk.or.jp###snsbtn
 yahoo.com##.share-button-group

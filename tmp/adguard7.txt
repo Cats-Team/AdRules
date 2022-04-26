@@ -1,10 +1,10 @@
 
-! Checksum: kibps0GJSl+2L+B7T/34rQ
+! Checksum: uJhSwaZweZ4qLr+GDNFbzw
 ! Description: Filter for social media widgets such as 'Like' and 'Share' buttons and more.
 ! Expires: 4 days (update frequency)
-! TimeUpdated: 2022-04-25T14:31:33+00:00
+! TimeUpdated: 2022-04-25T22:31:20+00:00
 ! Title: AdGuard Social Media filter (Optimized)
-! Version: 2.0.60.32
+! Version: 2.0.60.36
 !+ NOT_OPTIMIZED
 !+ NOT_PLATFORM(ios, ext_android_cb)
 !+ PLATFORM(android)
@@ -2014,6 +2014,8 @@ dizm.mbs.jp##.sns-for-page
 dlh.net#@#.fb-like
 dlsite.com##.link_share
 dmarket.docomo.ne.jp##.footer_snslink
+dmarket.docomo.ne.jp,sagatv.co.jp,news-postseven.com##.sns-block
+dmarket.docomo.ne.jp,tabiyomi.yomiuri-ryokou.co.jp,znak.com,askmen.com##.shareBlock
 dmitripavlutin.com#?#article > div > div > div:has(> h4:contains(Please share))
 dmm.co.jp##.d-sns-button
 dmm.co.jp##.p-box-productInfo__detail__sns
@@ -2316,6 +2318,7 @@ fandom.com###ShareEntryPoint
 fanpage.it##.fp_share__actions > button.fp_button
 fantacalcio.it##.vshare
 fantia.jp###post-footer > div.well-overlay-white:last-child
+fantia.jp#?#.list-group > div.list-group-item:has(> div.share-btns)
 farpost.ru##.share-button-link
 fashionwaltz.com##.sidebar_frm
 fashionwaltz.com#?#.pull-left > div.widget:has(> div.textwidget > div.fb-page)
@@ -2887,6 +2890,7 @@ hindawi.com#?#.article_bottom_toolbar > nav#toolbar__iconNav:has(> h3:contains(S
 hindustantimes.com##.share-candidate
 hindustantimes.com##a[data-action="share/whatsapp/share"]
 hindustantimes.com,vesti.ua,vesti-ukr.com,rainews.it##.shareArticle
+hiroba.dpoint.docomo.ne.jp##.c-site-footer-share
 hiroba.dqx.jp##.social_btnArea
 histmag.org#?##article > div.css-nil > div:contains(Śledź nas!)
 histmag.org#?##article > div.css-nil > div:contains(Śledź nas!) + div.shorts
@@ -3525,7 +3529,6 @@ live.nicovideo.jp##a[class*="local-anchor"]
 live.nicovideo.jp##button[class^="___social-sharing-button"]
 liveagent.com##.BlogPost__share
 livecareer.com##.social-icons-bar
-livedoor.com##.socialBtn
 livehindustan.com##.artcl-shre
 livehindustan.com##.shre-innr
 livejapan.com##.--color-sociel
@@ -3938,6 +3941,7 @@ msn.com##div[data-t*="ContentSharingToolbar"]
 mspoweruser.com##.shunno-share-block
 mtb-news.de##.mtbnews-sharing-buttons
 mthai.com##.fb-widgets
+muehlacker-tagblatt.de##.StoryShowShare > ul
 mufgamericas.com##.block--socialsharelinks
 muitomanga.com##.sharesection
 multicanais.*,unidosok.com##.vlog-share-single
@@ -4908,7 +4912,6 @@ safe.cnews.ru##.header-brand-logo
 safety.olx.ua#@#.share-panel
 safezone.cc##a[aria-label="Поделиться"]
 safezone.cc#?#.resourceBody-sidebar > div.resourceSidebarGroup:contains(Поделиться ресурсом)
-sagatv.co.jp,news-postseven.com##.sns-block
 saglikaktuel.com##.share-buttons-24
 sahadan.com,mackolik.com##.widget-article__share-button
 saintseiya-anime.com,busan.com,postshare.co.kr,principlesofknowledge.kr,donga.com,m.focus.kr##.sns_box
@@ -5323,6 +5326,7 @@ swirlster.ndtv.com##.story_share
 swissinfo.ch##.si-page__utility-container
 sxyprn.net##.sharing_toolbox
 syl.ru##.share_img
+syokuraku-web.com,livedoor.com,vippers.jp,yahoo.co.jp##.socialBtn
 syri.net##.whatsapp-link
 sys-team-admin.ru##img[src="/images/reposti.jpg"]
 sysadmintips.ru##.social-share-wrap
@@ -5334,7 +5338,6 @@ t-online.de##.Tsocnetwhatsapp
 t-online.de#$#.TsocBar-button { float:none!important; }
 t24.com.tr,tproger.ru,millionacres.com,lolhehehe.com##.share-story
 t3n.de##.c-social.-buttons
-tabiyomi.yomiuri-ryokou.co.jp,znak.com,askmen.com##.shareBlock
 tablet-apps.ru,hi-news.ru,appleinsider.ru###ShareButton
 tabletowo.pl###mob-bot-share
 tadviser.ru##.right_column img.fb_image
@@ -6157,7 +6160,6 @@ xvideos.com,sexub.com#?##tabShareAndEmbed > h4:has(> span.icf-share)
 xxxbunker.com##.video-toolbar > button:contains(Share)
 yablor.ru##.minishare
 yafud.pl###fbBOX
-yahoo.co.jp##.socialBtn
 yahoo.co.jp,nhk.or.jp###snsbtn
 yahoo.com##.share-button-group
 yahoo.com##iframe[src^="https://www.facebook.com/plugins/likebox.php"]

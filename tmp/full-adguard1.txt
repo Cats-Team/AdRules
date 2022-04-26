@@ -61,7 +61,7 @@
 ! Booking app
 ! Breaks Yahoo Finance app on iOS https://github.com/AdguardTeam/AdguardFilters/issues/63354
 ! By advanced we mean the following rule types: CSS, scriptlets, HTML filtering (`$$` marker), JS.
-! Checksum: 4mJbvBDHZ2tyHtg2YgOWuQ
+! Checksum: MKs1SgZx3VQdD7n+JUHZqg
 ! Common names
 ! Context ads(must be excluded in useful ads)
 ! Criteo mobile ads
@@ -152,10 +152,10 @@
 ! This section contains the list of the base rules that block ads in mobile apps. Rules should be specific.
 ! This section contains the list of the content replacement rules that block ads on mobile devices. Rules must be domain-specific.
 ! This section contains the list of third-party advertising networks domains for mobile devices.
-! TimeUpdated: 2022-04-25T06:30:23+00:00
+! TimeUpdated: 2022-04-25T20:30:17+00:00
 ! Tinder (analytics)
 ! Title: AdGuard Mobile Ads filter
-! Version: 2.0.28.92
+! Version: 2.0.28.93
 ! Viber
 ! Viber[App] - the problem with the stickers store
 ! WPS Office
@@ -2883,6 +2883,7 @@ m.milliyet.com.tr##.stTwo > a > img[data-original*="Advertorial"] ~ p
 m.milliyet.com.tr##a[href^="http://secure.milliyet.com.tr/redirect/Default.aspx?"][target="_blank"] > article
 m.milliyet.com.tr##div[id^="adv_"]
 m.mobile01.com##.u-ad-image
+m.motorsport-total.com##.anzeige-block
 m.muensterschezeitung.de##.wn_spo_banner
 m.mylust.com###main_video_fluid_html_on_pause
 m.mylust.com###wrapper div[class^="topb-"]
