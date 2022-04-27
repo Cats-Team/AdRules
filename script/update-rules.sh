@@ -152,9 +152,10 @@ curl --connect-timeout 60 -s -o - https://raw.githubusercontent.com/CipherOps/Ad
  | grep -Fv "/^ad([sxv]?[0-9]*|system)[_.-]([^.[:space:]]+\.){1,}|[_.-]ad([sxv]?[0-9]*|system)[_.-]/" > dns998.txt &
 wait
 
-for url in 'curl https://raw.githubusercontent.com/neodevpro/neodevhost/master/allowlist' ;do
+uurl=`curl -s https://raw.githubusercontent.com/neodevpro/neodevhost/master/allowlist`
+for url in $uurl ;do
     wget --no-check-certificate -t 1 -T 10 -q -O tmp $url
-    cat tmp >> tmpallow
+    cat tmp |grep -v "^#">> tmpallow
     rm -f tmp
 done
 echo '规则下载完成'
