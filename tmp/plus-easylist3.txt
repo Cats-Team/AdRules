@@ -5038,8 +5038,8 @@ $script,domain=zdnet.fr,3p
 /^https:\/\/ltn\.hitomi\.la\/[A-Za-z]{4,}\/(?=[a-z]{0,19}[A-Z])[A-Za-z]{4,20}\.js$/$script,1p,match-case,domain=hitomi.la
 /^https:\/\/www\.pussyspace\.(?:com|net)\/style\/\w{200,}$/$image,1p,domain=pussyspace.*
 /^https:\/\/x?1337x\.(?:[0-9a-z]{3}\.)?[a-z]{2,3}\/images\/[0-9a-z]+\.jpg/$image,1p,domain=1337x.*|1337x.g3g.*|x1337x.*
-/^https?:\/\/(?:[a-z]{2}\.)?[0-9a-z]{7,16}\.com\/[a-z](?=[a-z]{0,25}[0-9A-Z])[0-9a-zA-Z]{3,26}\/(?:[1-4]\d{4}|[3-9]\d{3})(?:\?(param)?_\d?=\d+)?$/$frame,script,xhr,popup,3p,match-case
-/^https?:\/\/(?:[a-z]{2}\.)?[0-9a-z]{7,16}\.website\/[a-z](?=[a-z]{0,25}[0-9A-Z])[0-9a-zA-Z]{3,26}\/(?:[1-4]\d{4}|[3-9]\d{3})(?:\?(param)?_\d?=\d+)?$/$frame,script,xhr,popup,3p,match-case
+/^https?:\/\/(?:[a-z]{2}\.)?[0-9a-z]{7,16}\.com\/[a-z](?=[a-z]{0,25}[0-9A-Z])[0-9a-zA-Z]{3,26}\/(?:[1-4]\d{4}|[3-9]\d{3})(?:\?_=\d+)?$/$frame,script,xhr,popup,3p,match-case
+/^https?:\/\/(?:[a-z]{2}\.)?[0-9a-z]{7,16}\.website\/[a-z](?=[a-z]{0,25}[0-9A-Z])[0-9a-zA-Z]{3,26}\/(?:[1-4]\d{4}|[3-9]\d{3})(?:\?_=\d+)?$/$frame,script,xhr,popup,3p,match-case
 /^https?:\/\/(?:www\.|[0-9a-z]{7,10}\.)?[-0-9a-z]{5,}\.com\/(?:[0-9a-f]{2}\/){2,3}[0-9a-f]{32}\.js/$script,xhr,3p
 /^https?:\/\/[0-9a-f]{50,}\.s3\.amazonaws\.com\/[0-9a-f]{10}$/$xhr,3p
 /^https?:\/\/[0-9a-zA-Z]{10,16}\.cloudfront\.net\/\?[a-z]{3,7}=\d{4,8}$/$script,xhr,3p
@@ -14259,7 +14259,7 @@ upstream.to##+js(nowebrtc)
 upstream.to##+js(set, cRAds, null)
 uptobox.com,uptostream.com##+js(set, jsUnda, noopFunc)
 uptomega.*##+js(acis, JSON.parse, break;case $.)
-upvid.*##+js(acis, JSON.parse, break;case $.)
+upvid.*##+js(acis, parseInt, break;case $.)
 upvid.*##+js(nowoif)
 upzone.cc##+js(acis, Math, zfgloaded)
 upzone.cc##+js(acis, document.getElementById, undefined)
@@ -15784,6 +15784,7 @@ zwergenstadt.com##+js(aeld, load, onload)
 ||hrtya.com^
 ||i.auto-bild.de/assets/modules/homad/*$xhr,redirect=nooptext,domain=autobild.de
 ||i.ibb.co^$image,domain=owllink.net
+||i.imgur.com$domain=downloadhub.ltd
 ||i.imgur.com/*.gif$image,domain=movs4u.*
 ||i.imgur.com^$domain=megalink.*
 ||i.imgur.com^$image,domain=mcloud.to|vizcloud.*|vizcloud2.*
