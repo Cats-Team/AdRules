@@ -155,7 +155,7 @@
 ! Chat widget on the main page
 ! Chat widgets
 ! Check, if these sites work fine with scriptlet: mail.rambler.ru, kino.rambler.ru, weather.rambler.ru, comments.rambler.ru, kassa.rambler.ru, horoscopes.rambler.ru
-! Checksum: GwMVHlXYVImWllTwgwkXNQ
+! Checksum: 3Z0lK0mDzSU3FQ4Wgz02ew
 ! Chrome banner in MS Edge
 ! Chrome browser suggest
 ! Climate info below articles
@@ -313,7 +313,7 @@
 ! This section contains the list of rules that block website push notifications ("subscribe to the news" kind of notifications).
 ! This section contains the list of rules that fix incorrect blocking of cookie notifications by generic rules. Rules should be domain-specific.
 ! This section contains the list of the rules against annoyances that are not falling under existing categories. Rules should be domain-specific.
-! TimeUpdated: 2022-04-27T11:30:41+00:00
+! TimeUpdated: 2022-04-27T15:30:38+00:00
 ! Title: AdGuard Annoyances filter
 ! To be discussed
 ! Turkish digital magazines
@@ -321,7 +321,7 @@
 ! Unhide for Android CB if top padding cannot be removed
 ! Using just "._gdpr-notify-header" will cause that part of the content will be hidden on a mobile website
 ! Vacancy widgets
-! Version: 2.1.17.24
+! Version: 2.1.17.27
 ! Video recommendations
 ! Voting widget
 ! Website is broken if "display: none" is used - ##div[class*="ConsentBannerstyles_"]
@@ -1100,6 +1100,7 @@
 ! https://github.com/AdguardTeam/AdguardFilters/issues/116476
 ! https://github.com/AdguardTeam/AdguardFilters/issues/116495
 ! https://github.com/AdguardTeam/AdguardFilters/issues/116523
+! https://github.com/AdguardTeam/AdguardFilters/issues/116535
 ! https://github.com/AdguardTeam/AdguardFilters/issues/116595
 ! https://github.com/AdguardTeam/AdguardFilters/issues/116601
 ! https://github.com/AdguardTeam/AdguardFilters/issues/116651
@@ -11366,6 +11367,7 @@ club-cs.ru#?#.p-body-content > div.p-body-pageContent > div.block:has( div.mySli
 club-opel.com,marketrealist.com,infowars.com,multiup.org##.cc-banner
 club.panasonic.ru##.motivation_popup
 clubdam.com##.bnr-app
+clubdam.com##.l-page-bottom__cv
 clubdam.com##.newrelease_cv_floatbtn
 cluber.com.ua##.popup-bg
 clubmed.com.tr##.Layout > section[class="bg-white fixed bottom-0 shadow w-full z-6"]
@@ -11701,6 +11703,8 @@ cont.ws##.iziToast-wrapper
 contao-marketingsuite.com,obstbau.org##.mod_cms_cookie_bar
 content.de###content-de-hinweis-cookie-richtlinie
 content.techgig.com##.tg-clients-banners
+content.techgig.com##.tg-clients-banners-rhs
+content.techgig.com##.topbanner_tg_inner
 content.wisestep.com##.td-ss-main-sidebar
 contentkingapp.com##div[data-testid="action-sidebar-box"]
 contentkingapp.com##div[data-testid="onboarding-box"]
@@ -16341,6 +16345,7 @@ gunosy.com##div[class*="_app_d"]
 gununfirsati.com##body > div.toast
 gurme.com.tr,etver.ru###pop
 gursesgazetesi.com##.ZebraDialog_NotModal
+guru99.com##.af-form-wrapper
 gurubanks.com##.lwp-modal_wrap
 gurufocus.com##.el-dialog__wrapper
 gurufocus.com##.v-modal
@@ -18613,6 +18618,7 @@ kinopoisk.ru##.dialog_type_desktop[style="bottom: 35px;"]
 kinopoisk.ru##.feature_promo
 kinopoisk.ru##.film-thin-teaser
 kinopoisk.ru##.social-teasers
+kinopoisk.ru##div[data-ui-id="post"] > div[style^="background-color:rgba(247, 247, 247, 1);"][style*="border-radius:10px"]
 kinopoisk.ru,yandex.*#%#//scriptlet("set-cookie", "gdpr", "0")
 kinopovtor1.online#%#//scriptlet("abort-on-property-read", "stickyConfig")
 kinosafe.net##.player_share
@@ -23346,6 +23352,7 @@ osehero.pl#$#body.modal-open { overflow: auto !important; }
 osevio.com##body > .alert-warning.fixed-bottom
 oshiete.goo.ne.jp##.Ad
 oshiete.goo.ne.jp##[data-gaccgroup="ヘッダ通常お知らせ"]
+oshiete.goo.ne.jp##div[style="margin-bottom: 20px; text-align:center;"]
 osnmedia.ru,vesti.ua##.subscribe-line
 osomatsusan.hatenablog.com,iembra2or.com,battle-one.com,terbit21.online,wizardsubs.com,audio-sound-premium.com,sysnettechsolutions.com,mustafabukulmez.com,ifdreamscametrue.com#%#//scriptlet("abort-on-property-read", "disableSelection")
 osomatsusan.hatenablog.com,kutub3lpdf.com,nullslide.com#%#//scriptlet("prevent-addEventListener", "/contextmenu|selectstart|dragstart|copy|cut|keydown|keyup/", "preventDefault")
@@ -24092,6 +24099,7 @@ playground.ru###notificationBlock
 playground.ru###tzrContainer
 playground.ru##.user-advert-message
 playhub.com##.promo-game
+playlistcalculator.net,wire.com,qzlyrics.com,codespeedy.com###cookie-law-div
 playlive.net##.paper-client-privacy-agreement
 playmaker24.ru##.subscrite-widget-wrap
 playmaker24.ru##.tg-popup
@@ -27596,6 +27604,8 @@ storemaven.com##.maven-component--cookies-notice
 storia.me##.web-push
 stories.bsh-group.com##.cookies_overlay-wrapper
 stories.com#%#document.cookie="newsletter-signup=viewed; path=/;";
+storm.mg###floating_bottom_ad
+storm.mg#%#//scriptlet("set-cookie", "app_download_banner", "true")
 stormmanagement.com##.alert-banner--cookie
 storry.tv#$#body { overflow: visible!important; }
 storry.tv#$#cloudflare-app[data-goal="signup"] { display: none!important; }
@@ -28175,7 +28185,9 @@ techfast.com.au###widget-newsletter
 techgara.com,techbigs.com,news-medical.net###cookie-notice-bar
 techgenix.com##.sidebar-optin
 techgenix.com#?#ul.sidebar_widget > li:has(> div > .sidebar-optin)
+techgig.com###cubewrapid
 techgig.com##.gdpr-info
+techgig.com##div[class="container pad16"]
 techgistafrica.com##.jeg_push_notification
 techhelpbd.com#%#//scriptlet("adjust-setInterval", "counter--", "", "0.02")
 techinferno.com##.ipsModal
@@ -29026,6 +29038,7 @@ timesofindia.indiatimes.com#%#(function() { try { if ("undefined" != typeof loca
 timesofindia.indiatimes.com#?#.clearfix > div[class]:has(> ul[class] > li > h6 + p > a[href="http://get.timesofindia.com"])
 timesofindia.indiatimes.com#?#.nonAppView > div[class]:has(> div.contentwrapper > button)
 timesofindia.indiatimes.com#?#div[data-mod="sidebar"] > div:not([class]):has(> div[class] button:contains(Subscribe))
+timesofindia.indiatimes.com#?#p + a[href="/toi-plus/plans"]:upward(1)
 timesofindia.indiatimes.com,mumbaimirror.indiatimes.com#%#//scriptlet('set-cookie', 'playvdclose', '1')
 timesofisrael.com##.crm-bottom-popup
 timesofisrael.com##.modal-overlay.nlPopup
@@ -31339,7 +31352,6 @@ winweil.com#$#body { overflow: visible!important; }
 winxdvd.com##div[style="position:fixed; bottom:220px; right:30px;"]
 wir-sind-bund.de,bbk.bund.de#$#.mfp-ready { display: none !important; }
 wir-sind-bund.de,bbk.bund.de#$#html { overflow: visible !important; }
-wire.com,qzlyrics.com,codespeedy.com###cookie-law-div
 wired.co.uk##.bb-newsletter
 wired.com##.ad--rail
 wired.com##.ad-stickyhero
@@ -32257,6 +32269,7 @@ zoomalia.de,mister-auto.de,iliad.it##.rgpd-banner
 zoomgirls.net##.header_subtab
 zoomgirls.net#?#ul[class$="side-panel"][-ext-has='noscript']
 zoomin.tv###privacyoverlay
+zoominfo.com###cookies_note
 zoomtventertainment.com##div[class^="GdprCSS-container-"]
 zoon.ru###zoonHeader
 zoon.ru##.box-banner

@@ -60,7 +60,7 @@
 ! Booking app
 ! Breaks Yahoo Finance app on iOS https://github.com/AdguardTeam/AdguardFilters/issues/63354
 ! By advanced we mean the following rule types: CSS, scriptlets, HTML filtering (`$$` marker), JS.
-! Checksum: CH0De6Bnr1K+DV1wOWrd3w
+! Checksum: /q6W6unPQ1dLAzakEoqB7w
 ! Common names
 ! Context ads(must be excluded in useful ads)
 ! Criteo mobile ads
@@ -150,10 +150,10 @@
 ! This section contains the list of the base rules that block ads in mobile apps. Rules should be specific.
 ! This section contains the list of the content replacement rules that block ads on mobile devices. Rules must be domain-specific.
 ! This section contains the list of third-party advertising networks domains for mobile devices.
-! TimeUpdated: 2022-04-27T11:30:25+00:00
+! TimeUpdated: 2022-04-27T13:02:09+00:00
 ! Tinder (analytics)
 ! Title: AdGuard Mobile Ads filter
-! Version: 2.0.28.98
+! Version: 2.0.29.0
 ! Viber
 ! Viber[App] - the problem with the stickers store
 ! WPS Office
@@ -2374,6 +2374,7 @@ lexico.com##.banbox
 libae.jp##.gmossp_con
 libae.jp##.sp_display > div.pink-title
 liderform.com.tr##.advertising-top-container
+lifeantenna.com##.highlight-entry
 lifehack.org##[id^="lifehack_m_"][id*="TF"]
 lifehack.org#?#.visible-xs[style^="background-color: rgb"]:has(>[id^="div-gpt-ad"])
 lifehack.org#?#.visible-xs[style^="background-color: rgb"]:has([id^="lifehack_m_"][id*="TF"])
@@ -2939,7 +2940,6 @@ m.ynet.co.il##div[id^="GoogleAdStrip"]
 m.yourlust.com##.divExoCustomLayer
 m.youtube.com##.companion-ad-container
 m.youtube.com##.ytp-ad-action-interstitial
-m.youtube.com##.ytp-cued-thumbnail-overlay > div[style*="/sddefault.jpg"]
 m.youtube.com##a[href^="/watch?v="][onclick^="return koya.onEvent(arguments[0]||window.event,'"]:not([role]):not([class]):not([id])
 m.youtube.com##a[href^="/watch?v="][onclick^="return koya.onEvent(arguments[0]||window.event,'"]:not([role]):not([class]):not([id]) + div
 m.youtube.com##a[onclick*='"ping_url":"http://www.google.com/aclk?']

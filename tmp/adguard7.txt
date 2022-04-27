@@ -1,10 +1,10 @@
 
-! Checksum: pxG4Fbc7JgdWjsxifNcXbA
+! Checksum: CzBIW0/kS1V1iteICb7EhQ
 ! Description: Filter for social media widgets such as 'Like' and 'Share' buttons and more.
 ! Expires: 4 days (update frequency)
-! TimeUpdated: 2022-04-27T11:31:35+00:00
+! TimeUpdated: 2022-04-27T14:31:53+00:00
 ! Title: AdGuard Social Media filter (Optimized)
-! Version: 2.0.60.47
+! Version: 2.0.60.48
 !+ NOT_OPTIMIZED
 !+ NOT_PLATFORM(ios, ext_android_cb)
 !+ PLATFORM(android)
@@ -5580,6 +5580,7 @@ timesofindia.indiatimes.com##.shareIcons
 timesofindia.indiatimes.com##.shareblock
 timesofindia.indiatimes.com##.socialwidget > div[class] > div[class] > div[class][data-ga^="share-"]
 timesofindia.indiatimes.com##.toiwidgets_social > span[data-plugin$="-share"]
+timesofindia.indiatimes.com##div[data-articlebody] > div.clearfix > div[class^="_"][style^="top:"]
 timesofindia.indiatimes.com##div[data-bottomsocialshare]
 timesofindia.indiatimes.com##div[data-socialtray] > div[class] > span[class]:not([data-ga*="email"])
 timeturk.com##.detayy a[href="javascript:;"][onclick^="window.open("][onclick*="'paylas'"]

@@ -37,7 +37,7 @@
 ! Bad: ||legitwebsite.com^$third-party (should be in adservers.txt)
 ! Based on AG_defineProperty (https://github.com/AdguardTeam/deep-override)
 ! By advanced we mean the following rule types: CSS, scriptlets, HTML filtering (`$$` marker), JS.
-! Checksum: DkgdPqShXdSXE8kQDaehag
+! Checksum: 8Sos8pDI0IAERyx2p4CbMw
 ! Description: EasyList China + AdGuard Chinese filter. Filter list that specifically removes ads on websites in Chinese language.
 ! Examples:
 ! Examples: AG_removeCookie('/REGEX/') or AG_removeCookie('part of the cookie name')
@@ -79,9 +79,9 @@
 ! This section contains the list of rules that fix incorrect blocking. Rules must be domain-specific.
 ! This section contains the list of the content replacement rules that block ads. Rules must be domain-specific.
 ! This section contains the list of third-party advertising networks domains.
-! TimeUpdated: 2022-04-27T11:31:03+00:00
+! TimeUpdated: 2022-04-27T15:32:25+00:00
 ! Title: AdGuard Chinese filter
-! Version: 2.0.53.86
+! Version: 2.0.53.89
 ! cocomanga.com,cocomanga.com CNAME breakage
 ! do not hide popup, because product selector will not work
 ! e66mobi ads
@@ -304,7 +304,6 @@
 ! https://github.com/AdguardTeam/AdguardFilters/issues/90679
 ! https://github.com/AdguardTeam/AdguardFilters/issues/90881
 ! https://github.com/AdguardTeam/AdguardFilters/issues/91017
-! https://github.com/AdguardTeam/AdguardFilters/issues/91356
 ! https://github.com/AdguardTeam/AdguardFilters/issues/92316
 ! https://github.com/AdguardTeam/AdguardFilters/issues/93220
 ! https://github.com/AdguardTeam/AdguardFilters/issues/94092
@@ -1335,7 +1334,6 @@
 ##a[href*="itoon.app"]
 ##a[href*="mdapp01.com/"]
 ##a[href*="nnqp.vip"]
-##a[href="/ad/sh.html"]
 ##a[href="/ad2.html"]
 ##a[href="/e/member/register/index.php?tobind=0&groupid=1"]
 ##a[href="/gghtml/tyc.html"]
@@ -5616,7 +5614,6 @@ cnyes.com###full_ad-popup
 cnyes.com###full_ad-screen
 cnyes.com##a[data-proj-ga-category="FloatingBTN"]
 coco01.net##.scupioadslot
-cocomanga.com#%#//scriptlet("set-constant", "atob", "undefined")
 cocomanga.com#@#.gg_728
 cocomanga.com#@#.gg_950
 cocomanga.com,cocomanhua.com##iframe[style*="important"]
@@ -11119,6 +11116,7 @@ zznews.cn##.ad:not([style])
 ||235123.net^$third-party
 ||23532451.com^
 ||23617710.com^
+||23873645.com^
 ||239300.net/template/*_mh_gg
 ||23aitt.com/zz/
 ||23dsf.top^
@@ -11278,6 +11276,7 @@ zznews.cn##.ad:not([style])
 ||33shu.net/js/game
 ||33yq.org/static/1.
 ||3400.org^
+||34283078.com^
 ||34iq.com/index
 ||34jthg.info/api/oort2bunny?
 ||3520.cc/js/3520/
@@ -21814,6 +21813,7 @@ zznews.cn##.ad:not([style])
 ||txahz.com/static/image/tp/
 ||txdwc.cn^
 ||txgg2022bisheng.com^
+||txmsw.mobi^
 ||txshuku.la/js/
 ||txt2017.com^
 ||txt2019.cc^

@@ -56,7 +56,7 @@
 ! Based on AG_defineProperty (https://github.com/AdguardTeam/deep-override)
 ! Blocked icons for social logging
 ! By advanced we mean the following rule types: CSS, scriptlets, HTML filtering (`$$` marker), JS.
-! Checksum: 0hISM7sd+r/46h/nCHM2pg
+! Checksum: qQVBt/Eg0M6aEZ7/mEl1Gw
 ! Common names
 ! Description: Filter for social media widgets such as 'Like' and 'Share' buttons and more.
 ! Do not block facebook embedded video
@@ -99,11 +99,11 @@
 ! This section contains the list of social blocking rules that fall under "advanced" category.
 ! This section contains the list of the rules for common trackers/buttons.
 ! This section contains the list of the rules that block in page social popups.
-! TimeUpdated: 2022-04-27T11:31:35+00:00
+! TimeUpdated: 2022-04-27T14:31:53+00:00
 ! Title: AdGuard Social Media filter
 ! Unblock minificated scripts library
 ! Unhide links to a websites in different languages
-! Version: 2.0.60.47
+! Version: 2.0.60.48
 ! Yandex.Balaboba
 ! Yandex.Disk
 ! Yandex.Forms
@@ -9605,6 +9605,7 @@ timesofindia.indiatimes.com##.shareIcons
 timesofindia.indiatimes.com##.shareblock
 timesofindia.indiatimes.com##.socialwidget > div[class] > div[class] > div[class][data-ga^="share-"]
 timesofindia.indiatimes.com##.toiwidgets_social > span[data-plugin$="-share"]
+timesofindia.indiatimes.com##div[data-articlebody] > div.clearfix > div[class^="_"][style^="top:"]
 timesofindia.indiatimes.com##div[data-bottomsocialshare]
 timesofindia.indiatimes.com##div[data-socialtray] > div[class] > span[class]:not([data-ga*="email"])
 timesofindia.indiatimes.com##span[data-ga$="atf_share"]

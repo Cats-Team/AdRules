@@ -1,10 +1,10 @@
 
-! Checksum: pqNCkeZhfpC99ynQsDwDsA
+! Checksum: 95btGCOwNLWMMInM1zB6sw
 ! Description: Filter for all known mobile ad networks. Useful for mobile devices.
 ! Expires: 4 days (update frequency)
-! TimeUpdated: 2022-04-27T11:30:25+00:00
+! TimeUpdated: 2022-04-27T13:02:09+00:00
 ! Title: AdGuard Mobile Ads filter (Optimized)
-! Version: 2.0.28.98
+! Version: 2.0.29.0
 !### TEMPORARY ###
 !#################
 !+ NOT_OPTIMIZED
@@ -1640,6 +1640,7 @@ lexico.com##.banbox
 libae.jp##.gmossp_con
 libae.jp##.sp_display > div.pink-title
 liderform.com.tr##.advertising-top-container
+lifeantenna.com##.highlight-entry
 lifehack.org##[id^="lifehack_m_"][id*="TF"]
 lifehack.org#?#.visible-xs[style^="background-color: rgb"]:has(>[id^="div-gpt-ad"])
 lifehack.org#?#.visible-xs[style^="background-color: rgb"]:has([id^="lifehack_m_"][id*="TF"])
@@ -2207,7 +2208,6 @@ m.ynet.co.il##div[id^="GoogleAdStrip"]
 m.yourlust.com##.divExoCustomLayer
 m.youtube.com##.companion-ad-container
 m.youtube.com##.ytp-ad-action-interstitial
-m.youtube.com##.ytp-cued-thumbnail-overlay > div[style*="/sddefault.jpg"]
 m.youtube.com##a[href^="/watch?v="][onclick^="return koya.onEvent(arguments[0]||window.event,'"]:not([role]):not([class]):not([id])
 m.youtube.com##a[href^="/watch?v="][onclick^="return koya.onEvent(arguments[0]||window.event,'"]:not([role]):not([class]):not([id]) + div
 m.youtube.com##a[onclick*='"ping_url":"http://www.google.com/aclk?']
