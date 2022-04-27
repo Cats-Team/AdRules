@@ -260,9 +260,9 @@ cat .././mod/rules/*-rules.txt base-src-hosts.txt hosts99*.txt \
 
 cat ../mod/*/dns-rule-allow.txt ../mod/*/dns-rule-allow.txt tmp1-domain.txt tmpallow tmpallow pre-hostsallow.txt pre-hostsallow.txt deadhosts.txt deadhosts.txt\
  | sed 's/||//g' |sed 's/\^//g' \
- | sort -n |uniq -u >tmp-ad-domain.txt #去重允许域名
+ | sort -n |uniq -u >tmp-ad-domains.txt #去重允许域名
 
-cat tmp-ad-domain.txt \
+cat tmp-ad-domains.txt \
  | sed 's/^/0.0.0.0 /g' \
  | sort -n | uniq > tmp-hosts.txt & #处理广告域名
 
