@@ -1,9 +1,9 @@
 
 ! Expires: 1 days (update frequency)
-! Lenth = 41102
+! Lenth = 41126
 ! Title:  uniartisan's Privacy List
 ! URL = https://github.com/uniartisan/adblock_list
-! Version: 202204260210
+! Version: 202204270315
 ###qoo-counter
 ###ramblerCounter
 ###top100counter
@@ -120,6 +120,7 @@ $cookie=_tmae
 $cookie=_uetsid
 $cookie=_uetvid
 $cookie=_vwo_uuid_v2
+$cookie=_wctrck
 $cookie=_yTrackUser
 $cookie=_yTrackVisit
 $cookie=_ym_isad
@@ -2334,6 +2335,8 @@ $xmlhttprequest,domain=auroravid.to|flashx.cc|nowvideo.sx|onlinevideoconverter.c
 /counters/pages?
 /countertab.js?
 /countinj.cgi?
+/countly.js
+/countly.min.js
 /countpixel.
 /countstat.php?
 /countubn.
@@ -4372,6 +4375,7 @@ $xmlhttprequest,domain=auroravid.to|flashx.cc|nowvideo.sx|onlinevideoconverter.c
 /pubstats.$domain=~pubstats.dev
 /pubtag.js?
 /pulsario.js
+/pum/*/analytics/*
 /push-analytics.js
 /push/page-view/*
 /pusher/info?
@@ -5992,14 +5996,13 @@ $xmlhttprequest,domain=auroravid.to|flashx.cc|nowvideo.sx|onlinevideoconverter.c
 /wmps_tracker.
 /wmxtracker.js
 /woopra.js
-/wordpress/wp-json/pum/*/analytics/*
 /worldwide_analytics/*
 /wp-admin/admin-ajax.php?action=adblockvisitor$~third-party
 /wp-click-track/*
 /wp-clickmap/*
 /wp-content/cache/busting/google-tracking/*
 /wp-content/plugins/asmb-tracking/*
-/wp-content/plugins/google-analytics-dashboard-for-wp/*$domain=xpornass.com
+/wp-content/plugins/google-analytics-dashboard-for-wp/*$domain=xpornass.com|vitacig.eu.com
 /wp-content/plugins/google-analytics-for-wordpress/*$domain=graphicdesignresources.net|ebonyo.com|paesenews.it
 /wp-content/plugins/google-analytics-premium/*
 /wp-content/plugins/pageviews/pageviews.js
@@ -6581,6 +6584,7 @@ $xmlhttprequest,domain=auroravid.to|flashx.cc|nowvideo.sx|onlinevideoconverter.c
 @@||c.mmcdn.net^*/flash/config/metrics.xml$domain=moshimonsters.com
 @@||c.newsinc.com/getids^$domain=washingtonexaminer.com
 @@||c.paypal.com/da/r/fb.js$script
+@@||c.webtrends-optimize.com/acs/$script,domain=tvlicensing.co.uk
 @@||c5n.com^*/angulartics-google-analytics.min.js
 @@||cache.nymag.com^*/clickability.js
 @@||cache2.delvenetworks.com/crossdomain.xml$domain=lapresse.ca
@@ -6827,7 +6831,6 @@ $xmlhttprequest,domain=auroravid.to|flashx.cc|nowvideo.sx|onlinevideoconverter.c
 @@||coremetrics.com/eluminate.js
 @@||coronavirus-monitor.ru/scripts/statistics/statistics.$script,~third-party
 @@||cot.priceminister.com/res/static/*/xtcore.js
-@@||count.ly^$~third-party
 @@||count.rtl.de/crossdomain.xml$domain=n-tvnow.de|rtl-now.rtl.de|rtl2now.rtl2.de|rtlnitronow.de|superrtlnow.de|voxnow.de
 @@||coxbusiness.com/R136/assets/newrelic/newrelic.js$~third-party
 @@||cp.rackspace.com/javascript/services/analytics.js?$script,~third-party
@@ -7513,6 +7516,7 @@ $xmlhttprequest,domain=auroravid.to|flashx.cc|nowvideo.sx|onlinevideoconverter.c
 @@||googletagmanager.com/gtm.js$domain=qrcode-monkey.com
 @@||googletagmanager.com/gtm.js$domain=qt.io
 @@||googletagmanager.com/gtm.js$domain=radiorur.de
+@@||googletagmanager.com/gtm.js$domain=rbbtoday.com
 @@||googletagmanager.com/gtm.js$domain=realestate.co.nz
 @@||googletagmanager.com/gtm.js$domain=redbull.com
 @@||googletagmanager.com/gtm.js$domain=renault.ru
@@ -8017,7 +8021,6 @@ $xmlhttprequest,domain=auroravid.to|flashx.cc|nowvideo.sx|onlinevideoconverter.c
 @@||naver.net/wcslog.js$domain=m.tv.naver.com
 @@||nbcume.sc.omtrdc.net/id?d_visid_ver=$domain=nbcdfw.com,important
 @@||nbe.com.eg/NBEeChannelManager/CallMW.aspx$~third-party
-@@||nc0.co^$script,domain=abc.com
 @@||ncbi.nlm.nih.gov/stat?
 @@||ndr.de/common/resources/lib/atinternet/smarttag.js
 @@||nemlog-in.dk/resources/js/adrum.js$~third-party
@@ -8116,6 +8119,7 @@ $xmlhttprequest,domain=auroravid.to|flashx.cc|nowvideo.sx|onlinevideoconverter.c
 @@||orginio.com/api/analytics/$~third-party,xmlhttprequest
 @@||orginio.de/api/analytics/$~third-party,xmlhttprequest
 @@||oriflame.ru^$cookie=SC_ANALYTICS_GLOBAL_COOKIE
+@@||ots.webtrends-optimize.com/$xmlhttprequest,domain=tvlicensing.co.uk
 @@||ovp.piksel.com/ipLookup.php$xmlhttprequest,domain=nhk.or.jp
 @@||oyster.com/wp-content/plugins/smartertravel-shared/assets/js/tracking.min.js$~third-party
 @@||ozone.ru/assets/analytics.$script,~third-party
@@ -8356,6 +8360,7 @@ $xmlhttprequest,domain=auroravid.to|flashx.cc|nowvideo.sx|onlinevideoconverter.c
 @@||secure.info.seek.com/b/ss/
 @@||secure.logmein.com/scripts/Tracking/$script,domain=logme.in|logmein.com
 @@||secure.logmein.com/scripts/Tracking/Tracking.js$domain=logmein.com
+@@||securegames.iwin.com/data/gtm.json$~third-party,xmlhttprequest
 @@||securemetrics.apple.com/b/ss/$image
 @@||securepubads.g.doubleclick.net/tag/js/gpt.js$domain=avclub.com|clickhole.com|deadspin.com|gizmodo.com|jalopnik.com|jezebel.com|kotaku.com|lifehacker.com|splinternews.com|theinventory.com|theonion.com|theroot.com|thetakeout.com
 @@||securepubads.g.doubleclick.net/tag/js/gpt.js$domain=freundin.de
@@ -8776,6 +8781,7 @@ $xmlhttprequest,domain=auroravid.to|flashx.cc|nowvideo.sx|onlinevideoconverter.c
 @@||websimages.com/JS/Tracker.js
 @@||webstat.channel4.com/b/ss/channel4dotcom/$domain=channel4.com
 @@||webtrack.dhlglobalmail.com^
+@@||webtrends.com/js/webtrends.min.js$script,domain=tvlicensing.co.uk
 @@||webtrends.com/ots/$domain=moneysupermarket.com
 @@||webtrends.com^*/events.svc$subdocument,domain=mycokerewards.com
 @@||webtrendslive.com^*/wtid.js?$domain=att.yahoo.com
@@ -11230,6 +11236,7 @@ znak.com##.relap
 ||agitos.de/content/track?
 ||agkn.com^
 ||agkn.com^$third-party
+||agnes.waz.de^
 ||agoda.com/api/pixel/
 ||agoda.com/api/pixel/index?
 ||agorahtag.tech^$third-party
@@ -13026,6 +13033,7 @@ znak.com##.relap
 ||b1js.com^$third-party
 ||b1n.carabins.umontreal.ca^
 ||b20p6lt350nt.app.polymersearch.com^
+||b2b.ainews.kz/script/v*/ainews-click.js
 ||b2b.rocketcrm.bz^$domain=fitness-pro.ru
 ||b2bmarketing.swisscom.ch^
 ||b2bmarketingsb.swisscom.ch^
@@ -13553,6 +13561,7 @@ znak.com##.relap
 ||blog-stat.com^$third-party
 ||blog-webkatalog.de^$third-party
 ||blog.b2lead.com^
+||blog.count.ly/_/batch
 ||blog.skk.moe/_nuxt/static/manifest$xmlhttprequest
 ||blog.trinityconsultants.com^
 ||blog104.com^$third-party
@@ -14377,6 +14386,7 @@ znak.com##.relap
 ||cdn.glassboxcdn.com^$third-party
 ||cdn.hiido.cn^$third-party
 ||cdn.hivps.xyz/analytics-
+||cdn.jsdelivr.net/countly-sdk-web/
 ||cdn.jsdelivr.net/npm/@adshield/
 ||cdn.jsdelivr.net/npm/perfops-rom$domain=kropic.com|opensubtitles.org
 ||cdn.jsdelivr.net/npm/rrweb@latest/dist/rrweb.
@@ -17316,6 +17326,7 @@ znak.com##.relap
 ||dngpzy.lexpress.fr^
 ||dngpzy.liberation.fr^
 ||dngpzy.tradingsat.com^
+||dnh523js9661q.cloudfront.net^
 ||dnn506yrbagrg.cloudfront.net^
 ||dnn506yrbagrg.cloudfront.net^$domain=quoka.de
 ||dns-clientinfo.cbsivideo.com^
@@ -19215,6 +19226,7 @@ znak.com##.relap
 ||filmoljupci.com^
 ||fimuod.korkmazstore.com.tr^
 ||fimyxg.haberturk.com^
+||fin.rainbownine.net/js/across_adn_
 ||finalid.com^$third-party
 ||finalizeforce.com^
 ||finalizeforce.com^$third-party
@@ -19545,6 +19557,7 @@ znak.com##.relap
 ||freeonlineusers.com^$third-party
 ||freepeople.com/tN88Q85M/init.js
 ||freepik.com/_ga?
+||freeplayervideo.com/cdn-cgi/trace
 ||freepornq.com/counter/
 ||freesitemapgenerator.com^$third-party
 ||freestat.ws^$third-party
@@ -20123,7 +20136,7 @@ znak.com##.relap
 ||global.cmcs.service.amazonsilk.com/metrics
 ||global.px.quantserve.com^
 ||global.ssl.fastly.net/native/
-||global.ssl.fastly.net^$script,domain=10play.com.au|allmodern.com|argos.co.uk|birchlane.com|courier-journal.com|courierpress.com|desertsun.com|detroitnews.com|eddiebauer.com|freep.com|glassesusa.com|greenbaypressgazette.com|indystar.com|jsonline.com|kurtgeiger.com|legacy.com|lenovo.com|lohud.com|lowes.com|naplesnews.com|news-journalonline.com|northjersey.com|perigold.com|quickship.com|quikshiptoner.com|radiotimes.com|sainsburys.co.uk|sanuk.com|sheboyganpress.com|tallahassee.com|theadvertiser.com|thisweek.com|ugg.com|usatoday.com|wayfair.co.uk|wayfair.com|wwe.com
+||global.ssl.fastly.net^$script,domain=10play.com.au|allmodern.com|argos.co.uk|basspro.com|birchlane.com|courier-journal.com|courierpress.com|desertsun.com|detroitnews.com|eddiebauer.com|freep.com|glassesusa.com|greenbaypressgazette.com|indystar.com|jsonline.com|kurtgeiger.com|legacy.com|lenovo.com|lohud.com|lowes.com|naplesnews.com|news-journalonline.com|northjersey.com|perigold.com|quickship.com|quikshiptoner.com|radiotimes.com|sainsburys.co.uk|sanuk.com|sheboyganpress.com|tallahassee.com|theadvertiser.com|thisweek.com|ugg.com|usatoday.com|wayfair.co.uk|wayfair.com|wwe.com
 ||global.sueddeutsche.de/globalassets/standalone/szstats/configuration.json
 ||globalapi.ad.xiaomi.com^
 ||globalbanking.wolterskluwer.com^
@@ -21908,6 +21921,7 @@ znak.com##.relap
 ||infopro-insight.com^$third-party
 ||infoprodata.com^$third-party
 ||infoq.com/metrics/
+||inform.kz/lenta*/count?
 ||informatics.filamentcolors.xyz^
 ||information.cleanservices.co.uk^
 ||information.lgcns.com^
@@ -23172,6 +23186,7 @@ znak.com##.relap
 ||lightcushion.com^$third-party
 ||lightminer.co^$third-party
 ||lightning.ncaa.com/launch/$script
+||lightstep.medium.systems^
 ||lightstep.medium.systems^*/reports
 ||ligxyv.hackers.co.kr^
 ||lijit.com/blog_wijits?*=trakr&
@@ -25193,6 +25208,7 @@ znak.com##.relap
 ||metrics.aftonbladet.se^
 ||metrics.agilent.com^
 ||metrics.aia.com^
+||metrics.ainews.kz^
 ||metrics.alecensa.com^
 ||metrics.allaboutyou.com^
 ||metrics.allianzlife.com^
@@ -29647,6 +29663,7 @@ znak.com##.relap
 ||reporting.singlefeed.com^
 ||reports-api.sqreen.io^
 ||reports.pagesuite-professional.co.uk^
+||reports.sdiapi.com^
 ||reportsk.web.sdo.com^
 ||representativeray.com^
 ||reprocautious.com^$third-party
@@ -29864,6 +29881,8 @@ znak.com##.relap
 ||roispy.com^$third-party
 ||roistat.com^$third-party
 ||roitesting.com^$third-party
+||rokt.com/v1/events^
+||rokt.com/v2/metrics^
 ||rolite.eu/wp-content/*/js/cntr.js
 ||rollbar.com^$third-party
 ||rollercoin.com^$third-party
@@ -34866,6 +34885,7 @@ znak.com##.relap
 ||stats.jpush.cn^$redirect=nooptext
 ||stats.justanotherpm.com^
 ||stats.justinwilliams.ca^
+||stats.justpaste.it^
 ||stats.kafarowski.com^
 ||stats.kaltura.com^
 ||stats.kejk.tech^
@@ -36541,7 +36561,9 @@ znak.com##.relap
 ||tijd.be/fb/?
 ||tijd.be/track/
 ||tiktok.com/captcha/report
+||tiktok.com/v1/list
 ||tiktok.com/whale/
+||tiktokv.com/monitor_browser/
 ||tiktokv.com/web/report?
 ||tilanalytics.timesinternet.in^
 ||tilt.bankofamerica.com^
@@ -36678,6 +36700,7 @@ znak.com##.relap
 ||tms-test.nab.com.au^
 ||tms.americanexpress.com^
 ||tms.capitalone.com^
+||tms.delta.com/privacy/$image
 ||tms.delta.com^
 ||tms.dmp.wi-fi.ru^
 ||tms.eharmony.ca^
@@ -39178,7 +39201,6 @@ znak.com##.relap
 ||virgoplato.com^$third-party
 ||virgul.com^$third-party
 ||virool.com^$third-party
-||virtual-dba.com/wp-json/pum/*/analytics/
 ||virtualcarshop.jp/js/ga.js
 ||virtualearth.net/webservices/v*/LoggingService/LoggingService.svc/Log?entry=
 ||virtualnet.co.uk^$third-party
@@ -39415,6 +39437,7 @@ znak.com##.relap
 ||w88.thewaltdisneycompany.eu^
 ||wa.and.co.uk^
 ||wa.gifts.com^
+||wa.gmx.ch^
 ||wa.gmx.net/gmxde/gmxde/s?$image
 ||wa.metro.co.uk^
 ||wa.ncr.com^
@@ -39522,6 +39545,7 @@ znak.com##.relap
 ||wcs.naver.com^
 ||wcs.naver.com^$image
 ||wcs.naver.net^$domain=brotoon.com
+||wct-1.com/wct.js
 ||wcujyh.loftdesigne.ru^
 ||wdfl.co^$third-party
 ||wdr.de/*/tracker/
@@ -39853,6 +39877,7 @@ znak.com##.relap
 ||widget.mb-srv.com^$third-party
 ||widget.perfectmarket.com^
 ||widget.quantcast.com^
+||widget.trustpilot.com/stats/
 ||widget.trustpilot.com^$third-party
 ||widgetbe.com^
 ||widgetbox.com/syndication/track/
@@ -40892,7 +40917,6 @@ znak.com##.relap
 ||yuebofa.cc^$third-party
 ||yunit.org^$third-party
 ||yuoyan.finanzen.de^
-||yuzde100yerli.com/wp-json/pum/v*/analytics/?event=
 ||yvcjyi.beymen.com^
 ||yvdaeg.on-running.com^
 ||yvesrocher.com.tr/images/__utm.gif^

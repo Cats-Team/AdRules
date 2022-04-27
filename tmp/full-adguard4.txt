@@ -155,7 +155,7 @@
 ! Chat widget on the main page
 ! Chat widgets
 ! Check, if these sites work fine with scriptlet: mail.rambler.ru, kino.rambler.ru, weather.rambler.ru, comments.rambler.ru, kassa.rambler.ru, horoscopes.rambler.ru
-! Checksum: 9ZE7UQvKwSXrl/A0cQ/BAw
+! Checksum: rvTW9cFFqjb3C/2rCYCvTg
 ! Chrome banner in MS Edge
 ! Chrome browser suggest
 ! Climate info below articles
@@ -313,7 +313,7 @@
 ! This section contains the list of rules that block website push notifications ("subscribe to the news" kind of notifications).
 ! This section contains the list of rules that fix incorrect blocking of cookie notifications by generic rules. Rules should be domain-specific.
 ! This section contains the list of the rules against annoyances that are not falling under existing categories. Rules should be domain-specific.
-! TimeUpdated: 2022-04-26T21:02:24+00:00
+! TimeUpdated: 2022-04-27T06:30:34+00:00
 ! Title: AdGuard Annoyances filter
 ! To be discussed
 ! Turkish digital magazines
@@ -321,7 +321,7 @@
 ! Unhide for Android CB if top padding cannot be removed
 ! Using just "._gdpr-notify-header" will cause that part of the content will be hidden on a mobile website
 ! Vacancy widgets
-! Version: 2.1.17.20
+! Version: 2.1.17.21
 ! Video recommendations
 ! Voting widget
 ! Website is broken if "display: none" is used - ##div[class*="ConsentBannerstyles_"]
@@ -11255,8 +11255,9 @@ cio.de##.idgContentList > li[data-vr-contentbox^="articleSponsored"]
 cio.economictimes.indiatimes.com##.in-page-promotions-buckets-featured
 cioccolatonippon.it,movieplayer.it,hwupgrade.it,iphoneitalia.com,mediaset.it###iubenda-cs-banner
 circle.ms##.cookie_grayL
-cire.pl#%#//scriptlet('set-cookie', 'APP_COOKIES_POLICY', 'true')
-cire.pl#%#//scriptlet('set-cookie', 'APP_COOKIES_TERMS_AND_CONDITIONS', 'true')
+cire.pl#$#body[style*="overflow"] { overflow: auto !important; }
+cire.pl#%#//scriptlet('set-cookie', 'APP_A_COOKIES_POLICY', 'true')
+cire.pl#%#//scriptlet('set-cookie', 'APP_A_COOKIES_TERMS_AND_CONDITIONS', 'true')
 cisco.com###cookie_informer
 cision.com###cision-cookie-policy-banner
 cissamagazine.com.br##.informativo-lgpd

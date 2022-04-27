@@ -8,6 +8,7 @@
 ! (e.g. mirrored.to, tunnistautuminen.suomi.fi)
 ! (eBay can't be added; see https://github.com/DandelionSprout/adfilt/pull/514)
 ! (https://github.com/DandelionSprout/adfilt/discussions/163#discussioncomment-488495)
+! (https://github.com/DandelionSprout/adfilt/issues/582)
 ! - this list can not bypass tracker redirects through third-party domains. This can be done by strict-blocking said domain and using the ability to view parameters on the strict-block page or tools to bypass it.
 ! - this list can not remove anything after the # in URLs. This is impossible in uBlock Origin and AdGuard.
 ! - this list can not remove parameters added using https://developer.mozilla.org/en-US/docs/Web/API/History/replaceState
@@ -41,7 +42,7 @@
 ! Temp fix for Facebook - https://github.com/DandelionSprout/adfilt/issues/473
 ! This extra parameter appears when opening news from widgets in Windows 11.
 ! Title: ➗ Actually Legitimate URL Shortener Tool
-! Version: 26April2022v2
+! Version: 27April2022v2
 ! http://blog.sina.com.cn/s/blog_635c86d50102zvmo.html?tj=1 (4/1/2022)
 ! http://edu.sina.com.cn/y/bbs/2005/1020/1017979.html?presentid=webnews (14/02/2022)
 ! http://m.aliexpress.com/item/32475192128.html?aff_click_id=2c7754c8f1174236b64f3b364bfd24a3-1470106049987-05070-eub6yrrBy
@@ -886,6 +887,7 @@
 !!!! ——— iQIYI ———
 !!!$removeparam=iid,domain=ebay.* (https://github.com/DandelionSprout/adfilt/issues/549)
 !!!$~xmlhttprequest,removeparam=psc (Breaks cloth size selection)
+!!!||startpage.com^$removeparam=pl
 !!!||walmart.$removeparam=wl13 (Decides pickup location)
 !#endif
 !#if !adguard_app_android
@@ -2658,13 +2660,12 @@ actionewz.com,animemojo.com,comicbookmovie.com,fearhq.com,gamefragger.com,mtvuut
 ||spotify.com^$removeparam=nd
 ||squarespace.com^$removeparam=subchannel
 ||startpage.*^$removeparam=segment
-||startpage.com^$removeparam=pl
 ||steampowered.com^$removeparam=ser
 ||sunbasket.com^$removeparam=msb1
 ||sunbasket.com^$removeparam=msb2
 ||sunbasket.com^$removeparam=msb3
 ||sunbasket.com^$removeparam=muts
-||support.github.com^$removeparm=tag
+||support.github.com^$removeparam=tag
 ||surfshark.com^$removeparam=transaction_id
 ||target.com^$removeparam=clkid
 ||target.com^$removeparam=lnk

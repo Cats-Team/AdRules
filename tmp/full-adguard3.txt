@@ -37,7 +37,7 @@
 ! Bad: ||legitwebsite.com^$third-party (should be in adservers.txt)
 ! Based on AG_defineProperty (https://github.com/AdguardTeam/deep-override)
 ! By advanced we mean the following rule types: CSS, scriptlets, HTML filtering (`$$` marker), JS.
-! Checksum: 7VPXCruCVcnSOrFY5VlPdA
+! Checksum: ahOCdkDBmnwrxEtB8Rz9Gw
 ! Description: EasyList China + AdGuard Chinese filter. Filter list that specifically removes ads on websites in Chinese language.
 ! Examples:
 ! Examples: AG_removeCookie('/REGEX/') or AG_removeCookie('part of the cookie name')
@@ -79,9 +79,9 @@
 ! This section contains the list of rules that fix incorrect blocking. Rules must be domain-specific.
 ! This section contains the list of the content replacement rules that block ads. Rules must be domain-specific.
 ! This section contains the list of third-party advertising networks domains.
-! TimeUpdated: 2022-04-27T01:02:28+00:00
+! TimeUpdated: 2022-04-27T07:30:56+00:00
 ! Title: AdGuard Chinese filter
-! Version: 2.0.53.80
+! Version: 2.0.53.84
 ! cocomanga.com,cocomanga.com CNAME breakage
 ! do not hide popup, because product selector will not work
 ! e66mobi ads
@@ -17859,6 +17859,7 @@ zznews.cn##.ad:not([style])
 ||katelin.top^
 ||kauomod.cn^
 ||kawayiyi.icu^
+||kazigua.top^
 ||kb-render.alicdn.com/html/*.html
 ||kbkilog.cn^
 ||kbneks00.online^
@@ -18120,6 +18121,7 @@ zznews.cn##.ad:not([style])
 ||lancdn.com^*/uneed
 ||lancdn.com^*/wisecare
 ||langger76.site^
+||langkefaye.top^
 ||language-center.com.tw/udn/
 ||langxi.org/langxi/*900$image,object
 ||langya.cn/2014html/2014ad_
@@ -18451,6 +18453,7 @@ zznews.cn##.ad:not([style])
 ||log.interest.mix.sina.com.cn^
 ||log57.top^
 ||loganaut.com^$third-party
+||logoduoduo.com^
 ||logoquan.com/upload/prd/
 ||loldyttw.com/blr.js
 ||loldyttw.com/skin/lol/js/ds.js
@@ -19829,6 +19832,7 @@ zznews.cn##.ad:not([style])
 ||pndagz.com^
 ||pniao99.com/statics/js/stat.js
 ||pnxs.com^
+||pnyllove.com^
 ||po*.877zw.com^
 ||poco.cn/v1_1/rank/get_floating_layer_ad
 ||poco.cn^*_info_banner
@@ -23517,6 +23521,7 @@ zznews.cn##.ad:not([style])
 ||youyouf.top^
 ||youyoumw.com^
 ||youzhizi.com^
+||youzonggw.com^
 ||yovkr.xyz^
 ||yoyi.com.cn^$third-party
 ||yoyi.tv^$third-party

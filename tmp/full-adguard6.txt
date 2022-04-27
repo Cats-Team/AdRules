@@ -56,7 +56,7 @@
 ! Based on AG_defineProperty (https://github.com/AdguardTeam/deep-override)
 ! Blocked icons for social logging
 ! By advanced we mean the following rule types: CSS, scriptlets, HTML filtering (`$$` marker), JS.
-! Checksum: tcTL+X/mw3zwchB9mqnHOA
+! Checksum: zzk8kOLBdqaoiIHu2SV6OQ
 ! Common names
 ! Description: Filter for social media widgets such as 'Like' and 'Share' buttons and more.
 ! Do not block facebook embedded video
@@ -99,11 +99,11 @@
 ! This section contains the list of social blocking rules that fall under "advanced" category.
 ! This section contains the list of the rules for common trackers/buttons.
 ! This section contains the list of the rules that block in page social popups.
-! TimeUpdated: 2022-04-26T21:31:24+00:00
+! TimeUpdated: 2022-04-27T07:31:26+00:00
 ! Title: AdGuard Social Media filter
 ! Unblock minificated scripts library
 ! Unhide links to a websites in different languages
-! Version: 2.0.60.44
+! Version: 2.0.60.46
 ! Yandex.Balaboba
 ! Yandex.Disk
 ! Yandex.Forms
@@ -4657,6 +4657,7 @@ gorodche.ru##a[title^="Поделиться в"]
 gorodche.ru#?#h4:contains(/^Поделиться$/)
 gorodkiev.com.ua#%#AG_onLoad(() => {const a = document.querySelector('.commentsfacebook');const b = a?.firstElementChild?.previousSibling;if (b) b.remove();});
 gorodkirov.ru##.likely__widget
+gorodrabot.by##.sidebar > aside.block.d-print-none
 gorodrabot.ru##.shareLabel
 gorodrabot.ru#?#.row > div[class] > div.block-content:has(> div > div[class^="ya-share"])
 gorsovet.com.ua,dnpr.com.ua,flagma.ru,pentestpartners.com,lingq.com,androidheadlines.com,autobytel.com,theonion.com##.share-widget
@@ -4691,6 +4692,7 @@ gran-turismo.com##.kLGGEq > a[class="_3cOCYi _3FunNS"]
 gran-turismo.com##.kLGGEq > a[class="_3cOCYi gwHPsB"]
 grandprix247.com,info-war.gr,whitemad.pl,sanatatak.com,comicbooks.world,digitalmusicnews.com,scotsman.com,kochfreunde.com##.cb-social-sharing
 granelle.ru##.flat-detail-sidebar__share
+gratka.pl,noizz.pl,sydroid.co,onet.pl,thescore.com##.shareButton
 grazia.co.in##.sticky-sharer
 greaterkashmir.com,street-beat.ru##div[class^="social-share"]
 greatist.com##.button-wrapper.pinterest
@@ -7219,7 +7221,6 @@ nobody.one#@#.social-wrapper
 nocopyright.ru##a[href="#share-track"]
 noizz.hu,noizz.de##.contentShareButtons
 noizz.hu,noizz.de##.floatingShareButtonContainer
-noizz.pl,sydroid.co,onet.pl,thescore.com##.shareButton
 noklapja.hu#$#.blurry { filter: none !important; }
 noklapja.hu#$#.m-fbPopup { display: none !important; }
 noltrt.com##.xet-sns-box
