@@ -155,7 +155,7 @@
 ! Chat widget on the main page
 ! Chat widgets
 ! Check, if these sites work fine with scriptlet: mail.rambler.ru, kino.rambler.ru, weather.rambler.ru, comments.rambler.ru, kassa.rambler.ru, horoscopes.rambler.ru
-! Checksum: Bf5YeBq4G6O/GitTT6poeg
+! Checksum: l27hNDCKFH79x986NohxQQ
 ! Chrome banner in MS Edge
 ! Chrome browser suggest
 ! Climate info below articles
@@ -313,7 +313,7 @@
 ! This section contains the list of rules that block website push notifications ("subscribe to the news" kind of notifications).
 ! This section contains the list of rules that fix incorrect blocking of cookie notifications by generic rules. Rules should be domain-specific.
 ! This section contains the list of the rules against annoyances that are not falling under existing categories. Rules should be domain-specific.
-! TimeUpdated: 2022-04-27T08:30:37+00:00
+! TimeUpdated: 2022-04-27T10:30:37+00:00
 ! Title: AdGuard Annoyances filter
 ! To be discussed
 ! Turkish digital magazines
@@ -321,7 +321,7 @@
 ! Unhide for Android CB if top padding cannot be removed
 ! Using just "._gdpr-notify-header" will cause that part of the content will be hidden on a mobile website
 ! Vacancy widgets
-! Version: 2.1.17.22
+! Version: 2.1.17.23
 ! Video recommendations
 ! Voting widget
 ! Website is broken if "display: none" is used - ##div[class*="ConsentBannerstyles_"]
@@ -1102,6 +1102,7 @@
 ! https://github.com/AdguardTeam/AdguardFilters/issues/116523
 ! https://github.com/AdguardTeam/AdguardFilters/issues/116595
 ! https://github.com/AdguardTeam/AdguardFilters/issues/116601
+! https://github.com/AdguardTeam/AdguardFilters/issues/116651
 ! https://github.com/AdguardTeam/AdguardFilters/issues/11757
 ! https://github.com/AdguardTeam/AdguardFilters/issues/11944
 ! https://github.com/AdguardTeam/AdguardFilters/issues/11972
@@ -4697,6 +4698,7 @@
 ###tarteaucitronAlertBig
 ###tarteaucitronRoot
 ###tc_privacy
+###termly-code-snippet-support
 ###tescoCookieNotification
 ###tesco_cookie_widget
 ###the-cookie
@@ -5457,7 +5459,7 @@ $xmlhttprequest,redirect-rule=nooptext,domain=aternos.org
 /\/(support_banner.*|sidebar-your-brand-on-your-links.*|sidebar-how-to-build-a-brand|sidebar-stop-using-generic-links.*)\.(jpg|png)/$domain=rebrandly.com
 /\/(zaaten[0-9]?|spetsagroshina_animate)\.gif/$domain=agroone.info
 /^https:\/\/.*?\/v2\/0\/[a-zA-Z0-9_-]{30,}$/$third-party,script,domain=~techworld.com
-/^https?:\/\/[^\/]+\.[^\/]+\/[a-zA-Z0-9]{32,}$/$script,~third-party,domain=~ofeminin.pl|~vibez.pl|~superauto.pl|~totalmoney.pl|~videostar.pl|~fotoblogia.pl|~gadzetomania.pl|~komorkomania.pl|~autocentrum.pl|~autokult.pl|~novinky.cz|~dobreprogramy.pl|~abczdrowie.pl|~ignboards.com|~chronicle.com|~wetteronline.at|~realtor.ca|~parenting.pl|~pulsembed.eu|~ytwkco.com|~anhjrnog.zlhlk.com|~kompasiana.com|~tkepyc.com|~lvxutzhzm.com|~bgxwfrjty.com|~pch.com|~open.fm|~money.pl|~tribunnews.com|~onet.pl|~przegladsportowy.pl|~ekstraklasa.tv|~medonet.pl|~auto-swiat.pl|~businessinsider.com.pl|~fakt.pl|~forbes.pl|~noizz.pl|~plejada.pl|~vod.pl|~komputerswiat.pl|~wp.pl|~coco.fr|~ign.com|~namemc.com|~roblox.com|~sap.com|~studio-svet.ru|~stumbleupon.com|~trueachievements.com|~tv.yandex.by|~tv.yandex.kz|~tv.yandex.ru|~tv.yandex.ua|~wetteronline.de|~justjared.com|~gfycat.com|~ejuslehq.com|~o2.pl|~pudelek.pl|~ltzwsjgg.bpghhjtmn.com|~carrefour.fr|~priceline.com.au|~ancestry.com.au|~carrefour.com|~vpolshchi.pl
+/^https?:\/\/[^\/]+\.[^\/]+\/[a-zA-Z0-9]{32,}$/$script,~third-party,domain=~lamoda.pl|~ofeminin.pl|~vibez.pl|~superauto.pl|~totalmoney.pl|~videostar.pl|~fotoblogia.pl|~gadzetomania.pl|~komorkomania.pl|~autocentrum.pl|~autokult.pl|~novinky.cz|~dobreprogramy.pl|~abczdrowie.pl|~ignboards.com|~chronicle.com|~wetteronline.at|~realtor.ca|~parenting.pl|~pulsembed.eu|~ytwkco.com|~anhjrnog.zlhlk.com|~kompasiana.com|~tkepyc.com|~lvxutzhzm.com|~bgxwfrjty.com|~pch.com|~open.fm|~money.pl|~tribunnews.com|~onet.pl|~przegladsportowy.pl|~ekstraklasa.tv|~medonet.pl|~auto-swiat.pl|~businessinsider.com.pl|~fakt.pl|~forbes.pl|~noizz.pl|~plejada.pl|~vod.pl|~komputerswiat.pl|~wp.pl|~coco.fr|~ign.com|~namemc.com|~roblox.com|~sap.com|~studio-svet.ru|~stumbleupon.com|~trueachievements.com|~tv.yandex.by|~tv.yandex.kz|~tv.yandex.ru|~tv.yandex.ua|~wetteronline.de|~justjared.com|~gfycat.com|~ejuslehq.com|~o2.pl|~pudelek.pl|~ltzwsjgg.bpghhjtmn.com|~carrefour.fr|~priceline.com.au|~ancestry.com.au|~carrefour.com|~vpolshchi.pl
 /^https?:\/\/[^\/]+\.[^\/]+\/[a-zA-Z0-9_-]{32,}$/$script,third-party,domain=boredpanda.com|digitaltrends.com|geekspin.co|cleveland.com|veliainn.com|inquirer.net|winhelponline.com|bloody-disgusting.com|bigleaguepolitics.com|sportskeeda.com
 /^https?:\/\/[^\/]+\/[a-zA-Z0-9]{32,}$/$script,third-party,domain=~ofeminin.pl|~vibez.pl|~superauto.pl|~totalmoney.pl|~videostar.pl|~fotoblogia.pl|~gadzetomania.pl|~komorkomania.pl|~autocentrum.pl|~autokult.pl|~dobreprogramy.pl|~abczdrowie.pl|~ignboards.com|~wetteronline.at|~newsweek.pl|~parenting.pl|~pulsembed.eu|~grid.id|~kompasiana.com|~centrum.cz|~tkepyc.com|~pch.com|~open.fm|~money.pl|~tribunnews.com|~onet.pl|~przegladsportowy.pl|~ekstraklasa.tv|~medonet.pl|~auto-swiat.pl|~businessinsider.com.pl|~fakt.pl|~forbes.pl|~noizz.pl|~plejada.pl|~vod.pl|~komputerswiat.pl|~wp.pl|~coco.fr|~ign.com|~namemc.com|~roblox.com|~sap.com|~studio-svet.ru|~stumbleupon.com|~trueachievements.com|~tv.yandex.by|~tv.yandex.kz|~tv.yandex.ru|~tv.yandex.ua|~wetteronline.de|~justjared.com|~mynet.com|~o2.pl|~pudelek.pl|~bolasport.com|~vpolshchi.pl
 /__cookie_js.php
@@ -11994,7 +11996,6 @@ cu.tbs.co.jp##.app-wrapper
 cualesmiip.com#$#.dc-cmp-ui-container { display: none !important; }
 cualesmiip.com#$#body.dc-cmp-ui-showing { overflow: auto !important; }
 cubbiescrib.com#%#AG_onLoad(function() { setTimeout(function() { if(document.getElementById("gdpr-consent-form-wrapper").isvisible = true) { document.cookie = "euConsent=true"; location.reload(); }; }, 1000); });
-cubehosting.me###termly-code-snippet-support
 cubiq.ru##.follow-telegram
 cubiq.ru##div[id^="hwp-"]
 cudmoda.pl#?#.iqitcookielaw-showed
@@ -13904,7 +13905,6 @@ eundl.de#@##cookie-info
 euobserver.com##div[class="v2 wide membership-upsell show"]
 eurabota.com##.abtop
 euractiv.com###contribs_banner
-euractiv.com###termly-code-snippet-support
 euroakademie.de###coockiehinweis
 eurobuch.de###consentBanner1
 eurodicas.com.br#$#.pum-overlay[data-popmake*="eud-newsletter"] { display: none!important; }
@@ -19054,8 +19054,9 @@ lamarinaresort.com###cookies-advice
 lambdatest.com##.cookies__bar
 lambdatest.com##.cookiesdiv
 lamborghini.com,auction.fr###disclaimer-cookie
-lamoda.pl###product-feed-bottom
 lamoda.pl##.min-h-newsletter
+lamoda.pl##article + a[href="/newsletter"]
+lamoda.pl##article ~ #product-feed-bottom
 lamoda.ru##.page > div[class^="vue-widget "] > div[class^="_"]
 lamoda.ru##.subscription-footer_wrapper
 lamoda.ru##.unipop__container
@@ -25061,6 +25062,7 @@ rakuten-bank.co.jp##header > div[class^="hidden"] > a[href][target="_blank"]
 rakuten-card.co.jp##.list-bnr-wrap
 rakuten-sec.co.jp##a[data-ratid="header-long-banner_ads_mobile"]
 rakuten.co.jp###mno-header
+rakuten.co.jp###rexSurveyRoot
 rallye-magazin.de###banner_billboard
 rallye-magazin.de###billboardattention
 rallye-magazin.de###inj_nl_form
@@ -29508,6 +29510,7 @@ trueanal.com##.paypal-popup-wrap
 truecaller.com###app > footer + div.fixed + div[dir]
 truecaller.com###app > footer + div.fixed > span
 truecaller.com##.fixed.bottom-0
+truevirtualworld.com##.card-cookie
 trumpf.com###popup-privacy
 truphone.com#$#body { overflow: auto !important; padding-right: 0 !important; }
 truphone.com#$#div[aria-describedby="cookie-modal"] { display: none !important; }
