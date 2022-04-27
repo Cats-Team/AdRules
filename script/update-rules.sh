@@ -239,7 +239,7 @@ cat l*.txt pre-allow1.txt dns99* dns10.txt \
 cp .././script/dns-rules-config.json ./
 hostlist-compiler -c dns-rules-config.json -o dns-output.txt 
 
-cat dns-output.txt deadblock.txt deadblock.txt \
+cat ../mod/*/dns-rule-allow.txt ../mod/*/dns-rule-allow.txt dns-output.txt deadblock.txt deadblock.txt \
  | sort -n |uniq -u >tmp0-dns.txt #去重过期域名
 
 cat tmp0-dns.txt l.txt dns99* \
@@ -251,7 +251,8 @@ cat .././mod/rules/*-rules.txt base-src-hosts.txt hosts99*.txt \
  |sed 's/||/0.0.0.0 /' | sed 's/\^//' \
  | sort -n | uniq > tmp1-hosts1.txt  #处理Hosts规则
 
-cat tmp1-hosts1.txt pre-hostsallow.txt pre-hostsallow.txt deadhosts.txt deadhosts.txt\
+cat ../mod/*/dns-rule-allow.txt ../mod/*/dns-rule-allow.txt tmp1-hosts1.txt pre-hostsallow.txt pre-hostsallow.txt deadhosts.txt deadhosts.txt\
+ | sed 's/||//g' |sed 's/\^//g' \
  | sort -n |uniq -u >tmp-hosts.txt #去重允许域名
 
 cat tmp-hosts.txt \
