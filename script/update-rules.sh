@@ -255,7 +255,7 @@ cat dns9999.txt| sed 's/||/0.0.0.0 /g' | sed 's/^//g' >hosts9999.txt
 cat .././mod/rules/*-rules.txt base-src-hosts.txt hosts99*.txt \
  | sed '/^$/d' |grep -E "^([0-9].*)|^((\|\|)[^\/\^]+\^$)" \
  |sed 's/||/0.0.0.0 /g' | sed 's/\^//g' \
- |'s/0.0.0.0 //g'\
+ |sed 's/0.0.0.0 //g'\
  | sort -n | uniq > tmp1-domain.txt  #处理Hosts规则
 
 cat ../mod/*/dns-rule-allow.txt ../mod/*/dns-rule-allow.txt tmp1-domain.txt tmpallow tmpallow pre-hostsallow.txt pre-hostsallow.txt deadhosts.txt deadhosts.txt\
