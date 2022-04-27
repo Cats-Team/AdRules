@@ -1492,6 +1492,7 @@
 ! https://www.reddit.com/r/uBlockOrigin/comments/tnf617/how_to_block_script_right_click_copy_disable_on/i21fzrs/
 ! https://www.reddit.com/r/uBlockOrigin/comments/tydsev/adblocker_detected_on_unidiversfr/
 ! https://www.reddit.com/r/uBlockOrigin/comments/u47aev/stop_autodisabling_of_dropdown_menus_and_input/
+! https://www.reddit.com/r/uBlockOrigin/comments/ud623s/
 ! https://www.thuthuatmoi.xyz/2021/07/bitdefender-total-security-2501458-64.html anti right click
 ! https://yeuphimmoik.com/xem-phim/phi-vu-den/tap-1-sv-1/ anti right click
 ! https://zodhacks.com/pet-simulator-x-saza-hub-easter/ freezing devtools
@@ -1860,6 +1861,7 @@
 @@||byggahus.se^$ghide
 @@||cardgames.io^$ghide
 @@||cdnjs.cloudflare.com/ajax/libs/blockadblock/*/blockadblock.min.js$script,domain=starblast.io
+@@||chronicle.com/dg/default/rest/$1p,xhr
 @@||codehelppro.com^$ghide
 @@||coinpayu.com^$ghide
 @@||coloribus.com^$ghide
@@ -2337,6 +2339,9 @@ chocolatey.org##body:style(overflow:auto !important)
 chowhound.com##.fb_lightbox-lock:style(overflow-x: hidden !important; overflow-y: scroll !important;)
 chowhound.com##.fb_lightbox-overlay
 chowhound.com##.preloaded_lightbox
+chronicle.com##.ArticleFullBleedLeadPage-summary
+chronicle.com##.ArticlePage-summary
+chronicle.com##[data-content-body]:style(height:initial!important;visibility:initial!important;overflow:initial!important;opacity:initial!important)
 chronologia.pl##+js(set, document.oncontextmenu, null)
 chronologia.pl##+js(set, document.onselectstart, null)
 ciberduvidas.iscte-iul.pt##+js(aeld, copy)
