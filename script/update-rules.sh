@@ -151,6 +151,12 @@ wait
 curl --connect-timeout 60 -s -o - https://raw.githubusercontent.com/CipherOps/AdGuardBlocklists/main/REGEX.txt \
  | grep -Fv "/^ad([sxv]?[0-9]*|system)[_.-]([^.[:space:]]+\.){1,}|[_.-]ad([sxv]?[0-9]*|system)[_.-]/" > dns998.txt &
 wait
+
+for url in 'curl https://raw.githubusercontent.com/neodevpro/neodevhost/master/allowlist' ;do
+    wget --no-check-certificate -t 1 -T 10 -q -O tmp $url
+    cat tmp >> tmpallow
+    rm -f tmp
+done
 echo '规则下载完成'
 
 # 添加空格
@@ -248,16 +254,17 @@ cat tmp0-dns.txt l.txt dns99* \
 cat dns9999.txt| sed 's/||/0.0.0.0 /g' | sed 's/^//g' >hosts9999.txt
 cat .././mod/rules/*-rules.txt base-src-hosts.txt hosts99*.txt \
  | sed '/^$/d' |grep -E "^([0-9].*)|^((\|\|)[^\/\^]+\^$)" \
- |sed 's/||/0.0.0.0 /' | sed 's/\^//' \
- | sort -n | uniq > tmp1-hosts1.txt  #处理Hosts规则
+ |sed 's/||/0.0.0.0 /g' | sed 's/\^//g' \
+ |'s/0.0.0.0 //g'\
+ | sort -n | uniq > tmp1-domain.txt  #处理Hosts规则
 
-cat ../mod/*/dns-rule-allow.txt ../mod/*/dns-rule-allow.txt tmp1-hosts1.txt pre-hostsallow.txt pre-hostsallow.txt deadhosts.txt deadhosts.txt\
+cat ../mod/*/dns-rule-allow.txt ../mod/*/dns-rule-allow.txt tmp1-domain.txt tmpallow tmpallow pre-hostsallow.txt pre-hostsallow.txt deadhosts.txt deadhosts.txt\
  | sed 's/||//g' |sed 's/\^//g' \
- | sort -n |uniq -u >tmp-hosts.txt #去重允许域名
+ | sort -n |uniq -u >tmp-ad-domain.txt #去重允许域名
 
-cat tmp-hosts.txt \
- | sed 's/0.0.0.0 //' \
- | sort -n | uniq > tmp-ad-domains.txt & #处理广告域名
+cat tmp-ad-domain.txt \
+ | sed 's/^/0.0.0.0 /g' \
+ | sort -n | uniq > tmp-hosts.txt & #处理广告域名
 
 cat .././mod/rules/* *.txt | grep '^@' \
  | sort -n | uniq > tmp-allow.txt 
