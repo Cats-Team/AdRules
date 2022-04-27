@@ -265,7 +265,7 @@ cat ../mod/*/dns-rule-allow.txt ../mod/*/dns-rule-allow.txt tmp1-domain.txt tmpa
 
 cat tmp-ad-domains.txt \
  | sed 's/^/0.0.0.0 /g' \
- | sort -n | uniq > tmp-hosts.txt & #处理广告域名
+ | sort -n | uniq > tmp-hosts.txt #处理广告域名
 
 cat .././mod/rules/* *.txt | grep '^@' \
  | sort -n | uniq > tmp-allow.txt 
