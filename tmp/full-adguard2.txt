@@ -86,7 +86,7 @@
 ! Canvas LMS tracking
 ! Changing theme button is broken when gtm.js is blocked
 ! Chartbeat - https://help.chartbeat.com/hc/en-us/articles/360044659014-Chartbeat-Cookies
-! Checksum: HLWk2Zr2hraq+4YKyd115w
+! Checksum: WzU76M8xecVan5yFkgRpYw
 ! Chinese
 ! Cirrus Inisght
 ! Clickaine : api.clickaine.com disguised trackers
@@ -392,7 +392,7 @@
 ! This section contains the list of tracking networks domains, which are hosted on non advertising sites as subdomains.
 ! TikTok
 ! Tiktok app
-! TimeUpdated: 2022-04-26T14:31:18+00:00
+! TimeUpdated: 2022-04-26T20:31:24+00:00
 ! TinyLetter
 ! Title: AdGuard Tracking Protection filter
 ! ToutApp
@@ -453,7 +453,7 @@
 ! Used to track visitors on multiple websites, in order to present relevant advertisement based on the visitor's preferences.
 ! Used to uniquely identify a visit by you to this website
 ! VK Pixel tracking
-! Version: 2.0.38.78
+! Version: 2.0.38.80
 ! Visitor ID to correlate sessions
 ! Visual Website Optimizer
 ! Vodafone app - error when viewing detail
@@ -770,6 +770,7 @@
 ! https://github.com/AdguardTeam/AdguardFilters/issues/11580
 ! https://github.com/AdguardTeam/AdguardFilters/issues/116012
 ! https://github.com/AdguardTeam/AdguardFilters/issues/116246
+! https://github.com/AdguardTeam/AdguardFilters/issues/116388
 ! https://github.com/AdguardTeam/AdguardFilters/issues/116471
 ! https://github.com/AdguardTeam/AdguardFilters/issues/11746
 ! https://github.com/AdguardTeam/AdguardFilters/issues/11933
@@ -2224,6 +2225,8 @@ $cookie=yTrackVisit
 /counter/?domain=$image,~third-party
 /counter?$domain=amazon.com|amazon.de|amazon.it|amazon.com.tr
 /counter?id=
+/countly.js
+/countly.min.js
 /cp2.gif?
 /css/analytics.js$domain=assia.*|assia4.com
 /css/stat.js$domain=assia.*|assia4.com
@@ -2868,7 +2871,6 @@ $cookie=yTrackVisit
 @@||conversion.im/images/icons/google-analytics.png
 @@||coremetrics.com/eluminate.js
 @@||cot.priceminister.com/res/static/*/xtcore.js
-@@||count.ly^$~third-party
 @@||count.rtl.de/crossdomain.xml$domain=n-tvnow.de|rtl-now.rtl.de|rtl2now.rtl2.de|rtlnitronow.de|superrtlnow.de|voxnow.de
 @@||cqcounter.com^$domain=cqcounter.com
 @@||cr.acecounter.com/Web/AceCounter_AW.js$domain=berryjam.co.kr
@@ -7623,6 +7625,7 @@ znak.com##.relap
 ||blog-stat.com^$third-party
 ||blog-webkatalog.de^$third-party
 ||blog.b2lead.com^
+||blog.count.ly/_/batch
 ||blog.skk.moe/_nuxt/static/manifest$xmlhttprequest
 ||blog.trinityconsultants.com^
 ||blog104.com^$third-party
@@ -8173,6 +8176,7 @@ znak.com##.relap
 ||cdn.gamer-network.net/*/scripts/mormont
 ||cdn.glassboxcdn.com^$third-party
 ||cdn.hivps.xyz/analytics-
+||cdn.jsdelivr.net/countly-sdk-web/
 ||cdn.jsdelivr.net/npm/@adshield/
 ||cdn.jsdelivr.net/npm/perfops-rom$domain=kropic.com|opensubtitles.org
 ||cdn.jsdelivr.net/npm/rrweb@latest/dist/rrweb.
@@ -9056,6 +9060,7 @@ znak.com##.relap
 ||count.fr^$third-party
 ||count.livetv.ru^
 ||count.livetv.sx^
+||count.ly^$third-party
 ||count.manager-magazin.de/nm_trck.gif
 ||count.munhwa.com^
 ||count.nuanyuehanxing.com^
@@ -13822,6 +13827,7 @@ znak.com##.relap
 ||lift.acquia.com^$third-party
 ||lightboxcdn.com/static/identity.html
 ||lightcushion.com^$third-party
+||lightstep.medium.systems^
 ||lijit.com^$third-party
 ||limpet.coinponent.com^
 ||limpet.eddiehinkle.com^
@@ -18200,6 +18206,8 @@ znak.com##.relap
 ||roiservice.com^$third-party
 ||roispy.com^$third-party
 ||roitesting.com^$third-party
+||rokt.com/v1/events^
+||rokt.com/v2/metrics^
 ||rolite.eu/wp-content/*/js/cntr.js
 ||rollingcounters.com^$third-party
 ||roofrelation.com^$third-party

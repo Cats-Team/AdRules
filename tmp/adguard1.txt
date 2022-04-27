@@ -1,10 +1,10 @@
 
-! Checksum: UN1Be9KK2QmAHm+s+6Zhrw
+! Checksum: cPJWByKJrp7mBXHGZlQ/tw
 ! Description: Filter for all known mobile ad networks. Useful for mobile devices.
 ! Expires: 4 days (update frequency)
-! TimeUpdated: 2022-04-26T15:30:23+00:00
+! TimeUpdated: 2022-04-26T18:30:18+00:00
 ! Title: AdGuard Mobile Ads filter (Optimized)
-! Version: 2.0.28.96
+! Version: 2.0.28.97
 !### TEMPORARY ###
 !#################
 !+ NOT_OPTIMIZED
@@ -469,6 +469,7 @@ adme.ru##[id^="ad-container"]
 adme.ru##div[data-test-id="article"] div[class] > div.article ~ div:not([class])
 adme.ru#?#div[class*=" _"] > div[class*=" _"] > div:has(> div > div:empty + div[class] > div:empty + div:empty + div:empty + div:empty + div:empty)
 adme.ru#?#div[data-test-id="article-content"] > div > div svg[viewBox] > use[href="#loader"]:upward(4)
+adme.ru#?#div[data-test-id="article-content"] > div[class*=" "] > div > div:contains(Реклама):upward(2)
 adme.ru#?#div[data-test-id="articles-list"] > div:not([data-test-id^="article-list-element-"]):not(:has(> a[data-test-id="logo-link"]))
 adult-machiko.com##div[class^="ad_"]
 afaqs.com##.topban-container

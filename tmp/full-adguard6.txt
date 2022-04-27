@@ -56,7 +56,7 @@
 ! Based on AG_defineProperty (https://github.com/AdguardTeam/deep-override)
 ! Blocked icons for social logging
 ! By advanced we mean the following rule types: CSS, scriptlets, HTML filtering (`$$` marker), JS.
-! Checksum: CTVSu4zPoH/moKfCfhNmFw
+! Checksum: tcTL+X/mw3zwchB9mqnHOA
 ! Common names
 ! Description: Filter for social media widgets such as 'Like' and 'Share' buttons and more.
 ! Do not block facebook embedded video
@@ -99,11 +99,11 @@
 ! This section contains the list of social blocking rules that fall under "advanced" category.
 ! This section contains the list of the rules for common trackers/buttons.
 ! This section contains the list of the rules that block in page social popups.
-! TimeUpdated: 2022-04-26T15:31:28+00:00
+! TimeUpdated: 2022-04-26T21:31:24+00:00
 ! Title: AdGuard Social Media filter
 ! Unblock minificated scripts library
 ! Unhide links to a websites in different languages
-! Version: 2.0.60.40
+! Version: 2.0.60.44
 ! Yandex.Balaboba
 ! Yandex.Disk
 ! Yandex.Forms
@@ -1685,6 +1685,8 @@ abplive.com#?#.uk-flex > div[class]:has(> div > a.instagram)
 acc.cv.ua###facebookLikeBox
 accupass.com#?#div[class$="-org-buttons-container"] > div:not([class]):has(> a[class$="-org-button"] > .fa-facebook-f)
 acefitness.org##.post-full__share
+acf.international##button[class^="styled__SharingButton"]
+acf.international##div[class^="styled__Share"]
 ackordofmine.ru##td[valign="top"] > div[align="center"] > span[style="font-size: 10pt; font-weight: bold; font-family: Tahoma;"]
 acm.org##.rlist > li[title="Share"]
 acpa-main.org##.c-snsBtm
@@ -5774,7 +5776,7 @@ konsument.at##.social_share_privacy_area > li.facebook
 konsument.at##.social_share_privacy_area > li.twitter
 kontrakty.ua#?##sideRight > div.shadow:has(> h6:contains(Мы в соцсетях))
 koolinar.ru##a[data-social]
-koravidstream.com,marianne.net#$#.rmp-sharing { remove: true; }
+koravidstream.com,marianne.net#$?#.rmp-sharing { remove: true; }
 koreanz.tv##a[onclick^="apms_sns"]
 korkusuz.com.tr##button[onclick^="showShareDialog"]
 korrespondent.net#?#.col__sidebar > div[class="unit-rubric"]:has(> div > h3 > span:contains(Корреспондент.net в cоцсетях))
@@ -6154,6 +6156,7 @@ m.businesstoday.in##.bt_socials
 m.cna.com.tw##.inner_social
 m.cna.com.tw##.linebtn2
 m.cnnindonesia.com##.share_detail
+m.cnyes.com#?#article > footer > div > div.fb-like:upward(1)
 m.comic.naver.com##.share_area > .info_share
 m.convert-me.com##.addthis_inline_share_toolbox
 m.corearoadbike.com###resize_amt ~ table[cellpadding="3"]:nth-child(16)
@@ -8193,6 +8196,7 @@ rebenok.by###testWarp
 rebenok.by##.sn-share-img-links
 rebenok.by##.sociallike
 rebenok.by,1reg.by##.share-float-bottom
+rebootonline.com,seireigensouki.com,moriarty-anime.com,pokemon.co.jp,familyminded.com,workandmoney.com,you.regettingold.com,robots.net,cnews.ru,konkret24.tvn24.pl,dailyprogress.com,webtekno.com##.share-container
 recipe-blog.jp,haikyu.jp,eroido.jp##.socialArea
 reclameaqui.com.br##.complain-share
 record.pt##.social_stick > .fb
@@ -8319,6 +8323,7 @@ rmfclassic.pl###fbSlider
 rmj.ru##.socials_recommend_block
 rnb.co.jp##.newsDetailAssets__sns
 rnd.de##.social__share-button
+rnqq.jp###detail-meta + div[class] > div[class] > div:not([class]) + div.MuiBox-root > div.MuiBox-root > span + div.MuiBox-root > div.MuiBox-root > button
 roadbike.de,outdoor-magazin.com,elektrobike-online.com,mountainbike-magazin.de##.scroller > .mps-social
 robbreport.com##.sharethis-buttons
 robihachi.jp##.c-share-head
@@ -8547,7 +8552,6 @@ sefon.pro,khl.ru,uptodown.com##.b_share
 segmentfault.com##.sticky-wrap .dropdown > .dropdown-menu > a > button.react-share__ShareButton
 segnidalcielo.it##.bottom-entry-post-share
 segodnya.ua##.share_icons_big
-seireigensouki.com,moriarty-anime.com,pokemon.co.jp,familyminded.com,workandmoney.com,you.regettingold.com,robots.net,cnews.ru,konkret24.tvn24.pl,dailyprogress.com,webtekno.com##.share-container
 sejda.com##ul.social-list
 sektekomik.com#?##sidebar > .section:has(> .easy-facebook-like-box_box)
 sektorharita.com###footer
@@ -9041,6 +9045,7 @@ store.wacoal.jp###r2-share
 stories.bsh-group.com##.st-share-trg
 stories.bsh-group.com,design-homes.ru,tgcom24.mediaset.it,kamuajans.com,internethaber.com,memurhaber.com##.shr
 storm.mg###bottomBar_content
+storm.mg##.article_sns_btn
 storm.mg##.fb_share_img
 storm.mg##.vex
 story.tutu.ru#?#.gdlr-core-text-box-item-content > h5:contains(Поделиться):upward(1)

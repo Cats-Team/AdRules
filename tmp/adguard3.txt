@@ -1,10 +1,10 @@
 
-! Checksum: sJEZINJG7K+DMi0eKA0lQg
+! Checksum: pmL8WtRn5qEGUeFkU6/wQg
 ! Description: The most comprehensive list of various online counters and web analytics tools. Use this filter if you do not want your actions on the Internet to be tracked.
 ! Expires: 4 days (update frequency)
-! TimeUpdated: 2022-04-26T14:31:18+00:00
+! TimeUpdated: 2022-04-26T20:31:24+00:00
 ! Title: AdGuard Tracking Protection filter (Optimized)
-! Version: 2.0.38.78
+! Version: 2.0.38.80
 !### Temporary ###
 !#################
 !+ NOT_OPTIMIZED
@@ -464,6 +464,8 @@ $cookie=yTrackVisit
 /counter/?domain=$image,~third-party
 /counter?$domain=amazon.com|amazon.de|amazon.it|amazon.com.tr
 /counter?id=
+/countly.js
+/countly.min.js
 /cp2.gif?
 /css/analytics.js$domain=assia.*|assia4.com
 /css/stat.js$domain=assia.*|assia4.com
@@ -1110,7 +1112,6 @@ $cookie=yTrackVisit
 @@||conversion.im/images/icons/google-analytics.png
 @@||coremetrics.com/eluminate.js
 @@||cot.priceminister.com/res/static/*/xtcore.js
-@@||count.ly^$~third-party
 @@||count.rtl.de/crossdomain.xml$domain=n-tvnow.de|rtl-now.rtl.de|rtl2now.rtl2.de|rtlnitronow.de|superrtlnow.de|voxnow.de
 @@||cqcounter.com^$domain=cqcounter.com
 @@||cr.acecounter.com/Web/AceCounter_AW.js$domain=berryjam.co.kr
@@ -5878,6 +5879,7 @@ znak.com##.relap
 ||blog-stat.com^$third-party
 ||blog-webkatalog.de^$third-party
 ||blog.b2lead.com^
+||blog.count.ly/_/batch
 ||blog.skk.moe/_nuxt/static/manifest$xmlhttprequest
 ||blog.trinityconsultants.com^
 ||blog104.com^$third-party
@@ -6428,6 +6430,7 @@ znak.com##.relap
 ||cdn.gamer-network.net/*/scripts/mormont
 ||cdn.glassboxcdn.com^$third-party
 ||cdn.hivps.xyz/analytics-
+||cdn.jsdelivr.net/countly-sdk-web/
 ||cdn.jsdelivr.net/npm/@adshield/
 ||cdn.jsdelivr.net/npm/perfops-rom$domain=kropic.com|opensubtitles.org
 ||cdn.jsdelivr.net/npm/rrweb@latest/dist/rrweb.
@@ -7311,6 +7314,7 @@ znak.com##.relap
 ||count.fr^$third-party
 ||count.livetv.ru^
 ||count.livetv.sx^
+||count.ly^$third-party
 ||count.manager-magazin.de/nm_trck.gif
 ||count.munhwa.com^
 ||count.nuanyuehanxing.com^
@@ -12076,6 +12080,7 @@ znak.com##.relap
 ||lift.acquia.com^$third-party
 ||lightboxcdn.com/static/identity.html
 ||lightcushion.com^$third-party
+||lightstep.medium.systems^
 ||lijit.com^$third-party
 ||limpet.coinponent.com^
 ||limpet.eddiehinkle.com^
@@ -16455,6 +16460,8 @@ znak.com##.relap
 ||roiservice.com^$third-party
 ||roispy.com^$third-party
 ||roitesting.com^$third-party
+||rokt.com/v1/events^
+||rokt.com/v2/metrics^
 ||rolite.eu/wp-content/*/js/cntr.js
 ||rollingcounters.com^$third-party
 ||roofrelation.com^$third-party

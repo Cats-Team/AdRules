@@ -1,10 +1,10 @@
 ! Title: AdRules Allowlist
-! Checksum: GY/zqQAkB4qQq8p8lUndYA
+! Checksum: Be5sxCywckod49VVaP7KpA
 ! Homepage: https://github.com/Cats-Team/AdRules
 ! Powerd by CatsTeam
 ! Expires: 8 Hours
-! Version: 2022-04-27 00:32:34（北京时间） 
-! Total count: 17988
+! Version: 2022-04-27 10:01:38（北京时间） 
+! Total count: 17992
 @@$app=com.x.addon.cast
 @@$csp=worker-src 'none',domain=uptostream.com
 @@$domain=avgle.com,webrtc,websocket
@@ -1381,7 +1381,6 @@
 @@||adplayer.ml/player/play.php?vid=$subdocument
 @@||adplayer.ml/player/vid/$subdocument
 @@||adpop.me^$domain=adpop.me
-@@||adpop.me^$ghide
 @@||adr.realclick.co.kr/favicon.ico$subdocument,image,domain=shencomics.com
 @@||adroll.com/edaa^$domain=youronlinechoices.com
 @@||adroll.com^$xmlhttprequest,domain=adroll.com
@@ -2391,6 +2390,7 @@
 @@||app.sebitti.fi/maestrojukebox2/lib/Controllers/AdController.js$domain=app.sebitti.fi
 @@||app.sendgrid.com$document
 @@||app.sendgrid.com^$elemhide,jsinject
+@@||app.trangchu.news/*.js
 @@||app.trangchu.news/peel.js
 @@||app.usercentrics.eu/*/main.js$domain=liebherr.com
 @@||app.usercentrics.eu/browser-sdk/*/cross-domain-bridge.html$domain=sixx.de|prosiebenmaxx.de|sat1.de|prosieben.de|kabeleins.de|sixx.de|sat1gold.de|ran.de|joyn.de|sat1.at
@@ -4119,6 +4119,7 @@
 @@||cdntvn.pl/adscript.js?_=$domain=tvnturbo.pl
 @@||cdntvnet.com/*.php$stealth,domain=hochu.tv
 @@||cdnvideo.ru^$stealth
+@@||cdnyauction.buyee.jp^$stealth
 @@||cdon.*/td_redirect^$removeparam=tduid
 @@||cdp.cloud.unity3d.com^$app=com.rovio.baba
 @@||cdp.pl/skin/*/cookies.js
@@ -5353,6 +5354,7 @@
 @@||donttrack.us/images/google-$image,~third-party
 @@||dood.watch/pass_md5/
 @@||dood.watch^$subdocument
+@@||doodcdn.co^$domain=dood.la|dood.pm|dood.so|dood.to|dood.watch|dood.ws
 @@||doodcdn.co^$domain=dood.la|dood.so|dood.to|dood.watch|dood.ws
 @@||doodcdn.com/ads/ad.js
 @@||doodcdn.com/ads/pop.js
@@ -11939,6 +11941,7 @@
 @@||pagead2.googlesyndication.com/getconfig/sodar?$domain=aternos.org
 @@||pagead2.googlesyndication.com/getconfig/sodar?$xmlhttprequest,domain=spiegel.de
 @@||pagead2.googlesyndication.com/page/js/adsbygoogle.js?_=$domain=thehouseofportable.com
+@@||pagead2.googlesyndication.com/pagead$xmlhttprequest,script,domain=freemcserver.net
 @@||pagead2.googlesyndication.com/pagead/$domain=eclypsia.com,script
 @@||pagead2.googlesyndication.com/pagead/$domain=free-scores.com,image
 @@||pagead2.googlesyndication.com/pagead/$domain=nationalpost.com
@@ -12472,7 +12475,6 @@
 @@||pasty.link^$content
 @@||pasty.link^$generichide
 @@||pataks.pl/core,_assets$script,~third-party
-@@||patorjack.com^$ghide
 @@||patreon.com/images/fb_login_large.png
 @@||patreonusercontent.com/*.gif?token-$image,domain=patreon.com
 @@||patrick-wied.at/static/heatmapjs/src/heatmap.js
@@ -12866,7 +12868,7 @@
 @@||policy.app.cookieinformation.com/*/elkjop.no/nb.js$domain=elkjop.no
 @@||policy.app.cookieinformation.com/*/jysk.nl/nl.js$domain=jysk.nl
 @@||policy.app.cookieinformation.com/cookiesharingiframe.html$domain=jysk.nl
-@@||policy.app.cookieinformation.com^$domain=elkjop.no|jysk.nl|skousen.dk|skousen.no|whiteaway.com|whiteaway.no|whiteaway.se
+@@||policy.app.cookieinformation.com^$domain=altibox.no|elkjop.no|jysk.nl|skousen.dk|skousen.no|whiteaway.com|whiteaway.no|whiteaway.se
 @@||policy.app.cookieinformation.com^$domain=skousen.dk|skousen.no|whiteaway.com|whiteaway.no|whiteaway.se
 @@||policy.app.cookieinformation.com^$script,domain=altibox.no
 @@||policy.cookieinformation.com/uc.js$domain=jysk.nl
@@ -13893,6 +13895,7 @@
 @@||sapixcraft.com/css/exitPopup.css
 @@||sapixcraft.com/js/exitPopup.js
 @@||sapo-ams.gscontxt.net/main/channels-json.cgi?url=$xhr,domain=freemcserver.net
+@@||sapo-ams.gscontxt.net/main/channels-json.cgi?url=$xmlhttprequest,domain=freemcserver.net
 @@||sarapbeh.com^$generichide
 @@||sardeath.com^$generichide
 @@||sardeath.com^$ghide
@@ -14282,6 +14285,7 @@
 @@||securepubads.g.doubleclick.net/tag/js/gpt.js$domain=castlesiege.io
 @@||securepubads.g.doubleclick.net/tag/js/gpt.js$domain=digitaltrends.com
 @@||securepubads.g.doubleclick.net/tag/js/gpt.js$domain=epaper.timesgroup.com
+@@||securepubads.g.doubleclick.net/tag/js/gpt.js$domain=freemcserver.net
 @@||securepubads.g.doubleclick.net/tag/js/gpt.js$domain=freundin.de
 @@||securepubads.g.doubleclick.net/tag/js/gpt.js$domain=games.gamesplaza.com
 @@||securepubads.g.doubleclick.net/tag/js/gpt.js$domain=gamespot.com

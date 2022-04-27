@@ -1,10 +1,10 @@
 
-! Checksum: d57BiamaqiwCQwMaBdJADA
+! Checksum: NP2P6+1znEPAjNtsO0fZsQ
 ! Description: Filter for social media widgets such as 'Like' and 'Share' buttons and more.
 ! Expires: 4 days (update frequency)
-! TimeUpdated: 2022-04-26T15:31:28+00:00
+! TimeUpdated: 2022-04-26T21:31:24+00:00
 ! Title: AdGuard Social Media filter (Optimized)
-! Version: 2.0.60.40
+! Version: 2.0.60.44
 !+ NOT_OPTIMIZED
 !+ NOT_PLATFORM(ios, ext_android_cb)
 !+ PLATFORM(android)
@@ -950,6 +950,8 @@ abema.tv##.com-m-media-SNSShare__container
 abplive.com#?#.uk-flex > div[class]:has(> div > a.instagram)
 acc.cv.ua###facebookLikeBox
 acefitness.org##.post-full__share
+acf.international##button[class^="styled__SharingButton"]
+acf.international##div[class^="styled__Share"]
 acm.org##.rlist > li[title="Share"]
 acpa-main.org##.c-snsBtm
 activestate.com##.share_ctn
@@ -3374,7 +3376,7 @@ konstruktortestov.ru###test_result > p + p + h2
 konstruktortestov.ru##.holder-social
 kontrakty.ua#?##sideRight > div.shadow:has(> h6:contains(Мы в соцсетях))
 koolinar.ru##a[data-social]
-koravidstream.com,marianne.net#$#.rmp-sharing { remove: true; }
+koravidstream.com,marianne.net#$?#.rmp-sharing { remove: true; }
 korkusuz.com.tr##button[onclick^="showShareDialog"]
 korso24.pl,boleslawiec.tv,bydgoszcz.com,echotygodnik.info,halogorlice.info,koscierzyna24.info,lokalna24.pl,lokalnatelewizja.pl,narew.info,naszrynek.pl,nasztomaszow.pl,obserwatorlokalny.pl,olesnica24.com,radiobonton.pl,regatv.pl,sandomierztv.pl,starachowice.pl,supertydzien.pl,swiebodzin.tv,telewizjazary.pl,tv-kwidzyn.pl,tvmorag.pl,eluban.pl#?#.article_summary > .text-left > p.text-muted:contains(/^Podziel się:$/)
 koton.com##img.share + a.detailPageTexts
@@ -3596,6 +3598,7 @@ m-zona.net##.track__share
 m.aksam.com.tr##.fixed-interaction-bar
 m.avito.ru##div[data-marker*="share"]
 m.bunjang.co.kr#?#div:has(> button[type="button"] > img[alt="페이스북 아이콘"][src^="data:image/png"])
+m.cnyes.com#?#article > footer > div > div.fb-like:upward(1)
 m.comic.naver.com##.share_area > .info_share
 m.convert-me.com##.addthis_inline_share_toolbox
 m.cyber.sports.ru,m.sports.ru##.b-social-buttons
@@ -4753,6 +4756,7 @@ realty.yandex.ru##.ShareAction__button
 reason.com##.rcom-social-tools
 rebaltica.lv##.widget_ws_fb_like_box
 rebaltica.lv,erkekadam.org##.widget_weblizar_twitter
+rebootonline.com,seireigensouki.com,moriarty-anime.com,pokemon.co.jp,familyminded.com,workandmoney.com,you.regettingold.com,robots.net,cnews.ru,konkret24.tvn24.pl,dailyprogress.com,webtekno.com##.share-container
 recipe-blog.jp,haikyu.jp,eroido.jp##.socialArea
 record.pt##.social_stick > .fb
 record.pt##.social_stick > .tw
@@ -4829,6 +4833,7 @@ rmf24.pl##.flBox > ul > li.wykop
 rmj.ru##.socials_recommend_block
 rnb.co.jp##.newsDetailAssets__sns
 rnd.de##.social__share-button
+rnqq.jp###detail-meta + div[class] > div[class] > div:not([class]) + div.MuiBox-root > div.MuiBox-root > span + div.MuiBox-root > div.MuiBox-root > button
 robokumac.com##.dp_twitter_follow_widget
 robokumac.com##.sns_buttons_meta
 robotstart.info##.rs-social-network
@@ -4970,7 +4975,6 @@ secureblitz.com###apsc_widget-6
 sedaily.com##.news_sns
 seeedstudio.com#@#.sfsi_widget
 sefon.pro,khl.ru,uptodown.com##.b_share
-seireigensouki.com,moriarty-anime.com,pokemon.co.jp,familyminded.com,workandmoney.com,you.regettingold.com,robots.net,cnews.ru,konkret24.tvn24.pl,dailyprogress.com,webtekno.com##.share-container
 sejda.com##ul.social-list
 sektekomik.com#?##sidebar > .section:has(> .easy-facebook-like-box_box)
 sekurak.pl##.single_share
@@ -5259,6 +5263,7 @@ store.steampowered.com##a[onclick^="ShowShareDialog();"]
 store.steampowered.com,dogatch.jp,myfxbook.com,media-polesye.by,videacesky.cz###shareBtn
 store.wacoal.jp###r2-share
 stories.bsh-group.com,design-homes.ru,tgcom24.mediaset.it,kamuajans.com,internethaber.com,memurhaber.com##.shr
+storm.mg##.article_sns_btn
 storm.mg##.fb_share_img
 story.tutu.ru#?#.gdlr-core-text-box-item-content > h5:contains(Поделиться):upward(1)
 straight.com##.social--article > .icons:not(.comment-icon)
