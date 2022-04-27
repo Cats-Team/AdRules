@@ -155,7 +155,7 @@
 ! Chat widget on the main page
 ! Chat widgets
 ! Check, if these sites work fine with scriptlet: mail.rambler.ru, kino.rambler.ru, weather.rambler.ru, comments.rambler.ru, kassa.rambler.ru, horoscopes.rambler.ru
-! Checksum: l27hNDCKFH79x986NohxQQ
+! Checksum: GwMVHlXYVImWllTwgwkXNQ
 ! Chrome banner in MS Edge
 ! Chrome browser suggest
 ! Climate info below articles
@@ -313,7 +313,7 @@
 ! This section contains the list of rules that block website push notifications ("subscribe to the news" kind of notifications).
 ! This section contains the list of rules that fix incorrect blocking of cookie notifications by generic rules. Rules should be domain-specific.
 ! This section contains the list of the rules against annoyances that are not falling under existing categories. Rules should be domain-specific.
-! TimeUpdated: 2022-04-27T10:30:37+00:00
+! TimeUpdated: 2022-04-27T11:30:41+00:00
 ! Title: AdGuard Annoyances filter
 ! To be discussed
 ! Turkish digital magazines
@@ -321,7 +321,7 @@
 ! Unhide for Android CB if top padding cannot be removed
 ! Using just "._gdpr-notify-header" will cause that part of the content will be hidden on a mobile website
 ! Vacancy widgets
-! Version: 2.1.17.23
+! Version: 2.1.17.24
 ! Video recommendations
 ! Voting widget
 ! Website is broken if "display: none" is used - ##div[class*="ConsentBannerstyles_"]
@@ -1103,6 +1103,7 @@
 ! https://github.com/AdguardTeam/AdguardFilters/issues/116595
 ! https://github.com/AdguardTeam/AdguardFilters/issues/116601
 ! https://github.com/AdguardTeam/AdguardFilters/issues/116651
+! https://github.com/AdguardTeam/AdguardFilters/issues/116657
 ! https://github.com/AdguardTeam/AdguardFilters/issues/11757
 ! https://github.com/AdguardTeam/AdguardFilters/issues/11944
 ! https://github.com/AdguardTeam/AdguardFilters/issues/11972
@@ -5675,7 +5676,7 @@ $xmlhttprequest,redirect-rule=nooptext,domain=aternos.org
 /eucookieslaw/*$script
 /ext/damn_cookieconsent/*$domain=daab.de|daab-mitgliederbereich.de
 /favicon.ico$third-party,image,xmlhttprequest,redirect=1x1-transparent.gif,domain=thehouseofportable.com
-/firebase-messaging.js$domain=focus.ua|ukranews.com|comments.ua|coub.com|porno90.me|cnnamador.com|giallozafferano.it|wcostream.com|fptplay.vn|jooble.org|mobile01.com|myinstants.com|pdalife.ru|rg.ru|m.iguides.ru|donanimhaber.com|profile.ru|womanhit.ru|news.noteru.com|narodna-pravda.ua|newstm.in|sabah.com.tr|dreamstime.com|popbee.com|avtovzglyad.ru|allbasketball.org|tw.news.yahoo.com|takvim.com.tr|jn.pt|ria.ru|pars.host|calculator-online.net|operanewsapp.com|ahaber.com.tr|tamindir.com|concursosnobrasil.com.br|kompas.com|news.ebc.net.tw|recyclingtoday.com|homedecoratione.com|khersondaily.com|mirtesen.ru|womanhit.ru|belsat.eu|gearbest.com|op.gg|novayagazeta.ru|pocket-lint.com|turunculevye.com|bloomberght.com|stardima.com|aksam.com.tr|portamur.ru|fishki.net|ranking.goo.ne.jp|ohmymag.com|mgronline.com|semnasem.org|bluradio.com|carwale.com
+/firebase-messaging.js$domain=theswagsports.com|focus.ua|ukranews.com|comments.ua|coub.com|porno90.me|cnnamador.com|giallozafferano.it|wcostream.com|fptplay.vn|jooble.org|mobile01.com|myinstants.com|pdalife.ru|rg.ru|m.iguides.ru|donanimhaber.com|profile.ru|womanhit.ru|news.noteru.com|narodna-pravda.ua|newstm.in|sabah.com.tr|dreamstime.com|popbee.com|avtovzglyad.ru|allbasketball.org|tw.news.yahoo.com|takvim.com.tr|jn.pt|ria.ru|pars.host|calculator-online.net|operanewsapp.com|ahaber.com.tr|tamindir.com|concursosnobrasil.com.br|kompas.com|news.ebc.net.tw|recyclingtoday.com|homedecoratione.com|khersondaily.com|mirtesen.ru|womanhit.ru|belsat.eu|gearbest.com|op.gg|novayagazeta.ru|pocket-lint.com|turunculevye.com|bloomberght.com|stardima.com|aksam.com.tr|portamur.ru|fishki.net|ranking.goo.ne.jp|ohmymag.com|mgronline.com|semnasem.org|bluradio.com|carwale.com
 /firebase.js$domain=novayagazeta.ru|comments.ua|kinosimka.net|ilan365.net|cnbcindonesia.com|haberzamani.net|oxy.cloud|allbasketball.org|auslogics.com|kartalyuvasi.com.tr|cnnindonesia.com|fbc.ua|astv.ru|pln-pskov.ru|aylink.co
 /fp_cookie.
 /g4cookies.
@@ -5870,10 +5871,12 @@ $xmlhttprequest,redirect-rule=nooptext,domain=aternos.org
 103.194.171.75,idtube.me##.overlay.bm
 103.by,103.ua,relax.by##.CookiesNotification
 103.by,1plus1.video,1plus1.ua##.AppPopup
+104.com.tw###app
 104.com.tw###login_box ul.products_list > li > a[href^="https://goo.gl/"][onmousedown^="adc"]
 104.com.tw###right_box_ad
 104.com.tw###tab_bottom_ad > #hot_com
 104.com.tw##.marketing_ad
+104.com.tw##.popup-container
 104.ua###cookie__page
 104.ua##.b-newsletter-sub
 104.ua##.custom-popup
@@ -12011,7 +12014,6 @@ culture.ru##.c-subscription-widget
 culture.ru,seat.dk##.notify-bar
 culturemeter.od.ua##.extendedwopts-hide[id^="text-"]
 cumrapostasi.com##.news-abone
-cumrapostasi.com,ufukgazetesi.net,alemfm.com,designs.ai,imzagazetesi.com.tr,airlinehaber.com,theanatoliapost.com,ligradyo.com.tr,platinonline.com,1923haber.com,sakarya360.com,trendoa.com,emlaknews.com.tr,cagingazetesi.com.tr,davahaber.com,tv360.com.tr,sonsaat.com.tr,pusuhaber.net,kesinkarar.com,antalyaz.com,alem.com.tr,noktabursa.com.tr,onhaber.net,bbnhaber.com.tr,1cloud.ru,sahrahaber.com,dha.com.tr,star.com.tr,aksam.com.tr,teknoburada.net,gunes.com,guvenilirhaber.com,gaste.org,genmedya.com,tvnet.com.tr,nethaber.com.tr,hatayzafer.com.tr,antalyahakkinda.com,ulakci.com,mavikocaeli.com.tr,alfabank.ru,dirilispostasi.com,teknolojioku.com##.policy
 cuprum.media#?#.mediator-wrapper:has(> section > div.container > div.subscribe)
 curbsideclassic.com#?#.sidebar > ul > li:has(> div.textwidget > p > a[href="https://www.curbsideclassic.com/email-subscription/"])
 curimovie.com#%#//scriptlet("adjust-setTimeout", "#counter", "", "0.02")
@@ -19898,6 +19900,7 @@ lyonpeople.com#?#.et_pb_extra_column_sidebar > div.widget_text:has(> h4.widgetti
 lyrsense.com##.puzzleUsach
 m-78.jp##.st-Footer_FixedBnr
 m-timesofindia-com.cdn.ampproject.org##.newsletter_hook_content
+m.104.com.tw#%#//scriptlet("set-cookie", "SMART_BANNER", "0")
 m.17track.net##.yq-panel-download
 m.1gd.ru##div[class^="CookiePopup-"]
 m.2gis.*##._1lqbq1j
@@ -21524,7 +21527,6 @@ morgenpost.de,nrz.de##.cookie-note
 morgenweb.de##.nfy-mobile-sticky-buttons
 morhipo.com###legal-alert
 morhipo.com###morhipo-smart-app-banner
-morizon.pl##.cookiesNotificationOuter
 morningstar.*###iSharesSignupWrapperEx
 morningstarthailand.com,morningstarfunds.ie,morningstar.*###divAudienceConfirmation
 morningstarthailand.com,morningstarfunds.ie,morningstar.*###divAudienceConfirmation ~ #dialog-mask
@@ -22624,7 +22626,7 @@ nosteamgames.ro###main_content_section > #drob
 nosteamgames.ro###main_content_section > #drop[style*="z-index:"]
 not.a-takimi.org###koddostu-com-adblocker-engelleme
 notateslaapp.com#?#.content > div[class^="col-a"] > div.container:has(> div.release > div.subscribe-container)
-note.com##.m-animationBalloon.m-likeNoLogin
+note.calbee.jp,note.linemusic.jp,diehardtales.com,note.com,note.kagg.jp,note.jp,note.yamap.com##.m-animationBalloon.m-likeNoLogin
 notebookcheck-hu.com,notebookcheck-tr.com,notebookcheck-ru.com,notebookcheck.*#%#//scriptlet("abort-current-inline-script", "document.getElementById", "/!document\.getElementById[\s\S]*?innerHTML[\s\S]*?insertBefore/")
 notebookcheck-hu.com,notebookcheck-tr.com,notebookcheck-ru.com,notebookcheck.*$$script[wildcard="*!document.getElementById*innerHTML*insertBefore*"][min-length="1000"][max-length="1500"]
 notebookcheck.com###c1809193
@@ -22697,6 +22699,8 @@ novostroy-m.ru###animation_container
 novostroy-m.ru##.mcs-button
 novyny.live,thequestion.ru##.cookie__wrapper
 now.rememberapp.co.kr,melodelaa.link,asus-zenfone.com,techieway.blogspot.com,chronologia.pl#%#//scriptlet("abort-current-inline-script", "document.onselectstart")
+noweinwestycje.pl#@#.cookieBar:not(body):not(html)
+noweinwestycje.pl,morizon.pl##.cookiesNotificationOuter
 nowemiasteczko.pl##body > .navbar-fixed-bottom.navbar-inverse
 nowloading.co##.supplication
 nownews.com#$#body[style^="overflow: hidden;"] { overflow: visible!important; padding-right: 0!important; }
@@ -29702,6 +29706,7 @@ tv6tnt.com##.notification-button
 tvanouvelles.ca###covid_infolettre
 tvbs.com.tw##.header .smart_banner
 tvbs.com.tw##.web-push
+tvbs.com.tw,cumrapostasi.com,ufukgazetesi.net,alemfm.com,designs.ai,imzagazetesi.com.tr,airlinehaber.com,theanatoliapost.com,ligradyo.com.tr,platinonline.com,1923haber.com,sakarya360.com,trendoa.com,emlaknews.com.tr,cagingazetesi.com.tr,davahaber.com,tv360.com.tr,sonsaat.com.tr,pusuhaber.net,kesinkarar.com,antalyaz.com,alem.com.tr,noktabursa.com.tr,onhaber.net,bbnhaber.com.tr,1cloud.ru,sahrahaber.com,dha.com.tr,star.com.tr,aksam.com.tr,teknoburada.net,gunes.com,guvenilirhaber.com,gaste.org,genmedya.com,tvnet.com.tr,nethaber.com.tr,hatayzafer.com.tr,antalyahakkinda.com,ulakci.com,mavikocaeli.com.tr,alfabank.ru,dirilispostasi.com,teknolojioku.com##.policy
 tver.jp#?#.ReactModalPortal a[class^="terms-modal_privacy"]:upward(.ReactModalPortal)
 tver.jp#?#.ReactModalPortal form[class^="questionnaire-modal_content"]:upward(.ReactModalPortal)
 tvernews.ru##.y_dzen
@@ -29771,9 +29776,13 @@ tw.m.aipsurveys.com#$#body { overflow: auto !important; }
 tw.mobi.yahoo.com###overlayRegion
 tw.news.yahoo.com##div[id$="-Banner-Proxy"] a[href^="https://promo.campaign.yahoo.com.tw/superapp-intro/"] > img
 tw.stock.yahoo.com##a[href="https://yahoomode.tumblr.com/yahooapp/#stock"] > img
+tw.yahoo.com###module-appPromoBanner
+tw.yahoo.com##.app-promo
 tw.yahoo.com##.tabbar-signin > .feature-cue > .FancyBox.Arrow.Tooltip
 tw.yahoo.com##.twpromo
 tw.yahoo.com##a[title="任天堂等你抽"]
+tw.yahoo.com#$#.lastAppPromotionTime { display: none !important; }
+tw.yahoo.com#$#body { overflow: auto !important; }
 tweakboxapp.com##cookiless-div
 tweakers.net###koekjeBar
 tweakers.net##.notificationsContainer

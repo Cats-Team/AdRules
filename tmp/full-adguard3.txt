@@ -37,7 +37,7 @@
 ! Bad: ||legitwebsite.com^$third-party (should be in adservers.txt)
 ! Based on AG_defineProperty (https://github.com/AdguardTeam/deep-override)
 ! By advanced we mean the following rule types: CSS, scriptlets, HTML filtering (`$$` marker), JS.
-! Checksum: 4yY7sW6vfR5gY6TvxK/+vw
+! Checksum: DkgdPqShXdSXE8kQDaehag
 ! Description: EasyList China + AdGuard Chinese filter. Filter list that specifically removes ads on websites in Chinese language.
 ! Examples:
 ! Examples: AG_removeCookie('/REGEX/') or AG_removeCookie('part of the cookie name')
@@ -79,9 +79,9 @@
 ! This section contains the list of rules that fix incorrect blocking. Rules must be domain-specific.
 ! This section contains the list of the content replacement rules that block ads. Rules must be domain-specific.
 ! This section contains the list of third-party advertising networks domains.
-! TimeUpdated: 2022-04-27T08:31:00+00:00
+! TimeUpdated: 2022-04-27T11:31:03+00:00
 ! Title: AdGuard Chinese filter
-! Version: 2.0.53.85
+! Version: 2.0.53.86
 ! cocomanga.com,cocomanga.com CNAME breakage
 ! do not hide popup, because product selector will not work
 ! e66mobi ads
@@ -2438,6 +2438,7 @@ $websocket,domain=5nj.com|cechi8.com
 104.com.tw###aidma-job
 104.com.tw###aidma_128
 104.com.tw###aidma_588
+104.com.tw##.career-clinic-ad
 107cine.com##.flow-other
 107cine.com##.flow_right > div[style="margin-top:20px;"]
 107cine.com##a[href^="http://107cine.com/ads/"]
@@ -15417,6 +15418,7 @@ zznews.cn##.ad:not([style])
 ||feizl.com/images/smdd/
 ||fengchedaomall.cn^
 ||fengcv.cn/script
+||fengfeng.fun^
 ||fenggejiaju.com^
 ||fenglan.oss-cn-shenzhen.aliyuncs.com^*.gif
 ||fengmian.xyz^

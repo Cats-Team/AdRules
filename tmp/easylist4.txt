@@ -1,12 +1,12 @@
 
 !
-! Checksum: TxV02AGCpf5+PT8b/kkmKg
+! Checksum: hS4PWbG/Le03djXb4D99Pw
 ! Expires: 2 hours
 ! Homepage: https://adf.minggo.eu.org
-! Last Modified: 2022年04月27日 18:35
+! Last Modified: 2022年04月27日 19:28
 ! Title: My AdFilters（for PC）
 ! Total count: 85763
-! Version: 202204271835
+! Version: 202204271928
 ! 如有任何疑问、意见或建议，请反馈至：HalfLife吧
 ! 并补充了贴吧过滤规则，感谢各位前辈的分享！
 ! 本规则合并自乘风视频广告过滤规则、Easylist、EasylistChina、EasyPrivacy、CJX'sAnnoyance
@@ -29868,7 +29868,7 @@ gogoanime.pe,gogoanime2.org,animego.to##.adsverting
 gogoanime.pro##+js(set-constant, fired, true)
 gogoanimes.tv#$#abort-on-property-write atob
 gogodl.com##+js(abort-current-script, document.getElementById, bannerad)
-gogoplay1.com,komikcast.com,prmovies.bz,speedostream.com#$#abort-current-inline-script JSON.parse
+gogoplay1.com,komikcast.com,prmovies.bz,speedostream.com,watchseri.net#$#abort-current-inline-script JSON.parse
 goha.ru#@#.goha_ads
 goha.ru#@#.goha_ads_acceptable
 gohome.com.hk##div[id^="div-gpt-ad"][style]
@@ -39912,7 +39912,6 @@ uuvps.com##img[width="1000"][height="50"]
 uwants.com###foruminfo + div[align="center"]
 uwants.com##.showpx1
 uxrpkgh.cn
-uyaoa-below
 uzshare.com###left-panel
 uzunversiyon.xyz##+js(remove-attr, data-ppcnt_ads|onclick, #main[onclick*="mainClick"])
 uzzf.com##.boxl
@@ -40923,10 +40922,10 @@ www.wp.pl,parenting.pl,kafeteria.pl,magazyn.wp.pl,facet.wp.pl,turystyka.wp.pl,gw
 www.wpdaxue.com##:not(.post-thumbnail) > a[target="_blank"] > img
 www.xilinjie.com###xlj-da-block-overlay
 www.yizhibo.com##.register_guide
-www.youtube.com,m.youtube.com,music.youtube.com,youtube-nocookie.com#$#json-prune '0.playerResponse.adPlacements 0.playerResponse.playerAds 1.playerResponse.adPlacements 1.playerResponse.playerAds 2.playerResponse.adPlacements 2.playerResponse.playerAds playerResponse.adPlacements playerResponse.playerAds ytInitialPlayerResponse.adPlacements ytInitialPlayerResponse.playerAds adPlacements playerAds'
-www.youtube.com,m.youtube.com,music.youtube.com,youtube-nocookie.com#$#override-property-read playerResponse.adPlacements undefined; override-property-read ytInitialPlayerResponse.adPlacements undefined
 www.youtube.com,m.youtube.com,music.youtube.com,youtube-nocookie.com#$#simulate-event-poc click button.ytp-ad-skip-button
 www.youtube.com,m.youtube.com,music.youtube.com,youtube-nocookie.com#$#simulate-event-poc click span.ytp-ad-skip-button-container
+www.youtube.com,m.youtube.com,music.youtube.com,youtubekids.com,youtube-nocookie.com#$#json-prune '0.playerResponse.adPlacements 0.playerResponse.playerAds 1.playerResponse.adPlacements 1.playerResponse.playerAds 2.playerResponse.adPlacements 2.playerResponse.playerAds playerResponse.adPlacements playerResponse.playerAds ytInitialPlayerResponse.adPlacements ytInitialPlayerResponse.playerAds adPlacements playerAds'
+www.youtube.com,m.youtube.com,music.youtube.com,youtubekids.com,youtube-nocookie.com#$#override-property-read playerResponse.adPlacements undefined; override-property-read ytInitialPlayerResponse.adPlacements undefined
 www.zhzzx.com
 www.zol.com.cn##.side-news-nointel.side-news,#bgad
 www.zol.com.cn##div[id^="Bar"]
