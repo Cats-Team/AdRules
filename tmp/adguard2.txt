@@ -1,10 +1,10 @@
 
-! Checksum: e0CqjDrCgbxIIWjWHwrSTg
+! Checksum: /BG02R6nI3WPLT42Ej0jpQ
 ! Description: Filter that enhances privacy by removing tracking parameters from URLs.
 ! Expires: 4 days (update frequency)
-! TimeUpdated: 2022-04-20T13:02:26+00:00
+! TimeUpdated: 2022-04-28T09:30:48+00:00
 ! Title: AdGuard URL Tracking filter (Optimized)
-! Version: 2.0.2.48
+! Version: 2.0.2.49
 $domain=atlanticcouncil.org|digikey.com,removeparam=/^mkt_tok/
 $removeparam=/^curator_clanid/,domain=steampowered.com|steamcommunity.com
 $removeparam=ActionID,domain=otto.de|ottoversand.at
@@ -300,6 +300,19 @@ $removeparam=yclid
 ||ejoker.de^$removeparam=sPartner
 ||euronews.com^$removeparam=_ope
 ||express.de^$removeparam=cb
+||flipkart.com^$removeparam=/^affExtParam/
+||flipkart.com^$removeparam=/^otracker/
+||flipkart.com^$removeparam=_refId
+||flipkart.com^$removeparam=affid
+||flipkart.com^$removeparam=cid
+||flipkart.com^$removeparam=cmpid
+||flipkart.com^$removeparam=iid
+||flipkart.com^$removeparam=lid
+||flipkart.com^$removeparam=pageUID
+||flipkart.com^$removeparam=pid
+||flipkart.com^$removeparam=pwsvid
+||flipkart.com^$removeparam=ssid
+||flipkart.com^$removeparam=store
 ||galaxus.de^$removeparam=idealoid
 ||gearbest.com^$removeparam=cid
 ||gearbest.com^$removeparam=lkid

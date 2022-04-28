@@ -1,10 +1,10 @@
 
-! Checksum: 7dQeAQ9Gn3XMGKPEhbqLZg
+! Checksum: 7KWxdryw3y0D5KLyIHFKbA
 ! Description: Filter for social media widgets such as 'Like' and 'Share' buttons and more.
 ! Expires: 4 days (update frequency)
-! TimeUpdated: 2022-04-28T07:31:33+00:00
+! TimeUpdated: 2022-04-28T14:31:24+00:00
 ! Title: AdGuard Social Media filter (Optimized)
-! Version: 2.0.60.52
+! Version: 2.0.60.55
 !+ NOT_OPTIMIZED
 !+ NOT_PLATFORM(ios, ext_android_cb)
 !+ PLATFORM(android)
@@ -4639,6 +4639,7 @@ psychologies.ru,starhit.ru,v-androide.com,wildo.ru##.social-tabs
 psyjournal.ru#?#.sidebar > div.block:has(> h2:contains(Мы в соцсетях))
 pttavm.com##a[class*="share-network-"]
 pttavm.com#?#.image-box > div.justify-center:has(> div.items-start > a.share-network-twitter)
+pub.towardsai.net##body > div#root ~ div:not([class]):not([id]) > div[class*=" "]
 pubgmobile.jp###snsBar
 publico.pt##.social-tools__item:not(.social-tools__item--comment):not(.social-tools__item--print):not(.social-tools__item--save)
 pudelek.pl#?#aside[role="complementary"] > div > div:has(> div > div.fb-like)
@@ -5056,6 +5057,8 @@ showtv.com.tr##.header-social-area
 shpock.com##button[data-testid="desktopShareItemButton"]
 shz.de###actions-fwid1
 sia.az##.post-sharing > ul > li:not(:last-child)
+siamsport.co.th###social-btn
+siamsport.co.th##.social_wide
 sibdom.ru##a[class*="icon-share-"]
 siberkalem.com#$##popup-box { display: none !important; }
 siberkalem.com#$#body { overflow: visible !important; }
@@ -6089,6 +6092,7 @@ winticket.jp#?#span + p:contains(記事をシェアしよう)
 winticket.jp#?#span + p:contains(記事をシェアしよう) ~ ul
 wio.waw.pl##.l-socials__wrapper
 wiocha.pl##.shareall > span
+wionews.com##.content-holder > div.micro-elements
 wired.com###share-card
 wired.com##.social-icons__list-item--email
 wired.com##.social-icons__list-item--facebook

@@ -18,6 +18,7 @@
 ! https://github.com/AdguardTeam/AdguardFilters/issues/106176
 ! https://github.com/AdguardTeam/AdguardFilters/issues/112768
 ! https://github.com/AdguardTeam/AdguardFilters/issues/116698
+! https://github.com/AdguardTeam/AdguardFilters/issues/116768
 ! https://github.com/AdguardTeam/AdguardFilters/issues/12272
 ! https://github.com/AdguardTeam/AdguardFilters/issues/12986
 ! https://github.com/AdguardTeam/AdguardFilters/issues/13368
@@ -142,6 +143,7 @@
 @@||iatv.tmgrup.com.tr/*/advmanager.js$domain=atv.com.tr
 @@||ilan.memurlar.net/common/job/advert/images/$domain=memurlar.net
 @@||images-eu.ssl-images-amazon.com/images/$domain=amazon.com.tr
+@@||imasdk.googleapis.com/js/sdkloader/ima3.js$domain=alemfm.com
 @@||imasdk.googleapis.com/js/sdkloader/ima3.js$domain=beinsports.com
 @@||imasdk.googleapis.com/js/sdkloader/ima3.js$domain=haberglobal.com.tr
 @@||imasdk.googleapis.com/js/sdkloader/ima3.js$domain=kanald.com.tr
@@ -215,3 +217,4 @@ tvtime.com,tvshowtime.com#@##top-banner
 wanhaber.com#@#.adTop
 zeichenkram.de#@#div[id^="floatLayer"]
 zxro.com#@#.splash-reklam
+||imasdk.googleapis.com/js/sdkloader/ima3.js$script,redirect=noopjs,domain=alemfm.com

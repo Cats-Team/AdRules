@@ -56,7 +56,7 @@
 ! Based on AG_defineProperty (https://github.com/AdguardTeam/deep-override)
 ! Blocked icons for social logging
 ! By advanced we mean the following rule types: CSS, scriptlets, HTML filtering (`$$` marker), JS.
-! Checksum: VhbkGGwB4adJ9bvSZBFuYQ
+! Checksum: IkjClXg1qnXPTtICnvDQJw
 ! Common names
 ! Description: Filter for social media widgets such as 'Like' and 'Share' buttons and more.
 ! Do not block facebook embedded video
@@ -99,11 +99,11 @@
 ! This section contains the list of social blocking rules that fall under "advanced" category.
 ! This section contains the list of the rules for common trackers/buttons.
 ! This section contains the list of the rules that block in page social popups.
-! TimeUpdated: 2022-04-28T07:31:33+00:00
+! TimeUpdated: 2022-04-28T14:31:24+00:00
 ! Title: AdGuard Social Media filter
 ! Unblock minificated scripts library
 ! Unhide links to a websites in different languages
-! Version: 2.0.60.52
+! Version: 2.0.60.55
 ! Yandex.Balaboba
 ! Yandex.Disk
 ! Yandex.Forms
@@ -8024,6 +8024,7 @@ psychologies.ru,starhit.ru,v-androide.com,wildo.ru##.social-tabs
 psyjournal.ru#?#.sidebar > div.block:has(> h2:contains(Мы в соцсетях))
 pttavm.com##a[class*="share-network-"]
 pttavm.com#?#.image-box > div.justify-center:has(> div.items-start > a.share-network-twitter)
+pub.towardsai.net##body > div#root ~ div:not([class]):not([id]) > div[class*=" "]
 pubgmobile.jp###snsBar
 publico.pt##.social-tools__item:not(.social-tools__item--comment):not(.social-tools__item--print):not(.social-tools__item--save)
 pudelek.pl##aside[role="complementary"] > div[data-st-area="st-article-reactions"] > div > div:nth-child(2) > button
@@ -8670,6 +8671,8 @@ si.com##.btn-fb
 si.com##.btn-gp
 si.com##.btn-tw
 sia.az##.post-sharing > ul > li:not(:last-child)
+siamsport.co.th###social-btn
+siamsport.co.th##.social_wide
 sibdom.ru##a[class*="icon-share-"]
 siberalem.com##div[id^="essbsocialprofileswidget"]
 siberbulten.com##.ssbp-container
@@ -10500,6 +10503,7 @@ winticket.jp#?#span + p:contains(記事をシェアしよう)
 winticket.jp#?#span + p:contains(記事をシェアしよう) ~ ul
 wio.waw.pl##.l-socials__wrapper
 wiocha.pl##.shareall > span
+wionews.com##.content-holder > div.micro-elements
 wired.com###share-card
 wired.com##.amp-wp-social
 wired.com##.social-icons__list-item--email

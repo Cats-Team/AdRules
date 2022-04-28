@@ -14,7 +14,7 @@
 ! Bilibili
 ! Branch.io ( https://stackoverflow.com/questions/37882810/what-is-meaning-of-branch-match-id )
 ! Campaign link tracking
-! Checksum: 0PqUSTKrivQFKgv2e85p7A
+! Checksum: Od/sN1WsYg7tC/gT2J8NMA
 ! Coupang.com - An electronic commerce service of S. Korea.
 ! DPG Media analytics
 ! Daraz & Shop (Samesite)
@@ -51,14 +51,14 @@
 ! This section contains the list of domain-specific rules that remove URL tracking parameters. Rules have to contain only a single modifier: `removeparam`.
 ! This section contains the list of generic `$removeparam` rules that are applied on every website.
 ! This section contains the list of rules that fix incorrect blocking. Rules should be domain-specific and only the `removeparam` modifier is allowed.
-! TimeUpdated: 2022-04-20T13:02:26+00:00
+! TimeUpdated: 2022-04-28T09:30:48+00:00
 ! Title: AdGuard URL Tracking filter
 ! Tracks source site
 ! URL Campaign Mapper
 ! UTM
 ! Used on Dutch sites
 ! Valuecommerce ( https://help.valuecommerce.ne.jp/mer/dl/ITP2.0_for_iTAG.pdf )
-! Version: 2.0.2.48
+! Version: 2.0.2.49
 ! Weibo
 ! Yandex
 ! You should only put here known parameters that are used on many websites.
@@ -137,6 +137,7 @@
 ! https://github.com/AdguardTeam/AdguardFilters/issues/114561
 ! https://github.com/AdguardTeam/AdguardFilters/issues/115746
 ! https://github.com/AdguardTeam/AdguardFilters/issues/115977
+! https://github.com/AdguardTeam/AdguardFilters/issues/116479
 ! https://github.com/AdguardTeam/AdguardFilters/issues/52925
 ! https://github.com/AdguardTeam/AdguardFilters/issues/63522
 ! https://github.com/AdguardTeam/AdguardFilters/issues/69031 [Stealth Mode - Strip URLs from tracking parameters]
@@ -531,6 +532,19 @@ $removeparam=yclid
 ||ejoker.de^$removeparam=sPartner
 ||euronews.com^$removeparam=_ope
 ||express.de^$removeparam=cb
+||flipkart.com^$removeparam=/^affExtParam/
+||flipkart.com^$removeparam=/^otracker/
+||flipkart.com^$removeparam=_refId
+||flipkart.com^$removeparam=affid
+||flipkart.com^$removeparam=cid
+||flipkart.com^$removeparam=cmpid
+||flipkart.com^$removeparam=iid
+||flipkart.com^$removeparam=lid
+||flipkart.com^$removeparam=pageUID
+||flipkart.com^$removeparam=pid
+||flipkart.com^$removeparam=pwsvid
+||flipkart.com^$removeparam=ssid
+||flipkart.com^$removeparam=store
 ||galaxus.de^$removeparam=idealoid
 ||gearbest.com^$removeparam=cid
 ||gearbest.com^$removeparam=lkid

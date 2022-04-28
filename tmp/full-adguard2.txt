@@ -86,7 +86,7 @@
 ! Canvas LMS tracking
 ! Changing theme button is broken when gtm.js is blocked
 ! Chartbeat - https://help.chartbeat.com/hc/en-us/articles/360044659014-Chartbeat-Cookies
-! Checksum: wPUpl/lVUB8/2TTNGAL6Og
+! Checksum: 3XVrglBs+2ILQOH4m29W5w
 ! Chinese
 ! Cirrus Inisght
 ! Clickaine : api.clickaine.com disguised trackers
@@ -392,7 +392,7 @@
 ! This section contains the list of tracking networks domains, which are hosted on non advertising sites as subdomains.
 ! TikTok
 ! Tiktok app
-! TimeUpdated: 2022-04-28T07:31:28+00:00
+! TimeUpdated: 2022-04-28T14:31:19+00:00
 ! TinyLetter
 ! Title: AdGuard Tracking Protection filter
 ! ToutApp
@@ -453,7 +453,7 @@
 ! Used to track visitors on multiple websites, in order to present relevant advertisement based on the visitor's preferences.
 ! Used to uniquely identify a visit by you to this website
 ! VK Pixel tracking
-! Version: 2.0.38.89
+! Version: 2.0.38.92
 ! Visitor ID to correlate sessions
 ! Visual Website Optimizer
 ! Vodafone app - error when viewing detail
@@ -773,6 +773,8 @@
 ! https://github.com/AdguardTeam/AdguardFilters/issues/116388
 ! https://github.com/AdguardTeam/AdguardFilters/issues/116392
 ! https://github.com/AdguardTeam/AdguardFilters/issues/116471
+! https://github.com/AdguardTeam/AdguardFilters/issues/116712
+! https://github.com/AdguardTeam/AdguardFilters/issues/116798
 ! https://github.com/AdguardTeam/AdguardFilters/issues/11746
 ! https://github.com/AdguardTeam/AdguardFilters/issues/11933
 ! https://github.com/AdguardTeam/AdguardFilters/issues/12078
@@ -3292,6 +3294,7 @@ $cookie=yTrackVisit
 @@||googletagmanager.com/gtag/js$domain=srek.net
 @@||googletagmanager.com/gtag/js$domain=xl-bygg.no
 @@||googletagmanager.com/gtag/js?id=$domain=chainreactioncycles.com
+@@||googletagmanager.com/gtag/js?id=$domain=cnbctv18.com
 @@||googletagmanager.com/gtag/js?id=$domain=kawasaki.com
 @@||googletagmanager.com/gtag/js?id=$domain=rotana.net
 @@||googletagmanager.com/gtag/js?id=$domain=view.epageview.com
@@ -3327,6 +3330,7 @@ $cookie=yTrackVisit
 @@||googletagmanager.com/gtm.js$domain=chainreactioncycles.com
 @@||googletagmanager.com/gtm.js$domain=cinemaximum.com.tr
 @@||googletagmanager.com/gtm.js$domain=cinemaxx.de
+@@||googletagmanager.com/gtm.js$domain=cnbctv18.com
 @@||googletagmanager.com/gtm.js$domain=coda.io
 @@||googletagmanager.com/gtm.js$domain=coolermaster.com
 @@||googletagmanager.com/gtm.js$domain=cotizadorsalud.mapfre.com.mx
@@ -7838,6 +7842,7 @@ znak.com##.relap
 ||bulkbookstore.actonservice.com^
 ||bum7.bymycar.fr^
 ||bunchance.com^$third-party
+||buondua.com/hit/?
 ||burgerbrush.com^$third-party
 ||burnbubble.com^$third-party
 ||burnswhite.actonservice.com^
@@ -8305,6 +8310,7 @@ znak.com##.relap
 ||chartbeat.net^$third-party
 ||chartec.actonservice.com^
 ||chaturbate.com/api/adblocker/
+||cheaptickets.com/cl/2x2.gif?
 ||check.tadapi.info^
 ||check24.de/js/tracker.php
 ||check24.de/misc/tracking_gif.php
@@ -9844,6 +9850,7 @@ znak.com##.relap
 ||demandware.edgesuite.net/*/dwanalytics.js
 ||demdex.net^
 ||demdex.net^$third-party
+||demo.zeenews.com/ads/counter.php
 ||deovr.com/api_logs/
 ||dep-x.com^$third-party
 ||depart.trinitymedia.ai^
@@ -10537,6 +10544,7 @@ znak.com##.relap
 ||ebisfracora.fracora.com^
 ||ebisstore.tamagokichi.com^
 ||ebistoppan1.kyowahakko-bio-campaign-1.com^
+||ebookers.com/cl/2x2.gif?
 ||ebreid.garneroarredamenti.com^
 ||ebs.viosalon.com^
 ||ebtrk1.com^$third-party
@@ -11064,6 +11072,7 @@ znak.com##.relap
 ||event3.thermoscientific.com^
 ||eventapi.afreecatv.com^
 ||eventapi.libring.com^$third-party
+||eventbus.intuit.com^
 ||eventcollectorv2-1131000179.us-east-1.elb.amazonaws.com^
 ||eventcom.api.np.km.playstation.net/event^
 ||eventgw.twilio.com^
@@ -20335,6 +20344,7 @@ znak.com##.relap
 ||smetrics.ni.com^
 ||smetrics.nijobs.com^
 ||smetrics.nike.net^
+||smetrics.nintendo.com/id?d_visid_ver=$xmlhttprequest,redirect=nooptext
 ||smetrics.nintendo.com^
 ||smetrics.nisbets.be^
 ||smetrics.nisbets.co.nz^
@@ -25623,6 +25633,7 @@ znak.com##.relap
 ||worm.paulstamatiou.com^
 ||worm.usephantom.com^
 ||worriednumber.com^$third-party
+||wotif.com/cl/2x2.gif?
 ||wourib.silux.rs^
 ||woutkw.type.jp^
 ||wovzcy.meo.pt^
@@ -26068,6 +26079,7 @@ znak.com##.relap
 ||zhcxvk.qvc.com^
 ||zhihu-web-analytics.zhihu.com/api/v*/logs^
 ||zion-telemetry.api.cnn.io^
+||zion.qbo.intuit.com^
 ||zippywind.com^$third-party
 ||zipstat.dk^$third-party
 ||zirve100.com^$third-party

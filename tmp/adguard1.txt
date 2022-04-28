@@ -1,10 +1,10 @@
 
-! Checksum: oHcpwhVWso1rMXh/iyncGA
+! Checksum: QikVjucwGQcnoI4mxbluNQ
 ! Description: Filter for all known mobile ad networks. Useful for mobile devices.
 ! Expires: 4 days (update frequency)
-! TimeUpdated: 2022-04-28T07:30:25+00:00
+! TimeUpdated: 2022-04-28T08:30:20+00:00
 ! Title: AdGuard Mobile Ads filter (Optimized)
-! Version: 2.0.29.2
+! Version: 2.0.29.3
 !### TEMPORARY ###
 !#################
 !+ NOT_OPTIMIZED
@@ -1112,6 +1112,7 @@ fontanka.ru##.AJdz
 fontanka.ru##.FXut
 fontanka.ru##.IFaef
 fontanka.ru##.JFev
+fontanka.ru#?##adv_mob_sticky-mobile-smi:upward(2)
 fontanka.ru#?##app > div > footer ~ div:has(> div > div[id^="adfox_"])
 food.ndtv.com,m.ndtv.com#%#Object.defineProperty(window, 'canRunAdsN', { get: function() { return false; } });
 food.ndtv.com,m.ndtv.com#@#.ad300
@@ -1943,6 +1944,7 @@ m.milliyet.com.tr##.stTwo > a > img[data-original*="Advertorial"]
 m.milliyet.com.tr##.stTwo > a > img[data-original*="Advertorial"] ~ p
 m.milliyet.com.tr##a[href^="http://secure.milliyet.com.tr/redirect/Default.aspx?"][target="_blank"] > article
 m.milliyet.com.tr##div[id^="adv_"]
+m.mobile.de#?#article[data-testid="srp-regular-ad"] + div[class]:has(> div[id^="m_srp_slot_"][data-label="Anzeige"]:only-child)
 m.mobile01.com##.u-ad-image
 m.motorsport-total.com##.anzeige-block
 m.muensterschezeitung.de##.wn_spo_banner
@@ -2350,6 +2352,7 @@ mobil.stern.de#?#.teaserlist__items > .teaser-medium-left.article-type-standard-
 mobile.1haza.com##.main > a:not([href*="1haza.com"]) > img[width="100%"]
 mobile.1haza.com##.wrapper > a:not([href*="1haza.com"]) > img[width="100%"]
 mobile.baidu.com##.detail-banner
+mobile.de###mobile-home .home > .brand-placement
 mobile.donanimhaber.com###comment-container > #news-container[style*="width:"][style*="position"][style*="height:"]
 mobile.donanimhaber.com##.content > #news-container[style*="width: 100%; float: left"][style*="height:"]
 mobile.donanimhaber.com##.content > div[style*="text-align: center; width: 320px; height: 100px;"]
