@@ -155,7 +155,7 @@
 ! Chat widget on the main page
 ! Chat widgets
 ! Check, if these sites work fine with scriptlet: mail.rambler.ru, kino.rambler.ru, weather.rambler.ru, comments.rambler.ru, kassa.rambler.ru, horoscopes.rambler.ru
-! Checksum: 3Z0lK0mDzSU3FQ4Wgz02ew
+! Checksum: /DFKbXoFDViyTwaJXuP/Sg
 ! Chrome banner in MS Edge
 ! Chrome browser suggest
 ! Climate info below articles
@@ -313,7 +313,7 @@
 ! This section contains the list of rules that block website push notifications ("subscribe to the news" kind of notifications).
 ! This section contains the list of rules that fix incorrect blocking of cookie notifications by generic rules. Rules should be domain-specific.
 ! This section contains the list of the rules against annoyances that are not falling under existing categories. Rules should be domain-specific.
-! TimeUpdated: 2022-04-27T15:30:38+00:00
+! TimeUpdated: 2022-04-27T22:30:34+00:00
 ! Title: AdGuard Annoyances filter
 ! To be discussed
 ! Turkish digital magazines
@@ -321,7 +321,7 @@
 ! Unhide for Android CB if top padding cannot be removed
 ! Using just "._gdpr-notify-header" will cause that part of the content will be hidden on a mobile website
 ! Vacancy widgets
-! Version: 2.1.17.27
+! Version: 2.1.17.32
 ! Video recommendations
 ! Voting widget
 ! Website is broken if "display: none" is used - ##div[class*="ConsentBannerstyles_"]
@@ -10541,6 +10541,7 @@ buhonline.ru##.topic-item-aria_subscribe
 buhonline.ru##div[class^="card--"] > div.container > div[class^="subscribeHome"]:upward(2)
 buhonline.ru#$#body { overflow: visible!important; }
 buhonline.ru#$?#.react-responsive-modal-root:has(div[class^="subscribeBlock"]) { display: none!important; }
+build-gaming-computers.com,really-learn-english.com,buildcomputers.net,grammarbank.com##.eucookiebar
 buildupp.net##div[id^="xeory-fixed-banner"]
 builtbybel.com###easycookieinfo
 bulletin.cebpubservice.com##div[class^="mian_list_"] > .PublicAddress[style^="border:"]
@@ -10683,8 +10684,10 @@ byjus.com##.exit-intent-popup
 byjus.com#$##register-modal-widget { display: none !important; }
 byjus.com#$#.modal-backdrop { display: none !important; }
 byjus.com#$#body { overflow: visible !important; padding-right: 0 !important; }
-byjus.com#?#.sidebar > div.bgc-white:has(> div.relatedlinks-widget > div.widget-content > a[onclick*="sidebar register click"])
-byjus.com#?#.sidebar > div.bgc-white:has(> div.relatedlinks-widget)
+byjus.com#?#.join-byjus-form-widget:upward(1)
+byjus.com#?#.sidebar > div.bgc-white:has(> div.ask-about-widget)
+byjus.com#?#.sidebar > div.bgc-white:has(> div.register-free-widget)
+byjus.com#?#.sidebar > div.bgc-white:has(> div.relatedlinks-widget > div.widget-content > a[target="_blank"] > img)
 byjusexamprep.com##.gradeup-info-banner
 bynogame.com##.cookie_agreements
 byrdie.com##.header__newsletter-button
@@ -14722,7 +14725,6 @@ flyuia.com#@#.cookie-popup:not(body):not(html)
 fm.tuba.pl#%#AG_onLoad(function() { if (window.location.pathname.indexOf('/play/') > -1) { window.confirm_=window.confirm;var c=window.confirm,d=/Czy chcesz prze\u0142\u0105czy\u0107 na radio/;window.confirm=function(e,f){return"string"==typeof e&&d.test(e)||void c(e,f)} } });
 fmkorea.com#$##bd_capture { background: none!important; }
 fmkorea.com#%#//scriptlet('set-constant', 'var7', '0')
-fmmods.com,dijitalgundem.net,teknotaci.com,lordiz.com###rb-cookie
 fmovie.cc##.alert.notice > p + p.hidden-xs[style*="font-weight"]
 fmovies.cab##.feedback-icon
 fmovies.cab##div[id="1_bottom_corner"]
@@ -17608,6 +17610,7 @@ insidermonkey.com##.daily-newsletter + .email-privacy-policy-warning
 insidermonkey.com#%#//scriptlet('prevent-fetch', 'pagead2.googlesyndication.com')
 insidermonkey.com,jpost.com##.daily-newsletter
 insidertracking.com##.inktheme-cookies
+insights.sei.cmu.edu##.subscribe_small
 insomniacookies.com##.mail-list-wrap
 inspiringtips.com##.enews
 inspiringtips.com##.spbsm-followbuttons-output-wrapper
@@ -18778,6 +18781,7 @@ kolesa.ru##.marked-post
 kolesa.ru##.post-popup
 kolobok.ua##.justify-content-center[role="tablist"]
 kolokolrussia.ru##.subscribeBox
+kolsuzkafasi.com,fmmods.com,dijitalgundem.net,teknotaci.com,lordiz.com###rb-cookie
 kom-dir.ru,firesticktricks.com##.warning
 kom-dir.ru,gd.ru,buhsoft.ru,rnk.ru,26-2.ru,pro-personal.ru,business.ru##.slideBannerContainer
 komando.com##.k3-prefs-center-modal-background
@@ -19367,7 +19371,6 @@ leverageedu.com##.uniconnectmodal
 leverageedu.com##.whatsappFloater
 leverageedu.com##.whatsappclass
 leverageedu.com##div[class^="downloadBtn"]
-leverageedu.com,andpro.ru,mskc.pro,gastronom.ru,makeup.ru,migranturus.com,te-st.ru,bosco.ru,makeup.com.ua,netdoktor.de,sierratradingpost.com,rizonesoft.com,avclub.com,clickhole.com,deadspin.com,gizmodo.com,jalopnik.com,jezebel.com,kotaku.com,lifehacker.com,splinternews.com,theinventory.com,theonion.com,theroot.com,thetakeout.com##.footer-subscribe
 levi.com##.opt-in-email-signup-drawer
 levi.com##.opt-in-email-signup-drawer ~ div.modal-backdrop
 levi.com##div[data-popup="cookie"]
@@ -25232,7 +25235,6 @@ realestate.yahoo.co.jp##.StickyBanner__link--contract
 realitycheats.com,hobby-machinist.com,safezone.cc##.notices--bottom_fixer
 realitykings.com##body div.floating-footer
 reallanguage.club##.no_advert
-really-learn-english.com,buildcomputers.net,grammarbank.com##.eucookiebar
 really-simple-ssl.com##.ibx-notification-popup
 realm667.com#@##redim-cookiehint:not(body):not(html)
 realme.com##.r-cookie-footer ~ div.mask-untouch
@@ -29400,6 +29402,7 @@ trashbox.ru###div_rec_topic_after
 trashbox.ru##.div_anim_rec_block
 trashbox.ru##.div_social_2021_block
 trashbox.ru##a[href^="https://t.me"]
+trashexpert.ru,leverageedu.com,andpro.ru,mskc.pro,gastronom.ru,makeup.ru,migranturus.com,te-st.ru,bosco.ru,makeup.com.ua,netdoktor.de,sierratradingpost.com,rizonesoft.com,avclub.com,clickhole.com,deadspin.com,gizmodo.com,jalopnik.com,jezebel.com,kotaku.com,lifehacker.com,splinternews.com,theinventory.com,theonion.com,theroot.com,thetakeout.com##.footer-subscribe
 travel.co.jp##.g-sticky
 travel.co.jp##.pr-area
 travel.navitime.com##.app-presents-frame
@@ -32240,6 +32243,7 @@ znak.com##form[data-type="maillist_main"]
 znak.com#$#body:not(.mobile) header { margin-top: 20px!important; }
 znanija.com###__next > div.js-main-page > div:not([class]) + div[class^="section--"]
 znanija.com##.js-react-bottom-banner
+znetlive.com##.ab-block-cta
 zobacz-online.ml##cookie-notice
 zobakit.com##.subcribe-box
 zomato.com###oamV2
@@ -32577,6 +32581,7 @@ zzz.com.ua##body > div[style="text-align:center;font-size:11px;font-family:arial
 ||bmfeed.ru^$third-party
 ||boilingcredit.com^$third-party
 ||bokete.jp/images/banner_over_w640.png
+||boldchat.com^$third-party
 ||boldsky.com/common/build/js/site-notification-desk.min.js
 ||bookwalker.jp/shared/gdpr/
 ||booster.webtradecenter.com^$third-party
@@ -32947,6 +32952,7 @@ zzz.com.ua##body > div[style="text-align:center;font-size:11px;font-family:arial
 ||d3olbu2cl74039.cloudfront.net/a/signup-sidebar-widget/
 ||d3otfkap419ijo.cloudfront.net/*/lib-components-newsletter-modal.js
 ||dailycaller.com^$removeparam=spot_im_redirect_source
+||dailyhostnews.com/pdf/flash-banner-1.gif
 ||dailymail.co.uk/api/web-push-notification/
 ||dailymotion.com/embed/video/$domain=adshorte.com
 ||dailyuploads.net/sw.js
@@ -34701,6 +34707,7 @@ zzz.com.ua##body > div[style="text-align:center;font-size:11px;font-family:arial
 ||ziare.com/firebase-messaging-init.js
 ||ziare.com/firebase-messaging-init_*.js
 ||zn.ua/user/img/special/zn-youtube.png
+||znetlive.com/*/flash-banner-2.gif
 ||zohocdn.com/pagesense/tracking/privacy-banner-$third-party
 ||zopim.com^$third-party,domain=~help.ubnt.com|~nordvpn.com|~egb.com|~amaysim.com.au|~endclothing.com|~customercare.pizzahut.co.uk|~starlingbank.com|~nvidia.com|~wevpn.com
 ||zorbanmat.com^$third-party

@@ -1,10 +1,10 @@
 
-! Checksum: cQEn3DmdtZvZF8vwmU/Mnw
+! Checksum: 4FS+BJ+6qEKPGvd4lAr7Kw
 ! Description: Blocks irritating elements on web pages including cookie notices, third-party widgets and in-page pop-ups.
 ! Expires: 4 days (update frequency)
-! TimeUpdated: 2022-04-27T15:30:38+00:00
+! TimeUpdated: 2022-04-27T22:30:34+00:00
 ! Title: AdGuard Annoyances filter (Optimized)
-! Version: 2.1.17.27
+! Version: 2.1.17.32
 !### 3rd-party assistants, etc #########################
 !### HINTS are at the end of file
 !### Weather, money exchange, 3rd-party feedbacks, #####
@@ -3865,6 +3865,7 @@ buhonline.ru##.topic-item-aria_subscribe
 buhonline.ru##div[class^="card--"] > div.container > div[class^="subscribeHome"]:upward(2)
 buhonline.ru#$#body { overflow: visible!important; }
 buhonline.ru#$?#.react-responsive-modal-root:has(div[class^="subscribeBlock"]) { display: none!important; }
+build-gaming-computers.com,really-learn-english.com,buildcomputers.net,grammarbank.com##.eucookiebar
 bulletin.cebpubservice.com##div[class^="mian_list_"] > .PublicAddress[style^="border:"]
 bulletin.com##.__fb-light-mode.tkr6xdv7
 bulurum.com##.MobileContainer
@@ -3946,7 +3947,10 @@ byjus.com##.bcFloat
 byjus.com#$##register-modal-widget { display: none !important; }
 byjus.com#$#.modal-backdrop { display: none !important; }
 byjus.com#$#body { overflow: visible !important; padding-right: 0 !important; }
-byjus.com#?#.sidebar > div.bgc-white:has(> div.relatedlinks-widget)
+byjus.com#?#.join-byjus-form-widget:upward(1)
+byjus.com#?#.sidebar > div.bgc-white:has(> div.ask-about-widget)
+byjus.com#?#.sidebar > div.bgc-white:has(> div.register-free-widget)
+byjus.com#?#.sidebar > div.bgc-white:has(> div.relatedlinks-widget > div.widget-content > a[target="_blank"] > img)
 byjusexamprep.com##.gradeup-info-banner
 bynogame.com##.cookie_agreements
 byrdie.com##.header__newsletter-button
@@ -6275,7 +6279,6 @@ flyuia.com#@#.cookie-popup:not(body):not(html)
 fm.tuba.pl#%#AG_onLoad(function() { if (window.location.pathname.indexOf('/play/') > -1) { window.confirm_=window.confirm;var c=window.confirm,d=/Czy chcesz prze\u0142\u0105czy\u0107 na radio/;window.confirm=function(e,f){return"string"==typeof e&&d.test(e)||void c(e,f)} } });
 fmkorea.com#$##bd_capture { background: none!important; }
 fmkorea.com#%#//scriptlet('set-constant', 'var7', '0')
-fmmods.com,dijitalgundem.net,teknotaci.com,lordiz.com###rb-cookie
 fmovies.cab##.feedback-icon
 fmoviesto.*,solarmovie.pe,cineb.net,myflixerhd.ru,hdtoday.*,yesmovies.mn,divicast.com,seriestv.watch,freemoviesfull.com,dopebox.to,fmovies.*,sflix.to,myflixer.to,movies2watch.tv,ev01.to,ummagurau.com,6movies.net,tinyzonetv.to,myflixertv.to,f2movies.to,moviesjoy.*,moviesjoy.*,myflixerhd.ru,soap2day.*,solarmovie.pe,cineb.net#$##modalshare { display: none !important; }
 fmoviesto.*,solarmovie.pe,cineb.net,myflixerhd.ru,hdtoday.*,yesmovies.mn,divicast.com,seriestv.watch,freemoviesfull.com,dopebox.to,fmovies.*,sflix.to,myflixer.to,movies2watch.tv,ev01.to,ummagurau.com,6movies.net,tinyzonetv.to,myflixertv.to,f2movies.to,moviesjoy.*,moviesjoy.*,myflixerhd.ru,soap2day.*,solarmovie.pe,cineb.net#$#.modal-backdrop { display: none !important; }
@@ -7919,6 +7922,7 @@ insidermonkey.com##.advertorial-offer-container
 insidermonkey.com##.daily-newsletter + .email-privacy-policy-warning
 insidermonkey.com#%#//scriptlet('prevent-fetch', 'pagead2.googlesyndication.com')
 insidermonkey.com,jpost.com##.daily-newsletter
+insights.sei.cmu.edu##.subscribe_small
 inspiringtips.com##.enews
 inspiringtips.com##.spbsm-followbuttons-output-wrapper
 instagram.com###react-root > section > nav > div > div > section.xZ2Xk
@@ -8598,6 +8602,7 @@ kolaykisalt.com#%#//scriptlet("set-constant", "count", "0")
 kolesa.ru##.marked-post
 kolesa.ru##.post-popup
 kolobok.ua##.justify-content-center[role="tablist"]
+kolsuzkafasi.com,fmmods.com,dijitalgundem.net,teknotaci.com,lordiz.com###rb-cookie
 kom-dir.ru,firesticktricks.com##.warning
 kom-dir.ru,gd.ru,buhsoft.ru,rnk.ru,26-2.ru,pro-personal.ru,business.ru##.slideBannerContainer
 komando.com##.k3-prefs-center-modal-background
@@ -8944,7 +8949,6 @@ leverageedu.com##.show-content > p ~ div[class$="course"]
 leverageedu.com##.whatsappFloater
 leverageedu.com##.whatsappclass
 leverageedu.com##div[class^="downloadBtn"]
-leverageedu.com,andpro.ru,mskc.pro,gastronom.ru,makeup.ru,migranturus.com,te-st.ru,bosco.ru,makeup.com.ua,netdoktor.de,sierratradingpost.com,rizonesoft.com,avclub.com,clickhole.com,deadspin.com,gizmodo.com,jalopnik.com,jezebel.com,kotaku.com,lifehacker.com,splinternews.com,theinventory.com,theonion.com,theroot.com,thetakeout.com##.footer-subscribe
 lewento.de#@##cliSettingsPopup
 lewento.de#@##cookie-law-info-bar
 lexception.com,mtb.ua,kiehls.ru,privetmir.ru,eventvods.com,fendi.com##.cookies-disclaimer
@@ -12301,7 +12305,6 @@ realadmin.ru#$#.adsbygoogle { height: 1px!important; }
 realadmin.ru#@#.adsbygoogle
 realitycheats.com,hobby-machinist.com,safezone.cc##.notices--bottom_fixer
 reallanguage.club##.no_advert
-really-learn-english.com,buildcomputers.net,grammarbank.com##.eucookiebar
 realm667.com#@##redim-cookiehint:not(body):not(html)
 realme.com##.r-cookie-footer ~ div.mask-untouch
 realme.com#$#.r-cookie { display: none !important; }
@@ -14732,6 +14735,7 @@ trashbox.ru###div_bottom_subscribe_placeholder
 trashbox.ru##.div_anim_rec_block
 trashbox.ru##.div_social_2021_block
 trashbox.ru##a[href^="https://t.me"]
+trashexpert.ru,leverageedu.com,andpro.ru,mskc.pro,gastronom.ru,makeup.ru,migranturus.com,te-st.ru,bosco.ru,makeup.com.ua,netdoktor.de,sierratradingpost.com,rizonesoft.com,avclub.com,clickhole.com,deadspin.com,gizmodo.com,jalopnik.com,jezebel.com,kotaku.com,lifehacker.com,splinternews.com,theinventory.com,theonion.com,theroot.com,thetakeout.com##.footer-subscribe
 travel.co.jp##.g-sticky
 travel.rakuten.co.jp###footerBannerAppDL
 travel.yandex.ru#?#body > section[style^="z-index:"]:has(> section form[name="MODAL_SUBSCRIPTION"])
@@ -16383,6 +16387,7 @@ zmk-aktuell.de###spicookiebanner
 zmk-aktuell.de###zsAdvertisingBanner
 zn.ua##.bottom_block > div.telegram
 znanija.com##.js-react-bottom-banner
+znetlive.com##.ab-block-cta
 zobacz-online.ml##cookie-notice
 zomato.com#?##root > div[class] > div[class]:has(> div[class] > div[class] > div[class] > h2:contains(Get the Zomato App))
 zomato.com#?##root > div[class]:has(> div[class] > div[class] > a[href="/cookiepolicy"])
@@ -16569,6 +16574,7 @@ zweitausendeins.de,meyer-gartenbedarf.de#%#//scriptlet('set-cookie', 'amcookie_a
 ||bmfeed.ru^$third-party
 ||boilingcredit.com^$third-party
 ||bokete.jp/images/banner_over_w640.png
+||boldchat.com^$third-party
 ||boldsky.com/common/build/js/site-notification-desk.min.js
 ||bookwalker.jp/shared/gdpr/
 ||booster.webtradecenter.com^$third-party
@@ -16818,6 +16824,7 @@ zweitausendeins.de,meyer-gartenbedarf.de#%#//scriptlet('set-cookie', 'amcookie_a
 ||d2wy8f7a9ursnm.cloudfront.net/v*/bugsnag.min.js$domain=checkadblock.ru
 ||d3bo67muzbfgtl.cloudfront.net/edrone_2_0.js
 ||d3nv2arudvw7ln.cloudfront.net/staticfolder/Tyre/cookie-bar/$domain=pirelli.com
+||dailyhostnews.com/pdf/flash-banner-1.gif
 ||dailymail.co.uk/api/web-push-notification/
 ||dankulavius.com^$third-party
 ||danorenius.com^$third-party
@@ -17709,6 +17716,7 @@ zweitausendeins.de,meyer-gartenbedarf.de#%#//scriptlet('set-cookie', 'amcookie_a
 ||zen.yandex.ru/widget-loader$domain=~yandex.by|~yandex.kz|~yandex.ru|~yandex.ua
 ||ziare.com/firebase-messaging-init.js
 ||zn.ua/user/img/special/zn-youtube.png
+||znetlive.com/*/flash-banner-2.gif
 ||zopim.com^$third-party,domain=~help.ubnt.com|~nordvpn.com|~egb.com|~amaysim.com.au|~endclothing.com|~customercare.pizzahut.co.uk|~starlingbank.com|~nvidia.com|~wevpn.com
 ||zotabox.com^$domain=playpcesor.com|taiphanmempc.net
 ||zvzda.substack.com/embed

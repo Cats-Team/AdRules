@@ -37,7 +37,7 @@
 ! Bad: ||legitwebsite.com^$third-party (should be in adservers.txt)
 ! Based on AG_defineProperty (https://github.com/AdguardTeam/deep-override)
 ! By advanced we mean the following rule types: CSS, scriptlets, HTML filtering (`$$` marker), JS.
-! Checksum: 8Sos8pDI0IAERyx2p4CbMw
+! Checksum: Ie1phYiC//WqWh3jHj3nwA
 ! Description: EasyList China + AdGuard Chinese filter. Filter list that specifically removes ads on websites in Chinese language.
 ! Examples:
 ! Examples: AG_removeCookie('/REGEX/') or AG_removeCookie('part of the cookie name')
@@ -79,9 +79,9 @@
 ! This section contains the list of rules that fix incorrect blocking. Rules must be domain-specific.
 ! This section contains the list of the content replacement rules that block ads. Rules must be domain-specific.
 ! This section contains the list of third-party advertising networks domains.
-! TimeUpdated: 2022-04-27T15:32:25+00:00
+! TimeUpdated: 2022-04-28T00:30:55+00:00
 ! Title: AdGuard Chinese filter
-! Version: 2.0.53.89
+! Version: 2.0.53.92
 ! cocomanga.com,cocomanga.com CNAME breakage
 ! do not hide popup, because product selector will not work
 ! e66mobi ads
@@ -5080,6 +5080,7 @@ bilibili.com###slide_ad + .ad-report
 bilibili.com##.ad-e1
 bilibili.com##.ad-f
 bilibili.com##.banner-card
+bilibili.com##.bili-dyn-ads
 bilibili.com##.eva-banner
 bilibili.com##.gg-floor-module
 bilibili.com##.index-promote
@@ -6036,7 +6037,6 @@ duote.com,soft-down.net##.fast-down-btn
 duowan.com###doc > div[style*="width:998px;height:90px;overflow:hidden;border"]
 duowan.com##.full-banner
 duowan.com##.ui-business
-dwnews.com##.adbox-top
 dy.xdf.cn##div[id^="adModel_"]
 dy2018.com,xiaopian.com##a[href*="/htmlcode/"]
 dy2018.com,xiaopian.com##a[href^="http://www.xiacai.com/"]
@@ -13831,7 +13831,6 @@ zznews.cn##.ad:not([style])
 ||carolinebeverly.com^
 ||carset.vip^
 ||cartoon18.com/images/friend/
-||cartoon18.com/images/friend/*/*.gif?
 ||cashnews.info^
 ||catbox.moe/bb5wdv.jpg
 ||cathaycentury.com^
@@ -17700,6 +17699,7 @@ zznews.cn##.ad:not([style])
 ||jupi.cc^*.gif
 ||juqingw.com/js/tad
 ||juren0.com^
+||jurl.pw^
 ||jusha.com^$third-party
 ||jushikk.com^
 ||just-cnc.com^
@@ -23253,6 +23253,7 @@ zznews.cn##.ad:not([style])
 ||ydstatic.com/dsp_website/
 ||ydstatic.com/fanxian/minisite/promotion/
 ||ydwjmvv.cn^
+||ydygk.com^
 ||ye-n-universitiy.xyz^
 ||ye2017.com^
 ||ye3.com^$third-party

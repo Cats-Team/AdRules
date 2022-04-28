@@ -60,7 +60,7 @@
 ! Booking app
 ! Breaks Yahoo Finance app on iOS https://github.com/AdguardTeam/AdguardFilters/issues/63354
 ! By advanced we mean the following rule types: CSS, scriptlets, HTML filtering (`$$` marker), JS.
-! Checksum: /q6W6unPQ1dLAzakEoqB7w
+! Checksum: pAonVXXlpzV+9DI+XGK91g
 ! Common names
 ! Context ads(must be excluded in useful ads)
 ! Criteo mobile ads
@@ -150,10 +150,10 @@
 ! This section contains the list of the base rules that block ads in mobile apps. Rules should be specific.
 ! This section contains the list of the content replacement rules that block ads on mobile devices. Rules must be domain-specific.
 ! This section contains the list of third-party advertising networks domains for mobile devices.
-! TimeUpdated: 2022-04-27T13:02:09+00:00
+! TimeUpdated: 2022-04-27T16:30:22+00:00
 ! Tinder (analytics)
 ! Title: AdGuard Mobile Ads filter
-! Version: 2.0.29.0
+! Version: 2.0.29.1
 ! Viber
 ! Viber[App] - the problem with the stickers store
 ! WPS Office
@@ -3217,6 +3217,7 @@ natgeo.nikkeibp.co.jp##.contentsAd
 nation.africa##.ad-mobile-leaderboard_wrap
 nau.ch##nau-advertisement-lazy
 navbharattimes.indiatimes.com##div[id^="div-clmb-ctn"]
+nazoq.com##.spUser
 nbcmontana.com,mynews4.com,nbc16.com,turnto10.com,news4sanantonio.com,nbc24.com,mycbs4.com,wtov9.com,mynbc15.com#?#div[class^="heroLayout_left__"] > ul[class^="heroLayout_heroSecondary__"] > li[class="teaserItem"]:has(> div > [class*="largeRectangleAd_container__"])
 ndtv.com###header_ad
 ndtv.com##.ad-wgt

@@ -745,6 +745,8 @@
 ! https://github.com/uBlockOrigin/uAssets/issues/12861
 ! https://github.com/uBlockOrigin/uAssets/issues/1295
 ! https://github.com/uBlockOrigin/uAssets/issues/12971 anti right click
+! https://github.com/uBlockOrigin/uAssets/issues/12986
+! https://github.com/uBlockOrigin/uAssets/issues/12989
 ! https://github.com/uBlockOrigin/uAssets/issues/1343
 ! https://github.com/uBlockOrigin/uAssets/issues/1445
 ! https://github.com/uBlockOrigin/uAssets/issues/1446
@@ -2841,6 +2843,8 @@ ggeguide.com##+js(acis, document.oncontextmenu)
 ggeguide.com##+js(aopr, disableSelection)
 ggulpass.com##*:style(-webkit-touch-callout: default !important; -webkit-user-select: text !important; -moz-user-select: text !important; -ms-user-select: text !important; user-select: text !important;)
 ggulpass.com##+js(aopw, document.oncontextmenu)
+ggwash.org##+js(set, Object.prototype.bgOverlay, noopFunc)
+ggwash.org##+js(set, Object.prototype.fixedContentPos, noopFunc)
 ghanatvon.com##+js(acis, document.oncontextmenu)
 girlscene.nl##+js(set, adblock, 0)
 giromarilia.com.br##+js(ra, oncontextmenu|ondragstart|onselectstart)
@@ -3514,6 +3518,7 @@ new-game-apk.com##+js(acis, document.oncontextmenu)
 new-game-apk.com##.unselectable:style(-webkit-touch-callout: default !important; -webkit-user-select: text !important; -moz-user-select: text !important; -ms-user-select: text !important; user-select: text !important;)
 news.chosun.com##+js(aeld, copy, getSelection)
 news.dwango.jp##+js(ra, oncontextmenu, body)
+news.ntv.co.jp##+js(set, document.oncontextmenu, trueFunc)
 news24.jp##*:style(-webkit-touch-callout: default !important; -webkit-user-select: text !important; -moz-user-select: text !important; -ms-user-select: text !important; user-select: text !important;)
 news24.jp##+js(aeld, contextmenu)
 newsbook.pl##+js(aopw, disableEnterKey)
@@ -4482,6 +4487,7 @@ www-daftarharga.blogspot.com##*:style(-webkit-touch-callout: default !important;
 www-daftarharga.blogspot.com##+js(acis, document.oncontextmenu)
 www-daftarharga.blogspot.com##+js(aeld, , keyCode)
 www.google.*##+js(set, rwt, noopFunc)
+www.ntv.co.jp##+js(aeld, contextmenu, preventDefault)
 wyff4.com##+js(nostif, [native code], 500)
 wzamrani.com##+js(aeld, contextmenu)
 xclient.info##+js(set, killads, true)

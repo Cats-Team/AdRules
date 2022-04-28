@@ -4890,6 +4890,7 @@ $script,domain=zdnet.fr,3p
 *$script,redirect-rule=noopjs,domain=onehack.us
 *$script,redirect-rule=noopjs,domain=onemanhua.com
 *$script,redirect-rule=noopjs,domain=ouo.*
+*$script,redirect-rule=noopjs,domain=pandora.com
 *$script,redirect-rule=noopjs,domain=playhydrax.com
 *$script,redirect-rule=noopjs,domain=puregym.com
 *$script,redirect-rule=noopjs,domain=safelinku.icu
@@ -11311,8 +11312,7 @@ megatube.xxx##+js(aopr, BetterJsPop)
 megaup.net##+js(acis, Math, break;case)
 megaup.net##+js(nano-sib, display())
 megaup.net##+js(ra, href|target, a[href^="https://tm-offers.gamingadult.com/"])
-megaup.net##.metaRedirectWrapperBottomAds:style(opacity: 0 !important;)
-megaup.net##.metaRedirectWrapperBottomAds:upward(body):style(overflow: hidden !important)
+megaup.net##.metaRedirectWrapperBottomAds > div:style(opacity: 0 !important;)
 megaurl.*##+js(aopr, app_vars.force_disable_adblock)
 megaurl.*##[id*="ScriptRoot"]
 megaurl.*##a[href^="//"]

@@ -25,7 +25,7 @@
 ! *** easylist:easylist_adult/adult_adservers_popup.txt ***
 ! *** easylist:easylist_adult/adult_allowlist.txt ***
 ! *** easylist:easylist_adult/adult_allowlist_popup.txt ***
-! *** easylist:easylist_adult/adult_allowlist_popup.txt ***table[width="100%"][bordercolor="#CCCCCC"]
+! *** easylist:easylist_adult/adult_allowlist_popup.txt ***com##table[width="100%"][bordercolor="#CCCCCC"]
 ! *** easylist:easylist_adult/adult_specific_block.txt ***
 ! *** easylist:easylist_adult/adult_specific_block_popup.txt ***
 ! *** easylist:easylist_adult/adult_specific_hide.txt ***
@@ -50,7 +50,7 @@
 ! Buff sites
 ! CSP Yavli
 ! CSP filters
-! Checksum: 9gCaqtU6ovm9HMWmXbqHFA
+! Checksum: xv9SmKSByiaa9L3ukprr2g
 ! Chinese supplement for the EasyList filters
 ! Commonly used popup scripts on movie/tv streaming sites
 ! Contains domain names
@@ -84,7 +84,7 @@
 ! In advert promo
 ! In video div
 ! In-page video advertising.
-! Last modified: 27 Apr 2022 16:25 UTC
+! Last modified: 28 Apr 2022 02:25 UTC
 ! Licence: https://easylist.to/pages/licence.html
 ! License: https://easylist-downloads.adblockplus.org/COPYING
 ! Magnify transparient advert on video
@@ -124,7 +124,7 @@
 ! Used with many websites to generate multiple popups
 ! VK.ru/.com
 ! VPN Affiliate Banners
-! Version: 202204271625
+! Version: 202204280225
 ! Washington Times
 ! Webcompat Generichide fixes (Avoid any potential filters being applied to non-ad domains)
 ! Webcompat fixes (Avoid any potential filters being applied to non-ad domains)
@@ -5822,6 +5822,8 @@
 ###div_ad_leaderboard
 ###div_advt_right
 ###div_belowAd
+###div_bottomad
+###div_bottomad_container
 ###div_content_mid_lft_ads
 ###div_googlead
 ###div_header_sponsors
@@ -37637,6 +37639,7 @@ bilibili.com###slide_ad + .ad-report
 bilibili.com##.ad-e1
 bilibili.com##.ad-f
 bilibili.com##.banner-card
+bilibili.com##.bili-dyn-ads
 bilibili.com##.eva-banner
 bilibili.com##.gg-floor-module
 bilibili.com##.index-promote
@@ -39055,7 +39058,6 @@ duplichecker.com##picture
 dutchnews.nl##.small-add-block
 dvdfile.com,ecnmag.com,thefashionspot.com###roadblock
 dvdtalk.com##a[href^="http://dvdtalk.pricegrabber.com/"]
-dwnews.com##.adbox-top
 dy2018.com,xiaopian.com##a[href*="/htmlcode/"]
 dy2018.com,xiaopian.com##a[href^="http://www.xiacai.com/"]
 dybee.tv##a[style^="position: fixed;bottom:"]
@@ -46613,7 +46615,7 @@ zznews.cn##.ad:not([style])
 ||120askimages.com/ask/zhenshi/templates/pub/js/loadPart.js
 ||121.40.25.88^
 ||121.43.114.38:8087/advs.js
-||1219c3e1c9.com^ 
+||1219c3e1c9.com^
 ||121zou.com^$subdocument
 ||122.114.239.160^
 ||122.225.103.*.htm
@@ -49212,6 +49214,8 @@ zznews.cn##.ad:not([style])
 ||adhdsb.cn^
 ||adhealers.com^
 ||adhealers.com^$popup
+||adherencestated.com^
+||adherencestated.com^$popup
 ||adhese.be^$third-party
 ||adhese.com^$third-party
 ||adhese.net^$third-party
@@ -51169,6 +51173,7 @@ zznews.cn##.ad:not([style])
 ||assinclusive.com/cyonix.html
 ||assinclusive.com/linkstxt2.html
 ||assistantrok.club^
+||assistedsquall.com^
 ||assisteggs.com^
 ||assiumwor.com^
 ||assoc-amazon.ca^$third-party
@@ -51486,6 +51491,7 @@ zznews.cn##.ad:not([style])
 ||awwlfb.cn^
 ||awwlib.cn^
 ||awwlrd.cn^
+||awwoeoevxnvt.com^
 ||awxoddnhl.xyz^
 ||awxqiujkhrf.top^
 ||awyys.com^
@@ -53276,6 +53282,7 @@ zznews.cn##.ad:not([style])
 ||brunettebow.com^
 ||bruperchrophone.com^
 ||bruperchrophone.com^$popup
+||brwbimexv.com^
 ||brwvdoorqmsnqbl.xyz^
 ||brysj.vip^
 ||bs.baidu.com/app-ads%
@@ -53866,6 +53873,7 @@ zznews.cn##.ad:not([style])
 ||cc.xiaodapei.com^
 ||cc.xwscg.com^
 ||cc599.com^
+||cca1660917.com^
 ||ccalgf.com^
 ||ccav1.com/wp-content/uploads/an-temp/
 ||ccav1.com/wp-content/uploads/bMShkpexGYJd/
@@ -54134,6 +54142,7 @@ zznews.cn##.ad:not([style])
 ||chang555.cn^
 ||changeablesizepractically.com^
 ||changedcombustible.com^
+||changefranticallywhom.com^
 ||changement.pro^
 ||changhehengqi.com^
 ||chango.com^
@@ -54851,6 +54860,7 @@ zznews.cn##.ad:not([style])
 ||cnxunkewang.info^
 ||cnyibs.com^
 ||cnyw.net/autoloader.js
+||cnywhcuyvjc.com^
 ||cnzhqs.com^
 ||cnzz.cn/badu.gif
 ||cnzz.cn/ssp_
@@ -55779,6 +55789,7 @@ zznews.cn##.ad:not([style])
 ||d11enq2rymy0yl.cloudfront.net^
 ||d11hjbdxxtogg5.cloudfront.net^
 ||d11tybz5ul8vel.cloudfront.net^
+||d12czbu0tltgqq.cloudfront.net^
 ||d12ysuoljjyfqa.cloudfront.net^
 ||d131c7173a.com^
 ||d13jhr4vol1304.cloudfront.net^
@@ -56108,6 +56119,7 @@ zznews.cn##.ad:not([style])
 ||dafont.com/img/fontscom_banner.png
 ||dafthulksyams.com^
 ||daftporn.com/nb_
+||daftporus.website^
 ||dafuhao918.com^
 ||dagd0kz7sipfl.cloudfront.net^
 ||dagnar.com^$popup
@@ -56825,6 +56837,7 @@ zznews.cn##.ad:not([style])
 ||dishesha.net^
 ||disillusionworn.com^
 ||disinheritacquaintancechop.com^
+||disintegrateapprenticedistribute.com^
 ||disinterestedreflectionmuscle.com^
 ||dislikesparecandle.com^
 ||disloquerent.website^
@@ -58921,6 +58934,7 @@ zznews.cn##.ad:not([style])
 ||fcheng.top^
 ||fchio.com^
 ||fckjoujpsna.xyz^
+||fcrbsqtsuvexcsy.com^
 ||fcrdb.com^
 ||fcuit.com^
 ||fcunq.com^
@@ -61831,6 +61845,7 @@ zznews.cn##.ad:not([style])
 ||hinfectlyb.biz^
 ||hingefestivitysmelt.com^
 ||hinisanex.biz^
+||hinlargecon.com^
 ||hinotoenh.online^
 ||hionedaugsbu.info^
 ||hip-97166b.com^
@@ -64481,6 +64496,7 @@ zznews.cn##.ad:not([style])
 ||juren0.com^
 ||juricts.xyz^
 ||jurjgajux.xyz^
+||jurl.pw^
 ||jurmus.com^
 ||juroptyne.com^
 ||juroudaw.com^
@@ -64828,6 +64844,7 @@ zznews.cn##.ad:not([style])
 ||kenxq.com^
 ||kenxr.com^
 ||keqcte.cn^
+||keqiao.pw^
 ||kerriastiff.cam^
 ||kershop.ren^
 ||kerumal.com^
@@ -69369,6 +69386,7 @@ zznews.cn##.ad:not([style])
 ||onad.eu^$popup
 ||onads.com^
 ||onalskillsexkc.com^
+||onastydrum.com^
 ||oncerensky.cam^
 ||onclasrv.com^
 ||onclickads.net^
@@ -69679,6 +69697,7 @@ zznews.cn##.ad:not([style])
 ||ouftuthy.net^
 ||oughtbuilding.com^
 ||oujouniw.com^
+||oujtbhllnntesk.com^
 ||oukreesy.net^
 ||oulddothesa.biz^
 ||oultuwee.net^
@@ -70128,6 +70147,7 @@ zznews.cn##.ad:not([style])
 ||paybackvocal.com^
 ||paydemic.com^$third-party
 ||paydotcom.com^$third-party
+||payerscocoa.com^
 ||payingnoodlescam.com^
 ||paymentdeceasedcommence.com^
 ||payments4u.info^
@@ -73531,6 +73551,7 @@ zznews.cn##.ad:not([style])
 ||rylcbwg.cn^
 ||ryminos.com^
 ||rynilwnu.xyz^
+||rynlrkqgyjqfaxs.com^
 ||ryotsikes.com^
 ||ryrecdiretbet.info^
 ||ryrkscj.cn^
@@ -73884,6 +73905,7 @@ zznews.cn##.ad:not([style])
 ||sdasasyydd.com^$third-party
 ||sdawe.top^
 ||sdbeta.com/statics/mystyle/js/1
+||sdbqiynix.com^
 ||sdd.hi1718.com^
 ||sdfer.xyz^
 ||sdfjtwp.com^
@@ -76399,6 +76421,7 @@ zznews.cn##.ad:not([style])
 ||telephoneinclination.com^
 ||televeniesuc.pro^
 ||telllwrite.com^
+||tellmadeirafireplace.com^
 ||tellslipstick.com^
 ||tellsupposedly.com^
 ||tellvi.cn^$third-party
@@ -76900,6 +76923,7 @@ zznews.cn##.ad:not([style])
 ||tkqlhce.com/image-
 ||tkqlhce.com/placeholder-
 ||tkshyp.com^
+||tkudoacf.com^
 ||tkurpqyoct.com^
 ||tkxiavegstgq.com^
 ||tl2go.com^
@@ -80063,6 +80087,7 @@ zznews.cn##.ad:not([style])
 ||writtenorbithalfbaked.com^
 ||wrkdih.com^
 ||wrkl.xyz^
+||wrotal.com^
 ||wroteadministercurve.com^
 ||wroton.com^
 ||wrotr.com^
@@ -81112,6 +81137,7 @@ zznews.cn##.ad:not([style])
 ||ydtqlmsvocjp.com^
 ||ydtrafrclb.com^
 ||ydwjmvv.cn^
+||ydygk.com^
 ||ydysywor.xyz^
 ||ye-n-universitiy.xyz^
 ||ye185hcamw.com^
