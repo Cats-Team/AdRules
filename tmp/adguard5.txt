@@ -1,10 +1,10 @@
 
-! Checksum: kvNBwhA4FcqTCftlf8rn8w
+! Checksum: m2DcQ/r9WYI/eYTWNE0NtQ
 ! Description: Blocks irritating elements on web pages including cookie notices, third-party widgets and in-page pop-ups.
 ! Expires: 4 days (update frequency)
-! TimeUpdated: 2022-04-28T14:30:34+00:00
+! TimeUpdated: 2022-04-28T16:30:43+00:00
 ! Title: AdGuard Annoyances filter (Optimized)
-! Version: 2.1.17.40
+! Version: 2.1.17.42
 !### 3rd-party assistants, etc #########################
 !### HINTS are at the end of file
 !### Weather, money exchange, 3rd-party feedbacks, #####
@@ -2569,6 +2569,7 @@ analog.com#$#body { overflow: visible !important; }
 analogictips.com,1000projects.org,hostdime.com,whatobuy.in,blog.alexa.com###text-6
 analytics.twitter.com##.home-columns div[data-type="advertiser"]
 analyticsindiamag.com##div[data-id="1216dac"]
+analyticsindiamag.com##section[data-id="23d45d60"]
 analyticsindiamag.com##section[data-id="2438492"]
 analyticsindiamag.com#%#AG_onLoad(function() { document.body.innerHTML = document.body.innerHTML.replace(/Get the latest updates and relevant offers by sharing your email\./g, ""); });
 analyticsindiamag.com,flighthacks.com.au#$#body { overflow: visible!important; }
@@ -10846,6 +10847,7 @@ ns.nl#@##cookie-notice
 ns.nl#@#.cookie-notice:not(body):not(html)
 nsctotal.com.br#$#.tp-backdrop { display: none !important; }
 nsctotal.com.br#$#.tp-modal { display: none !important; }
+nsn.fm#?#article div:not([class]) > div[class] > section[class]:has(> div[class] form > input + button:contains(подписаться))
 ntt.com##.ContactUsButtonHQJp
 nttdata.com,aireuropa.com###ensNotifyBanner[aria-label="Consent Banner"]
 ntv.com.tr##.article-socialFrame-widget

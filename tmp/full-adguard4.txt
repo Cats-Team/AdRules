@@ -155,7 +155,7 @@
 ! Chat widget on the main page
 ! Chat widgets
 ! Check, if these sites work fine with scriptlet: mail.rambler.ru, kino.rambler.ru, weather.rambler.ru, comments.rambler.ru, kassa.rambler.ru, horoscopes.rambler.ru
-! Checksum: m4o/kSbylzDgAUwueLAqvA
+! Checksum: BGcXj/FXrwQf0jetUh4RQg
 ! Chrome banner in MS Edge
 ! Chrome browser suggest
 ! Climate info below articles
@@ -313,7 +313,7 @@
 ! This section contains the list of rules that block website push notifications ("subscribe to the news" kind of notifications).
 ! This section contains the list of rules that fix incorrect blocking of cookie notifications by generic rules. Rules should be domain-specific.
 ! This section contains the list of the rules against annoyances that are not falling under existing categories. Rules should be domain-specific.
-! TimeUpdated: 2022-04-28T14:30:34+00:00
+! TimeUpdated: 2022-04-28T16:30:43+00:00
 ! Title: AdGuard Annoyances filter
 ! To be discussed
 ! Turkish digital magazines
@@ -321,7 +321,7 @@
 ! Unhide for Android CB if top padding cannot be removed
 ! Using just "._gdpr-notify-header" will cause that part of the content will be hidden on a mobile website
 ! Vacancy widgets
-! Version: 2.1.17.40
+! Version: 2.1.17.42
 ! Video recommendations
 ! Voting widget
 ! Website is broken if "display: none" is used - ##div[class*="ConsentBannerstyles_"]
@@ -8286,6 +8286,7 @@ analytics.twitter.com##.home-columns div[data-type="advertiser"]
 analyticsindiamag.com##div[data-id="1216dac"]
 analyticsindiamag.com##div[id^="wpdevar_comment_"] ~ hr
 analyticsindiamag.com##div[id^="wpdevar_comment_"] ~ hr + pre.wp-block-preformatted
+analyticsindiamag.com##section[data-id="23d45d60"]
 analyticsindiamag.com##section[data-id="2438492"]
 analyticsindiamag.com#%#AG_onLoad(function() { document.body.innerHTML = document.body.innerHTML.replace(/Get the latest updates and relevant offers by sharing your email\./g, ""); });
 analyticsindiamag.com#?#.post-content > h2:contains(Subscribe)
@@ -22740,6 +22741,7 @@ ns.nl#@#.cookie-notice:not(body):not(html)
 nsctotal.com.br#$#.tp-backdrop { display: none !important; }
 nsctotal.com.br#$#.tp-modal { display: none !important; }
 nsgrad.com##.adv_t
+nsn.fm#?#article div:not([class]) > div[class] > section[class]:has(> div[class] form > input + button:contains(подписаться))
 nspk.ru##.footer-personal-data
 ntower.de##.userNotice > .info
 ntt.com##.ContactUsButtonHQJp

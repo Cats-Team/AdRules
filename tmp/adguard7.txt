@@ -1,10 +1,10 @@
 
-! Checksum: 7KWxdryw3y0D5KLyIHFKbA
+! Checksum: F46qQaU6gl4lpeFpgkYaiA
 ! Description: Filter for social media widgets such as 'Like' and 'Share' buttons and more.
 ! Expires: 4 days (update frequency)
-! TimeUpdated: 2022-04-28T14:31:24+00:00
+! TimeUpdated: 2022-04-28T16:31:34+00:00
 ! Title: AdGuard Social Media filter (Optimized)
-! Version: 2.0.60.55
+! Version: 2.0.60.57
 !+ NOT_OPTIMIZED
 !+ NOT_PLATFORM(ios, ext_android_cb)
 !+ PLATFORM(android)
@@ -4223,6 +4223,7 @@ nperf.com##.gaugeShareButton
 nperf.com##.shareLayer
 nrc.nl##.metabox__list__link--share
 nsctotal.com.br##.FloatSocialShareContainerWrapper
+nsn.fm###articleBody div[itemprop="articleBody"] + div > section[class] + div[class^="_"]
 nsn.fm#?#button:contains(Поделиться)
 nta.co.jp,topgate.co.jp,m.gobalnews.com##.sns-list
 ntower.de###gameEndBoxShare
@@ -5828,6 +5829,7 @@ unian.ua,1plus1.video##.o-share-control
 unicreditgroup.eu##body .share:not(#style_important)
 uniqlo.com##.fr-snsButtons
 uniqlo.com##.share-all
+uniqlo.com#?#.uq-ec-layout > div.uq-ec-gutter-container:has(> div.uq-ec-content-alignment > ul > li > a[href^="https://twitter.com/share"])
 univ-journal.jp###snsSpace
 universoformulas.com#?#h4.heading:contains(COMPÁRTELO)
 unn.com.ua###social_popup

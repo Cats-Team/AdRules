@@ -56,7 +56,7 @@
 ! Based on AG_defineProperty (https://github.com/AdguardTeam/deep-override)
 ! Blocked icons for social logging
 ! By advanced we mean the following rule types: CSS, scriptlets, HTML filtering (`$$` marker), JS.
-! Checksum: IkjClXg1qnXPTtICnvDQJw
+! Checksum: itoTFAOWtj98HvgJE2IjTA
 ! Common names
 ! Description: Filter for social media widgets such as 'Like' and 'Share' buttons and more.
 ! Do not block facebook embedded video
@@ -99,11 +99,11 @@
 ! This section contains the list of social blocking rules that fall under "advanced" category.
 ! This section contains the list of the rules for common trackers/buttons.
 ! This section contains the list of the rules that block in page social popups.
-! TimeUpdated: 2022-04-28T14:31:24+00:00
+! TimeUpdated: 2022-04-28T16:31:34+00:00
 ! Title: AdGuard Social Media filter
 ! Unblock minificated scripts library
 ! Unhide links to a websites in different languages
-! Version: 2.0.60.55
+! Version: 2.0.60.57
 ! Yandex.Balaboba
 ! Yandex.Disk
 ! Yandex.Forms
@@ -7277,6 +7277,7 @@ nrc.nl##.metabox__list__link--share
 nrz.de##.socialbar__channels > .share-button:not(.print)
 nsbu.co.kr##ul#bo_v_sns
 nsctotal.com.br##.FloatSocialShareContainerWrapper
+nsn.fm###articleBody div[itemprop="articleBody"] + div > section[class] + div[class^="_"]
 nsn.fm#?#button:contains(Поделиться)
 nta.co.jp,topgate.co.jp,m.gobalnews.com##.sns-list
 ntower.de###gameEndBoxShare
@@ -10028,6 +10029,7 @@ unian.ua,1plus1.video##.o-share-control
 unicreditgroup.eu##body .share:not(#style_important)
 uniqlo.com##.fr-snsButtons
 uniqlo.com##.share-all
+uniqlo.com#?#.uq-ec-layout > div.uq-ec-gutter-container:has(> div.uq-ec-content-alignment > ul > li > a[href^="https://twitter.com/share"])
 uniqueman.ru###topSocial2
 uniqueman.ru##.ya-share-label
 united-arrows.co.jp###snsShare

@@ -37,7 +37,7 @@
 ! Bad: ||legitwebsite.com^$third-party (should be in adservers.txt)
 ! Based on AG_defineProperty (https://github.com/AdguardTeam/deep-override)
 ! By advanced we mean the following rule types: CSS, scriptlets, HTML filtering (`$$` marker), JS.
-! Checksum: Qk9orswpuVdde/EoNtJCgQ
+! Checksum: NXKy4ktFB7z6wytwcMaNMg
 ! Description: EasyList China + AdGuard Chinese filter. Filter list that specifically removes ads on websites in Chinese language.
 ! Examples:
 ! Examples: AG_removeCookie('/REGEX/') or AG_removeCookie('part of the cookie name')
@@ -79,9 +79,9 @@
 ! This section contains the list of rules that fix incorrect blocking. Rules must be domain-specific.
 ! This section contains the list of the content replacement rules that block ads. Rules must be domain-specific.
 ! This section contains the list of third-party advertising networks domains.
-! TimeUpdated: 2022-04-28T14:30:55+00:00
+! TimeUpdated: 2022-04-28T16:31:04+00:00
 ! Title: AdGuard Chinese filter
-! Version: 2.0.53.97
+! Version: 2.0.53.99
 ! cocomanga.com,cocomanga.com CNAME breakage
 ! do not hide popup, because product selector will not work
 ! e66mobi ads
@@ -329,6 +329,7 @@
 ! https://uploads.adguard.com/up04___pqptj.png
 ! https://www.tangdoucdn.com/h5/play?vid=8709180
 ! jable.tv
+! malicious redirect on first visit
 ! nfmovies.com
 ! popup
 ! popup/popunder
@@ -3328,6 +3329,7 @@ $websocket,domain=5nj.com|cechi8.com
 85tube.com##.block-album > .table > .opt
 85tube.com##.block-video > .table
 85tube.com##.player + .sponsor
+85tube.com#%#//scriptlet('prevent-addEventListener', 'DOMContentLoaded', 'document.createElement')
 8684.cn,8684.com##div[id*="adid"]
 8684.cn,8684.com,kugou.com,solarzoom.com,yesky.com##div[class^="adv"]
 880sy.com##.foot_gg
@@ -10222,6 +10224,7 @@ yasehub.com#?#.video-list > ul > li.video-item:has(> div[class] > .video-thumb >
 yasem5.com###cdaas-rand
 yasem5.com##a[href*="yasem5.com/go"][target="_blank"]
 yatu.tv###a_d1
+yazhouse8.com##.mini-over-top
 yb983.com##div[id^="pop"]
 yc58.com###contain1
 ydss.cn###indexBlad
@@ -13502,6 +13505,7 @@ zznews.cn##.ad:not([style])
 ||biohailijie.cn^
 ||bioon.com/xy/article/img/zhi_neng_xibao_fenxi.png
 ||biquge22.com^$third-party
+||biqugetv.com/js/lm_
 ||biqugexx.com/static/js/wap.js
 ||biqumo.com^*billing
 ||biquter.xyz^
@@ -14522,6 +14526,7 @@ zznews.cn##.ad:not([style])
 ||d6.mobaders.com^
 ||d6262.com^$popup
 ||d67p.com/love/
+||d80.xyz^
 ||d8360.com^$third-party
 ||d8962a.xyz^
 ||da-fan-shu.cn/images/kuaijie.jpg
@@ -17255,6 +17260,7 @@ zznews.cn##.ad:not([style])
 ||javazhijia.com/skin/
 ||javbooks.com/52toy/
 ||javdove.com/templates/frontend/javdove/*/partialviewslider.
+||javhd.com/*/300x250.html?
 ||javhd.com/banners-mainpage/
 ||javhd.com/sb/
 ||javhoo.net/pop/pop.jpg
@@ -19293,6 +19299,7 @@ zznews.cn##.ad:not([style])
 ||ngsaang.top^
 ||nh738.cn^
 ||nhfpdc.cn^
+||nhm32.site^
 ||ni22.com^$third-party
 ||ni87.com^
 ||niangaoxiansheng.com^

@@ -42,7 +42,7 @@
 ! Temp fix for Facebook - https://github.com/DandelionSprout/adfilt/issues/473
 ! This extra parameter appears when opening news from widgets in Windows 11.
 ! Title: ➗ Actually Legitimate URL Shortener Tool
-! Version: 27April2022v2
+! Version: 28April2022v1
 ! http://blog.sina.com.cn/s/blog_635c86d50102zvmo.html?tj=1 (4/1/2022)
 ! http://edu.sina.com.cn/y/bbs/2005/1020/1017979.html?presentid=webnews (14/02/2022)
 ! http://m.aliexpress.com/item/32475192128.html?aff_click_id=2c7754c8f1174236b64f3b364bfd24a3-1470106049987-05070-eub6yrrBy
@@ -97,7 +97,6 @@
 ! https://blog.myfitnesspal.com/essential-guide-to-fat/?os_ehash=55@sfmc:33608078
 ! https://blogs.nvidia.com/blog/2022/01/19/ai-enterprise-release/?nvid=nv-int-csfg-833117#cid=gnl_nv-int-csfg_en-us
 ! https://books.googleusercontent.com/books/content/reader?id=ZqK8A800eu4C&hl=no&pg=epub_10-jpg&img=1&zoom=6&cds=2&sig=ACfU3U3Si7lRb8j-vl0ZHTxcQUS7QcwWfg&w=800&h=1046&cp_ksver=2%3DVrverkkqAh0.&source=ge-web-app (The "$sig" value is specific to individual Google Play Books accounts; 22/11/2020)
-! https://bumble.com/?ct=HearstSponLogo
 ! https://buschgardens.com/?AFS=CJ
 ! https://business.udemy.com/resources/hybrid-workplace-webinar/?btn=ub-smartbar
 ! https://campaign.aliexpress.com/wow/gcp/ae/channel/ae/accelerate/tupr?wh_weex=true&_immersiveMode=true&wx_navbar_hidden=true&wx_navbar_transparent=true&ignoreNavigationBar=true&wx_statusbar_hidden=true&wh_pid=ae/daily/ae/3c_daily/phones_accessories
@@ -340,6 +339,7 @@
 ! https://github.com/uBlockOrigin/uAssets/issues/10995
 ! https://github.com/uBlockOrigin/uAssets/pull/10010
 ! https://github.com/uBlockOrigin/uBlock-issues/issues/1784
+! https://gitlab.com/ClearURLs/rules/-/issues/222
 ! https://gitlab.com/KevinRoebert/ClearUrls/-/issues/1095
 ! https://gitlab.com/KevinRoebert/ClearUrls/-/issues/1140
 ! https://gitlab.com/KevinRoebert/ClearUrls/-/issues/157
@@ -1361,7 +1361,7 @@ $removeparam=crlp,domain=ebay.*
 $removeparam=cshid
 $removeparam=csrc,domain=mcafee.com|vitacost.com
 $removeparam=cstrackid
-$removeparam=ct,domain=bumble.com
+$removeparam=ct,domain=apple.com|bumble.com|newsroom.co.nz
 $removeparam=ctc,domain=avantlink.com
 $removeparam=cuid
 $removeparam=curator_clanid
@@ -1446,6 +1446,7 @@ $removeparam=fb_comment_id
 $removeparam=fb_ref
 $removeparam=fb_source
 $removeparam=fbclid
+$removeparam=fbid,domain=festo-didactic.com
 $removeparam=fcref
 $removeparam=feat,domain=hobbyhall.fi
 $removeparam=feature,domain=reddit.app.link|youtube.com
@@ -2048,7 +2049,7 @@ $removeparam=wx_navbar_transparent
 $removeparam=wx_statusbar_hidden
 $removeparam=x_tr_pto
 $removeparam=xcust,domain=go.skimresources.com|go.skimlinks.com|go.redirectingat.com
-$removeparam=xid,domain=tcgplayer.com
+$removeparam=xid,domain=fortune.com|tcgplayer.com
 $removeparam=xs,domain=go.skimresources.com|go.skimlinks.com|go.redirectingat.com
 $removeparam=xtor
 $removeparam=yclid
@@ -2157,7 +2158,6 @@ actionewz.com,animemojo.com,comicbookmovie.com,fearhq.com,gamefragger.com,mtvuut
 ||amazon.*^$removeparam=orig
 ||analytics.bluekai.com^$removeparam=phint
 ||apple.com^$removeparam=/^ign-/
-||apple.com^$removeparam=ct
 ||apple.com^$removeparam=ctx_brand
 ||apple.com^$removeparam=fnode
 ||apple.com^$removeparam=mttn3pid
