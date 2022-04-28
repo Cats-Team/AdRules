@@ -1,10 +1,10 @@
 
-! Checksum: iH2T3UADv9/DJKLkN2EajQ
+! Checksum: oHcpwhVWso1rMXh/iyncGA
 ! Description: Filter for all known mobile ad networks. Useful for mobile devices.
 ! Expires: 4 days (update frequency)
-! TimeUpdated: 2022-04-27T16:30:22+00:00
+! TimeUpdated: 2022-04-28T07:30:25+00:00
 ! Title: AdGuard Mobile Ads filter (Optimized)
-! Version: 2.0.29.1
+! Version: 2.0.29.2
 !### TEMPORARY ###
 !#################
 !+ NOT_OPTIMIZED
@@ -102,6 +102,7 @@ $$amp-ad
 24tv.ua##.within-ads
 24tv.ua##div[class="within-ads"]
 24tv.ua$$div[class="within-ads"]
+2ch-n.net,lifeantenna.com##.highlight-entry
 2chan.net##iframe[src*=".net/bin/ad"] + hr
 2chan.net#?#.ui-li > iframe[src^="//dec.2chan.net/bin/"]:upward(1)
 2chblog.jp,blog.jp,blog.livedoor.jp,bloggeek.jp,blogism.jp,blogo.jp,blogstation.jp,blogto.jp,cafeblog.jp,corpblog.jp,diary.to,doorblog.jp,dreamlog.jp,gger.jp,golog.jp,ldblog.jp,liblo.jp,livedoor.biz,livedoor.blog,myjournal.jp,mynikki.jp,officeblog.jp,officialblog.jp,publog.jp,storeblog.jp,teamblog.jp,techblog.jp,weblog.to,xxxblog.jp,youblog.jp##.ad2
@@ -1640,7 +1641,6 @@ lexico.com##.banbox
 libae.jp##.gmossp_con
 libae.jp##.sp_display > div.pink-title
 liderform.com.tr##.advertising-top-container
-lifeantenna.com##.highlight-entry
 lifehack.org##[id^="lifehack_m_"][id*="TF"]
 lifehack.org#?#.visible-xs[style^="background-color: rgb"]:has(>[id^="div-gpt-ad"])
 lifehack.org#?#.visible-xs[style^="background-color: rgb"]:has([id^="lifehack_m_"][id*="TF"])

@@ -155,7 +155,7 @@
 ! Chat widget on the main page
 ! Chat widgets
 ! Check, if these sites work fine with scriptlet: mail.rambler.ru, kino.rambler.ru, weather.rambler.ru, comments.rambler.ru, kassa.rambler.ru, horoscopes.rambler.ru
-! Checksum: /DFKbXoFDViyTwaJXuP/Sg
+! Checksum: BHABHsTl8NjPwrROjmcbdg
 ! Chrome banner in MS Edge
 ! Chrome browser suggest
 ! Climate info below articles
@@ -313,7 +313,7 @@
 ! This section contains the list of rules that block website push notifications ("subscribe to the news" kind of notifications).
 ! This section contains the list of rules that fix incorrect blocking of cookie notifications by generic rules. Rules should be domain-specific.
 ! This section contains the list of the rules against annoyances that are not falling under existing categories. Rules should be domain-specific.
-! TimeUpdated: 2022-04-27T22:30:34+00:00
+! TimeUpdated: 2022-04-28T07:30:41+00:00
 ! Title: AdGuard Annoyances filter
 ! To be discussed
 ! Turkish digital magazines
@@ -321,7 +321,7 @@
 ! Unhide for Android CB if top padding cannot be removed
 ! Using just "._gdpr-notify-header" will cause that part of the content will be hidden on a mobile website
 ! Vacancy widgets
-! Version: 2.1.17.32
+! Version: 2.1.17.34
 ! Video recommendations
 ! Voting widget
 ! Website is broken if "display: none" is used - ##div[class*="ConsentBannerstyles_"]
@@ -1105,6 +1105,7 @@
 ! https://github.com/AdguardTeam/AdguardFilters/issues/116601
 ! https://github.com/AdguardTeam/AdguardFilters/issues/116651
 ! https://github.com/AdguardTeam/AdguardFilters/issues/116657
+! https://github.com/AdguardTeam/AdguardFilters/issues/116753
 ! https://github.com/AdguardTeam/AdguardFilters/issues/11757
 ! https://github.com/AdguardTeam/AdguardFilters/issues/11944
 ! https://github.com/AdguardTeam/AdguardFilters/issues/11972
@@ -6303,6 +6304,7 @@ $xmlhttprequest,redirect-rule=nooptext,domain=aternos.org
 @@||appsgames.ru/wp-content/cache/min/1/wp-content/plugins/angwp/assets/dev/js/advertising-
 @@||appsgames.ru/wp-content/plugins/angwp/assets/dev/js/advertising.js
 @@||armbian.com/wp-content/plugins/creare-eu-cookie-law-banner/js/eu-cookie-law.js
+@@||artivive.activehosted.com/*/embed.php$domain=artivive.com
 @@||as-sec.casalemedia.com/cygnus|$domain=aternos.org
 @@||asset.pagefair.com/adimages/textlink-ads.jpg$domain=eastbaytimes.com
 @@||asset.pagefair.com/adimages/textlink-ads.jpg$domain=ocregister.com
@@ -10065,7 +10067,6 @@ blog.masmovil.es,blog.grupomasmovil.com#?#.gmm-cookies
 blog.media.io#?##wsc-main > div.d-md-block:has(> div.row a.sys-win)
 blog.media.io#?#.py-5:has(> div[class] > div > a.sys-win)
 blog.mercedes-benz-passion.com###cb-bg-to
-blog.musixmatch.com##body > div#root ~ div:not([class]):not([id]) > div[class*=" "]
 blog.musixmatch.com##div[class="lb u ff tv aj tw tx ty tz ua ub uc ud ue uf ug uh ui uj uk ul um un uo up uq ur us ut uu uv uw ux uy uz va"]
 blog.naver.com#%#//scriptlet('set-constant', 'autoSourcingYn', 'false')
 blog.naver.com#%#//scriptlet('set-constant', 'rightClickOpenYn', 'false')
@@ -10079,7 +10080,6 @@ blog.remarkable.com,medium.com,blog.sikayetvar.com##.butterBar--CCPA
 blog.risingstack.com,blue-tomato.com###cookie-consent-box
 blog.roku.com##.roku-blog-post-subscribe-container
 blog.sagipl.com##.newsletter2
-blog.sikayetvar.com##body > div#root ~ div:not([class]):not([id]) > div[class^="db t k"]
 blog.statcounter.com,kuponla.com,forums.flyer.co.uk,page-online.de##.widget_newsletter
 blog.system76.com##.tmblr-iframe
 blog.system76.com#$#body { padding-top: 0!important; }
@@ -10480,6 +10480,8 @@ brunch.co.kr#$#.article_view_disable_selection { -webkit-touch-callout: default!
 brunch.co.kr#%#//scriptlet('set-constant', 'window.B.Article.preventSelection', 'noopFunc')
 brut.media##.nl-corner
 brw.pl###poityka-ciastek
+bs.benefit-one.co.jp###meerkat-wrap
+bs.benefit-one.co.jp###ptcd_modal_dialog
 bsh-group.com#$##cookie-layer { display: none!important; }
 bsh-group.com#$##cookie-overlay { display: none!important; }
 bsh-group.com#$#body { overflow: visible!important; }
@@ -21088,6 +21090,7 @@ michelklotz.de##.dsgvo-cookie_consent
 michellehardin.pro,ecleneue.com#%#!function(){if(-1<location.pathname.indexOf("/pushredirect/")){var url=new URL(window.location.href); var dest=url.searchParams.get('dest'); if(dest){location=dest;}}}();
 microcenter.com###PnlPrivacyAlert
 microchip.com##.cookieSettings
+microsoft.com###cookie-consent-markup
 microsoft.com###cookie-prompt
 microsoft.com###msccBanner
 microsoft.com##.newsletter-pop-up
@@ -21732,6 +21735,7 @@ multiup.org#$#.mfp-ready { display: none !important; }
 mumbailive.com#$##telegramModal { display: none !important; }
 mumbailive.com#$#.modal-backdrop { display: none !important; }
 mumbailive.com#$#body { overflow: visible !important; padding-right: 0 !important; }
+mumsnet.com###main-container > div[\:class^="$store.adtech.reskinRenderedDesktop"]
 muratlihizmetgazetesi.com#$#.fancybox-container { display: none !important; }
 muratlihizmetgazetesi.com#$#body { overflow: visible !important; }
 murdocklondon.com#$#body.cms-home.cookie-msg { padding-top: 70px!important; }
@@ -21880,7 +21884,6 @@ myfreesoft.ru#?##rightcolumn > div.widget:has(> div[class] form[method="post"] >
 myfxbook.com#%#//scriptlet('set-cookie', 'lastAdBlockerMessageDisplayedDate', '1')
 myguestaccount.com##.gdprBackgound
 myheritage.tw,myheritage.de##.cookie_preferences_banner
-myignite.microsoft.com###cookie-consent-markup
 myjane.ru###moon-calendar
 myjane.ru##.popup-thirdclick
 myjoyonline.com##.sticky-share
@@ -24783,6 +24786,7 @@ ptisidiastima.com,medebooks.xyz,re-library.com,mobilereset99.com#%#//scriptlet("
 ptt.gov.tr##div[id="15temmuz"]
 ptwm.org.pl###cookies-fixed
 pu.nl#$#.article-meta { height: auto!important; }
+pub.towardsai.net,blog.sikayetvar.com,blog.musixmatch.com##body > div#root ~ div:not([class]):not([id]) > div[class*=" "]
 public.govdelivery.com###gdpr-cookie-policy
 publico.pt###newsletters_inline
 publikationen.dguv.de#%#//scriptlet('set-cookie', 'allowCookie', '1')
@@ -32132,6 +32136,7 @@ zen.yandex.*##.article-sticky-target > div.article__content.article__content_lim
 zen.yandex.*##.article__right > div div[class$="ad-content"]
 zen.yandex.*##.call-to-action-bar
 zen.yandex.*##.desktop-interview-modal
+zen.yandex.*##.feed-subscription-promo
 zen.yandex.ru##.article-render__block_embed-type_yandex-direct
 zen.yandex.ru,zen.yandex.ua,zen.yandex.by,zen.yandex.com,zen.yandex.com.tr,zen.yandex.fr,zen.yandex.kz,zen.yandex.md#%#//scriptlet("abort-on-property-read", "Object.prototype.adv")
 zendesk.com##.ouibounce-blog-newsletter
@@ -33022,6 +33027,7 @@ zzz.com.ua##body > div[style="text-align:center;font-size:11px;font-family:arial
 ||dumskaya.net/js/appbanner/
 ||dunya.com/funding_choices.js
 ||e-cdns-assets.dzcdn.net/common/js/gdpr-appliance/$domain=deezer.com
+||easy2boot.xyz/wp-content/plugins/boxzilla/assets/js/script.min.js
 ||easyfeeed.com^$third-party
 ||easyinformer.com^
 ||easyliao.com^$third-party

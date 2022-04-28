@@ -60,7 +60,7 @@
 ! Booking app
 ! Breaks Yahoo Finance app on iOS https://github.com/AdguardTeam/AdguardFilters/issues/63354
 ! By advanced we mean the following rule types: CSS, scriptlets, HTML filtering (`$$` marker), JS.
-! Checksum: pAonVXXlpzV+9DI+XGK91g
+! Checksum: Hkccal+4BU5ewVPUmEZ5oA
 ! Common names
 ! Context ads(must be excluded in useful ads)
 ! Criteo mobile ads
@@ -150,10 +150,10 @@
 ! This section contains the list of the base rules that block ads in mobile apps. Rules should be specific.
 ! This section contains the list of the content replacement rules that block ads on mobile devices. Rules must be domain-specific.
 ! This section contains the list of third-party advertising networks domains for mobile devices.
-! TimeUpdated: 2022-04-27T16:30:22+00:00
+! TimeUpdated: 2022-04-28T07:30:25+00:00
 ! Tinder (analytics)
 ! Title: AdGuard Mobile Ads filter
-! Version: 2.0.29.1
+! Version: 2.0.29.2
 ! Viber
 ! Viber[App] - the problem with the stickers store
 ! WPS Office
@@ -841,6 +841,7 @@ $$amp-ad
 24tv.ua##.within-ads
 24tv.ua##div[class="within-ads"]
 24tv.ua$$div[class="within-ads"]
+2ch-n.net,lifeantenna.com##.highlight-entry
 2chan.net##iframe[src*=".net/bin/ad"] + hr
 2chan.net#?#.ui-li > iframe[src^="//dec.2chan.net/bin/"]:upward(1)
 2chblog.jp,blog.jp,blog.livedoor.jp,bloggeek.jp,blogism.jp,blogo.jp,blogstation.jp,blogto.jp,cafeblog.jp,corpblog.jp,diary.to,doorblog.jp,dreamlog.jp,gger.jp,golog.jp,ldblog.jp,liblo.jp,livedoor.biz,livedoor.blog,myjournal.jp,mynikki.jp,officeblog.jp,officialblog.jp,publog.jp,storeblog.jp,teamblog.jp,techblog.jp,weblog.to,xxxblog.jp,youblog.jp##.ad2
@@ -2374,7 +2375,6 @@ lexico.com##.banbox
 libae.jp##.gmossp_con
 libae.jp##.sp_display > div.pink-title
 liderform.com.tr##.advertising-top-container
-lifeantenna.com##.highlight-entry
 lifehack.org##[id^="lifehack_m_"][id*="TF"]
 lifehack.org#?#.visible-xs[style^="background-color: rgb"]:has(>[id^="div-gpt-ad"])
 lifehack.org#?#.visible-xs[style^="background-color: rgb"]:has([id^="lifehack_m_"][id*="TF"])
