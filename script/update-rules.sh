@@ -316,4 +316,5 @@ cat ad-domains.txt \
 
 sed -i 's/!/#/g' hosts.txt
 rm -rf pre
+bash ./build-dns-list.sh
 exit
