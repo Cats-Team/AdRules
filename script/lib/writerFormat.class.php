@@ -39,7 +39,7 @@ class writerFormat{
     /*easylist 兼容格式的屏蔽广告列表*/
     const EASYLIST = array(
         'format' => '||{DOMAIN}^',
-        'header' => "!Title: AdRules\n!Version: {DATE}\n!Homepage: {URL}\n!Total lines: 00000\n",
+        'header' => "! Title: AdRules\n! Version: {DATE}\n! Homepage: {URL}\n! Total lines: {COUNT}\n",
         'full_domain' => 0,
         'name' => 'easylist',
         'filename' => '../dns.txt',
