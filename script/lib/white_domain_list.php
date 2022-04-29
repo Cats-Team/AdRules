@@ -8,7 +8,7 @@
 //value=2,代表仅加白主域名及其子域名，即如果是主域名，加白全部，如果是子域名，加白命中的单条
 
 return array(
-    /start/
+    /**start**/
     'app.market.xiaomi.com' => 0,
     'www.paypalobjects.com' => 0,
     'a-msedge.net' => 0,
@@ -17,7 +17,7 @@ return array(
     'wan.yxskill.com' => 0,
     'static.tieba.baidu.com' => 0,
     'maccms.com' => 0,
-    'app.qq.com' => 0,
+    'app.qq.com' => 1,
     'qq-web.cdn-go.cn' => 0,
     'wx.qlogo.cn' => 0,
     'ilce.alicdn.com' => 0,
@@ -38,8 +38,8 @@ return array(
     'imgstat.baidu.com' => 0,
     'mb.yidianzixun.com' => 0,
     'sug.browser.miui.com' => 0,
-    'qun.qq.com' => 0,
-    'drive.quark.cn' => 0,
+    'qun.qq.com' => 1,
+    'drive.quark.cn' => 1,
     'uri6.com' => 0,
     'wl.jd.com' => 0,
     'woozooo.com' => 0,
@@ -59,7 +59,7 @@ return array(
     'paste.in' => 0,
     'nebula.kuaishou.com' => 0,
     'midas.gtimg.cn' => 0,
-    /end/
+    /**end**/
     /**notracking 提议加白的一批域名 start**/
     'scribol.com' => 0,
     'tracking.epicgames.com' => 0,
