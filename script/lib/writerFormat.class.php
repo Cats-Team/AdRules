@@ -92,33 +92,6 @@ class writerFormat{
         ),
     );
 
-    /*Surge DOMAIN-SET格式的屏蔽广告列表*/
-    const SURGE2 = array(
-        'format' => '.{DOMAIN}',
-        'header' => "#TITLE=AdRules\n#VER={DATE}\n#URL={URL}\n#TOTAL_LINES={COUNT}\n\n#DOMAIN-SET,https://anti-ad.net/surge2.txt,REJECT\n",
-        'full_domain' => 0,
-        'name' => 'surge2',
-        'filename' => '../surge2.txt',
-        'whitelist_attached' => array(
-            'base-dead-hosts.txt' =>array(
-                'merge_mode' => 2, //0=单条，1=单条+子域名，2=根域名相当于1，非根域名相当于0
-            ),
-        ),
-        'src' => array(
-            'base-src-easylist.txt' => array(
-                'type' => 'easylist',
-                'strict_mode' => false,
-            ),
-            'base-src-hosts.txt' => array(
-                'type' => 'hosts',
-                'strict_mode' => false,
-            ),
-            'base-src-strict-hosts.txt' => array(
-                'type' => 'hosts',
-                'strict_mode' => true,
-            ),
-        ),
-    );
 
     /*Domains 格式的屏蔽广告列表，用于支持pi-hole等*/
     const DOMAINS = array(
