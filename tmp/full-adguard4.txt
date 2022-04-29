@@ -155,7 +155,7 @@
 ! Chat widget on the main page
 ! Chat widgets
 ! Check, if these sites work fine with scriptlet: mail.rambler.ru, kino.rambler.ru, weather.rambler.ru, comments.rambler.ru, kassa.rambler.ru, horoscopes.rambler.ru
-! Checksum: iUuDlaYqcJ0M0EGLgBNKBg
+! Checksum: 4BZAMRxtxN+nA48PWn+U2g
 ! Chrome banner in MS Edge
 ! Chrome browser suggest
 ! Climate info below articles
@@ -313,7 +313,7 @@
 ! This section contains the list of rules that block website push notifications ("subscribe to the news" kind of notifications).
 ! This section contains the list of rules that fix incorrect blocking of cookie notifications by generic rules. Rules should be domain-specific.
 ! This section contains the list of the rules against annoyances that are not falling under existing categories. Rules should be domain-specific.
-! TimeUpdated: 2022-04-29T00:30:35+00:00
+! TimeUpdated: 2022-04-29T07:30:34+00:00
 ! Title: AdGuard Annoyances filter
 ! To be discussed
 ! Turkish digital magazines
@@ -321,7 +321,7 @@
 ! Unhide for Android CB if top padding cannot be removed
 ! Using just "._gdpr-notify-header" will cause that part of the content will be hidden on a mobile website
 ! Vacancy widgets
-! Version: 2.1.17.49
+! Version: 2.1.17.50
 ! Video recommendations
 ! Voting widget
 ! Website is broken if "display: none" is used - ##div[class*="ConsentBannerstyles_"]
@@ -11452,6 +11452,7 @@ cnyfertility.com#%#//scriptlet("prevent-addEventListener", "scroll", ".open()")
 co2online.de##.stickysidebar
 coachmag.co.uk##.block-dennis-newsletter
 cobasi.com.br,filmelier.com,wizard.com.br##.lgpd
+cobo.com##div[class^="CookieRemind_"]
 coca-cola-deutschland.de##.eurocookie
 coco01.net###fbCover
 cococare.com##form#ic_signupform.popup
@@ -11525,6 +11526,7 @@ coinmarketcap.com##.js-platform-alert
 coinmarketcap.com##nav[class] > ul[class] > li[class] > a.cmc-link + div[style^="cursor:"]
 coinmarketcap.com#?#.cmc-bottom-margin-2x > div[class]:has(> div.cmc-newsletter-signup__widget)
 coinmarketcap.com,my.kaspersky.com##.js-cookie-policy-banner
+coinrequest.io#%#//scriptlet('set-local-storage-item', 'BIT_REQUEST_VUE.cookies_enabled', 'true')
 coinsparty.mcrypto.club#$##invisibleCaptchaShortlink { padding: 20px 40px !important }
 cointelegraph.com##.article-subscription-widget
 cointelegraph.com##.b-new-subscribe
@@ -25656,6 +25658,7 @@ rocketbank.ru###modal-root > div._2LXxgi
 rocketbank.ru##._1zhzBm
 rocketleague.com###privmessage
 rocketnews24.com##hr[class^="amp-wp-inline-"]
+rocketpool.net###bug-bounty
 rockfile.eu###hiddensection2
 rockmods.net###HTML1
 rockmods.net###HTML2
@@ -30089,6 +30092,7 @@ unocero.com#?#.column-main > div.widget:has(> div.newsletter)
 unoeuro.com###cookieuse-warning
 unsee.cc#%#//scriptlet('set-cookie', 'targetedAds', 'false')
 unsplash.com###app > div > div[data-test="editorial-route"] + div
+unstoppabledomains.com##.osano-cm-window__dialog
 unstoppabledomains.com##div[data-convert-id="common_OuibouncePopUp"]
 unstoppabledomains.com##main > div[style="margin-bottom: 64px;"] + div[class^="jss"]
 untangle.com###overview-features + div.right_col
