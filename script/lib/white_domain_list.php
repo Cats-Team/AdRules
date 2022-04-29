@@ -1,13 +1,65 @@
 <?php
 //white_domain_list
 //白名单机制...，白名单是
-//@date 2018年12月23日
+//@date 2022年4月29日
 //value=-1,代表失效本条规则，暂只支持单域名（针对引入外部白名单时的精确控制）,当处于strict_mode时，排除此key，单条关闭strict_mode
 //value=0,代表仅加白单条域名
 //value=1,代表其下级域名全部加白（例如3级域名，则其4级子域名全部加白）
 //value=2,代表仅加白主域名及其子域名，即如果是主域名，加白全部，如果是子域名，加白命中的单条
 
 return array(
+    /start/
+    'app.market.xiaomi.com' => 0,
+    'www.paypalobjects.com' => 0,
+    'a-msedge.net' => 0,
+    'feedback.miui.com' => 0,
+    'v2.get.sogou.com' => 0,
+    'wan.yxskill.com' => 0,
+    'static.tieba.baidu.com' => 0,
+    'maccms.com' => 0,
+    'app.qq.com' => 0,
+    'qq-web.cdn-go.cn' => 0,
+    'wx.qlogo.cn' => 0,
+    'ilce.alicdn.com' => 0,
+    'map.qq.com' => 0,
+    'thirdwx.qlogo.cn' => 0,
+    'p.qlogo.cn' => 0,
+    'idqqimg.com' => 0,
+    'aod.itunes.apple.com' => 0,
+    'aod.itunes.g.aaplimg.com' => 0,
+    'dash.cloudflare.com' => 0,
+    'inews.gtimg.com' => 0,
+    'wallpaper.cdn.pandora.xiaomi.com' => 0,
+    'package.wallpaper.cdn.pandora.xiaomi.com.lan' => 0,
+    'w.pandora.xiaomi.com' => 0,
+    'gw.m.163.com' => 0,
+    'quark.sm.cn' => 0,
+    'bkimg.cdn.bcebos.com' => 0,
+    'imgstat.baidu.com' => 0,
+    'mb.yidianzixun.com' => 0,
+    'sug.browser.miui.com' => 0,
+    'qun.qq.com' => 0,
+    'drive.quark.cn' => 0,
+    'uri6.com' => 0,
+    'wl.jd.com' => 0,
+    'woozooo.com' => 0,
+    'static.yximgs.com' => 0,
+    'doc.weixin.qq.com' => 0,
+    'wx.tenpay.com' => 0,
+    'quark.sm.cn' => 0,
+    'pan.quark.cn' => 0,
+    'bkimg.cdn.bcebos.com' => 0,
+    'imgstat.baidu.com' => 0,
+    'mb.yidianzixun.com' => 0,
+    'sug.browser.miui.com' => 0,
+    'qun.qq.com' => 0,
+    'metrics1.data.hicloud.com' => 0,
+    'yyfweb.postar.cn' => 0,
+    'api.yjllq.com' => 0,
+    'paste.in' => 0,
+    'nebula.kuaishou.com' => 0,
+    'midas.gtimg.cn' => 0,
+    /end/
     /**notracking 提议加白的一批域名 start**/
     'scribol.com' => 0,
     'tracking.epicgames.com' => 0,
