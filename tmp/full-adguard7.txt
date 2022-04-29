@@ -14,7 +14,7 @@
 ! Bilibili
 ! Branch.io ( https://stackoverflow.com/questions/37882810/what-is-meaning-of-branch-match-id )
 ! Campaign link tracking
-! Checksum: Od/sN1WsYg7tC/gT2J8NMA
+! Checksum: cFQfw46/cnNv4RZGzgdYAQ
 ! Coupang.com - An electronic commerce service of S. Korea.
 ! DPG Media analytics
 ! Daraz & Shop (Samesite)
@@ -48,17 +48,18 @@
 ! TEMPORARY
 ! TODO: it can be removed after the release of the extension 4.0
 ! Taobao
+! The Register
 ! This section contains the list of domain-specific rules that remove URL tracking parameters. Rules have to contain only a single modifier: `removeparam`.
 ! This section contains the list of generic `$removeparam` rules that are applied on every website.
 ! This section contains the list of rules that fix incorrect blocking. Rules should be domain-specific and only the `removeparam` modifier is allowed.
-! TimeUpdated: 2022-04-28T09:30:48+00:00
+! TimeUpdated: 2022-04-28T19:30:42+00:00
 ! Title: AdGuard URL Tracking filter
 ! Tracks source site
 ! URL Campaign Mapper
 ! UTM
 ! Used on Dutch sites
 ! Valuecommerce ( https://help.valuecommerce.ne.jp/mer/dl/ITP2.0_for_iTAG.pdf )
-! Version: 2.0.2.49
+! Version: 2.0.2.51
 ! Weibo
 ! Yandex
 ! You should only put here known parameters that are used on many websites.
@@ -217,6 +218,7 @@
 ! https://www.comss.ru/page.php?id=10300
 ! https://www.expressvpn.com/tfk?a_aid=tf, https://vpnarea.com/front/member/signup?a_aid=torrentgalaxy
 ! https://www.so-net.ne.jp/access/hikari/minico/ad/?SmRcid=snt_snt_top_gate
+! https://xxvidsx.com/?vid=87&ad=0&site=
 ! instagram.com - share tracking
 ! iqbroker.com - affiliate(ads) links tracking
 ! it can be removed after the release of the extension 4.0
@@ -732,6 +734,7 @@ $removeparam=yclid
 ||taobao.com^$removeparam=pvid
 ||taobao.com^$removeparam=scm
 ||taobao.com^$removeparam=utparam
+||theregister.com^$removeparam=td
 ||tiktok.com^$removeparam=share_app_id
 ||tiktok.com^$removeparam=share_author_id
 ||tiktok.com^$removeparam=tt_from
@@ -791,6 +794,8 @@ $removeparam=yclid
 ||www.technikdirekt.de^$removeparam=sPartner
 ||www.yandex.$removeparam=clid
 ||xkcd.com^$removeparam=trk
+||xxvidsx.com^$removeparam=ad
+||xxvidsx.com^$removeparam=site
 ||yandex.*/images/$removeparam=source-serpid
 ||yandex.*/news/$removeparam=from
 ||yandex.*/news/$removeparam=mlid

@@ -1,10 +1,10 @@
 
-! Checksum: QikVjucwGQcnoI4mxbluNQ
+! Checksum: px2YbuInnnW2HN4EJ4ewsQ
 ! Description: Filter for all known mobile ad networks. Useful for mobile devices.
 ! Expires: 4 days (update frequency)
-! TimeUpdated: 2022-04-28T08:30:20+00:00
+! TimeUpdated: 2022-04-28T21:30:30+00:00
 ! Title: AdGuard Mobile Ads filter (Optimized)
-! Version: 2.0.29.3
+! Version: 2.0.29.5
 !### TEMPORARY ###
 !#################
 !+ NOT_OPTIMIZED
@@ -1407,6 +1407,7 @@ hindustantimes.com##.FirstAd
 hindustantimes.com##.m_ads_unit
 hindustantimes.com#%#//scriptlet('hide-in-shadow-dom', '.storyAd, .storyAd + .slideSection')
 hk.on.cc##iframe[src^="/mobile/ad/banner.html"]
+hobbyconsolas.com#?#.main-content > div > div[data-dfp-display]:upward(1)
 hobonichielog.com##.banabox
 hobonichielog.com##.hoboboxb
 hochi.news##div[style^="min-width: 320px; min-height: 100px"]
@@ -2456,7 +2457,12 @@ mudainodocument.com#%#//scriptlet('prevent-addEventListener', '/^(?:mousewheel|t
 mumbailive.com###bottom-drawer-ad
 mumbailive.com#%#AG_onLoad(function(){location.pathname.startsWith("/amp/")&&(new MutationObserver(function(){document.querySelectorAll("body > amp-next-page > div > div[style='visibility: visible;']").forEach(function(a){a.shadowRoot.querySelectorAll("div.ad:not([style])").forEach(function(b){b.style="display: none !important;"})})})).observe(document,{childList:!0,subtree:!0})});
 mumbailive.com,porntube.com,amarujala.com,www-amarujala-com.cdn.ampproject.org##div.ad
+mumsnet.com###div-mn-non-standard-mobile
+mumsnet.com###main-container > #mn-reskin + div[class^="bg-gray-100"]
 mumsnet.com##.google-container
+mumsnet.com##div[class^="my-"][aria-hidden]
+mumsnet.com##div[id^="div_m_talk"]
+mumsnet.com#%#//scriptlet('remove-class', 'pt-[100px]', '#main-container')
 muratordom.pl###m_zpr_box_art_lead
 muratordom.pl##.m_zpr_box_top1
 muratordom.pl##.zpr_m_inside_1
@@ -2691,6 +2697,9 @@ pikabu.ru##.ads-under-post
 piluli.ru##div[class^="ya_adv_"]
 piluli.ru##div[id^="medads_banner"]
 pingpongmap.net###mobilefooter
+pinkpanfan.com###custom_html-11
+pinkpanfan.com###mobile_text-3
+pinkpanfan.com###mobile_text-5
 pinkvilla.com##body #gptTagBottom
 pisshamster.com,xanimu.com,darknessporn.com,familyporner.com##div[class*="-boxes-mobile"]
 pixiv.net##.ad-frame-container
@@ -2955,6 +2964,7 @@ skymetweather.com#$#.ui-mobile-viewport { padding-bottom: 0!important; }
 skysports.com##div[data-format="floated-mpu"]
 slovoidilo.ua#%#//scriptlet('remove-class', 'branding', 'body')
 smart-flash.jp##iframe[src^="https://smart-flash.jp/wp-content/themes/original/embed/FoneH"]
+smbiz.asahi.com##.ad-sp-side-rect
 smt.docomo.ne.jp###WrpAd
 soccer.yahoo.co.jp##.sc-modAd
 softportal.com##.cardPageDescMain > div[style*="float:left;"][style*="max-width:100%;"]
@@ -5262,6 +5272,7 @@ zybang.com##.qb-wgt_float-banner
 ||todayweather.co/ads.json
 ||tonefuse.com^
 ||tongqing2015.com^$third-party
+||tonxton.com/sp-ad/
 ||torrentbest.ru/*/src/adv_scripts/static/*.html
 ||tpbid.com^
 ||tpc.googlesyndication.com$domain=promiflash.de,redirect=nooptext,important

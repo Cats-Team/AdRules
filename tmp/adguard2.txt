@@ -1,10 +1,10 @@
 
-! Checksum: /BG02R6nI3WPLT42Ej0jpQ
+! Checksum: GuvqWzBLZEYDqWV7crw8Wg
 ! Description: Filter that enhances privacy by removing tracking parameters from URLs.
 ! Expires: 4 days (update frequency)
-! TimeUpdated: 2022-04-28T09:30:48+00:00
+! TimeUpdated: 2022-04-28T19:30:42+00:00
 ! Title: AdGuard URL Tracking filter (Optimized)
-! Version: 2.0.2.49
+! Version: 2.0.2.51
 $domain=atlanticcouncil.org|digikey.com,removeparam=/^mkt_tok/
 $removeparam=/^curator_clanid/,domain=steampowered.com|steamcommunity.com
 $removeparam=ActionID,domain=otto.de|ottoversand.at
@@ -500,6 +500,7 @@ $removeparam=yclid
 ||taobao.com^$removeparam=pvid
 ||taobao.com^$removeparam=scm
 ||taobao.com^$removeparam=utparam
+||theregister.com^$removeparam=td
 ||tiktok.com^$removeparam=share_app_id
 ||tiktok.com^$removeparam=share_author_id
 ||tiktok.com^$removeparam=tt_from
@@ -559,6 +560,8 @@ $removeparam=yclid
 ||www.technikdirekt.de^$removeparam=sPartner
 ||www.yandex.$removeparam=clid
 ||xkcd.com^$removeparam=trk
+||xxvidsx.com^$removeparam=ad
+||xxvidsx.com^$removeparam=site
 ||yandex.*/images/$removeparam=source-serpid
 ||yandex.*/news/$removeparam=from
 ||yandex.*/news/$removeparam=mlid
