@@ -28,5 +28,5 @@ cat dead-hosts*.txt | grep -v -E "^(#|\!)" \
 cat easylist*.txt dns*| grep -E "^\|\|[^\*\^]+?\^" | sort | uniq >base-src-easylist.txt
 cat easylist*.txt dns*| grep -E "^\|\|?([^\^=\/:]+)?\*([^\^=\/:]+)?\^" | sort | uniq >wildcard-src-easylist.txt
 cat easylist*.txt dns*| grep -E "^@@\|\|?[^\^=\/:]+?\^([^\/=\*]+)?$" | sort | uniq >whiterule-src-easylist.txt
-bash ./build-dns-lish.sh
+bash ./build-dns-list.sh
 cd ../
