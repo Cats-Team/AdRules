@@ -48,6 +48,7 @@ jobs:
         continue-on-error: true
         run: |
           #rm *.txt
+          sudo update-alternatives --set php /usr/bin/php7.4
           bash ./script/update-rules.sh
           #python ./script/rule.py
       - name: Update other rules

@@ -311,10 +311,12 @@ wait
 echo '规则处理完成'
 
 #额外的规则
+<< EOF
 cat ad-domains.txt \
  | grep -v "^! "| sed "s/^/DOMAIN-SUFFIX,&/g" > banclash-ad.list
 
 sed -i 's/!/#/g' hosts.txt
+EOF
 rm -rf pre
-bash ./build-dns-list.sh
+bash ./script/build-dns-list.sh
 exit
