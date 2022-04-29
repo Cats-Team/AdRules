@@ -49,6 +49,7 @@ jobs:
         run: |
           #rm *.txt
           sudo update-alternatives --set php /usr/bin/php7.4
+          git checkout main
           bash ./script/update-rules.sh
           #python ./script/rule.py
       - name: Update other rules
@@ -85,6 +86,7 @@ jobs:
           git remote add origin "https://${{ secrets.CODING_ACCOUNT }}:${{ secrets.CODING_PASSWORD }}@e.coding.net/cats-team/adguard/AdRules.git"
           git push -u -f origin --all
       - name: Push Message
+        continue-on-error: true
         run: |
           pip3 install requests
           python3 ./script/pusher.py
