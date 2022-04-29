@@ -13,7 +13,7 @@ do
   echo "开始下载 dead-hosts${i}..."
   curl -o "./origin-files/dead-hosts${i}.txt" --connect-timeout 60 -s "${dead_hosts[$i]}"
 done
-
+cp ../mod/rules/*rule* ./origin-files/
 cp ../tmp/{*easy*,dns*,base*,hosts*} ./origin-files/
 cd origin-files
 cat hosts*.txt | grep -v -E "^((#.*)|(\s*))$" \
