@@ -147,6 +147,33 @@ class writerFormat{
             ),
         ),
     );
+    /*hosts 格式的屏蔽广告列表，用于支持pi-hole等*/
+    const HOSTS = array(
+        'format' => '0.0.0.0 {DOMAIN}',
+        'header' => "#TITLE=AdRules\n#VER={DATE}\n#URL={URL}\n#TOTAL_LINES={COUNT}\n",
+        'full_domain' => 1, //保留子域名，即使其上级域名
+        'name' => 'domains',
+        'filename' => '../hosts.txt',
+        'whitelist_attached' => array(
+            'base-dead-hosts.txt' =>array(
+                'merge_mode' => 2, //0=单条，1=单条+子域名，2=根域名相当于1，非根域名相当于0
+            ),
+        ),
+        'src' => array(
+            'base-src-easylist.txt' => array(
+                'type' => 'easylist',
+                'strict_mode' => false,
+            ),
+            'base-src-hosts.txt' => array(
+                'type' => 'hosts',
+                'strict_mode' => false,
+            ),
+            'base-src-strict-hosts.txt' => array(
+                'type' => 'hosts',
+                'strict_mode' => true,
+            ),
+        ),
+    );
 
     /*smartdns支持格式的屏蔽广告列表*/
     const SMARTDNS = array(
