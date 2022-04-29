@@ -4,7 +4,7 @@ source /etc/profile
 
 cd $(cd "$(dirname "$0")";pwd)
 
-php make-addr.php
+php make-dns-addr.php
 echo
 echo "!Title: AdRules for AdGuard" > ../anti-ad-adguard.txt
 echo "!Version: $(date "+%Y%m%d%H%M%S%N")" >> ../anti-ad-adguard.txt
