@@ -42,7 +42,7 @@ class writerFormat{
         'header' => "!Title: AdRules\n!Version: {DATE}\n!Homepage: {URL}\n!Total lines: 00000\n",
         'full_domain' => 0,
         'name' => 'easylist',
-        'filename' => '../easylist.txt',
+        'filename' => '../dns.txt',
         'whitelist_attached' => array(
             'base-dead-hosts.txt' =>array(
                 'merge_mode' => 2, //0=单条，1=单条+子域名，2=根域名相当于1，非根域名相当于0
