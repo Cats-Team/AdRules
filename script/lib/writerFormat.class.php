@@ -96,7 +96,7 @@ class writerFormat{
     /*Domains 格式的屏蔽广告列表，用于支持pi-hole等*/
     const DOMAINS = array(
         'format' => '{DOMAIN}',
-        'header' => "#TITLE=AdRules\n#VER={DATE}\n#URL={URL}\n#TOTAL_LINES={COUNT}\n",
+        'header' => "#TITLE=AdRules\n#VER={DATE}\n#URL={URL}\n#Total count:{COUNT}\n",
         'full_domain' => 1, //保留子域名，即使其上级域名
         'name' => 'domains',
         'filename' => '../ad-domains.txt',
@@ -123,7 +123,7 @@ class writerFormat{
     /*hosts 格式的屏蔽广告列表，用于支持pi-hole等*/
     const HOSTS = array(
         'format' => '0.0.0.0 {DOMAIN}',
-        'header' => "#TITLE=AdRules\n#VER={DATE}\n#URL={URL}\n#TOTAL_LINES={COUNT}\n",
+        'header' => "#TITLE=AdRules\n#VER={DATE}\n#URL={URL}\n#Total count:{COUNT}\n",
         'full_domain' => 1, //保留子域名，即使其上级域名
         'name' => 'domains',
         'filename' => '../hosts.txt',
