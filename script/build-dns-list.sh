@@ -6,10 +6,10 @@ cd $(cd "$(dirname "$0")";pwd)
 
 php make-dns-addr.php
 echo
-echo "!Title: AdRules for AdGuard" > ../anti-ad-adguard.txt
-echo "!Version: $(date "+%Y%m%d%H%M%S%N")" >> ../anti-ad-adguard.txt
-echo "!Homepage: https://anti-ad.net/" >> ../anti-ad-adguard.txt
-echo "!Total lines: 00000" >> ../anti-ad-adguard.txt
-grep -vE '^!' ../anti-ad-easylist.txt >> ../anti-ad-adguard.txt
-php ./tools/adguard-extend.php ../anti-ad-adguard.txt
-php ./tools/easylist-extend.php ../anti-ad-easylist.txt
+echo "! Title: AdRules for AdGuard" > ../easylist.txt
+echo "! Version: $(date "+%Y%m%d%H%M%S%N")" >> ../easylist.txt
+echo "! Homepage: https://anti-ad.net/" >> ../easylist.txt
+echo "! Total lines: 00000" >> ../easylist.txt
+grep -vE '^!' ../dns.txt >> ../easylist.txt
+php ./tools/adguard-extend.php ../easylist.txt
+php ./tools/easylist-extend.php ../dns.txt
