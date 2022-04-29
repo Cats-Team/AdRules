@@ -231,7 +231,7 @@ cat full-adguard*.txt \
 
 #cat ubo-adguard*.txt | grep -v '.!' | grep -v '^!' | grep -v '^# ' | grep -v '^# ' | grep -v '^\[' | grep -v '^\【' | sort -n | uniq | awk '!a[$0]++' > tmp-adguard-ubo.txt #处理AdGuard的规则
 #cat ubo-full-adguard*.txt | grep -v '.!' | grep -v '^!' | grep -v '^# ' | grep -v '^# ' | grep -v '^\[' | grep -v '^\【' | sort -n | uniq | awk '!a[$0]++' > tmp-adguard-full-ubo.txt #处理AdGuard的规则
-
+<< EOF
 cat .././mod/rules/*-rules.txt dns*.txt dns10.txt *easylist*.txt full-adg*.txt abp-hosts*.txt \
  | grep -E "(^\*.*|^-.*|^\/.*|^\..*|^:.*|^[a-z])|([(\@\@)|(\|\|)][^\/\^]+\^)" \
  | grep -Ev "(#|!)" \
@@ -266,7 +266,7 @@ cat ../mod/*/dns-rule-allow.txt ../mod/*/dns-rule-allow.txt tmp1-domain.txt tmpa
 cat tmp-ad-domains.txt \
  | sed 's/^/0.0.0.0 /g' \
  | sort -n | uniq > tmp-hosts.txt #处理广告域名
-
+EOF
 cat .././mod/rules/* *.txt | grep '^@' \
  | sort -n | uniq > tmp-allow.txt 
 
