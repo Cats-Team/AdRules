@@ -1,15 +1,15 @@
 [Adblock Plus 3.0]
-! Checksum: pF74n8sg+6b0FKcppiiKHA
+! Checksum: WwEsesB1LD0+Efs49Rx03Q
 ! Title: My AdFilters（for PC）
 ! Expires: 2 hours
-! Version: 202204292229
-! Last Modified: 2022年04月29日 22:29
+! Version: 202204292335
+! Last Modified: 2022年04月29日 23:35
 ! Homepage: https://adf.minggo.eu.org
 ! 本规则合并自乘风视频广告过滤规则、Easylist、EasylistChina、EasyPrivacy、CJX'sAnnoyance
 ! 并补充了贴吧过滤规则，感谢各位前辈的分享！
 ! 如有任何疑问、意见或建议，请反馈至：HalfLife吧
 !
-! Total count: 85836
+! Total count: 85842
 ###ADCENTER
 ###ADSLOT_1
 ###ADTOP
@@ -6127,6 +6127,7 @@
 ##a[href*=".woyicanyin.com"]
 ##a[href*=".wpwpquse.cn/"]
 ##a[href*=".wuyichunqiu.com/"]
+##a[href*=".xacg.info/"]
 ##a[href*=".xinghuolm.top"]
 ##a[href*=".xingxingdm.com:"]
 ##a[href*=".xlddz.net/"]
@@ -6495,6 +6496,7 @@
 ##body[class|="view"] > .ad-box
 ##body[onload*="u()"] > #x
 ##button[data-openuri="|BTN_URL|"]
+##button[onclick*=".xacg.info/"]
 ##center > a[target="_blank"] > img[style="padding- bottom:5px;width:960px;height:120px;"]
 ##center > a[target="_blank"] > img[style="padding- bottom:5px;width:960px;height:60px;"]
 ##center > p > a[target="_blank"] > img[width="728px"][height="90px"]
@@ -6558,6 +6560,7 @@
 ##div[id^="adfox_"]
 ##div[id^="adngin-"]
 ##div[id^="adrotate_widgets-"]
+##div[id^="ads300_100-widget-"]
 ##div[id^="adspot-"]
 ##div[id^="adv-"].adv
 ##div[id^="advads-"]
@@ -30591,7 +30594,6 @@ hinative.com#@#.banner_header
 hindi.business-standard.com##+js(abort-current-script, document.addEventListener, displayMessage:)
 hindi.business-standard.com##div[id^="div-gpt-ad"]
 hindi.news18.com,bengali.news18.com##div[class*="right"] > div[class*="side"]:not([class*="gallery"])> div[style*="min-height:"] > #vigyapan
-hindilinks4u.*,topflix.*,flixtor.gg,tutele.sx,upvid.*,mangas-raw.com,bbb.fm,clipconverter.cc,megafilmeshd20.pro,watchseries.*,animesonline.cz,superflix.biz,fembed.cloud,vizer.vip,kick4ss.com,jpscan-vf.com,rawkuma.com,pobreflix.top,losmovies.*,123movieshub.*,seriesflix.top,gogoanime.fi,intereseducation.com,vizer.re,123movies-official.site,querofilmehd.net,gogoanime.gg,animixplay.to,dood.*,anime4up.*,multicanais.tv,watchmovie.cc,myflixer.*,pahe.li,filmyzilla.autos,megafilmeseseriesonline.com##+js(abort-current-script, document.createElement, break;case)
 hindipix.in,netu.tv,hqq.tv,hqq.watch#$#abort-on-property-read _pop
 hindipix.in,netu.tv,hqq.tv,hqq.watch#$#abort-on-property-read ownerid
 hindustantimes.com###divTopNews:empty
@@ -32761,8 +32763,8 @@ kvraudio.com###kvr300600
 kwejk.pl#$#.pub_300x250.pub_300x250m.pub_728x90.text-ad.textAd.text_ad.text_ads.text-ads.text-ad-links.adsbygoogle { display: block!important; }
 kwik.cx#@#.adSense
 kwongwah.com.my##.kp-adv-widget
-kwtx.com,alaskasnewssource.com,ky3.com##body .arc-ad
 kxdw.com###downloadTop
+kxii.com,kwtx.com,alaskasnewssource.com,ky3.com##body .arc-ad
 kxmusic.cn,kxmusic.top##a[href*="smsf8.com"]
 kzstock.blogspot.com#@##ad-target
 l-a-w.ru,mhelp.kz##.swal2-container
@@ -33844,7 +33846,6 @@ melongfilm.org##+js(no-setTimeout-if, Q70.)
 meltoday.com,sydneytoday.com##.mtgad
 meltoday.com,sydneytoday.com##.promo
 memangbau.com##+js(abort-current-script, document.getElementById, ').style.display='none';)
-membed.net,goload.*##+js(abort-current-script, document.createElement, break;case)
 memeburn.com##+js(set-constant, show_interstitial, 0)
 memexie.com##div[style^="width:9"][style$="#C8E4F0"]
 memoryhackers.org##+js(set-constant, adsbygoogle.length, undefined)
@@ -37532,6 +37533,7 @@ shopee.*##.shopee-search-item-result__items > .shopee-search-item-result__item:h
 shopmoon.in##+js(window.open-defuser)
 short-cash2.xyz##+js(window.open-defuser)
 short.croclix.me##.banner-container
+short.katflys.com,membed.net,goload.*,hindilinks4u.*,topflix.*,flixtor.gg,tutele.sx,upvid.*,mangas-raw.com,bbb.fm,clipconverter.cc,megafilmeshd20.pro,watchseries.*,animesonline.cz,superflix.biz,fembed.cloud,vizer.vip,kick4ss.com,jpscan-vf.com,rawkuma.com,pobreflix.top,losmovies.*,123movieshub.*,seriesflix.top,gogoanime.fi,intereseducation.com,vizer.re,123movies-official.site,querofilmehd.net,gogoanime.gg,animixplay.to,dood.*,anime4up.*,multicanais.tv,watchmovie.cc,myflixer.*,pahe.li,filmyzilla.autos,megafilmeseseriesonline.com##+js(abort-current-script, document.createElement, break;case)
 short.pe#@#.adsBox
 short2.cash##+js(abort-current-script, document.createElement, window.open)
 short2.cash##+js(window.open-defuser)
@@ -64172,6 +64174,7 @@ zznews.cn##.ad:not([style])
 ||lk.4jzl.cn^$third-party
 ||lkcgvcdmc.com^
 ||lkdvvxvtsq6o.com^
+||lkimqdkfd.com^
 ||lkjbrd.signals.com^
 ||lkle.top^
 ||lkluoz.saraceniwines.com^
@@ -66290,6 +66293,7 @@ zznews.cn##.ad:not([style])
 ||metro114.com^
 ||metroaverage.com^
 ||metroweekly.com/tools/blog_add_visitor/
+||metsaubs.net^
 ||metvb.com/js/bofangwei.js
 ||mewe.com/ubk4jrxn.js
 ||mexcel.info^
@@ -66482,6 +66486,7 @@ zznews.cn##.ad:not([style])
 ||mipengine.baidu.com/common?
 ||mipujia.com^$third-party
 ||mipujomo.pro^$popup
+||miraclejay.work^
 ||miracslubs.com^
 ||mirishkeeps.com^
 ||mirtesen.ru/js/ms.js
@@ -72707,6 +72712,7 @@ zznews.cn##.ad:not([style])
 ||s4.parkeren-haarlem.nl^
 ||s4.parkeren-utrecht.nl^
 ||s4e8.cascades.com^
+||s4zqj3m.cn^
 ||s7target.ru^$third-party
 ||s7tu.com/images/*.gif
 ||s7ven.com^$third-party
