@@ -318,5 +318,5 @@ cat ad-domains.txt \
 sed -i 's/!/#/g' hosts.txt
 EOF
 rm -rf pre
-bash ./script/build-dns-list.sh
+bash ./script/prepare-dns-upstream.sh
 exit
