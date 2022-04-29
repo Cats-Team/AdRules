@@ -43,7 +43,7 @@ return array(
     'uri6.com' => 0,
     'wl.jd.com' => 0,
     'woozooo.com' => 0,
-    'static.yximgs.com' => 0,
+    'static.yximgs.com' => 1,
     'doc.weixin.qq.com' => 0,
     'wx.tenpay.com' => 0,
     'quark.sm.cn' => 0,
