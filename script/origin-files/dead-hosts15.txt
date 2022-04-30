@@ -1,219 +1,677 @@
-! https://github.com/AdguardTeam/AdguardFilters/issues/114908
-@@||torimochi.line-apps.com^|
-! https://github.com/AdguardTeam/AdGuardSDNSFilter/issues/937
-@@||oa.tr.line.me^|
-! https://github.com/AdguardTeam/AdguardFilters/issues/115247
-@@||stash.roistat.com^|
-! https://github.com/AdguardTeam/AdguardFilters/commit/84966d38a2f6d98e46df6998c6cacde1931e7bc1
-@@||measure.ic.tver.jp^|
-! https://github.com/AdguardTeam/AdguardFilters/issues/113049
-@@||static-v*.trbo.com^|
-@@||api-v*.trbo.com^|
-! https://github.com/AdguardTeam/AdguardFilters/issues/111707
-@@||brm-core-*.brsrvr.com^|
-! https://github.com/AdguardTeam/AdGuardSDNSFilter/issues/897
-! Blocked by CNAME affex.org
-@@||marketing.net.idealo-partner.com^|
-! https://github.com/AdguardTeam/AdguardFilters/issues/107168
-@@||netatmo.commander1.com^|
-! https://github.com/easylist/easylist/pull/9904
-@@||clj.valuecommerce.com^|
-@@||vcentry3.valuecommerce.ne.jp^|
-! Fixing the issue with "Wi-Fi" connection mark when you configure private DNS on Android 9
-! Once you enable private DNS, Android 9 starts resolving random domains looking like
-! `*-*-ds.metric.gstatic.com` (for instance, `a5a6380f-dnsotls-ds.metric.gstatic.com`).
-! Here you can check how it's used by Android: https://cs.android.com/search?q=ds.metric.gstatic.com
-@@-ds.metric.gstatic.com^
-! https://github.com/AdguardTeam/AdGuardSDNSFilter/issues/824
-@@||id.i2i.jp^|
-! https://github.com/AdguardTeam/AdguardFilters/issues/98798
-@@||thumbnail.thench.net^|
-! https://github.com/AdguardTeam/AdGuardSDNSFilter/issues/819
-@@||validate.perfdrive.com^|
-! https://github.com/AdguardTeam/AdguardFilters/issues/98729
-@@||ia.hit.interia.pl^|
-! https://github.com/AdguardTeam/AdGuardSDNSFilter/issues/797
-@@||r.sascdn.com^|
-! https://forum.adguard.com/index.php?threads/amplitude-com-blocked.45115
-@@||analytics.amplitude.com^|
-! https://github.com/AdguardTeam/AdGuardSDNSFilter/issues/783
-@@|adsterra.com^|
-@@|ads.adsterra.com^|
-@@|publishers.adsterra.com^|
-@@|beta.publishers.adsterra.com^|
-@@|partners.adsterra.com^|
-@@|beta.partners.adsterra.com^|
-@@|affiliates.adsterra.com^|
-@@|beta.affiliates.adsterra.com^|
-@@|help-advertisers.adsterra.com^|
-! https://github.com/AdguardTeam/AdGuardSDNSFilter/issues/781
-! https://github.com/AdguardTeam/AdGuardSDNSFilter/issues/852
-! Blocked by CNAME we-stats.com
-@@||wup-7b4df495.santander.cl^|
-@@||contents*.00110.citi.com^|
-! https://github.com/AdguardTeam/AdGuardSDNSFilter/issues/759
-! Blocked by CNAME impactradius.com
-@@||goto.target.com^|
-@@||goto.walmart.com^|
-! https://github.com/AdguardTeam/AdGuardSDNSFilter/issues/743
-@@||citiintl.122.2o7.net^|
-! https://github.com/AdguardTeam/AdGuardSDNSFilter/issues/805
-@@||ma135-r.analytics.edgekey.net^|
-! https://github.com/AdguardTeam/AdguardFilters/issues/89190
-@@||79423.analytics.edgekey.net^|
-!
-! Blocked by CNAME ||leadpages.net^$third-party
-! https://github.com/AdguardTeam/AdguardFilters/issues/98565
-@@||classliving.lpages.co^|
-! https://github.com/AdguardTeam/AdGuardSDNSFilter/issues/829
-@@||home.focusatwill.com^|
-! https://github.com/AdguardTeam/AdGuardSDNSFilter/issues/707
-@@||health.halodoc.com^|
-!
-! https://github.com/AdguardTeam/AdguardFilters/issues/99102
-! Blocked by CNAME ||customer.io^
-@@||email*.123formbuilder.com^|
-!
-! https://github.com/AdguardTeam/AdGuardSDNSFilter/issues/709
-@@||promo.gramedia.com^|
-! https://github.com/AdguardTeam/AdguardFilters/issues/81939
-@@||support-beacon.nakanohito.jp^|
-@@||support-widget.nakanohito.jp^|
-! https://github.com/AdguardTeam/AdGuardSDNSFilter/pull/660
-@@||afi-b.com^|
-! https://github.com/AdguardTeam/AdGuardSDNSFilter/pull/636
-@@||daikoku.ebis.ne.jp^|
-! https://github.com/AdguardTeam/AdGuardSDNSFilter/issues/629
-@@||envato.market^|
-! https://github.com/AdguardTeam/AdguardFilters/pull/76413
-! whitelist as click-through
-@@||ac.ebis.ne.jp^|
-! https://github.com/AdguardTeam/AdGuardSDNSFilter/issues/602
-! Don't block clicks in AWS emails
-@@||email.awscloud.com^|
-! https://github.com/AdguardTeam/AdGuardSDNSFilter/issues/574
-! Blocked by ||relevant-digital.com^
-@@||oneline.nextday.media^|
-! Reported via Telegram: https://t.me/AdGuard_chinese/13741
-@@|ftp.bmp.ovh^|
-! https://github.com/AdguardTeam/AdGuardSDNSFilter/issues/580
-@@||cloud.notification-naviextras.com^|
-! https://github.com/AdguardTeam/AdGuardSDNSFilter/issues/568
-@@||email.elitedangerous.com^|
-! https://github.com/AdguardTeam/AdGuardSDNSFilter/issues/551
-@@||links.e.theatlantic.com^|
-! https://github.com/AdguardTeam/AdguardFilters/issues/71289
-@@||app.appsflyer.com^|
-! https://github.com/AdguardTeam/AdguardFilters/issues/71434
-@@||email.procook.co.uk^|
-! https://github.com/AdguardTeam/AdGuardSDNSFilter/issues/498
-@@||omsc.kpn.com^|
-! https://github.com/AdguardTeam/AdGuardSDNSFilter/issues/514
-@@||logentries.com^|
-! https://github.com/AdguardTeam/AdGuardSDNSFilter/issues/517
-@@||email.*.skyeng.ru^|
-! cdn.rozetka.com.ua is blocked by CNAME 'rozetka-cdn.exponea.com'
-@@||cdn.rozetka.com.ua^|
-! https://github.com/AdguardTeam/AdguardFilters/issues/65326
-@@||go.scorptec.com.au^|
-! https://github.com/AdguardTeam/AdGuardSDNSFilter/issues/468
-@@||links.getblueshift.com^|
-! https://github.com/AdguardTeam/AdGuardSDNSFilter/issues/453
-@@||click.trafficguard.ai^|
-! https://github.com/AdguardTeam/AdGuardSDNSFilter/issues/441
-@@||hb.afl.rakuten.co.jp^|
-@@||pt.afl.rakuten.co.jp^|
-! https://github.com/AdguardTeam/AdguardFilters/issues/62583
-@@||proto2ad.durasite.net^|
-! https://github.com/AdguardTeam/AdguardFilters/issues/62780
-@@||tags.crwdcntrl.net^|
-! https://github.com/AdguardTeam/AdGuardSDNSFilter/issues/428
-! CNAME: paymaya.customlinks.appsflyer.com
-@@||official.paymaya.com^|
-! https://github.com/AdguardTeam/AdGuardSDNSFilter/issues/381
-@@||gs.statcounter.com^|
-! Blocked by exacttarget.com alias
-! https://github.com/AdguardTeam/AdGuardSDNSFilter/issues/333
-@@||click.virt.s*.exacttarget.com^|
-@@||click.virt.exacttarget.com^|
-! https://github.com/AdguardTeam/AdGuardSDNSFilter/issues/685
-! Exacttarget Marketing Cloud
-@@||mc.*.exacttarget.com^|
-! https://github.com/AdguardTeam/AdguardFilters/issues/61592
-@@||login.sendpulse.com^|
-! https://github.com/AdguardTeam/AdGuardSDNSFilter/issues/451
-@@||a.sellpoint.net^|
-! https://github.com/AdguardTeam/AdguardFilters/issues/59840
-@@||tlaol.com^|
-! https://github.com/AdguardTeam/AdGuardSDNSFilter/issues/378
-@@||admin.dable.io^|
-! https://github.com/AdguardTeam/AdGuardSDNSFilter/issues/358
-@@||log.mmstat.com^|
-! https://github.com/AdguardTeam/AdGuardSDNSFilter/issues/345
-! Blocked by alimama.com alias
-@@||click.simba.taobao.com^|
-! https://github.com/AdguardTeam/AdGuardSDNSFilter/issues/340
-@@||cs.silverpop.com^|
-! https://github.com/AdguardTeam/AdGuardSDNSFilter/issues/312
-@@||grp07.ias.rakuten.co.jp^|
-! https://github.com/AdguardTeam/AdGuardSDNSFilter/issues/304
-@@||cindyholbrook.lpages.co^|
-! https://github.com/AdguardTeam/AdGuardSDNSFilter/issues/289
-! Fixing Google Shop and Google Ads in search results.
-! These ads cannot be hidden on the DNS-level, so we should not break clicks on the adverts
-@@||pagead.l.doubleclick.net^|
-@@||www.googleadservices.com^|
-@@||googleadapis.l.google.com^|
-! https://github.com/AdguardTeam/AdGuardSDNSFilter/issues/287
-@@||my.tealiumiq.com^|
-! https://github.com/AdguardTeam/AdGuardSDNSFilter/issues/267
-@@||artifactory.appodeal.com^|
-! https://github.com/AdguardTeam/AdGuardSDNSFilter/issues/258
-@@||www.jdoqocy.com^|
-@@||cj.dotomi.com^|
-! https://github.com/AdguardTeam/AdguardFilters/issues/50415
-@@||intersport.peerius.com^|
-! https://github.com/AdguardTeam/AdGuardSDNSFilter/issues/231
-@@||cutcaptcha.com^|
-! https://forum.adguard.com/index.php?threads/36967/
-@@||forum.notebookreview.com^|
-! https://github.com/AdguardTeam/AdGuardSDNSFilter/issues/199
-@@||radiofrance.targetspot.com^|
-! https://github.com/AdguardTeam/AdGuardSDNSFilter/issues/190
-@@||awin1.com^|
-! https://github.com/AdguardTeam/AdGuardSDNSFilter/issues/185
-@@||app.adjust.com^|
-! https://github.com/AdguardTeam/AdGuardSDNSFilter/issues/183
-@@||feed.adrelayer.com^|
-! https://github.com/AdguardTeam/AdGuardSDNSFilter/issues/168
-@@||redirect.appmetrica.yandex.com^|
-! Fixing redirects through guce.advertising.com (www.engadget.com, www.huffpost.com)
-@@||guce.advertising.com^
-! Unblock logrocket.com blog
-@@||blog.logrocket.com^|
-! https://github.com/AdguardTeam/AdguardFilters/issues/27196
-@@||a.adwolf.ru^|
-! https://github.com/AdguardTeam/AdguardFilters/issues/26607
-@@||imasdk.googleapis.com^|
-! https://github.com/AdguardTeam/AdguardFilters/issues/23929
-@@||cm-beacon.nakanohito.jp^|
-@@||cm-widget.nakanohito.jp^|
+! https://github.com/AdguardTeam/AdGuardSDNSFilter/issues/943
+||branch.io^
+! https://github.com/AdguardTeam/AdGuardSDNSFilter/issues/934
+||youbora.com^
+! https://github.com/AdguardTeam/AdGuardSDNSFilter/issues/929
+||pinpoll.com^
+! https://github.com/AdguardTeam/AdGuardSDNSFilter/issues/927
+||supplyframe.com^
+! https://github.com/AdguardTeam/AdGuardSDNSFilter/issues/920
+||hsdn.org^
+! https://github.com/AdguardTeam/AdGuardSDNSFilter/issues/914
+||ping-admin.ru^
+! https://github.com/AdguardTeam/AdGuardSDNSFilter/issues/905
+||extreme-ip-lookup.com^
+! https://github.com/AdguardTeam/AdGuardSDNSFilter/issues/902
+||anura.io^
+! https://github.com/AdguardTeam/AdGuardSDNSFilter/issues/900
+||fireworkapi.com^
+||fireworktv.com^
+! Fixing naver.com purchases(blocked redirect)
+||adcr.naver.com^
+! https://github.com/AdguardTeam/AdGuardSDNSFilter/issues/893
+||iovation.com^
+! https://github.com/AdguardTeam/AdGuardSDNSFilter/issues/888
+||coralogix.com^
+! https://github.com/AdguardTeam/AdGuardSDNSFilter/issues/886
+||tollfreeforwarding.com^
+! https://github.com/AdguardTeam/AdGuardSDNSFilter/issues/884
+||ip-tracker.org^
+! https://github.com/AdguardTeam/AdGuardSDNSFilter/issues/880
+||fastly-analytics.com^
+! https://github.com/AdguardTeam/AdGuardSDNSFilter/issues/878
+||ipdata.co^
+! https://github.com/AdguardTeam/AdGuardSDNSFilter/issues/875
+||remind.me^
+! This rule blocked c.disquscdn.com by CNAME
+||d231vab146qzfb.cloudfront.net^
+! https://github.com/AdguardTeam/AdGuardSDNSFilter/issues/863 
+||db-ip.com^
+! https://github.com/AdguardTeam/AdguardFilters/issues/101532
+||threatbook.cn^
+! https://github.com/AdguardTeam/AdGuardSDNSFilter/issues/777
+||autopilothq.com^
+! https://github.com/AdguardTeam/AdguardFilters/issues/99486
+! App shown 'invalid parameters' message on step with date input (ios)
+||log*-*.tiktokv.com^
+! https://github.com/AdguardTeam/AdGuardSDNSFilter/pull/828
+||productsup.com^
+! https://github.com/AdguardTeam/AdGuardSDNSFilter/issues/826
+||atatus.com^
+! https://github.com/AdguardTeam/AdGuardSDNSFilter/issues/815
+||micpn.com^
+! https://github.com/easylist/easylist/issues/9445
+||kqzyfj.com^
+! https://github.com/AdguardTeam/AdGuardSDNSFilter/issues/808
+||a2z.com^
+! https://github.com/AdguardTeam/AdGuardSDNSFilter/issues/757
+||redventures.io^
+! https://github.com/AdguardTeam/AdGuardSDNSFilter/issues/711
+||ip-adress.com^
+! https://github.com/AdguardTeam/AdGuardSDNSFilter/issues/773
+||tkqlhce.com^
+! https://github.com/AdguardTeam/AdGuardSDNSFilter/issues/786
+||sphdigital.com^
+! fix Honest sign app
+||flocktory.com^
+! https://github.com/AdguardTeam/AdGuardSDNSFilter/issues/770
+||ad.nwi.jp^
+! https://github.com/AdguardTeam/AdGuardSDNSFilter/issues/767
+||ipapi.co^
+! https://github.com/AdguardTeam/AdGuardSDNSFilter/issues/754
+||cy-pr.com^
+! Fixing OneDrive
+||g.msn.com^
+! https://github.com/AdguardTeam/AdguardFilters/issues/91564
+||bpmonline.com^
+! https://github.com/AdguardTeam/AdGuardSDNSFilter/issues/734
+||exchange4media.com^
+! https://github.com/AdguardTeam/AdGuardSDNSFilter/issues/735
+||insight.rapid7.com^
+! https://github.com/AdguardTeam/AdGuardSDNSFilter/issues/727
+||ipcheck.tmgrup.com.tr^
+! https://github.com/AdguardTeam/AdGuardSDNSFilter/issues/724
+||analytics.google.com^
+! https://github.com/AdguardTeam/AdguardFilters/issues/88390
+||airbrake.io^
+! https://github.com/AdguardTeam/AdGuardSDNSFilter/issues/723
+||loggly.com^
+! https://github.com/AdguardTeam/AdGuardSDNSFilter/issues/684
+||uim.tifbs.net^
+! https://github.com/AdguardTeam/AdGuardSDNSFilter/issues/690
+||onlinepbx.ru^
+! https://github.com/AdguardTeam/AdGuardSDNSFilter/issues/696
+||top-shop.ru^
+! https://github.com/AdguardTeam/AdGuardSDNSFilter/issues/677
+||pdst.fm^
+! https://github.com/AdguardTeam/AdGuardSDNSFilter/issues/678
+||group-ib.ru^
+! https://github.com/AdguardTeam/AdGuardSDNSFilter/issues/673
+||albacross.com^
+! https://github.com/AdguardTeam/AdGuardSDNSFilter/issues/643
+||dynamicyield.com^
+! https://github.com/AdguardTeam/AdGuardSDNSFilter/issues/666
+||kaptcha.com^
+! https://github.com/AdguardTeam/AdGuardSDNSFilter/issues/662
+||cpm.wargaming.net^
+! octafx.com incorrect blocking
+||octafx.com^
+! https://github.com/AdguardTeam/AdGuardSDNSFilter/issues/645
+/^\|\|mkto-[\s\S]*\.com\^/
+! https://github.com/AdguardTeam/AdGuardSDNSFilter/issues/649
+||hostinger.com^
+! https://github.com/AdguardTeam/AdGuardSDNSFilter/issues/639
+||msgfocus.com^
+! https://github.com/AdguardTeam/AdGuardSDNSFilter/issues/637
+||inmoment.com^
+! https://github.com/AdguardTeam/AdGuardSDNSFilter/pull/626
+||msgs.jp^
+! https://github.com/AdguardTeam/AdGuardSDNSFilter/issues/621
+||logs.datadoghq.com^
+! https://github.com/AdguardTeam/AdGuardSDNSFilter/issues/623
+||questionpro.com^
+! https://github.com/AdguardTeam/AdGuardSDNSFilter/issues/650
+||rollbar.com^
+! https://github.com/AdguardTeam/AdGuardSDNSFilter/issues/618
+||justanswer.com^
+! https://github.com/AdguardTeam/AdGuardSDNSFilter/issues/611
+||trust.zone^
+! https://github.com/AdguardTeam/AdGuardSDNSFilter/issues/610
+||news.smi2.ru^
+! https://github.com/AdguardTeam/AdGuardSDNSFilter/issues/605
+||rdstation.com^
+||rdstation.com.br^
+! https://github.com/AdguardTeam/AdGuardSDNSFilter/issues/555
+||linkifier.com^
+! https://github.com/AdguardTeam/AdguardFilters/issues/75194
+||pvtag.yahoo.co.jp^
+! https://github.com/AdguardTeam/AdGuardSDNSFilter/issues/601
+||shareasale.com^
+! https://6ms.biz/
+||6ms.biz^
+! https://github.com/AdguardTeam/AdGuardDNS/issues/140
+||trafficmanager.net^
+! https://github.com/AdguardTeam/AdGuardSDNSFilter/issues/573
+||onesignal.com^
+! https://github.com/AdguardTeam/AdGuardSDNSFilter/issues/577
+||tracking.magnetmail.net^
+! Fixing blick.ch
+||admeira.ch^
+! https://github.com/AdguardTeam/AdGuardSDNSFilter/issues/567
+||etracker.de^
+||etracker.com^
+! https://github.com/AdguardTeam/AdguardFilters/issues/72744
+||analitik.edevlet.gov.tr^
+! plausible - don't break the whole website, blocked plausible.js already
+||plausible.io^
+! https://github.com/AdguardTeam/AdguardFilters/issues/72064
+||tracemyip.org^
+! sentry.io bug tracker
+||sentry.io^
+! https://github.com/AdguardTeam/AdGuardSDNSFilter/issues/544
+||api.amplitude.com^
+! https://github.com/AdguardTeam/AdGuardSDNSFilter/issues/542
+||adc.api.nine.com.au^
+! https://github.com/AdguardTeam/AdGuardSDNSFilter/issues/556
+||datafront.co^
+! https://github.com/AdguardTeam/AdGuardSDNSFilter/issues/540
+||ahd.ruten.com.tw^
+! https://github.com/AdguardTeam/AdGuardSDNSFilter/issues/538
+||loginfra.com^
+! https://github.com/AdguardTeam/AdGuardSDNSFilter/issues/533
+||chtbl.com^
+! https://github.com/AdguardTeam/AdguardFilters/issues/70449
+||nimiq.com^
+! https://github.com/AdguardTeam/AdGuardSDNSFilter/issues/508
+||smartasset.com^
+! https://github.com/AdguardTeam/AdGuardSDNSFilter/issues/496
+||datadome.co^
+! https://github.com/AdguardTeam/AdGuardSDNSFilter/issues/485
+||onelink.me^
+! https://github.com/AdguardTeam/AdGuardSDNSFilter/issues/470
+||researchintel.com^
+! https://github.com/AdguardTeam/AdGuardSDNSFilter/issues/466
+||check.ddos-guard.net^
+! https://github.com/AdguardTeam/AdGuardSDNSFilter/issues/525
+||treasuredata.com^
+! https://github.com/AdguardTeam/AdGuardSDNSFilter/issues/455
+||linksnappy.com^
+! https://github.com/AdguardTeam/AdGuardSDNSFilter/issues/415
+||sendpulse.com^
+! https://github.com/AdguardTeam/AdguardFilters/issues/62357
+||connatix.com^
+! https://github.com/AdguardTeam/AdGuardSDNSFilter/issues/418
+||gm99.com^
+! https://github.com/AdguardTeam/AdGuardSDNSFilter/issues/344#issuecomment-673931103
+! Will be included in a more aggressive DNS configuration 
+||telemetry.mozilla.org^
+! https://github.com/AdguardTeam/AdGuardSDNSFilter/issues/416
+||bytedance.com^
+! FotMob app - fixing notifications
+||urbanairship.com^
+! https://github.com/AdguardTeam/AdGuardSDNSFilter/issues/403
+||pushbullet.com^
+! https://github.com/AdguardTeam/AdGuardSDNSFilter/issues/394
+||howsmyssl.com^
+! https://github.com/AdguardTeam/AdGuardSDNSFilter/issues/392
+||tanx.com^
+! Exclude pre-compiler directives
+/^!#/
+! https://github.com/AdguardTeam/AdGuardSDNSFilter/issues/389
+||sojern.com^
+! https://github.com/AdguardTeam/AdGuardSDNSFilter/issues/387
+||prf.hn^
+! https://github.com/AdguardTeam/AdGuardSDNSFilter/issues/376
+||fitanalytics.com^
+! https://github.com/AdguardTeam/AdguardFilters/issues/58009
+||afiliados.hostgator.com.br^
+! https://github.com/AdguardTeam/AdguardFilters/issues/57997
+||magnetmail1.net^
+! https://github.com/AdguardTeam/AdGuardSDNSFilter/issues/367
+||tns-sifo.se^
+! https://github.com/AdguardTeam/AdGuardSDNSFilter/issues/366
+||sematext.com^
+! https://github.com/AdguardTeam/AdGuardSDNSFilter/issues/368
+||userreport.com^
+! https://github.com/AdguardTeam/AdGuardSDNSFilter/issues/364
+||ip2location.com^
+! https://github.com/AdguardTeam/AdGuardSDNSFilter/issues/362
+||ziffdavis.com^
+! https://github.com/AdguardTeam/AdGuardSDNSFilter/issues/360
+||sealserver.trustwave.com^
+! https://github.com/AdguardTeam/AdGuardSDNSFilter/issues/354
+||informz.net^
+! https://github.com/AdguardTeam/AdGuardSDNSFilter/issues/351
+||alitems.com^
+! https://github.com/AdguardTeam/AdGuardSDNSFilter/issues/348
+||geo.ngtv.io^
+! https://github.com/AdguardTeam/AdGuardSDNSFilter/issues/336
+||maropost.com^
+! https://forum.adguard.com/index.php?threads/38369/
+||ipstack.com^
+! usa.experian.com is broken after authorization
+||datadoghq-browser-agent.com^
+! https://github.com/AdguardTeam/AdGuardSDNSFilter/issues/317
+||sajari.com^
+! https://github.com/AdguardTeam/AdGuardSDNSFilter/issues/326
+||toptracker.ru^
+! https://github.com/AdguardTeam/AdGuardSDNSFilter/issues/314
+||rd.rakuten.co.jp^
+! https://github.com/AdguardTeam/AdguardFilters/pull/54452
+||afl.rakuten.co.jp^
+! https://github.com/AdguardTeam/AdGuardSDNSFilter/issues/302
+||pulsar.ebay.com^
+! https://github.com/AdguardTeam/AdGuardSDNSFilter/issues/299
+||onelink-translations.com^
+! https://github.com/AdguardTeam/AdGuardSDNSFilter/issues/284
+||sjv.io^
+! https://github.com/AdguardTeam/AdGuardSDNSFilter/issues/273
+||minexmr.com^
+! Fixing 2ip.ua and ipinfo.info sites
+||2ip.ua^
+||ipinfo.info^
+! https://github.com/AdguardTeam/AdGuardSDNSFilter/issues/254
+||bamgrid.com^
+! https://github.com/AdguardTeam/AdGuardSDNSFilter/issues/214
+||getdrip.com^
+! https://github.com/AdguardTeam/AdGuardSDNSFilter/issues/251
+||techtarget.com^
+! https://github.com/AdguardTeam/AdguardFilters/issues/50654
+||society6.com^
+! https://github.com/AdguardTeam/AdGuardSDNSFilter/issues/247
+||trbna.com^
+! https://github.com/AdguardTeam/AdGuardSDNSFilter/issues/239
+||try.abtasty.com^
+! Fixing video player on onet.pl
+||sgqcvfjvr.onet.pl^
+! Unblock ipgeolocation.io (not analytics)
+||ipgeolocation.io^
+! https://github.com/AdguardTeam/AdGuardSDNSFilter/issues/233
+||res-x.com^
+! Breaks Yahoo shopping app
+||shopping.yahooapis.jp^
+! https://github.com/AdguardTeam/AdguardFilters/issues/49614
+||sp-prod.net^
+! https://github.com/AdguardTeam/AdGuardSDNSFilter/issues/226
+||mybannermaker.com^
+! https://github.com/AdguardTeam/AdGuardSDNSFilter/issues/222 
+||marsflag.com^
+! Do not break clicks through the MS redirect service 
+||click.engage.xbox.com^
+! https://github.com/AdguardTeam/AdGuardSDNSFilter/issues/219
+||dpbolvw.net^
+! https://github.com/AdguardTeam/AdGuardDNS/issues/37
+||auditude.com^
+! https://github.com/AdguardTeam/AdGuardSDNSFilter/issues/215
+||seesaa.jp^
+! Do not break interstitial domain for pinterest clicks
+||ct.pinterest.com^
+! https://github.com/AdguardTeam/AdGuardSDNSFilter/issues/211
+||pladform.ru^
+! https://github.com/AdguardTeam/AdGuardSDNSFilter/issues/208
+||tmearn.com^
+! https://github.com/AdguardTeam/AdGuardSDNSFilter/issues/204
+||emjcd.com^
+! Fixing tv-tokyo.co.jp, blocked by CNAME
+||durasite.net^
+! https://github.com/AdguardTeam/AdGuardSDNSFilter/issues/198
+||agilecrm.com^
+! https://github.com/AdguardTeam/AdGuardSDNSFilter/issues/195
+||forexprostools.com^
+! instana.io - not a tracking service
+||instana.io^
+! https://github.com/AdguardTeam/AdGuardSDNSFilter/issues/192
+||tw.cx^
+! https://github.com/AdguardTeam/AdGuardSDNSFilter/issues/180
+||ntv.io^
+||episerver.net^
+! https://github.com/AdguardTeam/AdGuardSDNSFilter/issues/23
+||sas.com^
+! https://github.com/AdguardTeam/AdGuardSDNSFilter/issues/174
+||buyeasy.by^
+! https://github.com/AdguardTeam/AdGuardSDNSFilter/issues/170
+! https://github.com/AdguardTeam/AdGuardDNS/issues/79
+! https://github.com/AdguardTeam/AdGuardSDNSFilter/issues/240
+! Blocking these IP address were also breaking legitimate websites:
+! Spotify, Pokemon Go
+||142.91.
+/(https?:\/\/)142
+||51.89.
+/(https?:\/\/)51\.89
+||51.77.
+/(https?:\/\/)51\.77
+||51.158.
+/(https?:\/\/)51\.158
+||35.
+/(https?:\/\/)35\.
+||104.
+/(https?:\/\/)104\.
+||130.211.
+/(https?:\/\/)130\.211
+||216.21.
+/(https?:\/\/)216\.21
+! https://github.com/AdguardTeam/AdGuardSDNSFilter/issues/166
+||simply.com^
+! https://github.com/AdguardTeam/AdGuardSDNSFilter/issues/159
+||perfops.net^
+! https://github.com/AdguardTeam/AdGuardSDNSFilter/issues/157
+||adshell.net^
+! https://github.com/AdguardTeam/AdGuardSDNSFilter/issues/151
+||macromill.com^
+! https://github.com/AdguardTeam/AdGuardSDNSFilter/issues/149
+||n8s.jp^
+! https://github.com/AdguardTeam/AdGuardSDNSFilter/issues/147
+||geni.us^
+! https://github.com/AdguardTeam/AdGuardSDNSFilter/issues/144
+||affirm.com^
+! https://github.com/AdguardTeam/AdGuardSDNSFilter/issues/138
+||anexia-it.com^
+! https://github.com/AdguardTeam/AdguardFilters/issues/41615
+||snap.com^
+! https://github.com/AdguardTeam/AdguardFilters/issues/41294
+||lasagneandands.com^
+||hotdogsandads.com^
+||thisisacoolthing.com^
+||meatballsandads.com^
+||pizzaandads.com^
+! https://github.com/AdguardTeam/AdGuardDNS/issues/52
+||cifraclub.com.br^
+! https://github.com/AdguardTeam/AdGuardDNS/issues/51
+||tms-st.cdn.ngenix.net^
+||ngenix.net^
+! https://github.com/AdguardTeam/AdguardFilters/issues/39306
+||ipify.org^
+! https://github.com/AdguardTeam/AdGuardSDNSFilter/issues/129
+||mediametrics.ru^
+! https://github.com/AdguardTeam/AdGuardSDNSFilter/issues/126
+||uralweb.ru^
+! https://github.com/AdguardTeam/AdguardFilters/issues/39674
+||stats.lt^
+! https://github.com/AdguardTeam/AdGuardSDNSFilter/issues/139
+||mybluemix.net^
+! https://github.com/AdguardTeam/AdGuardSDNSFilter/issues/119
+||grabo.bg^
+! Unblocking report-uri.com web site
+||report-uri.com^
+! https://github.com/AdguardTeam/AdGuardSDNSFilter/issues/116
+||gvt1.com^
+! https://github.com/AdguardTeam/AdGuardSDNSFilter/issues/113
+||mql5.com^
+! https://github.com/AdguardTeam/AdGuardSDNSFilter/issues/111
+||enter-system.com^
+! https://forum.adguard.com/index.php?threads/34094/
+||simplyhired.com^
+! https://github.com/AdguardTeam/AdGuardDNS/issues/44
+||carrotquest.io^
+! https://github.com/AdguardTeam/AdguardFilters/issues/35795
+||cint.com^
+! https://github.com/AdguardTeam/AdguardFilters/issues/34600
+||tags.news.com.au^
+! https://github.com/AdguardTeam/AdGuardSDNSFilter/issues/97
+||flipp.com^
+||wishabi.net^
+! https://github.com/AdguardTeam/AdGuardSDNSFilter/issues/93
+||loadercdn.com^
+! https://github.com/AdguardTeam/AdGuardSDNSFilter/issues/91
+||advcash.com^
+! https://forum.adguard.com/index.php?threads/shutterstock-7eer-net.32985/
+||7eer.net^
+! Fixing smallseotools.com
+||smallseotools.com^
+! stroeerdigitalpublishing.de - broken website
+||stroeerdigitalpublishing.de^
+! https://forum.adguard.com/index.php?threads/play-tv2-dk.32729/
+||adobedtm.com^
+! https://forum.adguard.com/index.php?threads/false-positive-thecounter-com.32533/
+||thecounter.com^
+! https://forum.adguard.com/index.php?threads/31996/
+||rs6.net^
+! https://github.com/AdguardTeam/AdguardFilters/issues/33829
+||avantlink.com^
+! https://github.com/AdguardTeam/AdguardFilters/issues/33853
+||pega.com^
+! https://forum.adguard.com/index.php?threads/site-borderlands-vip.32146/
+||crowdtwist.com^
+! https://github.com/AdguardTeam/AdGuardSDNSFilter/issues/72
+||rusmedserv.com^
+! https://forum.adguard.com/index.php?threads/jjc1q3x2-r-us-east-1-awstrack-me.31673/
+||awstrack.me^
+! https://forum.adguard.com/index.php?threads/31611/
+||ojrq.net^
+! https://github.com/AdguardTeam/AdguardFilters/issues/33122
+||xiti.com^
+! https://forum.adguard.com/index.php?threads/www-pixelsurplus-com-trackcmp-net.31652
+||trackcmp.net^
+! Fixing streamplay.to
+||streamplay.to^
+! https://github.com/AdguardTeam/AdguardFilters/issues/31816
+||vxcash.net^
+! https://github.com/AdguardTeam/AdguardFilters/issues/32004
+||nicequest.com^
+! https://github.com/AdguardTeam/AdguardFilters/issues/32303
+||e.reddit.com^
+! https://forum.adguard.com/index.php?threads/static-adman-gr-on-web-ert-gr.31509/
+||ipinfo.io^
+! Incorrect blocking
+||91mobiles.com^
+! https://github.com/AdguardTeam/FiltersRegistry/issues/186
+||adswizz.com^
+! https://forum.adguard.com/index.php?threads/31150/
+||clickdimensions.com^
+! https://github.com/AdguardTeam/AdguardFilters/issues/30514
+||evyy.net^
+! https://github.com/AdguardTeam/AdGuardSDNSFilter/issues/51
+||sumologic.com^
+! https://github.com/AdguardTeam/AdGuardDNS/issues/17
+||bugsnag.com^
+! https://github.com/AdguardTeam/AdGuardSDNSFilter/issues/47
+||2ip.ua^
+! https://github.com/AdguardTeam/AdGuardDNS/issues/14
+||epl.paypal-communication.com^
+! https://github.com/easylist/easylist/issues/2811
+||stripe.network^
+! https://github.com/AdguardTeam/AdguardFilters/issues/29357
+||analytics.twitter.com^
+! https://github.com/AdguardTeam/AdguardFilters/issues/28681
+||anrdoezrs.net^
+! Fixing proofpoint.com
+||proofpoint.com^
+! https://github.com/AdguardTeam/AdguardFilters/issues/99952
+||zmctrack.net^
+||znctrack.net^
+! https://github.com/AdguardTeam/AdGuardSDNSFilter/issues/33
+||localbitcoins.com^
+! https://forum.adguard.com/index.php?threads/30479/
+||bigmir.net^
+! https://github.com/AdguardTeam/AdguardFilters/issues/27858
+||linksynergy.com^
+! https://github.com/AdguardTeam/AdguardFilters/issues/27863
+||markitondemand.com^
+! https://forum.adguard.com/index.php?threads/go-tinder-com.30013/
+||bnc.lt^
+! https://github.com/AdguardTeam/AdGuardSDNSFilter/issues/28
+||jango.com^
+! https://github.com/AdguardTeam/AdGuardSDNSFilter/issues/26
+||app.link^
+! https://github.com/AdguardTeam/AdGuardSDNSFilter/issues/20
+webtrends.com
+! https://github.com/AdguardTeam/AdguardFilters/issues/24204
+host-tracker.com
+! fixing redirects in Yandex apps
+clck.yandex.ru
+! https://github.com/AdguardTeam/AdguardFilters/issues/24120
+||litix.io^
+! https://github.com/AdguardTeam/AdguardFilters/issues/24174
+onecount.net
+! https://github.com/AdguardTeam/AdguardFilters/issues/22963
+skimresources.com
 ! https://github.com/AdguardTeam/AdguardFilters/issues/19113
-@@||ads.tdbank.com^
-! https://forum.adguard.com/index.php?threads/23410/page-7#post-165504
-@@||nineto5mac-d.openx.net^|
-! https://github.com/AdguardTeam/AdguardDNS/issues/192
-@@||redir.tradedoubler.com^|
-@@||clk*.tradedoubler.com^|
-! https://forum.adguard.com/index.php?threads/27021/
-@@||href.li^|
-! https://github.com/AdguardTeam/AdguardFilters/issues/6749
-@@||str.hit.gemius.pl^|
-! https://github.com/AdguardTeam/AdguardFilters/issues/6486
-@@||track.rutarget.ru^|
-! Watson News App for iOS https://github.com/AdguardTeam/AdguardFilters/issues/4524
-@@||5471782.fls.doubleclick.net^|
-! https://github.com/AdguardTeam/AdguardFilters/issues/4405
-@@||h-sdk.online-metrix.net^|
-! Fixing Walmart
-@@||omniture.walmart.com^|
+online-metrix.net
+! https://github.com/AdguardTeam/AdguardDNS/issues/300
+tag.aticdn.net
+! Fixing Nvidia Shield Tv issue
+pingdom.net
+! Fixing Spotify redirect
+adj.st
+! https://github.com/AdguardTeam/AdguardDNS/issues/278
+ezoic.net
+! https://github.com/AdguardTeam/AdguardDNS/issues/269#issuecomment-381627885
+apptimize.com
+brahe.apptimize.com
+! blocked by DNS
+olymptrade.com
+! https://github.com/AdguardTeam/AdguardFilters/issues/13834
+onthe.io
+! https://github.com/AdguardTeam/AdguardDNS/issues/247
+confirmit.com
+! https://github.com/AdguardTeam/AdguardFilters/issues/11931
+comagic.ru
+! Fixing video player on estream.to
+estream.to
+! https://github.com/AdguardTeam/AdguardFilters/issues/10136
+adtechus.com
+! https://github.com/AdguardTeam/AdguardFilters/issues/9241
+statuscake.com
+! https://github.com/AdguardTeam/AdguardFilters/issues/9748
+impact-ad.jp
+! https://github.com/AdguardTeam/AdguardFilters/issues/9668
+cxense.com
+! https://github.com/AdguardTeam/AdguardFilters/issues/9130
+popin.cc
+! https://forum.adguard.com/index.php?threads/tubepornkiss-com-nsfw.27807/
+webclicks24.com
+! https://github.com/AdguardTeam/AdguardFilters/issues/9154
+loader.adrelayer.com
+! ads replacement on lenta.ru
+ssp.rambler.ru
+! https://github.com/AdguardTeam/AdguardFilters/issues/8872
+rtoaster.jp
+! https://github.com/AdguardTeam/AdguardFilters/issues/8698
+seosprint.net
+! https://github.com/AdguardTeam/AdguardFilters/issues/8469
+eroterest.net
+! See customer ID: 1693928
+||wipe.de
+! some sites are broken with DNS filtering
+piguiqproxy.com
+amgload.net
+! https://github.com/AdguardTeam/AdguardDNS/issues/196
+neobux.com
+! https://github.com/AdguardTeam/AdguardFilters/issues/7161
+hellywood.ru
+! https://forum.adguard.com/index.php?threads/25831/
+heroeswm.ru
+! https://github.com/AdguardTeam/AdguardFilters/issues/7061
+mixpanel.com
+! https://github.com/AdguardTeam/AdguardDNS/issues/191
+app.adjust.com
+! https://github.com/AdguardTeam/AdguardFilters/issues/6999
+onvix.tv
+! https://github.com/AdguardTeam/AdguardDNS/issues/186
+smartredirect.de
+! https://github.com/AdguardTeam/AdguardFilters/issues/6700
+xg4ken.com
+! https://github.com/AdguardTeam/AdguardForAndroid/issues/1439
+zdbb.net
+! https://forum.adguard.com/index.php?threads/https-userstyles-org.23844/
+freegeoip.net
+! Fixing Twitter app
+analytics.twitter.com
+! https://forum.adguard.com/index.php?threads/mydealz-blocked-by-adguard-dns.23107/
+digidip.net
+! westernunion.com is broken https://forum.adguard.com/index.php?threads/22700/ https://forum.adguard.com/index.php?threads/westernunion-com.22897/
+csi.gstatic.com
+iesnare.com
+! https://forum.adguard.com/index.php?threads/22964/
+bat.bing.com
+! https://github.com/AdguardTeam/AdguardDNS/issues/125
+qualtrics.com
+! Fixing redirects https://forum.adguard.com/index.php?threads/fiverr-com.22612/
+atdmt.com
+! Fixing ad block detection on a lot of the sites
+easylist.club
+! https://forum.adguard.com/index.php?threads/parking-websites-redirect-false-positive.22374/
+hxtrack.com
+! http://tv.naver.com/v/1691094 - video won't play
+smartmediarep.com
+! Blocking of these domains can break some sites
+p.d.0emn.com
+p.d.0fmm.com
+p.d.0mme.com
+p.d.1enm.com
+p.d.rpts.org
+! Too wide rule
+adfox.ru
+! https://github.com/AdguardTeam/AdguardFilters/issues/4713
+visualwebsiteoptimizer.com
+! https://github.com/AdguardTeam/AdguardFilters/issues/4609
+eboundservices.com
+! https://github.com/AdguardTeam/AdguardFilters/issues/4623
+imrworldwide.com
+! https://github.com/AdguardTeam/AdguardDNS/issues/91
+ip-api.com
+! https://github.com/AdguardTeam/AdguardFilters/issues/4525 [ozon.ru app for iOS]
+t.appsflyer.com
+stats.appsflyer.com
+! https://www.wilderssecurity.com/threads/adguard-ad-blocker.342850/page-85#post-2656320
+videoplaza.tv
+! https://github.com/AdguardTeam/AdguardDNS/issues/124
+cedexis.net
+! https://github.com/AdguardTeam/AdguardFilters/issues/4208
+epn.bz
+! https://github.com/AdguardTeam/AdguardDNS/issues/106
+ethn.io
+! https://github.com/AdguardTeam/AdguardDNS/issues/109
+admitad.com
+! https://github.com/AdguardTeam/AdguardDNS/issues/104
+digits.com
+! https://github.com/AdguardTeam/AdguardFilters/issues/3898
+fls-na.amazon.com
+! https://github.com/AdguardTeam/AdguardFilters/issues/3717
+ups.ksmobile.net
+! https://github.com/AdguardTeam/AdguardFilters/issues/3780
+georiot.com
+! https://github.com/AdguardTeam/AdguardFilters/issues/3725
+vectorstock.com
+! https://github.com/AdguardTeam/AdguardFilters/issues/2604
+sascdn.com
+! https://github.com/AdguardTeam/AdguardFilters/issues/3601
+! Fixing Samsung Service Server
+ospserver.net
+! https://github.com/AdguardTeam/AdguardForiOS/issues/278
+podtrac.com
+! https://github.com/AdguardTeam/AdguardFilters/issues/3492
+marfeel.com
+! Start: BBC Sport app https://github.com/AdguardTeam/AdguardDNS/issues/92
+edigitalsurvey.com
+gate.hockeyapp.net
+sa.bbc.com
+sa.bbc.co.uk
+! End: BBC Sport app
+! https://github.com/AdguardTeam/AdguardForiOS/issues/228
+jumia.com.ng
+! https://github.com/AdguardTeam/AdguardForiOS/issues/197
+v3cdn.net
+! https://github.com/AdguardTeam/AdguardDNS/issues/70
+bnc.lt
+! https://github.com/AdguardTeam/AdguardDNS/issues/63
+imasdk.googleapis.com
+! https://github.com/AdguardTeam/AdguardFilters/issues/3180
+2mdn.net
+! https://github.com/AdguardTeam/AdguardDNS/issues/61
+g17media.com
+! https://github.com/AdguardTeam/AdguardDNS/issues/43
+alipromo.com
+! https://github.com/AdguardTeam/AdguardDNS/issues/41
+! Adverigo captcha
+adverigo.com
+! VarageSale app (iOS)
+optimizely.com
+! https://github.com/AdguardTeam/AdguardDNS/issues/59
+dw.cbsi.com
+! Fixing few generic issues
+viglink.com
+googletagservices.com
+googletagmanager.com
+omtrdc.net
+scorecardresearch.com
+! https://github.com/AdguardTeam/AdguardDNS/issues/89
+fwmrm.net
+! too wide
+||ru.net^
+! too wide
+||r.mail.ru^
+! unbreak YT search history
+||s.youtube.com^
+! https://github.com/AdguardTeam/AdguardDNS/issues/63
+||googleadapis.l.google.com^
