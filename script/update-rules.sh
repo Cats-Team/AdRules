@@ -269,7 +269,7 @@ EOF
 cd ../tmp/
 mv ../{dns.txt,hosts.txt,ad-domains.txt} ./
 rename 's/^/tmp-/' dns.txt hosts.txt ad-domains.txt
-sed -ei 's/^\!.*//g' 's/^\#.*//g' tmp-dns.txt tmp-hosts.txt tmp-ad-domains.txt
+sed -i -e 's/^\!.*//g' -e 's/^\#.*//g' -e '/^$/d' tmp-dns.txt tmp-hosts.txt tmp-ad-domains.txt
 rm -f ../{dns.txt,hosts.txt,ad-domains.txt}
 cat .././mod/rules/* *.txt | grep '^@' \
  | sort -n | uniq > tmp-allow.txt 
