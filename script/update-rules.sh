@@ -267,7 +267,8 @@ cat tmp-ad-domains.txt \
  | sort -n | uniq > tmp-hosts.txt #处理广告域名
 EOF
 cd ../tmp/
-mv ../{dns.txt,hosts.txt,ad-domains.txt} ./{tmp-dns.txt,tmp-hosts.txt,tmp-ad-domains.txt}
+mv ../{dns.txt,hosts.txt,ad-domains.txt} ./
+rename 's/^/tmp-/' dns.txt hosts.txt ad-domains.txt
 rm -f ../{dns.txt,hosts.txt,ad-domains.txt}
 cat .././mod/rules/* *.txt | grep '^@' \
  | sort -n | uniq > tmp-allow.txt 
