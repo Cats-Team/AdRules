@@ -9,6 +9,7 @@
 
 return array(
     /**start**/
+    '360.cn' => 1,
     'app.market.xiaomi.com' => 0,
     'www.paypalobjects.com' => 0,
     'a-msedge.net' => 0,
