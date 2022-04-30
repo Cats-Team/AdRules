@@ -28,7 +28,7 @@ $ARR_REGEX_LIST = array(
 
 //对通配符匹配或正则匹配增加的额外赦免规则
 $ARR_WHITE_RULE_LIST = array(
-  '@|t.uc.cn^' => 0, //夸克網盤登陸
+  '@@||t.uc.cn^' => 0, //夸克網盤登陸
 );
 
 //针对上游赦免规则anti-AD不予赦免的规则，即赦免名单的黑名单
