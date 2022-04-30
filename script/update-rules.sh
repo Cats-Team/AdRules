@@ -125,7 +125,8 @@ clash=(
    "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/BanEasyList.list"
    "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/BanEasyListChina.list"
    "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/BanEasyPrivacy.list"
-   "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/AdvertisingLite/AdvertisingLite_Classical.yaml"
+#   "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/AdvertisingLite/AdvertisingLite_Classical.yaml"
+   "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Advertising/Advertising_Classical.yaml"
    "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Privacy/Privacy_Classical.yaml"
 )
 
@@ -169,10 +170,10 @@ wait
 # Pre Fix rules
 echo '处理规则中...'
 cat clash* \
- | grep -F 'DOMAIN' | sed 's/.*DOMAIN-SUFFIX,\,//g' |sed "s/^/||&/g" |sed "s/$/&^/g"> dns9999.txt 
+ | grep -F 'DOMAIN' | sed 's/.*DOMAIN*\,//g' |sed "s/^/||&/g" |sed "s/$/&^/g"> dns9999.txt 
 
 cat clash* \
- | grep -F 'DOMAIN' | sed 's/.*DOMAIN-KEYWORD,\,//g' |sed "s/^/\/&/g" >> l.txt 
+ | grep -F 'DOMAIN' | sed 's/.*DOMAIN-KEYWORD\,//g' |sed "s/^/\/&/g" > l.txt 
 
 cat hosts*.txt | sort -n| grep -v -E "^((#.*)|(\s*))$" \
  | grep -v -E "^[0-9f\.:]+\s+(ip6\-)|(localhost|local|loopback)$" \
