@@ -43,7 +43,10 @@ jobs:
       # Install hostlist-compiler
       - name: Install hostlist-compiler
         run: npm i -g @adguard/hostlist-compiler
-
+      - name: Install rename
+        run: |
+          sudo apt update
+          sudo apt install rename
       - name: Update Rules
         continue-on-error: true
         run: |
