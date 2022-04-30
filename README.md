@@ -34,11 +34,11 @@
 * DNS过滤器请使用AdRules (For DNS)
 ## 规则总数
 ```
-更新时间: 2022-04-30 20:32:23 （北京时间） 
+更新时间: 2022-04-30 20:50:46 （北京时间） 
 
 AdRules（For AdBlock）规则数量: 91050 
 
-AdRules（For AdGuard）规则数量: 107698 
+AdRules（For AdGuard）规则数量: 108044 
 
 AdRules（For DNS）规则数量: 130859 
 
