@@ -319,6 +319,6 @@ echo '规则处理完成'
 cat ad-domains.txt \
  | grep -v "^! "| sed "s/^/DOMAIN-SUFFIX,&/g" > banclash-ad.list
 
-
+sed -i 's/!/#/g' hosts.txt
 rm -rf pre tmp *.md5
 exit
