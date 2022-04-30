@@ -1,7 +1,7 @@
 [Adblock Plus 1.1]
-! Version: 202204291639
+! Version: 202204300008
 ! Title: EasyPrivacy
-! Last modified: 29 Apr 2022 16:39 UTC
+! Last modified: 30 Apr 2022 00:08 UTC
 ! Expires: 4 days (update frequency)
 ! Homepage: https://easylist.to/
 ! Licence: https://easylist.to/pages/licence.html
@@ -3047,6 +3047,7 @@
 /new-relic.$~stylesheet
 /new.cnt.aspx?
 /newlog.php?
+/newrelic-browser.
 /newrelic-google-
 /newrelic-gpt.
 /newrelic.browser.
@@ -10827,6 +10828,7 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 ! Japanese
 ||accesstrade.net^$third-party
 ||adgainersolutions.com^$third-party
+||adgocoo.com^$third-party
 ||admatrix.jp^$third-party
 ||adplan7.com^$third-party
 ||adpon.jp^$third-party
@@ -11937,6 +11939,7 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 ||events.attentivemobile.com^
 ||events.audiate.me^
 ||events.brightline.tv^
+||events.btw.so^
 ||events.demoup.com^
 ||events.jokerly.com^
 ||events.jotform.com^
@@ -12830,6 +12833,7 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 ||socialannex.com/c-sale-track/$script
 ||sourceforge.net/tracker/$~xmlhttprequest
 ||southafricahome.com/statsmodulev2/
+||sp-wukong-tracker.b-cdn.net^
 ||spaceprogram.com/webstats/
 ||sparklit.com/counter/
 ||speedtest.dailymotion.com/latencies.js
@@ -14659,6 +14663,7 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 ||brightside.me/metric-collector
 ||browser.mi-img.com^
 ||builder.io/api/v1/track
+||buondua.com/hit/
 ||bwbx.io/s3/javelin/public/hub/js/abba/$script,domain=bloomberg.co.jp|bloomberg.com
 ||c.paypal.com^$script
 ||c.wort-suche.com^
@@ -15082,7 +15087,6 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 ||neowin.net/ws/$websocket
 ||net.haier.com^
 ||netflix.com/msl/playapi/cadmium/logblob/
-||netu.wiztube.xyz^
 ||newegg.com/amber3/tracking?
 ||news.google.com/_/v
 ||newscom.com/js/v2/ga.js
@@ -15105,6 +15109,7 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 ||nytimes.com/v1/purr-cache
 ||nzpages.co.nz/modules/common/track.js
 ||odysee.com/reports/
+||ohm-dot-hackster-io.appspot.com^
 ||online-umwandeln.de/analytics.js
 ||ophan.theguardian.com^
 ||optimize-stats.voxmedia.com^
@@ -25373,11 +25378,13 @@ $csp=child-src 'none'; frame-src *; worker-src 'none',domain=skyback.ru|szukajka
 ||cherry.le.com^
 ||clewm.net/public/cli_analytics.js$domain=cli.im
 ||click.gamersky.com^
+||cm.bilibili.com^
 ||cmstool.youku.com^
 ||collect.tianya.cn^
 ||count5.pconline.com.cn^
 ||counter.people.cn^
 ||cstm.baidu.com^
+||data.bilibili.com^
 ||dcard.tw/v1/events
 ||dlswbr.baidu.com^
 ||dolphin.deliver.ifeng.com^
@@ -25418,6 +25425,7 @@ $csp=child-src 'none'; frame-src *; worker-src 'none',domain=skyback.ru|szukajka
 ||le.com/op/
 ||letv.com/op?
 ||lg.tr.pandora.tv^
+||live-trace.bilibili.com^
 ||log*.ku6.com^
 ||log.51cto.com^
 ||log.aliyuncs.com^
@@ -25439,6 +25447,7 @@ $csp=child-src 'none'; frame-src *; worker-src 'none',domain=skyback.ru|szukajka
 ||mail.qq.com/cgi-bin/getinvestigate?
 ||map.baidu.com/newmap_test/static/common/images/transparent.gif
 ||mar.vip.com^
+||metric.huya.com^
 ||mi.com/stat/
 ||monitor.music.qq.com^
 ||mp.huangye.miui.com^
@@ -25478,6 +25487,7 @@ $csp=child-src 'none'; frame-src *; worker-src 'none',domain=skyback.ru|szukajka
 ||qhimg.com/11.0.1.js$script
 ||qihucdn.com/11.0.1.js$script
 ||qq.com/code.cgi?
+||qq.com/collect/
 ||qq.com/kvcollect?
 ||qq.com/p?
 ||qq.com/qqcom/
@@ -26815,6 +26825,7 @@ $csp=child-src 'none'; frame-src *; worker-src 'none',domain=skyback.ru|szukajka
 @@||gtimg.com/qqcdn/*/beacon.min.js$script,domain=qq.com
 @@||hk.on.cc/js/v4/urchin.js
 @@||hm.baidu.com/hm.gif$image,domain=clgod.com
+@@||line-scdn.net^*/torimochi.js$script,domain=web-tw-pay.line.me
 @@||tianxun.com^*/js/tracker.js
 @@||tianyancha.com^*/sensorsdata.$script,~third-party
 @@||uwants.com/include/*/swfaddress.js
