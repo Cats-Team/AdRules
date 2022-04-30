@@ -6,7 +6,7 @@ num_adb=`sed -n 's/^! Total count: //p' adblock.txt`
 num_adp=`sed -n 's/^! Total count: //p' adblock+adguard.txt`
 num_dns=`sed -n 's/^! Total count: //p' dns.txt`
 num_hosts=`sed -n 's/^# Total count: //p' hosts.txt`
-num_domains=`sed -n 's/^# Total count: //p' ad-domains.txt`
+num_domains=`sed -n 's/^! Total count: //p' ad-domains.txt`
 
 time=$(TZ=UTC-8 date +'%Y-%m-%d %H:%M:%S')
 sed -i "s/^更新时间:.*/更新时间: $time （北京时间） /g" README.md
