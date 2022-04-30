@@ -15,7 +15,6 @@ dead_hosts=(
   "https://raw.githubusercontent.com/EnergizedProtection/unblock/master/basic/formats/domains.txt"
   "https://raw.githubusercontent.com/eded333/TheFuckingList/main/whitelist.txt"
   "https://raw.githubusercontent.com/Ultimate-Hosts-Blacklist/blacklist/master/whitelisted.list"
-  "https://trli.coding.net/p/file/d/file/git/raw/master/ad-allow.txt"
   "https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/ChineseFilter/sections/whitelist.txt"
   "https://easylist-downloads.adblockplus.org/exceptionrules.txt"
   "https://raw.githubusercontent.com/Zelo72/adguard/main/whitelist.adguard"
