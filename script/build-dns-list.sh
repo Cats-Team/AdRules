@@ -13,5 +13,9 @@ echo "! Total lines: 00000" >> ../easylist.txt
 grep -vE '^!' ../dns.txt >> ../easylist.txt
 php ./tools/adguard-extend.php ../easylist.txt
 php ./tools/easylist-extend.php ../dns.txt
+cd ../
+hostlist-compiler -c ./script/dns-rules-config.json -o dns-output.txt 
+cd ./script/
+mv dns-output.txt dns.txt
 cat ../tmp/{l.txt,dns998*} >>../dns.txt
 cat .././mod/rules/*-rules.txt |grep -E "^[(\@\@)|(\|\|)][^\/\^]+\^$" |sort|uniq >> ../dns.txt
