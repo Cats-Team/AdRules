@@ -10,12 +10,12 @@
 return array(
     /**start**/
     '360.cn' => 0,
-    'shop.wot.360.cn => 0,
-    'wot.360.cn => 0,
-    'pay.wg.360.cn => 0,
-    'vod.wg.360.cn => 0,
-    'wg.360.cn => 0,
-    'login.360.cn => 0,
+    'shop.wot.360.cn' => 0,
+    'wot.360.cn' => 0,
+    'pay.wg.360.cn' => 0,
+    'vod.wg.360.cn' => 0,
+    'wg.360.cn' => 0,
+    'login.360.cn' => 0,
     'app.market.xiaomi.com' => 0,
     'www.paypalobjects.com' => 0,
     'a-msedge.net' => 0,
