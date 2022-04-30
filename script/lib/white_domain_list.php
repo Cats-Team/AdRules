@@ -9,6 +9,7 @@
 
 return array(
     /**start**/
+    't.uc.cn' => 0, //夸克瀏覽器掃碼登陸
     '360.cn' => 0,
     'shop.wot.360.cn' => 0,
     'wot.360.cn' => 0,
