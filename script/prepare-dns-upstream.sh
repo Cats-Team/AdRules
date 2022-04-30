@@ -7,6 +7,9 @@ cd $(cd "$(dirname "$0")";pwd)
 dead_hosts=(
   "https://raw.githubusercontent.com/notracking/hosts-blocklists-scripts/master/domains.dead.txt"
   "https://raw.githubusercontent.com/notracking/hosts-blocklists-scripts/master/hostnames.dead.txt"
+  "https://raw.githubusercontent.com/privacy-protection-tools/dead-horse/master/anti-ad-white-list.txt"
+  "https://raw.githubusercontent.com/anudeepND/whitelist/master/domains/whitelist.txt"
+  "https://raw.githubusercontent.com/anudeepND/whitelist/master/domains/optional-list.txt"
 )
 for i in "${!dead_hosts[@]}"
 do
