@@ -169,8 +169,10 @@ wait
 # Pre Fix rules
 echo '处理规则中...'
 cat clash* \
- | grep -F 'DOMAIN' | sed 's/.*DOMAIN.*\,//g' |sed "s/^/||&/g" |sed "s/$/&^/g"> dns9999.txt 
+ | grep -F 'DOMAIN' | sed 's/.*DOMAIN-SUFFIX,\,//g' |sed "s/^/||&/g" |sed "s/$/&^/g"> dns9999.txt 
 
+cat clash* \
+ | grep -F 'DOMAIN' | sed 's/.*DOMAIN-KEYWORD,\,//g' |sed "s/^/\/&/g" >> l.txt 
 
 cat hosts*.txt | sort -n| grep -v -E "^((#.*)|(\s*))$" \
  | grep -v -E "^[0-9f\.:]+\s+(ip6\-)|(localhost|local|loopback)$" \
@@ -202,7 +204,7 @@ cat allow-domains0.txt | sed '/^$/d' | grep -v "#" \
 
 cat *.txt | sed '/^$/d' \
  |grep -E "^\/[a-z]([a-z]|\.)*\.$" \
- |sort -u > l.txt &
+ |sort -u >> l.txt &
 
 cat dead-hosts* \
  | sed "s/^/||&/g" | sed "s/$/&^/g" > deadblock.txt &
