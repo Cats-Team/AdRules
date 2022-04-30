@@ -229,7 +229,7 @@ cat full-adguard*.txt \
  |grep -Ev "^((\!)|(\[)).*" \
  | sort -n | uniq | awk '!a[$0]++' > tmp-adguard-full.txt  #处理AdGuard的Full规则
 
-bash ./script/prepare-dns-upstream.sh
+bash ../script/prepare-dns-upstream.sh
 << EOF
 cat .././mod/rules/*-rules.txt dns*.txt dns10.txt *easylist*.txt full-adg*.txt abp-hosts*.txt \
  | grep -E "(^\*.*|^-.*|^\/.*|^\..*|^:.*|^[a-z])|([(\@\@)|(\|\|)][^\/\^]+\^)" \
@@ -267,7 +267,7 @@ cat tmp-ad-domains.txt \
  | sort -n | uniq > tmp-hosts.txt #处理广告域名
 EOF
 cd ../tmp/
-cat ../{dns.txt,hosts.txt,ad-domains.txt}|grep -Ev '!|# >./{tmp-dns.txt,tmp-hosts.txt,tmp-ad-domains.txt}
+cat ../{dns.txt,hosts.txt,ad-domains.txt}|grep -Ev '!|#' >./{tmp-dns.txt,tmp-hosts.txt,tmp-ad-domains.txt}
 rm -f ../{dns.txt,hosts.txt,ad-domains.txt}
 cat .././mod/rules/* *.txt | grep '^@' \
  | sort -n | uniq > tmp-allow.txt 
