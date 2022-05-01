@@ -1,10 +1,10 @@
 ! Title: AdRules Allowlist
-! Checksum: sNpCViF5aPLdLpvimLjRAw
+! Checksum: lHUAls47VX6ejUAS0ZWkuA
 ! Homepage: https://github.com/Cats-Team/AdRules
 ! Powerd by CatsTeam
 ! Expires: 8 Hours
-! Version: 2022-05-01 01:38:38（北京时间） 
-! Total count: 17986
+! Version: 2022-05-01 08:40:57（北京时间） 
+! Total count: 17988
 @@$app=com.x.addon.cast
 @@$csp=worker-src 'none',domain=uptostream.com
 @@$domain=avgle.com,webrtc,websocket
@@ -3242,6 +3242,7 @@
 @@||button.like.co/in/*referrer=$removeparam
 @@||buttons-config.sharethis.com/js^$domain=haberkibris.com
 @@||buttons.reddit.com^$domain=redditstatic.com
+@@||buy.tinypass.com/checkout/template/cacheableShow$subdocument,domain=thenation.com
 @@||buy.tinypass.com^$script,subdocument,domain=independent.co.uk
 @@||buyad.bi-xenon.cn^
 @@||buyitonline.store^$generichide
@@ -10043,6 +10044,7 @@
 @@||lewdzone.com^$generichide
 @@||lewdzone.com^$ghide
 @@||lexpress.fr/*/ads.css$stylesheet
+@@||lexpress.fr/tagcommander.js$script,~third-party
 @@||lg-firmwares.com^$ghide
 @@||lggautotrasporti.esy.es/images/logofinaleLGG.png$image,domain=lggautotrasporti.esy.es
 @@||lggautotrasporti.esy.es^$elemhide
