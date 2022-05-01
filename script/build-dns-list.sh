@@ -8,7 +8,7 @@ php make-dns-addr.php
 echo
 echo "! Title: AdRules for AdGuard" > ../easylist.txt
 echo "! Version: $(date "+%Y%m%d%H%M%S%N")" >> ../easylist.txt
-echo "! Homepage: https://anti-ad.net/" >> ../easylist.txt
+echo "! Homepage: https://github.com/Cats-Team/AdRules" >> ../easylist.txt
 echo "! Total lines: 00000" >> ../easylist.txt
 grep -vE '^!' ../dns.txt >> ../easylist.txt
 php ./tools/adguard-extend.php ../easylist.txt
