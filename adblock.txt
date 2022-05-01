@@ -1,12 +1,12 @@
 [Adblock Plus 2.0]
-! Checksum: q4JLtKfYMlRakvRDU6+JJQ
+! Checksum: /ZHRpAPMuRArZL+ovcLsqw
 ! Title: AdRules (For AdBlock)
 ! Homepage: https://github.com/Cats-Team/AdRules
 ! Powerd by CatsTeam
 ! Expires: 8 Hours
 ! Description: 该规则合并自EasyList、EasyListChina、AdGuard Chinese Filter、EdentwCustom、ClearUrl、乘风规则等，并补充了一些规则
-! Version: 2022-05-01 18:57:39（北京时间） 
-! Total count: 91342
+! Version: 2022-05-01 22:33:00（北京时间） 
+! Total count: 91360
 ###ADCENTER
 ###ADSLOT_1
 ###ADTOP
@@ -6427,6 +6427,7 @@
 ##A[href^="http://www.yourfilezone.com/play?lng="]
 ##A[href^="https://action.metaffiliation.com/trk.php?"]
 ##DFP-AD
+##DIV#ad-index.col-12.position-relative
 ##DIV[style=" max-width:994px;  margin:0 auto;"] > A > IMG[height="60px"]
 ##FBS-AD
 ##LEADERBOARD-AD
@@ -7471,6 +7472,7 @@ $removeparam=/^affid=/i,domain=~redir.tradedoubler.com|~affiliate.geekbuying.com
 $removeparam=/^affiliateID=/i
 $removeparam=/^affsrc=/i
 $removeparam=/^amp$/
+$removeparam=/^amp=true$/
 $removeparam=/^ath[a-z]*=/,domain=walmart.com
 $removeparam=/^bi[a-z]*=/,domain=google.*
 $removeparam=/^bsft_/
@@ -7955,7 +7957,7 @@ $removeparam=channable
 $removeparam=channel,domain=reddit.app.link
 $removeparam=channel,domain=rei.com|squarespace.com|privateinternetaccess.com|bybit.com|t.me|twitter.com|docs.google.com|instagram.com|forms.gle|goodcrypto.app|eventbrite.*|youtube.com|coinpanel.com|docsend.com|kasta.io|runnode.com|gleam.io|1sol.io
 $removeparam=channelref,domain=asos.com
-$removeparam=cid,domain=abcnews.go.com|adguard.com|adshares.net|ae.com|anntaylor.com|apple.com|bitdefender.*|blair.com|childrensplace.com|elmundo.es|emirates.com|factoryoutletstore.com|flipkart.com|gamestop.com|giphy.com|glasses.com|haband.com|intuit.com|jared.com|jcpenney.com|kay.com|kohls.com|lenovo.com|loft.com|marca.com|nbcnews.com|nike.com|nyandcompany.com|overstock.com|persol.com|proshop.*|radissonhotelsamericas.com|ray-ban.com|rei.com|rightmove.co.uk|samsung.com|stadium.*|staples.com|telenor.no|tommy.com|toms.com|tractorsupply.com|underarmour.com|vineyardvines.com|voxi.co.uk|wine.com|wsj.com|microsoft.com|xg4ken.com|zales.com
+$removeparam=cid,domain=abcnews.go.com|adguard.com|adshares.net|ae.com|anntaylor.com|apple.com|bitdefender.*|blair.com|childrensplace.com|elmundo.es|emirates.com|factoryoutletstore.com|flipkart.com|gamestop.com|giphy.com|glasses.com|haband.com|intuit.com|jared.com|jcpenney.com|kay.com|kohls.com|lenovo.com|loft.com|marca.com|nbcnews.com|nike.com|nyandcompany.com|overstock.com|persol.com|proshop.*|radissonhotelsamericas.com|ray-ban.com|rei.com|rightmove.co.uk|samsung.com|stadium.*|staples.com|telenor.no|tokopedia.com|tommy.com|toms.com|tractorsupply.com|underarmour.com|vineyardvines.com|voxi.co.uk|wine.com|wsj.com|microsoft.com|xg4ken.com|zales.com
 $removeparam=cid,domain=lazada.com.my
 $removeparam=cid,domain=vitamix.com
 $removeparam=cjReq
@@ -8869,7 +8871,7 @@ $removeparam=sr_id,domain=reddit.app.link
 $removeparam=sr_name,domain=reddit.app.link
 $removeparam=sr_share
 $removeparam=sr_share,domain=techcrunch.com
-$removeparam=src,domain=3cx.com|adafruit.com|ashford.com|bluejeans.com|bose.*|brave.com|buyzero.de|cytron.io|digikey.*|elastix.org|engadget.com|hinta.fi|investors.com|kennethcole.com|kipling-usa.com|kubii.*|melopero.com|mozilla.org|newbalance.com|nexo.io|okdo.com|raspipc.es|reichelt.*|thepihut.com|thunderbird.net|tiendatec.es|twitter.com|udemy.com|viking-direct.co.uk|webmd.com|welectron.com|wondershare.*|wuzhuiso.com|yahoo.com
+$removeparam=src,domain=3cx.com|adafruit.com|ashford.com|bluejeans.com|bose.*|brave.com|buyzero.de|cytron.io|digikey.*|elastix.org|engadget.com|hinta.fi|investors.com|kennethcole.com|kipling-usa.com|kubii.*|melopero.com|mozilla.org|newbalance.com|nexo.io|okdo.com|raspipc.es|reichelt.*|thepihut.com|thunderbird.net|tiendatec.es|tokopedia.com|twitter.com|udemy.com|viking-direct.co.uk|webmd.com|welectron.com|wondershare.*|wuzhuiso.com|yahoo.com
 $removeparam=src,domain=idealo.de
 $removeparam=src,domain=mozilla.org
 $removeparam=src,domain=shutterstock.com
@@ -51439,6 +51441,7 @@ zznews.cn##.ad:not([style])
 ||as.com^$removeparam=m4
 ||as.com^$removeparam=m5
 ||as.com^$removeparam=omnil
+||as.dingyar.top^
 ||as.ebalovo.adult^
 ||as.kuanxin.top^
 ||as.lenkino.adult^
@@ -51478,6 +51481,7 @@ zznews.cn##.ad:not([style])
 ||asemskull.com^
 ||asemskull.com^$domain=igg-games.com
 ||asewlfjqwlflkew.com^
+||asf1v.vancuongthinh.com^
 ||asg.allweb.click^
 ||asg.aphex.me^
 ||asg.faperoni.com^
@@ -54709,6 +54713,7 @@ zznews.cn##.ad:not([style])
 ||cgicounter.oneandone.co.uk^
 ||cgicounter.onlinehome.de^
 ||cgicounter.puretec.de^
+||cgmalight.com^
 ||cgown.com^*/peiyinquan
 ||cgqkhc.trendyol.com^
 ||cgskqg.com^
@@ -62363,6 +62368,7 @@ zznews.cn##.ad:not([style])
 ||gnpge.com^$third-party
 ||gnshwf.room-park.ru^
 ||go-mpulse.net^
+||go-top.xyz^
 ||go.$domain=kickass.cd|thepiratebay.*|btsow.*
 ||go.acclaro.com^
 ||go.acelisconnectedhealth.com^
@@ -63877,6 +63883,7 @@ zznews.cn##.ad:not([style])
 ||hkcoding.com/img/
 ||hkdm688.*/js/68/
 ||hkdyys.cn^
+||hkep.fqxkj.cn^
 ||hkeynjiwpgvfzr.com^
 ||hkfuy.com^
 ||hkhnmasegg.com^
@@ -67476,6 +67483,7 @@ zznews.cn##.ad:not([style])
 ||kmindex.ru^$third-party
 ||kmmgoogle.oss-ap-southeast-1.aliyuncs.com^
 ||kmpkedsbdb.com^
+||kmpl.rnqxp.cn^
 ||kmplayer.cn/include/jscript/*-a.js
 ||kmpxq.cn^
 ||kmr.jiujigroup.top^
@@ -67508,6 +67516,7 @@ zznews.cn##.ad:not([style])
 ||knowledge.equitymethods.com^
 ||knowledge.theamericancollege.edu^
 ||knowledgevine.net^$third-party
+||kntb.sglyd.cn^
 ||knutenegros.pro^
 ||knzqjr.pult.ru^
 ||koalaups.com^
@@ -67629,6 +67638,7 @@ zznews.cn##.ad:not([style])
 ||ktkkt.com/js/tvb/
 ||ktracker.kumparan.com^
 ||kttarmufti.com^
+||ktu.twdjn.cn^
 ||ktxtr.com^$third-party
 ||ktzhk.com/file/adv/
 ||ktzte.cn^
@@ -71264,6 +71274,7 @@ zznews.cn##.ad:not([style])
 ||mkkoifnukk.com^
 ||mklik.gazeta.pl^
 ||mkmree.dmm.co.jp^
+||mkn.hlzyb.cn^
 ||mkoh.top^
 ||mkpzmq.crocs.ru^
 ||mksogv.oneclickdrive.com^
@@ -74351,6 +74362,7 @@ zznews.cn##.ad:not([style])
 ||peqvwk.notino.at^
 ||perceivefilthy.com^
 ||perceivequarter.com^$third-party
+||percent.pfiparts.com^
 ||percentmobile.com^$third-party
 ||percycle.com^$third-party
 ||perf-events.cloud.unity3d.com^
@@ -81259,11 +81271,13 @@ zznews.cn##.ad:not([style])
 ||ssl-omtrdc.zexy.net^
 ||ssl-services.com^
 ||ssl.aafp.org^
+||ssl.ailehui9149.com^
 ||ssl.bbbr8.com^
 ||ssl.css.cdn120.com/js/application.js
 ||ssl.css.cdn120.com/js/gcxsbdads*.js
 ||ssl.css.cdn120.com/js/gcxsfeeds.js
 ||ssl.images.audycje.tokfm.pl/prodstatic360/img/autopromocja/*.mp3$domain=audycje.tokfm.pl
+||ssl.linyiccic.com^
 ||ssl.o.emedicinehealth.com^
 ||ssl.o.mdedge.com^
 ||ssl.o.medhelp.org^
@@ -83967,6 +83981,7 @@ zznews.cn##.ad:not([style])
 ||tokei.upstract.com^
 ||tokenads.com^
 ||tokopedia.com^$removeparam=whid
+||tokopedia.com^$removeparam=xClientId
 ||tolerated.wang^
 ||tollholdmeg.cam^
 ||tolyafbnjt9dedjj10.com^
@@ -88386,17 +88401,20 @@ zznews.cn##.ad:not([style])
 ||www.govchongqing.cn^
 ||www.govguangxi.cn^
 ||www.govguilin.cn^
+||www.govguiyang.cn^
 ||www.govhangzhou.cn^
 ||www.govhebie.cn^
 ||www.govhechi.cn^
 ||www.govjieyang.cn^
 ||www.govkunming.cn^
 ||www.govlaibing.cn^
+||www.govlihu.cn^
 ||www.govliuzhou.cn^
 ||www.govshangxi.cn^
 ||www.govshenzhen.cn^
 ||www.govxian.cn^
 ||www.govxinjiang.cn^
+||www.govxinjing.cn^
 ||www.govyunfu.cn^
 ||www.govyunnan.cn^
 ||www.govzhajian.cn^

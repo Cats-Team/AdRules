@@ -959,7 +959,8 @@ rule34.xxx##+js(aopr, newcontent)
 rule34.xxx##a[href*=".html"]
 rule34.xxx##[src^="https://rule34.xxx/aa/"]
 rule34.xxx###right-col > div > #lbot1.a_list
-rule34.xxx##body:style(background: var(--c-bg, #aae5a3) !important)
+rule34.xxx##body > a > div[id]:style(background: var(--c-bg, #aae5a3) !important)
+rule34.xxx###halloween
 ||rule34.xxx/images/clicker.png
 realbooru.com##+js(aopr, ExoLoader.serve)
 realbooru.com##.adzoneTest
@@ -4442,8 +4443,9 @@ broadwayworld.com##a[href^="https://ad.doubleclick.net/ddm/"]
 ! https://www.reddit.com/r/uBlockOrigin/comments/85m6fp/ublock_origin_is_showing_adds_on_a_website_for_me/
 op.gg##+js(aopw, lifeOnwer)
 op.gg##+js(nostif, adblock, 2000)
-! https://github.com/uBlockOrigin/uAssets/issues/12887
-op.gg##div[class^="css-"]:has(> div:not([class], [id]) > .vm-placement)
+! https://github.com/uBlockOrigin/uAssets/issues/13033
+op.gg##div[class^="css-"]:has(> div:not([class], [id]) > .vm-placement:not([style]))
+op.gg##div[class^="css-"]:has(> div:not([class], [id]) > .vm-placement[data-display-type="hybrid-banner"])
 ! https://github.com/uBlockOrigin/uAssets/issues/13023
 op.gg##[id^="div-gpt-ad"]:not([class]):upward(div[class])
 
