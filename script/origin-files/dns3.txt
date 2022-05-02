@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Checksum: j8v1DcQj5h9eKCXsqeZPaw
-! Version: 202205020815
+! Checksum: 3lXpNeRjVoTZG3Tn7Y/jPg
+! Version: 202205021625
 ! Title: EasyList China+EasyList
-! Last modified: 02 May 2022 08:15 UTC
+! Last modified: 02 May 2022 16:25 UTC
 ! Expires: 1 days (update frequency)
 ! Homepage: https://github.com/easylist/easylistchina/
 !
@@ -824,6 +824,7 @@ ubmcmm.baidustatic.com
 ###asdw2
 ###asdw2 + img
 ###aside_cat_ad_bottom
+###bannerslide > a[href^="/goto.php?url="]
 ###bl_mobile_float
 ###body > #left-promotion
 ###body > #right-promotion
@@ -961,7 +962,6 @@ ubmcmm.baidustatic.com
 ###rip[href*=".taobao.com"]
 ###search > a[href="/top1.html"]
 ###sitefocus.focus
-###bannerslide > a[href^="/goto.php?url="]
 ###snActive-wrap
 ###sponsorAdDiv2
 ###swtleft[style^="position:fixed;"]
@@ -1152,7 +1152,6 @@ ubmcmm.baidustatic.com
 ##.gg-one
 ##.gg1000
 ##.gg430
-##DIV[style=" max-width:997px;  margin:0 auto;"] > A > IMG[height="60px"]
 ##.gg_300
 ##.gg_728
 ##.gg_950
@@ -1412,6 +1411,7 @@ ubmcmm.baidustatic.com
 ##div[style=" max-width:995px;  margin:0 auto;"] > a > img[height="120px"]
 ##div[style=" max-width:995px;  margin:0 auto;"] > a > img[height="60px"]
 ##div[style=" max-width:996px;  margin:0 auto;"] > a > img[height="60px"]
+##div[style=" max-width:997px;  margin:0 auto;"] > a > img[height="60px"]
 ##div[style=" max-width:998px;  margin:0 auto;"] > a > img[height="120px"]
 ##div[style=" max-width:998px;  margin:0 auto;"] > a > img[height="60px"]
 ##div[style=" max-width:999px;  margin:0 auto;"] > a > img[height="60px"]
@@ -1700,7 +1700,6 @@ ubmcmm.baidustatic.com
 ##img[onclick*="/c7.net/"]
 !----------------------------------Ads-Union----------------------------------!
 .8ox.cn
-||kukanlm-lubu1.com^
 ||00-gov.cn^
 ||000123456789.site^
 ||0024aaaa.com^
@@ -3126,6 +3125,7 @@ ubmcmm.baidustatic.com
 ||ku63.com^$third-party
 ||ku9377.com^
 ||kuaizitech.com^$third-party
+||kukanlm-lubu1.com^
 ||kukanlm-youeryuan.com^
 ||kuqi.com^$third-party
 ||kuwoyy.com^
@@ -5801,6 +5801,7 @@ hxsame.hexun.com$domain=~quote.hexun.com
 ||btn.pchome.net^
 ||btpian.com/static/*960.js
 ||btpian.com/static/wenquan.js
+||btwuji.com/js2/
 ||buimg.com^$domain=kisssub.org
 ||bumimi.com/money/
 ||business.92wy.com^
@@ -8516,7 +8517,7 @@ hxsame.hexun.com$domain=~quote.hexun.com
 ||szhk.com/include/taobao
 ||szhongzi.com/js/
 ||szjjzs.com/js/cs*.js
-||szjjzs.com/js/dd.js
+||szjjzs.com/js/d*.js
 ||szjjzs.com/js/fe
 ||szjjzs.com/js/piao.js
 ||sznews.com/s?z=
@@ -9378,7 +9379,6 @@ hxsame.hexun.com$domain=~quote.hexun.com
 ||zzsky.cn/images/a_d_
 ||zzz4.com/JS_AD/
 ||zzzyk.com/js/
-||btwuji.com/js2/
 !------------------------Specific element hiding rules------------------------!
 szxx.com.cn###A0
 szxx.com.cn###A1
@@ -11499,6 +11499,7 @@ vod1769.com##.banner_img
 fanyi.baidu.com##.banner_img_container
 newcger.com##.banner_recom
 sinami.com##.banner_rightBottom
+yxlady.com##.banner_simple
 zhaogepu.com##.banner_top
 591hx.com##.banner_w
 vanpeople.com##.banneradv-newbox
@@ -17315,7 +17316,6 @@ $script,subdocument,third-party,websocket,xmlhttprequest,domain=00ksw.com|01zww.
 @@||pstatp.com/cdn/*/jquery/$script,domain=bxwx11.com
 @@||zmtt.net^$script,domain=luoqiuzw.com
 !#Novels ads union
-||wuxie419.xyz^
 ##a[href$=".120ydrayy.com"]
 ##a[href*=".1956hl.com/"]
 ##a[href*=".233787.com/"]
@@ -21109,6 +21109,7 @@ $script,subdocument,third-party,websocket,xmlhttprequest,domain=00ksw.com|01zww.
 ||wulongqiyi.com^
 ||wutaixian.shop^
 ||wuxiap.xyz^
+||wuxie419.xyz^
 ||wuxiqiangheng.com^
 ||wuygmdi.cn^
 ||wuyoudan.cn^
@@ -21874,6 +21875,7 @@ qq.com#@#.side_ad
 ##.heg > .partner-list
 ##a[href^="/dasp.php?a="]
 !#sihu
+##.col5 > dl#randomBox
 ##.search + #midBox
 ##.wrap + #btmBox
 ##.wrap + #midBox
@@ -82414,7 +82416,7 @@ youporn.com#?#aside:-abp-has(a.ad-remove)
 @@||pornbraze.com^$generichide
 @@||rule34hentai.net^$generichide
 @@||urlgalleries.net^$generichide
-! *** easylist:easylist_adult/adult_allowlist_popup.txt ***pc/
+! *** easylist:easylist_adult/adult_allowlist_popup.txt ***com/mount_details/pc/
 ||qdjimo.com/html/js/
 ||qdross.com/vip/
 ||qhdlz.net/ssyyss/m.js
@@ -82887,7 +82889,7 @@ youporn.com#?#aside:-abp-has(a.ad-remove)
 ||szhk.com/include/taobao
 ||szhongzi.com/js/
 ||szjjzs.com/js/cs*.js
-||szjjzs.com/js/dd.js
+||szjjzs.com/js/d*.js
 ||szjjzs.com/js/fe
 ||szjjzs.com/js/piao.js
 ||sznews.com/s?z=
@@ -83749,7 +83751,6 @@ youporn.com#?#aside:-abp-has(a.ad-remove)
 ||zzsky.cn/images/a_d_
 ||zzz4.com/JS_AD/
 ||zzzyk.com/js/
-||btwuji.com/js2/
 !------------------------Specific element hiding rules------------------------!
 szxx.com.cn###A0
 szxx.com.cn###A1
@@ -85870,6 +85871,7 @@ vod1769.com##.banner_img
 fanyi.baidu.com##.banner_img_container
 newcger.com##.banner_recom
 sinami.com##.banner_rightBottom
+yxlady.com##.banner_simple
 zhaogepu.com##.banner_top
 591hx.com##.banner_w
 vanpeople.com##.banneradv-newbox
@@ -91686,7 +91688,6 @@ $script,subdocument,third-party,websocket,xmlhttprequest,domain=00ksw.com|01zww.
 @@||pstatp.com/cdn/*/jquery/$script,domain=bxwx11.com
 @@||zmtt.net^$script,domain=luoqiuzw.com
 !#Novels ads union
-||wuxie419.xyz^
 ##a[href$=".120ydrayy.com"]
 ##a[href*=".1956hl.com/"]
 ##a[href*=".233787.com/"]
@@ -95480,6 +95481,7 @@ $script,subdocument,third-party,websocket,xmlhttprequest,domain=00ksw.com|01zww.
 ||wulongqiyi.com^
 ||wutaixian.shop^
 ||wuxiap.xyz^
+||wuxie419.xyz^
 ||wuxiqiangheng.com^
 ||wuygmdi.cn^
 ||wuyoudan.cn^
@@ -96245,6 +96247,7 @@ qq.com#@#.side_ad
 ##.heg > .partner-list
 ##a[href^="/dasp.php?a="]
 !#sihu
+##.col5 > dl#randomBox
 ##.search + #midBox
 ##.wrap + #btmBox
 ##.wrap + #midBox

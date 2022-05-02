@@ -1,10 +1,10 @@
 ! Title: AdRules Allowlist
-! Checksum: TgoChYlY6TrlXm8d5AFmXA
+! Checksum: 7hhsAfuDu4pbzEg3hg1hhQ
 ! Homepage: https://github.com/Cats-Team/AdRules
 ! Powerd by CatsTeam
 ! Expires: 8 Hours
-! Version: 2022-05-02 16:29:43（北京时间） 
-! Total count: 18001
+! Version: 2022-05-03 00:35:08（北京时间） 
+! Total count: 18012
 @@$app=com.x.addon.cast
 @@$csp=worker-src 'none',domain=uptostream.com
 @@$domain=avgle.com,webrtc,websocket
@@ -629,7 +629,7 @@
 @@|http://ie.microsoft.com/testdrive/Performance/FishBowl/Default.html|$document
 @@|http://r.i.ua/s?*&p*&l$image,domain=swordmaster.org
 @@|http://r.i.ua/s?*&p*&l$image,domain=swordmaster.org! CJX's Annoyance List
-@@|http://r.i.ua/s?*&p*&l$image,domain=swordmaster.orgetrics.icorner.ch^
+@@|http://r.i.ua/s?*&p*&l$image,domain=swordmaster.orga.
 @@|https://$image,domain=socketloop.com
 @@|https://$image,script,third-party,domain=blockadblock.com
 @@|https://$image,third-party,domain=hackintosh.zone|hackintosh.computer
@@ -2204,6 +2204,7 @@
 @@||api.adinplay.com/player/*/player.min.js$domain=mineparkour.club|gunzer.io|pockey.io|bist.io|piaf.io
 @@||api.adnetmedia.lt/api/$~third-party
 @@||api.ads.tvb.com^
+@@||api.anivideo.fun/file/$stealth
 @@||api.apple-mapkit.com^$stealth
 @@||api.athom.com^$domain=my.homey.app,stealth
 @@||api.babbel.io/gamma/v1/$ping,domain=my.babbel.com
@@ -4788,6 +4789,7 @@
 @@||cpubenchmark.net/js/ads.js$script
 @@||cq.qq.com/js/cody/*scroll_ad.js
 @@||cqcounter.com^$domain=cqcounter.com
+@@||cqvboeirsvugo.biz/*.php?id=$stealth
 @@||cr.acecounter.com/Web/AceCounter_AW.js$domain=berryjam.co.kr
 @@||crabcut.net^$generichide
 @@||crackberry.com/sites/all/libraries/adblockdetection/adblockDetector.min.js$script,1p
@@ -9107,10 +9109,12 @@
 @@||img*.japanreader.com/uploads/$stealth,domain=lectortmo.com
 @@||img*.kangaroobro.com/images/$image,domain=leyuman.com
 @@||img*.kangaroobro.com/images/$stealth,image,domain=leyuman.com
+@@||img*.kangaroobro.com^$stealth,domain=bnman.net
 @@||img*.nga$removeparam=cmpid
 @@||img-cdn.mediaplex.com^$image,domain=betfair.com
 @@||img-lescon.mncdn.com/UPLOAD/Banner/$domain=lescon.com.tr
 @@||img-trendyol.mncdn.com/assets/banner/slidertransparent.gif
+@@||img.*.net^$stealth,domain=bnman.net
 @@||img.adnz.co^$image,domain=finanzen.ch
 @@||img.ads.tvb.com/news/min.js$domain=news.tvb.com
 @@||img.ads.tvb.com^
@@ -9373,6 +9377,7 @@
 @@||ioscreator.com^$generichide
 @@||ioscreator.com^$ghide
 @@||ip-*.net/*.mp4$stealth,domain=animeonline.site
+@@||ip-*.net/*.mp4$stealth,domain=meusanimes.net
 @@||ip-adress.com^
 @@||ip-api.com/json/$script,domain=agar.pro
 @@||ip-api.com^
@@ -11114,6 +11119,7 @@
 @@||muhendisimaaslari.com^$ghide
 @@||mui.com^$generichide
 @@||multi.idocdn.com^$domain=hydrax.net,stealth
+@@||multicanais.org/get/auth$stealth
 @@||multics.eu/comunidad/js/*.js
 @@||multifaucet.org^$ghide
 @@||multiup.org/*/mirror^
@@ -12992,6 +12998,7 @@
 @@||posttrack.com^$xmlhttprequest,~third-party
 @@||potalapalace.cn/upload/images/advertise/picture/131030000583.jpg
 @@||potokcdn.com^$stealth
+@@||pouvideo.cc^$stealth
 @@||povwideo.net/js/ads-banner.js$script
 @@||powforums.com/js/*$xhr,1p
 @@||powr.io/form-builder/$domain=ipitaka.com
@@ -13863,6 +13870,7 @@
 @@||saarbruecker-zeitung.de/assets/adsbygoogle.js$script,1p
 @@||saarbruecker-zeitung.de^$ghide
 @@||sabervivirtv.com^$ghide
+@@||saborcaseiro.org/*.php?contentId=$stealth
 @@||sadeemapk.com^$generichide
 @@||sadeempc.com^$ghide
 @@||safeframe.googlesyndication.com/safeframe/*/html/container.html$domain=castlesiege.io
@@ -14347,6 +14355,7 @@
 @@||seirsanduk.*/$script,1p
 @@||seirsanduk.*^$ghide
 @@||seirsanduk.com/ad-server.js
+@@||sejasaudavel.net^$stealth
 @@||selfimg.com.cn/??
 @@||sellercentral.amazon.com/gp/remote-nav-html.html$elemhide,jsinject
 @@||sellercentral.amazon.com/hz/inventory/$elemhide,jsinject
@@ -16029,6 +16038,7 @@
 @@||tlx.3lift.com/header/auction$domain=aternos.org
 @@||tm-offers.gamingadult.com/?offer=$frame,domain=gamcore.com|69games.xxx
 @@||tm.jsuol.com.br/uoltm.js$domain=batepapo.uol.com.br|noticias.uol.com.br|economia.uol.com.br
+@@||tm.jsuol.com.br/uoltm.js$domain=hugogloss.uol.com.br
 @@||tm.jsuol.com.br/uoltm.js$domain=oantagonista.uol.com.br
 @@||tm.jsuol.com.br/uoltm.js$script,domain=uol.com.br
 @@||tmall.com/add?
@@ -16772,6 +16782,7 @@
 @@||vg247.com^$generichide
 @@||vi-serve.com/vis-media/*$domain=9gag.com
 @@||via-midgard.com/min/?*,image_social_icon.$script,stylesheet,~third-party
+@@||viajarhoje.com^$stealth
 @@||viajarsinmotivo.site^$generichide
 @@||viamichelin.*/jQuery/ntpagetag.js
 @@||viamichelin.*/ntpagetag_vm.js

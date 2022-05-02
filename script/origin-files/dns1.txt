@@ -3,7 +3,7 @@
 ! Description: Filter composed of several other filters (AdGuard Base filter, Social media filter, Tracking Protection filter, Mobile ads filter, EasyList, EasyPrivacy, etc) and simplified specifically to be better compatible with DNS-level ad blocking.
 ! Homepage: https://github.com/AdguardTeam/AdguardSDNSFilter
 ! License: https://github.com/AdguardTeam/AdguardSDNSFilter/blob/master/LICENSE
-! Last modified: 2022-05-02T06:01:22.002Z
+! Last modified: 2022-05-02T12:01:25.850Z
 !
 ! Compiled by @adguard/hostlist-compiler v1.0.12
 !
@@ -21696,6 +21696,10 @@ vkcdnservice.appspot.com^
 ! Yandex apps
 ||banners-slb.mobile.yandex.net^
 ||banners.mobile.yandex.net^
+!
+! https://github.com/AdguardTeam/AdguardFilters/issues/117115
+! Yahoo
+||app.ssp.yahoo.com^
 ! https://github.com/AdguardTeam/AdguardFilters/issues/54135
 ||adv0*.msa.cdn.mediaset.net^
 ! Micromax India
@@ -39503,6 +39507,7 @@ charlestownwyllie.oaklawnnonantum.com^
 ! Source name: EasyList China ad servers
 ! Source: https://raw.githubusercontent.com/easylist/easylistchina/master/easylistchina.txt
 !
+||kukanlm-lubu1.com^
 ||00-gov.cn^
 ||000123456789.site^
 ||0024aaaa.com^

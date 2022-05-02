@@ -6051,6 +6051,8 @@ visefierbinti.ro##style:has-text(@media print):remove()
 ! https://github.com/uBlockOrigin/uAssets/issues/3068
 pornhub.*##+js(rc, hasAdAlert, header)
 pornhub.*###js-abContainterMain
+! interstitial page
+pornhub.*##+js(cookie-remover, views)
 
 ! https://github.com/uBlockOrigin/uAssets/issues/11762
 grandoldteam.com##+js(acis, $, test)
@@ -6406,6 +6408,9 @@ videovard.*##+js(set, console.clear, undefined)
 ! https://github.com/uBlockOrigin/uAssets/pull/13040
 gmarket.co.kr##+js(set, document.oncontextmenu, noopFunc)
 gmarket.co.kr##+js(set, document.onmousedown, noopFunc)
+
+! https://digital.elmercurio.com/2022/05/02/A/SN44A2B9 private mode detection
+||digital.elmercurio.com/assets/js/detectPrivateMode.js$script,1p
 
 
 
