@@ -1,10 +1,10 @@
 ! Title: AdRules Allowlist
-! Checksum: KOCrzzUQ0ZX0xKJAGpEfrA
+! Checksum: buqmm0GhWGV1WvLgQBfR/g
 ! Homepage: https://github.com/Cats-Team/AdRules
 ! Powerd by CatsTeam
 ! Expires: 8 Hours
-! Version: 2022-05-02 00:31:35（北京时间） 
-! Total count: 17994
+! Version: 2022-05-02 10:02:02（北京时间） 
+! Total count: 17999
 @@$app=com.x.addon.cast
 @@$csp=worker-src 'none',domain=uptostream.com
 @@$domain=avgle.com,webrtc,websocket
@@ -629,6 +629,7 @@
 @@|http://ie.microsoft.com/testdrive/Performance/FishBowl/Default.html|$document
 @@|http://r.i.ua/s?*&p*&l$image,domain=swordmaster.org
 @@|http://r.i.ua/s?*&p*&l$image,domain=swordmaster.org! CJX's Annoyance List
+@@|http://r.i.ua/s?*&p*&l$image,domain=swordmaster.orgript
 @@|https://$image,domain=socketloop.com
 @@|https://$image,script,third-party,domain=blockadblock.com
 @@|https://$image,third-party,domain=hackintosh.zone|hackintosh.computer
@@ -2233,6 +2234,7 @@
 @@||api.cxense.com/public/widget/data$domain=gizmodo.jp
 @@||api.cxense.com/public/widget/data$domain=obozrevatel.com
 @@||api.cxense.com/public/widget/data?$domain=bizjournals.com|marketwatch.com|wsj.com
+@@||api.cxense.com/public/widget/data?$domain=mainichi.jp
 @@||api.cxense.com/public/widget/data?$script,domain=handelsblatt.com
 @@||api.cxense.com/public/widget/data?$script,domain=wpb.shueisha.co.jp
 @@||api.cxense.com/public/widget/data?$xmlhttprequest,domain=cyclestyle.net
@@ -4848,6 +4850,7 @@
 @@||csi.gstatic.com^
 @@||csid.com/wp-content/plugins/bwp-minify/min/?*/google-analyticator/$script
 @@||csm.cxpublic.com/Shueisha.js$domain=wpb.shueisha.co.jp
+@@||csm.cxpublic.com^$script,domain=mainichi.jp
 @@||csm.cxpublic.com^$script,domain=tarzanweb.jp
 @@||csm.dev^$ghide
 @@||csmonitor.com^$ghide
@@ -4894,6 +4897,7 @@
 @@||cwtv.com^$generichide
 @@||cxense.com/cx.cce.js$domain=tarzanweb.jp
 @@||cxense.com/cx.cce.js$domain=tn.com.ar
+@@||cxense.com/cx.js$domain=mainichi.jp
 @@||cxense.com/cx.js$domain=nlab.itmedia.co.jp
 @@||cxense.com/cx.js$domain=tarzanweb.jp
 @@||cxense.com/cx.js$script,domain=tv-tokyo.co.jp
@@ -13963,6 +13967,7 @@
 @@||scarfsmash.com/v2*/ConsentManager$script,domain=screenrant.com
 @@||scarfsmash.com/v2*ModalEngage$script,domain=screenrant.com
 @@||scatfap.com/scat-porn/modules/vids/misc_static/adverts.js
+@@||scdn.cxense.com/cx.cce.js$domain=mainichi.jp
 @@||scdn.cxense.com/cx.cce.js$domain=pcgames.de
 @@||scdn.cxense.com/cx.cce.js$domain=tn.com.ar
 @@||scdn.cxense.com/cx.cce.js$domain=wpb.shueisha.co.jp
@@ -14993,6 +14998,7 @@
 @@||ssp.rambler.ru/capirs.js$domain=afisha.ru
 @@||ssp.rambler.ru/capirs_async.js$domain=lenta.ru|championat.com|afisha.ru
 @@||ssports.com/images/resources/web/live/js/LiveAds.js
+@@||sssbozh.com^$generichid-ad
 @@||sssbozh.com^$generichide
 @@||sstats.omahasteaks.com/b/ss/
 @@||st.bebi.com/bebi_*.js$script,domain=thewatchcartoononline.tv|watchcartoononline.io|wcostream.com
@@ -15512,7 +15518,6 @@
 @@||synonim.net/ads$script,xmlhttprequest,domain=synonim.net
 @@||syri.net/uploads/syri.net/images/*/300x150_*.jpg
 @@||syriancivilwarmap.com^$generichide
-@@||syriancivilwarmap.com^$ghide
 @@||sysctl.org^
 @@||szbdyd.com^$stealth,domain=bilibili.com
 @@||szhr.com.cn^$generichide
