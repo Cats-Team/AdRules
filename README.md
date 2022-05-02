@@ -136,3 +136,6 @@ AdRules (For AdGuard)的全量版，一般来说订阅AdRules AdBlock Full List�
 **AdGuard DNS Filter** :  https://raw.githubusercontent.com/AdguardTeam/AdGuardSDNSFilter/gh-pages/Filters/filter.txt  
 
 </details>
+
+如果你需要極致去廣告，你可以看看這個項目  
+https://github.com/DoingDog/XXKiller
