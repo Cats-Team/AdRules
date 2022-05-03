@@ -98,6 +98,8 @@ AdRules AdGuard Full List 规则数量: 192940
 合并自AdRules (For AdBlock)和AdRules (For AdGuard)
 - **AdRules AdGuard Full List** -
 AdRules (For AdGuard)的全量版，一般来说订阅AdRules AdBlock Full List后不需要订阅这个
+
+**注意啦，如果你不知道应该选择哪个，默认建议你选择AdRules (For AdBlock)，AdRules (For AdGuard) 作为补充**
 ## 🚛 完善项目
 
 希望大家可以提交 Issue 或者 Request 来帮助我完善规则 🔍 我审核之后会加入到规则，如果规则有误杀我会尽快处理
