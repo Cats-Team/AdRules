@@ -1,7 +1,7 @@
 [Adblock Plus 1.1]
-! Version: 202205020223
+! Version: 202205022141
 ! Title: EasyPrivacy
-! Last modified: 02 May 2022 02:23 UTC
+! Last modified: 02 May 2022 21:41 UTC
 ! Expires: 4 days (update frequency)
 ! Homepage: https://easylist.to/
 ! Licence: https://easylist.to/pages/licence.html
@@ -4162,6 +4162,7 @@
 /stats/ping?
 /stats/pv.
 /stats/record.php?
+/stats/record/*
 /stats/search-log
 /stats/services/*
 /stats/survey.
@@ -14582,6 +14583,7 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 ||americanexpress.com/beacon
 ||amethyst.zappos.com^
 ||amnesty.org/collect/
+||ampltd.top.gg^
 ||analyselog.dx.com^
 ||analytics-api.dvdfab.cn^
 ||analytics-proxy.springboard.com^
@@ -15040,6 +15042,7 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 ||mapquest.com/logger
 ||marketing.alibaba.com^
 ||marketing.dropbox.com^
+||mat6tube.com/stats
 ||mcloud.to/log/
 ||mcs-va.tiktokv.com^
 ||mdmpix.com/js/connector.php?
@@ -25311,6 +25314,7 @@ $csp=child-src 'none'; frame-src *; worker-src 'none',domain=skyback.ru|szukajka
 ||ouedkniss.com/static/pixel.js
 ||p.kolplay.com^
 ||p.pagesjaunes.fr^
+||pixel.dugwood.com^
 ||pixel.ionos.fr^
 ||promoneuve.fr/stat/
 ||res.paruvendu.fr^
@@ -26515,6 +26519,7 @@ $csp=child-src 'none'; frame-src *; worker-src 'none',domain=skyback.ru|szukajka
 @@||rasset.ie/dotie/js/tracker.js$domain=rte.ie
 @@||rba-screen.healthsafe-id.com/fp/tags.js$script,domain=myuhc.com
 @@||realtor.com/rentals/api/optimizely.js$script,~third-party
+@@||redbull.com/gtm.js
 @@||repairtrackingsite.nintendo.eu/Tracking/$subdocument,domain=nintendo.co.uk
 @@||res-x.com^*/Resonance.aspx?
 @@||researchintel.com^*/feedback.asp$xmlhttprequest,domain=intel.com
