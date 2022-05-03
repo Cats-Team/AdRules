@@ -1,5 +1,5 @@
 ! Title: ➗ Actually Legitimate URL Shortener Tool
-! Version: 02May2022v1
+! Version: 03May2022v1
 ! Expires: 1 day
 ! Description: In a world dominated by bit.ly, adf.ly, and several thousand other malware cover-up tools, this list reduces the length of URLs in a much more legitimate and transparent manner. Essentially, it automatically removes unnecessary $/& values from the URLs, making them easier to copy from the URL bar and pasting elsewhere as links. Enjoy.
 ! Homepage: https://github.com/DandelionSprout/adfilt/discussions/163
@@ -413,7 +413,7 @@ $removeparam=refer_code
 $removeparam=AFID,domain=~chggtrx.com|~state.gov
 
 ! https://github.com/DandelionSprout/adfilt/discussions/163#discussioncomment-1412160
-$removeparam=loc,domain=~geizhals.*|~ebay.*|~myanimelist.net|~microsoft.com
+$removeparam=loc,domain=~geizhals.*|~ebay.*|~myanimelist.net|~microsoft.com|~liveperson.net
 $removeparam=acampID
 $removeparam=pj_creativeid
 $removeparam=pj_publisherid
@@ -1824,7 +1824,7 @@ $removeparam=aff_click_id
 ! https://baike.baidu.com/tashuo/browse/content?id=90920d34ee1ab7d8f0531794&lemmaId=554903&fromLemmaModule=pcBottom&lemmaTitle=%E8%96%9B%E5%AE%9A%E8%B0%94%E7%9A%84%E7%8C%AB (18/11/2021)
 ||baike.baidu.com^$removeparam=fromLemmaModule
 ||baike.baidu.com/tashuo/browse/content?$removeparam=lemmaId
-||baike.baidu.com^$removeparam=lemmaTitle
+||baike.baidu.com/tashuo/browse/content?$removeparam=lemmaTitle
 ! https://baike.baidu.com/tashuo/browse/content?id=84d19be0ff2608324a4bdf94&fromModule=pcArticleMoreRecommend (18/11/2021)
 ||baike.baidu.com^$removeparam=fromModule
 ! https://github.com/DandelionSprout/adfilt/pull/364

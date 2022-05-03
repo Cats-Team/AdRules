@@ -1,12 +1,12 @@
 [Adblock Plus 2.0]
-! Checksum: Vlp0JrZDZiVeDEOK4z0uxg
+! Checksum: +9PZ3KehFAYm2HK4c1jJqg
 ! Title: AdRules (For AdBlock)
 ! Homepage: https://github.com/Cats-Team/AdRules
 ! Powerd by CatsTeam
 ! Expires: 8 Hours
 ! Description: 该规则合并自EasyList、EasyListChina、AdGuard Chinese Filter、EdentwCustom、ClearUrl、乘风规则等，并补充了一些规则
-! Version: 2022-05-03 16:28:10（北京时间） 
-! Total count: 91362
+! Version: 2022-05-03 19:33:30（北京时间） 
+! Total count: 91369
 ###ADCENTER
 ###ADSLOT_1
 ###ADTOP
@@ -5046,6 +5046,7 @@
 ##.mm-widget--sendtonews
 ##.mmads
 ##.mntl-gpt-adunit
+##.mob_ads
 ##.mobads
 ##.mobile-ad
 ##.mobile-ad-container
@@ -6123,6 +6124,7 @@
 ##.weather-sponsor-ad
 ##.weather_ad
 ##.weatherad
+##.web_ads
 ##.webpart-wrap-advert
 ##.website-ad-space
 ##.well-ad
@@ -8351,7 +8353,7 @@ $removeparam=link_id,domain=gog.com
 $removeparam=link_id,domain=norml.org
 $removeparam=litb_from
 $removeparam=loc,domain=bestbuy.com
-$removeparam=loc,domain=~geizhals.*|~ebay.*|~myanimelist.net|~microsoft.com
+$removeparam=loc,domain=~geizhals.*|~ebay.*|~myanimelist.net|~microsoft.com|~liveperson.net
 $removeparam=locale,domain=udemy.com
 $removeparam=log,domain=billiger.de
 $removeparam=logTag
@@ -16442,6 +16444,7 @@ $~xmlhttprequest,removeparam=ref_,domain=imdb.com|amazon.*|primevideo.com|shopbo
 /script/suurl4.php?$third-party
 /script/track?url=
 /script/ut.js?cb=$third-party
+/script/wait.php?q=$xmlhttprequest
 /scriptAnalytics.
 /script_log.
 /scriptonline.js?uin=
@@ -30607,6 +30610,7 @@ ebb.io##+js(set-constant, google_empty_script_included, true)
 ebb.io#%#//scriptlet('set-constant', 'ga', 'noopFunc')
 ebb.io#%#//scriptlet('set-constant', 'google_empty_script_included', 'true')
 ebc.net.tw###lotteryfnc
+ebcache.googleusercontent.com,webforefront.com,webgate.tn,whackit.co,wholehk.com,win4cut.com,winhelp.us,wizblog.it,wizblogger.com,worldofbitco.in,wowebook.org,wroffle.com,xboxforum.pl##+js(nobab)
 ebd.cda.pl##+js(window.open-defuser, 0, cda.pl)
 ebiotrade.com###dlBoxs
 ebiotrade.com###pop_banner1
@@ -31074,9 +31078,9 @@ ezprice.com.tw##.col-md-3
 eztv.io##+js(abort-current-script, document.getElementById, hide_vpn)
 eztv.re,liveonscore.tv##+js(no-setTimeout-if, sadbl)
 eztv.re,pstream.net,biter.tv#$#abort-on-property-write adcashMacros
+eztv.tf,eztv.unblockit.llc,eztv.yt,ytstv.me,yts.do,yts.mx,yts.movie,yts.rs#$#abort-current-inline-script s2ss52
 eztv.tf,eztv.yt##a > img[alt="Anonymous Download"]
 eztv.tf,eztv.yt#?#tbody:-abp-contains(WARNING! Use a)
-eztv.tf,eztv.yt,yts.mx#$#abort-current-inline-script s2ss52
 eztv.yt,eztv.io##.forum_header_border_normal > tbody > tr > td[align="center"] > div[id] > div[style*="background-color:"][style*="padding-top:"]
 ezvivi.com###table1[width="336"]
 f150forum.com#?#form[method="post"][id="notices"]:has(> div.tbox > div > div.tcell:contains(Topic Sponsor))
@@ -35973,7 +35977,6 @@ liweidianqi.com/a3.js
 liweidianqi.com/a4.js
 lkong.com##.lkong-ads
 lkop.me##+js(window.open-defuser)
-llery-ad-container
 llifle.com###ad_blocker_found
 llss.bz###secondary img:not(.avatar)
 llysc.cn###fbi-top-fixed-ad
@@ -38539,6 +38542,8 @@ parenting.pl,echirurgia.pl,dobreprogramy.pl,abczdrowie.pl,wp.pl#$#override-prope
 parenting.pl,turystyka.wp.pl,sportowefakty.wp.pl,abczdrowie.pl,film.wp.pl,wiadomosci.wp.pl,moto.wp.pl,kobieta.wp.pl##body > div[class]:not([id]):empty
 parentingss.xyz#@##ad-banner:not([style="height: 5px; width: 5px; position: absolute; top: 0;"])
 parentingss.xyz#@#.ad-banner:not([style="height: 5px; width: 5px; position: absolute; top: 0;"]):not(.blocker-tester + .ad-banner)
+parkablogs.com###block-block-115
+parkablogs.com###block-block-77
 parkers.co.uk#@#.plainAd
 parkiet.com###block-id-content-video-advert
 parkiet.com##.addAdvertContainer
@@ -42658,6 +42663,7 @@ tubepornclassic.com##.video-page__adv
 tuberel.com,hdzog.com##+js(set-constant, adver.abEnable, false)
 tubsxxx.com,de-sexy-tube.ru##+js(no-setTimeout-if, window.location.href)
 tucao.in###t5
+tucao.in###t7_att
 tucao.in##.c_att
 tucao.in##a[href*=".onelink.me"]
 tucao.in##a[href*="/index.php?m=poster&"]
@@ -44195,6 +44201,7 @@ www.epinv.com###container>#sidebar~*,div.huadong,div.epinv_f
 www.facebook.com###pagelet_side_ads
 www.facebook.com##.egoOrganicColumn+*
 www.facebook.com,web.facebook.com##span a[aria-labelledby][role="link"][target="_blank"][tabindex="0"]
+www.facebook.com,web.facebook.com#$#hide-if-contains-visible-text /(.*[Sponsored].*){9,}[^\u00A0\s]/ div[data-pagelet*="FeedUnit_"] 'a[href="#"] span[aria-labelledby]'
 www.facebook.com,web.facebook.com#$#hide-if-contains-visible-text /^Sponsorlu|Sponsored|Gesponsert|Patrocinado|Sponsorisé|Publicidad|Commandité|Gesponsord|Sponsorowane|Реклама|Sponsa|Sponset|Sponsorizat|Bersponsor|Ditaja|Sponsorizzato|Sponsoreret|Sponsrad$/ div[aria-labelledby] div[role^="button"]
 www.facebook.com,web.facebook.com#$#hide-if-matches-xpath './/a/span/span/b[contains("Sponsorizzato Sponsored Gesponsert Sponsorisé Commandité Patrocinado Publicidad Bersponsor",concat(./b[not(self::node()[contains(@style,"absolute") or contains(@style,"none")])][1],./b[not(self::node()[contains(@style,"absolute") or contains(@style,"none")])][2],./b[not(self::node()[contains(@style,"absolute") or contains(@style,"none")])][3],./b[not(self::node()[contains(@style,"absolute") or contains(@style,"none")])][4],./b[not(self::node()[contains(@style,"absolute") or contains(@style,"none")])][5],./b[not(self::node()[contains(@style,"absolute") or contains(@style,"none")])][6],./b[not(self::node()[contains(@style,"absolute") or contains(@style,"none")])][7],./b[not(self::node()[contains(@style,"absolute") or contains(@style,"none")])][8],./b[not(self::node()[contains(@style,"absolute") or contains(@style,"none")])][9],./b[not(self::node()[contains(@style,"absolute") or contains(@style,"none")])][10],./b[not(self::node()[contains(@style,"absolute") or contains(@style,"none")])][11],./b[not(self::node()[contains(@style,"absolute") or contains(@style,"none")])][12],./b[not(self::node()[contains(@style,"absolute") or contains(@style,"none")])][13],./b[not(self::node()[contains(@style,"absolute") or contains(@style,"none")])][14]))][count(./b[not(self::node()[contains(@style,"absolute") or contains(@style,"none")])]) > 6]/ancestor::div[@aria-posinset or @aria-describedby or @aria-labelledby or starts-with(@data-pagelet,"FeedUnit_")]'
 www.facebook.com,web.facebook.com#$#hide-if-matches-xpath './/a/span/span/span[contains("Sponsorizzato Sponsored Gesponsert Sponsorisé Commandité Patrocinado Publicidad Bersponsor",concat(./span[not(self::node()[contains(@style,"absolute") or contains(@style,"none")])][1],./span[not(self::node()[contains(@style,"absolute") or contains(@style,"none")])][2],./span[not(self::node()[contains(@style,"absolute") or contains(@style,"none")])][3],./span[not(self::node()[contains(@style,"absolute") or contains(@style,"none")])][4],./span[not(self::node()[contains(@style,"absolute") or contains(@style,"none")])][5],./span[not(self::node()[contains(@style,"absolute") or contains(@style,"none")])][6],./span[not(self::node()[contains(@style,"absolute") or contains(@style,"none")])][7],./span[not(self::node()[contains(@style,"absolute") or contains(@style,"none")])][8],./span[not(self::node()[contains(@style,"absolute") or contains(@style,"none")])][9],./span[not(self::node()[contains(@style,"absolute") or contains(@style,"none")])][10],./span[not(self::node()[contains(@style,"absolute") or contains(@style,"none")])][11],./span[not(self::node()[contains(@style,"absolute") or contains(@style,"none")])][12],./span[not(self::node()[contains(@style,"absolute") or contains(@style,"none")])][13],./span[not(self::node()[contains(@style,"absolute") or contains(@style,"none")])][14]))][count(./span[not(self::node()[contains(@style,"absolute") or contains(@style,"none")])]) > 6]/ancestor::div[@aria-posinset or @aria-describedby or @aria-labelledby or starts-with(@data-pagelet,"FeedUnit_")]'
@@ -52235,9 +52242,9 @@ zznews.cn##.ad:not([style])
 ||baikalize.com^$third-party
 ||baike.baidu.com/api/wikiad/
 ||baike.baidu.com/tashuo/browse/content?$removeparam=lemmaId
+||baike.baidu.com/tashuo/browse/content?$removeparam=lemmaTitle
 ||baike.baidu.com^$removeparam=fromLemmaModule
 ||baike.baidu.com^$removeparam=fromModule
-||baike.baidu.com^$removeparam=lemmaTitle
 ||baike.com/iframeheightforad.
 ||baike.com/newtop/news.html
 ||baike.sogou.com^$removeparam=ch
