@@ -3,7 +3,7 @@
 source /etc/profile
 
 cd $(cd "$(dirname "$0")";pwd)
-
+rm -f ./origin-files/*
 dead_hosts=(
   "https://raw.githubusercontent.com/notracking/hosts-blocklists-scripts/master/domains.dead.txt"
   "https://raw.githubusercontent.com/notracking/hosts-blocklists-scripts/master/hostnames.dead.txt"
@@ -16,11 +16,7 @@ dead_hosts=(
   "https://raw.githubusercontent.com/eded333/TheFuckingList/main/whitelist.txt"
   "https://raw.githubusercontent.com/Ultimate-Hosts-Blacklist/blacklist/master/whitelisted.list"
   "https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/ChineseFilter/sections/whitelist.txt"
-  "https://easylist-downloads.adblockplus.org/exceptionrules.txt"
-  "https://raw.githubusercontent.com/Zelo72/adguard/main/whitelist.adguard"
   "https://gitlab.com/ZeroDot1/CoinBlockerLists/-/raw/master/white_list.txt"
-  "https://raw.githubusercontent.com/AdguardTeam/AdGuardSDNSFilter/master/Filters/exceptions.txt"
-  "https://raw.githubusercontent.com/AdguardTeam/AdGuardSDNSFilter/master/Filters/exclusions.txt"
   "https://raw.githubusercontent.com/EnergizedProtection/unblock/master/basic/formats/domains.txt"
   "https://raw.githubusercontent.com/Ultimate-Hosts-Blacklist/whitelist/master/domains.list"
   "https://raw.githubusercontent.com/notracking/hosts-blocklists-scripts/master/hostnames.whitelist.txt"
