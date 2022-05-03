@@ -170,7 +170,7 @@ wait
 # Pre Fix rules
 echo '处理规则中...'
 cat clash* \
- | grep -v '^#' | grep -F 'DOMAIN' |grep -Fv 'DOMAIN-KEYWORD'| sed 's/.*DOMAIN*,//g' |sed "s/^/||&/g" |sed "s/$/&^/g"> dns9999.txt 
+ | grep -v '^#' | grep -F 'DOMAIN' |grep -Fv 'DOMAIN-KEYWORD'| sed 's/.*DOMAIN.*,//g' |sed "s/^/||&/g" |sed "s/$/&^/g"> dns9999.txt 
 
 cat clash* \
  | grep -v '^#' |  grep -F 'DOMAIN-KEYWORD' | sed 's/.*DOMAIN-KEYWORD\,//g' |sed "s/^/\/&/g" > l.txt 
