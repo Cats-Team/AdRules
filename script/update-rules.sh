@@ -23,6 +23,7 @@ easylist=(
   "https://raw.githubusercontent.com/Noyllopa/NoAppDownload/master/NoAppDownload.txt" #去APP下载按钮
   "https://easylist.to/easylist/easyprivacy.txt"
   "https://raw.githubusercontent.com/uniartisan/adblock_list/master/adblock.txt"
+  "https://filters.adtidy.org/extension/ublock/filters/2.txt"
 )
 
 easylist_plus=(
