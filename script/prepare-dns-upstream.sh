@@ -15,9 +15,6 @@ dead_hosts=(
   "https://raw.githubusercontent.com/EnergizedProtection/unblock/master/basic/formats/domains.txt"
   "https://raw.githubusercontent.com/eded333/TheFuckingList/main/whitelist.txt"
   "https://raw.githubusercontent.com/Ultimate-Hosts-Blacklist/blacklist/master/whitelisted.list"
-  "https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/ChineseFilter/sections/whitelist.txt"
-  "https://gitlab.com/ZeroDot1/CoinBlockerLists/-/raw/master/white_list.txt"
-  "https://raw.githubusercontent.com/EnergizedProtection/unblock/master/basic/formats/domains.txt"
   "https://raw.githubusercontent.com/Ultimate-Hosts-Blacklist/whitelist/master/domains.list"
   "https://raw.githubusercontent.com/notracking/hosts-blocklists-scripts/master/hostnames.whitelist.txt"
 )
