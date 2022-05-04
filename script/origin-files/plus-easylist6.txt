@@ -1,9 +1,9 @@
 [uniartisan's Privacy List]
-! Version: 202205030250
+! Version: 202205040207
 ! Title:  uniartisan's Privacy List
 ! Expires: 1 days (update frequency)
 ! URL = https://github.com/uniartisan/adblock_list
-! Lenth = 41250
+! Lenth = 41255
 ###qoo-counter
 ###ramblerCounter
 ###top100counter
@@ -1028,7 +1028,6 @@ $xmlhttprequest,domain=auroravid.to|flashx.cc|nowvideo.sx|onlinevideoconverter.c
 /\.com\/[-_0-9a-zA-Z]{4,}\/[-\/_0-9a-zA-Z]{30,}$/$script,~third-party,domain=gu-global.com|uniqlo.com
 /\/(public|resources|static|assets)\/([a-f0-9]){28,31}$/$script,xmlhttprequest,~third-party
 /\/js\/[a-z]{3}\d\.js$/$script,~third-party,domain=eegg.fun
-/^http:\/\/[a-z]{10}\.duckdns/$document,domain=duckdns.org
 /^https:\/\/cdn\.jsdelivr\.net\/npm\/([a-z]|-){4,22}@latest\/dist\/script\.min\.js$/$domain=tgd.kr|loawa.com|ygosu.com|inven.co.kr|ppss.kr|dailymagazine.co.kr|dailian.co.kr|socialvalue.kr|usjournal.kr|basketkorea.com|jumpball.co.kr|joynews24.com|inews24.com|hobbyen.co.kr|thespike.co.kr|siminilbo.co.kr|mdtoday.co.kr|clien.net|ujeil.com|starnnews.com|sportsw.kr|enewstoday.co.kr|readersnews.com|algumon.com|1412.rest
 /^https?:\/\/(.+?\.)?hardware\.info\/js\/[a-z]{1,}\/[0-9]{4,}\.js/$domain=hardware.info
 /^https?:\/\/fdts\.ebay-kleinanzeigen\.de\/[a-z0-9]{13,18}\.js\?/$script,domain=ebay-kleinanzeigen.de
@@ -6430,6 +6429,7 @@ $xmlhttprequest,domain=auroravid.to|flashx.cc|nowvideo.sx|onlinevideoconverter.c
 @@||aolcdn.com/omniunih_int.js$domain=autoblog.com
 @@||aolcdn.com^*/beacon.min.js$domain=autoblog.com|dailyfinance.com
 @@||apc-pli.com/api/tracking/$~third-party,xmlhttprequest
+@@||api-analytics.magstimconnect.net^$~third-party
 @@||api.babbel.io/gamma/v1/$ping,domain=my.babbel.com
 @@||api.chartbeat.com^script,domain=financialpost.com|wcpo.com|couriermail.com.au|betabeat.com
 @@||api.curalate.com^$domain=potterybarn.com
@@ -6766,6 +6766,7 @@ $xmlhttprequest,domain=auroravid.to|flashx.cc|nowvideo.sx|onlinevideoconverter.c
 @@||cloud.roistat.com/dist/module.js$domain=pandashop.md
 @@||cloud.talend.com/api/ipaas/services/analytics/$~third-party,xmlhttprequest
 @@||cloudflare.com/*/fingerprint2.min.js$domain=saavn.com
+@@||cloudflare.com/ajax/libs/fingerprintjs2/$domain=winnipegfreepress.com
 @@||cloudflare.com/ajax/libs/fingerprintjs2/$script,domain=gamebox.gesoten.com
 @@||cloudflare.com/ajax/libs/fingerprintjs2/*/fingerprint2.min.js$domain=nfmovies.com
 @@||cloudflare.com/analytics?$domain=cloudflare.com
@@ -8390,6 +8391,8 @@ $xmlhttprequest,domain=auroravid.to|flashx.cc|nowvideo.sx|onlinevideoconverter.c
 @@||segmentify.com//get/key/v1.json$domain=flo.com.tr
 @@||segundamano.mx^*/tealium.js
 @@||sellpoint.net/smart_button/$script,domain=walmart.com
+@@||sephora-track.inside-graph.com/gtm/$domain=sephora.com
+@@||sephora-track.inside-graph.com/ig.js$domain=sephora.com
 @@||sephora.com/js/ufe/isomorphic/thirdparty/fp.min.js$script,~third-party
 @@||serasaexperian.com.br/dist/scripts/fingerprint2.js$~third-party
 @@||serve-ts.amagi.tv^*/beacon?$xmlhttprequest,domain=watch.truecrimenetworktv.com
@@ -22257,6 +22260,7 @@ znak.com##.relap
 ||ip.goguardian.com^
 ||ip.hivps.xyz^$third-party
 ||ip.pichunter.com^
+||ip.prvtx.net^
 ||ip2c.landscape.co.jp^
 ||ip2c.org^$third-party
 ||ip2location.com^$third-party
@@ -34373,6 +34377,7 @@ znak.com##.relap
 ||stat.novinky.cz^
 ||stat.novostimira.com^
 ||stat.nyheter24.se^
+||stat.onemob.mobi^
 ||stat.otazkyodpovedi.cz^
 ||stat.ouedkniss.com^
 ||stat.ovh^
