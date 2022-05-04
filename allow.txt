@@ -1,10 +1,10 @@
 ! Title: AdRules Allowlist
-! Checksum: pwmMKBz3pRnqHRcafFSIIA
+! Checksum: JarEAHCf4MrrHRefbMx8cQ
 ! Homepage: https://github.com/Cats-Team/AdRules
 ! Powerd by CatsTeam
 ! Expires: 8 Hours
-! Version: 2022-05-04 00:36:36（北京时间） 
-! Total count: 18010
+! Version: 2022-05-04 09:58:43（北京时间） 
+! Total count: 18014
 @@$app=com.x.addon.cast
 @@$csp=worker-src 'none',domain=uptostream.com
 @@$domain=avgle.com,webrtc,websocket
@@ -629,7 +629,6 @@
 @@|http://ie.microsoft.com/testdrive/Performance/FishBowl/Default.html|$document
 @@|http://r.i.ua/s?*&p*&l$image,domain=swordmaster.org
 @@|http://r.i.ua/s?*&p*&l$image,domain=swordmaster.org! CJX's Annoyance List
-@@|http://r.i.ua/s?*&p*&l$image,domain=swordmaster.orgible.com^$third-party
 @@|https://$image,domain=socketloop.com
 @@|https://$image,script,third-party,domain=blockadblock.com
 @@|https://$image,third-party,domain=hackintosh.zone|hackintosh.computer
@@ -2175,6 +2174,7 @@
 @@||api-*.spot.im/v*/config/launcher/sp_*/vendor,init,conversation$domain=bizpacreview.com
 @@||api-*.spot.im/v*/conversation/$xmlhttprequest,domain=bizpacreview.com
 @@||api-*.spot.im/v*/widget/spot/sp_*/conversation_header$domain=bizpacreview.com
+@@||api-analytics.magstimconnect.net^$~third-party
 @@||api-game.meizu.com^
 @@||api-game.rivet.gg^$stealth
 @@||api-global.netflix.com^
@@ -4348,6 +4348,7 @@
 @@||cloudflare.com/ajax/$stylesheet,domain=shink.me|shon.xyz
 @@||cloudflare.com/ajax/libs/*/fuckadblock.js$script,domain=depositfiles.org|dfiles.eu
 @@||cloudflare.com/ajax/libs/dash-shaka-playback/$script,domain=vpornvideos.com
+@@||cloudflare.com/ajax/libs/fingerprintjs2/$domain=winnipegfreepress.com
 @@||cloudflare.com/ajax/libs/fingerprintjs2/$script,domain=gamebox.gesoten.com
 @@||cloudflare.com/ajax/libs/fingerprintjs2/*/fingerprint2.min.js$domain=nfmovies.com
 @@||cloudflare.com/ajax/libs/fuckadblock/$domain=seselah.com
@@ -12818,6 +12819,7 @@
 @@||playkeepout.com/img/common/sharing/
 @@||playmyopinion.com/assets/developer/js/prebid-ads.js
 @@||playok.com^$ghide
+@@||playoverwatch.com/static/externals/cookie-consent-filter-compat.js
 @@||playsaurus.com^*/ui/icons/$image,~third-party
 @@||playserver1.com/SiteScript/Play/*/webtrends2.min.js
 @@||playshakespeare.com/*/js/prebid-ads.js
@@ -14375,6 +14377,8 @@
 @@||seomafia.net^$ghide
 @@||seosprint.net/style/img/ad-
 @@||seosprint.net/style/img/adv/$domain=seosprint.net
+@@||sephora-track.inside-graph.com/gtm/$domain=sephora.com
+@@||sephora-track.inside-graph.com/ig.js$domain=sephora.com
 @@||sephora.com/js/ufe/isomorphic/thirdparty/fp.min.js$script,~third-party
 @@||sephora.fr/eStore-webMaster/js/common/acceptCookies.js
 @@||sephora.pl/eStore-webMaster/js/common/acceptCookies.js
