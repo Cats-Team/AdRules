@@ -1,10 +1,10 @@
 ! Title: AdRules Allowlist
-! Checksum: qa56uidtWyva7xrh9QJ8/g
+! Checksum: 8H5XrS3w2ONDDGgOiItcPA
 ! Homepage: https://github.com/Cats-Team/AdRules
 ! Powerd by CatsTeam
 ! Expires: 8 Hours
-! Version: 2022-05-05 20:19:41（北京时间） 
-! Total count: 18178
+! Version: 2022-05-05 20:24:01（北京时间） 
+! Total count: 18190
 @@$csp=worker-src 'none',domain=uptostream.com
 @@$domain=avgle.com,webrtc,websocket
 @@$generichide,domain=heapfiles.com|vidoza.co|vidoza.net
@@ -3100,6 +3100,7 @@
 @@||bnf.fr/assets/*/sociallinks_controller.js$script
 @@||bntech.io^$script,domain=buffalonews.com
 @@||boardgamesonline.net^$ghide
+@@||boards.greenhouse.io^! Issue 372
 @@||boards.net^$ghide
 @@||boas.io/$script,1p
 @@||boas.io/adBlockDetector.js
@@ -3280,6 +3281,7 @@
 @@||byetv.org^$generichide
 @@||byfly.dualstack.speedtestcustom.com^$stealth
 @@||byggahus.se^$ghide
+@@||byside.com^! Issue 10
 @@||bytedance.com/ttwid/union/register/
 @@||bytedance.com^
 @@||bytesloader.com^$generichide
@@ -4801,6 +4803,7 @@
 @@||count.taobao.com/counter$script
 @@||count.video.sina.com.cn^*?video_ids=
 @@||counters.gigya.com^! Issue 211
+@@||counters.gigya.com^! Issue 7
 @@||countrygarden.com.cn/ad/
 @@||countrylife.co.uk^$generichide
 @@||couponscorpion.com/ads.js
@@ -6427,6 +6430,7 @@
 @@||foodnetwork.ca/UserControls/*/omnitureMedia.swf
 @@||football-lineups.com/dfp.js$script,1p
 @@||football-lineups.com^$generichide
+@@||footprint.net^! Resolved Issue 29
 @@||footprint.net^$xhr,domain=prod-player.tf1.fr
 @@||footroll.pl/js/vendor/cookiebox.min.js
 @@||footwearnews.com^$generichide
@@ -7000,6 +7004,7 @@
 @@||gigya.com/comments.getComments$domain=muscleandfitness.com
 @@||gigya.com/gs/i/shareBar/icons/$image
 @@||gigya.com/gs/sso.htm$domain=redbull.com|tomshardware.com
+@@||gigya.com^! Issue 7
 @@||gilt.com/images/share/$image
 @@||giltcdn.com/images/share/uploads/$image
 @@||gioialive.it/TemplateLive/app/assets/js/prebid-ads.js
@@ -8541,6 +8546,7 @@
 @@||huaweiblog.de/wp-content/plugins/cookie-law-info/
 @@||hubcoins.xyz^$generichide
 @@||hubpd.com^
+@@||hubspot.com^! Issue 52
 @@||hubspot.com^$domain=otis.hsi.com
 @@||hubturkey.net/js/ads.js$script
 @@||hubxt.redtube.com^! Issue 91
@@ -9424,6 +9430,7 @@
 @@||intekno.net^$ghide
 @@||intentmedia.net/adServer/edaaObaCtl?action_id=3$domain=youronlinechoices.com
 @@||intercom.io^
+@@||intercomassets.com^! Issue 48
 @@||interest.com/content/plugins/bankrate-global/javascript/bglf-s_code.js
 @@||interflora.co.uk/kernel/coremetrics/cmdatatagutils.js
 @@||interflora.co.uk/kernel/coremetrics/eluminate.js
@@ -9481,6 +9488,7 @@
 @@||ipinfo.io/?token=$domain=assurancemortgage.com|webtv.ert.gr
 @@||ipinfo.io^
 @@||ipinfo.io^! Issue 117
+@@||ipinfo.io^! Issue 21
 @@||ipinfodb.com^
 @@||ipip.net/ping.php?
 @@||iplogger.org/templates/new/scripts/advertisement.js
@@ -11468,6 +11476,7 @@
 @@||newonnetflix.info/ads.js
 @@||newrelic.com/nr-*.min.js$domain=surveymonkey.co.uk|surveymonkey.com|surveymonkey.de|surveymonkey.ru
 @@||newrelic.com/public/charts/$subdocument,xmlhttprequest
+@@||newrelic.com^! Issue 53
 @@||news-l.play.aiseet.atianqi.com^
 @@||news.filehippo.com/wp-content/themes/filehippo/js/socialite.min.js
 @@||news.google.com.*?hl=$removeparam
@@ -11592,6 +11601,7 @@
 @@||nosey.com^$ghide
 @@||nostalgie.fr^$ghide
 @@||nosteam.ro/notcaptcha/messages.js
+@@||nosto.com^! Issue 132
 @@||nostv.pt^*/angulartics-google-analytics.js?
 @@||notafree.host^$generichide
 @@||note.sieuthuthuat.com/js/prebid-ads.js
@@ -13175,6 +13185,7 @@
 @@||primochef.it^$ghide
 @@||princesshighway.com.au/min/?f=/skin/frontend/*/styles.css
 @@||printfriendly.com^
+@@||priority-static-api.nkstatic.com^! Issue 141
 @@||prism-break.org/assets/img/$image,~third-party
 @@||privacy-center.org/*/loader.js$domain=tuttosport.com
 @@||privacy-center.org/sdk.*.js$domain=tuttosport.com
@@ -18007,6 +18018,7 @@
 @@||yoox.com/images/$stealth
 @@||yorumbudur.com/*/javascript/ads.js
 @@||yospace.com/csm/builder/*,proxy$domain=joyn.de
+@@||yospace.com^! Issue 12
 @@||yospace.com^$domain=reuters.com
 @@||yottaa.com/rapid.min.js$script,domain=wineenthusiast.com
 @@||yottaa.net^*/analytics/gtm-analytics-events.min.js$domain=hannaandersson.com
