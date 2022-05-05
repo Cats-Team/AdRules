@@ -1730,12 +1730,12 @@ dailyuploads.net###dlink
 ||onclicksuper.com^$all
 
 ! sports streams vipleague
-f1stream.*,fbstream.*,mlbstream.*,motogpstream.*,nbastream.*,nflstream.*,nhlstream.*,plylive.*,rugbystreams.*,socceronline.*,tennisstreams.*,tvply.*,ufcstream.*,vipleague.*##+js(acis, JSON.parse, break;case $.)
-f1stream.*,fbstream.*,mlbstream.*,motogpstream.*,nbastream.*,nflstream.*,nhlstream.*,plylive.*,rugbystreams.*,socceronline.*,tennisstreams.*,tvply.*,ufcstream.*,vipleague.*##+js(aeld, , break;case $.)
+f1stream.*,fbstream.*,mlbstream.*,motogpstream.*,nbastream.*,nflstream.*,nhlstream.*,plylive.*,plyvdo.*,rugbystreams.*,socceronline.*,tennisstreams.*,tvply.*,ufcstream.*,vipleague.*##+js(acis, JSON.parse, break;case $.)
+f1stream.*,fbstream.*,mlbstream.*,motogpstream.*,nbastream.*,nflstream.*,nhlstream.*,plylive.*,plyvdo.*,rugbystreams.*,socceronline.*,tennisstreams.*,tvply.*,ufcstream.*,vipleague.*##+js(aeld, , break;case $.)
 f1stream.*,fbstream.*,mlbstream.*,motogpstream.*,nbastream.*,nflstream.*,nhlstream.*,rugbystreams.*,socceronline.*,tennisstreams.*,ufcstream.*,vipleague.*##+js(acis, Math, break;case $.)
-f1stream.*,fbstream.*,mlbstream.*,motogpstream.*,nbastream.*,nflstream.*,nhlstream.*,plylive.*,rugbystreams.*,socceronline.*,tennisstreams.*,tvply.*,ufcstream.*,vipleague.*##+js(aopw, _pop)
-@@*$ghide,domain=f1stream.*|fbstream.*|mlbstream.*|motogpstream.*|nbastream.*|nflstream.*|nhlstream.*|plylive.*|rugbystreams.*|socceronline.*|tennisstreams.*|tvply.*|ufcstream.*|vipleague.*
-plylive.*##+js(nowoif)
+f1stream.*,fbstream.*,mlbstream.*,motogpstream.*,nbastream.*,nflstream.*,nhlstream.*,plylive.*,plyvdo.*,rugbystreams.*,socceronline.*,tennisstreams.*,tvply.*,ufcstream.*,vipleague.*##+js(aopw, _pop)
+@@*$ghide,domain=f1stream.*|fbstream.*|mlbstream.*|motogpstream.*|nbastream.*|nflstream.*|nhlstream.*|plylive.*|plyvdo.*|rugbystreams.*|socceronline.*|tennisstreams.*|tvply.*|ufcstream.*|vipleague.*
+plylive.*,plyvdo.*##+js(nowoif)
 ||gretaith.com^$3p
 ||mw19c3mi5a.com^$3p
 ||ryllae.com^$3p,important
@@ -2157,6 +2157,7 @@ magesypro.*##+js(aopr, $)
 magesypro.*##+js(no-xhr-if, ads)
 magesy.*##+js(acis, decodeURIComponent, ai_)
 magesy.*##+js(set, detectAdBlock, noopFunc)
+magesy.*##^script:has-text(adBlockDetected)
 
 ! https://github.com/uBlockOrigin/uAssets/issues/3596
 @@||dangotoons.com^$ghide
@@ -2320,7 +2321,8 @@ adsrt.*##div[id^="SC_TBlock"]
 @@||adshort.*^$ghide
 
 ! https://github.com/uBlockOrigin/uAssets/issues/906
-upload-4ever.com##+js(acis, Math, break;case $.)
+! https://github.com/AdguardTeam/AdguardFilters/issues/117551
+upload-4ever.com##+js(acis, parseInt, break;case $.)
 upload-4ever.com##+js(nowoif)
 ##[onclick*="postlnk.com"]
 ##[href*="postlnk.com"]
@@ -4711,7 +4713,7 @@ megaup.net##+js(nano-sib, display())
 megaup.net##+js(ra, href|target, a[href^="https://tm-offers.gamingadult.com/"])
 @@||megaup.net/*.gif$image,1p
 ! megaup.net##[src]:not([alt]):style(width: 10.2% !important)
-megaup.net##.metaRedirectWrapperBottomAds > div > a:style(opacity: 0 !important;)
+megaup.net##.metaRedirectWrapperBottomAds > div > a > img:style(opacity: 0 !important;)
 
 ! https://github.com/uBlockOrigin/uAssets/issues/1850
 aquipelis.*##+js(aopw, smrtSB)
@@ -5574,8 +5576,7 @@ cbc.ca##.ad-container
 
 ! https://github.com/uBlockOrigin/uAssets/issues/2320
 *$xhr,redirect-rule=nooptext,domain=freemcserver.net
-||freemcserver.net/script/bootstrap.min.js?v=$script,1p
-||freemcserver.net/script/bootstrap.js?$script,1p
+||freemcserver.net/script/bootstrap.
 
 ! popups http://assia.tv/live/betsport/?lang=rs
 ! https://github.com/AdguardTeam/AdguardFilters/issues/116307
@@ -5859,7 +5860,6 @@ cellmapper.net##+js(set, adTestPass, true)
 
 ! https://www.reddit.com/r/uBlockOrigin/comments/phaeom/gaming_adult_ads_not_blocked/
 ! https://github.com/uBlockOrigin/uAssets/issues/12966
-igg-games.com##+js(acis, $, php)
 igg-games.com##+js(aopw, btoa)
 igg-games.com##+js(nostif, _0x)
 igg-games.com##+js(ra, srcdoc, iframe)
@@ -5867,6 +5867,8 @@ igg-games.com##+js(ra, srcdoc, iframe)
 @@||igg-games.com^$script,1p
 igg-games.com##[href^="https://tm-offers"]
 @@||igg-games.com^$ghide
+igg-games.com#@#.uk-panel.widget-text
+igg-games.com##.uk-panel.widget-text:style(height: 0px !important; visibility: collapse;)
 
 ! https://github.com/uBlockOrigin/uAssets/issues/2458
 pornrabbit.com##+js(nowoif)
@@ -7624,7 +7626,7 @@ onhockey.tv,web.livecricket.is##+js(nowebrtc)
 @@||amc.com^$ghide
 @@||imasdk.googleapis.com/js/sdkloader/ima3.js$script,domain=amc.com
 ! https://github.com/uBlockOrigin/uAssets/issues/13065
-ssaimanifest.prod.boltdns.net^$xhr,removeparam=prof,domain=amc.com
+||ssaimanifest.prod.boltdns.net^$xhr,removeparam=prof,domain=amc.com
 
 ! https://github.com/uBlockOrigin/uAssets/issues/3298
 pornvideospass.com##+js(aopw, Aloader)

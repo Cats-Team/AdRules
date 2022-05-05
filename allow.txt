@@ -1,10 +1,10 @@
 ! Title: AdRules Allowlist
-! Checksum: R74zK0iSxtDvVoxIOJrdjQ
+! Checksum: jOL5vANN/bkb8aq2uCwfQw
 ! Homepage: https://github.com/Cats-Team/AdRules
 ! Powerd by CatsTeam
 ! Expires: 8 Hours
-! Version: 2022-05-05 00:35:43（北京时间） 
-! Total count: 18028
+! Version: 2022-05-05 09:51:59（北京时间） 
+! Total count: 18034
 @@$app=com.x.addon.cast
 @@$csp=worker-src 'none',domain=uptostream.com
 @@$domain=avgle.com,webrtc,websocket
@@ -39,7 +39,7 @@
 @@*$ghide,domain=brainly.*|eodev.com
 @@*$ghide,domain=deinesexfilme.com|einfachtitten.com|halloporno.com|herzporno.com|hd-pornos.net|lesbenhd.com|milffabrik.com|porn-monkey.com|porndrake.com|pornhubdeutsch.net|pornoaffe.com|pornodavid.com|pornoente.tv|pornofisch.com|pornofelix.com|pornohammer.com|pornohelm.com|pornoklinge.com|pornotom.com|pornotommy.com|pornovideos-hd.com|pornozebra.com|xhamsterdeutsch.xyz|xnxx-sexfilme.com
 @@*$ghide,domain=drivelinks.me|hackshort.me|latinolinks.site|pelislinks.me
-@@*$ghide,domain=f1stream.*|fbstream.*|mlbstream.*|motogpstream.*|nbastream.*|nflstream.*|nhlstream.*|plylive.*|rugbystreams.*|socceronline.*|tennisstreams.*|tvply.*|ufcstream.*|vipleague.*
+@@*$ghide,domain=f1stream.*|fbstream.*|mlbstream.*|motogpstream.*|nbastream.*|nflstream.*|nhlstream.*|plylive.*|plyvdo.*|rugbystreams.*|socceronline.*|tennisstreams.*|tvply.*|ufcstream.*|vipleague.*
 @@*$ghide,domain=freeserverhostingweb.club|me-encantas.com|mexicogob.com|noticiascripto.site|tanfacil.net|tecnoaldia.net|todoandroid.live
 @@*$ghide,domain=games.startribune.com|games.charlotteobserver.com|puzzles.bestforpuzzles.com|puzzles.independent.co.uk|puzzles.standard.co.uk
 @@*$ghide,domain=imgalor.xyz|imgirx.xyz|imgjut.buzz|imgkaka.xyz|imgkane.buzz|imgkia.*|imgklx.xyz|imgkoka.buzz|imgkuiw.xyz|imglina.xyz|imgtoyou.icu|imgtrw.buzz|imgveni.xyz|imgweika.buzz|imgwex.buzz
@@ -629,7 +629,7 @@
 @@|http://ie.microsoft.com/testdrive/Performance/FishBowl/Default.html|$document
 @@|http://r.i.ua/s?*&p*&l$image,domain=swordmaster.org
 @@|http://r.i.ua/s?*&p*&l$image,domain=swordmaster.org! CJX's Annoyance List
-@@|http://r.i.ua/s?*&p*&l$image,domain=swordmaster.orge.com^
+@@|http://r.i.ua/s?*&p*&l$image,domain=swordmaster.orgript
 @@|https://$image,domain=socketloop.com
 @@|https://$image,script,third-party,domain=blockadblock.com
 @@|https://$image,third-party,domain=hackintosh.zone|hackintosh.computer
@@ -1514,6 +1514,7 @@
 @@||adsatt.espn.starwave.com^$domain=livenewschat.eu,~script
 @@||adscale.de/getads.js$image,domain=dasolo.org
 @@||adscendmedia.com/gwjs.php?aff=$script,third-party
+@@||adsense.wosnaimg.cn/dy/deco/*/js/require.js
 @@||adsense.woso.cn^$~third-party
 @@||adsensecustomsearchads.com/adsense/$script,domain=last.fm
 @@||adserve.atedra.com/js/$script,domain=repeatmyvids.com
@@ -2246,6 +2247,7 @@
 @@||api.cxense.com/public/widget/data?json=$domain=delfi.lt
 @@||api.cxense.com/public/widget/data?json=$domain=lavoz.com.ar
 @@||api.cxense.com/public/widget/data?json=$domain=pcgames.de
+@@||api.cxense.com/public/widget/data?json=$domain=wpb.shueisha.co.jp
 @@||api.cxense.com/public/widget/data?json=$domain=wsj.com
 @@||api.cxense.com/public/widget/data?json=$domain=yenisafak.com
 @@||api.cxense.com/public/widget/data?json=$script,domain=ksml.fi|savonsanomat.fi
@@ -2378,6 +2380,7 @@
 @@||app.appsflyer.com^|
 @@||app.canada.com/video/assets/js/lib/advertisement.js
 @@||app.clarity.so^$~third-party
+@@||app.conceptboard.com^*/SocialIcons.js$xmlhttprequest
 @@||app.degoo.com/assets/icons/$~third-party
 @@||app.freeinvoicebuilder.com/*/index.php$xmlhttprequest,elemhide,jsinject,extension
 @@||app.getbeamer.com^$domain=comss.ru
@@ -3645,6 +3648,7 @@
 @@||cdn.cxense.com/cx.js$domain=stomp.com.sg
 @@||cdn.cxense.com/cx.js$domain=tarzanweb.jp|wpb.shueisha.co.jp
 @@||cdn.cxense.com/cx.js$domain=tn.com.ar
+@@||cdn.cxense.com/cx.js$domain=wpb.shueisha.co.jp
 @@||cdn.cxense.com/cx.js$domain=yenisafak.com
 @@||cdn.cxense.com/cx.js$script,domain=handelsblatt.com
 @@||cdn.cxense.com^$script,domain=bizjournals.com|bloombergquint.com|marketwatch.com
@@ -5053,7 +5057,6 @@
 @@||dasolo.me/advertisement.js
 @@||dasolo.me^$generichide
 @@||data.alicloudccp.com^$stealth,domain=aliyundrive.com
-@@||data.amazon.*/api/marketplaces/*/cart/carts/retail/items$removeparam=ref
 @@||data.bilibili.com^
 @@||data.flurry.com^$app=ru.afisha.android
 @@||data.lidl.de^$jsinject
@@ -10950,6 +10953,7 @@
 @@||mm.maxthon.cn/ad/
 @@||mmaa99.xyz^$generichide
 @@||mmacore.tv^$ghide
+@@||mmcref.pl/?$removeparam=utm_medium
 @@||mmee04.com^$generichide
 @@||mmff30.com^$generichide
 @@||mmgd.xyz^$generichide
@@ -13997,6 +14001,7 @@
 @@||scdn.cxense.com/cx.cce.js$domain=mainichi.jp|wpb.shueisha.co.jp
 @@||scdn.cxense.com/cx.cce.js$domain=pcgames.de
 @@||scdn.cxense.com/cx.cce.js$domain=tn.com.ar
+@@||scdn.cxense.com/cx.cce.js$domain=wpb.shueisha.co.jp
 @@||scdn.cxense.com/cx.cce.js$domain=wsj.com
 @@||scdn.cxense.com/cx.cce.js$script,domain=handelsblatt.com
 @@||scdn.cxense.com/cx.js$domain=13.cl
@@ -14646,6 +14651,7 @@
 @@||sitestat.com^*/s?*&ns_type=clickin&ns_action=view&ns__t=$image,domain=sueddeutsche.de
 @@||siva-my.jsstatic.com/_ads/_static/$domain=jobstreet.com.my
 @@||sivitechno.com^$generichide
+@@||six;top:200px;z-index:9999;"]
 @@||sixflags.com/global/func/js/siteCatalyst.js
 @@||sixt-neuwagen.de/static/*/js/lib/util/cookiePolicy/js/cookiePolicy.js
 @@||sj.uukanshu.com^

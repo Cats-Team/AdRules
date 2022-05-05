@@ -1,12 +1,12 @@
 [Adblock Plus 2.0]
-! Checksum: CrWppSldVXr8FNhRlDE03Q
+! Checksum: 3ygLEv6Gfi8Tdp/acXp4hg
 ! Title: AdRules (For AdBlock)
 ! Homepage: https://github.com/Cats-Team/AdRules
 ! Powerd by CatsTeam
 ! Expires: 8 Hours
 ! Description: 该规则合并自EasyList、EasyListChina、AdGuard Chinese Filter、EdentwCustom、ClearUrl、乘风规则等，并补充了一些规则
-! Version: 2022-05-05 00:35:43（北京时间） 
-! Total count: 91402
+! Version: 2022-05-05 09:51:59（北京时间） 
+! Total count: 91417
 ###ADCENTER
 ###ADSLOT_1
 ###ADTOP
@@ -4838,6 +4838,7 @@
 ##.js-product-ad-slider
 ##.js-results-ads
 ##.js-right-ad-block
+##.js-sidebar-ads
 ##.js-skyscraper-ad
 ##.js-sticky-ad
 ##.js-widget-distroscale.distroscale
@@ -14377,6 +14378,7 @@ $~xmlhttprequest,removeparam=ref_,domain=imdb.com|amazon.*|primevideo.com|shopbo
 /huya_promotion_content_
 /huyass7.$script,~third-party
 /hy.js?q22
+/i.asp?yk&df=1|$script,third-party
 /i.gif?
 /i.php?i=
 /i.png?id=
@@ -16425,6 +16427,7 @@ $~xmlhttprequest,removeparam=ref_,domain=imdb.com|amazon.*|primevideo.com|shopbo
 /script/ga.js
 /script/logger.
 /script/nasu.js$third-party
+/script/ncsu.js$third-party
 /script/nrsu.js$third-party
 /script/nwsu.js$third-party
 /script/pixel.js
@@ -23117,7 +23120,6 @@ $~xmlhttprequest,removeparam=ref_,domain=imdb.com|amazon.*|primevideo.com|shopbo
 @@||k-img.com/script/analytics/s_code.js$script,domain=kakaku.com
 @@||k12-company.ru^*/statistics.js$script
 @@||kaitao.cn/public/wenda/ad/css/ds-un-detail.css
-@@||kakaotv.daum.net/embed/player/image/ads.png
 @@||kameleoon.com/geolocation.gif$domain=welt.de
 @@||kameleoon.com/ip.gif$domain=welt.de
 @@||kameleoon.eu/ip.gif$domain=welt.de
@@ -30115,6 +30117,7 @@ dooseries.org##center > a[target="_blank"] > img
 dooseries.org##div[id^="widget_ads"]
 dooseries2uhd.com,newseries-hd.com##.sidebar-banner
 dorzeczy.pl##.box-list-item-ad
+doseofporn.com,jennylist.xyz##[href="/goto/desire"]
 dot.ro##.mvp_ad_widget
 dot.ro##div[id^="advads-"]
 dota2.ru#$#abort-on-property-read helpUsImproveSite
@@ -30405,6 +30408,7 @@ duba.com,uu114.cn##.hotTitle
 duba.net###login_alert
 dubizzle.com###top-leaderboard
 duboku.net##div.container:nth-child(2) > div.row:last-child > div.col-md-wide-7.col-xs-1.padding-0:first-child > div.myui-panel.myui-panel-bg.clearfix:nth-child(3) > div.myui-panel-box.clearfix > div.myui-panel_bd > div.col-xs-1
+duckduckgo.com##.js-sidebar-ads > .nrn-react-div
 duckduckgo.com##.module--carousel-products
 dufree4k.com##+js(abort-on-property-read, player_0)
 dujiaoshou.cn###ad1
@@ -38004,7 +38008,6 @@ nonameno.com,rusrek.com##.alert
 nonfungerbils.com#@#iframe[width="600"][height="90"]
 nongjitong.com##.ad_sms
 noonaspoiler.online###side_on_post > div[id^="HTML"]
-noonnu.cc##+js(set-constant, noonnuCanRunAds, false)
 noqreport.com##.custom-html-widget [href] > [src]
 noqreport.com##[class^="noqre-"]
 nosalty.hu##.rubAd
@@ -41979,6 +41982,8 @@ tgfcer.com#@##content_adv
 tgju.org##.advertise
 th7.cn###PcPoPmarket
 th7.cn##.main > .mb5
+thairath.co.th##footer ~ div[style="text-align: center; opacity: 1;"]
+thairath.co.th#?##headerWraper ~ div:matches-css(height: 280px)
 thanhnien.vn###headerTopBanner
 thatnovelcorner.com#@#[href^="http://raboninco.com/"]
 thatviralfeed.com##section[style="margin-top: 5px; margin-bottom: 5px;"]
@@ -44323,8 +44328,6 @@ x3cn.com#?#body > div#qmenu_menu ~ div[style]:has(> a[target="_blank"])
 x6d.com#?#li:-abp-has(>.myad)
 x6d.com,xd0.com,xiaodao0.com##a[href^="/ad."]
 x6g.com##.addd
-x86.co.kr##+js(set-constant, count, 0)
-x86.co.kr#@#.download_ad
 xanimeporn.com##+js(abort-on-property-read, openpopup)
 xanimeporn.com#?##sidebar > .sidebar-widget:has(> .widget-title > span:contains(/^Sponsor$/))
 xanimu.com#?#.video-loop > div.row > div[class^="order-"]:has(> div.video-block > a[href] span.duration-ad)
@@ -51599,6 +51602,7 @@ zznews.cn##.ad:not([style])
 ||ationuctladd.xyz^
 ||atiws.aipai.com^
 ||atjigglypuffor.com^
+||atkmmepquia.com^
 ||atlassian.net/rest/collectors/$third-party
 ||atlihk.dukeanddexter.com^
 ||atljkcq.cn^
@@ -57034,6 +57038,7 @@ zznews.cn##.ad:not([style])
 ||d25xkbr68qqtcn.cloudfront.net^
 ||d261u4g5nqprix.cloudfront.net^
 ||d26adrx9c3n0mq.cloudfront.net^
+||d26p9ecwyy9zqv.cloudfront.net^
 ||d26yfyk0ym2k1u.cloudfront.net^
 ||d276.ourmidland.com^
 ||d27gtglsu4f4y2.cloudfront.net^
@@ -57047,6 +57052,7 @@ zznews.cn##.ad:not([style])
 ||d2cpw6kwpff7n5.cloudfront.net^
 ||d2d8qsxiai9qwj.cloudfront.net^
 ||d2dyjetg3tc2wn.cloudfront.net^
+||d2e48d0dce.com^
 ||d2ers4gi7coxau.cloudfront.net^
 ||d2fbkzyicji7c4.cloudfront.net^
 ||d2fbvay81k4ji3.cloudfront.net^
@@ -58946,6 +58952,7 @@ zznews.cn##.ad:not([style])
 ||e6081b73afec581f.com^
 ||e66gg.com^
 ||e66gg.com^$third-party
+||e70.xyz^
 ||e7001.com^
 ||e7015.com^
 ||e702fa7de9d35c37.com^
@@ -59333,6 +59340,7 @@ zznews.cn##.ad:not([style])
 ||ee.m08pe.cn^$third-party
 ||ee.shixunwang.net^
 ||ee021.com/Runtime/js/
+||ee29eaf10d.com^
 ||eec.crunchyroll.com^
 ||eecd179r3b.com^
 ||eeco-net.actonservice.com^
@@ -64251,6 +64259,7 @@ zznews.cn##.ad:not([style])
 ||hswfj.cn^
 ||hsyipos.com/template/mxone/html_tplmx/vod/*.gif
 ||hsyjxzl.cn^
+||hsykicwjl.com^
 ||ht12366.top^
 ||htds.vip^
 ||htexamplerri.top^
@@ -64797,6 +64806,7 @@ zznews.cn##.ad:not([style])
 ||ifunmac.com/wp-content/uploads/*/alipay-
 ||ifvox.com^$third-party
 ||ig.nadex.com^
+||igame2steam.com^
 ||igamepark.biz/ads_output.php
 ||igaming.biz^$third-party
 ||igao17.com/need/h5.js
@@ -66306,7 +66316,6 @@ zznews.cn##.ad:not([style])
 ||jen.jiji.com/cookie.html
 ||jeniusplay.com/cdn/gif/QQBanner/$image
 ||jenniferlaurax.com^
-||jennylist.xyz/img/yep.gif
 ||jennylist.xyz/t63fd79f7055.js
 ||jenonaw.com^
 ||jeperdee.net^
@@ -70508,6 +70517,7 @@ zznews.cn##.ad:not([style])
 ||media.rencontreshard.com^$third-party,script
 ||media.stiripesurse.ro/assets/img/ads_img^
 ||media01.eu^$third-party
+||media2.malaymail.com/uploads/drstr/img/pelik.js
 ||media6degrees.com^
 ||media8.cn^$third-party
 ||mediaad.org^$third-party
@@ -75291,6 +75301,7 @@ zznews.cn##.ad:not([style])
 ||prairiedog.hashnode.com^
 ||prakritinfixed.com^
 ||praterswhally.com^
+||prawnspiritincomparable.com^
 ||prayersstingy.com^
 ||prayersstingy.com^$popup
 ||prazpf.cn^
@@ -84117,6 +84128,7 @@ zznews.cn##.ad:not([style])
 ||topthink.com/api/basic/
 ||toptracker.ru^$third-party
 ||toptube.fun^
+||toqrsru.cn^
 ||torbit.com^$third-party
 ||torcidatricolor.tv/*.gif$image
 ||tori.fi/img/none.gif$image
@@ -85964,6 +85976,7 @@ zznews.cn##.ad:not([style])
 ||ultimate-guitar.com/components/ab/event?
 ||ultimedia.com/deliver/statistiques/
 ||ultimedia.com/js/common/smart.js$script,third-party
+||ultingcoempa.xyz^
 ||ultrafiles.net/Webservices/jsParseLinks.aspx$script,third-party
 ||ultrafiles.net/visitScript/$script,third-party
 ||ultraimg.com^$domain=18board.com|18p2p.com
@@ -90001,6 +90014,7 @@ zznews.cn##.ad:not([style])
 ||yinlt.com^
 ||yinmofun.com^
 ||yinoo.cn^$third-party
+||yinteukrestina.xyz^
 ||yinvmh.com^
 ||yinyating.top^
 ||yinyouapp.com^
@@ -91007,6 +91021,7 @@ zznews.cn##.ad:not([style])
 ||zishahh.com^
 ||zisu.cn.com^
 ||zitaoh.cn^
+||zitaptugo.com^
 ||zixiaxianhua.shop^
 ||zixinnuo.cn^
 ||zixixtx.top^
