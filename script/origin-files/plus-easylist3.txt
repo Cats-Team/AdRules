@@ -624,6 +624,8 @@ amazon.*##.s-widget > [data-cel-widget^="MAIN"] > [data-cel-widget^="tetris"] > 
 amazon.*##.a-carousel-card > div > div[cel_widget_id^="adplacements:"]:upward(2):remove()
 ! https://github.com/uBlockOrigin/uAssets/issues/12268
 amazon.*##.AdHolder
+! https://jbbs.shitaraba.net/bbs/read.cgi/internet/25463/1598352715/851
+amazon.*###similarities_feature_div span#ad-feedback-text-desktop-arbies:upward(#similarities_feature_div)
 
 ! https://forums.lanik.us/viewtopic.php?p=131942#p131942
 ! https://github.com/uBlockOrigin/uAssets/pull/12960
@@ -4615,6 +4617,8 @@ downloadpirate.com##+js(acis, globalThis, break;case)
 reddit.com##.size-compact.Post:has([class*="promoted"])
 reddit.com##div[id*="sidebar"][data-before-content="advertisement"]:upward(3)
 reddit.com##div[class][data-before-content="advertisement"]:not([id])
+! https://github.com/uBlockOrigin/uAssets/issues/13072
+reddit.com##[id^="t3"].promotedlink:upward(.rpBJOHq2PR60pnwJlUyP0 > div)
 
 ! https://forums.lanik.us/viewtopic.php?f=62&t=40330
 toyoheadquarters.com##+js(aopr, document.dispatchEvent)
@@ -15888,10 +15892,13 @@ livingstondaily.com##+js(aopr, _sp_)
 ! https://github.com/uBlockOrigin/uAssets/issues/13085
 bluemediafiles.com##+js(aopw, Fingerprint2)
 bluemediafiles.com##+js(aopr, open)
+bluemediafiles.com##+js(nano-sib, i--)
+bluemediafiles.com##+js(set, Time_Start, 0)
 @@||bluemediafiles.com^$ghide
 *$image,redirect-rule=1x1.gif,domain=bluemediafiles.com
 @@||bebi.com^$script,domain=bluemediafiles.com
 bluemediafiles.com##[id^="ads-"]:style(height: 1px !important; visibility: collapse !important)
+||bluemediafiles.com/sw.js
 
 ! https://www.reddit.com/r/uBlockOrigin/comments/pywx7p/ad_block_detected_httpssports24stream/
 @@||sports24.*^$ghide
