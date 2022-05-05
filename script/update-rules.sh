@@ -79,7 +79,7 @@ dns=(
   "https://raw.githubusercontent.com/uniartisan/adblock_list/master/adblock_plus.txt"
   "https://raw.githubusercontent.com/hacamer/AdRule/main/dns.txt"
   "https://blocklistproject.github.io/Lists/adguard/ads-ags.txt"
-  "https://blocklistproject.github.io/Lists/adguard/tracking-ags.txt"
+#  "https://blocklistproject.github.io/Lists/adguard/tracking-ags.txt"
 #  "https://raw.githubusercontent.com/notracking/hosts-blocklists/master/adblock/adblock.txt"
 )
 
@@ -106,6 +106,7 @@ hosts=(
   "https://raw.githubusercontent.com/hacamer/Adblist/master/filter/hosts/AdguardMobileAds.txt"
 #"https://raw.githubusercontent.com/StevenBlack/hosts/master/alternates/social/hosts"
   "https://raw.githubusercontent.com/hacamer/Adblist/master/filter/hosts/rules-hosts.txt"
+  "https://blocklistproject.github.io/Lists/basic.txt"
 )
 
 ad_domains=(
