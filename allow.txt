@@ -1,10 +1,10 @@
 ! Title: AdRules Allowlist
-! Checksum: jOL5vANN/bkb8aq2uCwfQw
+! Checksum: c5PT9qJtYSHhXAdvz4jLgw
 ! Homepage: https://github.com/Cats-Team/AdRules
 ! Powerd by CatsTeam
 ! Expires: 8 Hours
-! Version: 2022-05-05 09:51:59（北京时间） 
-! Total count: 18034
+! Version: 2022-05-05 16:29:32（北京时间） 
+! Total count: 18038
 @@$app=com.x.addon.cast
 @@$csp=worker-src 'none',domain=uptostream.com
 @@$domain=avgle.com,webrtc,websocket
@@ -1514,7 +1514,6 @@
 @@||adsatt.espn.starwave.com^$domain=livenewschat.eu,~script
 @@||adscale.de/getads.js$image,domain=dasolo.org
 @@||adscendmedia.com/gwjs.php?aff=$script,third-party
-@@||adsense.wosnaimg.cn/dy/deco/*/js/require.js
 @@||adsense.woso.cn^$~third-party
 @@||adsensecustomsearchads.com/adsense/$script,domain=last.fm
 @@||adserve.atedra.com/js/$script,domain=repeatmyvids.com
@@ -2876,6 +2875,7 @@
 @@||beanfun.com/ADClient/
 @@||beatricedailysun.com^$ghide
 @@||beatthetraffic.com/traffic/?partner=$subdocument
+@@||bebi.com^$script,domain=bluemediafiles.com
 @@||beelink.in/ad/advertisement.js
 @@||beelink.in/advertisement2.js
 @@||beelink.in^$generichide
@@ -3643,12 +3643,14 @@
 @@||cdn.cxense.com/cx*.js$domain=bangkokpost.com
 @@||cdn.cxense.com/cx*.js$domain=tn.com.ar
 @@||cdn.cxense.com/cx.cce.js$domain=tarzanweb.jp
+@@||cdn.cxense.com/cx.cce.js$domain=wsj.com
 @@||cdn.cxense.com/cx.js$domain=itmedia.co.jp
 @@||cdn.cxense.com/cx.js$domain=lavoz.com.ar
 @@||cdn.cxense.com/cx.js$domain=stomp.com.sg
 @@||cdn.cxense.com/cx.js$domain=tarzanweb.jp|wpb.shueisha.co.jp
 @@||cdn.cxense.com/cx.js$domain=tn.com.ar
 @@||cdn.cxense.com/cx.js$domain=wpb.shueisha.co.jp
+@@||cdn.cxense.com/cx.js$domain=wsj.com
 @@||cdn.cxense.com/cx.js$domain=yenisafak.com
 @@||cdn.cxense.com/cx.js$script,domain=handelsblatt.com
 @@||cdn.cxense.com^$script,domain=bizjournals.com|bloombergquint.com|marketwatch.com
@@ -5680,7 +5682,10 @@
 @@||edge.api.brightcove.com^
 @@||edge.fscdn.org/assets/js/angular/MBox/MBox-$script,domain=familysearch.org
 @@||edge.microsoft.com/translate/auth
+@@||edge.mycdn.live/live/*.m3u8$stealth
+@@||edge.mycdn.live/live/*.ts$stealth
 @@||edge.mycdn.live^$stealth,domain=futemax.gratis
+@@||edge.mycdn.live^$stealth,domain=futemax.gratis|futebolplayhd.com
 @@||edge.yunjiasu.com^
 @@||edgesuite.net/crossdomain.xml$domain=sbs.com.au
 @@||edgesuite.net^*/ad.css?
@@ -7648,7 +7653,6 @@
 @@||googletagmanager.com/gtm.js$domain=20min.ch
 @@||googletagmanager.com/gtm.js$domain=accupass.com
 @@||googletagmanager.com/gtm.js$domain=acehardware.com|ads.spotify.com|aeromexico.com|atptour.com|bsa-whitelabel.com|ccleaner.com|chipotle.com|complex.com|crello.com|cyclingnews.com|cypress.io|doodle.com|easternbank.com|flytap.com|fortune.com|jn.pt|kedronparkhotel.com.au|level.travel|nflgamepass.com|nordvpn.com|nourison.com|oakandfort.com|petsathome.com|pioneer.eu|primeoak.co.uk|royalbank.com|scotsman.com|soundguys.com|stressless.com|support.creative.com|trademe.co.nz|tumi.com|uniqlo.com|uqr.to
-@@||googletagmanager.com/gtm.js$domain=acehardware.com|ads.spotify.com|atptour.com|bsa-whitelabel.com|ccleaner.com|chipotle.com|complex.com|crello.com|cyclingnews.com|cypress.io|doodle.com|easternbank.com|flytap.com|fortune.com|jn.pt|kedronparkhotel.com.au|level.travel|nflgamepass.com|nordvpn.com|nourison.com|oakandfort.com|petsathome.com|pioneer.eu|primeoak.co.uk|royalbank.com|scotsman.com|soundguys.com|stressless.com|support.creative.com|trademe.co.nz|tumi.com|uniqlo.com|uqr.to
 @@||googletagmanager.com/gtm.js$domain=ads.allegro.pl
 @@||googletagmanager.com/gtm.js$domain=aena.es
 @@||googletagmanager.com/gtm.js$domain=amd.com
@@ -9149,6 +9153,7 @@
 @@||img.hentai-foundry.com/themes/default/js/adv.js$script
 @@||img.informer.com/images/mac_banner_$domain=informer.com
 @@||img.noobzone.ru^$stealth
+@@||img.shouji.sogou.com^
 @@||img.supmil.net/static2/image^$stealth
 @@||img.tdgujian.com^$image,stealth,domain=2dfan.com
 @@||img.techwallacdn.com/300x250/photos.demandstudios.com/getty/article/*/*.jpg
@@ -9713,7 +9718,6 @@
 @@||kaitao.cn/public/wenda/ad/css/ds-un-detail.css
 @@||kaitaro.jp/images/ad.gif
 @@||kakao.com^$ghide
-@@||kakaotv.daum.net/embed/player/image/ads.png
 @@||kalaydo.de^*/cookie-consent.jsc.js$domain=kalaydo.de
 @@||kalemsende.com/wp-content/plugins/easy-social-share-buttons3/lib/modules/social-followers-counter/assets/font/essb-socialfollowers.
 @@||kaltura.com/content/*/comscorePlugin.swf
@@ -9851,6 +9855,7 @@
 @@||kizzboy.com^$generichide
 @@||kjellmann.no^*/cookielaw/css/cookielaw.css$stylesheet
 @@||kk665403.pixnet.net^$generichide
+@@||klarnaservices.com/lib.js$script,domain=brooksrunning.com
 @@||klaviyo.com/ajax/subscriptions/subscribe$domain=productionmusiclive.com
 @@||klout.com/static/images/*icon
 @@||klp.no/person/plugins/komponentbiblioteket/utils/tracking/Tracking.js
@@ -11493,7 +11498,6 @@
 @@||nonsensediamond.online^$generichide
 @@||nonsensediamond.website^$generichide
 @@||noodid.ee/chordQuiz/$~third-party
-@@||noonnu.cc/js/prebid-ads.js
 @@||nooyul.co^$generichide
 @@||nordcoast-coffee.de/js/cookieconsent.min.js
 @@||nordichardware.se^$generichide
@@ -11555,6 +11559,7 @@
 @@||nsfwmega.com^$ghide
 @@||nsimg.net/biopic^
 @@||nsongs.com^$generichide
+@@||ntalker.com^
 @@||ntc-affinity-api.web.aol.com/affinity/?$script,domain=games.com
 @@||ntcdntempv*.com/data/images/$stealth,domain=nettruyenmoi.com
 @@||nthu.edu.tw^*ad
@@ -12272,7 +12277,6 @@
 @@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$xmlhttprequest,domain=howkteam.vn
 @@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$xmlhttprequest,domain=jaunpurmusic.info
 @@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$xmlhttprequest,domain=liout.com|moneysave.info|ygodl.com|youneed.win
-@@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$xmlhttprequest,domain=liout.com|ygodl.com|youneed.win
 @@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$xmlhttprequest,domain=nullpress.net
 @@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$xmlhttprequest,domain=pigeonburger.xyz
 @@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$xmlhttprequest,domain=romadd.com
@@ -14651,7 +14655,6 @@
 @@||sitestat.com^*/s?*&ns_type=clickin&ns_action=view&ns__t=$image,domain=sueddeutsche.de
 @@||siva-my.jsstatic.com/_ads/_static/$domain=jobstreet.com.my
 @@||sivitechno.com^$generichide
-@@||six;top:200px;z-index:9999;"]
 @@||sixflags.com/global/func/js/siteCatalyst.js
 @@||sixt-neuwagen.de/static/*/js/lib/util/cookiePolicy/js/cookiePolicy.js
 @@||sj.uukanshu.com^
@@ -16522,6 +16525,7 @@
 @@||unpkg.com/vue-recaptcha@*/dist/vue-recaptcha.js$domain=vidoza.net
 @@||unpkg.com/web-vitals/dist/web-vitals.base.iife.js$script,domain=wpolityce.pl
 @@||unshowmasonline.com/banner.gif$image
+@@||uol.com.br^
 @@||up-load.io^$generichide
 @@||up-to-down.net^$generichide
 @@||upaiyun.com^*.js$domain=cilimao.co|cilimao.one

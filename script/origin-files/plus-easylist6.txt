@@ -1,9 +1,9 @@
 [uniartisan's Privacy List]
-! Version: 202205040207
+! Version: 202205050259
 ! Title:  uniartisan's Privacy List
 ! Expires: 1 days (update frequency)
 ! URL = https://github.com/uniartisan/adblock_list
-! Lenth = 41255
+! Lenth = 41276
 ###qoo-counter
 ###ramblerCounter
 ###top100counter
@@ -1028,7 +1028,7 @@ $xmlhttprequest,domain=auroravid.to|flashx.cc|nowvideo.sx|onlinevideoconverter.c
 /\.com\/[-_0-9a-zA-Z]{4,}\/[-\/_0-9a-zA-Z]{30,}$/$script,~third-party,domain=gu-global.com|uniqlo.com
 /\/(public|resources|static|assets)\/([a-f0-9]){28,31}$/$script,xmlhttprequest,~third-party
 /\/js\/[a-z]{3}\d\.js$/$script,~third-party,domain=eegg.fun
-/^https:\/\/cdn\.jsdelivr\.net\/npm\/([a-z]|-){4,22}@latest\/dist\/script\.min\.js$/$domain=tgd.kr|loawa.com|ygosu.com|inven.co.kr|ppss.kr|dailymagazine.co.kr|dailian.co.kr|socialvalue.kr|usjournal.kr|basketkorea.com|jumpball.co.kr|joynews24.com|inews24.com|hobbyen.co.kr|thespike.co.kr|siminilbo.co.kr|mdtoday.co.kr|clien.net|ujeil.com|starnnews.com|sportsw.kr|enewstoday.co.kr|readersnews.com|algumon.com|1412.rest
+/^https:\/\/cdn\.jsdelivr\.net\/npm\/([a-z]|-|_){4,22}@latest\/dist\/script\.min\.js$/$domain=tgd.kr|loawa.com|ygosu.com|inven.co.kr|ppss.kr|dailymagazine.co.kr|dailian.co.kr|socialvalue.kr|usjournal.kr|basketkorea.com|jumpball.co.kr|joynews24.com|inews24.com|hobbyen.co.kr|thespike.co.kr|siminilbo.co.kr|mdtoday.co.kr|clien.net|ujeil.com|starnnews.com|sportsw.kr|enewstoday.co.kr|readersnews.com|algumon.com|1412.rest
 /^https?:\/\/(.+?\.)?hardware\.info\/js\/[a-z]{1,}\/[0-9]{4,}\.js/$domain=hardware.info
 /^https?:\/\/fdts\.ebay-kleinanzeigen\.de\/[a-z0-9]{13,18}\.js\?/$script,domain=ebay-kleinanzeigen.de
 /^https?:\/\/js.*\/t\/[0-9]{3}\/[0-9]{3}\/[a-z0-9]{7,8}\.js/$script,third-party
@@ -2914,6 +2914,7 @@ $xmlhttprequest,domain=auroravid.to|flashx.cc|nowvideo.sx|onlinevideoconverter.c
 /gapro.swf
 /gascript.
 /gasocialtracking.
+/gastats.
 /gatag.js
 /gatag_v2.
 /gatc.js
@@ -4311,6 +4312,7 @@ $xmlhttprequest,domain=auroravid.to|flashx.cc|nowvideo.sx|onlinevideoconverter.c
 /plugins/wordfence/visitor.php?
 /plzcrawlme.js
 /pm/pixel.
+/pmc-google-universal-analytics/*
 /pmspxl.
 /point_roll.
 /pointeur.gif?
@@ -4931,7 +4933,7 @@ $xmlhttprequest,domain=auroravid.to|flashx.cc|nowvideo.sx|onlinevideoconverter.c
 /statcollector.
 /statcollector/*
 /statcount.
-/statcounter-
+/statcounter-$~image
 /statcounter.asp
 /statcounter.js
 /statcountex/count.asp?
@@ -6132,6 +6134,7 @@ $xmlhttprequest,domain=auroravid.to|flashx.cc|nowvideo.sx|onlinevideoconverter.c
 /zddmp.min.js
 /zdgurgler.min.js
 /zemtracker.
+/zhugeio.js
 /zig.js
 /zig_c.min.js
 /zonapixel.
@@ -6449,6 +6452,7 @@ $xmlhttprequest,domain=auroravid.to|flashx.cc|nowvideo.sx|onlinevideoconverter.c
 @@||api.cxense.com/public/widget/data?json=$domain=delfi.lt
 @@||api.cxense.com/public/widget/data?json=$domain=lavoz.com.ar
 @@||api.cxense.com/public/widget/data?json=$domain=pcgames.de
+@@||api.cxense.com/public/widget/data?json=$domain=wpb.shueisha.co.jp
 @@||api.cxense.com/public/widget/data?json=$domain=wsj.com
 @@||api.cxense.com/public/widget/data?json=$domain=yenisafak.com
 @@||api.cxense.com/public/widget/data?json=$script,domain=ksml.fi|savonsanomat.fi
@@ -6459,6 +6463,7 @@ $xmlhttprequest,domain=auroravid.to|flashx.cc|nowvideo.sx|onlinevideoconverter.c
 @@||api.fw.tv/embed/$domain=filmibeat.com
 @@||api.getmakerlog.com/discussions/$~third-party,websocket,xmlhttprequest
 @@||api.ip.sb/geoip$domain=ip.skk.moe
+@@||api.ipify.org/?format=jsonp&callback=getIP$domain=embedflix.net
 @@||api.ipify.org^$script,domain=right-on.co.jp
 @@||api.ipify.org^$xmlhttprequest,domain=247sports.com|account.pennytel.com.au|equinoxplus.com|speedcheck.ky
 @@||api.ipinfodb.com^$xmlhttprequest,domain=management30.com
@@ -6645,6 +6650,7 @@ $xmlhttprequest,domain=auroravid.to|flashx.cc|nowvideo.sx|onlinevideoconverter.c
 @@||cdn.cxense.com/cx.js$domain=stomp.com.sg
 @@||cdn.cxense.com/cx.js$domain=tarzanweb.jp|wpb.shueisha.co.jp
 @@||cdn.cxense.com/cx.js$domain=tn.com.ar
+@@||cdn.cxense.com/cx.js$domain=wpb.shueisha.co.jp
 @@||cdn.cxense.com/cx.js$domain=yenisafak.com
 @@||cdn.cxense.com/cx.js$script,domain=handelsblatt.com
 @@||cdn.cxense.com^$script,domain=bizjournals.com|bloombergquint.com|marketwatch.com
@@ -6849,6 +6855,7 @@ $xmlhttprequest,domain=auroravid.to|flashx.cc|nowvideo.sx|onlinevideoconverter.c
 @@||crwdcntrl.net/*callback=setPIDForPlayer$domain=static.rtl.nl
 @@||csdata1.com/data/js/$domain=acehardware.com
 @@||csid.com/wp-content/plugins/bwp-minify/min/?*/google-analyticator/$script
+@@||csm.cxpublic.com/Shueisha.js$domain=wpb.shueisha.co.jp
 @@||csm.cxpublic.com^$script,domain=mainichi.jp
 @@||csm.cxpublic.com^$script,domain=tarzanweb.jp
 @@||csoonline.com/js/demandbase.js
@@ -7403,7 +7410,7 @@ $xmlhttprequest,domain=auroravid.to|flashx.cc|nowvideo.sx|onlinevideoconverter.c
 @@||googletagmanager.com/gtag/js^$domain=timparty.tim.it
 @@||googletagmanager.com/gtm.js$domain=20min.ch
 @@||googletagmanager.com/gtm.js$domain=accupass.com
-@@||googletagmanager.com/gtm.js$domain=acehardware.com|ads.spotify.com|atptour.com|bsa-whitelabel.com|ccleaner.com|chipotle.com|complex.com|crello.com|cyclingnews.com|cypress.io|doodle.com|easternbank.com|flytap.com|fortune.com|jn.pt|kedronparkhotel.com.au|level.travel|nflgamepass.com|nordvpn.com|nourison.com|oakandfort.com|petsathome.com|pioneer.eu|primeoak.co.uk|royalbank.com|scotsman.com|soundguys.com|stressless.com|support.creative.com|trademe.co.nz|tumi.com|uniqlo.com|uqr.to
+@@||googletagmanager.com/gtm.js$domain=acehardware.com|ads.spotify.com|aeromexico.com|atptour.com|bsa-whitelabel.com|ccleaner.com|chipotle.com|complex.com|crello.com|cyclingnews.com|cypress.io|doodle.com|easternbank.com|flytap.com|fortune.com|jn.pt|kedronparkhotel.com.au|level.travel|nflgamepass.com|nordvpn.com|nourison.com|oakandfort.com|petsathome.com|pioneer.eu|primeoak.co.uk|royalbank.com|scotsman.com|soundguys.com|stressless.com|support.creative.com|trademe.co.nz|tumi.com|uniqlo.com|uqr.to
 @@||googletagmanager.com/gtm.js$domain=ads.allegro.pl
 @@||googletagmanager.com/gtm.js$domain=amd.com
 @@||googletagmanager.com/gtm.js$domain=anond.hatelabo.jp
@@ -8134,6 +8141,7 @@ $xmlhttprequest,domain=auroravid.to|flashx.cc|nowvideo.sx|onlinevideoconverter.c
 @@||oriflame.ru^$cookie=SC_ANALYTICS_GLOBAL_COOKIE
 @@||ots.webtrends-optimize.com/$xmlhttprequest,domain=tvlicensing.co.uk
 @@||ovp.piksel.com/ipLookup.php$xmlhttprequest,domain=nhk.or.jp
+@@||ovp.piksel.tech/ipLookup.php$xmlhttprequest,domain=nhk.or.jp
 @@||oyster.com/wp-content/plugins/smartertravel-shared/assets/js/tracking.min.js$~third-party
 @@||ozone.ru/assets/analytics.$script,~third-party
 @@||p.typekit.net/*.css$domain=cfr.org
@@ -8333,6 +8341,7 @@ $xmlhttprequest,domain=auroravid.to|flashx.cc|nowvideo.sx|onlinevideoconverter.c
 @@||scdn.cxense.com/cx.cce.js$domain=mainichi.jp|wpb.shueisha.co.jp
 @@||scdn.cxense.com/cx.cce.js$domain=pcgames.de
 @@||scdn.cxense.com/cx.cce.js$domain=tn.com.ar
+@@||scdn.cxense.com/cx.cce.js$domain=wpb.shueisha.co.jp
 @@||scdn.cxense.com/cx.cce.js$domain=wsj.com
 @@||scdn.cxense.com/cx.cce.js$script,domain=handelsblatt.com
 @@||scdn.cxense.com/cx.js$domain=13.cl
@@ -9234,6 +9243,7 @@ vulture.com##div[data-uri="www.vulture.com/_components/clay-space/instances/tabo
 w-kino.ru,kinotochka.club,legend.az##.counts
 washingtonpost.com##.social-tools-wrapper-bottom
 web.frontapp.com/api$image
+weekly-economist.mainichi.jp##iframe[id^="cxWidget_"]
 welovepg.polymail.io$image
 westnews.com.ua##a[href="http://www.bigmir.net/"]
 woman.excite.co.jp#%#//scriptlet('remove-attr', 'data-woman-ex', 'a[href][data-woman-ex]')
@@ -11759,6 +11769,7 @@ znak.com##.relap
 ||analytics.chase.com^
 ||analytics.chegg.com^
 ||analytics.chilevision.cl^
+||analytics.chita.ru^
 ||analytics.churchthemes.com^
 ||analytics.churnzero.net^
 ||analytics.chvnoticias.cl^
@@ -12427,6 +12438,7 @@ znak.com##.relap
 ||api.rudderlabs.com^$third-party
 ||api.ryanyao.design^
 ||api.safedk.com^
+||api.safegraph.com^
 ||api.salesmachine.io/*/track/event
 ||api.sec.miui.com^
 ||api.segment.io^
@@ -12954,6 +12966,7 @@ znak.com##.relap
 ||avitop.com/aviation/hitlist.asp
 ||avma.avmaplit.com^
 ||avmws.com^$third-party
+||avo.app^$third-party
 ||avo.app^*/track
 ||avocado.laprovence.com^
 ||avolvesoftware.actonservice.com^
@@ -16533,6 +16546,7 @@ znak.com##.relap
 ||da.hornbach.sk^
 ||da.maif.fr^
 ||da.netease.com^
+||da29e6b8-f018-490f-b25f-39a887fc95e7.xyz^
 ||daa.shuzilm.cn/report
 ||dable.io^$third-party
 ||dacota.tw/wp-content/plugins/wp-mop-analytics/
@@ -20832,6 +20846,7 @@ znak.com##.relap
 ||hdmtools.com^$third-party
 ||hdmz.co/site/user_geo
 ||hdnagl.womensecret.com^
+||hdslb.com/bfs/cm/cm-sdk/static/js/bili-collect.js$script,redirect=noopjs,domain=bilibili.com,important
 ||hdslb.com/images/isptrack.js
 ||hdxdhu.zumnorde.de^
 ||he2d.com^$third-party
@@ -22710,6 +22725,7 @@ znak.com##.relap
 ||kangaroo.kraenk.de^
 ||kantartns.lt^$third-party
 ||karelia.info/counter/
+||kariyer.net^$cookie=jobviewcount
 ||karstadt.de/on/demandware.store/*/__Analytics-Tracking?
 ||karte.io^$third-party
 ||katcqa.azeta.lv^
@@ -23540,6 +23556,7 @@ znak.com##.relap
 ||livetracker.*.pangea-cms.com^$third-party
 ||livetracker.rfe.pangea-cms.com^
 ||livetrafficfeed.com^$third-party
+||liveux.netcentric.biz/collector
 ||liveviewer.ez.no^
 ||livewebstats.dk^$third-party
 ||liveyield.com^
@@ -23824,6 +23841,7 @@ znak.com##.relap
 ||logs.datadoghq.com^$third-party
 ||logs.datadoghq.eu^
 ||logs.datadoghq.eu^$domain=~app.datadoghq.eu
+||logs.eu-west-1.amazonaws.com^
 ||logs.gaaana.com^
 ||logs.gaana.com^
 ||logs.ggweb.nl^
@@ -27669,6 +27687,7 @@ znak.com##.relap
 ||p.statp.com^
 ||p.tencentmind.com^
 ||p.tinynewsfeed.com^$third-party
+||p.typekit.net/*.css$stylesheet,redirect-rule=noopcss,domain=burnabyvillagemuseum.ca
 ||p.typekit.net^$third-party
 ||p.versacommerce.de^
 ||p.victoria.dev^
@@ -29376,9 +29395,6 @@ znak.com##.relap
 ||rcbsrm.fivefoxes.co.jp^
 ||rcgi.video.qq.com^
 ||rcm.shinobi.jp^
-||rcontent.services.tvn.pl/fpdata.js
-||rcontent.services.tvn.pl/gemiuslib.js
-||rcontent.services.tvn.pl/gstream.js
 ||rcounter.rambler.ru^
 ||rcp.evolok.net^$third-party
 ||rcs.mako.co.il/js/neo/hpstats.js
@@ -31208,6 +31224,10 @@ znak.com##.relap
 ||services.cmacgm-group.com^
 ||services.hmhost.co.uk^
 ||services.sdiapi.com^
+||services.tvn.pl/fpdata.js
+||services.tvn.pl/gemiuslib.js
+||services.tvn.pl/gstream.js
+||services.tvn.pl/maertsg.js
 ||services.wetek.com^
 ||services.wiseadvice.ru/tracker/js/*/wa.min.js
 ||servizi.unionesarda.it/controlli/
@@ -36000,6 +36020,7 @@ znak.com##.relap
 ||t.signalayer.com^
 ||t.simply-hentai.com^
 ||t.skimresources.com^
+||t.smartverify.pro^
 ||t.smile.eu^
 ||t.smumustangs.com^
 ||t.sommer-ticket-bahn.de^
