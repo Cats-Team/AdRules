@@ -9,6 +9,7 @@
 
 return array(
     /**start**/
+    'share.dmhy.org' => 0, //动漫花园BT站
     'nstool.netease.com' => 0, //網易DNS檢測
     't.uc.cn' => 0, //夸克瀏覽器掃碼登陸
     '360.cn' => 0,
