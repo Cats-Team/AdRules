@@ -12,3 +12,5 @@ assignees: ''
 使用的列表： （具体的規則AdRules AD Domain List,AdRules AdBlock Full List等等）
 使用的工具：（例如AdGuard Home, AdGuard, ublock origin等）
 问题描述：<!-- 有附加截图更佳-->
+
+该域名的作用：
