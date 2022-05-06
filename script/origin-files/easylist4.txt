@@ -1,15 +1,15 @@
 [Adblock Plus 3.0]
-! Checksum: pr5+CnLAlO502hiPEy8MNQ
+! Checksum: gC+4wlM4+hPPYKitQo6eTQ
 ! Title: My AdFilters（for PC）
 ! Expires: 2 hours
-! Version: 202205061732
-! Last Modified: 2022年05月06日 17:32
+! Version: 202205061835
+! Last Modified: 2022年05月06日 18:35
 ! Homepage: https://adf.minggo.eu.org
 ! 本规则合并自乘风视频广告过滤规则、Easylist、EasylistChina、EasyPrivacy、CJX'sAnnoyance
 ! 并补充了贴吧过滤规则，感谢各位前辈的分享！
 ! 如有任何疑问、意见或建议，请反馈至：HalfLife吧
 !
-! Total count: 86001
+! Total count: 86004
 ###ADCENTER
 ###ADSLOT_1
 ###ADTOP
@@ -25896,6 +25896,7 @@ bombaytimes.com##a[onclick*="click"][rel="nofollow,noindex"]
 bombaytimes.com#?#div:-abp-has(> h4 > span:-abp-contains(Ad: ))
 bombuj.si##+js(remove-attr, href, a[id*="-reklam"][target="_blank"])
 bonbonme.com##.topbannerer
+bongdahomnay.tech#$#abort-on-property-read $
 boniu123.cc##.left_side
 boniu123.cc##.right_side
 boniu123.cc##.td_item
@@ -33427,6 +33428,7 @@ live94today.com##.js-demo-avd
 livecricket.is##+js(window.open-defuser)
 livedoorblogstyle.jp#@#.ad-center
 liveforums.ru#$#abort-on-property-read tnAdditionalParams
+livehindustan.com##+js(no-fetch-if, pagead2.googlesyndication.com)
 livehindustan.com##.ads
 livehindustan.com##.prlads
 livejasmin.com##.container_banner
@@ -82466,6 +82468,7 @@ zznews.cn##.ad:not([style])
 ||weimeicar.cn^
 ||weinin99.cn^
 ||weipapa.top^
+||weiv1fl.cn^
 ||weiweitop.top^
 ||weix.xyz^
 ||weixinhuoyuan.com^
