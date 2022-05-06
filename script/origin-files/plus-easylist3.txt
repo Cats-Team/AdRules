@@ -4414,6 +4414,7 @@ op.gg##div[class^="css-"]:has(> div:not([class], [id]) > .vm-placement:not([styl
 op.gg##div[class^="css-"]:has(> div:not([class], [id]) > .vm-placement[data-display-type="hybrid-banner"])
 ! https://github.com/uBlockOrigin/uAssets/issues/13023
 op.gg##[id^="div-gpt-ad"]:not([class]):upward(div[class])
+op.gg##+js(no-fetch-if, doubleclick)
 
 ! https://www.reddit.com/r/uBlockOrigin/comments/85mgro/%C2%B5block_doesnt_block_ads_on_this_site/
 birdsandblooms.com,bombshellbling.com,collegehumor.com,dorkly.com,dryscalpgone.com,eclypsia.com,familyhandyman.com,gala.fr,gentlemansgazette.com,homeschoolgiveaways.com,hotbeautyhealth.com,ketoconnect.net,mom4real.com,mynaturalfamily.com,oneessentialcommunity.com,pageflutter.com,printablecrush.com,psychologyjunkie.com,skinnyms.com,skintagsgone.com,stayglam.com,tasteandtellblog.com,thecelticblog.com,thecozyapron.com,theendlessmeal.com,thehappierhomemaker.com,thelovenerds.com,yellowblissroad.com##+js(acis, btoa, BOOTLOADER_LOADED)
@@ -7497,11 +7498,6 @@ dailybreeze.com,dailybulletin.com,dailynews.com,delcotimes.com,eastbaytimes.com,
 *$script,domain=delcotimes.com|macombdaily.com|santacruzsentinel.com|saratogian.com|theoaklandpress.com|trentonian.com,redirect-rule=noopjs
 *$image,domain=delcotimes.com|macombdaily.com|santacruzsentinel.com|saratogian.com|theoaklandpress.com|trentonian.com,redirect-rule=2x2.png
 ocregister.com##a[href^="http://www.webpublished.com"]
-
-! https://github.com/uBlockOrigin/uAssets/issues/3240
-@@||r7.com^$ghide
-r7.com###vertical-header-ads
-@@||imasdk.googleapis.com/js/sdkloader/ima3.js$script,domain=r7.com
 
 ! https://github.com/uBlockOrigin/uAssets/issues/3242
 @@||modd.io/showads.js$xhr,1p
@@ -18706,9 +18702,6 @@ vidload.net##+js(aopr, AaDetector)
 
 ! https://github.com/AdguardTeam/AdguardFilters/issues/50524
 sandiegouniontribune.com##+js(aopr, googlefc)
-
-! https://github.com/NanoMeow/QuickReports/issues/3149
-forum.outerspace.com.br##+js(acis, $, adBlock)
 
 ! https://github.com/AdguardTeam/AdguardFilters/issues/50548
 almezoryae.com##+js(acis, document.createElement, adblock)
