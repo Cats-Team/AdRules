@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Checksum: 5glnYL5n0U26/55F4+hfNQ
+! Checksum: 3lWZBs5YfmwgQCi5IbdWFQ
 ! Title: Fanboy+Easylist-Merged Ultimate List
-! Version: 202205070033
-! Last modified: 2022-05-07 00:33 UTC
+! Version: 202205070733
+! Last modified: 2022-05-07 07:33 UTC
 ! Expires: 3 days (update frequency)
 ! Homepage: https://easylist.to/
 ! Licence: https://easylist.to/pages/licence.html
@@ -1522,7 +1522,7 @@
 /adcore_$domain=~adcore.ch|~adcore.com.au
 /adcount.$domain=~adcount.com|~adcount.fi
 /adcounter.
-/adcreative.$domain=~adcreative.es
+/adcreative.$domain=~adcreative.es|~hange.jp
 /adcreative/*$~image
 /adcreatives/*
 /adcss/*$~image
@@ -22189,6 +22189,7 @@ _800x80_
 ##.advert_mpu_body_hdr
 ##.advert_nav
 ##.advert_note
+##.advert_pos
 ##.advert_rectangle_aside
 ##.advert_small
 ##.advert_societe_general
@@ -53047,7 +53048,6 @@ tf2r.com#@#.adverts
 ||groupon.com/javascripts/common/affiliate_widget/
 ||grscty.com/images/banner/
 ||gsniper.com/images/
-||gstaticadssl.l.google.com^$~font,third-party,~xmlhttprequest
 ||handango.com/marketing/affiliate/
 ||hbid.ams3.cdn.digitaloceanspaces.com^
 ||hide-my-ip.com/promo/
@@ -55296,6 +55296,7 @@ snewscms.com,yokogames.com###advertisment
 apkonline.net###adxx
 thebugle.co.za###adz
 apkonline.net###adzz
+exportfromnigeria.info###affs
 purplepainforums.com###affiliates
 systutorials.com###after-content-1
 amgreatness.com###ag-lead
@@ -55893,6 +55894,11 @@ geeky-gadgets.com###text-105335641
 ssbcrack.com###text-11
 cathnews.co.nz,cryptoreporter.info,net-load.com,wakingtimes.com###text-12
 radiosurvivor.com###text-13
+kollelbudget.com###text-43
+kollelbudget.com###text-70
+kollelbudget.com###text-78
+kollelbudget.com###text-82
+kollelbudget.com###text-83
 ericpetersautos.com###text-133
 planetinsane.com###text-14
 geeksforgeeks.org###text-15
@@ -58129,7 +58135,9 @@ twitter.com##a[href*="src=promoted_trend_click"] + div
 unitconversion.org##a[href="../noads.html"]
 1337x.to##a[href="/v-pn2dl-hideip"]
 techporn.ph##a[href][target*="blank"]
+kollelbudget.com##a[href^="https://www.oorahauction.org/"][target="_blank"] > img
 rarbg.to,rarbgaccess.org,rarbgmirror.com,rarbgmirror.org,rarbgproxy.com,rarbgproxy.org,rarbgunblock.com,rarbgunblocked.org##a[href][target="_blank"] > button
+mtaeta.info##a[href][target="_blank"] > img[src^="http://storage2.proboards.com/"]
 flaticon.com##a[href^="//www.flaticon.com/edge/redirect?"]
 linkhub.icu##a[href^="/downloadnow.php?"]
 limetorrents.pro##a[href^="/leet/?"] > img[src^="/static/images/download"]
@@ -60121,6 +60129,7 @@ youporn.com#?#aside:-abp-has(a.ad-remove)
 @@||sascdn.com/diff/templates/ts/dist/banner/sas-banner-$script,domain=dr.dk
 @@||scan-manga.eu/*pageID=$~third-party
 @@||searchad.naver.com^$~third-party
+@@||site-banner.hange.jp/adshow?$domain=animallabo.hange.jp
 @@||smartadserver.com/3310/call$xmlhttprequest,domain=dr.dk
 @@||smartadserver.com/ac?nwid=3310^$script,domain=dr.dk
 @@||smartadserver.com/h/nshow?siteid=$script,domain=dr.dk
@@ -89199,7 +89208,6 @@ reddit.com##+js(acis, addScript)
 reddit.com##+js(acis, adSlots)
 reddit.com##+js(acis, googletag.pubads)
 reddit.com##+js(acis, window.__adslots)
-reddit.com##._3RPJ8hHnfFohktLZca18J6
 reddit.com##.dfp-ad-container
 reddit.com##.email-collection-banner
 reddit.com##.premium-banner
@@ -118981,6 +118989,7 @@ _subscribers_newsletters/
 ##.c-legalBanner
 ##.c-message--cookie-alert
 ##.c-notice.c-floating
+##.c-notification-bar__overlay
 ##.c-notify-cookie
 ##.c-popup-cookie-simple
 ##.c-privacy-consent-modal
@@ -127772,6 +127781,7 @@ m###teaser-newsletter
 ##[data-module="newsletter-signup"]
 ##[data-nc="nc-newsletter"]
 ##[data-target="#newsletter-modal"]
+##[data-testid="newsletter-promo-widget"]
 ##[id^="mailchimp-signup-subscribe-"]
 ##[id^="ml-webforms-popup-"]
 ##a[title="Daily Email Newsletter"]
@@ -128541,6 +128551,7 @@ m###teaser-newsletter
 ||friends2follow.com^$subdocument,third-party
 ||fwcdn2.com^$third-party
 ||fwcdn3.com^$third-party
+||getbutton.io/widget-send-button/$third-party
 ||getpocket.com/button?$third-party
 ||getsocial.io/widget/$third-party
 ||getsocial.io^*/gs_async.js$third-party

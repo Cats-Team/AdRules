@@ -1,7 +1,7 @@
 [Adblock Plus 2.0]
-! Version: 202205070054
+! Version: 202205070717
 ! Title: Fanboy's Annoyance List
-! Last modified: 07 May 2022 00:54 UTC
+! Last modified: 07 May 2022 07:17 UTC
 ! Expires: 4 days (update frequency)
 ! License: http://creativecommons.org/licenses/by/3.0/
 ! Please report any unblocked content or problems by email or in our forums
@@ -8640,6 +8640,7 @@ m###teaser-newsletter
 ##[data-module="newsletter-signup"]
 ##[data-nc="nc-newsletter"]
 ##[data-target="#newsletter-modal"]
+##[data-testid="newsletter-promo-widget"]
 ##[id^="mailchimp-signup-subscribe-"]
 ##[id^="ml-webforms-popup-"]
 ##a[title="Daily Email Newsletter"]
@@ -30771,6 +30772,7 @@ m###teaser-newsletter
 ##.c-legalBanner
 ##.c-message--cookie-alert
 ##.c-notice.c-floating
+##.c-notification-bar__overlay
 ##.c-notify-cookie
 ##.c-popup-cookie-simple
 ##.c-privacy-consent-modal
@@ -38035,6 +38037,7 @@ m###teaser-newsletter
 ||friends2follow.com^$subdocument,third-party
 ||fwcdn2.com^$third-party
 ||fwcdn3.com^$third-party
+||getbutton.io/widget-send-button/$third-party
 ||getpocket.com/button?$third-party
 ||getsocial.io/widget/$third-party
 ||getsocial.io^*/gs_async.js$third-party
