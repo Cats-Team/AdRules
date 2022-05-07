@@ -1213,7 +1213,6 @@ fullxh.com,hamsterix.*,megaxh.com,unlockxh4.com,xhamster.*,xhamster1.*,xhamster1
 fullxh.com,hamsterix.*,megaxh.com,unlockxh4.com,xhamster.*,xhamster1.*,xhamster10.*,xhamster11.*,xhamster12.*,xhamster13.*,xhamster14.*,xhamster15.*,xhamster16.*,xhamster17.*,xhamster18.*,xhamster19.*,xhamster2.*,xhamster4.*,xhamster46.com,xhamster5.*,xhamster7.*,xhamster8.*,xhplanet1.com,xhtab2.com,xhwebsite.com,xhwide1.com##[href*="/faphouse/out"]
 ||xhamsterpremium.com^$3p
 ||xhamsterlive.com^$3p
-||stripst.com^$3p,domain=~jav.rocks|~scorchin.com|~skinstrip.net|~stripchat.com|~xhamsterlive.com
 !#if env_mobile
 xhamster.*##^script:has-text(popunder)
 xhamster7.*,xhamster8.*,xhamster10.*,xhamster11.*##+js(aopw, wio-vpopunder)
@@ -1588,6 +1587,8 @@ fmovies.*##+js(set, console.clear, undefined)
 fmovies.*###modalshare
 fmovies.*##.modal-backdrop
 fmovies.*##body.modal-open:style(overflow: auto!important)
+fmovies.*###gift-middle
+fmovies.*###gift-top
 *$script,redirect-rule=noopjs,domain=playhydrax.com
 ! https://github.com/NanoMeow/QuickReports/issues/3311
 @@||iamcdn.net/players/*ads$script,domain=playhydrax.com
@@ -2453,7 +2454,7 @@ txxx.*##+js(acis, setTimeout, hommy.mutation.mutation)
 txxx.*##+js(aeld, click, pop.beforeOpen)
 txxx.*##+js(aopr, jwplayer.utils.Timer)
 txxx.*##.content.page.page-video .video-content > div[class] > div > div[class] > div[class][style^="background-image:"]:style(background-image: none !important;)
-txxx.*##.jw-wrapper + div[id][style="display:flex !important"] > div
+txxx.*##div[style="display:flex !important"] > div
 txxx.*##.video-ad-videos + div + div[class]:has(> div[class] > div[id][class])
 txxx.*##.video-content > div > div + div + div:has-text(/Advertisement|Sponsored/)
 txxx.*##.video-content > div[class] > div.text > a[href="#"]:upward(2)
@@ -2478,7 +2479,7 @@ voyeurhit.com##.footer-banners
 upornia.*##+js(acis, adver)
 upornia.com##+js(nosiif, undefined)
 upornia.com##+js(nowoif)
-upornia.*##.jwplayer > div[style="display:flex !important"] > div
+upornia.*##div[style="display:flex !important"] > div
 upornia.*##.video-content > div[class] > div.text > a[href="#"]:upward(2)
 upornia.*##.videoplayer-wrapper + div > div[class]:only-child
 upornia.*##.app-banners
@@ -2556,7 +2557,7 @@ thegay.com##.underplayer__info > div:first-child:has(> div > div#und_ban)
 thegay.*##.video-page__content > .right
 ! privatehomeclips.com
 privatehomeclips.com##.footer-banners
-privatehomeclips.com##.jwplayer > div[style="display:flex !important"] > div
+privatehomeclips.com##div[style="display:flex !important"] > div
 privatehomeclips.com##.partners-wrap
 privatehomeclips.com##.video-page__content > .right
 privatehomeclips.com##.video-page__item
@@ -2571,6 +2572,7 @@ vxxx.com##.videoplayer + div > div[class]
 vxxx.com##.wrapper-margin + div[class]:last-child
 ! pornhits.com popup/under
 pornhits.com##+js(acis, ACtMan)
+pornhits.com###s-suggesters
 ||pornhits.com/magic/
 ||mrtbbnr.com^
 ||red12flyw2.site^$3p
@@ -2586,7 +2588,7 @@ mrgay.com,pornhits.com##.right
 ! senzuri.tube redirect
 senzuri.tube##+js(acis, adver)
 ! txxxporn.tube PH
-txxxporn.tube##.jw-wrapper + div[id][style="display:flex !important"] > div
+txxxporn.tube##div[style="display:flex !important"] > div
 txxxporn.tube##.video-videos-slider + div[class] + div[class]
 txxxporn.tube##div.text:upward(1)
 ! https://github.com/uBlockOrigin/uAssets/issues/4234
@@ -2596,7 +2598,7 @@ hclips.com##+js(aopr, ExoLoader)
 hclips.com##.adv-box-holder
 hclips.com##[class^="pl_"]
 hclips.com##iframe[src="javascript:false"]
-hclips.com##.jwplayer > div[style="display:flex !important"] > div
+hclips.com##div[style="display:flex !important"] > div
 hclips.com##.video-page__content > .right
 hclips.com##.video-page__item
 hclips.com##.content > div > .wrapper + div[class]:not(.wrapper)
@@ -9502,7 +9504,8 @@ mixdrop.*##div[onclick^="$(this).remove"]
 ! https://github.com/uBlockOrigin/uAssets/issues/4221
 hellporno.com##+js(popads-dummy)
 m.hellporno.com###fltd-inner
-hellporno.com##.bnnrs-player
+hellporno.*##.bnnrs-player
+hellporno.net##.bottom-banners
 
 ||share.notizie.it^
 ||tracking.notizie.it^
@@ -12628,10 +12631,11 @@ ckk.ai##a[href^="https://tipsalert.xyz"]
 ||35.224.227.218^$all
 
 ! https://github.com/uBlockOrigin/uAssets/issues/5441
-sendvid.com##+js(nowoif)
+sendvid.com##+js(nowoif, !/^https:\/\/sendvid\.com\/[0-9a-z]+$/)
 sendvid.com##[href*=".php"]
 sendvid.com###video-js-video > [href^="javascript:"]
 sendvid.com###vjs-logo-top-bar
+sendvid.com###ftr
 
 ! https://github.com/uBlockOrigin/uAssets/issues/5448
 imgdawgknuttz.com##+js(aopw, atOptions)
@@ -14826,6 +14830,7 @@ tubepornclassic.com##.content > div > .container + div
 tubepornclassic.com##.jwplayer > .afs_ads + span[class]
 tubepornclassic.com##.video-page__adv
 tubepornclassic.com##.video-page__content > .right
+tubepornclassic.com##a[href^="http://www.theclassicporn.com/"]:upward(1)
 
 ! https://github.com/uBlockOrigin/uAssets/issues/6144
 flashingjungle.com##+js(aeld, /^(click|mousedown|mousemove|touchstart|touchend|touchmove)/, system.popunder)
@@ -14845,30 +14850,38 @@ pussyspot.net,wildpictures.net##[href^="https://easygamepromo.com/"]
 ! https://github.com/AdguardTeam/AdguardFilters/issues/69868
 ! https://github.com/AdguardTeam/AdguardFilters/issues/70891
 8boobs.com,babesinporn.com,hotstunners.com,mainbabes.com,mysexybabes.com,pleasuregirl.net,rabbitsfun.com,sexybabesz.com,silkengirl.*##+js(aopr, ExoLoader.addZone)
-8boobs.com,babesinporn.com,boobgirlz.com,fooxybabes.com,hotstunners.com,jennylist.xyz,jumboporn.xyz,mainbabes.com,mysexybabes.com,pleasuregirl.net,rabbitsfun.com,sexybabesz.com,silkengirl.*,zazzybabes.com,zehnporn.com##+js(aopr, loadTool)
+8boobs.com,babesinporn.com,boobgirlz.com,fooxybabes.com,hotstunners.com,jennylist.xyz,jumboporn.xyz,mainbabes.com,mysexybabes.com,nakedbabes.club,pleasuregirl.net,rabbitsfun.com,sexybabesz.com,silkengirl.*,vibraporn.com,zazzybabes.com,zehnporn.com##+js(aopr, loadTool)
 8boobs.com,babesinporn.com,bustybloom.com,hotstunners.com,nudebabes.sexy,pleasuregirl.net,rabbitsfun.com,silkengirl.*##+js(aopr, exoNoExternalUI38djdkjDDJsio96)
 novojoy.com,novoporn.com##+js(acis, document.querySelectorAll, popMagic)
-##[href*="https://trcklks.com/"]
+babesaround.com,dirtyyoungbitches.com,grabpussy.com,join2babes.com,nightdreambabe.com,novoglam.com,novohot.com,novojoy.com,novoporn.com,novostrong.com,pussystate.com,redpornblog.com,rossoporn.com,sexynakeds.com##+js(aeld, click, popunder)
 babesinporn.com##.topbanner
 boobgirlz.com##.widget-column > center > [href="https://boobgirlz.com/istripper"]:upward(.widget-column)
 nakedneighbour.com##.banner:upward(.block)
 /img\/1190\d\.gif$/$image,domain=doseofporn.com|freyalist.com|jennylist.xyz|lizardporn.com
 /eva.gif$domain=erotichdworld.com|guruofporn.com|jesseporn.xyz|jumboporn.xyz|kendralist.com
 /flr.js$domain=8boobs.com|angelgals.com|babesexy.com|babesinporn.com|fooxybabes.com|hotbabeswanted.com|hotstunners.com|mainbabes.com|nakedbabes.club|nakedgirlsroom.com|nudebabes.sexy|pleasuregirl.net|rabbitsfun.com|sexybabes.club|sexybabesart.com|silkengirl.*|wantedbabes.com
-/images/*/b/*$image,redirect=2x2.png,domain=babesandbitches.net|babesbang.com|babeuniversum.com|grabpussy.com|nightdreambabe.com|novoporn.com|novostrong.com|pbabes.com|redpornblog.com|rossoporn.com|sexynakeds.com
-/images/*/banners/*$image,redirect=2x2.png,domain=100bucksbabes.com|8boobs.com|babeimpact.com|babesandgirls.com|babesaround.com|babesinporn.com|babesmachine.com|bustybloom.com|chickteases.com|decorativemodels.com|dirtyyoungbitches.com|exgirlfriendmarket.com|fooxybabes.com|glam0ur.com|hotstunners.com|livejasminbabes.net|morazzia.com|nakedneighbour.com|novoglam.com|pleasuregirl.net|rabbitsfun.com|sexyaporno.com|sexykittenporn.com|silkengirl.*|slutsandangels.com|theomegaproject.org|thousandbabes.com|wantedbabes.com|wildfanny.com
+/images/*/b/*$image,redirect=2x2.png,domain=babesandbitches.net|babesaround.com|babesbang.com|babeuniversum.com|grabpussy.com|join2babes.com|nightdreambabe.com|novojoy.com|novoporn.com|novostrong.com|pbabes.com|pussystate.com|redpornblog.com|rossoporn.com|sexynakeds.com
+/images/*/banners/*$image,redirect=2x2.png,domain=100bucksbabes.com|8boobs.com|babeimpact.com|babesandgirls.com|babesaround.com|babesinporn.com|babesmachine.com|bustybloom.com|chickteases.com|decorativemodels.com|dirtyyoungbitches.com|exgirlfriendmarket.com|fooxybabes.com|glam0ur.com|hotstunners.com|livejasminbabes.net|morazzia.com|nakedneighbour.com|novoglam.com|pleasuregirl.net|rabbitsfun.com|sexyaporno.com|sexykittenporn.com|silkengirl.*|slutsandangels.com|theomegaproject.org|thousandbabes.com|vibraporn.com|wantedbabes.com|wildfanny.com
 /istripper/istripper_$image,domain=8boobs.com|babesinporn.com|fooxybabes.com|hotstunners.com|mainbabes.com|rabbitsfun.com|silkengirl.*|wantedbabes.com
 /smallfr/*$frame,domain=babeimpact.com|decorativemodels.com|sexykittenporn.com
 /smallfr2/*$frame,domain=babeimpact.com|decorativemodels.com
 /\.com\/[_0-9a-zA-Z]+\.jpg$/$image,1p,domain=hottystop.com
 ||zehnporn.com/img/12221.gif
+/gofd_fl.js
 babeuniversum.com##.aw
 babeuniversum.com##.galleryad
 redpornblog.com###ads
 nightdreambabe.com##.banner_place
 girlsofdesire.org##a[href^="/out"]
 silkengirl.com##.spots
-hotbabeswanted.com##.deskbanner
+hotbabeswanted.com,nakedbabes.club##.deskbanner
+100bucksbabes.com,morazzia.com##.vda
+babesaround.com,nightdreambabe.com##.section-bustyMedinaq > a[href^="/click/o/"]
+novojoy.com##.ownerbanner
+pussystate.com##li[style="clear:both;float:none;width:600px;margin:0;overflow:hidden;margin-left:-5px;"]
+rabbitsfun.com##.gallery-banner
+rabbitsfun.com##.picture-banner
+vibraporn.com##.topad
 
 ! https://github.com/uBlockOrigin/uAssets/issues/6150
 ! https://github.com/uBlockOrigin/uAssets/issues/6152
@@ -18854,6 +18867,7 @@ atdhe.*###bannerInCenter
 files.im##+js(aopr, absda)
 files.im##+js(nowoif)
 files.im##+js(aeld, , break;case $.)
+files.im##+js(acis, parseInt, break;case $.)
 files.im##+js(acis, decodeURI, decodeURIComponent)
 ||files.im/ppa
 ||89coins.org^$popup,3p
@@ -20279,7 +20293,6 @@ techdracula.com##.adsbygoogle
 /^https?:\/\/(?:[a-z]{2}\.)?[0-9a-z]{7,16}\.com\/[a-z](?=[a-z]{0,25}[0-9A-Z])[0-9a-zA-Z]{3,26}\/(?:[1-4]\d{4}|[3-9]\d{3})(?:\?_=\d+)?$/$frame,script,xhr,popup,3p,match-case
 /^https?:\/\/(?:[a-z]{2}\.)?[0-9a-z]{7,16}\.website\/[a-z](?=[a-z]{0,25}[0-9A-Z])[0-9a-zA-Z]{3,26}\/(?:[1-4]\d{4}|[3-9]\d{3})(?:\?_=\d+)?$/$frame,script,xhr,popup,3p,match-case
 ! https://github.com/easylist/easylist/issues/6471
-/^https?:\/\/js.*\/t\/[0-9]{3}\/[0-9]{3}\/[a-z0-9]{7,8}\.js/$script,3p,badfilter
 /\/t\/[0-9]{3}\/[0-9]{3}\/a[0-9]{4,9}\.js$/$script
 /^https?:\/\/[0-9a-zA-Z]{10,16}\.cloudfront\.net\/\?[a-z]{3,7}=\d{4,8}$/$script,xhr,3p
 ! https://github.com/easylist/easylist/pull/9330
