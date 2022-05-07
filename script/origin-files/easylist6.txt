@@ -1,7 +1,7 @@
 [Adblock Plus 1.1]
-! Version: 202205070717
+! Version: 202205071611
 ! Title: EasyPrivacy
-! Last modified: 07 May 2022 07:17 UTC
+! Last modified: 07 May 2022 16:11 UTC
 ! Expires: 4 days (update frequency)
 ! Homepage: https://easylist.to/
 ! Licence: https://easylist.to/pages/licence.html
@@ -11552,6 +11552,7 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 ||bitclouds.ru/trd
 ||bitrix.info/ba.js
 ||bizsolutions.strands.com^
+||blink.net/e/
 ||blip.bizrate.com^$script
 ||blogblog.com/tracker/
 ||bmrg.reflected.net^
@@ -12862,6 +12863,7 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 ||stat.glaze.ai^
 ||stat.mixi.media^
 ||stat.moevideo.net^
+||stat.mydaddy.cc^
 ||stat.segitek.hu^
 ||stat.web-regie.com^
 ||statdb.pressflex.com^
@@ -15428,7 +15430,6 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 ||tags.johnlewis.com^
 ||tags.news.com.au^$script
 ||taiwanplus.com/api/video/startVideo
-||takealot.com^*/collect
 ||target.nationwide.com^
 ||target.nejm.org^
 ||targeting.washpost.nile.works^
@@ -15646,8 +15647,6 @@ medicalxpress.com,techxplore.com##.embed-responsive-trendmd
 ||ir.ebaystatic.com/rs/c/9527tracking/configuration.js$script,domain=ebay.com
 ||pages.ebay.com/identity/device/$subdocument
 ||src.ebay-us.com/*=usllpic$script,domain=ebay.com
-! genieesspv https://github.com/easylist/easylist/issues/6471
-/^https?:\/\/js.*\/t\/[0-9]{3}\/[0-9]{3}\/[a-z0-9]{7,8}\.js/$script,third-party
 ! Fingerprint
 /^https?:\/\/(.+?\.)?hardware\.info\/js\/[a-z]{1,}\/[0-9]{4,}\.js/$domain=hardware.info
 ||d276.ourmidland.com^
@@ -26843,6 +26842,7 @@ $csp=child-src 'none'; frame-src *; worker-src 'none',domain=skyback.ru|szukajka
 @@||hk.on.cc/js/v4/urchin.js
 @@||hm.baidu.com/hm.gif$image,domain=clgod.com
 @@||line-scdn.net^*/torimochi.js$script,domain=web-tw-pay.line.me
+@@||schlr.cnki.net/detailstatic/js/tracker.js$script,~third-party
 @@||tianxun.com^*/js/tracker.js
 @@||tianyancha.com^*/sensorsdata.$script,~third-party
 @@||uwants.com/include/*/swfaddress.js
