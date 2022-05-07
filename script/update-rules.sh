@@ -1,6 +1,6 @@
 #!/bin/sh
 LC_ALL='C'
-
+AA="Mozilla/5.0 (iPhone; U; CPU iPhone OS 4_3_2 like Mac OS X; en-us) AppleWebKit/533.17.9 (KHTML, like Gecko) Version/5.0.2 Mobile/8H7 Safari/6533.18.5 Quark/2.4.2.986"
 rm *.txt
 rm -rf md5 tmp
 wait
@@ -160,6 +160,9 @@ wait
 curl --connect-timeout 60 -s -o - https://raw.githubusercontent.com/CipherOps/AdGuardBlocklists/main/REGEX.txt \
  | grep -Fv "/^ad([sxv]?[0-9]*|system)[_.-]([^.[:space:]]+\.){1,}|[_.-]ad([sxv]?[0-9]*|system)[_.-]/" > dns998.txt &
 wait
+
+curl -s -A "$AA" https://www.kbsml.com/wp-content/uploads/adblock/adguard/adg-kall.txt \
+ | grep -v '@' >dns9998.txt
 
 uurl=`curl -s https://raw.githubusercontent.com/neodevpro/neodevhost/master/allowlist`
 for url in $uurl ;do
