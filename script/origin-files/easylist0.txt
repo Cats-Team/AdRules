@@ -1,5 +1,5 @@
 ! Title: ➗ Actually Legitimate URL Shortener Tool
-! Version: 04May2022v2
+! Version: 05May2022v1
 ! Expires: 1 day
 ! Description: In a world dominated by bit.ly, adf.ly, and several thousand other malware cover-up tools, this list reduces the length of URLs in a much more legitimate and transparent manner. Essentially, it automatically removes unnecessary $/& values from the URLs, making them easier to copy from the URL bar and pasting elsewhere as links. Enjoy.
 ! Homepage: https://github.com/DandelionSprout/adfilt/discussions/163
@@ -2062,9 +2062,9 @@ $removeparam=share,domain=hs.fi|oerproject.com|quora.com
 $removeparam=agency,domain=loistoristeilyt.fi
 
 ! https://github.com/DandelionSprout/adfilt/discussions/163#discussioncomment-1084659 (03/08/2021)
-$removeparam=index,domain=nytimes.com|nytimes3xbfgragh.onion
-$removeparam=pool,domain=nytimes.com|nytimes3xbfgragh.onion
-$removeparam=region,domain=nytimes.com|nytimes3xbfgragh.onion
+$removeparam=index,domain=nytimes.com|nytimesn7cgmftshazwhfgzm37qxb44r64ytbb2dj3x62d2lljsciiyd.onion
+$removeparam=pool,domain=nytimes.com|nytimesn7cgmftshazwhfgzm37qxb44r64ytbb2dj3x62d2lljsciiyd.onion
+$removeparam=region,domain=nytimes.com|nytimesn7cgmftshazwhfgzm37qxb44r64ytbb2dj3x62d2lljsciiyd.onion
 
 ! https://github.com/DandelionSprout/adfilt/discussions/163#discussioncomment-1155198
 $removeparam=sm12
@@ -2075,7 +2075,7 @@ $removeparam=token,domain=x-kom.pl|al.to|combat.pl|substack.com
 $removeparam=/^tc_/,domain=bodenusa.com
 
 ! https://github.com/DandelionSprout/adfilt/discussions/163#discussioncomment-1212122
-$removeparam=name,domain=nytimes.com|nytimes3xbfgragh.onion
+$removeparam=name,domain=nytimes.com|nytimesn7cgmftshazwhfgzm37qxb44r64ytbb2dj3x62d2lljsciiyd.onion
 
 ! https://www.bloomingdales.com/?m_sc=aff&ranPublisherID=qpF0HYnRugA&ranLinkTypeID=10
 $removeparam=m_sc,domain=bloomingdales.com
@@ -2165,10 +2165,10 @@ $~xmlhttprequest,removeparam=r,domain=tv2.no|linode.com|ledger.*|mrgay.com
 $removeparam=context,domain=imdb.com|fiverr.com
 
 ! https://adguardteam.github.io/AnonymousRedirect/redirect.html?url=https%3A%2F%2Fwww.nytimes.com%2F2021%2F01%2F21%2Fopinion%2Fpublic-transit-funding.html%3Faction%3Dclick%26module%3DWell%26pgtype%3DHomepage%26section%3DEditorials (24/01/2021)
-$removeparam=action,domain=nytimes.com|nytimes3xbfgragh.onion
-$removeparam=module,domain=nytimes.com|nytimes3xbfgragh.onion|scmp.com
-$removeparam=pgtype,domain=nytimes.com|nytimes3xbfgragh.onion|scmp.com
-$removeparam=section,domain=nytimes.com|nytimes3xbfgragh.onion
+$removeparam=action,domain=nytimes.com|nytimesn7cgmftshazwhfgzm37qxb44r64ytbb2dj3x62d2lljsciiyd.onion
+$removeparam=module,domain=nytimes.com|nytimesn7cgmftshazwhfgzm37qxb44r64ytbb2dj3x62d2lljsciiyd.onion|scmp.com
+$removeparam=pgtype,domain=nytimes.com|nytimesn7cgmftshazwhfgzm37qxb44r64ytbb2dj3x62d2lljsciiyd.onion|scmp.com
+$removeparam=section,domain=nytimes.com|nytimesn7cgmftshazwhfgzm37qxb44r64ytbb2dj3x62d2lljsciiyd.onion
 
 ! https://www.imdb.com/title/tt7826036/?ref_=ttep_ep5
 $~xmlhttprequest,removeparam=ref_,domain=imdb.com|amazon.*|primevideo.com|shopbop.com|awesomeopensource.com
@@ -2303,7 +2303,7 @@ $removeparam=ref_id,domain=expedia.com|intuit.com|tunnelbear.com
 ||gamestop.com^$removeparam=sourceID
 
 ! https://github.com/DandelionSprout/adfilt/discussions/163#discussioncomment-1143347
-||nytimes.com^$removeparam=rank
+$removeparam=rank,domain=nytimes.com|nytimesn7cgmftshazwhfgzm37qxb44r64ytbb2dj3x62d2lljsciiyd.onion
 
 ! https://www.asahi.com/sp/articles/ASP8K5CZ3P8KUTFK011.html?iref=comtop_7_01
 ||asahi.com^$removeparam=iref
@@ -2339,7 +2339,7 @@ $removeparam=ia-pkpmtrack
 ||spartoo.$removeparam=track_id
 
 ! https://github.com/DandelionSprout/adfilt/discussions/163#discussioncomment-1206280
-$removeparam=impression_id,domain=nytimes.com|nytimes3xbfgragh.onion
+$removeparam=impression_id,domain=nytimes.com|nytimesn7cgmftshazwhfgzm37qxb44r64ytbb2dj3x62d2lljsciiyd.onion
 ||microcenter.com^$removeparam=rf
 
 ! https://business.udemy.com/resources/hybrid-workplace-webinar/?btn=ub-smartbar
@@ -2579,10 +2579,10 @@ $removeparam=xcust,domain=go.skimresources.com|go.skimlinks.com|go.redirectingat
 $removeparam=xs,domain=go.skimresources.com|go.skimlinks.com|go.redirectingat.com
 
 ! https://open.spotify.com/playlist/37i9dQZF1DWXRvPx3nttRN?si=asdf1234567890
-$removeparam=surface,domain=nytimes.com|nytimes3xbfgragh.onion
-$removeparam=fellback,domain=nytimes.com|nytimes3xbfgragh.onion
-$removeparam=req_id,domain=nytimes.com|nytimes3xbfgragh.onion
-$removeparam=variant,domain=nytimes.com|nytimes3xbfgragh.onion
+$removeparam=surface,domain=nytimes.com|nytimesn7cgmftshazwhfgzm37qxb44r64ytbb2dj3x62d2lljsciiyd.onion
+$removeparam=fellback,domain=nytimes.com|nytimesn7cgmftshazwhfgzm37qxb44r64ytbb2dj3x62d2lljsciiyd.onion
+$removeparam=req_id,domain=nytimes.com|nytimesn7cgmftshazwhfgzm37qxb44r64ytbb2dj3x62d2lljsciiyd.onion
+$removeparam=variant,domain=nytimes.com|nytimesn7cgmftshazwhfgzm37qxb44r64ytbb2dj3x62d2lljsciiyd.onion
 
 ! https://open.hpi.de/courses/blockchain2021?tracking_user=4ZwXmvv7FLG8WhY4yKXysh&tracking_type=news&tracking_id=5zEP2RzB50kuwZRBjDJyiQ
 ||hpi.de^$removeparam=tracking_id
@@ -3105,8 +3105,8 @@ $removeparam=ad_name
 $removeparam=rs,domain=gamereactor.*
 
 ! https://github.com/DandelionSprout/adfilt/discussions/163#discussioncomment-1949473
-$removeparam=alpha,domain=nytimes.com
-$removeparam=block,domain=nytimes.com
+$removeparam=alpha,domain=nytimes.com|nytimesn7cgmftshazwhfgzm37qxb44r64ytbb2dj3x62d2lljsciiyd.onion
+$removeparam=block,domain=nytimes.com|nytimesn7cgmftshazwhfgzm37qxb44r64ytbb2dj3x62d2lljsciiyd.onion
 
 ! https://www.domains.ch/en/Search/Index?domain=iam-py-test.xyz&REF=2469
 ||domains.ch^$removeparam=REF
@@ -3292,7 +3292,7 @@ $removeparam=zsource,domain=slashgear.com
 ||cardif.fr^$removeparam=at_custom_var10
 
 ! https://www.nytimes.com/2022/04/12/opinion/inflation-consumer-prices.html?searchResultPosition=15
-$removeparam=searchResultPosition,domain=nytimes.com
+$removeparam=searchResultPosition,domain=nytimes.com|nytimesn7cgmftshazwhfgzm37qxb44r64ytbb2dj3x62d2lljsciiyd.onion
 
 ! https://www.mongodb.com/try/download/community?tck=docs_server
 $removeparam=tck,domain=mongodb.com
@@ -3355,6 +3355,9 @@ $removeparam=fbid,domain=festo-didactic.com
 
 ! https://ekstrabladet.dk/?ilc=c
 ||ekstrabladet.dk^$removeparam=ilc
+
+! https://www.nytimes.com/2022/04/30/business/elon-musk-twitter.html?shadow_vec_sim=0
+$removeparam=shadow_vec_sim,domain=nytimes.com|nytimesn7cgmftshazwhfgzm37qxb44r64ytbb2dj3x62d2lljsciiyd.onion
 
 !#if !env_mobile
 ! ——— Mobile ——— !

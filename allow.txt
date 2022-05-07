@@ -1,10 +1,10 @@
 ! Title: AdRules Allowlist
-! Checksum: QX0Ifn7ITJepDppEk9/gFQ
+! Checksum: lkKVRbELHoXhea2mA4hnFg
 ! Homepage: https://github.com/Cats-Team/AdRules
 ! Powerd by CatsTeam
 ! Expires: 8 Hours
-! Version: 2022-05-07 00:34:00（北京时间） 
-! Total count: 18192
+! Version: 2022-05-07 09:44:37（北京时间） 
+! Total count: 18193
 @@$csp=worker-src 'none',domain=uptostream.com
 @@$domain=avgle.com,webrtc,websocket
 @@$generichide,domain=heapfiles.com|vidoza.co|vidoza.net
@@ -646,7 +646,7 @@
 @@|http://ie.microsoft.com/testdrive/Performance/FishBowl/Default.html|$document
 @@|http://r.i.ua/s?*&p*&l$image,domain=swordmaster.org
 @@|http://r.i.ua/s?*&p*&l$image,domain=swordmaster.org! CJX's Annoyance List
-@@|http://r.i.ua/s?*&p*&l$image,domain=swordmaster.orgript
+@@|http://r.i.ua/s?*&p*&l$image,domain=swordmaster.orgal_revenue.
 @@|https://$image,domain=socketloop.com
 @@|https://$image,script,third-party,domain=blockadblock.com
 @@|https://$image,third-party,domain=hackintosh.zone|hackintosh.computer
@@ -3097,6 +3097,7 @@
 @@||blog.naverblogwidget.com/ExternalWidgetRender.$stealth
 @@||blog.taryo.net^$generichide
 @@||blog.ztjal.info^$generichide
+@@||bloggerku.com/safelink/$script,domain=safelinkunited.blogspot.com
 @@||bloggingdekh.xyz^$generichide
 @@||blogs.earningradar.com/wp-content/plugins/wp-safelink/assets/fuckadblock.js
 @@||blogs.sapib.ca^$generichide
@@ -3528,7 +3529,6 @@
 @@||cdn-static.pornhd.com/pornhd/*/css/dist/main.css$domain=pornhd.com
 @@||cdn-surfline.com/quiver/*/scripts/$domain=surfline.com
 @@||cdn-thumb.fds.api.xiaomi.com^
-@@||cdn-u.frustasi.org//src//check.js$script,domain=ustreamix.*
 @@||cdn-ukwest.onetrust.com/scripttemplates/*/assets/otCenterRounded.json$domain=nintendolife.com
 @@||cdn-ukwest.onetrust.com/scripttemplates/*/otBannerSdk.js$domain=nintendolife.com
 @@||cdn-ukwest.onetrust.com/scripttemplates/otSDKStub.js$domain=nintendolife.com
@@ -12083,6 +12083,7 @@
 @@||pagead2.googlesyndication.com/pagead/$image,domain=annuaire-bleu.net
 @@||pagead2.googlesyndication.com/pagead/$script,domain=banid.pl
 @@||pagead2.googlesyndication.com/pagead/$script,domain=forum.release-apk.com
+@@||pagead2.googlesyndication.com/pagead/$script,domain=safelinkunited.blogspot.com
 @@||pagead2.googlesyndication.com/pagead/$script,domain=yellowbridge.com
 @@||pagead2.googlesyndication.com/pagead/$script,domain=youpouch.com
 @@||pagead2.googlesyndication.com/pagead/*$image,domain=free-scores.com
@@ -12940,7 +12941,7 @@
 @@||players.brightcove.net^
 @@||players.pluto.tv^
 @@||playfinder.xyz^$ghide
-@@||playhard2017.*^$ghide
+@@||playhard2017.blogspot.com^$ghide
 @@||playhydrax.com/?v=$subdocument
 @@||playhydrax.com^$ghide
 @@||playkeepout.com/img/common/sharing/
@@ -13396,6 +13397,7 @@
 @@||qbox.me/static/js/ads.js$domain=linux.cn
 @@||qctimes.com^$ghide
 @@||qhimg.com/ssl/*/monitor_analytic.js
+@@||qhimg.com^*/monitor_analytic.
 @@||qhres.com^*/monitor_analytic.js$domain=mse.360.cn
 @@||qianpanso.cn/other/*.js$domain=cilimao.co|cilimao.one
 @@||qiantucdn.com/static/images/adsbygoogle.js
@@ -13695,6 +13697,7 @@
 @@||redefineadpl.hit.gemius.pl^$xhr,domain=polsatsport.pl
 @@||redeszone.net/app/themes/mykonos-child/assets/js/ads.min.js
 @@||redfin.com/stingray/clicktracker.jsp?
+@@||redguide.top^*/ad.css?$stylesheet
 @@||redhat.com^*/socialmedia/
 @@||redir.tradedoubler.com^|
 @@||redirect.appmetrica.yandex.com^
@@ -16791,7 +16794,6 @@
 @@||usgamer.net/static/scripts/SidebarAds.js$script,~third-party
 @@||usnovels.*^$ghide
 @@||ustream.*^$script,1p
-@@||ustreamix.*^$script,1p
 @@||ustreamix.com/ads/$script
 @@||ustv247.tv^$ghide
 @@||ustv24h.live^$stealth,domain=ustvgo.tv
@@ -18195,5 +18197,4 @@
 @@||zx-pk.ru/abp/adblock_detector.js
 @@||zylom.com/images/site/zylom/scripts/google-analytics.js
 @@||zynga.com/current/iframe/track.php?$domain=apps.facebook.com
-@||cdn.exp.qq.com/img/
 @||crunchyroll.com/*/ads_enabled_flag*.js$script

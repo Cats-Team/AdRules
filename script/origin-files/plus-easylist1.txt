@@ -6449,5 +6449,12 @@ player.tabooporns.com##+js(set, console.clear, undefined)
 photopea.com##+js(no-fetch-if, /googlesyndication|uniconsent/)
 photopea.com##+js(set, console.clear, noopFunc)
 
+! https://github.com/uBlockOrigin/uAssets/issues/13092
+web.skype.com##[data-text-as-pseudo-element*=" push "]:upward([role]):upward([role])
+
+! http://dubznetwork.com/meet/racing/formula-1-miami-grand-prix-2022/ anti keydown
+dubznetwork.com##+js(acis, document.onkeypress)
+dubznetwork.com##+js(acis, jQuery, keydown)
+
 
 
