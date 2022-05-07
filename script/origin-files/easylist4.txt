@@ -1,15 +1,15 @@
 [Adblock Plus 3.0]
-! Checksum: HhHz5H6L0JpvzWf1DPuRHg
+! Checksum: yOc1fZa3I0dnvOqqEqSvDQ
 ! Title: My AdFilters（for PC）
 ! Expires: 2 hours
-! Version: 202205080004
-! Last Modified: 2022年05月08日 00:04
+! Version: 202205080046
+! Last Modified: 2022年05月08日 00:46
 ! Homepage: https://adf.minggo.eu.org
 ! 本规则合并自乘风视频广告过滤规则、Easylist、EasylistChina、EasyPrivacy、CJX'sAnnoyance
 ! 并补充了贴吧过滤规则，感谢各位前辈的分享！
 ! 如有任何疑问、意见或建议，请反馈至：HalfLife吧
 !
-! Total count: 86038
+! Total count: 86042
 ###ADCENTER
 ###ADSLOT_1
 ###ADTOP
@@ -9218,7 +9218,6 @@ $xmlhttprequest,domain=auroravid.to|flashx.cc|nowvideo.sx|onlinevideoconverter.c
 /^https?:\/\/chyoa\.com\/[a-zA-Z\d]{1,15}\/[a-zA-Z\d]{1,15}\.js$/$domain=chyoa.com
 /^https?:\/\/fdts\.ebay-kleinanzeigen\.de\/[a-z0-9]{13,18}\.js\?/$script,domain=ebay-kleinanzeigen.de
 /^https?:\/\/ftopx\.com\/[a-z\d]+\.js$/$domain=ftopx.com
-/^https?:\/\/js.*\/t\/[0-9]{3}\/[0-9]{3}\/[a-z0-9]{7,8}\.js/$script,third-party
 /^https?:\/\/nav\.sciencedirect\.com\/[a-zA-Z0-9]{14,}\.js/$script,domain=sciencedirect.com
 /^https?:\/\/picturelol\.com\/[a-z\d]+\.(js)$/$domain=picturelol.com
 /^https?:\/\/pov\.spectrum\.net\/[a-zA-Z0-9]{14,}\.js/$script,domain=spectrum.net
@@ -29797,6 +29796,9 @@ games.softgames.com#@#iframe[src^="https://pagead2.googlesyndication.com/"]
 games.washingtonpost.com##[class^="DisplayAd_"]
 games.word.tips##+js(nano-setInterval-booster, The game will start in, 1000, 0.02)
 games.word.tips#@#display-ad-component
+games2jolly.com###leaderboard_area
+games2jolly.com###leaderboard_area_home
+games2jolly.com##.ads_310_610_sidebar_new
 games4king.com##div[id^="leaderboard_area"]
 games4king.com#?#.top_container > #home_right > .adsbygoogle:upward(1)
 gamesforum.it#@#.adsbygoogle
@@ -55059,6 +55061,7 @@ zznews.cn##.ad:not([style])
 ||e.viously.com^
 ||e.yycqc.com^
 ||e.zg-api.com/event$domain=zillow.com
+||e05.xyz^
 ||e0514.com/do/js.
 ||e0514.com/gglist/
 ||e0575.cn/js/corea/jquery.popup.js
@@ -86019,6 +86022,7 @@ zznews.cn##.ad:not([style])
 ~alicdn.com##a > img[width="960"][src*=".alicdn.com/"]
 ~baidu.com##a[href*="/cpro."]
 ~baidu.com##a[href*="/cpro/"]
+~car.kdslife.com,enet.com.cn,fjsen.com,hupu.com,kdslife.com,~my.hupu.com,mysteel.com,news.cnyes.com,olehd.com,olevod.com,olevod.eu,pchome.net,rznews.cn##div[class^="ad"]
 ~car.kdslife.com,enet.com.cn,fjsen.com,hupu.com,kdslife.com,~my.hupu.com,news.cnyes.com,olehd.com,olevod.com,olevod.eu,pchome.net,rznews.cn##div[class^="ad"]
 ~cbachina.sports.sohu.com,sohu.com##sohuadcode
 ~cityheaven.net###gg1
