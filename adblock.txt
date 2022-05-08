@@ -1,12 +1,12 @@
 [Adblock Plus 2.0]
-! Checksum: XWxwt/FcK85unLV/iTo2rQ
+! Checksum: /oZks5uEQF/iBIw7kkJ9cQ
 ! Title: AdRules (For AdBlock)
 ! Homepage: https://github.com/Cats-Team/AdRules
 ! Powerd by CatsTeam
 ! Expires: 8 Hours
 ! Description: 该规则合并自EasyList、EasyListChina、AdGuard Chinese Filter、EdentwCustom、ClearUrl、乘风规则等，并补充了一些规则
-! Version: 2022-05-08 09:56:01（北京时间） 
-! Total count: 91219
+! Version: 2022-05-08 11:13:06（北京时间） 
+! Total count: 91224
 ###ADCENTER
 ###ADSLOT_1
 ###ADTOP
@@ -7150,6 +7150,7 @@
 ##div[style=" max-width:1000px;  margin:0 auto;"] > a > img[height="120px"]
 ##div[style=" max-width:1000px;  margin:0 auto;"] > a > img[height="60px"]
 ##div[style=" max-width:1003px;  margin:0 auto;"] > a > img[height="60px"]
+##div[style=" max-width:980px;  margin:0 auto;"] > a > img[height="60px"]
 ##div[style=" max-width:985px;  margin:0 auto;"] > a > img[height="60px"]
 ##div[style=" max-width:989px;  margin:0 auto;"] > a > img[height="60px"]
 ##div[style=" max-width:990px;  margin:0 auto;"] > a > img[height="60px"]
@@ -19079,6 +19080,9 @@ $~xmlhttprequest,removeparam=ref_,domain=imdb.com|amazon.*|primevideo.com|shopbo
 3d66.com##.down-adver
 3dmgame.com###min_ad_con
 3dmgame.com###yxj_fmt_gg
+3dmgame.com##.Content_L > p
+3dmgame.com##.Gmaeinfobtn + span
+3dmgame.com##.Gmaeinfobtn_tab  > span
 3dmgame.com##.Gmaeinfobtn_tab > [class]:not(.tab)
 3dmgame.com##.Gmaeinfobtn_tab > [class][onclick]
 3dmgame.com##.R_qingtianzhu
@@ -37464,7 +37468,6 @@ myshows.me#$#.DefaultLayout-main { margin-top: 0 !important; }
 myshows.me#?#main > div[style^="min-height"]:has(> div[id^="ad-wmg-container-"])
 mysnip.xyz##+js(window.open-defuser)
 mysnip.xyz#@##DividerAd
-mysteel.com##DIV[class^="ad"]
 mystream.to##+js(window.open-defuser)
 mytempsms.com##.layui-col-md12
 mytoolz.net#$#body { overflow: auto !important; }
@@ -41918,6 +41921,7 @@ theplace2.ru#@#.adsbygoogle
 thepointsguy.com##.beam-card-feature
 thepointsguy.com##.favorite-cards
 thepoorcoder.com##+js(set-constant, adblockDetector, noopFunc)
+theporn.cc###to_top + div > div[id]
 theporn.cc###wp > div[id]
 theporn.cc##.video_playr_sider
 theporn.cc##div > div[align="center"]
@@ -46112,6 +46116,7 @@ zznews.cn##.ad:not([style])
 ||23900341.com^
 ||23907915.com^
 ||239300.net/template/*_mh_gg
+||23962340.com^
 ||23aitt.com/zz/
 ||23d097de11.com^
 ||23dsf.top^
@@ -89909,6 +89914,7 @@ zznews.cn##.ad:not([style])
 ||ylnet.com.cn/inc/ad$subdocument
 ||ylog.huya.com^
 ||ylppppp.cn^
+||ylty.online^
 ||ylx-1.com^
 ||ylx-4.com^
 ||ylykd.cn^
@@ -91194,7 +91200,6 @@ zznews.cn##.ad:not([style])
 ~baidu.com##a[href*="/cpro."]
 ~baidu.com##a[href*="/cpro/"]
 ~car.kdslife.com,enet.com.cn,fjsen.com,hupu.com,kdslife.com,~my.hupu.com,mysteel.com,news.cnyes.com,olehd.com,olevod.com,olevod.eu,pchome.net,rznews.cn##div[class^="ad"]
-~car.kdslife.com,enet.com.cn,fjsen.com,hupu.com,kdslife.com,~my.hupu.com,news.cnyes.com,olehd.com,olevod.com,olevod.eu,pchome.net,rznews.cn##div[class^="ad"]
 ~cbachina.sports.sohu.com,sohu.com##sohuadcode
 ~cityheaven.net###gg1
 ~discord.com,~discordapp.com##iframe[width="240"][height="300"]

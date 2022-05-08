@@ -4660,7 +4660,7 @@ vermangasporno.com##[href*="http://www.ciberhentai.net"]
 bdsmstreak.com##+js(acis, document.querySelectorAll, popMagic)
 bdsmstreak.com##+js(aopr, ExoLoader.serve)
 bdsmstreak.com##+js(aeld, , _blank)
-*$script,3p,denyallow=cloudflare.com|cloudflare.net|fastly.net|fastlylb.net|fluidplayer.com|google.com|googleapis.com|gstatic.com|hcaptcha.com|hwcdn.net|jquery.com|recaptcha.net|twitter.com,domain=bdsmstreak.com
+*$script,3p,denyallow=cloudflare.com|cloudflare.net|fastly.net|fastlylb.net|fluidplayer.com|google.com|googleapis.com|gstatic.com|hcaptcha.com|hwcdn.net|jquery.com|jsdelivr.net|recaptcha.net|twitter.com,domain=bdsmstreak.com
 
 ! https://github.com/uBlockOrigin/uAssets/issues/1843
 ! https://github.com/uBlockOrigin/uAssets/issues/991
@@ -14316,6 +14316,8 @@ shrink.*##+js(noeval-if, replace)
 shrink.*##center
 shrink.*##.banner
 @@||shrink.*^$ghide
+bigbtc.win##div[style^="width:300px;height:250px"]
+||pwdxedmuutaok.com^
 
 ! https://github.com/uBlockOrigin/uAssets/issues/6021
 ||watson.de/js/tisoomi.js$script,1p
@@ -18544,7 +18546,7 @@ loan2host.com,tii.ai##.banner-inner
 loan2host.com,tei.ai,tii.ai###link-view > center
 *$script,3p,denyallow=consensu.org|google.com|gstatic.com|recaptcha.net,domain=loan2host.com|tei.ai|tii.ai
 ! https://github.com/uBlockOrigin/uAssets/issues/11375
-/webroot/modern_theme/img/dwndbnr$image,1p
+/webroot/modern_theme/img/dwndbnr*$image,1p
 makemoneywithurl.com##+js(nowoif)
 makemoneywithurl.com##+js(set, timeSec, 0)
 makemoneywithurl.com###scroll.hidden, .footerLink.hidden:style(display: block!important)
