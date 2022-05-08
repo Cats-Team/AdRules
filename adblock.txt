@@ -1,12 +1,12 @@
 [Adblock Plus 2.0]
-! Checksum: Q+ZxqG7bV+7qSDTkQ/GlMQ
+! Checksum: StG1KMNaYwAKAnYBPr63HQ
 ! Title: AdRules (For AdBlock)
 ! Homepage: https://github.com/Cats-Team/AdRules
 ! Powerd by CatsTeam
 ! Expires: 8 Hours
 ! Description: 该规则合并自EasyList、EasyListChina、AdGuard Chinese Filter、EdentwCustom、ClearUrl、乘风规则等，并补充了一些规则
-! Version: 2022-05-08 16:26:36（北京时间） 
-! Total count: 91163
+! Version: 2022-05-09 00:30:32（北京时间） 
+! Total count: 91193
 ###ADCENTER
 ###ADSLOT_1
 ###ADTOP
@@ -2174,6 +2174,7 @@
 ##.ad-block-enabled
 ##.ad-block-inside
 ##.ad-block-message
+##.ad-block-mod
 ##.ad-block-section
 ##.ad-block-sticky-ad
 ##.ad-block__inner
@@ -2327,6 +2328,7 @@
 ##.ad-leaderboard-splitter
 ##.ad-leaderboard-top
 ##.ad-left
+##.ad-left-1
 ##.ad-left-down
 ##.ad-left-top
 ##.ad-line
@@ -14303,6 +14305,7 @@ $~xmlhttprequest,removeparam=ref_,domain=imdb.com|amazon.*|primevideo.com|shopbo
 /huya/main/widget/roomGg
 /huya_promotion_content_
 /huyass7.$script,~third-party
+/huyass7.*.js^$script,domain=thegay.com
 /hy.js?q22
 /i.asp?yk&df=1|$script,third-party
 /i.gif?
@@ -19003,6 +19006,7 @@ $~xmlhttprequest,removeparam=ref_,domain=imdb.com|amazon.*|primevideo.com|shopbo
 360kan.com##.b-ifradjx
 360kan.com##.eb-mini
 360kan.com##.eb-rightbox
+360kan.com##.info-flow__ad
 360kan.com##.js-playicon[href*="wan.360.cn/"]
 360kan.com##.js-welcome
 360kora.com##+js(abort-current-script, document.addEventListener, abisuq)
@@ -21503,6 +21507,7 @@ $~xmlhttprequest,removeparam=ref_,domain=imdb.com|amazon.*|primevideo.com|shopbo
 @@||connatix.com/min/connatix.renderer.infeed.min.js$domain=accuweather.com|collider.com|gamepress.gg|salon.com
 @@||connect.facebook.net^*/fbevents.js$domain=elinoi.com
 @@||connectivitycheck.gstatic.com^$important
+@@||console.statsig.com/_next/static/chunks/pages/$script,~third-party
 @@||contacts.google.com^$generichide
 @@||content*.uplynk.com/channel/*.m3u8?$domain=abc.com
 @@||content*.uplynk.com/channel/*.m3u8?$domain=abcnews.go.com
@@ -34444,6 +34449,7 @@ ithome.com##.rm-modal1-bg
 ithome.com##.rm-modal1-body
 ithome.com##.sb_list > .bx
 ithome.com##a[href*="/lapin."]
+ithome.com##a[href*="/lapin."] + .ad
 ithome.com##a[href="/html/363216.htm"]
 ithome.com##a[href^="http://e.cn.miaozhen."]
 ithome.com##div[style^="width:960px;height:60px;"]
@@ -35685,6 +35691,7 @@ lihkg.com##iframe[src^="https://pb.lihkg.com/primis?"]
 lihkg.com#?##rightPanel div[id^="page-"] ~ div[class] > div > div[style^="display:"] ins.adsbygoogle:upward(div[style^="display:"])
 liisex.com###apDiv22
 likr.tw###avivid_waterfall_wp_product_area
+lilymanga.com,msn.com##a[href^="https://amzn.to/"]
 limaenvivo.com##IMG[title="close"]
 limanowa.in##img[src^="/app/default/assets/ads/"]
 limetorrents.*#?##content > table.table3:has(> tbody > tr > th:contains(Sponsored))
@@ -35891,7 +35898,6 @@ lostpix.com##+js(window.open-defuser, 1, youtube)
 loticon.xyz##+js(abort-current-script, document.getElementById, adblock)
 love-stoorey210.net##+js(abort-current-script, document.createElement, adblock)
 love4porn.com,fpo.xxx,keekass.com##.footer-margin
-lovefap.com,sdefx.cloud,info-english.ru,alluretube.com,anyxvideos.com,fucktheporn.com,hugetits.win,italianporn.com.es,mommysucks.com,mzansinudes.com,napiszar.com,onlineporn24.com,porntube15.com,pornvdoxxx.com,pozdravlove.ru,sexavgo.com,store-of-beats.ru,pinayvids.com,dvdplay.*,sxyprn.*,mmopeon.ru,acervodaputaria.com.br,animefenix.com,masahub.net,rule34porn.net,hispasexy.org,tokyoblog.tv,idolsblog.tv,sturls.com,sexphimhd.net,freeporn.org.uk,xvideos2020.me,pornovidea.net,youporn.red,animesanka.*,adsh.cc,85tube.com,pornobr.ninja,ekasiwap.com,hentaidexy.com,pornoruhe.net,girl2sex.com,suki48.web.id,xpornass.com,javhd.icu,mxtube.net,juicyoldpussy.com,sexofilm.co,xnxx66.com,paidthe.site,illink.net,xxxlucah.com,mangaraw.org,pornbox.cc,pornhex.com,xxxhub.cc,sexe-libre.org,picrok.com,zplayer.live,ccurl.net,jav688.com,datawav.club,xxxpicz.com,canyoublockit.com,mypornhere.com,skidrowcodex.net##+js(set-constant, D4zz, noopFunc)
 loveshang.com##div[class^="float-ad-"]
 lowend.xyz,veopartidos.net##+js(window.open-defuser)
 lowendtalk.com###Foot > a[href] > img
@@ -37170,7 +37176,6 @@ msn.com##.todayshowcasead
 msn.com##[class^="nativeAd"]
 msn.com##a.nativead[target="_blank"]
 msn.com##a[href*=".booking.com/"]
-msn.com##a[href^="https://amzn.to/"]
 msn.com##a[href^="https://clk.tradedoubler.com/"]:not([href*="microsoft.com"])
 msn.com##div[aria-label="from our partners"]
 msn.com##div[class^="articlePage_topBannerAdContainer_"]
@@ -43046,6 +43051,7 @@ verdirectotv.com###divPanel
 verdirectotv.com##[id^="total"]
 verdirectotv.com##div[id^="capa"]
 verdirectotv.com##div[id^="closeX"]
+verhentai.top,lovefap.com,sdefx.cloud,info-english.ru,alluretube.com,anyxvideos.com,fucktheporn.com,hugetits.win,italianporn.com.es,mommysucks.com,mzansinudes.com,napiszar.com,onlineporn24.com,porntube15.com,pornvdoxxx.com,pozdravlove.ru,sexavgo.com,store-of-beats.ru,pinayvids.com,dvdplay.*,sxyprn.*,mmopeon.ru,acervodaputaria.com.br,animefenix.com,masahub.net,rule34porn.net,hispasexy.org,tokyoblog.tv,idolsblog.tv,sturls.com,sexphimhd.net,freeporn.org.uk,xvideos2020.me,pornovidea.net,youporn.red,animesanka.*,adsh.cc,85tube.com,pornobr.ninja,ekasiwap.com,hentaidexy.com,pornoruhe.net,girl2sex.com,suki48.web.id,xpornass.com,javhd.icu,mxtube.net,juicyoldpussy.com,sexofilm.co,xnxx66.com,paidthe.site,illink.net,xxxlucah.com,mangaraw.org,pornbox.cc,pornhex.com,xxxhub.cc,sexe-libre.org,picrok.com,zplayer.live,ccurl.net,jav688.com,datawav.club,xxxpicz.com,canyoublockit.com,mypornhere.com,skidrowcodex.net##+js(set-constant, D4zz, noopFunc)
 verizonwireless.com#@#.contentAds
 versus.com###bill_bottom
 versus.com##.lead_top
@@ -46145,6 +46151,7 @@ zznews.cn##.ad:not([style])
 ||283.laobanfa.com^
 ||2886115.com^
 ||288family.club^
+||2898.com/index/flowexchange/getGoods?
 ||2898.com^$third-party
 ||28acglz.com^
 ||28hse.com/adsman/www/images/
@@ -46373,6 +46380,7 @@ zznews.cn##.ad:not([style])
 ||360doo.com^$third-party
 ||360i.com^$third-party
 ||360kan.com/special/
+||360kan.com/v1/block?blockid=544&
 ||360shopping.com.cn^
 ||360tag.com^$third-party
 ||360tag.net^$third-party
@@ -50829,6 +50837,7 @@ zznews.cn##.ad:not([style])
 ||anymedia.lv^$third-party
 ||anymind360.com^
 ||anymoresentencevirgin.com^
+||anymoresentencevirgin.com^$popup
 ||anyporn.com/aa/
 ||anyporn.com/aa/s/s/su.php$redirect=noop.txt,image,media,subdocument,stylesheet,script,xmlhttprequest,other
 ||anyporn.com/aa/s/s/suo.php$redirect=noop.txt,image,media,subdocument,stylesheet,script,xmlhttprequest,other
@@ -52027,6 +52036,7 @@ zznews.cn##.ad:not([style])
 ||baixk.com^
 ||baixkw.cn^
 ||baiyaqin.xyz^
+||baiyi.site^
 ||baiyongbei.xyz^
 ||baiyuandian.cc^
 ||baiyug.cn^*AD.js
@@ -54393,6 +54403,7 @@ zznews.cn##.ad:not([style])
 ||ce.lijit.com^
 ||ce.wlaoc.cn^$third-party
 ||ceai.xyz^
+||ceboidbusting.com^
 ||cechi8.com/images/appdown.gif
 ||cechi8.com/js/cnzz
 ||ceciliabeverly.com^
@@ -54734,6 +54745,7 @@ zznews.cn##.ad:not([style])
 ||chouti.com/js/tingyun-rum.js
 ||chqsw.cn^
 ||chrain.wang^
+||chrif8kdstie.com^
 ||christiantop1000.com^$third-party
 ||christmalicious.com^$third-party
 ||chrjkn.cn^
@@ -55511,6 +55523,7 @@ zznews.cn##.ad:not([style])
 ||cognativex.com^$third-party
 ||cognitivematch.com^$third-party
 ||cognitivlabs.com^$third-party
+||coherentescalatorjeweller.com^
 ||cohesionapps.com^$third-party
 ||coin-have.com^$third-party
 ||coin-hive.com/
@@ -56457,6 +56470,7 @@ zznews.cn##.ad:not([style])
 ||cuberoot.co^$third-party
 ||cuckooretire.com^
 ||cuculf.name^
+||cuddlethehyena.com^
 ||cueohf.forumieren.com^
 ||cueohf.forumieren.de^
 ||cueyetwee.site^
@@ -57281,6 +57295,7 @@ zznews.cn##.ad:not([style])
 ||dceni.com^
 ||dcesxdvixnrwlu.com^
 ||dcf.espn.com/privacy/
+||dcjfoei.cn^
 ||dckiwt.eataly.com^
 ||dcl5.cn^
 ||dcmn.com^$third-party
@@ -60375,7 +60390,7 @@ zznews.cn##.ad:not([style])
 ||fanzhuang.net.cn^$third-party
 ||fapality.com/js/initsite.js
 ||fapality.com^$third-party
-||fapcat.com^
+||fapcat.comrd-party^
 ||faphouse.com/api/collector/
 ||faphouse.com^$subdocument,third-party
 ||fapnado.xxx/*.php|
@@ -60597,6 +60612,7 @@ zznews.cn##.ad:not([style])
 ||fethungi.com^
 ||fetishshrine.com/contents/images-banners/
 ||feuingcrche.com^
+||fewvincent.com^
 ||fexiaen.com^
 ||feyorra.top/next.js
 ||feyxyguwy.com^
@@ -62904,6 +62920,7 @@ zznews.cn##.ad:not([style])
 ||h.seznam.cz^
 ||h00c.sfr.fr^
 ||h01ce.cn^
+||h04.xyz^
 ||h1.cfxinxi.cn^
 ||h1.kukuw.com^
 ||h104.cc^
@@ -64325,6 +64342,7 @@ zznews.cn##.ad:not([style])
 ||i3818.com^
 ||i3z.cn^$third-party
 ||i3zh.com/wp-content/plugins/cm-pop-up-banners/
+||i54.xyz^
 ||i7pnx0t.cn^
 ||i8.chinanews.com^$subdocument
 ||i8.com.cn/images/a.swf
@@ -64571,6 +64589,7 @@ zznews.cn##.ad:not([style])
 ||ihhmh.com/mg/show
 ||ihhscjskwht.com^
 ||ihjection.site^$third-party
+||ihtqqws.cn^
 ||ii.joqtfa.cn^
 ||ii1.chajiaotong.com^
 ||iia1.pikacn.com^
@@ -66342,6 +66361,7 @@ zznews.cn##.ad:not([style])
 ||jmdardu.cn^
 ||jmhai.com^
 ||jmhfw.com/index.php?/ajax/get_adv/
+||jmkxinfekxa.com^
 ||jmpmedia.club^
 ||jmqxbeo.cn^
 ||jmrnews.pro^
@@ -66689,6 +66709,7 @@ zznews.cn##.ad:not([style])
 ||junipe3rus4virginiana.com^
 ||juniper.starleaf.com^
 ||junk-cleaner.org^$all
+||junkieswudge.com^
 ||junkucm.com^
 ||junmediadirect.com^
 ||junnew.com^$third-party
@@ -67138,6 +67159,7 @@ zznews.cn##.ad:not([style])
 ||kilometrix.de^$third-party
 ||kiltyyoginis.com^
 ||kimcartoon.li/Ads/
+||kimdate2019.xyz^
 ||kindgirls.com/banners2/
 ||kindjalvitalic.com^
 ||kindnessmarshalping.com^
@@ -71168,6 +71190,7 @@ zznews.cn##.ad:not([style])
 ||mobisla.com^
 ||mobixc.vnfjsus.xyz^
 ||mobshark.net^
+||mobtop.az^$third-party
 ||mobtop.ru^$third-party
 ||mobtrks.com^
 ||mobylog.jp^$third-party
@@ -71537,6 +71560,7 @@ zznews.cn##.ad:not([style])
 ||mudezs.com^
 ||mudshambone.com^
 ||muer.cdn-baidu.fs-sywh.com^
+||mufoa6k.cn^
 ||mugapi.lazzarionline.com^
 ||mugogfy.cn^
 ||mugpothop.com^
@@ -74733,6 +74757,7 @@ zznews.cn##.ad:not([style])
 ||plugin.ws^$third-party
 ||plumbummoca.com^
 ||plumposterity.com^
+||plungebackyard.com^
 ||pluraldispersegranary.com^
 ||plures.net/prod/player/live_page_adv
 ||plusclick.biz^
@@ -77543,6 +77568,7 @@ zznews.cn##.ad:not([style])
 ||samage-bility.icu^
 ||samantharegina.com^
 ||samanthyean.com^
+||samariaalipeds.com^
 ||sambaads.com^$third-party
 ||samc.frankly.ch^
 ||same*.stockstar.com^
@@ -86415,6 +86441,7 @@ zznews.cn##.ad:not([style])
 ||vidhdthe.online/mavennofile.js
 ||vidible.tv/trk/
 ||vidigital.ru^$third-party
+||vidkidsgedrite.com^
 ||vidmoly.me/*.php?*=*&*&$xmlhttprequest
 ||vidora.com^$third-party
 ||vidoza.net/sw.js$important
@@ -86739,6 +86766,7 @@ zznews.cn##.ad:not([style])
 ||vttics.world.co.jp^
 ||vuahb.com^
 ||vubihasdtbadiq.com^
+||vubihowhe.com^
 ||vuejs.org/images/geekbang
 ||vuetifyjs.com/notify.json
 ||vuetifyjs.com/supporters.json
@@ -86899,6 +86927,7 @@ zznews.cn##.ad:not([style])
 ||wangcm01.top^
 ||wangdaguanli.com^
 ||wangdaizao.com^
+||wangderder.xyz^
 ||wangdq.com^
 ||wanghualang.com/wp-content/gallery/ad/
 ||wangjing.cn*/upload/com/
@@ -89467,6 +89496,7 @@ zznews.cn##.ad:not([style])
 ||yanghuaer.mobi^
 ||yanglangkk.cn^
 ||yangll.xin^
+||yangmengqiu.work^
 ||yangpinwang.com/wp-content/uploads/*E5%B9%BF%E5%91%8A.
 ||yangtianc.xyz^
 ||yangtingchina.com^
