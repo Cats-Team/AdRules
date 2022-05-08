@@ -1,8 +1,8 @@
-! Checksum: ya9TgnkHtxvSMbWnG84lrQ
+! Checksum: WUN3US3LWoTbeqVuDb+iuA
 ! Title: AdGuard Chinese filter
 ! Description: EasyList China + AdGuard Chinese filter. Filter list that specifically removes ads on websites in Chinese language.
-! Version: 2.0.54.81
-! TimeUpdated: 2022-05-08T01:02:30+00:00
+! Version: 2.0.54.86
+! TimeUpdated: 2022-05-08T07:30:56+00:00
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -952,9 +952,9 @@ macapp.so#$##m2 { height: 5px!important; }
 mobile01.com#$#body { overflow: visible!important; }
 mobile01.com#$#.modal-backdrop { display: none!important; }
 ! sync with video.fc2.com in Japanese filters
-shanxivideo.net#$#.app-container[aria-expanded="false"] section.with-ad { width: calc(100% - 20px) !important; }
-shanxivideo.net#$#.with-ad[data-layout="list"] .main-header { width: 100% !important; }
-shanxivideo.net#$#.with-ad[data-layout="list"][data-section-type="new-video"] .content-wrap:nth-child(-n+2) { width: 100% !important; }
+shanxivideo.com#$#.app-container[aria-expanded="false"] section.with-ad { width: calc(100% - 20px) !important; }
+shanxivideo.com#$#.with-ad[data-layout="list"] .main-header { width: 100% !important; }
+shanxivideo.com#$#.with-ad[data-layout="list"][data-section-type="new-video"] .content-wrap:nth-child(-n+2) { width: 100% !important; }
 !
 gamer.com.tw#$##flyRightBox { position: absolute!important; left: -3000px!important; }
 !
@@ -2106,13 +2106,13 @@ csdn.net###footerRightAds
 ! yeyemo4.com
 ! frequently changed domain
 yeyemo4.com,yeyemo5.com,yeyemo6.com,yeyemo7.com,yeyemo8.com,yeyemo9.com,yeyemo10.com##center > a[target="_blank"] > img
-! shanxivideo.net - sync video.fc2.com in Japanese filters
-shanxivideo.net##.ad_panelAR
-shanxivideo.net##.list-subCont > li[style$="height: 98px;"]
-shanxivideo.net##.ads-container
-shanxivideo.net##.banner
-shanxivideo.net##div[style^="width: 300px; height: 250px"]
-shanxivideo.net##[class^="c-ad"]
+! shanxivideo.com - sync video.fc2.com in Japanese filters
+shanxivideo.com##.ad_panelAR
+shanxivideo.com##.list-subCont > li[style$="height: 98px;"]
+shanxivideo.com##.ads-container
+shanxivideo.com##.banner
+shanxivideo.com##div[style^="width: 300px; height: 250px"]
+shanxivideo.com##[class^="c-ad"]
 ! jable.tv
 ||jable.tv/assets/images/wejo/$image
 jable.tv##a[href="http://uus52.com/"]
@@ -3702,23 +3702,7 @@ ubmcmm.baidustatic.com
 ##div[id^="photo-header-title-content-text-dall"]
 ##div[onclick*=".leyu"]
 ##div[onclick*="?i_code="]
-##div[style=" max-width:1000px;  margin:0 auto;"] > a > img[height="120px"]
-##div[style=" max-width:1000px;  margin:0 auto;"] > a > img[height="60px"]
-##div[style=" max-width:1003px;  margin:0 auto;"] > a > img[height="60px"]
-##div[style=" max-width:985px;  margin:0 auto;"] > a > img[height="60px"]
-##div[style=" max-width:989px;  margin:0 auto;"] > a > img[height="60px"]
-##div[style=" max-width:990px;  margin:0 auto;"] > a > img[height="60px"]
-##div[style=" max-width:991px;  margin:0 auto;"] > a > img[height="60px"]
-##div[style=" max-width:992px;  margin:0 auto;"] > a > img[height="60px"]
-##div[style=" max-width:993px;  margin:0 auto;"] > a > img[height="60px"]
-##div[style=" max-width:994px;  margin:0 auto;"] > a > img[height="60px"]
-##div[style=" max-width:995px;  margin:0 auto;"] > a > img[height="120px"]
-##div[style=" max-width:995px;  margin:0 auto;"] > a > img[height="60px"]
-##div[style=" max-width:996px;  margin:0 auto;"] > a > img[height="60px"]
-##div[style=" max-width:997px;  margin:0 auto;"] > a > img[height="60px"]
-##div[style=" max-width:998px;  margin:0 auto;"] > a > img[height="120px"]
-##div[style=" max-width:998px;  margin:0 auto;"] > a > img[height="60px"]
-##div[style=" max-width:999px;  margin:0 auto;"] > a > img[height="60px"]
+##div[style=" max-width:980px;  margin:0 auto;"] > a > img[height="60px"]
 ##div[style="text-align:center;"] > a[href*="/register/?i_code="]
 ##img#adv1
 ##img[data-link][data-src*="/u/"]:not([data-link*="/i/"])
@@ -19568,7 +19552,6 @@ $image,third-party,domain=258zw.com
 /c.js#pid=$script,third-party
 /ce_l.aspx?showid=$third-party
 /hmzn_*_*_*.js?$script,third-party
-/i.asp?yk&df=1|$script,third-party
 /js/easyAD.js
 /js/easyAD2.js
 /js/mangoIndexBanner.js
@@ -19642,6 +19625,14 @@ $script,subdocument,third-party,websocket,xmlhttprequest,domain=00ksw.com|01zww.
 ||xiaodian.name^
 ||hx9.ink^
 ||beside-u.xyz^
+||ylty.online^
+||yangmengqiu.work^
+||mufoa6k.cn^
+||h04.xyz^
+||dcjfoei.cn^
+||ihtqqws.cn^
+||baiyi.site^
+||wangderder.xyz^
 ##a[href$=".120ydrayy.com"]
 ##a[href*=".1956hl.com/"]
 ##a[href*=".233787.com/"]
@@ -24304,7 +24295,7 @@ t66y.com##.tips
 !#theporn.xyz
 ###ad-ft
 ###wp > div > #top_banner
-theporn.cc###wp > div[id]
+theporn.cc###to_top + div > div[id]
 ##.ads > #video_playr_sider
 ##.bottom-gg
 ##.pull-right > #video_playr_sider
