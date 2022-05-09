@@ -1,12 +1,12 @@
 [Adblock Plus 2.0]
-! Checksum: 2MTLolCSLoTVZkMfvj6aOg
+! Checksum: 3H/4qKJOg6xxJ5q8UqFO/w
 ! Title: AdRules (For AdBlock)
 ! Homepage: https://github.com/Cats-Team/AdRules
 ! Powerd by CatsTeam
 ! Expires: 8 Hours
 ! Description: 该规则合并自EasyList、EasyListChina、AdGuard Chinese Filter、EdentwCustom、ClearUrl、乘风规则等，并补充了一些规则
-! Version: 2022-05-09 09:58:53（北京时间） 
-! Total count: 91213
+! Version: 2022-05-09 11:28:17（北京时间） 
+! Total count: 91199
 ###ADCENTER
 ###ADSLOT_1
 ###ADTOP
@@ -988,7 +988,6 @@
 ###bannerads
 ###banneradspace
 ###bannerfloat22
-###bannerslide > a[href^="/goto.php?url="]
 ###bb_top_ad
 ###bbccom_leaderboard
 ###bbccom_mpu
@@ -7131,24 +7130,7 @@
 ##div[onclick^="window.location.href"][onclick*=".bcebos."]
 ##div[onclick^="window.location.href"][onclick*=".haoyundm.com"]
 ##div[style*="box-shadow: rgb(136, 136, 136) 0px 0px 12px; color: "]
-##div[style=" max-width:1000px;  margin:0 auto;"] > a > img[height="120px"]
-##div[style=" max-width:1000px;  margin:0 auto;"] > a > img[height="60px"]
-##div[style=" max-width:1003px;  margin:0 auto;"] > a > img[height="60px"]
 ##div[style=" max-width:980px;  margin:0 auto;"] > a > img[height="60px"]
-##div[style=" max-width:985px;  margin:0 auto;"] > a > img[height="60px"]
-##div[style=" max-width:989px;  margin:0 auto;"] > a > img[height="60px"]
-##div[style=" max-width:990px;  margin:0 auto;"] > a > img[height="60px"]
-##div[style=" max-width:991px;  margin:0 auto;"] > a > img[height="60px"]
-##div[style=" max-width:992px;  margin:0 auto;"] > a > img[height="60px"]
-##div[style=" max-width:993px;  margin:0 auto;"] > a > img[height="60px"]
-##div[style=" max-width:994px;  margin:0 auto;"] > a > img[height="60px"]
-##div[style=" max-width:995px;  margin:0 auto;"] > a > img[height="120px"]
-##div[style=" max-width:995px;  margin:0 auto;"] > a > img[height="60px"]
-##div[style=" max-width:996px;  margin:0 auto;"] > a > img[height="60px"]
-##div[style=" max-width:997px;  margin:0 auto;"] > a > img[height="60px"]
-##div[style=" max-width:998px;  margin:0 auto;"] > a > img[height="120px"]
-##div[style=" max-width:998px;  margin:0 auto;"] > a > img[height="60px"]
-##div[style=" max-width:999px;  margin:0 auto;"] > a > img[height="60px"]
 ##div[style="border-radius:8px;background-color:#005737;padding:6px;"]
 ##div[style="box-sizing:border-box;padding:20px 16px;border-radius:8px;width:90%;margin:0 auto;"]
 ##div[style="display: flex;flex-wrap: wrap;margin-right: 5px;margin-left: 5px;"] + style + .container
@@ -14308,7 +14290,6 @@ $~xmlhttprequest,removeparam=ref_,domain=imdb.com|amazon.*|primevideo.com|shopbo
 /huyass7.$script,~third-party
 /huyass7.*.js^$script,domain=thegay.com
 /hy.js?q22
-/i.asp?yk&df=1|$script,third-party
 /i.gif?
 /i.php?i=
 /i.png?id=
@@ -19064,7 +19045,6 @@ $~xmlhttprequest,removeparam=ref_,domain=imdb.com|amazon.*|primevideo.com|shopbo
 3dmgame.com###yxj_fmt_gg
 3dmgame.com##.Content_L > p
 3dmgame.com##.Gmaeinfobtn + span
-3dmgame.com##.Gmaeinfobtn_tab  > span
 3dmgame.com##.Gmaeinfobtn_tab > [class]:not(.tab)
 3dmgame.com##.Gmaeinfobtn_tab > [class][onclick]
 3dmgame.com##.Gmaeinfobtn_tab > span
@@ -40406,15 +40386,15 @@ shaiba.kz#$#abort-current-inline-script $ 1xbet
 shameless.com##+js(abort-current-script, $LAB, /getexoloader/)
 shankejingling.com
 shanson320.ru#$#abort-current-inline-script document.createElement atob
-shanxivideo.net##.ad_panelAR
-shanxivideo.net##.ads-container
-shanxivideo.net##.banner
-shanxivideo.net##.list-subCont > li[style$="height: 98px;"]
-shanxivideo.net##[class^="c-ad"]
-shanxivideo.net##div[style^="width: 300px; height: 250px"]
-shanxivideo.net#$#.app-container[aria-expanded="false"] section.with-ad { width: calc(100% - 20px) !important; }
-shanxivideo.net#$#.with-ad[data-layout="list"] .main-header { width: 100% !important; }
-shanxivideo.net#$#.with-ad[data-layout="list"][data-section-type="new-video"] .content-wrap:nth-child(-n+2) { width: 100% !important; }
+shanxivideo.com##.ad_panelAR
+shanxivideo.com##.ads-container
+shanxivideo.com##.banner
+shanxivideo.com##.list-subCont > li[style$="height: 98px;"]
+shanxivideo.com##[class^="c-ad"]
+shanxivideo.com##div[style^="width: 300px; height: 250px"]
+shanxivideo.com#$#.app-container[aria-expanded="false"] section.with-ad { width: calc(100% - 20px) !important; }
+shanxivideo.com#$#.with-ad[data-layout="list"] .main-header { width: 100% !important; }
+shanxivideo.com#$#.with-ad[data-layout="list"][data-section-type="new-video"] .content-wrap:nth-child(-n+2) { width: 100% !important; }
 shaoxing.com.cn##.top2
 share.acgnx.se##IMG[src*='share.acgnx.se']
 share.dmhy.org##div[align="center"] > a > img
@@ -41900,7 +41880,6 @@ thepointsguy.com##.beam-card-feature
 thepointsguy.com##.favorite-cards
 thepoorcoder.com##+js(set-constant, adblockDetector, noopFunc)
 theporn.cc###to_top + div > div[id]
-theporn.cc###wp > div[id]
 theporn.cc##.video_playr_sider
 theporn.cc##div > div[align="center"]
 theporn.cc##div[class^="_"]
@@ -46157,7 +46136,6 @@ zznews.cn##.ad:not([style])
 ||2886115.com^
 ||288family.club^
 ||2898.com/index/flowexchange/getGoods?
-||2898.com^$third-party
 ||28acglz.com^
 ||28hse.com/adsman/www/images/
 ||28kys.com/92kviptupian/
@@ -47215,6 +47193,7 @@ zznews.cn##.ad:not([style])
 ||835551.com^
 ||840df00e08.com^
 ||8456.xyz^
+||8500.pro^
 ||8563p.cn^
 ||856f639e2a.com^
 ||8585go.com/recommend
@@ -56380,6 +56359,7 @@ zznews.cn##.ad:not([style])
 ||crytyingcrutch.com^
 ||crywl.com^
 ||cs.37see.com^$third-party
+||cs.add2090.top^
 ||cs.coopeservidores.fi.cr^
 ||cs.hot.net.il^
 ||cs.nexttv.co.il^
@@ -67135,7 +67115,9 @@ zznews.cn##.ad:not([style])
 ||khedarigel.com^
 ||khgj.cn^$third-party
 ||khimxz.shoesforcrews.com^
+||khj.dtsxn.cn^
 ||khlgdkxien.com^
+||khn.txscn.cn^
 ||khphkum.cn^
 ||khrg04h.cn^
 ||khrtac.xiangha.com^
@@ -67293,6 +67275,7 @@ zznews.cn##.ad:not([style])
 ||kmt.zhwpg.cn^
 ||kmtx.io^$third-party
 ||kmwqxqh.com^
+||kmy.tlsgq.cn^
 ||kn.zhangdujia.com^
 ||kn007.net/snmp.php
 ||knaxfbg.cn^
@@ -72002,6 +71985,7 @@ zznews.cn##.ad:not([style])
 ||nbheopi.cn^
 ||nbhotpo.com^
 ||nbhxgjz.com^
+||nbk.lm226.com^
 ||nbk.lm336.com^
 ||nbk.lm553.com^
 ||nbpyfog.cn^
@@ -75852,6 +75836,7 @@ zznews.cn##.ad:not([style])
 ||qinmon.xyz^
 ||qinongyouxuan.cn^$third-party
 ||qinqiaotrade.com^
+||qintian.ink^
 ||qintingapp.com^
 ||qinxue100.com/qinxue/pc/js/add_js.js
 ||qinzhihao.com^
@@ -80585,6 +80570,7 @@ zznews.cn##.ad:not([style])
 ||soska.us^$third-party
 ||soso.com/wenwen/i/ad/
 ||soso.ws^
+||sosodo.xyz^
 ||sotetahe.pro^
 ||soufun.com/click/
 ||soufun.com/stats/
