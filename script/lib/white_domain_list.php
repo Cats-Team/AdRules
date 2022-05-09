@@ -9,6 +9,7 @@
 
 return array(
     /**start**/
+    'app.zhuanzhuan.com' => 0, //apo
     'lnk0.com' => 0, //福特派
     'share.dmhy.org' => 0, //动漫花园BT站
     'nstool.netease.com' => 0, //網易DNS檢測
