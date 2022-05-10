@@ -72,6 +72,7 @@ jobs:
           git config --local user.email "hcamer145@gmail.com"
           git branch -m main
           git add --all
+          git fetch --unshallow 
           git commit -m "Updated at $(TZ=UTC-8 date +'%Y-%m-%d %H:%M:%S')（北京时间）"
           git push -u origin -f
       - name: Git push assets to Coding
