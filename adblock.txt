@@ -1,12 +1,12 @@
 [Adblock Plus 2.0]
-! Checksum: kbmiA2RtChRM8rWSNi0Edw
+! Checksum: tbtGJOQlPXTDS2bq3rm8WQ
 ! Title: AdRules (For AdBlock)
 ! Homepage: https://github.com/Cats-Team/AdRules
 ! Powerd by CatsTeam
 ! Expires: 8 Hours
 ! Description: 该规则合并自EasyList、EasyListChina、AdGuard Chinese Filter、EdentwCustom、ClearUrl、乘风规则等，并补充了一些规则
-! Version: 2022-05-10 11:54:23（北京时间） 
-! Total count: 91235
+! Version: 2022-05-10 16:28:46（北京时间） 
+! Total count: 91237
 ###ADCENTER
 ###ADSLOT_1
 ###ADTOP
@@ -7296,7 +7296,7 @@ $removeparam=/[$]ja/,domain=argos.co.uk
 $removeparam=/^(ref_?)?src=/,domain=twitter.com
 $removeparam=/^CJEVENT=/i
 $removeparam=/^ICID=/i,domain=~api.mapbox.com|~microsoft.com
-$removeparam=/^OCID=/i,domain=~youtube.com
+$removeparam=/^OCID=/i,domain=~youtube.com,app=~Microsoft.Msn.News.exe
 $removeparam=/^Offers\.com/
 $removeparam=/^WT\./i
 $removeparam=/^WT_/i
@@ -41910,7 +41910,6 @@ theplace2.ru#@#.adsbygoogle
 thepointsguy.com##.beam-card-feature
 thepointsguy.com##.favorite-cards
 thepoorcoder.com##+js(set-constant, adblockDetector, noopFunc)
-theporn.cc###to_top + div > div[id]
 theporn.cc##.pt-70 > div[id]
 theporn.cc##.video_playr_sider
 theporn.cc##div > div[align="center"]
@@ -44101,7 +44100,8 @@ www.yizhibo.com##.register_guide
 www.youtube.com,m.youtube.com,music.youtube.com,youtube-nocookie.com#$#simulate-event-poc click button.ytp-ad-skip-button
 www.youtube.com,m.youtube.com,music.youtube.com,youtube-nocookie.com#$#simulate-event-poc click span.ytp-ad-skip-button-container
 www.youtube.com,m.youtube.com,music.youtube.com,youtubekids.com,youtube-nocookie.com#$#json-prune '0.playerResponse.adPlacements 0.playerResponse.playerAds 1.playerResponse.adPlacements 1.playerResponse.playerAds 2.playerResponse.adPlacements 2.playerResponse.playerAds playerResponse.adPlacements playerResponse.playerAds ytInitialPlayerResponse.adPlacements ytInitialPlayerResponse.playerAds adPlacements playerAds'
-www.youtube.com,m.youtube.com,music.youtube.com,youtubekids.com,youtube-nocookie.com#$#override-property-read playerResponse.adPlacements undefined; override-property-read ytInitialPlayerResponse.adPlacements undefined
+www.youtube.com,m.youtube.com,music.youtube.com,youtubekids.com,youtube-nocookie.com#$#override-property-read playerResponse.adPlacements undefined;
+www.youtube.com,m.youtube.com,music.youtube.com,youtubekids.com,youtube-nocookie.com#$#override-property-read ytInitialPlayerResponse.adPlacements undefined;
 www.yxdm.tv/js/mbootstrap_nei.js
 www.zd518.cn/statics/js/home.js
 www.zd518.cn/template/qpg6080/baidufx/baidufx.js
@@ -52890,6 +52890,7 @@ zznews.cn##.ad:not([style])
 ||bilibili.com^$removeparam=timestamp
 ||bilibili.com^$removeparam=unique_k
 ||bilibilijj.com/image/right_bottom.gif
+||bill777.xyz^
 ||billionfocus.com^
 ||billowybead.com^
 ||billypub.com^
@@ -90630,6 +90631,7 @@ zznews.cn##.ad:not([style])
 ||zhangbaochang.top^
 ||zhangbu.ren^
 ||zhangdujia.com^
+||zhangfeiyijuepifa.com^
 ||zhangguangzong.com^$third-party
 ||zhangjianlong.xyz^
 ||zhangjinfei.vip^
