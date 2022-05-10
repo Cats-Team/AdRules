@@ -1,5 +1,5 @@
 ! Title: ➗ Actually Legitimate URL Shortener Tool
-! Version: 10May2022v1
+! Version: 10May2022v2
 ! Expires: 1 day
 ! Description: In a world dominated by bit.ly, adf.ly, and several thousand other malware cover-up tools, this list reduces the length of URLs in a much more legitimate and transparent manner. Essentially, it automatically removes unnecessary $/& values from the URLs, making them easier to copy from the URL bar and pasting elsewhere as links. Enjoy.
 ! Homepage: https://github.com/DandelionSprout/adfilt/discussions/163
@@ -43,7 +43,7 @@ $removeparam=logTag
 $removeparam=gclsrc
 
 ! https://www.nytimes.com/2020/11/10/us/yellowstone-chickens.html?smid=tw-share (11/11/2020)
-$removeparam=smid
+$removeparam=smid,domain=~opinion.no
 
 ! https://www.norsk-tipping.no/redirector/oddsen/kjop?WT.mc_id=Nettavisen_nettavisen_ekomm_langoddsen_Oddsartikkel__ekomm&utm_source=nettavisen&utm_medium=ekomm&utm_content=langoddsen_Oddsartikkel_&utm_campaign=ekomm&view=lobby&rekker=[1548011,4825429,1]&spillsystem=1 (15/11/2020)
 $removeparam=/^WT\./i
