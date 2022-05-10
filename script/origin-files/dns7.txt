@@ -1,7 +1,7 @@
 [Adblock Plus 1.1]
-! Version: 202205100813
+! Version: 202205101135
 ! Title: EasyPrivacy
-! Last modified: 10 May 2022 08:13 UTC
+! Last modified: 10 May 2022 11:35 UTC
 ! Expires: 4 days (update frequency)
 ! Homepage: https://easylist.to/
 ! Licence: https://easylist.to/pages/licence.html
@@ -535,6 +535,7 @@
 /analysis/ga_
 /analysis/gtm_
 /analysis?t=
+/analysisTag.js
 /analytic-client.
 /analytic/context?
 /analytic/count.
@@ -10927,6 +10928,7 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 ||dawin.tv^$third-party
 ||logger.co.kr^$third-party
 ||oevery.com^$third-party
+||rainbownine.net^$third-party
 ||tenping.kr^$third-party
 ! Latvian
 ||cms.lv^$third-party
@@ -25442,7 +25444,6 @@ $csp=child-src 'none'; frame-src *; worker-src 'none',domain=skyback.ru|szukajka
 ||le.com/op/
 ||letv.com/op?
 ||lg.tr.pandora.tv^
-||live-trace.bilibili.com^
 ||log*.ku6.com^
 ||log.51cto.com^
 ||log.aliyuncs.com^
@@ -25848,7 +25849,6 @@ $csp=child-src 'none'; frame-src *; worker-src 'none',domain=skyback.ru|szukajka
 ||nhk.or.jp^*/bc.js
 ||nikkei.com/.resources/tracking/
 ||ppf.rakuten.co.jp^$~script
-||pr.ameba.jp^
 ||pvtag.yahoo.co.jp^
 ||pw.gigazine.net^
 ||rakuten.co.jp/gw.js
@@ -25881,6 +25881,7 @@ $csp=child-src 'none'; frame-src *; worker-src 'none',domain=skyback.ru|szukajka
 ||daumcdn.net^*/awsa.js
 ||gmarket.co.kr/js/common/uuid.js
 ||hits.zdnet.co.kr^
+||jdsports.co.kr/collect.php
 ||kyson.kakao.com^
 ||l.m.naver.com^
 ||log.etoday.co.kr^
@@ -26229,7 +26230,7 @@ $csp=child-src 'none'; frame-src *; worker-src 'none',domain=skyback.ru|szukajka
 @@||accounts.nintendo.com/account/js/pages/$script,~third-party
 @@||admin.memberspace.com/sites/*/analytics/views$~third-party
 @@||adobedtm.com/*-source.min.js$script,domain=aarp.org|atresplayer.com|backcountry.com|bt.com|cadenaser.com|churchofjesuschrist.org|dollargeneral.com|kroger.com|personal.natwest.com|telus.com|verizon.com
-@@||adobedtm.com/*_source.min.js$script,domain=backcountry.com|kroger.com|telus.com
+@@||adobedtm.com/*_source.min.js$script,domain=backcountry.com|hl.co.uk|kroger.com|telus.com
 @@||adobedtm.com/extensions/$script,domain=apple.com|bravotv.com|cadenaser.com|foodnetwork.com|telus.com|verizon.com
 @@||adobedtm.com/launch-$script,xmlhttprequest
 @@||adobedtm.com^*/launch-$script,xmlhttprequest
@@ -26985,7 +26986,6 @@ $csp=child-src 'none'; frame-src *; worker-src 'none',domain=skyback.ru|szukajka
 ! ---------- Japanese ----------
 ! 
 @@||a8.net/svt/$image,domain=samplefan.com
-@@||ad.pr.ameba.jp/tpc/list/$xmlhttprequest
 @@||adobedtm.com^*-libraryCode_source.min.js$script,domain=disneyplus.disney.co.jp
 @@||adobedtm.com^*/mbox-contents-$script,domain=fcbarcelona.jp|sony.jp
 @@||adobedtm.com^*/satelliteLib-$script,domain=fcbarcelona.jp|radiko.jp|sony.jp|support.nec-lavie.jp
