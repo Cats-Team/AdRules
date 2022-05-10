@@ -1,5 +1,5 @@
 ! Title: ➗ Actually Legitimate URL Shortener Tool
-! Version: 09May2022v1
+! Version: 09May2022v3
 ! Expires: 1 day
 ! Description: In a world dominated by bit.ly, adf.ly, and several thousand other malware cover-up tools, this list reduces the length of URLs in a much more legitimate and transparent manner. Essentially, it automatically removes unnecessary $/& values from the URLs, making them easier to copy from the URL bar and pasting elsewhere as links. Enjoy.
 ! Homepage: https://github.com/DandelionSprout/adfilt/discussions/163
@@ -492,7 +492,7 @@ $removeparam=ampcid
 
 ! https://github.com/DandelionSprout/adfilt/discussions/163#discussioncomment-1015504
 $removeparam=affname
-$removeparam=MID
+$removeparam=MID,domain=~media-cdn.costco.*
 
 ! https://www.greatrun.org/train-and-prepare/training-plans/?eid=AJ935930567982484926441023zzzzz64bccfd443fc61ff2c06e3cf8c7b889a2061064e5d5db55e171241354f241bed00
 $removeparam=eid,document,denyallow=embed.tapkal.fi,domain=~activationspot.com|~anidb.net|~howlongtobeat.com|~piwigo.org|~vmware.com|~eventbrite.*|~egift.blackhawknetwork.com|~redeem.giftcards.com
@@ -3365,6 +3365,20 @@ $removeparam=s,domain=nextdoor.com
 $removeparam=section,domain=nextdoor.com
 $removeparam=ct,domain=nextdoor.com
 $removeparam=ec,domain=nextdoor.com
+
+! https://github.com/DandelionSprout/adfilt/discussions/163#discussioncomment-2718126
+$removeparam=adSize,domain=media-cdn.costco.ca|media-cdn.costco.com
+$removeparam=channelID,domain=media-cdn.costco.ca|media-cdn.costco.com
+$removeparam=CID,domain=media-cdn.costco.ca|media-cdn.costco.com
+$removeparam=hc,domain=media-cdn.costco.ca|media-cdn.costco.com
+$removeparam=location,domain=media-cdn.costco.ca|media-cdn.costco.com
+$removeparam=matches,domain=media-cdn.costco.ca|media-cdn.costco.com
+$removeparam=mt,domain=media-cdn.costco.ca|media-cdn.costco.com
+$removeparam=PID,domain=media-cdn.costco.ca|media-cdn.costco.com
+$removeparam=referrer,domain=media-cdn.costco.ca|media-cdn.costco.com
+$removeparam=spr,domain=media-cdn.costco.ca|media-cdn.costco.com
+$removeparam=tc,domain=media-cdn.costco.ca|media-cdn.costco.com
+$removeparam=textadID,domain=media-cdn.costco.ca|media-cdn.costco.com
 
 !#if !env_mobile
 ! ——— Mobile ——— !
