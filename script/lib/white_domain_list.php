@@ -9,6 +9,7 @@
 
 return array(
     /**start**/
+    'news-events.apple.com' => 0, //apple new 
     'appimg.dbankcdn.com' => 0, //华为APP商店图片
     'app.zhuanzhuan.com' => 0, //apo
     'lnk0.com' => 0, //福特派
