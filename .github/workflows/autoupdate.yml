@@ -67,7 +67,7 @@ jobs:
         run: |
           rm -rf .git/
           git init
-          git remote add origin "https://github.com/${{ env.GITHUB_REPOSITORY }}.git"
+          git remote add origin "https://github.com/${{ github.GITHUB_REPOSITORY }}.git"
           git config --local user.name "hacamer"
           git config --local user.email "hcamer145@gmail.com"
           git branch -m main
