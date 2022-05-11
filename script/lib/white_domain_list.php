@@ -9,6 +9,7 @@
 
 return array(
     /**start**/
+    'lens.zhihu.com' => 0, // 知乎网页视频
     'news-events.apple.com' => 0, //apple new 
     'dbankcdn.com' => 2, //华为APP商店图片
     'app.zhuanzhuan.com' => 0, //apo
