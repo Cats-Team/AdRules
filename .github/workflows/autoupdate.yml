@@ -18,7 +18,8 @@ env:
   GITHUBTOKEN: ${{ secrets.GITHUBTOKEN }}
   TG_TOKEN: ${{ secrets.TG_TOKEN }}
   CHAT_ID: ${{ secrets.CHAT_ID }}
-
+  REPO_NAME: ${{ github.event.repository.name }}
+  OWR_NAME: ${{ github.event.user.name }}
   
 jobs:
   update-rules:
@@ -67,7 +68,7 @@ jobs:
         run: |
           rm -rf .git/
           git init
-          git remote add origin "https://github.com/${{ github.GITHUB_REPOSITORY }}.git"
+          git remote add origin "https://github.com/${{ env.OWR_NAME }}/${{ env.REPO_NAME }}.git"
           git config --local user.name "hacamer"
           git config --local user.email "hcamer145@gmail.com"
           git branch -m main
