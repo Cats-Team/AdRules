@@ -19,7 +19,7 @@ env:
   TG_TOKEN: ${{ secrets.TG_TOKEN }}
   CHAT_ID: ${{ secrets.CHAT_ID }}
   REPO_NAME: ${{ github.event.repository.name }}
-  OWR_NAME: ${{ github.event.user.name }}
+  OWR_NAME: ${{ github.GITHUB_ACTOR }}
   
 jobs:
   update-rules:
