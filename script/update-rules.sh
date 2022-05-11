@@ -140,19 +140,19 @@ clash=(
 
 for i in "${!easylist[@]}" "${!easylist_plus[@]}" "${!adguard_full[@]}" "${!adguard[@]}" "${!adguard_full_ubo[@]}" "${!adguard_ubo[@]}" "${!allow[@]}" "${!hosts[@]}" "${!dns[@]}" "${!ad_domains[@]}"  "${!allow_domains[@]}" "${!dead_hosts[@]}" "${!clash[@]}"
 do
-  curl -m 68 --retry-delay 2 --retry 5 --parallel --parallel-immediate -k -L -C - -o "easylist${i}.txt" --connect-timeout 60 -s "${easylist[$i]}" |iconv -t utf-8 &
-  curl -m 60 --retry-delay 2 --retry 5 --parallel --parallel-immediate -k -L -C - -o "plus-easylist${i}.txt" --connect-timeout 60 -s "${easylist_plus[$i]}"  |iconv -t utf-8 &
-  curl -m 60 --retry-delay 2 --retry 5 --parallel --parallel-immediate -k -L -C - -o "full-adguard${i}.txt" --connect-timeout 60 -s "${adguard_full[$i]}" |iconv -t utf-8 &
+  curl --parallel --parallel-immediate -k -L -C - -o "easylist${i}.txt" --connect-timeout 30 -s "${easylist[$i]}" |iconv -t utf-8 &
+  curl --parallel --parallel-immediate -k -L -C - -o "plus-easylist${i}.txt" --connect-timeout 30 -s "${easylist_plus[$i]}"  |iconv -t utf-8 &
+  curl --parallel --parallel-immediate -k -L -C - -o "full-adguard${i}.txt" --connect-timeout 30 -s "${adguard_full[$i]}" |iconv -t utf-8 &
   #curl --parallel --parallel-immediate -k -L -C - -o "ubo-full-adguard${i}.txt" --connect-timeout 60 -s "${adguard_full_ubo[$i]}" &
-  curl -m 60 --retry-delay 2 --retry 5 --parallel --parallel-immediate -k -L -C - -o "adguard${i}.txt" --connect-timeout 60 -s "${adguard[$i]}" |iconv -t utf-8 &
+  curl  --parallel --parallel-immediate -k -L -C - -o "adguard${i}.txt" --connect-timeout 30 -s "${adguard[$i]}" |iconv -t utf-8 &
   #curl --parallel --parallel-immediate -k -L -C - -o "ubo-adguard${i}.txt" --connect-timeout 60 -s "${adguard_ubo[$i]}" &
-  curl -m 60 --retry-delay 2 --retry 5 --parallel --parallel-immediate -k -L -C - -o "allow${i}.txt" --connect-timeout 60 -s "${allow[$i]}" |iconv -t utf-8 &
-  curl -m 60 --retry-delay 2 --retry 5 --parallel --parallel-immediate -k -L -C - -o "dns${i}.txt" --connect-timeout 60 -s "${dns[$i]}" |iconv -t utf-8 &
-  curl -m 60 --retry-delay 2 --retry 5 --parallel --parallel-immediate -k -L -C - -o "hosts${i}.txt" --connect-timeout 60 -s "${hosts[$i]}" |iconv -t utf-8 &
-  curl -m 60 --retry-delay 2 --retry 5 --parallel --parallel-immediate -k -L -C - -o "ad-domains${i}.txt" --connect-timeout 60 -s "${ad_domains[$i]}" |iconv -t utf-8 &
-  curl -m 60 --retry-delay 2 --retry 5 --parallel --parallel-immediate -k -L -C - -o "allow-domains${i}.txt" --connect-timeout 60 -s "${allow_domains[$i]}" |iconv -t utf-8 &
-  curl -m 60 --retry-delay 2 --retry 5 --parallel --parallel-immediate -k -L -C - -o "dead-hosts${i}.txt" --connect-timeout 60 -s "${dead_hosts[$i]}" |iconv -t utf-8 &
-  curl -m 60 --retry-delay 2 --retry 5 --parallel --parallel-immediate -k -L -C - -o "clash${i}.txt" --connect-timeout 60 -s "${clash[$i]}" |iconv -t utf-8 &
+  curl --parallel --parallel-immediate -k -L -C - -o "allow${i}.txt" --connect-timeout 30 -s "${allow[$i]}" |iconv -t utf-8 &
+  curl --parallel --parallel-immediate -k -L -C - -o "dns${i}.txt" --connect-timeout 30 -s "${dns[$i]}" |iconv -t utf-8 &
+  curl --parallel --parallel-immediate -k -L -C - -o "hosts${i}.txt" --connect-timeout 30 -s "${hosts[$i]}" |iconv -t utf-8 &
+  curl --parallel --parallel-immediate -k -L -C - -o "ad-domains${i}.txt" --connect-timeout 30 -s "${ad_domains[$i]}" |iconv -t utf-8 &
+  curl --parallel --parallel-immediate -k -L -C - -o "allow-domains${i}.txt" --connect-timeout 30 -s "${allow_domains[$i]}" |iconv -t utf-8 &
+  curl --parallel --parallel-immediate -k -L -C - -o "dead-hosts${i}.txt" --connect-timeout 30 -s "${dead_hosts[$i]}" |iconv -t utf-8 &
+  curl --parallel --parallel-immediate -k -L -C - -o "clash${i}.txt" --connect-timeout 30 -s "${clash[$i]}" |iconv -t utf-8 &
   # shellcheck disable=SC2181
 done
 wait
