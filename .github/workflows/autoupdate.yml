@@ -66,13 +66,13 @@ jobs:
 
       - name: Git push assets to Github
         run: |
-          rm -rf .git/
+          #rm -rf .git/
           git init
-          git remote add origin "https://github.com/Cats-Team/${{ env.REPO_NAME }}.git"
+          #git remote add origin "https://github.com/Cats-Team/${{ env.REPO_NAME }}.git"
           git config --local user.name "hacamer"
           git config --local user.email "hcamer145@gmail.com"
           git branch -m main
-          #git fetch --unshallow 
+          git fetch --unshallow 
           #git checkout main
           git add --all
           git commit -m "Updated at $(TZ=UTC-8 date +'%Y-%m-%d %H:%M:%S')（北京时间）"
