@@ -73,6 +73,7 @@ jobs:
           git branch -m main
           #git fetch --unshallow 
           git checkout main
+          git checkout -b
           git add --all
           git commit -am "Updated at $(TZ=UTC-8 date +'%Y-%m-%d %H:%M:%S')（北京时间）"
           git push --force
