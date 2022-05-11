@@ -1,10 +1,10 @@
 ! Title: AdRules Allowlist
-! Checksum: 3Cmsa4Xtb/gUZ+krRVoiNw
+! Checksum: o1q9K9QU1VlHV14vNxN4AQ
 ! Homepage: https://github.com/Cats-Team/AdRules
 ! Powerd by CatsTeam
 ! Expires: 8 Hours
-! Version: 2022-05-11 16:30:44（北京时间） 
-! Total count: 18220
+! Version: 2022-05-12 00:34:42（北京时间） 
+! Total count: 18226
 @@$csp=worker-src 'none',domain=uptostream.com
 @@$domain=avgle.com,webrtc,websocket
 @@$generichide,domain=heapfiles.com|vidoza.co|vidoza.net
@@ -1013,6 +1013,7 @@
 @@||a463.w10.akamai.net^
 @@||a790.w16.akamai.net^
 @@||a8.net/svt/$image,domain=samplefan.com
+@@||aaovivo.pro/index.php?u=*/playlist.m3u8$stealth
 @@||aargauerzeitung.ch^$ghide
 @@||aarp.net/etc/aarp/statics/global/js/omniture*.js
 @@||aasarchitecture.com^$ghide
@@ -3737,6 +3738,7 @@
 @@||cdn.hanime.tv/exoclick.ads*.js
 @@||cdn.honor.ru/pms/pages/adsImages/$domain=honor.ru
 @@||cdn.howtofixwindows.com/wp-content/*/better-adsmanager/js/advertising.min-*.js
+@@||cdn.hsmedia.ru/dist/$stealth,domain=maximonline.ru|woman.ru|parents.ru|vokrugsveta.ru|psychologies.ru|ellegirl.ru|wday.ru|elle.ru|marieclaire.ru
 @@||cdn.hsmedia.ru/dist/marieclaire/$stealth,domain=marieclaire.ru
 @@||cdn.hsmedia.ru/dist/maxim/$stealth
 @@||cdn.http.anno.channel4.com^$domain=channel4.com
@@ -5820,6 +5822,7 @@
 @@||eiv.baidu.com/fcimg
 @@||eiv.baidu.com/hmt/icon/21.gif
 @@||ekstrabladet.dk^$ghide
+@@||el-vidas.nl^*/phpcuong_newsletter/$script
 @@||elabs12.com/functions/message_view.html$document
 @@||elahmad.com/ads/fc.php
 @@||elance-odesk.com/marketing-ui/master/js/interstitial.js
@@ -6648,6 +6651,7 @@
 @@||fundingchoicesmessages.google.com/*/*.$domain=soranews24.com
 @@||fundingchoicesmessages.google.com/f/*=$script,domain=soranews24.com
 @@||fundingchoicesmessages.google.com/f/*=$script,domain=soranews24.com,stealth
+@@||fundingchoicesmessages.google.com/f/*=$script,domain=youpouch.com,stealth
 @@||fundingchoicesmessages.google.com^$script,domain=youpouch.com
 @@||fundingchoicesmessages.google.com^$stealth,domain=stooq.pl|stooq.com
 @@||fundingchoicesmessages.google.com^$stealth,script,domain=player.addradio.de
@@ -9728,6 +9732,7 @@
 @@||js.maxmind.com^
 @@||js.monitor.azure.com/scripts/$script,domain=microsoft.com
 @@||js.monitor.azure.com/scripts/*/ms.analytics-web-*.min.js$domain=mediastream.microsoft.com
+@@||js.monitor.azure.com/scripts/*/ms.analytics-web-*.min.js$domain=skype.com
 @@||js.nyt.com/js/app/analytics/wtbase.js$domain=nytimes.com
 @@||js.revsci.net/gateway/gw.js?$domain=t-online.de
 @@||js.sentry-cdn.com^$script,domain=book.dmm.com|jobs.ch|pizzahut.com.au
@@ -11672,6 +11677,7 @@
 @@||nsongs.com^$generichide
 @@||ntalker.com^
 @@||ntc-affinity-api.web.aol.com/affinity/?$script,domain=games.com
+@@||ntcdntempv*.com/data/images/$stealth
 @@||ntcdntempv*.com/data/images/$stealth,domain=nettruyenmoi.com
 @@||nthu.edu.tw^*ad
 @@||ntou.edu.tw/bin/showads.
@@ -14768,7 +14774,6 @@
 @@||simyo.de^*/simyo_s_code.js
 @@||sina.com.cn/litong/*/close
 @@||sina.com.hk^*_ads.cgi
-@@||sina.com^
 @@||sinaimg.cn/ad/adimage/50x50_
 @@||sinaimg.cn/cj/deco/$script,domain=finance.sina.com.cn
 @@||sinaimg.cn/dy/deco/*/js/base.js
@@ -15584,6 +15589,7 @@
 @@||streamrapid.ru/embed-$subdocument
 @@||streamsb.net/pop.js
 @@||streamtape.*/ad.js
+@@||streamtape.com^$subdocument
 @@||streamxxx.tv^$ghide
 @@||streamz.*/count.php^$xhr
 @@||streamz.*^$ghide
