@@ -76,7 +76,7 @@ jobs:
           #git checkout main
           git add --all
           git commit -m "Updated at $(TZ=UTC-8 date +'%Y-%m-%d %H:%M:%S')（北京时间）"
-          git push --force -u main
+          git push --force -u origan
       - name: Git push assets to Coding
         run: |
           rm -rf .git/
