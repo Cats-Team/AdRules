@@ -65,12 +65,14 @@ jobs:
 
       - name: Git push assets to Github
         run: |
-          #git init
+          rm -rf .git/
+          git init
+          git remote add origin "https://github.com/${{ env.GITHUB_REPOSITORY }}.git"
           git config --local user.name "hacamer"
           git config --local user.email "hcamer145@gmail.com"
           git branch -m main
-          git fetch --unshallow 
-          git checkout main
+          #git fetch --unshallow 
+          #git checkout main
           git add --all
           git commit -m "Updated at $(TZ=UTC-8 date +'%Y-%m-%d %H:%M:%S')（北京时间）"
           git push --force
