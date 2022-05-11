@@ -67,15 +67,15 @@ jobs:
 
       - name: Git push assets to Github
         run: |
-          git init
+          #git init
           git config --local user.name "hacamer"
           git config --local user.email "hcamer145@gmail.com"
           git branch -m main
           #git fetch --unshallow 
           git checkout main
-          git checkout -b
+          #git checkout -b
           git add --all
-          git commit -am "Updated at $(TZ=UTC-8 date +'%Y-%m-%d %H:%M:%S')（北京时间）"
+          git commit -m "Updated at $(TZ=UTC-8 date +'%Y-%m-%d %H:%M:%S')（北京时间）"
           git push --force
       - name: Git push assets to Coding
         run: |
