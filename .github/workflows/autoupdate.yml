@@ -51,7 +51,7 @@ jobs:
           #rm *.txt
           git pull --rebase origin main &
           wait
-          sudo update-alternatives --set php /usr/bin/php7.4 $
+          sudo update-alternatives --set php /usr/bin/php7.4 &
           git checkout main
           bash ./script/update-rules.sh
           #python ./script/rule.py
