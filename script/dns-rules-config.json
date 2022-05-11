@@ -16,6 +16,12 @@
         },
         {
             "name": "DNS List",
+            "source": "https://github.com/hacamer/AdRule/raw/main/dns.txt",
+            "type": "adblock",
+            "transformations": ["RemoveModifiers", "Validate"]
+        },
+        {
+            "name": "DNS List",
             "source": "https://raw.githubusercontent.com/xinggsf/Adblock-Plus-Rule/master/mv.txt",
             "type": "adblock",
             "transformations": ["RemoveModifiers", "Validate"]
