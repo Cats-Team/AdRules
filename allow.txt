@@ -1,10 +1,10 @@
 ! Title: AdRules Allowlist
-! Checksum: RxUwWCv0aTEBQBsgxu7WyQ
+! Checksum: ROdxb9vpLsIUbvRQN3z2JA
 ! Homepage: https://github.com/Cats-Team/AdRules
 ! Powerd by CatsTeam
 ! Expires: 8 Hours
-! Version: 2022-05-12 10:54:53（北京时间） 
-! Total count: 18221
+! Version: 2022-05-12 15:43:22（北京时间） 
+! Total count: 18247
 @@$csp=worker-src 'none',domain=uptostream.com
 @@$domain=avgle.com,webrtc,websocket
 @@$generichide,domain=heapfiles.com|vidoza.co|vidoza.net
@@ -710,6 +710,7 @@
 @@||114la.com/|
 @@||115.28.114.149^*&adf=dalian_300x250_
 @@||117.60.146.16:8089/images/
+@@||11bit.co.in/*/libs/advertisement.js
 @@||11freunde.de/sites/all/themes/elf/gujAd/gujAd.js$domain=11freunde.de,badfilter
 @@||120.132.57.41/pjk/pag/
 @@||122.2o7.net/b/ss/$image,domain=billetnet.dk|billettservice.no|goal.com|lippupalvelu.fi|pcworld.com|riverisland.com|techhive.com|ticketmaster.ae|ticketmaster.co.uk|ticketmaster.de|ticketmaster.ie|ticketmaster.nl|ticnet.se
@@ -971,6 +972,7 @@
 @@||a-d-k.ru/bitrix/templates/ad/
 @@||a-delivery*.mxdcontent.net/*/*?$popup,domain=mixdrop.co
 @@||a-invdn-com.akamaized.net/Broker_Button_New^$domain=investing.com
+@@||a-msedge.net^
 @@||a-o.ninja/*ad-$script,~third-party
 @@||a-o.ninja/bannerinc.js
 @@||a-o.ninja/wp-content/*ad.$script,~third-party
@@ -2191,6 +2193,8 @@
 @@||anyporn.com/player/kt_player.js
 @@||anyporn.com/player/kt_player_*.jsx
 @@||aobi.100bt.com/play/ad/ad*.swf
+@@||aod.itunes.apple.com^
+@@||aod.itunes.g.aaplimg.com^
 @@||aohdonline.info/peliculas^$stealth
 @@||aol.com/advertisers/advertisers.txt?$script,xmlhttprequest
 @@||aol.com/mm_track/slideshow/$subdocument
@@ -2426,8 +2430,10 @@
 @@||app.khz.se/api/*&ad_type=preroll-channel$domain=ilikeradio.se
 @@||app.link^
 @@||app.mailjet.com/widget/iframe/$subdocument,domain=2040training.co.uk
+@@||app.market.xiaomi.com^
 @@||app.plex.tv^$extension
 @@||app.print.avery.com^$elemhide,jsinject,extension
+@@||app.qq.com^
 @@||app.sebitti.fi/maestrojukebox2/lib/Controllers/AdController.js$domain=app.sebitti.fi
 @@||app.sendgrid.com$document
 @@||app.sendgrid.com^$elemhide,jsinject
@@ -5110,6 +5116,7 @@
 @@||darmowa-bramkasms.pl/ad-server/$script
 @@||darmowa-tv.ws^$stealth
 @@||darmstadt.ui-traffic.de/mobile/webapp/bower_components/heatmap.js$domain=darmstadt.ui-traffic.de
+@@||dash.cloudflare.com^
 @@||dash.cloudflare.com^$domain=dash.cloudflare.com,important
 @@||dash.xns.one^
 @@||dashboard.adskeeper.co.uk^$domain=dashboard.adskeeper.co.uk
@@ -5563,6 +5570,7 @@
 @@||driftt.com^
 @@||drive.google.com/videoplayback$stealth,domain=idxx1.rocks|idxx1.net|idtube.me
 @@||drive.google.com^$generichide
+@@||drive.quark.cn^
 @@||drivebox.club^$generichide
 @@||drivek.it^*/jquery.cookiecuttr.min.js
 @@||driverays.com^$ghide
@@ -6241,6 +6249,7 @@
 @@||feed.4strokemedia.com^$domain=video.gazzetta.it
 @@||feed.adrelayer.com^|
 @@||feed.mix.sina.com.cn^
+@@||feedback.miui.com^
 @@||feedback.userreport.com/*/*.csb.app$domain=csb.app
 @@||feedburner.com^
 @@||feedburner.google.com^$image,domain=feeds.feedburner.com
@@ -8718,6 +8727,7 @@
 @@||idol.sankakucomplex.com/post/index.content?next=*&page=$elemhide,jsinject,extension
 @@||idol.sankakucomplex.com/post/index.content?next=*&page=$other
 @@||idos.idnes.cz^$csp
+@@||idqqimg.com^
 @@||idsly.com^$generichide
 @@||idtbox.com^$generichide
 @@||iejima.org/ad-banner/$image,~third-party
@@ -8753,6 +8763,7 @@
 @@||iknow-pic.cdn.bcebos.com^$stealth
 @@||ilan.memurlar.net/common/job/advert/images/$domain=memurlar.net
 @@||ilan.memurlar.net/common/job/advert/images/*/headline.jpg|
+@@||ilce.alicdn.com^
 @@||ilfattoquotidiano.it^$extension
 @@||ilpuntotecnico.com/forum/RealPopup/blockadblock.js
 @@||ilpuntotecnico.com^$generichide
@@ -10503,6 +10514,7 @@
 @@||macauo2o.com/advertise/
 @@||macbed.com^$ghide
 @@||macbidouille.com^$ghide
+@@||maccms.com^
 @@||macddl.com/themes/min/frontend_assets/js/advertisement.js
 @@||macitynet.it/wp-content/plugins/cookie-law-info^
 @@||mackie100projects.altervista.org^$ghide
@@ -10613,6 +10625,7 @@
 @@||manworldmediacdn.com/data/galleries/*-social-$image
 @@||map.baidu.com^$elemhide
 @@||map.poketrack.xyz/js/ads-min.js
+@@||map.qq.com^
 @@||mapapi.cloud.huawei.com/mapjs/v*/api/$stealth,domain=petalmaps.com
 @@||mapquest.com^$generichide
 @@||maps.2gis.com^$stealth
@@ -12075,6 +12088,7 @@
 @@||p.jwpcdn.com/player/plugins/vast/v/*/vast.js$domain=animefever.tv
 @@||p.jwpcdn.com/player/v/*/jw-icons.woff$domain=9anime.to
 @@||p.jwpcdn.com^$script
+@@||p.qlogo.cn^
 @@||p.typekit.net/*.css$domain=burnabyvillagemuseum.ca
 @@||p.typekit.net/*.css$domain=cfr.org
 @@||p.typekit.net/*.css$domain=fedandfit.com
@@ -13427,6 +13441,7 @@
 @@||qooqlevideo.com/videoplayback?sparams=*&source=$domain=avgle.com
 @@||qooqlevideo.com^$stealth
 @@||qpython.club^$generichide
+@@||qq-web.cdn-go.cn^
 @@||qq.com/ads/js/$domain=privacy.qq.com
 @@||qq.com/bossweb/jifen/
 @@||qq.com/cgi-bin/*?sid=ads
@@ -15429,6 +15444,7 @@
 @@||static.teemo.gg/league-of-legends/models/*.wasm$xhr,1p
 @@||static.telegraph.co.uk/*/ads.js
 @@||static.telegraph.co.uk/telegraph-advertising/tmg-gpt.min.js$domain=telegraph.co.uk
+@@||static.tieba.baidu.com^
 @@||static.topixcdn.com^$script,domain=pch.com
 @@||static.tvmaze.com/css/ads.css
 @@||static.videocore.tv/jscript/PTV_06_13/advert2.js$script,domain=piter.tv
@@ -15446,6 +15462,7 @@
 @@||static.xmovies88.stream/themes/*/js/ads.js
 @@||static.xmovies88.stream^$domain=xmovies8.es
 @@||static.youporn.phncdn.com/cb/assets/css/$domain=youporn.com
+@@||static.yximgs.com^
 @@||static.ziffdavis.com/sitenotice/*/settings.js$domain=allestoringen.be|allestoringen.nl|downdetector.ae|downdetector.c|downdetector.ca|downdetector.co.nz|downdetector.co.uk|downdetector.co.za|downdetector.com|downdetector.com.ar|downdetector.com.au|downdetector.com.br|downdetector.com.co|downdetector.cz|downdetector.dk|downdetector.ec|downdetector.es|downdetector.fi|downdetector.fr|downdetector.gr|downdetector.hk|downdetector.hr|downdetector.hu|downdetector.id|downdetector.ie|downdetector.in|downdetector.it|downdetector.jp|downdetector.mx|downdetector.my|downdetector.no|downdetector.pe|downdetector.pk|downdetector.pl|downdetector.pt|downdetector.ro|downdetector.ru|downdetector.se|downdetector.sg|downdetector.sk|downdetector.web.tr|xn--allestrungen-9ib.at|xn--allestrungen-9ib.ch|xn--allestrungen-9ib.de
 @@||static.ziffdavis.com/sitenotice/*/settings.js$domain=allestoringen.be|allestoringen.nl|xn--allestrungen-9ib.at|xn--allestrungen-9ib.ch|xn--allestrungen-9ib.de|downdetector.ae|downdetector.ca|downdetector.c|downdetector.co.nz|downdetector.co.uk|downdetector.co.za|downdetector.com.ar|downdetector.com.au|downdetector.com.br|downdetector.com.co|downdetector.com|downdetector.cz|downdetector.dk|downdetector.ec|downdetector.es|downdetector.fi|downdetector.fr|downdetector.gr|downdetector.hk|downdetector.hr|downdetector.hu|downdetector.id|downdetector.ie|downdetector.in|downdetector.it|downdetector.jp|downdetector.mx|downdetector.my|downdetector.no|downdetector.pe|downdetector.pk|downdetector.pl|downdetector.pt|downdetector.ro|downdetector.ru|downdetector.se|downdetector.sg|downdetector.sk|downdetector.web.tr
 @@||static.ziffdavis.com/sitenotice/evidon-sitenotice-bundle.js$domain=allestoringen.be|allestoringen.nl|downdetector.ae|downdetector.c|downdetector.ca|downdetector.co.nz|downdetector.co.uk|downdetector.co.za|downdetector.com|downdetector.com.ar|downdetector.com.au|downdetector.com.br|downdetector.com.co|downdetector.cz|downdetector.dk|downdetector.ec|downdetector.es|downdetector.fi|downdetector.fr|downdetector.gr|downdetector.hk|downdetector.hr|downdetector.hu|downdetector.id|downdetector.ie|downdetector.in|downdetector.it|downdetector.jp|downdetector.mx|downdetector.my|downdetector.no|downdetector.pe|downdetector.pk|downdetector.pl|downdetector.pt|downdetector.ro|downdetector.ru|downdetector.se|downdetector.sg|downdetector.sk|downdetector.web.tr|xn--allestrungen-9ib.at|xn--allestrungen-9ib.ch|xn--allestrungen-9ib.de
@@ -16123,6 +16140,7 @@
 @@||thewrap.com/ad_frame.php
 @@||thgss.com^$script,1p
 @@||thimble.mozilla.org^$generichide,~third-party
+@@||thirdwx.qlogo.cn^
 @@||thisav.com^$generichide
 @@||thisisfutbol.com^$ghide
 @@||thisismoney.co.uk^$ghide
@@ -16772,6 +16790,7 @@
 @@||urbanowiczhaft.pl/wp-content/plugins/duracelltomi-google-tag-manager/$~third-party
 @@||urbeez.com^$elemhide
 @@||urbeez.com^$script
+@@||uri6.com^
 @@||url.gem-flash.com/js/ads.js
 @@||url.hulblog.com^$generichide
 @@||urlbeat.net/intermission/loadTargetUrl$xmlhttprequest
@@ -16900,6 +16919,7 @@
 @@||v1.cn/player/cloud/cloud_player
 @@||v10.events.data.microsoft.com^
 @@||v1sts.me/?pge=stream$stealth
+@@||v2.get.sogou.com^
 @@||v20.events.data.microsoft.com^
 @@||v2rayssr.com^$generichide
 @@||v7player.wostreaming.net/ads.js
@@ -17296,6 +17316,7 @@
 @@||walmartimages.com/webanalytics/omniture/omniture.jsp$domain=walmart.com
 @@||walmartimages.com/webanalytics/wmStat/wmStat.jsp$domain=walmart.com
 @@||wamiz.com/css/ads.css
+@@||wan.yxskill.com^
 @@||wanaliz.com^$ghide
 @@||wancaibb.com/share/js/share.min.js
 @@||wangbase.com^
@@ -17307,6 +17328,8 @@
 @@||wargag.ru/public/js/counter.js?
 @@||wargaming.net/registration/static/*/img/social/icon_$image,domain=wargaming.net
 @@||wargaming.net^$stealth
+@@||warpwire.com/AD/
+@@||warpwire.net/AD/
 @@||wasabisyrup.com^$generichide
 @@||washingtonexaminer.com^*/ad-block.png
 @@||washingtonpost.com/gdpr-consent/$subdocument,xmlhttprequest
@@ -17658,6 +17681,7 @@
 @@||womenshealthmag.com^*ad$script
 @@||won.pe/js/adsbygoogle.js
 @@||woniu.com^
+@@||woozooo.com^
 @@||wordgames.com^$ghide
 @@||wordpress.org/extend/plugins/wp-slimstat/screenshot-$image,~third-party
 @@||wordpress.org/plugins/$domain=wordpress.org
@@ -17830,6 +17854,7 @@
 @@||www.no-ip.com^
 @@||www.olx.ua/api^$app=ua.slando
 @@||www.ow.ly^
+@@||www.paypalobjects.com^
 @@||www.refersion.com^
 @@||www.ruanyifeng.com^$csp=script-src 'self' * 'sha256-0McqMM66/wAVZmxF6zXpjNsb1UMbTl4LXBXdhqPKxws='
 @@||www.sbs.com.au^
@@ -17850,6 +17875,7 @@
 @@||www3.doubleclick.net^|$xmlhttprequest,other,domain=thingiverse.com
 @@||wwwshooter.com/includes/js/adblockdetect/
 @@||wwwshooter.com/js/adblockdetect/_advertisement.js$script
+@@||wx.qlogo.cn^
 @@||wx.qq.com/*/ad_$script
 @@||wx.qq.com/c/=/mpres/*/video_ad_
 @@||wx.qq.com/mmbizwap/*/framead.
