@@ -1,15 +1,15 @@
 [Adblock Plus 3.0]
-! Checksum: qfzUkNb6RLXCXBDLB1+fTg
+! Checksum: LYbK+iWdin6mHPzea9odWQ
 ! Title: My AdFilters（for PC）
 ! Expires: 2 hours
-! Version: 202205120734
-! Last Modified: 2022年05月12日 07:34
+! Version: 202205121022
+! Last Modified: 2022年05月12日 10:22
 ! Homepage: https://adf.minggo.eu.org
 ! 本规则合并自乘风视频广告过滤规则、Easylist、EasylistChina、EasyPrivacy、CJX'sAnnoyance
 ! 并补充了贴吧过滤规则，感谢各位前辈的分享！
 ! 如有任何疑问、意见或建议，请反馈至：HalfLife吧
 !
-! Total count: 72254
+! Total count: 72262
 ###ADCENTER
 ###ADSLOT_1
 ###ADTOP
@@ -6278,6 +6278,7 @@
 ##a[onmousedown^="this.href='https://paid.outbrain.com/network/redir?"][target="_blank"]
 ##a[target="_blank"] > img[height="60px"][src*=".360buyimg.com"][src$=".gif"]
 ##a[target="_blank"] > img[height="60px"][src*=".alicdn.com"][src$=".gif"]
+##a[target="_blank"] > img[height="60px"][src*=".c-ctrip.com"][src$=".gif"]
 ##a[target="_blank"] > img[height="60px"][src*=".meituan.net"][src$=".gif"]
 ##a[target="_blank"] > img[height="60px"][src*="qlogo.cn"][src$=".png"]
 ##a[target="_blank"] > img[src*=".bitautoimg.com/"][src$=".gif"]
@@ -6384,7 +6385,7 @@
 ##div[onclick*="?i_code="]
 ##div[onclick^="window.location.href"][onclick*=".bcebos."]
 ##div[style*="box-shadow: rgb(136, 136, 136) 0px 0px 12px; color: "]
-##div[style=" max-width:1000px;  margin:0 auto;"] > a > img[height="60px"]
+##div[style=" max-width:965px;  margin:0 auto;"] > a > img[height="60px"]
 ##div[style="border-radius:8px;background-color:#005737;padding:6px;"]
 ##div[style="box-sizing:border-box;padding:20px 16px;border-radius:8px;width:90%;margin:0 auto;"]
 ##div[style="display: flex;flex-wrap: wrap;margin-right: 5px;margin-left: 5px;"] + style + .container
@@ -26847,6 +26848,7 @@ guahao.com##.link-modal
 guancha.cn###ewm_app
 guancha.cn###goapp
 guancha.cn##.full_nav1
+guancha.cn##.g_swiper_container
 guancha.cn##.member_recruit_index
 guba.eastmoney.com##.redian
 gucheng.com##.fixed_img
@@ -36768,6 +36770,7 @@ zznews.cn##.ad:not([style])
 ||23900341.com^
 ||23907915.com^
 ||23962340.com^
+||23986834.com^
 ||23d097de11.com^
 ||23qb.com/ak
 ||23qb.com/skin/style
@@ -36970,6 +36973,7 @@ zznews.cn##.ad:not([style])
 ||360.cn/mapping_service?
 ||360.cn/popup/popinfo/
 ||360640.com^
+||360buyimg.com/babel/jfs/t1/209256/22/21888/60206/627b7a6aEa5f2d78b/219868beb169203f.jpg
 ||360buyimg.com/jdf/1.0.0/unit/log/
 ||360buyimg.com/jzt/temp/js/
 ||360buyimg.com^$domain=1024pl.com|chdbits.co|gw54.com|qianggou5.com|xgw5.com
@@ -50054,6 +50058,7 @@ zznews.cn##.ad:not([style])
 ||haichengdzsp.com^
 ||haidaocn.com^
 ||haihaime.net^
+||hainancaishui.online^
 ||haireig.com^
 ||hairoak.com^
 ||haishengwh123.cn^
@@ -50421,6 +50426,7 @@ zznews.cn##.ad:not([style])
 ||hiido.com^$third-party
 ||hiinpardt.com^
 ||hijragain.com^
+||hikari.website^
 ||hiknhe.tanabesports.com^
 ||hilariouszinc.com^$third-party
 ||hilltopads.net^
@@ -54249,6 +54255,7 @@ zznews.cn##.ad:not([style])
 ||lotour.net/analytics/statsv2.js
 ||lotsnippier.cam^
 ||lotteryhibernateauthorized.com^
+||lotuscard.cc/online/
 ||louchees.net^
 ||loudaups.com^
 ||loudlunch.com^$third-party
@@ -55150,6 +55157,7 @@ zznews.cn##.ad:not([style])
 ||mb-srv.com^$third-party
 ||mb4a.com^$third-party
 ||mbai.cn^$third-party
+||mbalib.com/common/a_mbalib/
 ||mbid.marfeelrev.com^
 ||mbl.is/augl/
 ||mblink.in^
