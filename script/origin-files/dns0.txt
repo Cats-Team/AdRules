@@ -1,8 +1,8 @@
-! Checksum: VdYotWNMX6qgIhmmrF3i5g
+! Checksum: Nao8XyfRGh5lmCVtIya1jQ
 ! Title: AdGuard Chinese filter
 ! Description: EasyList China + AdGuard Chinese filter. Filter list that specifically removes ads on websites in Chinese language.
-! Version: 2.0.55.27
-! TimeUpdated: 2022-05-11T16:31:03+00:00
+! Version: 2.0.55.29
+! TimeUpdated: 2022-05-12T01:02:37+00:00
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -3695,6 +3695,7 @@ ubmcmm.baidustatic.com
 ##center > a[target="_blank"] > img[style="padding- bottom:5px;width:960px;height:120px;"]
 ##center > a[target="_blank"] > img[style="padding- bottom:5px;width:960px;height:60px;"]
 ##div#ad_id
+##a[target="_blank"] > img[height="60px"][src*=".c-ctrip.com"][src$=".gif"]
 ##div#xinxi
 ~ix8.la##div[class^="ADTOPLB_"]
 ##div[class^="ps_"][value="20"]
@@ -3704,7 +3705,7 @@ ubmcmm.baidustatic.com
 ##div[id^="photo-header-title-content-text-dall"]
 ##div[onclick*=".leyu"]
 ##div[onclick*="?i_code="]
-##div[style=" max-width:1000px;  margin:0 auto;"] > a > img[height="60px"]
+##div[style=" max-width:965px;  margin:0 auto;"] > a > img[height="60px"]
 ##div[style="text-align:center;"] > a[href*="/register/?i_code="]
 ##img#adv1
 ##img[data-link][data-src*="/u/"]:not([data-link*="/i/"])
@@ -3990,6 +3991,7 @@ ubmcmm.baidustatic.com
 ##img[onclick*="/c7.net/"]
 .8ox.cn
 ||00-gov.cn^
+||23986834.com^
 ||000123456789.site^
 ||0024aaaa.com^
 ||008844.cc^
@@ -11722,6 +11724,7 @@ hxsame.hexun.com$domain=~quote.hexun.com
 ||zzsky.cn/images/a_d_
 ||zzz4.com/JS_AD/
 ||zzzyk.com/js/
+||360buyimg.com/babel/jfs/t1/209256/22/21888/60206/627b7a6aEa5f2d78b/219868beb169203f.jpg
 szxx.com.cn###A0
 szxx.com.cn###A1
 szxx.com.cn###A2
@@ -19655,6 +19658,11 @@ $script,subdocument,third-party,websocket,xmlhttprequest,domain=00ksw.com|01zww.
 @@||pstatp.com/cdn/*/jquery/$script,domain=bxwx11.com
 @@||zmtt.net^$script,domain=luoqiuzw.com
 !#Novels ads union
+||hikari.website^
+||hainancaishui.online^
+||b85xx.site^
+||sciillr.cn^
+||i03.xyz^
 ##a[href$=".120ydrayy.com"]
 ##a[href*=".1956hl.com/"]
 ##a[href*=".233787.com/"]
