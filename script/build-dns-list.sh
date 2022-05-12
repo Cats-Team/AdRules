@@ -18,5 +18,5 @@ hostlist-compiler -c ./script/dns-rules-config.json -o dns-output.txt
 mv -f dns-output.txt dns.txt
 cd ./script/
 
-cat ../tmp/{l.txt,dns998*} >>../dns.txt
+cat ../tmp/dns998* >>../dns.txt
 cat .././mod/rules/*-rules.txt |grep -E "^[(\@\@)|(\|\|)][^\/\^]+\^$" |sort|uniq >> ../dns.txt
