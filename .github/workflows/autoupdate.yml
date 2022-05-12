@@ -46,10 +46,12 @@ jobs:
         run: |
           sudo apt update
           sudo apt install rename
+      - name: Git fetch 
+        run: | 
+          git fetch --unshallow
       - name: Update Rules
         continue-on-error: true
-        run: |
-          git fetch --unshallow &
+        run: | 
           sudo update-alternatives --set php /usr/bin/php7.4 &          
           bash ./script/update-rules.sh
           #python ./script/rule.py
