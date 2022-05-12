@@ -49,6 +49,7 @@ jobs:
       - name: Update Rules
         continue-on-error: true
         run: |
+          git fetch --unshallow &
           sudo update-alternatives --set php /usr/bin/php7.4 &          
           bash ./script/update-rules.sh
           #python ./script/rule.py
@@ -76,12 +77,7 @@ jobs:
           #git checkout main
           git add --all
           git commit -m "Updated at $(TZ=UTC-8 date +'%Y-%m-%d %H:%M:%S')（北京时间）"
-          #git push --force -u
-      - name: Push changes
-        uses: ad-m/github-push-action@master
-        with:
-          github_token: ${{ secrets.GITHUBTOKEN }}
-          branch: main
+          git push --force -u
       - name: Git push assets to Coding
         run: |
           rm -rf .git/
