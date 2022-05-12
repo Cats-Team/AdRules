@@ -26,6 +26,7 @@ done
 cp ../mod/rules/*rule* ./origin-files/
 cp ../tmp/{*easy*,dns*,base*,hosts*,pre-allow1.txt} ./origin-files/
 cd origin-files
+mv pre-allow1.txt dns99999.txt
 cat hosts*.txt | grep -v -E "^((#.*)|(\s*))$" \
  | grep -v -E "^[0-9\.:]+\s+(ip6\-)?(localhost|loopback)$" \
  | sed s/0.0.0.0/127.0.0.1/g | sed s/::/127.0.0.1/g | sort \
