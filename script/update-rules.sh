@@ -308,7 +308,7 @@ for i in $diffFile; do
  echo "! Version: $(TZ=UTC-8 date +'%Y-%m-%d %H:%M:%S')（北京时间） " >> tpdate.txt 
  new=$(echo "$i" |sed 's/tmp-//g') 
  echo "! Total count: $n" > $i-tpdate.txt 
- cat ./tpdate.txt ./$i-tpdate.txt ./$i > ./$new 
+ cat ./tpdate.txt ./$i-tpdate.txt ./$i |grep -Ev "^\.com\^$" |grep -Ev "^\.com$" > ./$new 
  rm $i *tpdate.txt 
 done
 
