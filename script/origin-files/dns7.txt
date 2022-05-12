@@ -1,7 +1,7 @@
 [Adblock Plus 1.1]
-! Version: 202205120807
+! Version: 202205121430
 ! Title: EasyPrivacy
-! Last modified: 12 May 2022 08:07 UTC
+! Last modified: 12 May 2022 14:30 UTC
 ! Expires: 4 days (update frequency)
 ! Homepage: https://easylist.to/
 ! Licence: https://easylist.to/pages/licence.html
@@ -25394,6 +25394,7 @@ $csp=child-src 'none'; frame-src *; worker-src 'none',domain=skyback.ru|szukajka
 ||autohome.com.cn/deliver?
 ||autohome.com.cn/impress?
 ||autohome.com.cn/realdeliver?
+||baidu.com/api/bidder/
 ||baidu.com/kan/api/ipLocation
 ||banana.le.com^
 ||bc.qunar.com^
@@ -25457,6 +25458,7 @@ $csp=child-src 'none'; frame-src *; worker-src 'none',domain=skyback.ru|szukajka
 ||log.flight.qunar.com^
 ||log.kuwo.cn^
 ||log.m.sm.cn^
+||log.mix.sina.com.cn^
 ||log.sina.cn^
 ||log.zongheng.com^
 ||log1.17173.com^
@@ -25534,12 +25536,14 @@ $csp=child-src 'none'; frame-src *; worker-src 'none',domain=skyback.ru|szukajka
 ||s.pixfs.net/visitor.pixplug.in/
 ||s.qhupdate.com^
 ||s.renren.com^
-||sbeacon.sina.com.cn/e.gif
+||sbeacon.sina.com.cn^
 ||sclick.baidu.com^
+||sfp.safe.baidu.com^
 ||shrek.6.cn^
 ||sina.com.cn/view?
 ||sinajs.cn/open/api/js/wb.js
 ||sngmta.qq.com^
+||sofire.bdstatic.com^
 ||sogou.com/cl.gif?
 ||sogou.com/cl?
 ||sogou.com/pv?
@@ -26383,6 +26387,7 @@ $csp=child-src 'none'; frame-src *; worker-src 'none',domain=skyback.ru|szukajka
 @@||fast.appcues.com^$script,domain=static.abcmouse.com
 @@||fast.fonts.net/jsapi/core/mt.js$script,domain=gables.com|itsolutions-inc.com
 @@||files.mycloud.com/js/analytics/google_analytics.js
+@@||firebase.google.com/docs/analytics/$~third-party
 @@||firststatesuper.com.au^*/js/analytics.js$script,~third-party
 @@||flipboard.com/setcookie?$~third-party
 @@||flippingbook.com^*/static/analytics.js$script,~third-party
@@ -27244,6 +27249,7 @@ $csp=child-src 'none'; frame-src *; worker-src 'none',domain=skyback.ru|szukajka
 @@||c5n.com^*/angulartics-google-analytics.min.js
 @@||cdn.cxense.com/cx.js$domain=tn.com.ar
 @@||cloudfront.net/libs/amplitude-$script,domain=elconfidencial.com
+@@||doctorzerenia.com/home/bower_components/angulartics-google-analytics/dist/angulartics-ga.min.js
 @@||ecestaticos.com/build/js/common/statistics/engines/deepbieventadapter.$domain=elconfidencial.com
 @@||elconfidencial.com^*/AnalyticsEvent.js
 @@||elconfidencial.com^*/EventTracker.js

@@ -1,7 +1,7 @@
 [Adblock Plus 2.0]
-! Version: 202205120807
+! Version: 202205121430
 ! Title: Fanboy's Annoyance List
-! Last modified: 12 May 2022 08:07 UTC
+! Last modified: 12 May 2022 14:30 UTC
 ! Expires: 4 days (update frequency)
 ! License: http://creativecommons.org/licenses/by/3.0/
 ! Please report any unblocked content or problems by email or in our forums
@@ -1705,7 +1705,6 @@ _subscribers_newsletters/
 /html/share/*$image
 /i/odnokl.
 /i/twitter.
-/i/vk.
 /ic-share-
 /ic_delicious.
 /ic_digg.
@@ -2041,7 +2040,6 @@ _subscribers_newsletters/
 /images/tumblr-
 /images/tw_
 /images/vimeo-
-/images/vk-
 /images/whtapp-
 /images/youtube-
 /images/youtube_
@@ -2071,7 +2069,6 @@ _subscribers_newsletters/
 /img/twitter-
 /img/twitter.
 /img/twitter_
-/img/vk.
 /imgs/facebook.
 /imgs/twitter.
 /in-icon.
@@ -5154,6 +5151,7 @@ _vpcookieconsent/
 ##.trc_spotlight_item
 ##.widget_am_taboola_main_widget
 ##.widget_ione-taboola
+##[data-taboola-options]
 ! nbc websites app element
 ##.bp-banner
 ! hotjobs widget
@@ -16248,6 +16246,7 @@ m###teaser-newsletter
 ##.md-sharethis-toolbox-floatingbutton_placement
 ##.md-social-toolbar-circle
 ##.mdSocialButton
+##.mdi-facebook
 ##.mdi-share
 ##.mdi-share-variant
 ##.mdi-twitter
@@ -17184,6 +17183,7 @@ m###teaser-newsletter
 ##.qode-share-title
 ##.qodef-social-share
 ##.qrtui-c-gallery1-slide_tools_share
+##.qs-subscripe-btn
 ##.qt-shareicon
 ##.qt-sharepage
 ##.qt-socialicon
@@ -20667,6 +20667,7 @@ m###teaser-newsletter
 ##.thread-share-bar-buttons
 ##.thread-share__button
 ##.thread-submission-socialSharing
+##.thrv_tw_qs
 ##.ticker-tweet
 ##.tile_facebook
 ##.tile_pinterest
@@ -26757,6 +26758,7 @@ m###teaser-newsletter
 ###drop-cookie
 ###ds-st-cookiesbar
 ###ds_cookiebar
+###dsgvo-banner
 ###dsgvo-bottom
 ###dsgvo-consent-layer
 ###dsgvo-container
@@ -33261,6 +33263,8 @@ m###teaser-newsletter
 ##.cookies[ng-show*="Accept"]
 ##.cookies__banner
 ##.cookies__banner__wrapper
+##.cookies__bar
+##.cookies__bar__header
 ##.cookies__card
 ##.cookies__container
 ##.cookies__content
@@ -36498,6 +36502,7 @@ m###teaser-newsletter
 ##.tracking-consent-notice
 ##.tracking-consent-popup
 ##.tracking-contenant
+##.tracking-disclaimer
 ##.tracking-widget[data-tracking-widget]
 ##.trackingCookiesDisclaimer
 ##.trackingNoticeOverlay
@@ -38264,9 +38269,11 @@ m###teaser-newsletter
 ||assetlab.io/consent/
 ||axept.io^$third-party
 ||axeptio.eu^$third-party
+||baycloud.com/tgcl.min.js
 ||californiatimes.com/gdpr/
 ||ccmp.eu^$third-party
 ||ccpa-script.psg.nexstardigital.net^
+||cdn-cookieyes.com/client_data/
 ||civiccomputing.com^*=cookie$third-party
 ||clickio.mgr.consensu.org^$third-party
 ||clickiocdn.com/t/cmp/$third-party
@@ -38321,6 +38328,7 @@ m###teaser-newsletter
 ||intermarkets.net^$third-party
 ||iubenda.com^$third-party
 ||jimstatic.com/ckies.js
+||kookiecheck.cz/static/script/
 ||legalmonster.com^$third-party
 ||lgpdy.com^$third-party
 ||live.mrf.io/statics/1w/$script,xmlhttprequest
@@ -46201,6 +46209,7 @@ gettr.com##.jss121
 tvtv.us##.jss14
 gettr.com##.jss142
 gettr.com##.jss67
+canva.com##.jv5LaQ
 steller.co##.kDyVQY
 helloclue.com##.kSGNNc
 honeygain.com##.kksiKu
@@ -46487,7 +46496,6 @@ bonsaipartners.eu##.sqs-slide-layer-content
 fusemagazine.com##.sqs-slide-wrapper
 donsje.com##.src-components-connected-dialog-dialog__root_open--1JzrN
 disk-o.cloud##.src-ui-Cookie-Cookie__root--3Lml4
-canva.com##.src-ui-base-layer-layer__layerContent > div > .src-ui-base-link-link__alert
 openweathermap.org##.stick-footer-panel
 grafana.com,scoresaber.com,staterbros.com##.sticky-footer
 daft.ie##.strapline-container
@@ -52249,6 +52257,7 @@ concursolutions.com,forbes.com,formula1.com,fortune.com,proximus.be,proximustv.b
 @@||livefyre.com/site_media/images/auth/$image
 @@||m73ns.xyz/js/devtools-detector.js$script
 @@||makeuseoflimited.netdna-cdn.com/pages/*/images/social.png$domain=makeuseof.com
+@@||mozilla.org/media/img/newsletter/$image,~third-party
 @@||my.leadpages.net/template/$script,domain=weddingjams.com
 @@||my.leadpages.net^*/public/
 @@||nerdwallet.com/cdn/apps/prod/article-client/$~third-party

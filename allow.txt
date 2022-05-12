@@ -1,10 +1,10 @@
 ! Title: AdRules Allowlist
-! Checksum: ODYCPXQA3x06co25RHA0CA
+! Checksum: 67c7VEGPYMzj6X0EX5OFmQ
 ! Homepage: https://github.com/Cats-Team/AdRules
 ! Powerd by CatsTeam
 ! Expires: 8 Hours
-! Version: 2022-05-12 16:31:59（北京时间） 
-! Total count: 18246
+! Version: 2022-05-13 00:39:03（北京时间） 
+! Total count: 18252
 @@$csp=worker-src 'none',domain=uptostream.com
 @@$domain=avgle.com,webrtc,websocket
 @@$generichide,domain=heapfiles.com|vidoza.co|vidoza.net
@@ -646,6 +646,7 @@
 @@|http://ie.microsoft.com/testdrive/Performance/FishBowl/Default.html|$document
 @@|http://r.i.ua/s?*&p*&l$image,domain=swordmaster.org
 @@|http://r.i.ua/s?*&p*&l$image,domain=swordmaster.org! CJX's Annoyance List
+@@|http://r.i.ua/s?*&p*&l$image,domain=swordmaster.orgng?
 @@|https://$image,domain=socketloop.com
 @@|https://$image,script,third-party,domain=blockadblock.com
 @@|https://$image,third-party,domain=hackintosh.zone|hackintosh.computer
@@ -1440,6 +1441,7 @@
 @@||ads.agiliro.gq/style.css$domain=ads.agiliro.gq
 @@||ads.agiliro.gq/template/728x100.png$domain=ads.agiliro.gq
 @@||ads.aiir.net/rf/feed?callback=jQuery
+@@||ads.alafish.cn^$~third-party
 @@||ads.allegro.pl^$domain=ads.allegro.pl
 @@||ads.am^$domain=ads.am
 @@||ads.amazon^$popup
@@ -5426,6 +5428,7 @@
 @@||docs.expo.io/*/static/*/pages/versions/latest/sdk/*.js$domain=docs.expo.io
 @@||docs.google.com/*/viewdata$~third-party
 @@||docs.woopt.com/wgact/$image,~third-party,xmlhttprequest
+@@||doctorzerenia.com/home/bower_components/angulartics-google-analytics/dist/angulartics-ga.min.js
 @@||dofuspourlesnoobs.com^$ghide
 @@||dofustream.com^$ghide
 @@||dogecoinpuddle.com/show_ads.js$script
@@ -6362,6 +6365,7 @@
 @@||finishline.com^$stealth
 @@||finobe.com^$ghide
 @@||fir3.net^$ghide
+@@||firebase.google.com/docs/analytics/$~third-party
 @@||firefaucet.win^$generichide
 @@||firefaucet.win^$ghide
 @@||firefiles.org^$ghide
@@ -8775,6 +8779,7 @@
 @@||image.coolapk.com^
 @@||image.mahoyome.jp/images/$image,domain=mahoyome.jp
 @@||image.mp3.zdn.vn/banner/
+@@||image.shutterstock.com^$image,domain=icons8.com
 @@||image.uczzd.cn^
 @@||image.zzd.sm.cn^
 @@||imagebam.com/JS/site_ads.js
@@ -11183,6 +11188,7 @@
 @@||movilzona.es/app/themes/mykonos-child/assets/js/ads.min.js
 @@||movio.club/js/prebid-ads.js
 @@||mozilla.org/api$removeparam
+@@||mozilla.org/media/img/newsletter/$image,~third-party
 @@||mozu.com^*/analytics.js$script,domain=acehardware.com
 @@||mozu.com^*/monetate.js$script,domain=acehardware.com
 @@||mp.weixin.qq.com/mp/qrcode?$removeparam=scene

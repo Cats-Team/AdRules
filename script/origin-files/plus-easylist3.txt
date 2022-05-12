@@ -13622,6 +13622,7 @@ solvetube.*##+js(nostif, 0x, 3000)
 ! https://github.com/uBlockOrigin/uAssets/issues/5776
 ! https://www.reddit.com//r/uBlockOrigin/comments/u3l605/mlwbdhost/
 mlwbd.*##+js(acis, JSON.parse, break;case $.)
+mlwbd.*##+js(nostif, ai_adb_detected)
 @@/home.php$popup,domain=mlwbd.*
 @@/blog.php$popup,domain=mlwbd.*
 mlwbd.*##+js(ra, type, input[value^="http"])
@@ -14049,7 +14050,7 @@ tusfiles.com##+js(nowoif)
 tusfiles.com##+js(acis, JSON, break;case)
 tusfiles.com##^script:has-text(break;case $.)
 ||tusfiles.com/sw.js$script,1p
-gdtot.*##+js(acis, JSON.parse, break;case $.)
+gdtot.*##+js(acis, parseInt, break;case $.)
 gdtot.*,tusfiles.com##+js(acis, document.createElement, 'script')
 ||bhrbbwup.xyz^
 ||opositeass.com^
@@ -17287,7 +17288,7 @@ fandom.com##.ad-slot-wrapper
 
 ! https://www.reddit.com/r/uBlockOrigin/comments/p721xg/no_more_popup_after_recent_update/
 139.99.33.192##.adpop
-gdriveplayer.*##+js(acis, JSON.parse, break;case $.)
+gdriveplayer.*##+js(aeld, , break;case $.)
 gdriveplayer.*##+js(aopr, AaDetector)
 gdriveplayer.*##+js(nowoif, !gdrivedownload)
 gdriveplayer.*##^script:has-text(break;case $.)
