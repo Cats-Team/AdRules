@@ -48,7 +48,8 @@ jobs:
           sudo apt install rename
       - name: Git fetch 
         run: | 
-          git fetch --unshallow
+          #git fetch --unshallow
+          git pull -f
       - name: Update Rules
         continue-on-error: true
         run: | 
