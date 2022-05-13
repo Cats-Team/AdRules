@@ -1,12 +1,12 @@
 ! Title: AdRules Allowlist
-! Checksum: /NsOjearzL9ecXgLm71iRw
+! Checksum: haAQCfk/ytvwpOwsUxgVXQ
 ! Homepage: https://github.com/Cats-Team/AdRules
 ! Powerd by CatsTeam
 ! Expires: 8 Hours
-! Version: 2022-05-13 13:01:26（北京时间） 
-! Total count: 18253
+! Version: 2022-05-13 16:31:49（北京时间） 
+! Total count: 18252
 @@$csp=worker-src 'none',domain=uptostream.com
-@@$domain=avgle.com,webrtc,websocket
+@@$domain=avgle.com,webrtc,websocket! EasyPrivacy
 @@$generichide,domain=heapfiles.com|vidoza.co|vidoza.net
 @@$generichide,~third-party,domain=myl.li|mylink.how|mylink.love|mylink.me.uk|mylink.st
 @@$removeparam,domain=agenciatributaria.gob.es
@@ -5924,6 +5924,7 @@
 @@||engine.fyber.com^$app=net.wooga.tropicats_tropical_cats_puzzle_paradise
 @@||engine.presearch.org^$generichide
 @@||engine.widespace.com/map/provisioning?appId=com.sofoot$app=com.sofoot
+@@||england101.com/assets/js/prebid-add.js
 @@||english-subtitles.club/assets/$image,~third-party
 @@||enrondev.net/ads/server/www/delivery/$domain=filecore.co.nz,subdocument
 @@||ens.nzz.ch^$~third-party
@@ -14622,7 +14623,6 @@
 @@||serving-sys.com^$domain=mylifetime.com
 @@||serving-sys.com^$third-party,domain=myspass.de
 @@||seselah.com^$generichide
-@@||seselah.com^$genericon_TopLeft
 @@||session.proxy.startpage.com/csp_check$document
 @@||sestv.pw/cdn/js/ads.php
 @@||sestv.pw/embed/$generichide
@@ -14795,7 +14795,6 @@
 @@||sinaimg.cn/cj/deco/$script,domain=finance.sina.com.cn
 @@||sinaimg.cn/dy/deco/*/js/base.js
 @@||sinaimg.cn/dy/deco/*/js/require.js
-@@||sinaimg.cn/large^$domain=xclient.info! EasyPrivacy
 @@||sinaimg.cn/tech/https_index/share.
 @@||sinaimg.cn/unipro/pub/suda_m_v629.js$domain=video.sina.com.cn
 @@||sinaimg.cn^$stealth,domain=weibo.com
@@ -14886,11 +14885,11 @@
 @@||smallseotools.com/imgs/ads/love_you_son.jpg
 @@||smallseotools.com^$generichide
 @@||smallseotools.com^$generichide,badfilter
-@@||smart.idmnet.pl/*/smartConfig_*.js$domain=poradnikzdrowie.pl|mjakmama24.pl|se.pl|eskarock.pl|voxfm.pl|radioplus.pl
-@@||smart.idmnet.pl/consent/*.json$domain=poradnikzdrowie.pl|mjakmama24.pl|se.pl|eskarock.pl|voxfm.pl|radioplus.pl
-@@||smart.idmnet.pl/consent/cmp-widget-latest.js$domain=poradnikzdrowie.pl|mjakmama24.pl|se.pl|eskarock.pl|voxfm.pl|radioplus.pl
-@@||smart.idmnet.pl/prebidBoilerplate.js$domain=poradnikzdrowie.pl|mjakmama24.pl|se.pl|eskarock.pl|voxfm.pl|radioplus.pl
-@@||smart.idmnet.pl/prebidBoilerplate_tmp.js$domain=poradnikzdrowie.pl|mjakmama24.pl|se.pl|eskarock.pl|voxfm.pl|radioplus.pl
+@@||smart.idmnet.pl/*/smartConfig_*.js$domain=poradnikzdrowie.pl|mjakmama24.pl|se.pl|eskarock.pl|voxfm.pl|radioplus.pl|eska.pl
+@@||smart.idmnet.pl/consent/*.json$domain=poradnikzdrowie.pl|mjakmama24.pl|se.pl|eskarock.pl|voxfm.pl|radioplus.pl|eska.pl
+@@||smart.idmnet.pl/consent/cmp-widget-latest.js$domain=poradnikzdrowie.pl|mjakmama24.pl|se.pl|eskarock.pl|voxfm.pl|radioplus.pl|eska.pl
+@@||smart.idmnet.pl/prebidBoilerplate.js$domain=poradnikzdrowie.pl|mjakmama24.pl|se.pl|eskarock.pl|voxfm.pl|radioplus.pl|eska.pl
+@@||smart.idmnet.pl/prebidBoilerplate_tmp.js$domain=poradnikzdrowie.pl|mjakmama24.pl|se.pl|eskarock.pl|voxfm.pl|radioplus.pl|eska.pl
 @@||smartadcheck.de/js/*/ad/$script
 @@||smartadserver.com/3310/call$xmlhttprequest,domain=dr.dk
 @@||smartadserver.com/ac?$domain=bildderfrau.de

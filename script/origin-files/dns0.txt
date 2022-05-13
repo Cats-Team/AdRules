@@ -1,8 +1,8 @@
-! Checksum: VkYDrAeACDdburDcnEBvUg
+! Checksum: POruL/Juq8YlgUy/Oc3afg
 ! Title: AdGuard Chinese filter
 ! Description: EasyList China + AdGuard Chinese filter. Filter list that specifically removes ads on websites in Chinese language.
-! Version: 2.0.55.39
-! TimeUpdated: 2022-05-13T03:30:57+00:00
+! Version: 2.0.55.40
+! TimeUpdated: 2022-05-13T06:31:03+00:00
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -3706,6 +3706,8 @@ ubmcmm.baidustatic.com
 ##div[onclick*=".leyu"]
 ##div[onclick*="?i_code="]
 ##div[style=" max-width:965px;  margin:0 auto;"] > a > img[height="60px"]
+##a[target="_blank"] > img[height="60px"][src*=".lenovo.com"][src$=".png"]
+##div[style=" max-width:980px;  margin:0 auto;"] > a > img[height="60px"]
 ##div[style="text-align:center;"] > a[href*="/register/?i_code="]
 ##img#adv1
 ##img[data-link][data-src*="/u/"]:not([data-link*="/i/"])
@@ -3990,6 +3992,9 @@ ubmcmm.baidustatic.com
 ##img[onclick*="/ayx700.com/"]
 ##img[onclick*="/c7.net/"]
 .8ox.cn
+||29525187.com^
+||17271819.com^
+||23991511.com^
 ||00-gov.cn^
 ||000123456789.site^
 ||0024aaaa.com^
@@ -19671,6 +19676,9 @@ $script,subdocument,third-party,websocket,xmlhttprequest,domain=00ksw.com|01zww.
 ||mathmodel.xyz^
 ||xyy9.xyz^
 ||6868edu.com^
+||02m830l.cn^
+||j45.xyz^
+||jxyy.site^
 ##a[href$=".120ydrayy.com"]
 ##a[href*=".1956hl.com/"]
 ##a[href*=".233787.com/"]
