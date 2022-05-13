@@ -1,12 +1,12 @@
 [Adblock Plus 2.0]
-! Checksum: cVkHZ1JCMykakqI9IX0wKA
+! Checksum: xmIZu+1aQJMs+eJZusKnrQ
 ! Title: AdRules (For AdBlock)
 ! Homepage: https://github.com/Cats-Team/AdRules
 ! Powerd by CatsTeam
 ! Expires: 8 Hours
 ! Description: 该规则合并自EasyList、EasyListChina、AdGuard Chinese Filter、EdentwCustom、ClearUrl、乘风规则等，并补充了一些规则
-! Version: 2022-05-13 22:32:56（北京时间） 
-! Total count: 91318
+! Version: 2022-05-14 00:37:00（北京时间） 
+! Total count: 91328
 ###ADCENTER
 ###ADSLOT_1
 ###ADTOP
@@ -1881,6 +1881,7 @@
 ###weatherad
 ###whYuTlxF
 ###wide_ad_unit
+###wide_ad_unit3
 ###widget-quan
 ###windlocation
 ###wp > .V-video-floats
@@ -22624,6 +22625,7 @@ $~xmlhttprequest,removeparam=ref_,domain=imdb.com|amazon.*|primevideo.com|shopbo
 @@||hypercomments.com/auth/
 @@||hyperdebrid.net^$generichide
 @@||hypixel.net^$generichide
+@@||i*.gmx.com/image
 @@||i*.imagetwist.com^$image,domain=imagetwist.com
 @@||i*.mangapanda.com^$image
 @@||i-funbox.com/images/
@@ -22945,6 +22947,7 @@ $~xmlhttprequest,removeparam=ref_,domain=imdb.com|amazon.*|primevideo.com|shopbo
 @@||ipip.net/ping.php?
 @@||ipstatp.com/business_center/dist/img/ad-$domain=tiktok.com
 @@||iptvforever.com/js/adsbygoogle.js$script
+@@||ireland101.com/assets/js/prebid-add.js
 @@||irisbuddies.blogspot.com^$generichide
 @@||isdspeed.qq.com/cgi-bin/r.cgi?flag1=
 @@||italiashare.net^$generichide
@@ -30564,6 +30567,7 @@ edh.tw###caas-vm-container
 edh.tw###fix-corner
 edh.tw##.close-corner
 edh.tw##.popin_ad
+edition.cnn.com##.AMPAd__component
 edition.cnn.com##section[data-zone-label="Watch It"]
 ediuschina.com
 edrawsoft.cn###bottom-banner-activity-md
@@ -32404,6 +32408,7 @@ gmw.cn###rightad1 + .contentColumnRight
 gmw.cn###ysp_gmrbAppLayer
 gmw.cn##.ad_pics
 gmw.cn##.g_adMain
+gmx.*,transfermarkt.*##+js(abort-on-property-read, Object.prototype.autoRecov)
 gnula.nu,xpaja.net#$#abort-current-inline-script String.fromCharCode /atob|btoa|break/
 go.10086.cn##.gaiPing
 go.gets4link.com##+js(remove-class, get-link, a.btn-success.get-link[target="_blank"])
@@ -32475,6 +32480,8 @@ goodcome.com.tw,sporttery.cn###mask
 goodfon.com##div[class^="wallpapers__banner"]
 goodreturns.in###headerTopAd
 goodreturns.in##div[style^="min-height: 250px"]
+goodreturns.in,gizbot.com##.cmscontent-left-article
+goodreturns.in,gizbot.com##.cmscontent-right1
 goodrx.com##div[class^="adContainer"]
 goodrx.com##div[class^="adWrapper-"]
 goodtoknow.co.uk##+js(abort-current-script, IPCCoreQueue, bidWon)
@@ -42386,7 +42393,6 @@ trannygem.com##.in_player_video
 trannygem.com##.we_are_sorry
 trannygem.com##a[href^="https://landing.transangelsnetwork.com/"]
 trannytube.tv##.b-secondary-column__banners
-transfermarkt.*##+js(abort-on-property-read, Object.prototype.autoRecov)
 transfermarkt.*##.werbung
 transfermarkt.*#@#.AD-POST
 transfermarkt.co.uk,transfermarkt.com##.werbung-skyscraper-container
@@ -56428,6 +56434,7 @@ zznews.cn##.ad:not([style])
 ||cryptomine.pro^$third-party
 ||cryptomininggame.com/uploads/partner/images/
 ||cryptonoter.com^$third-party
+||cryptowin.io/aads-
 ||crytyingcrutch.com^
 ||crywl.com^
 ||cs.37see.com^$third-party
@@ -57520,6 +57527,7 @@ zznews.cn##.ad:not([style])
 ||delphi.lv/t/t.js
 ||delta.com/datacollect
 ||deltoidviragin.com^
+||deludereflexunderwater.com^
 ||delvenetworks.com/player/plugins/analytics/
 ||demand.supply^
 ||demandbase.com^$third-party
@@ -80908,6 +80916,7 @@ zznews.cn##.ad:not([style])
 ||spider-mich.com^$third-party
 ||spideraf.com^$third-party
 ||spidersboats.com^
+||spidersprimary.com^
 ||spiffymachine.com^$third-party
 ||spikscabrin.com^
 ||spinnaker-js.com^
@@ -87841,6 +87850,7 @@ zznews.cn##.ad:not([style])
 ||wodemeitu.com^$third-party
 ||wodenongtian.com^
 ||wodeshougong.com^
+||wodycaha.com^
 ||wof.arkn81.com^
 ||wof.betylife.com^
 ||wof.hnltcw.com^

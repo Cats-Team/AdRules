@@ -1,10 +1,10 @@
 ! Title: AdRules Allowlist
-! Checksum: g/eAtmh4UFDlXIbuFfq78Q
+! Checksum: oT0pJ75O/Zkh+tE/s1+oXA
 ! Homepage: https://github.com/Cats-Team/AdRules
 ! Powerd by CatsTeam
 ! Expires: 8 Hours
-! Version: 2022-05-13 22:32:56（北京时间） 
-! Total count: 18255
+! Version: 2022-05-14 00:37:00（北京时间） 
+! Total count: 18260
 @@$csp=worker-src 'none',domain=uptostream.com
 @@$domain=avgle.com,webrtc,websocket! EasyPrivacy
 @@$generichide,domain=heapfiles.com|vidoza.co|vidoza.net
@@ -646,7 +646,7 @@
 @@|http://ie.microsoft.com/testdrive/Performance/FishBowl/Default.html|$document
 @@|http://r.i.ua/s?*&p*&l$image,domain=swordmaster.org
 @@|http://r.i.ua/s?*&p*&l$image,domain=swordmaster.org! CJX's Annoyance List
-@@|http://r.i.ua/s?*&p*&l$image,domain=swordmaster.orgncouragingleaf.com^
+@@|http://r.i.ua/s?*&p*&l$image,domain=swordmaster.orgng?
 @@|https://$image,domain=socketloop.com
 @@|https://$image,script,third-party,domain=blockadblock.com
 @@|https://$image,third-party,domain=hackintosh.zone|hackintosh.computer
@@ -3570,6 +3570,7 @@
 @@||cdn.ampproject.org/v0.js$domain=amp.fakty.ua
 @@||cdn.ampproject.org/v0.js$domain=politnavigator.net
 @@||cdn.ampproject.org/v0/amp-consent-*.*.js$domain=ingame.de
+@@||cdn.ampproject.org/v0/amp-consent-*.js$domain=edition.cnn.com
 @@||cdn.ampproject.org/v0/amp-consent-*.mjs$domain=news.itsfoss.com
 @@||cdn.ampproject.org/v0/amp-social-share-0.1.js$domain=gendai.ismedia.jp
 @@||cdn.androidrepublic.org/js/siropu/am/ads.min.js
@@ -3711,6 +3712,7 @@
 @@||cdn.cxense.com/cx.js$domain=wsj.com
 @@||cdn.cxense.com/cx.js$domain=yenisafak.com
 @@||cdn.cxense.com/cx.js$script,domain=handelsblatt.com
+@@||cdn.cxense.com/cx.js$script,domain=japannews.yomiuri.co.jp
 @@||cdn.cxense.com^$script,domain=bizjournals.com|bloombergquint.com|marketwatch.com
 @@||cdn.diggysadventure.com/*/video_ads.erik?ver=$domain=diggysadventure.com
 @@||cdn.digiteka.com/player/PrebidLibrary.js$domain=ultimedia.com
@@ -8634,6 +8636,7 @@
 @@||hypixel.net^$generichide
 @@||hyundaiusa.com/js/home/classes/HN.Omniture.js
 @@||i*-tb.isnssdk.com^$app=com.ss.android.article.topbuzzvideo
+@@||i*.gmx.com/image
 @@||i*.imagetwist.com^$image,domain=imagetwist.com
 @@||i*.mangapanda.com^$image
 @@||i-funbox.com/images/
@@ -9536,6 +9539,7 @@
 @@||iptvforever.com/js/adsbygoogle.js$script
 @@||iptvsale.info^$stealth
 @@||ipv4.google.com/sorry^$stealth
+@@||ireland101.com/assets/js/prebid-add.js
 @@||irisbuddies.blogspot.com^$generichide
 @@||irr.ru/mobile_api^$app=com.umojo.irr.android
 @@||irsr.games.pitforest.de^$elemhide
@@ -17214,6 +17218,7 @@
 @@||vmwes.cloud/hls/*.ts$stealth
 @@||vnecdn.net/vnexpress/video/video/$stealth,domain=vnexpress.net
 @@||vnhax.com^$generichide
+@@||vntsm.com^$xhr,domain=op.gg
 @@||vnurl.net/1/2/advertisement.js
 @@||vo.msecnd.net^$domain=gsmarena.com
 @@||vod*.myqcloud.com^$stealth,domain=cloud.tencent.com
