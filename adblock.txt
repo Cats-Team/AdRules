@@ -1,12 +1,12 @@
 [Adblock Plus 2.0]
-! Checksum: xmIZu+1aQJMs+eJZusKnrQ
+! Checksum: r7ai2OHy+2+IQqhUsQaeqg
 ! Title: AdRules (For AdBlock)
 ! Homepage: https://github.com/Cats-Team/AdRules
 ! Powerd by CatsTeam
 ! Expires: 8 Hours
 ! Description: 该规则合并自EasyList、EasyListChina、AdGuard Chinese Filter、EdentwCustom、ClearUrl、乘风规则等，并补充了一些规则
-! Version: 2022-05-14 00:37:00（北京时间） 
-! Total count: 91328
+! Version: 2022-05-14 08:52:36（北京时间） 
+! Total count: 91358
 ###ADCENTER
 ###ADSLOT_1
 ###ADTOP
@@ -945,6 +945,12 @@
 ###app > .publicAllContentBg > .bigBannerBg
 ###appBottomIn
 ###appIn
+###appnexus-placement-articleRecommendationAd1
+###appnexus-placement-articleRecommendationAd2
+###appnexus-placement-posterad
+###appnexus-placement-topicblockAd0
+###appnexus-placement-topicblockAd1
+###appnexus-placement-topicblockAd2
 ###appqrcode
 ###article-ad
 ###article-ads
@@ -5197,6 +5203,7 @@
 ##.pageAdSkin
 ##.pageAdSkinUrl
 ##.pageAds
+##.page__top-ad-wrapper
 ##.page_ad
 ##.pagead
 ##.pagead_3
@@ -19125,6 +19132,7 @@ $~xmlhttprequest,removeparam=ref_,domain=imdb.com|amazon.*|primevideo.com|shopbo
 3g.qq.com##li[id^="feed-omgad-"]
 3g2upl4pq6kufc4m.onion,audioreview.com,carlow-nationalist.ie,cellmapper.net,craigclassifiedads.com,dekhobd.com,duckduckgo.com,g.doubleclick.net,irannewsdaily.com,kildare-nationalist.ie,laois-nationalist.ie,lorempixel.com,photographyreview.com,quiz4fun.com,roscommonherald.ie,waterford-news.ie###ads
 3g2upl4pq6kufc4m.onion,duckduckgo.com##.result--ad > .result__body
+3g2upl4pq6kufc4m.onion,duckduckgo.com##.results--ads
 3gsc.com.cn##.tipsA
 3h3.com###gaosu_down_bt
 3h3.com##.gaosu_div
@@ -21281,6 +21289,7 @@ $~xmlhttprequest,removeparam=ref_,domain=imdb.com|amazon.*|primevideo.com|shopbo
 @@||cdn.cxense.com/cx.js$domain=tarzanweb.jp|wpb.shueisha.co.jp
 @@||cdn.cxense.com/cx.js$domain=tn.com.ar
 @@||cdn.cxense.com/cx.js$script,domain=handelsblatt.com
+@@||cdn.cxense.com/cx.js$script,domain=japannews.yomiuri.co.jp
 @@||cdn.cxense.com^$script,domain=bizjournals.com|bloombergquint.com|marketwatch.com
 @@||cdn.diggysadventure.com/*/video_ads.erik?ver=$domain=diggysadventure.com
 @@||cdn.doublemax.net/js/rwd_cap.js$domain=ibf.tw
@@ -28753,6 +28762,7 @@ cilimao.co,cilimao.one##div[class^="FixBanner"]
 cima-club.cc,cima-club.in,cima-club.io,egy.best,egybest.asia,egybest.bid,egybest.biz,egybest.cheap,egybest.co,egybest.com,egybest.cool,egybest.fail,egybest.life,egybest.ltd,egybest.ist,egybest.name,egybest.net,egybest.network,egybest.ninja,egybest.nl,egybest.online,egybest.org,egybest.pw,egybest.rocks,egybest.site,egybest.xyz,egybest.zone,egybest2.com,faselhd.top,iegy.best#$#abort-on-property-read open
 cimanow.cc##+js(no-fetch-if, pagead2.googlesyndication.com)
 cine.to#$#abort-on-property-read document.head.appendChild
+cineb.net,vidbem.com,upload4earn.org,uploadbyte.com#$#abort-on-property-read localStorage
 cinefunhd.com##+js(remove-attr, href, #clickfakeplayer)
 cinema.dinamalar.com##div[class^="topadtxt"]
 cinema.dinamalar.com##div[id^="selAd"]
@@ -31715,7 +31725,7 @@ freefinancetools.net##.sp
 freegames.org###gla
 freegogpcgames.com##+js(abort-on-property-read, S9tt)
 freehat.cc#$#abort-on-property-read advFirstClickOpenNewTab
-freehat.cc,tt-cup.com,zerno-ua.com,oxax.tv,prostoporno.help,vmusi.ru,xittv.net,potokcdn.com,buzday.ru,nsday.ru,orenday.ru,perevolockday.ru,saltday.ru,sorochinskday.ru,lostpix.com,uploadimagex.com,volynpost.com,wowskill.ru,hlamer.ru,wseries.ru#$#abort-on-property-read open
+freehat.cc,tt-cup.com,zerno-ua.com,oxax.tv,prostoporno.help,vmusi.ru,xittv.net,potokcdn.com,buzday.ru,nsday.ru,orenday.ru,perevolockday.ru,saltday.ru,sorochinskday.ru,lostpix.com,uploadimagex.com,volynpost.com,wowskill.ru,hlamer.ru,zloekino.site#$#abort-on-property-read open
 freehdsport.com##[id^="ltas_overlay_Player"]
 freehentaistream.com##+js(abort-on-property-read, dataPopUnder)
 freeiphone.fr#@##adsense
@@ -31751,6 +31761,7 @@ freeshib.biz,apkmb.com,upload.ac,westkentuckystar.com,namekun.com,piliapp.com,ph
 freeskier.com###adb-enabled
 freeskier.com#@##adb-not-enabled
 freesoft.id##center > button[onclick^="window.open("][rel]
+freesolana.top##+js(abort-current-script, decodeURIComponent, _0x)
 freethesaurus.com#@#.TopBannerAd
 freethesaurus.com,thefreedictionary.com###sidebar > .widget + [class$="sticky"]:empty
 freethesaurus.com,thefreedictionary.com###sidebar > a#trans_link + [id]
@@ -34566,6 +34577,7 @@ jansatta.com##.wp-block-newspack-blocks-wp-block-newspack-ads-blocks-ad-unit
 janusnotes.com##+js(window.open-defuser)
 japan-webike.be,japan-webike.ca,japan-webike.ch,japan-webike.dk,japan-webike.ie,japan-webike.it,japan-webike.kr,japan-webike.nl,japan-webike.se,webike-china.cn,webike.ae,webike.co.at,webike.co.hu,webike.co.il,webike.co.uk,webike.com.ar,webike.com.bd,webike.com.gr,webike.com.kh,webike.com.mm,webike.com.ru,webike.com.tr,webike.com.ua,webike.cz,webike.de,webike.es,webike.fi,webike.fr,webike.hk,webike.id,webike.in,webike.la,webike.mt,webike.mx,webike.my,webike.net,webike.net.br,webike.net.pl,webike.ng,webike.no,webike.nz,webike.ph,webike.pk,webike.pt,webike.sg,webike.tw,webike.vn#@#.ad_box
 japan-webike.be,japan-webike.ca,japan-webike.ch,japan-webike.dk,japan-webike.ie,japan-webike.it,japan-webike.kr,japan-webike.nl,japan-webike.se,webike-china.cn,webike.ae,webike.co.at,webike.co.hu,webike.co.il,webike.co.uk,webike.com.ar,webike.com.bd,webike.com.gr,webike.com.kh,webike.com.mm,webike.com.ru,webike.com.tr,webike.com.ua,webike.cz,webike.de,webike.es,webike.fi,webike.fr,webike.hk,webike.id,webike.in,webike.la,webike.mt,webike.mx,webike.my,webike.net,webike.net.br,webike.net.pl,webike.ng,webike.no,webike.nz,webike.ph,webike.pk,webike.pt,webike.sg,webike.tw,webike.vn#@#.ad_title
+japannews.yomiuri.co.jp##.pr_custom2
 japscan.cc,japscan.com,japscan.se,japscan.to,japscan.ws#$#abort-on-property-read atob; abort-current-inline-script document.createElement String.fromCharCode; abort-current-inline-script Object.defineProperty XMLHttpRequest
 japteenx.com##div[class^="photo-body-"]
 jaunpurmusic.info##+js(no-fetch-if, pagead2.googlesyndication.com)
@@ -43137,7 +43149,6 @@ viator.com##div[data-action-page-properties="featured_placements_on_list_page"]
 vibraporn.com##.topad
 vice.com##.adph
 vice.com##.vice-ad__container
-vidbem.com,upload4earn.org,uploadbyte.com#$#abort-on-property-read localStorage
 vidbom.com##+js(abort-current-script, atob, removeCookie)
 vidcloud.co,loadvid.online,vcstream.to##+js(set-constant, BetterJsPop, noopFunc)
 vidcloud9.com##+js(window.open-defuser)
@@ -46925,6 +46936,7 @@ zznews.cn##.ad:not([style])
 ||5atxt.com/js/*_
 ||5atxt.com/js/jhhe.
 ||5b1d.com^
+||5b20a42861.com^
 ||5c.tepusi888.cn^
 ||5c577fc74618431b.com^
 ||5dm6ghn.cn^
@@ -50842,6 +50854,7 @@ zznews.cn##.ad:not([style])
 ||annoyedairport.com^$third-party
 ||annoyedfifth.com^
 ||annoyingacoustics.com^
+||annual-gamers-choice.com^$popup
 ||annwwu.guitarcenter.com^
 ||anon-stats.eff.org^
 ||anoneko.com^*.*?$image
@@ -56623,6 +56636,7 @@ zznews.cn##.ad:not([style])
 ||cxcxt.com^
 ||cxdcn9c.fjshxjs.cn^
 ||cxdcn9c.fjshxjs.cn^$third-party
+||cxense.com/cx.js$script,domain=japannews.yomiuri.co.jp,redirect=noop.js,important
 ||cxense.com^$domain=focus.de
 ||cxense.com^$third-party
 ||cxfzw.cn^
@@ -60139,6 +60153,7 @@ zznews.cn##.ad:not([style])
 ||ewerhodub.com^
 ||ewfrnd.stockmann.ru^
 ||ewgkjq.deercase.com^
+||ewicap.com^
 ||ewstv.abc15.com^
 ||ewstv.abcactionnews.com^
 ||ewstv.kypost.com^
@@ -62095,6 +62110,7 @@ zznews.cn##.ad:not([style])
 ||gkpohvff.com^
 ||gksqfw.reverso.net^
 ||gl5g98t0vfjb.panprices.com^
+||glacah.com^
 ||gladiol9us10.com^
 ||glainsee.com^
 ||glaiwhee.net^
@@ -66160,6 +66176,7 @@ zznews.cn##.ad:not([style])
 ||jewgn8une.com^
 ||jewhouca.net^
 ||jewishcontentnetwork.com^$third-party
+||jfcqucxvvpwgp.com^
 ||jfgcxj.com^
 ||jfjsp.com^
 ||jfn1v.skogsborg.net^
@@ -67670,6 +67687,7 @@ zznews.cn##.ad:not([style])
 ||l23kdkghsldrj.tj-cyhg.com^
 ||l2k30jsa.theochu.com^
 ||l4elb.cn^
+||l4meet.com^$popup
 ||l570mb.cn^
 ||l936.expressnews.com^
 ||la-sync.taboola.com^
@@ -71539,6 +71557,7 @@ zznews.cn##.ad:not([style])
 ||mql5.com^$third-party
 ||mqldrm.lgcity.ru^
 ||mqs.ioam.de^
+||mqthslhcj.com^
 ||mqvyob.vidaxl.fi^
 ||mr-rank.de^$third-party
 ||mr2cnjuh34jb.com^
@@ -74827,6 +74846,7 @@ zznews.cn##.ad:not([style])
 ||plczro.21dressroom.com^
 ||pleagaietyparalysis.com^
 ||pleasantpump.com^$third-party
+||pleasedpicklewinning.com^
 ||pleasuregirl.net/bload
 ||plecki.com^$third-party
 ||plehimselves.info^
@@ -75842,6 +75862,7 @@ zznews.cn##.ad:not([style])
 ||qgfdqjf.cn^
 ||qgjapp.com^
 ||qgmikp.fleurdumal.com^
+||qgpfxtemxppud.com^
 ||qgqxzs.net^
 ||qgrrgs.silpada.com^
 ||qgscbx.renote.jp^
@@ -77878,6 +77899,7 @@ zznews.cn##.ad:not([style])
 ||scenegame.cn^
 ||scenepass.com^
 ||scfatao.com^
+||scgrzlketpica.com^
 ||schibsted.com/autoTracker
 ||schicksalnvi.cn^
 ||schjmp.com^
@@ -81534,6 +81556,7 @@ zznews.cn##.ad:not([style])
 ||static.surfe.pro/js/net.js$script,xmlhttprequest,redirect=noop.txt,domain=faucetclub.net
 ||static.surfe.pro/js/net.js$script,xmlhttprequest,redirect=noop.txt,domain=faucetcrypto.net
 ||static.surfe.pro/js/net.js$script,xmlhttprequest,redirect=noop.txt,domain=freebitcoin.top
+||static.surfe.pro/js/net.js$script,xmlhttprequest,redirect=noop.txt,domain=freesolana.top
 ||static.tianyaui.com^*/stat_20080313.js
 ||static.tieba.baidu.com/tb/img/pv.gif
 ||static.tieba.baidu.com/tb/img/track.gif
@@ -82950,6 +82973,7 @@ zznews.cn##.ad:not([style])
 ||taijuba.com/js/tj
 ||taijuwang.com/template/alifun/js/unFavui.
 ||taikangshenyuan.com^
+||tailapsi.com^
 ||tailtarget.com^$third-party
 ||taiquandao1.cn^
 ||taisha.org/statics/js/pc2.0/common/form.bottom.
@@ -83279,6 +83303,8 @@ zznews.cn##.ad:not([style])
 ||temporarilybrancheshideous.com^
 ||temptation.ad.nl^
 ||tempttalk.com^
+||tenbowed.com^
+||tenbowed.com^$popup
 ||tencent.xn--io0a7i^
 ||tend-new.com^
 ||tendencyexcavatornook.com^
@@ -86072,6 +86098,7 @@ zznews.cn##.ad:not([style])
 ||uqakkye.cn^
 ||uqbmzwv.cn^
 ||uqjflmw.cn^
+||uqsgsfhd.com^
 ||uralweb.ru^$third-party
 ||urbanairship.com^
 ||urc.taboolasyndication.com^
@@ -89480,6 +89507,7 @@ zznews.cn##.ad:not([style])
 ||xxlargepop.com^
 ||xxlefq.journaldesfemmes.fr^
 ||xxooos.com/mm/
+||xxqeihao.com^
 ||xxsjsp.com^
 ||xxtu.cc^
 ||xxw777.cn^
@@ -90078,6 +90106,7 @@ zznews.cn##.ad:not([style])
 ||yookcasula.com^
 ||yootui19999.com^
 ||yoox.it/storage/rd/yorb/
+||yoretxpczr.com^
 ||yorkbbs.ca/crm/section/v1/get/list/open
 ||yosjob.cn^
 ||yottaa.com/rapid.min.js
@@ -91216,6 +91245,7 @@ zznews.cn##.ad:not([style])
 ||zxopen.tech^
 ||zxptw.cn^
 ||zxptw.cn^$third-party
+||zxse43.com^
 ||zxsmxt.com^
 ||zxucii.com^
 ||zxvttq.goldapple.ru^
