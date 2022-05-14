@@ -17,9 +17,7 @@
 !去除评论区下某广告
 ||coolapk.com/v6/feed/detail?$replace=/detailSponsorCard//
 !5.14引入的恶臭标题栏广告
-||api2.coolapk.com/v6/main/indexV8^$replace=/\{"entityType":"card"\,"entityTemplate":"imageCarouselCard_1.*?\}\,\{/{/
-!直接禁止酷安访问京东相关
-||*jd.com^$app=com.coolapk.market
+!||api2.coolapk.com/v6/main/indexV8^$replace=/\{"entityType":"card"\,"entityTemplate":"imageCarouselCard_1.*?\}\,\{/{/
 
 ! 腾讯的广点通(优量汇)和字节跳动的穿山甲广告
 ||access*.tpns.tencent.com^
@@ -78,7 +76,7 @@
 ||y.qq.com/music/common/upload/t_kg_activity_show^
 ||y.gtimg.cn/music/common//upload/kg_ad^
 ||us.l.qq.com/exapp^
-||httpdns.kg.qq.com^$app=com.tencent.karaoke
+||httpdns.kg.qq.com^
 
 !粤康码广告
 ||mmykm1.gdbs.gov.cn/api/open/r/ykmrecommend^
@@ -115,16 +113,6 @@ www.rjno1.com#%#var g_times=0;function myfun(){let el=document.querySelectorAll(
 
 !小米遥控器
 ||home.mi.com/cgi-op/api/v1/recommendation/banner^
-
-!尝试去除拼多多与日用无关广告(实测在刷新后会加载回来，暂时不知道原理)
-||api.pinduoduo.com/api/alexa/homepage/hub?page_id=index.html?dy_sub_page=home^$replace=/search_bar_hot_query.*search_bar_visible/search_bar_hot_query":{},"search_bar_visible/
-||api.pinduoduo.com/api/alexa/homepage/hub?page_id=index.html?dy_sub_page=home^$replace=/"title":"多多视频".*?\}\,\{//
-||api.pinduoduo.com/api/alexa/homepage/hub?page_id=index.html?dy_sub_page=home^$replace=/"icon_set":\[.*?\]/"icon_set":[{}]/
-
-!小米应用商店初步去广告
-||app.market.xiaomi.com/apm/search/guidepage?
-||app.market.xiaomi.com/apm/featuredV2^
-||app.market.xiaomi.com/apm/search/hotword^
 
 !由asky88提供的不太记得是什么作用的规则
 
