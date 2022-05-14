@@ -16,6 +16,10 @@
 ||coolapk.com/v6/main/indexV8?$replace=/\,\{.*?"entityType": "card"\,"entityTemplate":"apkImageCard".*?\}\,\{"id"/,{"id"/
 !去除评论区下某广告
 ||coolapk.com/v6/feed/detail?$replace=/detailSponsorCard//
+!5.14引入的恶臭标题栏广告
+||api2.coolapk.com/v6/main/indexV8^$replace=/\{"entityType":"card"\,"entityTemplate":"imageCarouselCard_1.*?\}\,\{/{/
+!直接禁止酷安访问京东相关
+||*jd.com^$app=com.coolapk.market
 
 ! 腾讯的广点通(优量汇)和字节跳动的穿山甲广告
 ||access*.tpns.tencent.com^
@@ -58,6 +62,27 @@
 ||wxsnsdy.wxs.qq.com^
 @@||midas.gtimg.cn^
 
+!淦掉友盟
+||ulogs.umeng.com^
+
+!微信的奇怪dns
+||dns.weixin.qq.com.cn^app=com.tencent.mm
+
+!酷我
+||nmobi.kuwo.cn/mobi.s^app=cn.kuwo.player
+||mgxhtj.kuwo.cn/mgxh.s^$app=cn.kuwo.player
+||g.koowo.com^$app=cn.kuwo.player
+||mobi.kuwo.cn/mobi.s^app=cn.kuwo.player
+
+!全民k歌
+||y.qq.com/music/common/upload/t_kg_activity_show^
+||y.gtimg.cn/music/common//upload/kg_ad^
+||us.l.qq.com/exapp^
+||httpdns.kg.qq.com^$app=com.tencent.karaoke
+
+!粤康码广告
+||mmykm1.gdbs.gov.cn/api/open/r/ykmrecommend^
+
 !两条很多规则都没有的规则
 !抖音屏蔽大部分广告
 !番茄小说广告全屏蔽
@@ -82,6 +107,30 @@ www.rjno1.com#%#var g_times=0;function myfun(){let el=document.querySelectorAll(
 ||yoda.kwd.inkuai.com^
 ||gdfp.gifshow.com^
 ||volceapplog.com^
+
+!小睡眠
+||api.psy-1.com/cosleep/newborn/vips/picks^
+||api.psy-1.com/cosleep/newborn/ad^
+||res.psy-1.com/music/recommend^$app=com.psyone.brainmusic
+
+!小米遥控器
+||home.mi.com/cgi-op/api/v1/recommendation/banner^
+
+!尝试去除拼多多与日用无关广告(实测在刷新后会加载回来，暂时不知道原理)
+||api.pinduoduo.com/api/alexa/homepage/hub?page_id=index.html?dy_sub_page=home^$replace=/search_bar_hot_query.*search_bar_visible/search_bar_hot_query":{},"search_bar_visible/
+||api.pinduoduo.com/api/alexa/homepage/hub?page_id=index.html?dy_sub_page=home^$replace=/"title":"多多视频".*?\}\,\{//
+||api.pinduoduo.com/api/alexa/homepage/hub?page_id=index.html?dy_sub_page=home^$replace=/"icon_set":\[.*?\]/"icon_set":[{}]/
+
+!小米应用商店初步去广告
+||app.market.xiaomi.com/apm/search/guidepage?
+||app.market.xiaomi.com/apm/featuredV2^
+||app.market.xiaomi.com/apm/search/hotword^
+
+!由asky88提供的不太记得是什么作用的规则
+
+||xj-landing.gdtimg.com^
+||*/vhot2.qqvideo.tc.qq.com^
+||soup.v.qq.com^
 
 ! -------加强屏蔽End------- !
 
@@ -173,4 +222,8 @@ bilibili.com#@#.btn-ctnr
 
 !mydrivers.com
 mydrivers.com#@#.baidu, a[href^=http][target=_blank]
+
+!手机端onedrive修复
+@@||login.windows.net^$app=com.microsoft.skydrive
+
 ! --------白名单End-------- !
