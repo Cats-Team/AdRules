@@ -1,5 +1,5 @@
 <div align="center">
-<h1 align="center">AdRules<br>一个强力去广告的规则</h1>
+<h1 align="center">AdRules<br>一个基于中文区强力去广告的规则</h1>
 
 <img src="https://img.shields.io/github/stars/Cats-Team/AdRules?color=yellow">
 <img src="https://img.shields.io/github/forks/Cats-Team/AdRules?color=orange">
