@@ -1,0 +1,14 @@
+{
+    "name": "The DNS List",
+    "description": "Blocks ads, analytics, trackers, crypto-jacking & other such threats/nuisances. Addon lists are available to extend this list.",
+    "sources": [
+        {
+            "name": "DNS List",
+            "source": "dns.txt",
+            "type": "adblock",
+            "transformations": ["Compress","Validate"]
+        }
+    ],
+    "exclusions_sources": ["https://raw.githubusercontent.com/AdguardTeam/AdGuardSDNSFilter/master/Filters/exclusions.txt"],
+    "transformations": ["Compress", "Deduplicate"]
+}
