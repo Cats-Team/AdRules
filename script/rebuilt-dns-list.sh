@@ -8,6 +8,7 @@ dead=`cat base-dead-hosts.txt |sed "s/\#.*//g"`
 wl0=`echo "$wl" |grep '^0 '|sed 's/0 //g'`
 wl1=`echo "$wl" |grep '^1 '|sed 's/1 //g'`
 wl2=`echo "$wl" |grep '^2 '|sed 's/2 //g'`
+wl4=`echo "$wl" |grep '^4 '|sed 's/4 //g'`
 rm=`echo "$wl" |grep '^3 '|sed 's/3 //g'`
 echo "$yc" >pre-rules.txt
 cat pre-rules.txt base-dead-hosts.txt base-dead-hosts.txt |sort |uniq -u |grep -Pv "^((25[0-5]|2[0-4]\d|((1\d{2})|([1-9]?\d)))\.){3}(25[0-5]|2[0-4]\d|((1\d{2})|([1-9]?\d)))$" > 1.txt
@@ -66,7 +67,9 @@ cd ./script/
 echo "$wl0" |grep "\." |grep -v "\*" >> ../allow-domains-list.txt
 echo "$wl1" |grep "\." |grep -v "\*" >> ../allow-domains-list.txt
 echo "$wl2" |grep "\." |grep -v "\*" >> ../allow-domains-list.txt
+echo "$wl4" |grep "\." |grep -v "\*" >> ../allow-domains-list.txt
 
+echo "$wl4"| sed 's/^/@@||/g'|sed "s/$/\^/g"|sed '/^$/d' > ../allow.txt
 python rule.py ../allow-domains-list.txt
 
 exit

@@ -3,7 +3,10 @@
 #1 去除域名与其子域名
 #2 去除域名并加入abp的白名单
 #3 拉黑整个域名 其子域名会被abp全部屏蔽
+#4 仅添加至白名单
 
+#!---仅添加至白名单---!#
+4 api.installer.xiaomi.com
 #!---ABP通配符去重---!#
 3 cnzz.cn
 3 cnzz.net
@@ -51,6 +54,8 @@
 #免流
 1 cmpassport.com
 
+#mipush
+1 chat.xiaomi.net
 #sm图床
 1 loli.net
 #UC浏览器
@@ -64,7 +69,14 @@
 
 #!---白名单-单域名---!#
 
+#抖音验证码
+0 mcs.snssdk.com
+#QQ打卡
+0 tianshu.gtimg.cn
+
+#OPPO应用配置
 0 appconf.heytapdownload.com
+
 # uc
 0 p.bokecc.com
 
