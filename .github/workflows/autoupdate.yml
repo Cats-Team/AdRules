@@ -1,0 +1,132 @@
+name: Update Rules
+on: 
+  schedule:
+    - cron: '0 0,12 * * *'
+  #push:
+  # branches:
+  #  - main
+
+  workflow_dispatch:
+
+  repository_dispatch:
+   type:
+    - [Manual-Update]
+
+env:
+  SCKEY: ${{ secrets.SCKEY }}
+  PUSH_PUSH: ${{ secrets.PUSH_PUSH }}
+  GITHUBTOKEN: ${{ secrets.GITHUBTOKEN }}
+  TG_TOKEN: ${{ secrets.TG_TOKEN }}
+  CHAT_ID: ${{ secrets.CHAT_ID }}
+  REPO_NAME: ${{ github.event.repository.name }}
+  OWR_NAME: ${{ github.actor }}
+  NETLIFY_API: ${{ secrets.NETLIFY_API }}
+  RENDER_API_API: ${{ secrets.RENDER_API_API }}
+  
+jobs:
+  update-rules:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@main
+      - name: Setup Python
+        uses: actions/setup-python@v2
+        with:
+          python-version: '3.x'
+      - name: Setup Go 1.x
+        uses: actions/setup-go@v2
+        with:
+          go-version: "^1.14"
+      - uses: actions/setup-node@v2
+        with:
+          node-version: '14'
+          check-latest: true
+                
+      # Install hostlist-compiler
+      - name: Install hostlist-compiler
+        run: npm i -g @adguard/hostlist-compiler
+      - name: Install rename
+        run: |
+          sudo apt update
+          sudo apt install rename
+      - name: Git fetch 
+        run: | 
+          git pull -f
+      - name: Update Rules
+        continue-on-error: false
+        run: | 
+          sudo update-alternatives --set php /usr/bin/php7.4     
+          bash ./script/update-rules.sh
+      - name: Update other rules
+        run: |
+          cd rules
+          rm *.txt
+          wget -O ADgk.txt https://raw.githubusercontent.com/banbendalao/ADgk/master/ADgk.txt
+          wget -O kill-baidu-ad.txt https://raw.githubusercontent.com/banbendalao/ADgk/master/kill-baidu-ad.txt
+          wget -O fasthosts.txt https://raw.githubusercontent.com/hacamer/filtering/master/hosts
+          cd ../
+      - name: Update ReadMe
+        run: |
+          bash ./script/clean-readme.sh
+          #rm ./script/origin-files/*.txt
+      - name: Git push assets to Github
+        run: |
+          git init
+          git config --local user.name "hacamer"
+          git config --local user.email "hcamer145@gmail.com"
+          git branch -m main
+          git add .
+          git add --all
+          git checkout --orphan new_branch
+          git add -A
+          git commit -am "Updated at $(TZ=UTC-8 date +'%Y-%m-%d %H:%M:%S')"
+          git branch -D main 
+          git branch -m main
+          git branch -M main
+          git tag -l | xargs git tag -d
+          git push --force --set-upstream origin main
+      - name: Git push assets to Gitlab & Gitlink
+        run: |
+          rm -rf .git/
+          git init          
+          git config --local user.name "hacamer"
+          git config --local user.email "hcamer145@gmail.com"
+          git remote add origin "https://cats-team:${{ secrets.GITLAB_TOKEN }}@gitlab.com/cats-team/adrules.git"
+          git remote set-url --add origin "https://hacamer:${{ secrets.BITBUCKET_TOKEN }}@bitbucket.org/hacamer/adrules.git"
+          git remote set-url --add origin "https://hacamer:${{ secrets.GITLINK_TOKEN }}@www.gitlink.org.cn/hacamer/AdRules.git"
+          git remote -v
+          git branch -m main
+          #git gc --aggressive
+          git gc --prune=now
+          git gc --aggressive --prune=now
+          git add --all
+          git commit -m "Updated at $(TZ=UTC-8 date +'%Y-%m-%d %H:%M:%S')（北京时间）"       -a
+          git checkout --orphan new_branch
+          git add -A
+          git commit -am 'Add changes'
+          git branch -D main 
+          git branch -m main
+          git branch -M main
+          git push -f --set-upstream origin main 
+          git remote prune origin
+
+#      - name: Push Message
+#        continue-on-error: true
+#        run: |
+#          pip3 install requests
+#          python3 ./script/pusher.py
+      - name: Auto Built
+        continue-on-error: true
+        run: |
+          #curl -s -X POST -d {} "${{ secrets.NETLIFY_API }}"
+          #echo Nelify Built Pass
+          curl -s -X POST -d {} "${{ secrets.RENDER_API }}" &
+          echo Render Built Pass
+          curl -X POST "${{ secrets.CF_TOKEN }}"
+      - name: Delete workflow runs
+        uses: Mattraks/delete-workflow-runs@main
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          repository: ${{ github.repository }}
+          retain_days: 0
+          keep_minimum_runs: 2
+          

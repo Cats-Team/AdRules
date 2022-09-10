@@ -1,0 +1,248 @@
+! ------加强屏蔽Start------ !
+
+!酷安"提到的好物"
+||coolapk.com/v6/page/dataList?$replace=/extra_entities//
+||coolapk.com/v6/feed/detail?$replace=/extra_entities//
+||coolapk.com/v6/main/indexV?$replace=/extra_entities//
+||coolapk.com/v6/feed/detail?$replace=/extra_title//
+||coolapk.com/v6/feed/detail?$replace=/include_goods//
+
+!去除"什么值得买"
+||coolapk.com/v6/main/indexV8?$replace=/\{"entityType":"card"\,"entityTemplate":"listCard".*?\}\,\{"id/{"id/
+!去除热搜
+||coolapk.com/v6/main/init?$replace=/\{"data":\[\{"entityType":"card"\,"entityTemplate":"textCard"\,"title":"\\u70ed\\u95e8\\u641c\\u7d22".*?\}\,\{"entityType":"card"\,"entityTemplate":"configCard"/\{"data":[\{"entityType":"card"\,"entityTemplate":"configCard"/
+||coolapk.com/v6/search?type=hotSearch$replace=/\{"data":\[.*\]/{"data":[]/
+!去除随机应用推荐
+||coolapk.com/v6/main/indexV8?$replace=/\,\{.*?"entityType": "card"\,"entityTemplate":"apkImageCard".*?\}\,\{"id"/,{"id"/
+!去除评论区下某广告
+||coolapk.com/v6/feed/detail?$replace=/detailSponsorCard//
+
+! 信息流及评论区广告
+||ctobsnssdk.com^
+||pangolin.snssdk.com^
+||pangolin-sdk-toutiao.com^
+||pangolin-sdk-toutiao-b.com^
+||pglstatp-toutiao.com^
+||dm.toutiao.com^
+||ulogs.umeng.com^
+||aaid.umeng.com^
+||tnc*.zijieapi.com^
+||mssdk-bu.bytedance.com^
+! 帖子详情好物推荐
+||api2.coolapk.com/v6/feed/detail$replace=/"_ids":\[.*?]\,"":\[.*?]\,/ /
+! 帖子详情赞助内容
+||api2.coolapk.com/v6/feed/detail$replace=/\,"":{.*}/}}/
+! 发现页去除酷品
+||api2.coolapk.com/v6/main/init$replace=/{"id":1170.*?}\,/ /
+! 应用游戏页去除推广视频
+||api2.coolapk.com/v6/page/dataList$replace=/{"entityType":"card"\,"entityTemplate":"apkImageCard".*?\\u0022}"}\,/ /
+! 去除首页还有什么值得买推广
+||api2.coolapk.com/v6/main/indexV8$replace=/{"entityType":"card"\,"entityTemplate":"listCard".*?}"}\,/ / 
+!
+
+! 腾讯的广点通(优量汇)和字节跳动的穿山甲广告
+||access*.tpns.tencent.com^
+||astrategy.beacon.qq.com^
+||aeventlog.beacon.qq.com^
+||oth.eve.mdt.qq.com^
+||oth.eve.qq.com^
+||ug.snssdk.com^
+||v*-be-pack.pglstatp-toutiao.com^
+||sf*-be-pack.pglstatp-toutiao.com^
+||tobapplog.ctobsnssdk.com^
+||access.pangolin-sdk-toutiao-*.com^
+||ulogs.umengcloud.com^
+!||game.weixin.qq.com^
+||wxsnsdythumb.wxs.qq.com^
+||oth.eve.mdt.qq.com^
+||wxsnsdythumb.wxs.qq.com^
+||api-access.pangolin-sdk-toutiao-*.com^
+||mssdk-bu.snssdk.com^
+||aaid.umeng.com^
+||i.snssdk.com^
+||is.snssdk.com^
+||pangolin.snssdk.com^
+||extlog.snssdk.com^
+||sf3-ttcdn-tos.pstatp.com^
+||bds.snssdk.com^
+||dig.bdurl.net^
+||api-access.pangolin-sdk-toutiao.com^
+||sf*-fe-tos.pglstatp-toutiao.com^
+||sf*-be-pack.pglstatp-toutiao.com^
+||sf*-fe-tos.pglstatp-toutiao.com^
+||log-api.pangolin-sdk-toutiao.com^
+||s*-fe-scm.pglstatp-toutiao.com^
+||s*a.pstatp.com^
+||log-api.pangolin-sdk-toutiao-*.com^
+||sf6-be-pack.pglstatp-toutiao.com^
+||toblog.volceapplog.com^
+||access.toggle.qq.com^
+||in-addr.arpa^
+||wxsnsdy.wxs.qq.com^
+@@||midas.gtimg.cn^
+
+!淦掉友盟
+||ulogs.umeng.com^
+
+!酷我
+!||nmobi.kuwo.cn/mobi.s*$app=cn.kuwo.player
+||mgxhtj.kuwo.cn/mgxh.s*$app=cn.kuwo.player
+||g.koowo.com^$app=cn.kuwo.player
+||mobi.kuwo.cn/mobi.s*$app=cn.kuwo.player
+||fvedio.kuwo.cn^$app=cn.kuwo.player
+||searchrecterm.kuwo.cn^$app=cn.kuwo.player
+||media.cdn.kuwo.cn*tuijian*.json$app=cn.kuwo.player
+
+!全民k歌
+||y.qq.com/music/common/upload/t_kg_activity_show^
+||y.gtimg.cn/music/common//upload/kg_ad^
+||us.l.qq.com/exapp^
+||httpdns.kg.qq.com^
+
+!粤康码广告
+||mmykm1.gdbs.gov.cn/api/open/r/ykmrecommend^
+
+!两条很多规则都没有的规则
+!抖音屏蔽大部分广告
+!番茄小说广告全屏蔽
+||ads*-normal*.zijieapi.com^
+||p*-ad-sign.byteimg.com^
+
+! 大海影视
+||uty.micocc.com^
+||lanm.huliyinzi.com^
+||ns.adobe.com^
+||swimg2.tsderen.cn^
+||st.huliyinzi.com/ads_app_pic/^
+
+! checkadblock
+||checkadblock.ru/banners^$domain=checkadblock.ru
+
+! RJNO1
+www.rjno1.com#%#var g_times=0;function myfun(){let el=document.querySelectorAll("[style*='width: '][style*='; height: '],.adsbygoogle");el.forEach(e=>e.remove());if(g_times>=20){window.clearInterval(timer)}g_times++}var timer=setInterval(myfun,500);myfun();
+
+! 快手AD
+||yoda.kwd.inkuai.com^
+||gdfp.gifshow.com^
+||volceapplog.com^
+
+!小睡眠
+||api.psy-1.com/cosleep/newborn/vips/picks^
+||api.psy-1.com/cosleep/newborn/ad^
+||res.psy-1.com/music/recommend^$app=com.psyone.brainmusic
+
+!小米遥控器
+||home.mi.com/cgi-op/api/v1/recommendation/banner^
+
+!由asky88提供的不太记得是什么作用的规则
+
+||xj-landing.gdtimg.com^
+||*/vhot2.qqvideo.tc.qq.com^
+||soup.v.qq.com^
+
+!去你大爷的OPPO浏览器，敢禁止我涩涩！？
+||dragate-cn.dc.heytapmobi.com^
+
+! -------加强屏蔽End------- !
+
+! -------白名单Start------- !
+
+! 今日头条视频
+!@@||api*.toutiaoapi.com^$app=com.ss.android.article.news
+@@||api5-normal-lq.toutiaoapi.com^$app=com.ss.android.article.news
+! 微信
+@@||doc.weixin.qq.com^
+@@||wx.tenpay.com^
+
+! [淘宝]
+! // 关闭隐身模式，以便正常使用发票功能
+@@||invoice-ua.taobao.com/e-invoice/invoice-apply-online.html?source$stealth
+
+! CF的管理
+@@||dash.cloudflare.com^$domain=dash.cloudflare.com,important
+
+! AdGuard
+@@||local.adguard.org^
+! 图片
+@@||inews.gtimg.com^
+
+! 锁屏画报正常化
+@@||wallpaper.cdn.pandora.xiaomi.com^
+@@||package.wallpaper.cdn.pandora.xiaomi.com.lan^
+@@||w.pandora.xiaomi.com^
+
+! 新浪新闻热榜
+@@||gw.m.163.com^
+
+! 夸克
+@@||quark.sm.cn^
+@@||pan.quark.cn^
+
+! 百度百科
+@@||bkimg.cdn.bcebos.com^
+@@||imgstat.baidu.com^
+
+! 小米浏览器
+@@||mb.yidianzixun.com^
+@@||sug.browser.miui.com^
+
+! QQ
+@@||qun.qq.com^
+
+!
+@@||list-manage.com
+
+! Huawei 翻译
+@@||metrics1.data.hicloud.com^
+
+! Gmail邮箱
+@@||mail.google.com^$document
+
+! Edge新闻
+@@||www.msn.cn/spartan/mmx^
+
+! 淘宝图片(?
+@@||taobao.com$image
+
+! 银联
+@@||yyfweb.postar.cn^
+
+! 雨见浏览器
+@@||api.yjllq.com^
+
+! Bilibili
+bilibili.com#@#.btn-ctnr
+!@@||*bili*api.*^
+! YouKu
+@@||*.youku.com^$stealth
+@@||*.ali*.*^$stealth
+! Phone Youku
+@@||vali.cp*.ott.cibntv.net^$domain=m.youku.com,third-party
+
+! 皮皮虾评论区误杀
+@@||i.snssdk.com/bds^$app=com.sup.android.superb
+! DNS
+@@||dash.xns.one^
+
+!快手
+@@||nebula.kuaishou.com^
+
+!mydrivers.com
+mydrivers.com#@#.baidu, a[href^=http][target=_blank]
+
+!手机端onedrive修复
+@@||login.windows.net^$app=com.microsoft.skydrive
+
+! Bilibiili API
+@@||api.bilibili.com/*^$removeparam
+
+!https://es6.ruanyifeng.com/#docs/module无法加载
+ruanyifeng.com#@#a[href*=".apeclass.com"]
+
+! b站 投币 收藏 #66
+bilibili.com#@#.bili-dialog-m
+
+! 百度云转存 #59
+@@||pan.baidu.com/$removeparam,domain=pan.baidu.com
+
+! --------白名单End-------- !

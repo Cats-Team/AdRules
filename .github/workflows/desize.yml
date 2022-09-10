@@ -1,0 +1,86 @@
+name: desize
+on:
+  workflow_dispatch:
+
+jobs:
+  clean:
+    runs-on: ubuntu-latest
+      
+    steps:
+      - name: Clone repo
+        run: git clone --mirror https://cats-team:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }} repo_gh
+          
+      - name: Clean up
+        run: |
+          curl -fsSL -o bfg.jar https://repo1.maven.org/maven2/com/madgag/bfg/1.14.0/bfg-1.14.0.jar && \
+          java -jar bfg.jar --strip-blobs-bigger-than 10K -fs 100M repo_gh && \
+          cd repo_gh && \
+          git reflog expire --expire=now --all && \
+          git gc --prune=now --aggressive
+          
+      - name: Push
+        run: |
+          cd repo_gh
+          git show-ref | cut -d' ' -f2 | grep 'pull' | xargs -r -L1 git update-ref -d
+          git push origin --force
+          cd ../
+          rm -rf repo_gh
+     
+      #Gitlab
+      - name: Clone repo
+        run: git clone --mirror https://cats-team:${{ secrets.GITLAB_TOKEN }}@gitlab.com/cats-team/adrules.git repo_gh
+          
+      - name: Clean up
+        run: |
+          curl -fsSL -o bfg.jar https://repo1.maven.org/maven2/com/madgag/bfg/1.14.0/bfg-1.14.0.jar && \
+          java -jar bfg.jar --strip-blobs-bigger-than 10K -fs 100M repo_gh && \
+          cd repo_gh && \
+          git reflog expire --expire=now --all && \
+          git gc --prune=now --aggressive
+          
+      - name: Push
+        run: |
+          cd repo_gh
+          git show-ref | cut -d' ' -f2 | grep 'pull' | xargs -r -L1 git update-ref -d
+          git push origin --force
+          cd ../
+          rm -rf repo_gh
+ 
+      #Bitbucket
+      - name: Clone repo
+        run: git clone --mirror https://hacamer:${{ secrets.BITBUCKET_TOKEN }}@bitbucket.org/hacamer/adrules.git repo_gh
+          
+      - name: Clean up
+        run: |
+          curl -fsSL -o bfg.jar https://repo1.maven.org/maven2/com/madgag/bfg/1.14.0/bfg-1.14.0.jar && \
+          java -jar bfg.jar --strip-blobs-bigger-than 10K -fs 100M repo_gh && \
+          cd repo_gh && \
+          git reflog expire --expire=now --all && \
+          git gc --prune=now --aggressive
+          
+      - name: Push
+        run: |
+          cd repo_gh
+          git show-ref | cut -d' ' -f2 | grep 'pull' | xargs -r -L1 git update-ref -d
+          git push origin --force
+          cd ../
+          rm -rf repo_gh
+          
+      #Gitlink
+      - name: Clone repo
+        run: git clone --mirror https://hacamer:${{ secrets.GITLINK_TOKEN }}@www.gitlink.org.cn/hacamer/AdRules.git repo_gh
+          
+      - name: Clean up
+        run: |
+          curl -fsSL -o bfg.jar https://repo1.maven.org/maven2/com/madgag/bfg/1.14.0/bfg-1.14.0.jar && \
+          java -jar bfg.jar --strip-blobs-bigger-than 10K -fs 100M repo_gh && \
+          cd repo_gh && \
+          git reflog expire --expire=now --all && \
+          git gc --prune=now --aggressive
+          
+      - name: Push
+        run: |
+          cd repo_gh
+          git show-ref | cut -d' ' -f2 | grep 'pull' | xargs -r -L1 git update-ref -d
+          git push origin --force
+          
