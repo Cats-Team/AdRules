@@ -1,0 +1,99 @@
+name: Update Rules
+on: 
+  schedule:
+    - cron: '0 0 * * *'
+  #push:
+  # branches:
+  #  - main
+
+  workflow_dispatch:
+
+  repository_dispatch:
+   type:
+    - [Manual-Update]
+
+jobs:
+  update-rules:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@main
+      - name: Setup Python
+        uses: actions/setup-python@v2
+        with:
+          python-version: '3.x'
+      - name: Setup Go 1.x
+        uses: actions/setup-go@v2
+        with:
+          go-version: "^1.14"
+      - uses: actions/setup-node@v2
+        with:
+          node-version: '14'
+          check-latest: true
+
+      # Install hostlist-compiler
+      - name: Install hostlist-compiler
+        run: npm i -g @adguard/hostlist-compiler
+      - name: Install rename
+        run: |
+          sudo apt update
+          sudo apt install rename
+      - name: Git fetch 
+        run: | 
+          git pull -f
+      - name: Update Rules
+        continue-on-error: false
+        run: |     
+          bash ./script/update-rules.sh
+      - name: Update other rules
+        run: |
+          cd rules
+          rm *.txt
+          wget -O fasthosts.txt https://raw.githubusercontent.com/hacamer/filtering/master/hosts
+          wget https://raw.githubusercontent.com/damengzhu/banad/main/jiekouAD.txt
+          cd ../
+      - name: Update ReadMe
+        run: |
+          bash ./script/clean-readme.sh
+      - name: Git push assets to Github
+        run: |
+          git init
+          git config --local user.name "actions"
+          git config --local user.email "action@github.com"
+          git checkout --orphan clearhistory
+          git commit -am "Update at $(TZ=UTC-8 date +"%Y-%m-%d %H:%M")"
+          git branch -D main
+          git branch -m main
+          git push --force --set-upstream origin main
+      - name: Git push assets to other repos
+        continue-on-error: true
+        run: |
+          rm -rf .git/
+          git init          
+          git config --local user.name "hacamer"
+          git config --local user.email "hcamer145@gmail.com"
+          git remote add origin "https://cats-team:${{ secrets.GITLAB_TOKEN }}@gitlab.com/cats-team/adrules.git"
+          git remote set-url --add origin "https://hacamer:${{ secrets.JIHU_TOKEN }}@jihulab.com/cats-team/adrules.git"
+          git remote set-url --add origin "https://hacamer:${{ secrets.GITEA_TOKEN }}@gitea.com/Cats-Team/AdRules.git"
+          git remote set-url --add origin "https://hacamer:${{ secrets.BITBUCKET_TOKEN }}@bitbucket.org/hacamer/adrules.git"
+          git checkout --orphan clearhistory
+          git add .
+          git commit -am "Update at $(TZ=UTC-8 date +"%Y-%m-%d %H:%M")"
+          git branch -m main
+          git push --force --set-upstream origin main
+#      - name: Push Message
+#        continue-on-error: true
+#        run: |
+#          pip3 install requests
+#          python3 ./script/pusher.py
+
+      - name: Auto Built
+        continue-on-error: true
+        run: |
+          curl -X POST "${{ secrets.CF_TOKEN }}"
+      - name: Delete workflow runs
+        uses: Mattraks/delete-workflow-runs@main
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          repository: ${{ github.repository }}
+          retain_days: 0
+          keep_minimum_runs: 2
