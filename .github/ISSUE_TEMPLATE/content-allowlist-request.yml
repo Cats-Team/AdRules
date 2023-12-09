@@ -1,0 +1,55 @@
+name: Content Allowlist Request
+description: Report incorrectly blocked content/App.
+labels: ["content allow"]
+assignees: 
+  - zutzo
+body:
+  - type: dropdown
+    id: adblocker
+    attributes:
+      label: Which tool do you use?
+      description: |
+        If the tool is not listed, please select "Other" and enter its name in the comment field below.
+      multiple: true
+      options:
+        - AdGuard
+        - uBlock Origin
+        - Other
+    validations:
+      required: true
+  - type: input
+    id: other
+    attributes:
+      label: Other
+    validations:
+      required: false
+  
+  - type: dropdown
+    id: blocklists
+    attributes:
+      label: Which AdRules AdBlock List Version do you use?
+      multiple: true
+      options:
+        - Lite
+        - Normal
+        - Plus
+    validations:
+      required: true
+
+  - type: textarea
+    id: content
+    attributes:
+      label: Which content/App should be unblocked?
+      description: | 
+        Please provide the content/App to be unblocked.      
+    validations:
+      required: true
+  
+  - type: textarea
+    id: reason
+    attributes:
+      label: Why should the content/App be unblocked?
+      description: |
+        If necessary, please describe the steps to reproduce. You better add screenshots.
+    validations:
+      required: true
