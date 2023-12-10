@@ -57,7 +57,7 @@ jobs:
           git add README.md
           git commit -m "Updated"
           git push
-          git add *.{conf,html,txt} rules/* mod/*
+          git add *.{conf,html,txt,list} rules/* mod/*
           git commit -m "Update at $(TZ=UTC-8 date +"%Y-%m-%d %H:%M")"
           git checkout main
           git push --force --set-upstream origin main
