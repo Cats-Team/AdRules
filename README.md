@@ -61,14 +61,6 @@ AdRules DNS List : 91023
  Quantumult X       | [Link](https://raw.githubusercontent.com/Cats-Team/AdRules/main/qx.conf)               | [Link](https://gp.adrules.top/qx.conf)                     | [Link](https://gitlab.com/cats-team/adrules/-/raw/main/qx.conf)               | [Link](https://adrules.top/qx.conf)               | [Link](https://bitbucket.org/hacamer/adrules/raw/main/qx.conf)               | [Link](https://gitea.com/Cats-Team/AdRules/raw/branch/main/qx.conf)          | [Link](https://jihulab.com/cats-team/adrules/-/raw/main/qx.conf)               
 
 
-## Maintainer
-
-This project is maintained by the Cats-Team ChatGPT and contributors.
-
-    Cats-Team - Lead maintainer
-    ChatGPT - Powerful Maintainer
-    All Contributors - Thank you to all the people who have contributed to this project by submitting issues!
-
 ## License
 This project is licensed under the WTFPL License - see the LICENSE file for details.
 
