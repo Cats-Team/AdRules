@@ -54,7 +54,7 @@ jobs:
           git add README.md
           git commit -m "Updated"
           git push
-          git branch -D main
+          #git branch -D main
           git checkout --orphan main
           git checkout main          
           git add *.{conf,html,txt,list} rules/* mod/*
