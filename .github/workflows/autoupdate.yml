@@ -59,7 +59,6 @@ jobs:
           #git checkout main 
           git rm -rf .github
           git rm -rf script
-          git rm -rf .git*
           git rm -rf *.md         
           git add *.{conf,html,txt,list} rules/* mod/*
           git commit -m "Update at $(TZ=UTC-8 date +"%Y-%m-%d %H:%M")"
