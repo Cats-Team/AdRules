@@ -54,9 +54,7 @@ jobs:
           git init
           git config --local user.name "actions"
           git config --local user.email "action@github.com"
-          git commit -am "Updated"
-          git checkout --orphan clearhistory
-          git add -A
+          git add *.{conf,html,txt} rules/* mod/*
           git commit -m "Update at $(TZ=UTC-8 date +"%Y-%m-%d %H:%M")"
           git branch -D main
           git branch -m main
