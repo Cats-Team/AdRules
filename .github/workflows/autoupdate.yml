@@ -60,7 +60,7 @@ jobs:
           git add *.{conf,html,txt,list} rules/* mod/*
           git commit -m "Update at $(TZ=UTC-8 date +"%Y-%m-%d %H:%M")"
           git checkout main
-          git push --force --set-upstream origin main
+          git push -f -u origin main
 
       - name: Git push assets to other repos
         continue-on-error: true
