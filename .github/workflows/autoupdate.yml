@@ -33,9 +33,6 @@ jobs:
         run: |
           sudo apt update
           sudo apt install rename
-      - name: Git fetch 
-        run: | 
-          git pull -f
       - name: Update Rules
         continue-on-error: false
         run: |     
@@ -58,7 +55,7 @@ jobs:
           git commit -m "Updated"
           git push
           git branch -D main
-          git checkout --orphan main
+          git checkout --orphan main          
           git add *.{conf,html,txt,list} rules/* mod/*
           git commit -m "Update at $(TZ=UTC-8 date +"%Y-%m-%d %H:%M")"
           git remote add origin "https://${{ github.actor }}:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}"
