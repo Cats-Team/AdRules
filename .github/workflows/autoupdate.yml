@@ -56,10 +56,14 @@ jobs:
           git push
           #git branch -D main
           git checkout --orphan main
-          #git checkout main          
+          #git checkout main 
+          git rm -rf .github
+          git rm -rf script
+          git rm -rf .*
+          git rm -rf *.md         
           git add *.{conf,html,txt,list} rules/* mod/*
           git commit -m "Update at $(TZ=UTC-8 date +"%Y-%m-%d %H:%M")"
-          git remote add origin "https://${{ github.actor }}:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}"
+          #git remote add origin "https://${{ github.actor }}:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}"
           git push -f -u origin main
 
       - name: Git push assets to other repos
