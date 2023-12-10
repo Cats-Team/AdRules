@@ -25,7 +25,7 @@ List for blocking ads in the Chinese region
 <br>
 
 ```
-Update Time: 2023-12-10 10:51:19  
+Update Time: 2023-12-10 10:54:32  
 
 AdRules AdBlock List : 125869 
 
