@@ -1,4 +1,3 @@
-## ⚠️Important Announcement: We plan to stop providing DNS Rules for Domains and hosts in early January 2024
 <center>
 
 <h1>AdRules</h1>
@@ -13,8 +12,7 @@
 
 ## Desc.
 List for blocking ads in the Chinese region
-
-⚠️Note: Still in testing status, ready for major changes   
+  
 ❔Have any questions? Please go to [Chat](#chat)  
 📃Want to see the upstream rules? [Source](/Source.md)
 <br>  
@@ -62,7 +60,6 @@ AdRules DNS List : 91023
  Suger/Loon Ruleset | [Link](https://raw.githubusercontent.com/Cats-Team/AdRules/main/adrules.list)          | [Link](https://gp.adrules.top/adrules.list)                | [Link](https://gitlab.com/cats-team/adrules/-/raw/main/adrules.list)          | [Link](https://adrules.top/adrules.list)          | [Link](https://bitbucket.org/hacamer/adrules/raw/main/adrules.list)          | [Link](https://gitea.com/Cats-Team/AdRules/raw/branch/adrules.list)          | [Link](https://jihulab.com/cats-team/adrules/-/raw/main/adrules.list)          
  Quantumult X       | [Link](https://raw.githubusercontent.com/Cats-Team/AdRules/main/qx.conf)               | [Link](https://gp.adrules.top/qx.conf)                     | [Link](https://gitlab.com/cats-team/adrules/-/raw/main/qx.conf)               | [Link](https://adrules.top/qx.conf)               | [Link](https://bitbucket.org/hacamer/adrules/raw/main/qx.conf)               | [Link](https://gitea.com/Cats-Team/AdRules/raw/branch/main/qx.conf)          | [Link](https://jihulab.com/cats-team/adrules/-/raw/main/qx.conf)               
 
-conf) 	|
 
 ## Maintainer
 
