@@ -23,15 +23,15 @@ List for blocking ads in the Chinese region
 <br>
 
 ```
-Update Time: 2023-12-11 12:13:18  
+Update Time: 2023-12-11 22:31:48  
 
-AdRules AdBlock List : 125906 
+AdRules AdBlock List : 129599 
 
-AdRules AdBlock List Lite : 32684 
+AdRules AdBlock List Lite : 32690 
 
-AdRules AdBlock List Plus : 280835 
+AdRules AdBlock List Plus : 284609 
 
-AdRules DNS List : 91071 
+AdRules DNS List : 91313 
 ``` 
 </details>
 <br>
