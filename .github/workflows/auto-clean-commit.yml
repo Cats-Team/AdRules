@@ -1,0 +1,27 @@
+name: Clear commits
+on:
+  workflow_dispatch:
+  schedule:
+  - cron: 0 15 */3 * *
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      actions: write
+    steps:
+      - uses: actions/checkout@v2
+        with:
+          ref: script
+      - name: commit
+        run: |
+          git init
+          git config --local user.name "actions"
+          git config --local user.email "action@github.com"
+          git checkout --orphan clearhistory
+          git branch -D script
+          git checkout --orphan script
+          git add .
+          git commit -m "🚀 CI Updated"
+          git remote set-url --add origin "https://${{ github.actor }}:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}"
+          git push -f -u origin script
