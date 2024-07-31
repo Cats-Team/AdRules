@@ -1,0 +1,20 @@
+{
+    "name": "The DNS List",
+    "description": "Blocks ads, analytics, trackers, crypto-jacking & other such threats/nuisances. Addon lists are available to extend this list.",
+    "sources": [
+        {
+            "name": "DNS List",
+            "source": "dns.txt",
+            "type": "adblock",
+            "transformations": ["RemoveComments", "Compress","RemoveModifiers","Deduplicate","Validate"]
+        },
+        {
+            "name": "DNS Filters",
+            "source": "https://raw.githubusercontent.com/Cats-Team/dns-filter/main/abp.txt",
+            "type": "adblock",
+            "transformations": ["RemoveComments", "Compress"]
+        }
+    ],
+    "exclusions_sources": ["https://raw.githubusercontent.com/Cats-Team/deadhosts/main/dead.txt","./script/allowlist.txt"],
+    "transformations": ["Deduplicate", "Compress","TrimLines","Deduplicate","Validate","RemoveEmptyLines"]
+}
