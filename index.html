@@ -1,0 +1,277 @@
+<html>
+  <head>
+    <link rel="icon" href="https://avatars.githubusercontent.com/u/88201352" />
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="description" content="List for blocking ads in the Chinese region">
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, user-scalable=no"
+    />
+    <title>AdRules</title>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/remarkable/2.0.1/remarkable.min.js"
+      integrity="sha512-skYYbQHAuOTpeJTthhUH3flZohep8blA+qjZOY0VqmfXMDiYcWxu29F5UbxU4LxaIpGkRBk+3Qf8qaXfd9jngg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <style>
+        select ~ article[id] {
+            display: block;
+            opacity: 0;
+            transition: opacity 0.45s ease-in-out;
+        }
+        select ~ article[id].show {
+            opacity: 1;
+        }
+        select ~ article[id].hide {
+            display: none;
+        }
+    </style>
+    <meta name="viewport" content="width=device-width; initial-scale=1.0; minimum-scale=1.0; maximum-scale=1.0">
+    <style>
+        .container {
+            width: 80%;
+            margin: 10% auto 0;
+            background-color: rgba(255,255,255,0.7);
+            padding: 2% 5%;
+            border-radius: 10px
+        }
+
+        ul {
+            padding-left: 20px;
+        }
+
+            ul li {
+                line-height: 2.3
+            }
+
+        a {
+            color: #20a53a
+        }
+        select {
+        font-size: 16px;
+        } .styled-select {
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            padding: 6px 10px;
+            font-size: 16px;
+            color: #333;
+        }
+
+        .copy-button {
+            margin-top: 10px;
+            cursor: pointer;
+            padding: 10px;
+            border-radius: 5px;
+            background-color: #4CAF50; /* Green */
+            border: none;
+            color: white;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+        }
+        .add-button {
+            margin-top: 10px;
+            cursor: pointer;
+            padding: 10px;
+            border-radius: 5px;
+            background-color: #4CAF50; /* Green */
+            border: none;
+            color: white;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+        }
+    </style>
+  </head>
+  <body>
+  <div class="container" align="center">
+    <header>
+      <article><pre>
+## **AdRules**
+
+### *List for blocking ads in the Chinese region*
+</pre></article>
+<img src="https://img.shields.io/github/stars/Cats-Team/AdRules?style=flat-square&color=yellow">
+<img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/cats-team/adrules/main?style=flat-square&color=red">
+<img src="https://img.shields.io/github/license/Cats-Team/AdRules?style=flat-square"><br>
+<br>
+    </header>
+    <main>
+      <select class="styled-select">
+       <option value="empty" hidden selected>Choose Your Tool:</option>
+        <optgroup label="Browser & App">
+         <option value="adge">Browser Extension</option>
+         <option value="adgai">AdGuard for Android/iOS</option>
+         <option value="adgwm">AdGuard for Windows/Mac</option>
+        </optgroup>
+        <optgroup label="DNS & Proxy">
+         <option value="adgh">AdGuard Home</option>
+         <option value="sd">SmartDNS</option>
+         <option value="qx">Quantumult X</option>
+         <option value="cla">Clash</option>
+         <option value="mosdns">mosdns</option>
+         <option value="loon">Loon</option>
+         <option value="surge">Surge</option>
+         <option value="singbox">Singbox</option>        
+        </optgroup>
+      </select>
+<article id="adgai" class="hide"><pre>
+### AdGuard for Android / iOS  
+
+<a href="./adblock.txt">AdRules AdBlock List</a><br>
+<button class="copy-button">Copy Link</button>
+<button class="add-button">Add Your Tool</button>
+</pre></article>
+<article id="adgwm" class="hide"><pre>
+### AdGuard for Windows / Mac
+
+<a href="./adblock_plus.txt">AdRules AdBlock List Plus </a><br>
+<button class="copy-button">Copy Link</button>
+<button class="add-button">Add Your Tool</button>
+</pre></article>
+<article id="adge" class="hide"><pre>
+### AdGuard Browser extension / uBlock Origin
+
+<a href="./adblock.txt">AdRules AdBlock List</a><br>
+<button class="copy-button">Copy Link</button>
+<button class="add-button">Add Your Tool</button>
+</pre></article>
+<article id="adgh" class="hide"><pre>
+### AdGuard Home  
+
+<a href="./dns.txt">AdRules DNS List </a>
+<button class="copy-button">Copy Link</button>
+</pre></article>
+<article id="sd" class="hide"><pre>
+### SmartDNS
+
+<a href="./smart-dns.conf">AdRules SmartDNS List </a>
+<button class="copy-button">Copy Link</button>
+</pre></article>
+<article id="qx" class="hide"><pre>
+### Quantumult X
+
+<a href="./qx.conf">AdRules Quantumult X List </a>
+<button class="copy-button">Copy Link</button>
+</pre></article>
+<article id="cla" class="hide"><pre>
+### Clash / Mihomo
+
+<a href="./adrules_domainset.txt">AdRules Clash Domainset List </a>
+<button class="copy-button">Copy Link</button>
+</pre></article>
+<article id="mosdns" class="hide"><pre>
+### mosdns
+
+<a href="./mosdns_adrules.txt">AdRules MosDNS List </a>
+<button class="copy-button">Copy Link</button>
+</pre></article>
+<article id="loon" class="hide"><pre>
+### Loon 
+
+<a href="./adrules.list">AdRules Ruleset List </a>
+<button class="copy-button">Copy Link</button>
+</pre></article>
+<article id="surge" class="hide"><pre>
+### Surge 
+
+<a href="./adrules-surge.conf">AdRules Surge List </a>
+<button class="copy-button">Copy Link</button>
+</pre></article>
+<article id="singbox" class="hide"><pre>
+### Singbox
+
+<a href="./adrules-singbox.srs">AdRules Singbox List </a>
+<button class="copy-button">Copy Link</button>
+</pre></article>
+
+    </main>
+    <footer>
+<article><pre>
+
+（￣︶￣）↗　
+
+❔Have any questions? Please go to [Chat](https://github.com/Cats-Team/AdRules#chat)  
+📃Want to see the upstream rules? [Source](https://github.com/Cats-Team/AdRules/blob/script/Source.md)  
+🌟Get more or give a star? [GitHub Homepage](https://github.com/Cats-Team/AdRules)</pre></article>
+
+    </footer>
+    <script>
+        const md = new remarkable.Remarkable({
+          html: true,
+          });
+        document.querySelectorAll("article").forEach((art) => {
+          art.innerHTML = md.render(art.querySelector("pre").innerHTML);
+        });
+        document.querySelector("select").addEventListener("change", (e) => {
+          document.querySelectorAll("select ~ article[id].show").forEach((art) => {
+            art.classList.remove("show");
+          });
+          setTimeout(() => {
+            if (e.target.value !== "empty") {
+              document.querySelectorAll("select ~ article[id]").forEach((art) => {
+                if (art.id===e.target.value) {
+                  art.classList.remove("hide");
+                } else {
+                  art.classList.add("hide");
+                }
+              });
+            } else {
+              document.querySelectorAll("select ~ article[id]").forEach((art) => {
+                art.classList.add("hide");
+              });
+            }
+          }, 500);
+          setTimeout(() => {
+            document.querySelectorAll("select ~ article[id]").forEach((art) => {
+              if (art.id===e.target.value) {
+                art.classList.add("show")
+              }
+            });
+          }, 900);
+        });
+    </script>
+      <script>
+const copyButtons = document.querySelectorAll(".copy-button");
+copyButtons.forEach(button => {
+    button.addEventListener('click', () => {
+        let href = button.parentElement.querySelector('a').getAttribute('href');
+        href = href.replace('./', '/');
+        navigator.clipboard.writeText(window.location.origin + href).then(() => {
+            button.innerText = "Copied";
+        }).catch(err => {
+            console.error('Could not copy text: ', err);
+        });
+    });
+});
+
+const addButtons = document.querySelectorAll(".add-button");
+        addButtons.forEach((button) => {
+          button.addEventListener("click", () => {
+            let href = button.parentElement
+              .querySelector("a")
+              .getAttribute("href");
+            href = href.replace("./", "/");
+            const fullUrl =
+              "abp:subscribe?location=" +
+              encodeURIComponent(window.location.origin + href);
+
+            const hideA = document.createElement("a");
+            hideA.style.cssText = "position:absolute;top:-100%";
+            hideA.href = fullUrl;
+            document.body.appendChild(hideA);
+            hideA.click();
+            hideA.remove();
+          });
+        });
+
+document.querySelector("select").value = "empty";
+</script>
+
+  </body>
+  <br>
+</html>
