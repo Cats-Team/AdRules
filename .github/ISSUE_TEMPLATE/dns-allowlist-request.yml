@@ -1,0 +1,66 @@
+name: DNS Rules Allowlist Request
+description: Report incorrectly blocked Domains or App
+labels: ["dns allow"]
+assignees: 
+  - zutzo
+  - hacamer
+body:
+  - type: dropdown
+    id: adblocker
+    attributes:
+      label: Which tool do you use?
+      description: |
+        If the tool is not listed, please select "Other" and enter its name in the comment field below.
+      multiple: true
+      options:
+        - AdGuard
+        - AdGuard Home
+        - AdGuard DNS
+        - Clash Meta
+        - Quantumult X
+        - SmartDNS
+        - Mosdns
+        - Loon
+        - Surge
+        - Other
+    validations:
+      required: true
+  - type: input
+    id: other
+    attributes:
+      label: Other
+    validations:
+      required: false
+  
+  - type: dropdown
+    id: blocklists
+    attributes:
+      label: Which AdRules DNS List Syntax do you use?
+      multiple: true
+      options:
+        - ABP
+        - mosdns
+        - Quantumult X
+        - SmartDNS
+        - Clash Domainset
+        - Loon/Surge Ruleset
+    validations:
+      required: true
+
+  - type: textarea
+    id: domains
+    attributes:
+      label: Which domain(s) should be unblocked?
+      description: | 
+        Please provide the domains to be unblocked. And add logs screenshots.      
+    validations:
+      required: true
+  
+  - type: textarea
+    id: reason
+    attributes:
+      label: Why should the domain(s) be unblocked?
+      description: |
+        Please describe the steps to reproduce. You must add screenshots.
+    validations:
+      required: true
