@@ -1,0 +1,831 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <link rel="icon" href="https://avatars.githubusercontent.com/u/88201352" />
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="description" content="List for blocking ads in the Chinese region">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
+    <title>AdRules</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/remarkable/2.0.1/remarkable.min.js"
+        integrity="sha512-skYYbQHAuOTpeJTthhUH3flZohep8blA+qjZOY0VqmfXMDiYcWxu29F5UbxU4LxaIpGkRBk+3Qf8qaXfd9jngg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+        </script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html,
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            color: #333;
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+
+        /* 禁止滚动样式 */
+        html.no-scroll, body.no-scroll {
+            overflow: hidden;
+            height: 100vh;
+        }
+        /* 深色模式样式 */
+        @media (prefers-color-scheme: dark) {
+
+            html,
+            body {
+                background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
+                color: #e0e0e0;
+            }
+        }
+
+        /* 深色模式切换按钮 */
+        .theme-toggle {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            background: rgba(255, 255, 255, 0.2);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 50px;
+            padding: 10px 15px;
+            cursor: pointer;
+            font-size: 1.2rem;
+            transition: all 0.3s ease;
+            z-index: 1001;
+            color: white;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .theme-toggle:hover {
+            background: rgba(255, 255, 255, 0.3);
+            transform: scale(1.05);
+        }
+
+        /* 深色模式状态 */
+        body.dark-mode {
+            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
+            color: #e0e0e0;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 2rem;
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            border-radius: 20px;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+            margin-top: 2rem;
+            margin-bottom: 2rem;
+            transition: all 0.3s ease;
+        }
+
+        /* 深色模式容器样式 */
+        body.dark-mode .container {
+            background: rgba(30, 30, 46, 0.95);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+        }
+
+        body.dark-mode header h1 {
+            background: linear-gradient(135deg, #8b9cff, #a78bfa);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        body.dark-mode header p {
+            color: #b0b0b0;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+
+        header h1 {
+            font-size: 3rem;
+            font-weight: 700;
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin-bottom: 0.5rem;
+        }
+
+        header p {
+            font-size: 1.2rem;
+            color: #666;
+            margin-bottom: 2rem;
+        }
+
+        .badges {
+            display: flex;
+            justify-content: center;
+            gap: 0.5rem;
+            flex-wrap: wrap;
+        }
+
+        .badges img {
+            border-radius: 6px;
+            transition: transform 0.2s ease;
+        }
+
+        .badges img:hover {
+            transform: translateY(-2px);
+        }
+
+        /* 自定义选择器样式 */
+        .selector-container {
+            margin: 3rem 0;
+        }
+
+        .selector-label {
+            font-size: 1.3rem;
+            font-weight: 600;
+            color: #333;
+            margin-bottom: 1rem;
+            text-align: center;
+        }
+
+        body.dark-mode .selector-label {
+            color: #e0e0e0;
+        }
+
+        .custom-select {
+            position: relative;
+            max-width: 400px;
+            margin: 0 auto;
+        }
+
+        .select-button {
+            width: 100%;
+            padding: 1rem 1.5rem;
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            color: white;
+            border: none;
+            border-radius: 12px;
+            font-size: 1.1rem;
+            font-weight: 500;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(102, 126, 234, 0.3);
+        }
+
+        .select-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 25px rgba(102, 126, 234, 0.4);
+        }
+
+        .select-arrow {
+            transition: transform 0.3s ease;
+        }
+
+        .select-button.active .select-arrow {
+            transform: rotate(180deg);
+        }
+
+        .options-container {
+            position: absolute;
+            top: 100%;
+            left: 0;
+            right: 0;
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            z-index: 1000;
+            opacity: 0;
+            visibility: hidden;
+            transform: translateY(-10px);
+            transition: all 0.3s ease;
+            margin-top: 0.5rem;
+            max-height: 350px; 
+            overflow-y: auto; /* 添加垂直滚动条 */
+            overflow-x: hidden;
+        }
+
+        body.dark-mode .options-container {
+            background: #2a2a3e;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+        }
+
+        body.dark-mode .option-group {
+            border-bottom: 1px solid #404040;
+        }
+
+        body.dark-mode .group-label {
+            color: #b0b0b0;
+        }
+
+        body.dark-mode .option {
+            color: #e0e0e0;
+        }
+
+        body.dark-mode .option:hover {
+            background: linear-gradient(135deg, #8b9cff, #a78bfa);
+            color: white;
+        }
+
+        .options-container.show {
+            opacity: 1;
+            visibility: visible;
+            transform: translateY(0);
+        }
+
+        .option-group {
+            border-bottom: 1px solid #f0f0f0;
+        }
+
+        .option-group:last-child {
+            border-bottom: none;
+        }
+
+        .group-label {
+            padding: 1rem 1.5rem 0.5rem;
+            font-weight: 600;
+            color: #666;
+            font-size: 0.9rem;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .option {
+            padding: 0.75rem 1.5rem;
+            cursor: pointer;
+            transition: all 0.2s ease;
+            color: #333;
+            font-weight: 500;
+        }
+
+        .option:hover {
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            color: white;
+        }
+
+        /* 内容区域样式 */
+        .content-area {
+            margin-top: 3rem;
+        }
+
+        .tool-content {
+            display: none;
+            opacity: 0;
+            transform: translateY(20px);
+            transition: all 0.5s ease;
+            background: linear-gradient(135deg, #f8f9ff, #baddff);
+            padding: 2rem;
+            border-radius: 16px;
+            border: 1px solid rgba(102, 126, 234, 0.1);
+            margin-bottom: 2rem;
+        }
+
+        body.dark-mode .tool-content {
+            background: linear-gradient(135deg, #2a2a3e, #1e1e32);
+            border: 1px solid rgba(139, 156, 255, 0.2);
+        }
+
+        body.dark-mode .tool-content h3 {
+            color: #e0e0e0;
+        }
+
+        body.dark-mode .tool-content a {
+            color: #8b9cff;
+        }
+
+        body.dark-mode .tool-content a:hover {
+            color: #a78bfa;
+        }
+
+        .tool-content.show {
+            display: block;
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .tool-content h3 {
+            color: #333;
+            margin-bottom: 1.5rem;
+            font-size: 1.5rem;
+            font-weight: 600;
+        }
+
+        .tool-content a {
+            color: #667eea;
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.2s ease;
+        }
+
+        .tool-content a:hover {
+            color: #764ba2;
+            text-decoration: underline;
+        }
+
+        .button-group {
+            display: flex;
+            gap: 1rem;
+            margin-top: 1.5rem;
+            flex-wrap: wrap;
+        }
+
+        .copy-button,
+        .add-button {
+            padding: 0.75rem 1.5rem;
+            border: none;
+            border-radius: 8px;
+            font-size: 0.95rem;
+            font-weight: 500;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .copy-button {
+            background: linear-gradient(135deg, #20a53a, #25c046);
+            color: white;
+            box-shadow: 0 4px 15px rgba(32, 165, 58, 0.3);
+        }
+
+        .copy-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 25px rgba(32, 165, 58, 0.4);
+        }
+
+        .add-button {
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            color: white;
+            box-shadow: 0 4px 15px rgba(102, 126, 234, 0.3);
+        }
+
+        .add-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 25px rgba(102, 126, 234, 0.4);
+        }
+
+        footer {
+            margin-top: 4rem;
+            padding-top: 2rem;
+            border-top: 1px solid #e0e0e0;
+            text-align: center;
+        }
+
+        body.dark-mode footer {
+            border-top: 1px solid #404040;
+        }
+
+        body.dark-mode footer a {
+            color: #8b9cff;
+        }
+
+        body.dark-mode footer a:hover {
+            color: #a78bfa;
+        }
+
+        body.dark-mode footer p {
+            color: #b0b0b0;
+        }
+
+        footer .emoji {
+            font-size: 1.5rem;
+            color: #333;
+            margin-bottom: 1rem;
+        }
+
+        body.dark-mode footer .emoji {
+            font-size: 1.5rem;
+            color: #e0e0e0;
+            margin-bottom: 1rem;
+        }        
+        
+        footer a {
+            color: #667eea;
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.2s ease;
+        }
+
+        footer a:hover {
+            color: #764ba2;
+        }
+
+        footer p {
+            margin: 0.5rem 0;
+            color: #666;
+        }
+
+        /* 响应式设计 */
+        @media (max-width: 768px) {
+            .container {
+                margin: 1rem;
+                padding: 1.5rem;
+                border-radius: 16px;
+            }
+
+            header h1 {
+                font-size: 2.5rem;
+            }
+
+            .button-group {
+                flex-direction: column;
+            }
+
+            .copy-button,
+            .add-button {
+                width: 100%;
+                justify-content: center;
+            }
+        }
+
+        /* 动画效果 */
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .container {
+            animation: fadeInUp 0.8s ease-out;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 深色模式切换按钮 -->
+    <button class="theme-toggle" id="themeToggle">
+        <span id="themeIcon">🌙</span>
+        <span id="themeText">Dark</span>
+    </button>
+
+    <div class="container">
+        <header>
+            <h1>AdRules</h1>
+            <p>List for blocking ads in the Chinese region</p>
+            <div class="badges">
+                <img src="https://img.shields.io/github/stars/Cats-Team/AdRules?style=flat-square&color=yellow"
+                    alt="Stars">
+                <img alt="GitHub last commit"
+                    src="https://img.shields.io/github/last-commit/cats-team/adrules/main?style=flat-square&color=red">
+                <img src="https://img.shields.io/github/license/Cats-Team/AdRules?style=flat-square" alt="License">
+            </div>
+        </header>
+
+        <main>
+            <div class="selector-container">
+                <div class="selector-label">Choose Your Tool:</div>
+                <div class="custom-select">
+                    <button class="select-button" id="selectButton">
+                        <span>Select a tool...</span>
+                        <span class="select-arrow">▼</span>
+                    </button>
+                    <div class="options-container" id="optionsContainer">
+                        <div class="option-group">
+                            <div class="group-label">Browser & App</div>
+                            <div class="option" data-value="adge">Browser Extension</div>
+                            <div class="option" data-value="adgai">AdGuard for Android/iOS</div>
+                            <div class="option" data-value="adgwm">AdGuard for Windows/Mac</div>
+                        </div>
+                        <div class="option-group">
+                            <div class="group-label">DNS & Proxy</div>
+                            <div class="option" data-value="adgh">AdGuard Home</div>
+                            <div class="option" data-value="sd">SmartDNS</div>
+                            <div class="option" data-value="qx">Quantumult X</div>
+                            <div class="option" data-value="cla">Clash</div>
+                            <div class="option" data-value="mosdns">mosdns</div>
+                            <div class="option" data-value="loon">Loon</div>
+                            <div class="option" data-value="surge">Surge</div>
+                            <div class="option" data-value="mihomo">Mihomo</div>
+                            <div class="option" data-value="singbox">Singbox</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="content-area">
+                <div id="adgai" class="tool-content">
+                    <article>
+                        <pre>
+### AdGuard for Android / iOS  
+
+[AdRules AdBlock List](./adblock.txt)
+                    </pre>
+                    </article>
+                    <div class="button-group">
+                        <button class="copy-button">📋 Copy Link</button>
+                        <button class="add-button">➕ Add Your Tool</button>
+                    </div>
+                </div>
+
+                <div id="adgwm" class="tool-content">
+                    <article>
+                        <pre>
+### AdGuard for Windows / Mac
+
+[AdRules AdBlock List Plus](./adblock_plus.txt)
+                    </pre>
+                    </article>
+                    <div class="button-group">
+                        <button class="copy-button">📋 Copy Link</button>
+                        <button class="add-button">➕ Add Your Tool</button>
+                    </div>
+                </div>
+
+                <div id="adge" class="tool-content">
+                    <article>
+                        <pre>
+### AdGuard Browser extension / uBlock Origin
+
+[AdRules AdBlock List](./adblock.txt)
+                    </pre>
+                    </article>
+                    <div class="button-group">
+                        <button class="copy-button">📋 Copy Link</button>
+                        <button class="add-button">➕ Add Your Tool</button>
+                    </div>
+                </div>
+
+                <div id="adgh" class="tool-content">
+                    <article>
+                        <pre>
+### AdGuard Home  
+
+[AdRules DNS List](./dns.txt)
+                    </pre>
+                    </article>
+                    <div class="button-group">
+                        <button class="copy-button">📋 Copy Link</button>
+                    </div>
+                </div>
+
+                <div id="sd" class="tool-content">
+                    <article>
+                        <pre>
+### SmartDNS
+
+[AdRules SmartDNS List](./smart-dns.conf)
+                    </pre>
+                    </article>
+                    <div class="button-group">
+                        <button class="copy-button">📋 Copy Link</button>
+                    </div>
+                </div>
+
+                <div id="qx" class="tool-content">
+                    <article>
+                        <pre>
+### Quantumult X
+
+[AdRules Quantumult X List](./qx.conf)
+                    </pre>
+                    </article>
+                    <div class="button-group">
+                        <button class="copy-button">📋 Copy Link</button>
+                    </div>
+                </div>
+
+                <div id="cla" class="tool-content">
+                    <article>
+                        <pre>
+### Clash / Mihomo
+
+[AdRules Clash Domainset List](./adrules_domainset.txt)
+                    </pre>
+                    </article>
+                    <div class="button-group">
+                        <button class="copy-button">📋 Copy Link</button>
+                    </div>
+                </div>
+
+                <div id="mosdns" class="tool-content">
+                    <article>
+                        <pre>
+### mosdns
+
+[AdRules MosDNS List](./mosdns_adrules.txt)
+                    </pre>
+                    </article>
+                    <div class="button-group">
+                        <button class="copy-button">📋 Copy Link</button>
+                    </div>
+                </div>
+
+                <div id="loon" class="tool-content">
+                    <article>
+                        <pre>
+### Loon 
+
+[AdRules Ruleset List](./adrules.list)
+                    </pre>
+                    </article>
+                    <div class="button-group">
+                        <button class="copy-button">📋 Copy Link</button>
+                    </div>
+                </div>
+
+                <div id="surge" class="tool-content">
+                    <article>
+                        <pre>
+### Surge 
+
+[AdRules Surge List](./adrules-surge.conf)
+                    </pre>
+                    </article>
+                    <div class="button-group">
+                        <button class="copy-button">📋 Copy Link</button>
+                    </div>
+                </div>
+
+                <div id="mihomo" class="tool-content">
+                    <article>
+                        <pre>
+### Mihomo
+
+[AdRules Mihomo List](./adrules-mihomo.mrs)
+                    </pre>
+                    </article>
+                    <div class="button-group">
+                        <button class="copy-button">📋 Copy Link</button>
+                    </div>
+                </div>
+
+                <div id="singbox" class="tool-content">
+                    <article>
+                        <pre>
+### Singbox
+
+[AdRules Singbox List](./adrules-singbox.srs)
+                    </pre>
+                    </article>
+                    <div class="button-group">
+                        <button class="copy-button">📋 Copy Link</button>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <footer>
+            <div class="emoji" onclick="alert('Ciallo～(∠・ω< )⌒☆')" style="cursor: pointer;">Ciallo～(∠・ω< )⌒☆</div>
+            <p>❔Have any questions? Please go to <a href="https://github.com/Cats-Team/AdRules#chat">Chat</a></p>
+            <p>📃Want to see the upstream rules? <a
+                    href="https://github.com/Cats-Team/AdRules/blob/script/Source.md">Source</a></p>
+            <p>🌟Get more or give a star? <a href="https://github.com/Cats-Team/AdRules">GitHub Homepage</a></p>
+        </footer>
+    </div>
+
+    <script>
+        // 深色模式切换功能
+        const themeToggle = document.getElementById('themeToggle');
+        const themeIcon = document.getElementById('themeIcon');
+        const themeText = document.getElementById('themeText');
+        const body = document.body;
+
+        // 检查用户之前的主题偏好
+        const savedTheme = localStorage.getItem('theme');
+        const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+
+        if (savedTheme === 'dark' || (!savedTheme && prefersDark)) {
+            body.classList.add('dark-mode');
+            themeIcon.textContent = '☀️';
+            themeText.textContent = 'Light';
+        }
+
+        themeToggle.addEventListener('click', () => {
+            body.classList.toggle('dark-mode');
+            const isDark = body.classList.contains('dark-mode');
+
+            if (isDark) {
+                themeIcon.textContent = '☀️';
+                themeText.textContent = 'Light';
+                localStorage.setItem('theme', 'dark');
+            } else {
+                themeIcon.textContent = '🌙';
+                themeText.textContent = 'Dark';
+                localStorage.setItem('theme', 'light');
+            }
+        });
+
+        // 初始化 Markdown 渲染
+        const md = new remarkable.Remarkable({
+            html: true,
+        });
+
+        document.querySelectorAll("article").forEach((art) => {
+            const preElement = art.querySelector("pre");
+            if (preElement) {
+                art.innerHTML = md.render(preElement.innerHTML);
+            }
+        });
+
+        // 自定义选择器功能
+        const selectButton = document.getElementById('selectButton');
+        const optionsContainer = document.getElementById('optionsContainer');
+        const options = document.querySelectorAll('.option');
+        const toolContents = document.querySelectorAll('.tool-content');
+        const container = document.querySelector('.container');
+        let hasSelectedTool = false;
+
+        // 切换选项显示/隐藏
+        selectButton.addEventListener('click', (e) => {
+            e.stopPropagation();
+            selectButton.classList.toggle('active');
+            optionsContainer.classList.toggle('show');
+        });
+
+        // 点击页面其他地方关闭选项
+        document.addEventListener('click', () => {
+            selectButton.classList.remove('active');
+            optionsContainer.classList.remove('show');
+        });
+
+        // 选项点击事件
+        options.forEach(option => {
+            option.addEventListener('click', () => {
+                const value = option.getAttribute('data-value');
+                const text = option.textContent;
+
+                // 更新按钮文本
+                selectButton.querySelector('span').textContent = text;
+
+                // 隐藏所有内容
+                toolContents.forEach(content => {
+                    content.classList.remove('show');
+                });
+
+                // 显示选中的内容
+                setTimeout(() => {
+                    const targetContent = document.getElementById(value);
+                    if (targetContent) {
+                        targetContent.classList.add('show');
+                    }
+                }, 150);
+
+                // 关闭选项
+                selectButton.classList.remove('active');
+                optionsContainer.classList.remove('show');
+            });
+        });
+
+        // 复制链接功能
+        const copyButtons = document.querySelectorAll(".copy-button");
+        copyButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                const article = button.closest('.tool-content').querySelector('article');
+                const link = article.querySelector('a');
+                if (link) {
+                    let href = link.getAttribute('href');
+                    href = href.replace('./', '/');
+                    navigator.clipboard.writeText(window.location.origin + href).then(() => {
+                        const originalText = button.innerHTML;
+                        button.innerHTML = "✅ Copied!";
+                        setTimeout(() => {
+                            button.innerHTML = originalText;
+                        }, 2000);
+                    }).catch(err => {
+                        console.error('Could not copy text: ', err);
+                    });
+                }
+            });
+        });
+
+        // 添加到工具功能
+        const addButtons = document.querySelectorAll(".add-button");
+        addButtons.forEach((button) => {
+            button.addEventListener("click", () => {
+                const article = button.closest('.tool-content').querySelector('article');
+                const link = article.querySelector('a');
+                if (link) {
+                    let href = link.getAttribute('href');
+                    href = href.replace("./", "/");
+                    const fullUrl = "abp:subscribe?location=" + encodeURIComponent(window.location.origin + href);
+
+                    const hideA = document.createElement("a");
+                    hideA.style.cssText = "position:absolute;top:-100%;left:-100%";
+                    hideA.href = fullUrl;
+                    document.body.appendChild(hideA);
+                    hideA.click();
+                    hideA.remove();
+                }
+            });
+        });
+    </script>
+</body>
+
+</html>
