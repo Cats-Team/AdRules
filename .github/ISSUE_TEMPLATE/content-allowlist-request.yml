@@ -1,0 +1,48 @@
+name: Content Rules Allowlist Request
+description: Report incorrectly blocked website content.
+labels: ["content allow"]
+assignees: 
+  - zutzo
+body:
+  - type: dropdown
+    id: adblocker
+    attributes:
+      label: Which tool do you use?
+      description: |
+        Only the following tools are supported.
+      multiple: true
+      options:
+        - AdGuard
+        - uBlock Origin
+    validations:
+      required: true
+  
+  - type: dropdown
+    id: blocklists
+    attributes:
+      label: Which List do you use?
+      multiple: true
+      options:
+        - AdRules AdBlock List Lite
+        - AdRules AdBlock List Normal
+        - AdRules AdBlock List Plus
+    validations:
+      required: true
+
+  - type: textarea
+    id: content
+    attributes:
+      label: Which content should be unblocked?
+      description: | 
+        Please provide the content to be unblocked.      
+    validations:
+      required: true
+  
+  - type: textarea
+    id: reason
+    attributes:
+      label: Why should the content be unblocked? Please Upload blocked log and screenshots!
+      description: |
+        If necessary, please describe the steps to reproduce. You better add screenshots.
+    validations:
+      required: true
