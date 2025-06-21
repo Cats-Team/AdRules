@@ -119,12 +119,12 @@
     </div>
 
     <!--  Modal -->
-    <div id="-modal" class="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black bg-opacity-60 transition-opacity duration-300 ease-in-out opacity-0 invisible" aria-labelledby="modal-title" role="dialog">
+    <div id="ciallo-modal" class="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black bg-opacity-60 transition-opacity duration-300 ease-in-out opacity-0 invisible" aria-labelledby="modal-title" role="dialog">
         <div id="ciallo-modal-panel" class="inline-block w-full max-w-sm p-6 my-8 overflow-hidden text-left align-middle transition-all transform bg-white dark:bg-slate-800 shadow-xl rounded-2xl opacity-0 scale-95 duration-300 ease-in-out">
-             <h3 class="text-2xl font-bold text-center text-slate-900 dark:text-white" id="modal-title">Ciallo～(∠・ω< )⌒☆</h3>
+             <h3 class="text-2xl font-bold text-center text-slate-900 dark:text-white" id="modal-title">Ciallo～(∠・ω&lt; )⌒☆</h3>
              <p class="text-4xl text-center mt-2 text-slate-500 dark:text-slate-400"></p>
              <div class="mt-6 text-center">
-                 <button type="button" id="llo-modal-close" class="inline-flex justify-center px-4 py-2 text-sm font-medium text-white bg-indigo-600 border border-transparent rounded-md hover:bg-indigo-700 focus:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-indigo-500">OK</button>
+                 <button type="button" id="ciallo-modal-close" class="inline-flex justify-center px-4 py-2 text-sm font-medium text-white bg-indigo-600 border border-transparent rounded-md hover:bg-indigo-700 focus:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-indigo-500">OK</button>
              </div>
         </div>
     </div>
@@ -285,13 +285,19 @@
             const cialloModal = document.getElementById('ciallo-modal');
             const cialloModalPanel = document.getElementById('ciallo-modal-panel');
             const cialloModalClose = document.getElementById('ciallo-modal-close');
-            
+            let modalAutoCloseTimer;
+
             const openCialloModal = () => {
+                // 防止重复定时
+                clearTimeout(modalAutoCloseTimer);
                 document.body.classList.add('modal-open');
                 cialloModal.classList.remove('invisible', 'opacity-0');
                 cialloModalPanel.classList.remove('opacity-0', 'scale-95');
+                // 5 秒后自动关闭
+                modalAutoCloseTimer = setTimeout(closeCialloModal, 5000);
             };
             const closeCialloModal = () => {
+                clearTimeout(modalAutoCloseTimer);
                 document.body.classList.remove('modal-open');
                 cialloModalPanel.classList.add('opacity-0', 'scale-95');
                 cialloModal.classList.add('opacity-0');
