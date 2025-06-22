@@ -6,7 +6,7 @@
     <title>AdRules</title>
     <meta name="description" content="List for blocking ads in the Chinese region." >
     <link rel="icon" href="https://avatars.githubusercontent.com/u/88201352" />
-    <script src="https://cdn.tailwindcss.com"></script>
+    <script data-cfasync="false" src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/remarkable/2.0.1/remarkable.min.js"></script>
     <style>
@@ -220,15 +220,28 @@
             function displayToolContent(tool) {
                 const renderedContent = md.render(tool.content);
 
+                // 从 Markdown 内容提取相对链接
+                const match = tool.content.match(/\[.*?\]\((.*?)\)/);
+                const relativeLink = match ? match[1] : '';
+                // 构建完整 URL
+                const fullLink = relativeLink
+                    ? new URL(relativeLink, window.location.href).href
+                    : '';
+
                 const copyButtonHtml = `<button data-action="copy" class="inline-flex items-center justify-center gap-2 w-full sm:w-auto px-4 py-2 text-sm font-medium text-white bg-indigo-600 border border-transparent rounded-md shadow-sm hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 dark:focus:ring-offset-slate-800 transition-all">
                     <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z"></path></svg>
                     Copy Link
                 </button>`;
                 
-                const addButtonHtml = tool.addable ? `<button data-action="add" class="inline-flex items-center justify-center gap-2 w-full sm:w-auto px-4 py-2 text-sm font-medium text-white bg-green-600 border border-transparent rounded-md shadow-sm hover:bg-green-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-green-500 dark:focus:ring-offset-slate-800 transition-all">
-                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v3m0 0v3m0-3h3m-3 0H9m12 0a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
-                    Add to Tool
-                </button>` : '';
+                const addLinkHtml = tool.addable
+                    ? `<a href="abp:subscribe?location=${encodeURIComponent(fullLink)}&title=AdRules"
+                         target="_blank"
+                         rel="noopener"
+                         class="inline-flex items-center justify-center gap-2 w-full sm:w-auto px-4 py-2 text-sm font-medium text-white bg-green-600 border border-transparent rounded-md shadow-sm hover:bg-green-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-green-500 dark:focus:ring-offset-slate-800 transition-all">
+                        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v3m0 0v3m0-3h3m-3 0H9m12 0a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                        Add to Tool
+                    </a>`
+                    : '';
 
                 const newContent = `
                 <div class="tool-content-wrapper opacity-0 transition-opacity duration-500" data-link-source="${tool.content}">
@@ -237,7 +250,7 @@
                     </div>
                     <div class="mt-4 flex flex-col sm:flex-row gap-3">
                         ${copyButtonHtml}
-                        ${addButtonHtml}
+                        ${addLinkHtml}
                     </div>
                 </div>`;
                 
@@ -328,10 +341,7 @@
                     navigator.clipboard.writeText(fullLink).then(showToast, (err) => console.error('Copy failed: ', err));
                 }
 
-                if (action === 'add') {
-                    const addUrl = `abp:subscribe?location=${encodeURIComponent(fullLink)}&title=AdRules`;
-                    window.location.href = addUrl;
-                }
+                // 删除旧的 'add' 动作处理，因为现在使用原生链接
             });
         });
     </script>
