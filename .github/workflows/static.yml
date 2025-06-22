@@ -1,8 +1,9 @@
 name: Deploy static content to Pages
 
 on:
-  push:
-    branches: ["main"]        # 只在 main 分支有推送时触发
+  workflow_run:
+    workflows: ["Update Rules"]
+    types: [ completed ]
   workflow_dispatch:         
 
 permissions:
