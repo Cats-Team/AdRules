@@ -1,13 +1,18 @@
 import re
 import requests
-from datetime import datetime
+from datetime import datetime, timezone, timedelta
+
+# 用于生成北京时间的 tzinfo
+BJ = timezone(timedelta(hours=8))
 
 url = "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/BanAD.list"
 response = requests.get(url)
 banad_list = response.text.splitlines()
 
 with open("adrules-surge.conf", "w") as surge_file:
-    surge_file.write(f"# Generated at {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}\n")
+    # 生成北京时间，并格式化输出
+    now_bj = datetime.now(BJ)
+    surge_file.write(f"# Generated at {now_bj.strftime('%Y-%m-%d %H:%M:%S')}\n")
     domain_wildcard_count = 0
     domain_keyword_count = 0
     domain_suffix_count = 0
@@ -34,7 +39,7 @@ for line in lines:
 
 domains.sort()
 
-# Write sorted domains to adrules-surge.conf
+# 追加写入统计和规则
 with open('adrules-surge.conf', 'a') as output_file:
     output_file.write(f"# DOMAIN-WILDCARD: {domain_wildcard_count}\n")
     output_file.write(f"# DOMAIN-KEYWORD: {domain_keyword_count}\n")
