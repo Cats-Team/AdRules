@@ -47,7 +47,7 @@ cleanup() {
     [[ -f "dns-output.txt" ]] && rm -f "dns-output.txt"
     [[ -f "total.txt" ]] && rm -f "total.txt"
     [[ -f "version.txt" ]] && rm -f "version.txt"
-    [[ -f "$DOMAIN_TXT" ]] && rm -f "$DOMAIN_TXT"
+    # [[ -f "$DOMAIN_TXT" ]] && rm -f "$DOMAIN_TXT"
     [[ -d "$TOOLS_DIR" ]] && rm -rf "$TOOLS_DIR"
     
     log_info "清理完成"
