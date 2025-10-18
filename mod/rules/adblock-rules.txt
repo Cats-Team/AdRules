@@ -1,0 +1,128 @@
+! ------加强屏蔽Start------ !
+
+!酷安"提到的好物"
+||coolapk.com/v6/page/dataList?$replace=/extra_entities//
+||coolapk.com/v6/feed/detail?$replace=/extra_entities//
+||coolapk.com/v6/main/indexV?$replace=/extra_entities//
+||coolapk.com/v6/feed/detail?$replace=/extra_title//
+||coolapk.com/v6/feed/detail?$replace=/include_goods//
+
+!去除"什么值得买"
+||coolapk.com/v6/main/indexV8?$replace=/\{"entityType":"card"\,"entityTemplate":"listCard".*?\}\,\{"id/{"id/
+!去除热搜
+||coolapk.com/v6/main/init?$replace=/\{"data":\[\{"entityType":"card"\,"entityTemplate":"textCard"\,"title":"\\u70ed\\u95e8\\u641c\\u7d22".*?\}\,\{"entityType":"card"\,"entityTemplate":"configCard"/\{"data":[\{"entityType":"card"\,"entityTemplate":"configCard"/
+||coolapk.com/v6/search?type=hotSearch$replace=/\{"data":\[.*\]/{"data":[]/
+!去除随机应用推荐
+||coolapk.com/v6/main/indexV8?$replace=/\,\{.*?"entityType": "card"\,"entityTemplate":"apkImageCard".*?\}\,\{"id"/,{"id"/
+!去除评论区下某广告
+||coolapk.com/v6/feed/detail?$replace=/detailSponsorCard//
+
+! 信息流及评论区广告
+||ctobsnssdk.com^
+||pangolin.snssdk.com^
+||pangolin-sdk-toutiao.com^
+||pangolin-sdk-toutiao-b.com^
+||pglstatp-toutiao.com^
+||umeng.com^
+||tnc*.zijieapi.com^$app
+! 帖子详情好物推荐
+||api2.coolapk.com/v6/feed/detail$replace=/"_ids":\[.*?]\,"":\[.*?]\,/ /
+! 帖子详情赞助内容
+||api2.coolapk.com/v6/feed/detail$replace=/\,"":{.*}/}}/
+! 发现页去除酷品
+||api2.coolapk.com/v6/main/init$replace=/{"id":1170.*?}\,/ /
+! 应用游戏页去除推广视频
+||api2.coolapk.com/v6/page/dataList$replace=/{"entityType":"card"\,"entityTemplate":"apkImageCard".*?\\u0022}"}\,/ /
+! 去除首页还有什么值得买推广
+||api2.coolapk.com/v6/main/indexV8$replace=/{"entityType":"card"\,"entityTemplate":"listCard".*?}"}\,/ / 
+
+!酷我
+||g.koowo.com^$app=cn.kuwo.player
+||fvedio.kuwo.cn^$app=cn.kuwo.player
+||searchrecterm.kuwo.cn^$app=cn.kuwo.player
+||media.cdn.kuwo.cn*tuijian*.json$app=cn.kuwo.player
+
+!全民k歌
+||y.qq.com/music/common/upload/t_kg_activity_show^
+||y.gtimg.cn/music/common//upload/kg_ad^
+||us.l.qq.com/exapp^
+||httpdns.kg.qq.com^
+
+
+
+!抖音屏蔽大部分广告
+!番茄小说广告全屏蔽
+||ads*-normal*.zijieapi.com^
+||p*-ad-sign.byteimg.com^
+
+! 大海影视
+||uty.micocc.com^
+||lanm.huliyinzi.com^
+||ns.adobe.com^
+||swimg2.tsderen.cn^
+||st.huliyinzi.com/ads_app_pic/^
+
+! 快手AD
+||yoda.kwd.inkuai.com^
+||gdfp.gifshow.com^
+||volceapplog.com^
+
+!小睡眠
+||api.psy-1.com/cosleep/newborn/vips/picks^
+||api.psy-1.com/cosleep/newborn/ad^
+||res.psy-1.com/music/recommend^$app=com.psyone.brainmusic
+
+!小米遥控器
+||home.mi.com/cgi-op/api/v1/recommendation/banner^
+
+!由asky88提供的不太记得是什么作用的规则
+
+||xj-landing.gdtimg.com^
+||*/vhot2.qqvideo.tc.qq.com^
+||soup.v.qq.com^
+
+! -------加强屏蔽End------- !
+
+! -------白名单Start------- !
+! AdGuard
+@@||local.adguard.org^
+
+! Edge新闻
+@@||www.msn.cn/spartan/mmx^
+
+! 银联
+@@||yyfweb.postar.cn^
+
+! Bilibili
+bilibili.com#@#.btn-ctnr
+
+! Phone Youku
+@@||vali.cp*.ott.cibntv.net^$domain=m.youku.com,third-party
+
+! 皮皮虾评论区误杀
+@@||i.snssdk.com/bds^$app=com.sup.android.superb
+
+!mydrivers.com
+mydrivers.com#@#.baidu, a[href^=http][target=_blank]
+
+! Bilibiili API
+@@||api.bilibili.com/*^$removeparam
+
+!https://es6.ruanyifeng.com/#docs/module无法加载
+ruanyifeng.com#@#a[href*=".apeclass.com"]
+
+! b站 投币 收藏 #66
+bilibili.com#@#.bili-dialog-m
+
+! 百度云转存 #59
+@@||pan.baidu.com/$removeparam,domain=pan.baidu.com
+
+! 验证码
+cjcx.neea.edu.cn#@#[style="visibility: visible; display: block;"]
+
+! 魅族主题 #90
+@@||ccm*.res.meizu.com/fileserver/operation/ad/img/*.png
+
+#189
+@@||safe.zhanhuo.com^$domain=safe.zhanhuo.com
+! --------白名单End-------- !
