@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en" class="">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AdRules</title>
+    <meta name="description" content="List for blocking ads in the Chinese region." >
+    <link rel="icon" href="https://avatars.githubusercontent.com/u/88201352" />
+    <script data-cfasync="false" src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/remarkable/2.0.1/remarkable.min.js"></script>
+    <style>
+        /* Base styles */
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+        }
+        /* Custom scrollbar (optional) */
+        ::-webkit-scrollbar { width: 8px; }
+        ::-webkit-scrollbar-track { background: transparent; }
+        ::-webkit-scrollbar-thumb { background-color: rgba(156, 163, 175, 0.5); border-radius: 4px; }
+        .dark ::-webkit-scrollbar-thumb { background-color: rgba(107, 114, 128, 0.5); }
+        /* Prevent background scroll when modal is open */
+        .modal-open { overflow: hidden; }
+
+        /* Styles for the content rendered from markdown */
+        .tool-content-inner h3 {
+             font-size: 1.25rem; /* text-xl */
+             font-weight: 600; /* font-semibold */
+             margin-bottom: 1rem; /* mb-4 */
+        }
+        .tool-content-inner a {
+            color: #4f46e5; /* text-indigo-600 */
+            text-decoration: underline;
+            font-weight: 500; /* font-medium */
+        }
+        .dark .tool-content-inner a {
+            color: #a5b4fc; /* dark:text-indigo-400 */
+        }
+    </style>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-gray-100 dark:bg-slate-900 text-slate-800 dark:text-slate-200 antialiased transition-colors duration-300">
+
+    <!-- Theme Toggle Button -->
+    <button id="theme-toggle" type="button" class="fixed top-4 right-4 z-50 text-slate-500 dark:text-slate-400 hover:bg-slate-200 dark:hover:bg-slate-700 focus:outline-none focus:ring-4 focus:ring-slate-200 dark:focus:ring-slate-700 rounded-lg text-sm p-2.5 transition-all">
+        <svg id="theme-toggle-dark-icon" class="hidden w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"></path></svg>
+        <svg id="theme-toggle-light-icon" class="hidden w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 5.05a1 1 0 00-1.414 1.414l.707.707a1 1 0 001.414-1.414l-.707-.707zM3 11a1 1 0 100 2h1a1 1 0 100-2H3zM2.05 14.95a1 1 0 011.414 0l.707-.707a1 1 0 111.414 1.414l-.707.707a1 1 0 01-1.414 0zM14.95 2.05a1 1 0 010 1.414l.707.707a1 1 0 011.414-1.414l-.707-.707a1 1 0 01-1.414 0z" fill-rule="evenodd" clip-rule="evenodd"></path></svg>
+    </button>
+    
+    <div class="flex flex-col min-h-screen">
+        <div class="flex-grow w-full max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+            
+            <header class="text-center mb-10">
+                <h1 class="text-4xl sm:text-5xl font-extrabold mb-2 bg-clip-text text-transparent bg-gradient-to-r from-indigo-600 to-purple-600 dark:from-indigo-400 dark:to-purple-400">
+                    AdRules
+                </h1>
+                <p class="text-lg text-slate-600 dark:text-slate-400 max-w-2xl mx-auto">
+                    List for blocking ads in the Chinese region.
+                </p>
+                <div class="flex justify-center items-center space-x-2 mt-6">
+                    <img src="https://img.shields.io/github/stars/Cats-Team/AdRules?style=flat-square&color=yellow" alt="Stars" class="rounded">
+                    <img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/cats-team/adrules/main?style=flat-square&color=red" class="rounded">
+                    <img src="https://img.shields.io/github/license/Cats-Team/AdRules?style=flat-square" alt="License" class="rounded">
+                </div>
+            </header>
+
+            <main class="bg-white dark:bg-slate-800/50 rounded-2xl shadow-lg p-6 sm:p-8">
+                <!-- Custom Select Dropdown -->
+                <div class="mb-8">
+                    <label class="block text-center text-lg font-semibold mb-4 text-slate-800 dark:text-slate-100">Choose Your Tool:</label>
+                    <div id="custom-select" class="relative max-w-md mx-auto">
+                        <button id="select-button" type="button" class="flex items-center justify-between w-full px-5 py-3 text-left bg-white dark:bg-slate-700 border border-gray-300 dark:border-slate-600 rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 dark:focus:ring-offset-slate-900">
+                            <span id="select-label" class="text-slate-600 dark:text-slate-300">Select a tool...</span>
+                            <svg class="w-5 h-5 text-gray-400 transform transition-transform duration-200" id="select-arrow" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" /></svg>
+                        </button>
+                        <div id="options-container" class="absolute z-10 w-full mt-2 bg-white dark:bg-slate-700 border border-gray-200 dark:border-slate-600 rounded-lg shadow-xl overflow-hidden transition-all duration-200 opacity-0 invisible -translate-y-2">
+                           <!-- Options will be generated by JS -->
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Content Area -->
+                <div id="content-area" class="min-h-[200px]">
+                    <!-- Tool content will be injected here by JS -->
+                </div>
+            </main>
+        </div>
+        
+        <footer class="w-full mt-auto pt-8 pb-8 border-t border-slate-200 dark:border-slate-700 text-center text-slate-500 dark:text-slate-400">
+            <p id="ciallo-trigger" class="text-2xl mb-4 cursor-pointer hover:text-indigo-500 dark:hover:text-indigo-400 transition-colors">Ciallo～(∠・ω&lt; )⌒☆</p>
+            <div class="text-sm">
+                <a href="https://github.com/Cats-Team/AdRules/blob/script/Source.md" target="_blank" class="hover:text-indigo-500 dark:hover:text-indigo-400">Source</a>
+                <span class="mx-2">·</span>
+                <a href="https://github.com/Cats-Team/AdRules" target="_blank" class="hover:text-indigo-500 dark:hover:text-indigo-400">GitHub</a>
+                <span class="mx-2">·</span>
+                <a href="https://github.com/Cats-Team/AdRules#chat" target="_blank" class="hover:text-indigo-500 dark:hover:text-indigo-400">Chat</a>
+            </div>
+             <div class="mt-2 text-xl text-slate-400 dark:text-slate-500">© 2025 Cats-Team</div>
+        </footer>
+    </div>
+
+    <!-- Toast Notification -->
+    <div id="toast-notification" class="fixed top-5 right-5 z-50 hidden items-center w-full max-w-xs p-4 text-gray-500 bg-white rounded-lg shadow-lg dark:text-gray-300 dark:bg-slate-800" role="alert">
+        <div class="inline-flex items-center justify-center flex-shrink-0 w-8 h-8 text-green-500 bg-green-100 rounded-lg dark:bg-green-800 dark:text-green-200">
+            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+        </div>
+        <div class="ml-3 text-sm font-normal">Link copied successfully!</div>
+    </div>
+
+    <!--  Modal -->
+    <div id="ciallo-modal" class="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black bg-opacity-60 transition-opacity duration-300 ease-in-out opacity-0 invisible" aria-labelledby="modal-title" role="dialog">
+        <div id="ciallo-modal-panel" class="inline-block w-full max-w-sm p-6 my-8 overflow-hidden text-left align-middle transition-all transform bg-white dark:bg-slate-800 shadow-xl rounded-2xl opacity-0 scale-95 duration-300 ease-in-out">
+             <h3 class="text-2xl font-bold text-center text-slate-900 dark:text-white" id="modal-title">Ciallo～(∠・ω&lt; )⌒☆</h3>
+             <p class="text-4xl text-center mt-2 text-slate-500 dark:text-slate-400"></p>
+             <div class="mt-6 text-center">
+                 <button type="button" id="ciallo-modal-close" class="inline-flex justify-center px-4 py-2 text-sm font-medium text-white bg-indigo-600 border border-transparent rounded-md hover:bg-indigo-700 focus:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-indigo-500">OK</button>
+             </div>
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+
+            const md = new remarkable.Remarkable({ html: true });
+
+            const toolsData = {
+                'Browser & App': [
+                    { id: 'adge', name: 'Browser Extension', addable: true, content: '### AdGuard Browser extension / uBlock Origin\n\n[AdRules AdBlock List](./adblock.txt)' },
+                    { id: 'adgai', name: 'AdGuard for Android/iOS', addable: true, content: '### AdGuard for Android / iOS\n\n[AdRules AdBlock List](./adblock.txt)' },
+                    { id: 'adgwm', name: 'AdGuard for Windows/Mac', addable: true, content: '### AdGuard for Windows / Mac\n\n[AdRules AdBlock List Plus](./adblock_plus.txt)' }
+                ],
+                'DNS & Proxy': [
+                    { id: 'adgh', name: 'AdGuard Home', content: '### AdGuard Home\n\n[AdRules DNS List](./dns.txt)' },
+                    { id: 'sd', name: 'SmartDNS', content: '### SmartDNS\n\n[AdRules SmartDNS List](./smart-dns.conf)' },
+                    { id: 'qx', name: 'Quantumult X', content: '### Quantumult X\n\n[AdRules Quantumult X List](./qx.conf)' },
+                    { id: 'cla', name: 'Clash', content: '### Clash / Mihomo\n\n[AdRules Clash Domainset List](./adrules_domainset.txt)' },
+                    { id: 'mosdns', name: 'mosdns', content: '### mosdns\n\n[AdRules MosDNS List](./mosdns_adrules.txt)' },
+                    { id: 'loon', name: 'Loon', content: '### Loon\n\n[AdRules Ruleset List](./adrules.list)' },
+                    { id: 'surge', name: 'Surge', content: '### Surge\n\n[AdRules Surge List](./adrules-surge.conf)' },
+                    { id: 'mihomo', name: 'Mihomo', content: '### Mihomo\n\n[AdRules Mihomo List](./adrules-mihomo.mrs)' },
+                    { id: 'singbox', name: 'Sing-box', content: '### Sing-box\n\n[AdRules Singbox List](./adrules-singbox.srs)' }
+                ]
+            };
+
+            const optionsContainer = document.getElementById('options-container');
+            const selectButton = document.getElementById('select-button');
+            const selectLabel = document.getElementById('select-label');
+            const selectArrow = document.getElementById('select-arrow');
+            const contentArea = document.getElementById('content-area');
+
+            // --- Populate Dropdown ---
+            let optionsHtml = '';
+            for (const group in toolsData) {
+                optionsHtml += `<div class="p-2">
+                    <div class="px-3 py-2 text-xs font-bold text-slate-400 uppercase">${group}</div>`;
+                toolsData[group].forEach(tool => {
+                    optionsHtml += `<div class="option-item text-slate-700 dark:text-slate-200 px-3 py-2 rounded-md hover:bg-indigo-500 hover:text-white dark:hover:bg-indigo-600 cursor-pointer" data-value="${tool.id}" data-name="${tool.name}">${tool.name}</div>`;
+                });
+                optionsHtml += `</div>`;
+            }
+            optionsContainer.innerHTML = optionsHtml;
+
+            // --- Custom Select Logic ---
+            const toggleDropdown = () => {
+                optionsContainer.classList.toggle('invisible');
+                optionsContainer.classList.toggle('opacity-0');
+                optionsContainer.classList.toggle('-translate-y-2');
+                selectArrow.classList.toggle('rotate-180');
+            };
+
+            selectButton.addEventListener('click', (e) => {
+                e.stopPropagation();
+                toggleDropdown();
+            });
+
+            document.addEventListener('click', (e) => {
+                if (!optionsContainer.classList.contains('invisible') && !selectButton.contains(e.target)) {
+                    toggleDropdown();
+                }
+            });
+
+            // --- Handle Option Selection ---
+            optionsContainer.addEventListener('click', (e) => {
+                const option = e.target.closest('.option-item');
+                if (!option) return;
+
+                const toolId = option.dataset.value;
+                const toolName = option.dataset.name;
+                selectLabel.textContent = toolName;
+                selectLabel.classList.remove('text-slate-600', 'dark:text-slate-300');
+                selectLabel.classList.add('text-slate-900', 'dark:text-white', 'font-medium');
+                toggleDropdown();
+                
+                // Find the tool data
+                let selectedTool;
+                for (const group in toolsData) {
+                    const found = toolsData[group].find(t => t.id === toolId);
+                    if (found) {
+                        selectedTool = found;
+                        break;
+                    }
+                }
+
+                if (selectedTool) {
+                    displayToolContent(selectedTool);
+                }
+            });
+
+            function displayToolContent(tool) {
+                const renderedContent = md.render(tool.content);
+
+                // 从 Markdown 内容提取相对链接
+                const match = tool.content.match(/\[.*?\]\((.*?)\)/);
+                const relativeLink = match ? match[1] : '';
+                // 构建完整 URL
+                const fullLink = relativeLink
+                    ? new URL(relativeLink, window.location.href).href
+                    : '';
+
+                const copyButtonHtml = `<button data-action="copy" class="inline-flex items-center justify-center gap-2 w-full sm:w-auto px-4 py-2 text-sm font-medium text-white bg-indigo-600 border border-transparent rounded-md shadow-sm hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 dark:focus:ring-offset-slate-800 transition-all">
+                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z"></path></svg>
+                    Copy Link
+                </button>`;
+                
+                const addLinkHtml = tool.addable
+                    ? `<a href="abp:subscribe?location=${encodeURIComponent(fullLink)}&title=AdRules"
+                         target="_blank"
+                         rel="noopener"
+                         class="inline-flex items-center justify-center gap-2 w-full sm:w-auto px-4 py-2 text-sm font-medium text-white bg-green-600 border border-transparent rounded-md shadow-sm hover:bg-green-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-green-500 dark:focus:ring-offset-slate-800 transition-all">
+                        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v3m0 0v3m0-3h3m-3 0H9m12 0a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                        Add to Tool
+                    </a>`
+                    : '';
+
+                const newContent = `
+                <div class="tool-content-wrapper opacity-0 transition-opacity duration-500" data-link-source="${tool.content}">
+                    <div class="tool-content-inner p-4 sm:p-6 border border-slate-200 dark:border-slate-700 rounded-lg">
+                        ${renderedContent}
+                    </div>
+                    <div class="mt-4 flex flex-col sm:flex-row gap-3">
+                        ${copyButtonHtml}
+                        ${addLinkHtml}
+                    </div>
+                </div>`;
+                
+                contentArea.innerHTML = newContent;
+                setTimeout(() => {
+                    contentArea.querySelector('.tool-content-wrapper').classList.remove('opacity-0');
+                }, 50);
+            }
+
+            // --- Theme Toggle Logic ---
+            const themeToggleBtn = document.getElementById('theme-toggle');
+            const darkIcon = document.getElementById('theme-toggle-dark-icon');
+            const lightIcon = document.getElementById('theme-toggle-light-icon');
+            const htmlEl = document.documentElement;
+
+            if (localStorage.getItem('theme') === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+                htmlEl.classList.add('dark');
+                lightIcon.classList.remove('hidden');
+            } else {
+                darkIcon.classList.remove('hidden');
+            }
+
+            themeToggleBtn.addEventListener('click', () => {
+                htmlEl.classList.toggle('dark');
+                darkIcon.classList.toggle('hidden');
+                lightIcon.classList.toggle('hidden');
+                localStorage.setItem('theme', htmlEl.classList.contains('dark') ? 'dark' : 'light');
+            });
+
+            // --- Toast Notification Logic ---
+            const toast = document.getElementById('toast-notification');
+            let toastTimeout;
+            function showToast() {
+                clearTimeout(toastTimeout);
+                toast.classList.remove('hidden');
+                toast.classList.add('flex');
+                toastTimeout = setTimeout(() => {
+                    toast.classList.remove('flex');
+                    toast.classList.add('hidden');
+                }, 3000);
+            }
+
+            // --- llo Modal Logic ---
+            const cialloTrigger = document.getElementById('ciallo-trigger');
+            const cialloModal = document.getElementById('ciallo-modal');
+            const cialloModalPanel = document.getElementById('ciallo-modal-panel');
+            const cialloModalClose = document.getElementById('ciallo-modal-close');
+            let modalAutoCloseTimer;
+
+            const openCialloModal = () => {
+                // 防止重复定时
+                clearTimeout(modalAutoCloseTimer);
+                document.body.classList.add('modal-open');
+                cialloModal.classList.remove('invisible', 'opacity-0');
+                cialloModalPanel.classList.remove('opacity-0', 'scale-95');
+                // 5 秒后自动关闭
+                modalAutoCloseTimer = setTimeout(closeCialloModal, 5000);
+            };
+            const closeCialloModal = () => {
+                clearTimeout(modalAutoCloseTimer);
+                document.body.classList.remove('modal-open');
+                cialloModalPanel.classList.add('opacity-0', 'scale-95');
+                cialloModal.classList.add('opacity-0');
+                setTimeout(() => cialloModal.classList.add('invisible'), 300);
+            };
+
+            cialloTrigger.addEventListener('click', openCialloModal);
+            cialloModalClose.addEventListener('click', closeCialloModal);
+            cialloModal.addEventListener('click', (e) => {
+                if (e.target === cialloModal) closeCialloModal();
+            });
+
+            // --- Event Delegation for Copy/Add Buttons ---
+            contentArea.addEventListener('click', (e) => {
+                const button = e.target.closest('button[data-action]');
+                if (!button) return;
+
+                const wrapper = button.closest('.tool-content-wrapper');
+                const linkSource = wrapper.dataset.linkSource;
+                const match = linkSource.match(/\[.*?\]\((.*?)\)/);
+                if (!match) return;
+                
+                const relativeLink = match[1];
+                const fullLink = new URL(relativeLink, window.location.href).href;
+                const action = button.dataset.action;
+
+                if (action === 'copy') {
+                    navigator.clipboard.writeText(fullLink).then(showToast, (err) => console.error('Copy failed: ', err));
+                }
+
+                // 删除旧的 'add' 动作处理，因为现在使用原生链接
+            });
+        });
+    </script>
+
+</body>
+</html>
