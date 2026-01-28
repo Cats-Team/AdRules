@@ -79,16 +79,16 @@ content_urls=(
   #adg privacy
   "https://filters.adtidy.org/windows/filters/3.txt" 
   #adg cn
-  "https://filters.adtidy.org/windows/filters/224.txt" 
+  #"https://filters.adtidy.org/windows/filters/224.txt" 
   #adg annoyance
   "https://filters.adtidy.org/windows/filters/14.txt" 
 )
 
 dns_urls=(
   #Ultimate Ad Filter
-  "https://filters.adavoid.org/ultimate-ad-filter.txt"
+  #"https://filters.adavoid.org/ultimate-ad-filter.txt"
   #Ultimate Privacy Filter
-  "https://filters.adavoid.org/ultimate-privacy-filter.txt"
+  #"https://filters.adavoid.org/ultimate-privacy-filter.txt"
   #Social
   "https://filters.adtidy.org/windows/filters/4.txt"
   #Annoying
@@ -99,7 +99,7 @@ dns_urls=(
   #Chinese and English
   "https://filters.adtidy.org/windows/filters/2.txt"
   "https://easylist-downloads.adblockplus.org/easylistchina+easylist.txt"
-  "https://filters.adtidy.org/windows/filters/224.txt" 
+  #"https://filters.adtidy.org/windows/filters/224.txt" 
   #Fuck Tracking
   "https://easylist-downloads.adblockplus.org/easyprivacy.txt"
   "https://filters.adtidy.org/windows/filters/3.txt"
