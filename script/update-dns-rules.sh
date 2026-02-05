@@ -14,6 +14,7 @@ readonly QX_CONF="qx.conf"
 readonly SMART_DNS_CONF="smart-dns.conf"
 readonly ADRULES_LIST="adrules.list"
 readonly ADRULES_DOMAINSET="adrules_domainset.txt"
+readonly ADRULES_SURGE_DOMAINSET="adrules_surge_domainset.txt"
 readonly MOSDNS_ADRULES="mosdns_adrules.txt"
 
 # 下载URL
@@ -208,6 +209,10 @@ generate_configs() {
         echo "# Update: $update_time"
     } > "$ADRULES_DOMAINSET"
     
+    {
+        echo "# Update: $update_time"
+    } > "$ADRULES_SURGE_DOMAINSET"
+    
     # 提取域名
     grep -vE '(@|\*)' "$DNS_TXT" | \
         grep -Po "(?<=\|\|).+(?=\^)" | \
@@ -229,6 +234,9 @@ generate_configs() {
         
         # domainset 格式
         sed 's/^/\+\./g' "$DOMAIN_TXT" >> "$ADRULES_DOMAINSET"
+        
+        # surge domainset 格式
+        sed 's/^/\./g' "$DOMAIN_TXT" >> "$ADRULES_SURGE_DOMAINSET"
         
         # adrules 格式
         sed 's/^/DOMAIN-SUFFIX,/g' "$DOMAIN_TXT" >> "$ADRULES_LIST"
