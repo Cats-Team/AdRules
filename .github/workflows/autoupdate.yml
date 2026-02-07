@@ -1,101 +1,95 @@
 name: Update Rules
-on: 
+on:
   schedule:
-    - cron: '0 */6 * * *'
+  - cron: '0 */6 * * *'
   push:
     paths:
-      - 'script/*'
-      - 'mod/*'
-      - 'index.html'
-      - '.github/workflows/*'
+    - 'script/*'
+    - 'mod/*'
+    - 'index.html'
+    - '.github/workflows/*'
 
   workflow_dispatch:
 
   repository_dispatch:
-   type:
-    - [Manual-Update]
+    types:
+    - Manual-Update
 
 jobs:
   update-rules:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@main
-      - name: Setup Python
-        uses: actions/setup-python@v2
-        with:
-          python-version: '3.x'
-      - uses: actions/setup-node@v2
-        with:
-          #node-version: '14'
-          check-latest: true
+    - uses: actions/checkout@main
+    - name: Setup Python
+      uses: actions/setup-python@v2
+      with:
+        python-version: '3.x'
 
-      # Install hostlist-compiler
-      - name: Install hostlist-compiler
-        run: npm i -g @adguard/hostlist-compiler
+    - name: Update Upstream
+      continue-on-error: false
+      run: |
+        pip install requests
+        bash ./script/update_upstream.sh
+        tar -czvf archive.tar.gz ./tmp/*
 
-      - name: Update Upstream
-        continue-on-error: false
-        run: |     
-          pip install requests
-          bash ./script/update-upstream.sh
-          tar -czvf archive.tar.gz ./tmp/*
+    - name: Upload artifacts
+      uses: actions/upload-artifact@v4
+      with:
+        name: archive.tar.gz
+        path: archive.tar.gz
 
+    - name: Build Rules
+      continue-on-error: false
+      run: |
+        bash ./script/update_content.sh
+        bash ./script/update_dns.sh
+        rm -f archive.tar.gz
 
-      - name: Upload artifacts
-        uses: actions/upload-artifact@v4
-        with:
-         name: archive.tar.gz
-         path: archive.tar.gz
-        
-      - name: Build Rules
-        continue-on-error: false
-        run: |     
-          bash ./script/update-content-rules.sh
-          bash ./script/update-dns-rules.sh
-          rm -f archive.tar.gz
+    - name: Update other rules
+      run: |
+        mkdir -p rules
+        cd rules
+        rm -f *.txt
+        wget https://raw.githubusercontent.com/damengzhu/banad/main/jiekouAD.txt
+        cd ../
 
-      - name: Update other rules
-        run: |
-          cd rules
-          rm *.txt
-          wget https://raw.githubusercontent.com/damengzhu/banad/main/jiekouAD.txt
-          cd ../
-      - name: Git push assets to Github
-        run: |
-          git init
-          git config --local user.name "actions"
-          git config --local user.email "action@github.com"
-          git checkout --orphan main
-          git rm -rf .github
-          git rm -rf script
-          git rm -rf *.md         
-          git add *.{conf,txt,list,html,json,srs,mrs} rules/* mod/*
-          git commit -m "Update at $(TZ=UTC-8 date +"%Y-%m-%d %H:%M")"
-          git push -f -u origin main
+    - name: Git push assets to Github
+      run: |
+        git init
+        git config --local user.name "actions"
+        git config --local user.email "action@github.com"
+        git checkout --orphan main
+        git rm -rf .github
+        git rm -rf script
+        git rm -rf *.md
+        git add *.{conf,txt,list,html,json,srs,mrs} rules/* mod/*
+        git commit -m "Update at $(TZ=UTC-8 date +"%Y-%m-%d %H:%M")"
+        git push -f -u origin main
 
-      - name: Git push assets to other repos
-        continue-on-error: true
-        run: |
-          rm -rf .git/
-          git init          
-          git config --local user.name "hacamer"
-          git config --local user.email "${{ secrets.USEREMAIL }}"
-          git remote add origin "https://cats-team:${{ secrets.GITLAB_TOKEN }}@gitlab.com/cats-team/adrules.git"
-          git remote set-url --add origin "https://hacamer:${{ secrets.BITBUCKET_TOKEN }}@bitbucket.org/hacamer/adrules.git"
-          git checkout --orphan clearhistory
-          git add *.{conf,html,txt,json,srs,mrs,list} rules/* mod/*
-          git commit -am "Update at $(TZ=UTC-8 date +"%Y-%m-%d %H:%M")"
-          git branch -m main
-          git push --force --set-upstream origin main
+    - name: Git push assets to other repos
+      continue-on-error: true
+      run: |
+        rm -rf .git/
+        git init
+        git config --local user.name "hacamer"
+        git config --local user.email "${{ secrets.USEREMAIL }}"
+        git remote add origin "https://cats-team:${{ secrets.GITLAB_TOKEN }}@gitlab.com/cats-team/adrules.git"
+        git remote set-url --add origin "https://hacamer:${{ secrets.BITBUCKET_TOKEN }}@bitbucket.org/hacamer/adrules.git"
+        git checkout --orphan clearhistory
+        git add *.{conf,html,txt,json,srs,mrs,list} rules/* mod/*
+        git commit -am "Update at $(TZ=UTC-8 date +"%Y-%m-%d %H:%M")"
+        git branch -m main
+        git push --force --set-upstream origin main
 
-      - name: Auto Built
-        continue-on-error: true
-        run: |
-          curl -X POST "${{ secrets.CF_TOKEN }}"
-      - name: Delete workflow runs
-        uses: Mattraks/delete-workflow-runs@main
-        with:
-          token: ${{ secrets.GITHUB_TOKEN }}
-          repository: ${{ github.repository }}
-          retain_days: 0
-          keep_minimum_runs: 2
+    - name: Auto Built
+      continue-on-error: true
+      run: |
+        curl -X POST "${{ secrets.CF_TOKEN }}"
+
+    - name: Delete workflow runs
+      uses: Mattraks/delete-workflow-runs@main
+      with:
+        token: ${{ secrets.GITHUB_TOKEN }}
+        repository: ${{ github.repository }}
+        retain_days: 2
+        keep_minimum_runs: 5

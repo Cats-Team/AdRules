@@ -1,55 +1,57 @@
-#!/bin/sh
-set -euo pipefail  # 严格模式
-LC_ALL='C'
+#!/bin/bash
+set -euo pipefail
 
-# 日志函数
-log_info() {
-  echo "[INFO] $(date '+%Y-%m-%d %H:%M:%S') - $*"
-}
-log_warn() {
-  echo "[WARN] $(date '+%Y-%m-%d %H:%M:%S') - $*"
-}
-log_error() {
-  echo "[ERROR] $(date '+%Y-%m-%d %H:%M:%S') - $*"
-}
+# 导入工具函数
+SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+source "${SCRIPT_DIR}/utils.sh"
 
-cd "$(dirname "${BASH_SOURCE[0]}")/.."
+# 项目根目录
+ROOT_DIR="$(cd "${SCRIPT_DIR}/.." && pwd)"
+TMP_DIR="${ROOT_DIR}/tmp"
+FAILED_LOG="${ROOT_DIR}/download_failed.log"
 
-download_file() {
-  local url="$1"
-  local directory="$2"
-  local filename
-  filename=$(basename "$url")
-  local filepath="$directory/$filename"
-  local retries=3
+# 检查依赖
+check_deps curl sed xargs
 
-  while [ $retries -gt 0 ]; do
-    if curl -sS -L -o "$filepath" "$url"; then
-      # 插入来源注释
-      sed -i "1i\\! url: $url" "$filepath"
-      #log_info "下载成功: $url -> $filepath"
-      return 0
+# 准备目录
+mkdir -p "${TMP_DIR}/content" "${TMP_DIR}/dns"
+> "$FAILED_LOG"
+
+# 下载任务处理函数
+do_download() {
+    local url="$1"
+    local target_dir="$2"
+    
+    # 为重名文件添加缓解措施：使用 URL 的 MD5 哈希作为前缀
+    local url_hash=$(echo -n "$url" | md5sum | cut -d' ' -f1 | cut -c1-8)
+    local original_filename=$(basename "$url")
+    local filename="${url_hash}_${original_filename}"
+    
+    local filepath="${target_dir}/${filename}"
+    local tmp_filepath="${filepath}.tmp"
+    
+    if download_file "$url" "$tmp_filepath"; then
+        # 插入来源注释
+        sed -i "1i\\! url: $url" "$tmp_filepath"
+        # 换行符转换
+        sed -i 's/\r$//' "$tmp_filepath"
+        # 原子性移动，确保文件完整
+        mv "$tmp_filepath" "$filepath"
     else
-      retries=$((retries - 1))
-      log_warn "下载失败，重试（$retries剩余）: $url"
-      sleep 1
+        rm -f "$tmp_filepath"
+        echo "$url" >> "$FAILED_LOG"
     fi
-  done
-
-  log_error "下载最终失败: $url"
-  # 记录失败的链接
-  echo "$url" >> ../download_failed.log
-  return 1
 }
 
-log_info "开始下载规则..."
+export -f do_download
+export -f download_file
+export -f log_info
+export -f log_warn
+export -f log_error
+export NC GREEN YELLOW RED
 
-mkdir -p ./tmp
-cd tmp
-mkdir -p ./content ./dns
-
-# 规则链接数组
-content_urls=(  
+# 规则链接
+content_urls=(
   #damengzhu
   "https://raw.githubusercontent.com/damengzhu/banad/main/jiekouAD.txt" 
   #Noyllopa NoAppDownload
@@ -141,49 +143,15 @@ dns_urls=(
   "https://raw.githubusercontent.com/Cats-Team/dns-filter/main/abp.txt"
 )
 
-# 清空失败日志
-> ../download_failed.log
+log_info "开始并发下载规则..."
 
-# 并发下载
-for url in "${content_urls[@]}"; do
-  download_file "$url" "./content" &
-done
+# 使用 xargs 控制并发数为 8
+printf "%s\n" "${content_urls[@]}" | xargs -I {} -P 8 bash -c "do_download '{}' '${TMP_DIR}/content'"
+printf "%s\n" "${dns_urls[@]}" | xargs -I {} -P 8 bash -c "do_download '{}' '${TMP_DIR}/dns'"
 
-for url in "${dns_urls[@]}"; do
-  download_file "$url" "./dns" &
-done
-
-wait
-
-# 换行符处理
-convert_line_endings() {
-  dir=$1
-  file_count=0
-  if ls "$dir"/*.txt >/dev/null 2>&1; then
-    if command -v dos2unix >/dev/null 2>&1; then
-      for file in "$dir"/*.txt; do
-        dos2unix "$file" >/dev/null 2>&1
-        file_count=$((file_count+1))
-      done
-    else
-      for file in "$dir"/*.txt; do
-        [ -f "$file" ] && sed -i 's/\r$//' "$file"
-        file_count=$((file_count+1))
-      done
-    fi
-  fi
-  log_info "$dir 转换了 $file_count 个文件"
-}
-
-convert_line_endings "content"
-convert_line_endings "dns"
-
-# 显示失败链接
-if [ -s ../download_failed.log ]; then
-  log_error "下载失败链接如下："
-  cat ../download_failed.log >&2
-  rm -f ../download_failed.log
+if [ -s "$FAILED_LOG" ]; then
+    log_error "以下链接下载失败:"
+    cat "$FAILED_LOG"
 fi
 
-log_info "全部完成 ✅"
-exit 0
+log_info "下载任务完成。"
