@@ -131,8 +131,6 @@ dns_urls=(
   "https://raw.githubusercontent.com/crazy-max/WindowsSpyBlocker/master/data/hosts/spy.txt"
   #Notarck-Malware
   "https://gitlab.com/quidsup/notrack-blocklists/-/raw/master/malware.hosts"
-  #hostsVN
-  "https://raw.githubusercontent.com/bigdargon/hostsVN/master/filters/adservers-all.txt"
   #StevenBlack
   "https://raw.githubusercontent.com/StevenBlack/hosts/master/data/StevenBlack/hosts"
   #SomeoneNewWhoCares
