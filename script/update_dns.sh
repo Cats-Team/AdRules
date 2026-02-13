@@ -104,7 +104,7 @@ process_with_mihomo() {
     local url="https://github.com/MetaCubeX/mihomo/releases/download/Prerelease-Alpha/mihomo-linux-amd64-${version}.gz"
     
     # 直接下载并流式解压，绕过文件名不匹配问题
-    log_info "下载并配置 mihomo ($version)..."
+    log_info "下载并配置 mihomo ($url)..."
     if curl -sL "$url" | gzip -d - > "$bin"; then
         chmod +x "$bin"
     else
