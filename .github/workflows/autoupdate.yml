@@ -62,6 +62,7 @@ jobs:
         git rm -rf .github
         git rm -rf script
         git rm -rf *.md
+        git rm -rf LICENSE
         git add *.{conf,txt,list,html,json,srs,mrs} rules/* mod/*
         git commit -m "Update at $(TZ=UTC-8 date +"%Y-%m-%d %H:%M")"
         git push -f -u origin main
