@@ -40,8 +40,8 @@ python "${SCRIPT_DIR}/sort.py" dns.txt
 count=$(wc -l < dns.txt)
 {
     [[ -f "./mod/title/dns-title.txt" ]] && cat ./mod/title/dns-title.txt
-    echo "! Total count: $count"
     echo "! Update: $(get_timestamp)(GMT+8)"
+    echo "! Total count: $count"
     cat dns.txt
 } | sed '/^$/d' > dns.txt.tmp && mv dns.txt.tmp dns.txt
 
