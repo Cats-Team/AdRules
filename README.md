@@ -50,9 +50,12 @@ Block Ads, Trackers, Malware, HTTPDNS, PCDN.
 - Some formats not listed here, but due to performance or other reasons, we will not list them here, but you can find them in the [main](https://github.com/Cats-Team/AdRules/tree/main) branch.
 
 ## License
-This project is licensed under the WTFPL License - see the LICENSE file for details.
 
-The WTFPL License is a permissive license that allows you to do whatever you want with the code, without any restrictions or obligations. It is a short and simple license that promotes freedom and flexibility.
+Please note that the licensing for this project depends on the branch and the type of content:
+
+- **`script` branch (The Merge Tool)**: Contains the script used to merge the ad-blocking rules. The code in this branch is licensed under the **0BSD License** - see the LICENSE [<sup>1</sup>](LICENSE) file for details. You can use, modify, and distribute the script freely without any restrictions.
+- **`main` branch (The Generated Artifacts)**: Contains **only the generated outputs** (the merged ad-blocking rules) and does NOT include the script itself. The rules in this branch strictly follow the original licenses of their respective upstream authors (e.g., GPL-3.0, MIT, CC BY-SA 4.0). For a complete list of upstream sources, authors, and their specific licenses, please refer to [<sup>2</sup>](Source.md).
+
 
 ## Chat
 
