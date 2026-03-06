@@ -6,7 +6,7 @@
 <br>
 <img src="https://img.shields.io/github/stars/Cats-Team/AdRules?style=flat-square&color=yellow">
 <img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/cats-team/adrules/main?style=flat-square&color=red">
-<img src="https://img.shields.io/github/license/Cats-Team/AdRules?style=flat-square">
+<img alt="GitHub License" src="https://img.shields.io/github/license/Cats-Team/AdRules?style=flat-square">
 
 </centre>
 
