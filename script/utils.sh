@@ -47,7 +47,7 @@ download_file() {
 
     while [ $count -lt $max_retries ]; do
         log_info "正在下载 (尝试 $((count + 1))/$max_retries): $url"
-        if curl -sS -L --connect-timeout "$timeout" --retry 3 -o "$output" "$url"; then
+        if curl -sS -L --retry-all-errors --connect-timeout "$timeout" --retry 3 -o "$output" "$url"; then
             # 简单校验：文件是否为空
             if [ -s "$output" ]; then
                 return 0
